@@ -1,0 +1,187 @@
+﻿param(
+  [switch]$BuildWeb
+)
+
+$ErrorActionPreference = 'Stop'
+$root = $PSScriptRoot
+$autoTools = Join-Path $root 'auto_tools'
+$serverDir = Join-Path $autoTools 'server'
+$webDir = Join-Path $autoTools 'web'
+$port = if ($env:PORT) { [int]$env:PORT } else { 8787 }
+$ngrokPort = if ($env:NGROK_PORT) { [int]$env:NGROK_PORT } else { $port }
+$ngrokUrl = if ($env:NGROK_URL) { $env:NGROK_URL } else { 'https://java-suburb-kettle.ngrok-free.dev' }
+$ngrokEnabled = if ($env:NGROK_ENABLED) { $env:NGROK_ENABLED -ne '0' } else { $true }
+$serverProcess = $null
+$ngrokProcess = $null
+$ownsServer = $false
+$serverOut = Join-Path $autoTools '.windows-server.log'
+$serverErr = Join-Path $autoTools '.windows-server-error.log'
+$ngrokOut = Join-Path $autoTools '.windows-ngrok.log'
+$ngrokErr = Join-Path $autoTools '.windows-ngrok-error.log'
+$scriptExitCode = 0
+
+function Stop-ProcessTree([System.Diagnostics.Process]$Process) {
+  if ($null -ne $Process) {
+    $Process.Refresh()
+    if (-not $Process.HasExited) {
+      & taskkill.exe /PID $Process.Id /T /F 2>$null | Out-Null
+    }
+  }
+}
+
+function Invoke-Npm([string]$Directory, [string[]]$NpmArgs) {
+  Push-Location $Directory
+  try {
+    & npm.cmd @NpmArgs
+    if ($LASTEXITCODE -ne 0) {
+      throw "npm $($NpmArgs -join ' ') 执行失败，退出码：$LASTEXITCODE。"
+    }
+  }
+  finally {
+    Pop-Location
+  }
+}
+
+function Test-ServerReady {
+  try {
+    Invoke-WebRequest -Uri "http://localhost:$port/api/health" -TimeoutSec 2 -UseBasicParsing | Out-Null
+    return $true
+  }
+  catch {
+    return $false
+  }
+}
+
+function Show-RecentLog([string]$Path) {
+  if (Test-Path $Path) {
+    Write-Host "--- Recent log: $Path ---" -ForegroundColor DarkGray
+    Get-Content $Path -Tail 30
+  }
+}
+
+try {
+  if (-not (Get-Command node -ErrorAction SilentlyContinue) -or -not (Get-Command npm.cmd -ErrorAction SilentlyContinue)) {
+    throw '找不到 Node.js 或 npm。请先安装 Node.js 18 或更高版本，再重新双击启动。'
+  }
+
+  $nodeVersion = (& node --version).Trim()
+  $nodeMajor = [int](($nodeVersion -replace '^v', '').Split('.')[0])
+  if ($nodeMajor -lt 18) {
+    throw "需要 Node.js 18 或更高版本，当前版本是：$nodeVersion"
+  }
+  Write-Host "Node.js 版本：$nodeVersion"
+
+  $webBuild = Join-Path $webDir 'dist/index.html'
+  if ($BuildWeb -or -not (Test-Path $webBuild)) {
+    if (-not (Test-Path (Join-Path $webDir 'node_modules'))) {
+      Write-Host '正在安装网页依赖……'
+      Invoke-Npm $webDir @('install')
+    }
+    Write-Host '正在构建网页……'
+    Invoke-Npm $webDir @('run', 'build')
+  }
+
+  if (Test-ServerReady) {
+    Write-Host "服务已经在运行：http://localhost:$port"
+  }
+  else {
+    if (-not (Test-Path (Join-Path $serverDir 'node_modules'))) {
+      Write-Host '正在安装后端依赖……'
+      Invoke-Npm $serverDir @('install')
+    }
+    if (-not (Test-Path (Join-Path $webDir 'node_modules'))) {
+      Write-Host '正在安装网页依赖……'
+      Invoke-Npm $webDir @('install')
+    }
+
+    if (-not (Test-Path (Join-Path $serverDir '.env'))) {
+      Write-Host '提示：没有找到 server/.env。部分平台功能需要在该文件中配置凭证。' -ForegroundColor Yellow
+    }
+
+    Write-Host "正在启动后台服务：http://localhost:$port ……"
+    $serverProcess = Start-Process -FilePath $env:ComSpec `
+      -ArgumentList @('/d', '/c', 'npm run dev') `
+      -WorkingDirectory $serverDir `
+      -WindowStyle Hidden `
+      -RedirectStandardOutput $serverOut `
+      -RedirectStandardError $serverErr `
+      -PassThru
+    $ownsServer = $true
+
+    Write-Host '正在等待后台服务启动……'
+    $ready = $false
+    for ($attempt = 0; $attempt -lt 60; $attempt++) {
+      if (Test-ServerReady) {
+        $ready = $true
+        break
+      }
+      $serverProcess.Refresh()
+      if ($serverProcess.HasExited) { break }
+      Start-Sleep -Milliseconds 500
+    }
+    if (-not $ready) {
+      Show-RecentLog $serverOut
+      Show-RecentLog $serverErr
+      throw '后台服务启动失败，请检查上方日志。'
+    }
+  }
+
+  if ($ngrokEnabled) {
+    $ngrokCommand = Get-Command ngrok.exe -ErrorAction SilentlyContinue
+    if (-not $ngrokCommand) { $ngrokCommand = Get-Command ngrok -ErrorAction SilentlyContinue }
+    if ($ngrokCommand) {
+      Write-Host "正在启动 ngrok：$ngrokUrl ……"
+      $ngrokProcess = Start-Process -FilePath $ngrokCommand.Source `
+        -ArgumentList @('http', "$ngrokPort", '--url', $ngrokUrl) `
+        -WindowStyle Hidden `
+        -RedirectStandardOutput $ngrokOut `
+        -RedirectStandardError $ngrokErr `
+        -PassThru
+      Start-Sleep -Seconds 2
+      $ngrokProcess.Refresh()
+      if ($ngrokProcess.HasExited) {
+        Show-RecentLog $ngrokOut
+        Show-RecentLog $ngrokErr
+        Write-Host 'ngrok 启动失败，本地工作台仍可使用。' -ForegroundColor Yellow
+        $ngrokProcess = $null
+      }
+      else {
+        Write-Host "ngrok 已启动：$ngrokUrl"
+      }
+    }
+    else {
+      Write-Host '没有找到 ngrok，已跳过公网隧道；本地工作台仍可使用。' -ForegroundColor Yellow
+    }
+  }
+  else {
+    Write-Host 'NGROK_ENABLED=0，已跳过 ngrok。'
+  }
+
+  Start-Process "http://localhost:$port"
+  Write-Host "工作台已启动：http://localhost:$port"
+  Write-Host '按 Ctrl+C 停止本次启动的服务。'
+
+  if ($ownsServer -and $null -ne $serverProcess) {
+    while ($true) {
+      $serverProcess.Refresh()
+      if ($serverProcess.HasExited) { break }
+      Start-Sleep -Seconds 1
+    }
+    Write-Host '后台服务已停止。'
+    Show-RecentLog $serverOut
+    Show-RecentLog $serverErr
+  }
+  elseif ($null -ne $ngrokProcess) {
+    $ngrokProcess.WaitForExit()
+  }
+}
+catch {
+  Write-Host "启动失败：$($_.Exception.Message)" -ForegroundColor Red
+  $scriptExitCode = 1
+}
+finally {
+  if ($ownsServer) { Stop-ProcessTree $serverProcess }
+  Stop-ProcessTree $ngrokProcess
+}
+
+exit $scriptExitCode
