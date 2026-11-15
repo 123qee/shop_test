@@ -1,0 +1,56 @@
+{
+  "manifest_version": 3,
+  "name": "ai自动化工具",
+  "version": "0.3.3",
+  "permissions": ["storage", "tabs", "scripting", "alarms"],
+  "host_permissions": [
+    "*://*.aliexpress.com/*",
+    "*://*.aliexpress.us/*",
+    "*://*.allegro.pl/*",
+    "*://*.asos.com/*",
+    "*://*.asda.com/*",
+    "*://*.joom.com/*",
+    "*://*.amazon.de/*",
+    "*://mercadolibre.cl/*",
+    "*://*.mercadolibre.cl/*",
+    "https://erp2.cnfth.com/*",
+    "*://*.wildberries.ru/*",
+    "*://*.wb.ru/*",
+    "*://*.wbbasket.ru/*",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Joom 采集助手"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["*://*.aliexpress.com/*", "*://*.aliexpress.us/*", "*://*.allegro.pl/*", "*://*.asos.com/*", "*://*.asda.com/*", "*://*.joom.com/*", "*://*.amazon.de/*", "*://mercadolibre.cl/*", "*://*.mercadolibre.cl/*", "*://*.wildberries.ru/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    },
+    {
+      "matches": ["https://erp2.cnfth.com/*"],
+      "js": ["erp.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js"],
+      "matches": ["*://*.aliexpress.com/*", "*://*.aliexpress.us/*"]
+    },
+    {
+      "resources": ["assets/physical-label.png"],
+      "matches": ["https://erp2.cnfth.com/*"]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+- generic [ref=f1e3]:
+  - complementary [ref=f1e4]:
+    - button "收起菜单栏" [expanded] [ref=f1e5] [cursor=pointer]: ‹
+    - link "我的工作台 工作与生活" [ref=f1e6] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f1e13]:
+        - strong [ref=f1e14]: 我的工作台
+        - generic [ref=f1e15]: 工作与生活
+    - navigation "主导航" [ref=f1e16]:
+      - generic [ref=f1e17]: 概览
+      - link "工作台" [ref=f1e18] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f1e26]: 个人管理
+      - link "任务" [ref=f1e27] [cursor=pointer]:
+        - /url: /tasks
+      - link "项目" [ref=f1e32] [cursor=pointer]:
+        - /url: /projects
+      - generic [ref=f1e38]: 商品
+      - link "采集母库" [ref=f1e39] [cursor=pointer]:
+        - /url: /sources
+      - link "商品浏览" [ref=f1e44] [cursor=pointer]:
+        - /url: /joom
+      - generic [ref=f1e49]: Joom 发布
+      - link "发布清单" [ref=f1e50] [cursor=pointer]:
+        - /url: /joom/publish-list
+      - link "删除清单" [ref=f1e55] [cursor=pointer]:
+        - /url: /joom/delete-list
+      - link "店铺与模板" [ref=f1e60] [cursor=pointer]:
+        - /url: /settings
+      - generic [ref=f1e66]: 其他平台
+      - link "美客多刊登" [ref=f1e67] [cursor=pointer]:
+        - /url: /mercadolibre
+      - link "美客多设置" [ref=f1e73] [cursor=pointer]:
+        - /url: /mercadolibre/settings
+    - generic [ref=f1e79]: Joom 未连接
+  - generic [ref=f1e82]:
+    - banner [ref=f1e83]:
+      - generic [ref=f1e84]:
+        - heading "工作台" [level=1] [ref=f1e85]
+        - paragraph [ref=f1e86]: 查看店铺状态和今天需要处理的任务
+      - generic [ref=f1e87]: 后端未连接
+    - main [ref=f1e89]:
+      - paragraph [ref=f1e90]: 加载看板…

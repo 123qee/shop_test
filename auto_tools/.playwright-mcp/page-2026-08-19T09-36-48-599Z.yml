@@ -1,0 +1,1451 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - link "AliExpress logo" [ref=e6] [cursor=pointer]:
+        - /url: https://www.aliexpress.com
+        - text: AliExpress
+      - button "All Categories" [ref=e9]:
+        - img "All Categories" [ref=e10]
+    - generic [ref=e12]:
+      - generic [ref=e14]:
+        - searchbox "You can type an item name or keyword to search." [ref=e15]: men t shirt
+        - generic [ref=e19] [cursor=pointer]
+        - button "You can click this button to search." [ref=e21] [cursor=pointer]
+      - generic [ref=e22]:
+        - button "You can scan the QR code to download the AliExpress app." [ref=e23] [cursor=pointer]
+        - button "You can select a country, region or language for shopping on AliExpress us. The current language is English." [ref=e33] [cursor=pointer]
+        - button "You can register, sign in or view more information about your account." [ref=e38] [cursor=pointer]
+        - link "3 items in cart." [ref=e46] [cursor=pointer]:
+          - /url: //www.aliexpress.com/p/shoppingcart/index.html
+          - generic: ...
+  - generic [ref=e51]:
+    - generic [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e55]:
+          - generic [ref=e56] [cursor=pointer]: Deals & discounts
+          - generic [ref=e62]:
+            - generic "filterCode:bigsale" [ref=e63] [cursor=pointer]:
+              - checkbox "Sale" [ref=e64]
+              - generic [ref=e65]: Sale
+            - generic "filterCode:freeshipping" [ref=e66] [cursor=pointer]:
+              - checkbox "Free shipping" [ref=e67]
+              - generic [ref=e68]: Free shipping
+        - generic [ref=e69]:
+          - generic [ref=e70] [cursor=pointer]: Delivery & service
+          - generic [ref=e76]:
+            - generic "filterCode:shipfrom" [ref=e77] [cursor=pointer]:
+              - checkbox "Local+ Local+" [ref=e78]
+              - generic [ref=e80]:
+                - img "Local+" [ref=e81]
+                - generic [ref=e82]: Local+
+            - generic "filterCode:choice_atm" [ref=e83] [cursor=pointer]:
+              - checkbox "Choice" [ref=e84]
+              - generic [ref=e85]: Choice
+        - generic [ref=e86]:
+          - generic [ref=e87] [cursor=pointer]: Quality & trust
+          - generic "filterCode:4StarRating" [ref=e94] [cursor=pointer]:
+            - checkbox "& up & up" [ref=e95]
+            - generic [ref=e97]:
+              - img "& up" [ref=e98]
+              - generic [ref=e99]: "& up"
+        - generic [ref=e100]:
+          - generic [ref=e101] [cursor=pointer]: Style
+          - generic [ref=e107]:
+            - generic "-1" [ref=e108] [cursor=pointer]:
+              - radio "All All All All All All All All All All All All All All All All All All All All All" [checked] [ref=e109]
+              - generic [ref=e110]: All
+            - generic "2953-4146033" [ref=e111] [cursor=pointer]:
+              - radio "Casual" [ref=e112]
+              - generic [ref=e113]: Casual
+            - generic "2953-4151388" [ref=e114] [cursor=pointer]:
+              - radio "Sporty" [ref=e115]
+              - generic [ref=e116]: Sporty
+            - generic "2953-4146059" [ref=e117] [cursor=pointer]:
+              - radio "Street" [ref=e118]
+              - generic [ref=e119]: Street
+            - generic "2953-4146038" [ref=e120] [cursor=pointer]:
+              - radio "Outdoor" [ref=e121]
+              - generic [ref=e122]: Outdoor
+            - generic "2953-4144699" [ref=e123] [cursor=pointer]:
+              - radio "Basic" [ref=e124]
+              - generic [ref=e125]: Basic
+            - generic "2953-4144702" [ref=e126] [cursor=pointer]:
+              - radio "Cozy" [ref=e127]
+              - generic [ref=e128]: Cozy
+            - generic "2953-4205482" [ref=e129] [cursor=pointer]:
+              - radio "3D Style" [ref=e130]
+              - generic [ref=e131]: 3D Style
+            - generic "2953-4182969" [ref=e132] [cursor=pointer]:
+              - radio "American Style" [ref=e133]
+              - generic [ref=e134]: American Style
+            - generic "2953-4197959" [ref=e135] [cursor=pointer]:
+              - radio "Smart Casual" [ref=e136]
+              - generic [ref=e137]: Smart Casual
+            - generic "2953-4192382" [ref=e138] [cursor=pointer]:
+              - radio "Novelty" [ref=e139]
+              - generic [ref=e140]: Novelty
+            - generic "2953-4200388" [ref=e141] [cursor=pointer]:
+              - radio "Trendy" [ref=e142]
+              - generic [ref=e143]: Trendy
+            - generic "2953-4144701" [ref=e144] [cursor=pointer]:
+              - radio "Commute" [ref=e145]
+              - generic [ref=e146]: Commute
+            - generic "2953-4144705" [ref=e147] [cursor=pointer]:
+              - radio "Vacation" [ref=e148]
+              - generic [ref=e149]: Vacation
+            - generic "2953-4182987" [ref=e150] [cursor=pointer]:
+              - radio "Punk Style" [ref=e151]
+              - generic [ref=e152]: Punk Style
+            - generic "2953-4182978" [ref=e153] [cursor=pointer]:
+              - radio "Japan Style" [ref=e154]
+              - generic [ref=e155]: Japan Style
+            - generic "2953-4197080" [ref=e156] [cursor=pointer]:
+              - radio "Youthful Vitality" [ref=e157]
+              - generic [ref=e158]: Youthful Vitality
+            - generic "2953-4182984" [ref=e159] [cursor=pointer]:
+              - radio "Moto & Biker" [ref=e160]
+              - generic [ref=e161]: Moto & Biker
+            - generic "2953-4205487" [ref=e162] [cursor=pointer]:
+              - radio "Chic" [ref=e163]
+              - generic [ref=e164]: Chic
+        - generic [ref=e165]:
+          - generic [ref=e166] [cursor=pointer]: Standard Size
+          - generic [ref=e172]:
+            - generic "-1" [ref=e173] [cursor=pointer]:
+              - radio [checked] [ref=e174]
+              - generic [ref=e175]: All
+            - generic "11186-4202082" [ref=e176] [cursor=pointer]:
+              - radio "XL" [ref=e177]
+              - generic [ref=e178]: XL
+            - generic "11186-4202079" [ref=e179] [cursor=pointer]:
+              - radio "L" [ref=e180]
+              - generic [ref=e181]: L
+            - generic "11186-4202081" [ref=e182] [cursor=pointer]:
+              - radio "S" [ref=e183]
+              - generic [ref=e184]: S
+            - generic "11186-4202084" [ref=e185] [cursor=pointer]:
+              - radio "XXL" [ref=e186]
+              - generic [ref=e187]: XXL
+            - generic "11186-4202080" [ref=e188] [cursor=pointer]:
+              - radio "M" [ref=e189]
+              - generic [ref=e190]: M
+            - generic "11186-4202086" [ref=e191] [cursor=pointer]:
+              - radio "XXXL" [ref=e192]
+              - generic [ref=e193]: XXXL
+            - generic "11186-4202064" [ref=e194] [cursor=pointer]:
+              - radio "4XL" [ref=e195]
+              - generic [ref=e196]: 4XL
+            - generic "11186-4202074" [ref=e197] [cursor=pointer]:
+              - radio "5XL" [ref=e198]
+              - generic [ref=e199]: 5XL
+            - generic "11186-4202083" [ref=e200] [cursor=pointer]:
+              - radio "XS" [ref=e201]
+              - generic [ref=e202]: XS
+            - generic "11186-4202075" [ref=e203] [cursor=pointer]:
+              - radio "6XL" [ref=e204]
+              - generic [ref=e205]: 6XL
+            - generic "11186-4202085" [ref=e206] [cursor=pointer]:
+              - radio "XXS" [ref=e207]
+              - generic [ref=e208]: XXS
+            - generic "11186-4202076" [ref=e209] [cursor=pointer]:
+              - radio "7XL" [ref=e210]
+              - generic [ref=e211]: 7XL
+        - generic [ref=e212]:
+          - generic [ref=e213] [cursor=pointer]: Event
+          - generic [ref=e219]:
+            - generic "-1" [ref=e220] [cursor=pointer]:
+              - radio [checked] [ref=e221]
+              - generic [ref=e222]: All
+            - generic "11349-4206458" [ref=e223] [cursor=pointer]:
+              - radio "Film" [ref=e224]
+              - generic [ref=e225]: Film
+            - generic "11349-4206477" [ref=e226] [cursor=pointer]:
+              - radio "Training" [ref=e227]
+              - generic [ref=e228]: Training
+            - generic "11349-4206450" [ref=e229] [cursor=pointer]:
+              - radio "Bodybuilding" [ref=e230]
+              - generic [ref=e231]: Bodybuilding
+            - generic "11349-4398197" [ref=e232] [cursor=pointer]:
+              - radio "Fitness" [ref=e233]
+              - generic [ref=e234]: Fitness
+            - generic "11349-4401068" [ref=e235] [cursor=pointer]:
+              - radio "Workout" [ref=e236]
+              - generic [ref=e237]: Workout
+            - generic "11349-4206464" [ref=e238] [cursor=pointer]:
+              - radio "Jogging" [ref=e239]
+              - generic [ref=e240]: Jogging
+            - generic "11349-4206457" [ref=e241] [cursor=pointer]:
+              - radio "Exercise" [ref=e242]
+              - generic [ref=e243]: Exercise
+            - generic "11349-4401243" [ref=e244] [cursor=pointer]:
+              - radio "Concert" [ref=e245]
+              - generic [ref=e246]: Concert
+            - generic "11349-4401314" [ref=e247] [cursor=pointer]:
+              - radio "Music Festival" [ref=e248]
+              - generic [ref=e249]: Music Festival
+            - generic "11349-4206470" [ref=e250] [cursor=pointer]:
+              - radio "Running" [ref=e251]
+              - generic [ref=e252]: Running
+            - generic "11349-4206460" [ref=e253] [cursor=pointer]:
+              - radio "Football" [ref=e254]
+              - generic [ref=e255]: Football
+            - generic "11349-4206461" [ref=e256] [cursor=pointer]:
+              - radio "Game" [ref=e257]
+              - generic [ref=e258]: Game
+            - generic "11349-4401224" [ref=e259] [cursor=pointer]:
+              - radio "Basketball" [ref=e260]
+              - generic [ref=e261]: Basketball
+            - generic "11349-4206445" [ref=e262] [cursor=pointer]:
+              - radio "Badminton" [ref=e263]
+              - generic [ref=e264]: Badminton
+            - generic "11349-4401228" [ref=e265] [cursor=pointer]:
+              - radio "Boxing" [ref=e266]
+              - generic [ref=e267]: Boxing
+            - generic "11349-4206463" [ref=e268] [cursor=pointer]:
+              - radio "Hiking" [ref=e269]
+              - generic [ref=e270]: Hiking
+            - generic "11349-4206478" [ref=e271] [cursor=pointer]:
+              - radio "Water Sports" [ref=e272]
+              - generic [ref=e273]: Water Sports
+            - generic "11349-4401359" [ref=e274] [cursor=pointer]:
+              - radio "Tennis" [ref=e275]
+              - generic [ref=e276]: Tennis
+            - generic "11349-4401240" [ref=e277] [cursor=pointer]:
+              - radio "Climbing" [ref=e278]
+              - generic [ref=e279]: Climbing
+            - generic "11349-4401367" [ref=e280] [cursor=pointer]:
+              - radio "Volleyball" [ref=e281]
+              - generic [ref=e282]: Volleyball
+            - generic "11349-4206474" [ref=e283] [cursor=pointer]:
+              - radio "Soccer" [ref=e284]
+              - generic [ref=e285]: Soccer
+            - generic "11349-4206459" [ref=e286] [cursor=pointer]:
+              - radio "Fishing" [ref=e287]
+              - generic [ref=e288]: Fishing
+            - generic "11349-4401363" [ref=e289] [cursor=pointer]:
+              - radio "Travel" [ref=e290]
+              - generic [ref=e291]: Travel
+        - generic [ref=e292]:
+          - generic [ref=e293] [cursor=pointer]: Pattern Type
+          - generic [ref=e299]:
+            - generic "-1" [ref=e300] [cursor=pointer]:
+              - radio [checked] [ref=e301]
+              - generic [ref=e302]: All
+            - generic "10195-4191339" [ref=e303] [cursor=pointer]:
+              - radio "Print" [ref=e304]
+              - generic [ref=e305]: Print
+            - generic "10195-4191332" [ref=e306] [cursor=pointer]:
+              - radio "Letter" [ref=e307]
+              - generic [ref=e308]: Letter
+            - generic "10195-4182825" [ref=e309] [cursor=pointer]:
+              - radio "Solid" [ref=e310]
+              - generic [ref=e311]: Solid
+            - generic "10195-4191342" [ref=e312] [cursor=pointer]:
+              - radio "Striped" [ref=e313]
+              - generic [ref=e314]: Striped
+            - generic "10195-4191318" [ref=e315] [cursor=pointer]:
+              - radio "Cartoon" [ref=e316]
+              - generic [ref=e317]: Cartoon
+            - generic "10195-4191319" [ref=e318] [cursor=pointer]:
+              - radio "Character" [ref=e319]
+              - generic [ref=e320]: Character
+            - generic "10195-4200064" [ref=e321] [cursor=pointer]:
+              - radio "3D" [ref=e322]
+              - generic [ref=e323]: 3D
+            - generic "10195-4191327" [ref=e324] [cursor=pointer]:
+              - radio "Geometric" [ref=e325]
+              - generic [ref=e326]: Geometric
+            - generic "10195-4191315" [ref=e327] [cursor=pointer]:
+              - radio "Animal" [ref=e328]
+              - generic [ref=e329]: Animal
+            - generic "10195-4205119" [ref=e330] [cursor=pointer]:
+              - radio "Heart-Shaped" [ref=e331]
+              - generic [ref=e332]: Heart-Shaped
+            - generic "10195-4191324" [ref=e333] [cursor=pointer]:
+              - radio "Floral" [ref=e334]
+              - generic [ref=e335]: Floral
+            - generic "10195-4191325" [ref=e336] [cursor=pointer]:
+              - radio "Flower" [ref=e337]
+              - generic [ref=e338]: Flower
+            - generic "10195-4191321" [ref=e339] [cursor=pointer]:
+              - radio "Digital" [ref=e340]
+              - generic [ref=e341]: Digital
+            - generic "10195-4205106" [ref=e342] [cursor=pointer]:
+              - radio "Digital Printing" [ref=e343]
+              - generic [ref=e344]: Digital Printing
+            - generic "10195-4205078" [ref=e345] [cursor=pointer]:
+              - radio "Abstract Pattern" [ref=e346]
+              - generic [ref=e347]: Abstract Pattern
+            - generic "10195-4191335" [ref=e348] [cursor=pointer]:
+              - radio "Patchwork" [ref=e349]
+              - generic [ref=e350]: Patchwork
+            - generic "10195-4200096" [ref=e351] [cursor=pointer]:
+              - radio "Star" [ref=e352]
+              - generic [ref=e353]: Star
+        - generic [ref=e354]:
+          - generic [ref=e355] [cursor=pointer]: Pattern
+          - generic [ref=e361]:
+            - generic "-1" [ref=e362] [cursor=pointer]:
+              - radio [checked] [ref=e363]
+              - generic [ref=e364]: All
+            - generic "2955-4144687" [ref=e365] [cursor=pointer]:
+              - radio "Heart" [ref=e366]
+              - generic [ref=e367]: Heart
+            - generic "2955-4145949" [ref=e368] [cursor=pointer]:
+              - radio "Plants" [ref=e369]
+              - generic [ref=e370]: Plants
+            - generic "2955-4145964" [ref=e371] [cursor=pointer]:
+              - radio "Skull" [ref=e372]
+              - generic [ref=e373]: Skull
+            - generic "2955-4144680" [ref=e374] [cursor=pointer]:
+              - radio "All over print" [ref=e375]
+              - generic [ref=e376]: All over print
+            - generic "2955-4145959" [ref=e377] [cursor=pointer]:
+              - radio "Anime" [ref=e378]
+              - generic [ref=e379]: Anime
+        - generic [ref=e380]:
+          - generic [ref=e381] [cursor=pointer]: Color
+          - generic [ref=e387]:
+            - generic "-1" [ref=e388] [cursor=pointer]:
+              - radio [checked] [ref=e389]
+              - generic [ref=e390]: All
+            - generic "3079-4148335" [ref=e391] [cursor=pointer]:
+              - radio "Black Black" [ref=e392]
+              - generic [ref=e394]:
+                - img "Black" [ref=e395]
+                - generic [ref=e396]: Black
+            - generic "3079-4148344" [ref=e397] [cursor=pointer]:
+              - radio "Yellow Yellow" [ref=e398]
+              - generic [ref=e400]:
+                - img "Yellow" [ref=e401]
+                - generic [ref=e402]: Yellow
+            - generic "3079-4148343" [ref=e403] [cursor=pointer]:
+              - radio "White White" [ref=e404]
+              - generic [ref=e406]:
+                - img "White" [ref=e407]
+                - generic [ref=e408]: White
+            - generic "3079-4148338" [ref=e409] [cursor=pointer]:
+              - radio "Grey Grey" [ref=e410]
+              - generic [ref=e412]:
+                - img "Grey" [ref=e413]
+                - generic [ref=e414]: Grey
+            - generic "3079-4148342" [ref=e415] [cursor=pointer]:
+              - radio "Red Red" [ref=e416]
+              - generic [ref=e418]:
+                - img "Red" [ref=e419]
+                - generic [ref=e420]: Red
+            - generic "3079-4148337" [ref=e421] [cursor=pointer]:
+              - radio "Green Green" [ref=e422]
+              - generic [ref=e424]:
+                - img "Green" [ref=e425]
+                - generic [ref=e426]: Green
+            - generic "3079-4148339" [ref=e427] [cursor=pointer]:
+              - radio "Orange Orange" [ref=e428]
+              - generic [ref=e430]:
+                - img "Orange" [ref=e431]
+                - generic [ref=e432]: Orange
+            - generic "3079-4148340" [ref=e433] [cursor=pointer]:
+              - radio "Pink Pink" [ref=e434]
+              - generic [ref=e436]:
+                - img "Pink" [ref=e437]
+                - generic [ref=e438]: Pink
+        - generic [ref=e439]:
+          - generic [ref=e440] [cursor=pointer]: IP
+          - generic [ref=e446]:
+            - generic "-1" [ref=e447] [cursor=pointer]:
+              - radio [checked] [ref=e448]
+              - generic [ref=e449]: All
+            - generic "10040-4197585" [ref=e450] [cursor=pointer]:
+              - radio "NBA" [ref=e451]
+              - generic [ref=e452]: NBA
+            - generic "10040-4183061" [ref=e453] [cursor=pointer]:
+              - radio "Disney" [ref=e454]
+              - generic [ref=e455]: Disney
+            - generic "10040-4197576" [ref=e456] [cursor=pointer]:
+              - radio "Jesus" [ref=e457]
+              - generic [ref=e458]: Jesus
+            - generic "10040-4197605" [ref=e459] [cursor=pointer]:
+              - radio "UFC" [ref=e460]
+              - generic [ref=e461]: UFC
+            - generic "10040-4212876" [ref=e462] [cursor=pointer]:
+              - radio "Pink Floyd" [ref=e463]
+              - generic [ref=e464]: Pink Floyd
+            - generic "10040-4197604" [ref=e465] [cursor=pointer]:
+              - radio "Travis Scott" [ref=e466]
+              - generic [ref=e467]: Travis Scott
+            - generic "10040-4374952" [ref=e468] [cursor=pointer]:
+              - radio "Kobe" [ref=e469]
+              - generic [ref=e470]: Kobe
+            - generic "10040-4375551" [ref=e471] [cursor=pointer]:
+              - radio "Playboi Carti" [ref=e472]
+              - generic [ref=e473]: Playboi Carti
+            - generic "10040-4375955" [ref=e474] [cursor=pointer]:
+              - radio "Statue of Liberty" [ref=e475]
+              - generic [ref=e476]: Statue of Liberty
+            - generic "10040-4208687" [ref=e477] [cursor=pointer]:
+              - radio "Michael Jackson" [ref=e478]
+              - generic [ref=e479]: Michael Jackson
+            - generic "10040-4374313" [ref=e480] [cursor=pointer]:
+              - radio "Drake" [ref=e481]
+              - generic [ref=e482]: Drake
+            - generic "10040-4376190" [ref=e483] [cursor=pointer]:
+              - radio "Tungtung" [ref=e484]
+              - generic [ref=e485]: Tungtung
+            - generic "10040-4397774" [ref=e486] [cursor=pointer]:
+              - radio "Clown" [ref=e487]
+              - generic [ref=e488]: Clown
+            - generic "10040-4397837" [ref=e489] [cursor=pointer]:
+              - radio "DC Universe" [ref=e490]
+              - generic [ref=e491]: DC Universe
+            - generic "10040-4197161" [ref=e492] [cursor=pointer]:
+              - radio "Marvel Legends" [ref=e493]
+              - generic [ref=e494]: Marvel Legends
+            - generic "10040-4197572" [ref=e495] [cursor=pointer]:
+              - radio "Ghost" [ref=e496]
+              - generic [ref=e497]: Ghost
+            - generic "10040-4208566" [ref=e498] [cursor=pointer]:
+              - radio "AC Milan" [ref=e499]
+              - generic [ref=e500]: AC Milan
+            - generic "10040-4208663" [ref=e501] [cursor=pointer]:
+              - radio "Kobe Bryant" [ref=e502]
+              - generic [ref=e503]: Kobe Bryant
+            - generic "10040-4208678" [ref=e504] [cursor=pointer]:
+              - radio "Makima" [ref=e505]
+              - generic [ref=e506]: Makima
+            - generic "10040-4208754" [ref=e507] [cursor=pointer]:
+              - radio "Teddy Bear Collection" [ref=e508]
+              - generic [ref=e509]: Teddy Bear Collection
+            - generic "10040-4374075" [ref=e510] [cursor=pointer]:
+              - radio "Chainsaw Man" [ref=e511]
+              - generic [ref=e512]: Chainsaw Man
+            - generic "10040-4376031" [ref=e513] [cursor=pointer]:
+              - radio "Tapout" [ref=e514]
+              - generic [ref=e515]: Tapout
+            - generic "10040-4399353" [ref=e516] [cursor=pointer]:
+              - radio "Metal Band" [ref=e517]
+              - generic [ref=e518]: Metal Band
+            - generic "10040-4400383" [ref=e519] [cursor=pointer]:
+              - radio "Siouxsie and the Banshees" [ref=e520]
+              - generic [ref=e521]: Siouxsie and the Banshees
+        - generic [ref=e522]:
+          - generic [ref=e523] [cursor=pointer]: Special Features
+          - generic [ref=e529]:
+            - generic "-1" [ref=e530] [cursor=pointer]:
+              - radio [checked] [ref=e531]
+              - generic [ref=e532]: All
+            - generic "10504-4192288" [ref=e533] [cursor=pointer]:
+              - radio "Breathable" [ref=e534]
+              - generic [ref=e535]: Breathable
+            - generic "10504-4192291" [ref=e536] [cursor=pointer]:
+              - radio "Lightweight" [ref=e537]
+              - generic [ref=e538]: Lightweight
+            - generic "10504-4192292" [ref=e539] [cursor=pointer]:
+              - radio "Moisture Wicking" [ref=e540]
+              - generic [ref=e541]: Moisture Wicking
+            - generic "10504-4192294" [ref=e542] [cursor=pointer]:
+              - radio "Quick Dry" [ref=e543]
+              - generic [ref=e544]: Quick Dry
+            - generic "10504-4192300" [ref=e545] [cursor=pointer]:
+              - radio "Sustainable" [ref=e546]
+              - generic [ref=e547]: Sustainable
+            - generic "10504-4192297" [ref=e548] [cursor=pointer]:
+              - radio "Stretchable" [ref=e549]
+              - generic [ref=e550]: Stretchable
+            - generic "10504-4192301" [ref=e551] [cursor=pointer]:
+              - radio "Wrinkle Free" [ref=e552]
+              - generic [ref=e553]: Wrinkle Free
+            - generic "10504-4192298" [ref=e554] [cursor=pointer]:
+              - radio "Sun Protection" [ref=e555]
+              - generic [ref=e556]: Sun Protection
+            - generic "10504-4192287" [ref=e557] [cursor=pointer]:
+              - radio "Adjustable" [ref=e558]
+              - generic [ref=e559]: Adjustable
+        - generic [ref=e560]:
+          - generic [ref=e561] [cursor=pointer]: Fabric Type
+          - generic [ref=e567]:
+            - generic "-1" [ref=e568] [cursor=pointer]:
+              - radio [checked] [ref=e569]
+              - generic [ref=e570]: All
+            - generic "10172-4358848" [ref=e571] [cursor=pointer]:
+              - radio "Broadcloth" [ref=e572]
+              - generic [ref=e573]: Broadcloth
+            - generic "10172-4359022" [ref=e574] [cursor=pointer]:
+              - radio "Knitted" [ref=e575]
+              - generic [ref=e576]: Knitted
+            - generic "10172-4359163" [ref=e577] [cursor=pointer]:
+              - radio "Polyester" [ref=e578]
+              - generic [ref=e579]: Polyester
+            - generic "10172-4359306" [ref=e580] [cursor=pointer]:
+              - radio "Woven" [ref=e581]
+              - generic [ref=e582]: Woven
+            - generic "10172-4359000" [ref=e583] [cursor=pointer]:
+              - radio "Jersey" [ref=e584]
+              - generic [ref=e585]: Jersey
+            - generic "10172-4359297" [ref=e586] [cursor=pointer]:
+              - radio "Waffle" [ref=e587]
+              - generic [ref=e588]: Waffle
+            - generic "10172-4359305" [ref=e589] [cursor=pointer]:
+              - radio "Worsted" [ref=e590]
+              - generic [ref=e591]: Worsted
+            - generic "10172-4358901" [ref=e592] [cursor=pointer]:
+              - radio "Denim" [ref=e593]
+              - generic [ref=e594]: Denim
+            - generic "10172-4359219" [ref=e595] [cursor=pointer]:
+              - radio "Silk" [ref=e596]
+              - generic [ref=e597]: Silk
+        - generic [ref=e598]:
+          - generic [ref=e599] [cursor=pointer]: Collar
+          - generic [ref=e605]:
+            - generic "-1" [ref=e606] [cursor=pointer]:
+              - radio [checked] [ref=e607]
+              - generic [ref=e608]: All
+            - generic "10205-4188280" [ref=e609] [cursor=pointer]:
+              - radio "O-Neck" [ref=e610]
+              - generic [ref=e611]: O-Neck
+            - generic "10205-4188274" [ref=e612] [cursor=pointer]:
+              - radio "Crew Neck" [ref=e613]
+              - generic [ref=e614]: Crew Neck
+            - generic "10205-4188294" [ref=e615] [cursor=pointer]:
+              - radio "V-Neck" [ref=e616]
+              - generic [ref=e617]: V-Neck
+            - generic "10205-4361720" [ref=e618] [cursor=pointer]:
+              - radio "Jewel Neck" [ref=e619]
+              - generic [ref=e620]: Jewel Neck
+            - generic "10205-4188292" [ref=e621] [cursor=pointer]:
+              - radio "Turn-Down Collar" [ref=e622]
+              - generic [ref=e623]: Turn-Down Collar
+            - generic "10205-4204028" [ref=e624] [cursor=pointer]:
+              - radio "Hooded Neck" [ref=e625]
+              - generic [ref=e626]: Hooded Neck
+            - generic "10205-4188290" [ref=e627] [cursor=pointer]:
+              - radio "Stand" [ref=e628]
+              - generic [ref=e629]: Stand
+            - generic "10205-4204026" [ref=e630] [cursor=pointer]:
+              - radio "Henry Collar" [ref=e631]
+              - generic [ref=e632]: Henry Collar
+        - generic [ref=e633]:
+          - generic [ref=e634] [cursor=pointer]: Material
+          - generic [ref=e640]:
+            - generic "-1" [ref=e641] [cursor=pointer]:
+              - radio [checked] [ref=e642]
+              - generic [ref=e643]: All
+            - generic "3117-4169377" [ref=e644] [cursor=pointer]:
+              - radio "Acetate" [ref=e645]
+              - generic [ref=e646]: Acetate
+            - generic "3117-4169453" [ref=e647] [cursor=pointer]:
+              - radio "Organic Cotton" [ref=e648]
+              - generic [ref=e649]: Organic Cotton
+            - generic "3117-4190516" [ref=e650] [cursor=pointer]:
+              - radio "Polyamide" [ref=e651]
+              - generic [ref=e652]: Polyamide
+        - generic [ref=e653]:
+          - generic [ref=e654] [cursor=pointer]: Origin
+          - generic [ref=e660]:
+            - generic "-1" [ref=e661] [cursor=pointer]:
+              - radio [checked] [ref=e662]
+              - generic [ref=e663]: All
+            - generic "3127-4191079" [ref=e664] [cursor=pointer]:
+              - radio "Mainland China" [ref=e665]
+              - generic [ref=e666]: Mainland China
+            - generic "3127-4191110" [ref=e667] [cursor=pointer]:
+              - radio "US (Origin)" [ref=e668]
+              - generic [ref=e669]: US (Origin)
+            - generic "3127-4191025" [ref=e670] [cursor=pointer]:
+              - radio "DE (Origin)" [ref=e671]
+              - generic [ref=e672]: DE (Origin)
+        - generic [ref=e673]:
+          - generic [ref=e674] [cursor=pointer]: Gender
+          - generic [ref=e680]:
+            - generic "-1" [ref=e681] [cursor=pointer]:
+              - radio [checked] [ref=e682]
+              - generic [ref=e683]: All
+            - generic "3105-4164579" [ref=e684] [cursor=pointer]:
+              - radio "Men" [ref=e685]
+              - generic [ref=e686]: Men
+            - generic "3105-4164578" [ref=e687] [cursor=pointer]:
+              - radio "Unisex" [ref=e688]
+              - generic [ref=e689]: Unisex
+            - generic "3105-4164582" [ref=e690] [cursor=pointer]:
+              - radio "Women" [ref=e691]
+              - generic [ref=e692]: Women
+            - generic "3105-4164577" [ref=e693] [cursor=pointer]:
+              - radio "Boys" [ref=e694]
+              - generic [ref=e695]: Boys
+        - generic [ref=e696]:
+          - generic [ref=e697] [cursor=pointer]: Fit type
+          - generic [ref=e703]:
+            - generic "-1" [ref=e704] [cursor=pointer]:
+              - radio [checked] [ref=e705]
+              - generic [ref=e706]: All
+            - generic "10041-4162704" [ref=e707] [cursor=pointer]:
+              - radio "Regular" [ref=e708]
+              - generic [ref=e709]: Regular
+            - generic "10041-4162705" [ref=e710] [cursor=pointer]:
+              - radio "Loose" [ref=e711]
+              - generic [ref=e712]: Loose
+            - generic "10041-4162703" [ref=e713] [cursor=pointer]:
+              - radio "Slim" [ref=e714]
+              - generic [ref=e715]: Slim
+        - generic [ref=e716]:
+          - generic [ref=e717] [cursor=pointer]: Season
+          - generic [ref=e723]:
+            - generic "-1" [ref=e724] [cursor=pointer]:
+              - radio [checked] [ref=e725]
+              - generic [ref=e726]: All
+            - generic "2949-4144694" [ref=e727] [cursor=pointer]:
+              - radio "Summer" [ref=e728]
+              - generic [ref=e729]: Summer
+            - generic "2949-4144713" [ref=e730] [cursor=pointer]:
+              - radio "Spring" [ref=e731]
+              - generic [ref=e732]: Spring
+            - generic "2949-4144714" [ref=e733] [cursor=pointer]:
+              - radio "Autumn" [ref=e734]
+              - generic [ref=e735]: Autumn
+        - generic [ref=e736]:
+          - generic [ref=e737] [cursor=pointer]: Category
+          - generic [ref=e743]:
+            - generic "-1" [ref=e744] [cursor=pointer]:
+              - radio [checked] [ref=e745]
+              - generic [ref=e746]: All
+            - generic "200000783" [ref=e747] [cursor=pointer]:
+              - radio "Men's T-Shirts" [ref=e748]
+              - generic [ref=e749]: Men's T-Shirts
+            - generic "200003529" [ref=e750] [cursor=pointer]:
+              - radio "Men's Polo Shirts" [ref=e751]
+              - generic [ref=e752]: Men's Polo Shirts
+            - generic "201531301" [ref=e753] [cursor=pointer]:
+              - radio "Tailor-made T-Shirts" [ref=e754]
+              - generic [ref=e755]: Tailor-made T-Shirts
+        - generic [ref=e756]:
+          - generic [ref=e757] [cursor=pointer]: Product Care Instructions
+          - generic [ref=e763]:
+            - generic "-1" [ref=e764] [cursor=pointer]:
+              - radio [checked] [ref=e765]
+              - generic [ref=e766]: All
+            - generic "10854-4191752" [ref=e767] [cursor=pointer]:
+              - radio "Machine Wash" [ref=e768]
+              - generic [ref=e769]: Machine Wash
+            - generic "10854-4191751" [ref=e770] [cursor=pointer]:
+              - radio "Hand Wash Only" [ref=e771]
+              - generic [ref=e772]: Hand Wash Only
+            - generic "10854-4191749" [ref=e773] [cursor=pointer]:
+              - radio "Dry Clean Only" [ref=e774]
+              - generic [ref=e775]: Dry Clean Only
+        - generic [ref=e776]:
+          - generic [ref=e777] [cursor=pointer]: Closure Type
+          - generic [ref=e783]:
+            - generic "-1" [ref=e784] [cursor=pointer]:
+              - radio [checked] [ref=e785]
+              - generic [ref=e786]: All
+            - generic "3091-4188253" [ref=e787] [cursor=pointer]:
+              - radio "Pull On" [ref=e788]
+              - generic [ref=e789]: Pull On
+            - generic "3091-4188238" [ref=e790] [cursor=pointer]:
+              - radio "Button" [ref=e791]
+              - generic [ref=e792]: Button
+        - generic [ref=e793]:
+          - generic [ref=e794] [cursor=pointer]: Neckline
+          - generic [ref=e800]:
+            - generic "-1" [ref=e801] [cursor=pointer]:
+              - radio [checked] [ref=e802]
+              - generic [ref=e803]: All
+            - generic "10213-4202601" [ref=e804] [cursor=pointer]:
+              - radio "Crew neck" [ref=e805]
+              - generic [ref=e806]: Crew neck
+            - generic "10213-4202606" [ref=e807] [cursor=pointer]:
+              - radio "Stand collar" [ref=e808]
+              - generic [ref=e809]: Stand collar
+            - generic "10213-4202605" [ref=e810] [cursor=pointer]:
+              - radio "Polo collar" [ref=e811]
+              - generic [ref=e812]: Polo collar
+        - generic [ref=e813]:
+          - generic [ref=e814] [cursor=pointer]: Brand
+          - generic [ref=e820]:
+            - generic "-1" [ref=e821] [cursor=pointer]:
+              - radio [checked] [ref=e822]
+              - generic [ref=e823]: All
+            - generic "2250-4200898" [ref=e824] [cursor=pointer]:
+              - radio "ANIMAL GAME ANIMAL GAME" [ref=e825]
+              - generic [ref=e827]:
+                - img "ANIMAL GAME" [ref=e828]
+                - generic [ref=e829]: ANIMAL GAME
+            - generic "2250-4200953" [ref=e830] [cursor=pointer]:
+              - radio "Audi Audi" [ref=e831]
+              - generic [ref=e833]:
+                - img "Audi" [ref=e834]
+                - generic [ref=e835]: Audi
+        - generic [ref=e836]:
+          - generic [ref=e837] [cursor=pointer]: Shipping from
+          - generic [ref=e843]:
+            - generic "-1" [ref=e844] [cursor=pointer]:
+              - radio [checked] [ref=e845]
+              - generic [ref=e846]: All
+            - generic "US" [ref=e847] [cursor=pointer]:
+              - radio "United States" [ref=e848]
+              - generic [ref=e849]: United States
+        - generic [ref=e853]:
+          - generic [ref=e854] [cursor=pointer]: Price
+          - generic [ref=e860]:
+            - generic [ref=e861]:
+              - generic [ref=e863]:
+                - generic [ref=e864]: US $
+                - textbox "Min." [ref=e866]
+              - generic [ref=e867]: "-"
+              - generic [ref=e869]:
+                - generic [ref=e870]: US $
+                - textbox "Max." [ref=e872]
+              - generic [ref=e873] [cursor=pointer]: OK
+            - generic [ref=e874]:
+              - generic "0-3" [ref=e875] [cursor=pointer]:
+                - radio "Under-3" [ref=e876]
+                - generic [ref=e877]: Under-3
+              - generic "3-6" [ref=e878] [cursor=pointer]:
+                - radio "3-6" [ref=e879]
+              - generic "6-10" [ref=e881] [cursor=pointer]:
+                - radio "6-10" [ref=e882]
+              - generic "10-16" [ref=e884] [cursor=pointer]:
+                - radio "10-16" [ref=e885]
+              - generic "16" [ref=e887] [cursor=pointer]:
+                - radio "16-Over" [ref=e888]
+                - generic [ref=e889]: 16-Over
+      - generic [ref=e890]:
+        - generic [ref=e895]:
+          - generic [ref=e896]: "Sort by:"
+          - generic [ref=e897]:
+            - generic [ref=e898] [cursor=pointer]: Best Match
+            - generic [ref=e900] [cursor=pointer]: Orders
+            - generic [ref=e902] [cursor=pointer]: Price
+        - generic [ref=e911]:
+          - generic [ref=e915]:
+            - text: "Ends :"
+            - generic [ref=e916]: Aug 27, 11:59 (GMT+8)
+          - generic [ref=e917]:
+            - 'link "Report fraud item New 2026 MJ Michael Jackson Pattern Print Men''s Clothing Women T-shirt in 21st-century Style Trendy Hip-hop Fashion.summer $0.99 10 sold New shoppers save $16.57 Delivery: Aug 23 - 30" [ref=e921] [cursor=pointer]':
+              - /url: //www.aliexpress.com/item/3256812560202401.html?algo_pvid=73ec1237-b4ad-4a8f-b863-3dc294957f2e&algo_exp_id=73ec1237-b4ad-4a8f-b863-3dc294957f2e-0&pdp_ext_f=%7B%22order%22%3A%2210%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2117.56%210.99%21%21%21117.83%216.65%21%400b1fea8717871322017928242e0e45%2112000059223015643%21sea%21US%216004519251%21ABX%211%210%21n_tag%3A-29910%3Bd%3A31ebed3b%3Bm03_new_user%3A-29895%3BpisId%3A5000000210792345&curPageLogUid=jVgXqQfdLF8R&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012746517153%7C_p_origin_prod%3A
+              - generic "Report fraud item" [ref=e944]
+              - generic [ref=e945]:
+                - heading "New 2026 MJ Michael Jackson Pattern Print Men's Clothing Women T-shirt in 21st-century Style Trendy Hip-hop Fashion.summer" [level=3] [ref=e946]:
+                  - heading "New 2026 MJ Michael Jackson Pattern Print Men's Clothing Women T-shirt in 21st-century Style Trendy Hip-hop Fashion.summer" [level=3] [ref=e949]
+                - generic "$0.99" [ref=e950]:
+                  - generic [ref=e952]: $17.56
+                  - generic [ref=e953]: "-94%"
+                - generic [ref=e954]: 10 sold
+                - generic [ref=e956]:
+                  - generic "New shoppers save $16.57" [ref=e959]
+                  - 'generic "Delivery: Aug 23 - 30" [ref=e961]'
+            - link "Report fraud item Trending Unisex Graphic Cotton T Shirt for Men and Women Featuring Unique Tung Tung Tung Sahur Design $5.86 8 sold Save $11.7 Free shipping" [ref=e965] [cursor=pointer]:
+              - /url: //www.aliexpress.com/item/3256812515254526.html?algo_pvid=73ec1237-b4ad-4a8f-b863-3dc294957f2e&algo_exp_id=73ec1237-b4ad-4a8f-b863-3dc294957f2e-1&pdp_ext_f=%7B%22order%22%3A%228%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2117.56%215.86%21%21%21117.83%2139.33%21%400b1fea8717871322017928242e0e45%2112000059126812546%21sea%21US%216004519251%21ABX%211%210%21n_tag%3A-29910%3Bd%3A31ebed3b%3Bm03_new_user%3A-29895%3BpisId%3A5000000215487095&curPageLogUid=wgjZr4QOf6M2&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012701569278%7C_p_origin_prod%3A
+              - generic "Report fraud item" [ref=e988]
+              - generic [ref=e989]:
+                - heading "Trending Unisex Graphic Cotton T Shirt for Men and Women Featuring Unique Tung Tung Tung Sahur Design" [level=3] [ref=e990]:
+                  - heading "Trending Unisex Graphic Cotton T Shirt for Men and Women Featuring Unique Tung Tung Tung Sahur Design" [level=3] [ref=e992]
+                - generic "$5.86" [ref=e993]
+                - generic [ref=e995]: 8 sold
+                - generic [ref=e997]:
+                  - generic "Save $11.7" [ref=e1000]
+                  - generic "Free shipping" [ref=e1002]
+            - link "Report fraud item Misa Is The Law T-Shirt, Death Note Anime Tee, Gifts Shirt, Unisex Vintage Graphic Tees Gothic Grunge Y2k Emo Scene Amity Affliction Style Clothes Men Women Streetwear $0.99 5 sold New shoppers save $16.57 Early bird deal, only 5 left" [ref=e1006] [cursor=pointer]:
+              - /url: //www.aliexpress.com/item/3256812639753289.html?algo_pvid=73ec1237-b4ad-4a8f-b863-3dc294957f2e&algo_exp_id=73ec1237-b4ad-4a8f-b863-3dc294957f2e-2&pdp_ext_f=%7B%22order%22%3A%225%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2117.56%210.99%21%21%21117.83%216.64%21%400b1fea8717871322017928242e0e45%2112000059425471459%21sea%21US%216004519251%21ABX%211%210%21n_tag%3A-29910%3Bd%3A31ebed3b%3Bm03_new_user%3A-29895%3BpisId%3A5000000210792345&curPageLogUid=0bKwk5SnAQSC&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012826068041%7C_p_origin_prod%3A
+              - generic "Report fraud item" [ref=e1029]
+              - generic [ref=e1030]:
+                - heading "Misa Is The Law T-Shirt, Death Note Anime Tee, Gifts Shirt, Unisex Vintage Graphic Tees Gothic Grunge Y2k Emo Scene Amity Affliction Style Clothes Men Women Streetwear" [level=3] [ref=e1031]:
+                  - heading "Misa Is The Law T-Shirt, Death Note Anime Tee, Gifts Shirt, Unisex Vintage Graphic Tees Gothic Grunge Y2k Emo Scene Amity Affliction Style Clothes Men Women Streetwear" [level=3] [ref=e1034]
+                - generic "$0.99" [ref=e1035]:
+                  - generic [ref=e1037]: $17.56
+                  - generic [ref=e1038]: "-94%"
+                - generic [ref=e1039]: 5 sold
+                - generic [ref=e1041]:
+                  - generic "New shoppers save $16.57" [ref=e1044]
+                  - generic "Early bird deal, only 5 left" [ref=e1046]
+            - generic [ref=e1049]:
+              - link "Report fraud item Rapper Bad Bunny T-shirt Debi Tirar Mas Fotos DTMF Tour T Shirts Men's Clothing Women Fashion Hip Hop Summer T-shirt Streetwear $0.99 4.4 119 sold $0.94 each, ≥ 2 pieces New shoppers save $20.12" [ref=e1050] [cursor=pointer]:
+                - /url: //www.aliexpress.com/item/3256812092887737.html?aem_p4p_detail=202608190236421084452208195200000048862&algo_pvid=73ec1237-b4ad-4a8f-b863-3dc294957f2e&algo_exp_id=73ec1237-b4ad-4a8f-b863-3dc294957f2e-3&pdp_ext_f=%7B%22order%22%3A%22119%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2121.11%210.99%21%21%21141.65%216.63%21%400b1fea8717871322017928242e0e45%2112000057962366048%21sea%21US%216004519251%21ABX%211%210%21n_tag%3A-29910%3Bd%3A31ebed3b%3Bm03_new_user%3A-29895%3BpisId%3A5000000210792338&curPageLogUid=689XSjrSPClC&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012279202489%7C_p_origin_prod%3A&search_p4p_id=202608190236421084452208195200000048862_1
+                - generic "Report fraud item" [ref=e1073]
+                - generic [ref=e1074]:
+                  - heading "Rapper Bad Bunny T-shirt Debi Tirar Mas Fotos DTMF Tour T Shirts Men's Clothing Women Fashion Hip Hop Summer T-shirt Streetwear" [level=3] [ref=e1075]:
+                    - heading "Rapper Bad Bunny T-shirt Debi Tirar Mas Fotos DTMF Tour T Shirts Men's Clothing Women Fashion Hip Hop Summer T-shirt Streetwear" [level=3] [ref=e1078]
+                  - generic "$0.99" [ref=e1079]:
+                    - generic [ref=e1081]: $21.11
+                    - generic [ref=e1082]: "-95%"
+                  - generic [ref=e1083]:
+                    - generic [ref=e1084]: "4.4"
+                    - generic [ref=e1086]: 119 sold
+                  - generic [ref=e1088]:
+                    - generic "$0.94 each, ≥ 2 pieces" [ref=e1090]
+                    - generic "New shoppers save $20.12" [ref=e1093]
+              - generic [ref=e1094] [cursor=pointer]: Ad
+            - link "Report fraud item Pink Hill T-Shirt, Gifts Shirt, Unisex Vintage Graphic Tees Gothic Grunge Y2k Emo Scene Amity Affliction Style Clothes Men Women Streetwear $0.99 3 sold New shoppers save $16.53 Early bird deal, only 4 left" [ref=e1098] [cursor=pointer]:
+              - /url: //www.aliexpress.com/item/3256812632794435.html?algo_pvid=73ec1237-b4ad-4a8f-b863-3dc294957f2e&algo_exp_id=73ec1237-b4ad-4a8f-b863-3dc294957f2e-4&pdp_ext_f=%7B%22order%22%3A%223%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2117.52%210.99%21%21%21117.60%216.68%21%400b1fea8717871322017928242e0e45%2112000059425361765%21sea%21US%216004519251%21ABX%211%210%21n_tag%3A-29910%3Bd%3A31ebed3b%3Bm03_new_user%3A-29895%3BpisId%3A5000000210792345&curPageLogUid=rMS0B6GO5zut&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012819109187%7C_p_origin_prod%3A
+              - generic "Report fraud item" [ref=e1121]
+              - generic [ref=e1122]:
+                - heading "Pink Hill T-Shirt, Gifts Shirt, Unisex Vintage Graphic Tees Gothic Grunge Y2k Emo Scene Amity Affliction Style Clothes Men Women Streetwear" [level=3] [ref=e1123]:
+                  - heading "Pink Hill T-Shirt, Gifts Shirt, Unisex Vintage Graphic Tees Gothic Grunge Y2k Emo Scene Amity Affliction Style Clothes Men Women Streetwear" [level=3] [ref=e1126]
+                - generic "$0.99" [ref=e1127]:
+                  - generic [ref=e1129]: $17.52
+                  - generic [ref=e1130]: "-94%"
+                - generic [ref=e1131]: 3 sold
+                - generic [ref=e1133]:
+                  - generic "New shoppers save $16.53" [ref=e1136]
+                  - generic "Early bird deal, only 4 left" [ref=e1138]
+            - link "Report fraud item Anime SPY×FAMILY Yor Forger Kawaii Graphic Tee Men Women Short Sleeve Clothing Washed Cotton Tshirt Casual Oversized T-shirt Harajuku Unisex T Shirt $0.99 1 sold New shoppers save $26.68 Early bird deal, only 4 left" [ref=e1142] [cursor=pointer]:
+              - /url: //www.aliexpress.com/item/3256812663141164.html?algo_pvid=73ec1237-b4ad-4a8f-b863-3dc294957f2e&algo_exp_id=73ec1237-b4ad-4a8f-b863-3dc294957f2e-5&pdp_ext_f=%7B%22order%22%3A%221%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2127.67%210.99%21%21%21185.69%216.65%21%400b1fea8717871322017928242e0e45%2112000059549360495%21sea%21US%216004519251%21ABX%211%210%21n_tag%3A-29910%3Bd%3A31ebed3b%3Bm03_new_user%3A-29895%3BpisId%3A5000000210792345&curPageLogUid=1C6Q9nSip46p&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012849455916%7C_p_origin_prod%3A
+              - generic "Report fraud item" [ref=e1165]
+              - generic [ref=e1166]:
+                - heading "Anime SPY×FAMILY Yor Forger Kawaii Graphic Tee Men Women Short Sleeve Clothing Washed Cotton Tshirt Casual Oversized T-shirt Harajuku Unisex T Shirt" [level=3] [ref=e1167]:
+                  - heading "Anime SPY×FAMILY Yor Forger Kawaii Graphic Tee Men Women Short Sleeve Clothing Washed Cotton Tshirt Casual Oversized T-shirt Harajuku Unisex T Shirt" [level=3] [ref=e1170]
+                - generic "$0.99" [ref=e1171]:
+                  - generic [ref=e1173]: $27.67
+                  - generic [ref=e1174]: "-96%"
+                - generic [ref=e1175]: 1 sold
+                - generic [ref=e1177]:
+                  - generic "New shoppers save $26.68" [ref=e1180]
+                  - generic "Early bird deal, only 4 left" [ref=e1182]
+            - link "Report fraud item Autumn Camo New York T-Shirt, Logo Tee, Gifts Shirt, Unisex Vintage Graphic Tees Gothic Grunge Y2k Emo Scene Amity Affliction Style Clothes Men Women Streetwear $3.07 1 sold Save $13.99 Early bird deal, only 1 left" [ref=e1186] [cursor=pointer]:
+              - /url: //www.aliexpress.com/item/3256812639675839.html?algo_pvid=73ec1237-b4ad-4a8f-b863-3dc294957f2e&algo_exp_id=73ec1237-b4ad-4a8f-b863-3dc294957f2e-6&pdp_ext_f=%7B%22order%22%3A%221%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2117.06%213.07%21%21%21114.51%2120.62%21%400b1fea8717871322017928242e0e45%2112000059465778978%21sea%21US%216004519251%21ABX%211%210%21n_tag%3A-29910%3Bd%3A31ebed3b%3Bm03_new_user%3A-29895&curPageLogUid=G12ljXim6CQK&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012825990591%7C_p_origin_prod%3A
+              - generic "Report fraud item" [ref=e1204]
+              - generic [ref=e1205]:
+                - heading "Autumn Camo New York T-Shirt, Logo Tee, Gifts Shirt, Unisex Vintage Graphic Tees Gothic Grunge Y2k Emo Scene Amity Affliction Style Clothes Men Women Streetwear" [level=3] [ref=e1206]:
+                  - heading "Autumn Camo New York T-Shirt, Logo Tee, Gifts Shirt, Unisex Vintage Graphic Tees Gothic Grunge Y2k Emo Scene Amity Affliction Style Clothes Men Women Streetwear" [level=3] [ref=e1209]
+                - generic "$3.07" [ref=e1210]
+                - generic [ref=e1212]: 1 sold
+                - generic [ref=e1214]:
+                  - generic "Save $13.99" [ref=e1217]
+                  - generic "Early bird deal, only 1 left" [ref=e1219]
+            - generic [ref=e1222]:
+              - 'link "Report fraud item 100% Cotton Fih Calling Remind Me Message Decline Accept Phone Call Fish Fit Casual Streetwear Men Gifts Flower Print Classic Crew Neck Short Sleeves Regular Fit Breathable Stylish Graphic T-Shirt $9.74 4.9 3,000+ sold New shoppers save $34.3 Delivery: Aug 23 - 30" [ref=e1223] [cursor=pointer]':
+                - /url: //www.aliexpress.com/item/3256811494628109.html?aem_p4p_detail=202608190236421084452208195200000048862&algo_pvid=73ec1237-b4ad-4a8f-b863-3dc294957f2e&algo_exp_id=73ec1237-b4ad-4a8f-b863-3dc294957f2e-7&pdp_ext_f=%7B%22order%22%3A%223108%22%2C%22eval%22%3A%221%22%2C%22orig_sl_item_id%22%3A%221005011680942861%22%2C%22orig_item_id%22%3A%221005012866134202%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2144.04%219.74%21%21%2144.04%219.74%21%400b1fea8717871322017928242e0e45%2112000056234410141%21sea%21US%216004519251%21ABX%211%210%21n_tag%3A-29910%3Bd%3A31ebed3b%3Bm03_new_user%3A-29895%3BpisId%3A5000000210792338&curPageLogUid=Dv7JZlRJAWqS&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005011680942861%7C_p_origin_prod%3A1005012866134202&search_p4p_id=202608190236421084452208195200000048862_2
+                - generic "Report fraud item" [ref=e1241]
+                - generic [ref=e1242]:
+                  - heading "100% Cotton Fih Calling Remind Me Message Decline Accept Phone Call Fish Fit Casual Streetwear Men Gifts Flower Print Classic Crew Neck Short Sleeves Regular Fit Breathable Stylish Graphic T-Shirt" [level=3] [ref=e1243]:
+                    - heading "100% Cotton Fih Calling Remind Me Message Decline Accept Phone Call Fish Fit Casual Streetwear Men Gifts Flower Print Classic Crew Neck Short Sleeves Regular Fit Breathable Stylish Graphic T-Shirt" [level=3] [ref=e1246]
+                  - generic "$9.74" [ref=e1247]:
+                    - generic [ref=e1249]: $44.04
+                    - generic [ref=e1250]: "-77%"
+                  - generic [ref=e1251]:
+                    - generic [ref=e1252]: "4.9"
+                    - generic [ref=e1254]: 3,000+ sold
+                  - generic [ref=e1256]:
+                    - generic "New shoppers save $34.3" [ref=e1259]
+                    - 'generic "Delivery: Aug 23 - 30" [ref=e1261]'
+              - generic [ref=e1262] [cursor=pointer]: Ad
+            - 'link "Report fraud item Pete the Cat Goldfish T-Shirt, Animal Tee, Cartoon Tshirt, Gifts Shirt, Unisex Vintage Graphic Tees Gothic Grunge Y2k Emo Scene Amity Affliction Style Clothes Men Women Streetwear Summer $5.71 4.5 8 sold Save $11.35 Delivery: Aug 23 - 30" [ref=e1266] [cursor=pointer]':
+              - /url: //www.aliexpress.com/item/3256812639723479.html?algo_pvid=73ec1237-b4ad-4a8f-b863-3dc294957f2e&algo_exp_id=73ec1237-b4ad-4a8f-b863-3dc294957f2e-8&pdp_ext_f=%7B%22order%22%3A%228%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2117.06%215.71%21%21%21114.51%2138.33%21%400b1fea8717871322017928242e0e45%2112000059425581182%21sea%21US%216004519251%21ABX%211%210%21n_tag%3A-29910%3Bd%3A31ebed3b%3Bm03_new_user%3A-29895&curPageLogUid=jXse9AiYJMUj&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012826038231%7C_p_origin_prod%3A
+              - generic "Report fraud item" [ref=e1284]
+              - generic [ref=e1285]:
+                - heading "Pete the Cat Goldfish T-Shirt, Animal Tee, Cartoon Tshirt, Gifts Shirt, Unisex Vintage Graphic Tees Gothic Grunge Y2k Emo Scene Amity Affliction Style Clothes Men Women Streetwear Summer" [level=3] [ref=e1286]:
+                  - heading "Pete the Cat Goldfish T-Shirt, Animal Tee, Cartoon Tshirt, Gifts Shirt, Unisex Vintage Graphic Tees Gothic Grunge Y2k Emo Scene Amity Affliction Style Clothes Men Women Streetwear Summer" [level=3] [ref=e1289]
+                - generic "$5.71" [ref=e1290]
+                - generic [ref=e1292]:
+                  - generic [ref=e1293]: "4.5"
+                  - generic [ref=e1295]: 8 sold
+                - generic [ref=e1297]:
+                  - generic "Save $11.35" [ref=e1300]
+                  - 'generic "Delivery: Aug 23 - 30" [ref=e1302]'
+            - link "Report fraud item Plus Size Mens Clothing Protective Wisdom Mens T Shirt Graphic Design Featuring Rooster and Inspirational Quote I M Old and Wise Is God Protected Me and Stupid Great Gift for Encouraging on Casual Occasions $3.96 1 sold Save $17.99 Early bird deal, only 1 left" [ref=e1306] [cursor=pointer]:
+              - /url: //www.aliexpress.com/item/3256812673053258.html?algo_pvid=73ec1237-b4ad-4a8f-b863-3dc294957f2e&algo_exp_id=73ec1237-b4ad-4a8f-b863-3dc294957f2e-9&pdp_ext_f=%7B%22order%22%3A%221%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2121.95%213.96%21%21%21147.29%2126.57%21%400b1fea8717871322017928242e0e45%2112000059557152297%21sea%21US%216004519251%21ABX%211%210%21n_tag%3A-29910%3Bd%3A31ebed3b%3Bm03_new_user%3A-29895&curPageLogUid=xAUjfptqabwF&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012859368010%7C_p_origin_prod%3A
+              - generic "Report fraud item" [ref=e1324]
+              - generic [ref=e1325]:
+                - heading "Plus Size Mens Clothing Protective Wisdom Mens T Shirt Graphic Design Featuring Rooster and Inspirational Quote I M Old and Wise Is God Protected Me and Stupid Great Gift for Encouraging on Casual Occasions" [level=3] [ref=e1326]:
+                  - heading "Plus Size Mens Clothing Protective Wisdom Mens T Shirt Graphic Design Featuring Rooster and Inspirational Quote I M Old and Wise Is God Protected Me and Stupid Great Gift for Encouraging on Casual Occasions" [level=3] [ref=e1329]
+                - generic "$3.96" [ref=e1330]
+                - generic [ref=e1332]: 1 sold
+                - generic [ref=e1334]:
+                  - generic "Save $17.99" [ref=e1337]
+                  - generic "Early bird deal, only 1 left" [ref=e1339]
+            - link "Report fraud item Lebron James Bubble Gum Bootleg Graphic T-Shirt Streetwear $0.99 3 sold New shoppers save $16.07 Early bird deal, only 4 left" [ref=e1343] [cursor=pointer]:
+              - /url: //www.aliexpress.com/item/3256812625698372.html?algo_pvid=73ec1237-b4ad-4a8f-b863-3dc294957f2e&algo_exp_id=73ec1237-b4ad-4a8f-b863-3dc294957f2e-10&pdp_ext_f=%7B%22order%22%3A%223%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2117.06%210.99%21%21%21114.51%216.64%21%400b1fea8717871322017928242e0e45%2112000059446814217%21sea%21US%216004519251%21ABX%211%210%21n_tag%3A-29910%3Bd%3A31ebed3b%3Bm03_new_user%3A-29895%3BpisId%3A5000000210792345&curPageLogUid=I8sycfM7KKBB&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005012812013124%7C_p_origin_prod%3A
+              - generic "Report fraud item" [ref=e1361]
+              - generic [ref=e1362]:
+                - heading "Lebron James Bubble Gum Bootleg Graphic T-Shirt Streetwear" [level=3] [ref=e1363]:
+                  - heading "Lebron James Bubble Gum Bootleg Graphic T-Shirt Streetwear" [level=3] [ref=e1366]
+                - generic "$0.99" [ref=e1367]:
+                  - generic [ref=e1369]: $17.06
+                  - generic [ref=e1370]: "-94%"
+                - generic [ref=e1371]: 3 sold
+                - generic [ref=e1373]:
+                  - generic "New shoppers save $16.07" [ref=e1376]
+                  - generic "Early bird deal, only 4 left" [ref=e1378]
+            - generic [ref=e1381]:
+              - 'link "Report fraud item John Pork Is Calling Shirt Funny John Pork Meme T-Shirt, Men''s Casual Fit Cotton T-Shirt – Great For Work, Play, Or Weekend Outings $10.82 4.9 600+ sold New shoppers save $33.22 Delivery: Aug 23 - 30" [ref=e1382] [cursor=pointer]':
+                - /url: //www.aliexpress.com/item/3256811467686998.html?aem_p4p_detail=202608190236421084452208195200000048862&algo_pvid=73ec1237-b4ad-4a8f-b863-3dc294957f2e&algo_exp_id=73ec1237-b4ad-4a8f-b863-3dc294957f2e-11&pdp_ext_f=%7B%22order%22%3A%22681%22%2C%22eval%22%3A%221%22%2C%22orig_sl_item_id%22%3A%221005011654001750%22%2C%22orig_item_id%22%3A%221005012815797176%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21USD%2144.04%2110.82%21%21%2144.04%2110.82%21%400b1fea8717871322017928242e0e45%2112000059642204987%21sea%21US%216004519251%21ABX%211%210%21n_tag%3A-29910%3Bd%3A31ebed3b%3Bm03_new_user%3A-29895%3BpisId%3A5000000210792338&curPageLogUid=RRPZyVM5LSYx&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005011654001750%7C_p_origin_prod%3A1005012815797176&search_p4p_id=202608190236421084452208195200000048862_3
+                - generic "Report fraud item" [ref=e1400]
+                - generic [ref=e1401]:
+                  - heading "John Pork Is Calling Shirt Funny John Pork Meme T-Shirt, Men's Casual Fit Cotton T-Shirt – Great For Work, Play, Or Weekend Outings" [level=3] [ref=e1402]:
+                    - heading "John Pork Is Calling Shirt Funny John Pork Meme T-Shirt, Men's Casual Fit Cotton T-Shirt – Great For Work, Play, Or Weekend Outings" [level=3] [ref=e1405]
+                  - generic "$10.82" [ref=e1406]:
+                    - generic [ref=e1408]: $44.04
+                    - generic [ref=e1409]: "-75%"
+                  - generic [ref=e1410]:
+                    - generic [ref=e1411]: "4.9"
+                    - generic [ref=e1413]: 600+ sold
+                  - generic [ref=e1415]:
+                    - generic "New shoppers save $33.22" [ref=e1418]
+                    - 'generic "Delivery: Aug 23 - 30" [ref=e1420]'
+              - generic [ref=e1421] [cursor=pointer]: Ad
+        - generic [ref=e1471]:
+          - generic [ref=e1472]:
+            - heading "Related Searches" [level=2] [ref=e1473]
+            - generic [ref=e1474]:
+              - link "tights t shirt men" [ref=e1477] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/item/32870023369.html
+              - link "men streetwear t shirt" [ref=e1480] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/item/1005002959175702.html
+              - link "men christian t shirt" [ref=e1483] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/item/1005001477858602.html
+              - link "beach t shirt men" [ref=e1486] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/item/1005005444773354.html
+              - link "mens leather t shirt" [ref=e1489] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/item/32793647433.html
+              - link "70s t shirt men" [ref=e1492] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/item/1005005316615640.html
+              - link "ripped t shirt men" [ref=e1495] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/item/1005005046669209.html
+              - link "he man t shirts" [ref=e1498] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/item/1005005251843072.html
+              - link "mickey mouse t shirt men" [ref=e1501] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/item/1005005312353987.html
+              - link "men long shirt" [ref=e1504] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/item/32822235344.html
+              - link "tibetan shirt men" [ref=e1507] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/item/1005004948640080.html
+              - link "x men plus size t shirt" [ref=e1510] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/item/32816788864.html
+          - generic [ref=e1511]:
+            - heading "Ranking Keywords" [level=2] [ref=e1512]
+            - generic [ref=e1513]:
+              - link "linen t shirt men" [ref=e1515] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/w/wholesale-linen-t-shirt-men.html
+              - link "men christmas t shirt" [ref=e1517] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/w/wholesale-men-christmas-t-shirt.html
+              - link "balmain t shirt men" [ref=e1519] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/w/wholesale-balmain-t-shirt-men.html
+              - link "men heavy weight t shirt" [ref=e1521] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/w/wholesale-men-heavy-weight-t-shirt.html
+              - link "star wars t shirt men" [ref=e1523] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/w/wholesale-star-wars-t-shirt-men.html
+              - link "men disney t shirt" [ref=e1525] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/w/wholesale-men-disney-t-shirt.html
+              - link "batman t shirt mens" [ref=e1527] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/w/wholesale-batman-t-shirt-mens.html
+              - link "men moncler t shirt" [ref=e1529] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/w/wholesale-men-moncler-t-shirt.html
+              - link "men mickey t shirt" [ref=e1531] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/w/wholesale-men-mickey-t-shirt.html
+              - link "men tshirt" [ref=e1533] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/w/wholesale-men-tshirt.html
+              - link "tights t shirt men" [ref=e1535] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/w/wholesale-tights-t-shirt-men.html
+              - link "t shirt men gym" [ref=e1537] [cursor=pointer]:
+                - /url: https://es.aliexpress.com/w/wholesale-t-shirt-men-gym.html
+        - generic [ref=e1539]:
+          - generic [ref=e1541]:
+            - heading "Results for men t shirt" [level=1] [ref=e1544]
+            - generic [ref=e1546]:
+              - generic [ref=e1547] [cursor=pointer]
+              - generic [ref=e1550]:
+                - text: "The best men’s t-shirts offer a perfect balance of comfort, style, and affordability, making them a wardrobe essential for any man. Whether you're shopping for daily wear, casual outings, or fashion-forward looks, choosing the right men’s t-shirt involves understanding fabric types, fit styles, and design trends. This guide will help you make an informed decision by analyzing the search intent behind the keyword “men t shirt” and providing a step-by-step approach to selecting the best option for your needs. When someone searches for “men t shirt,” the intent is typically to find a high-quality, versatile t-shirt that fits well and suits their personal style. This could be for everyday wear, a specific occasion, or even as part of a fashion-forward outfit. The search may also be driven by the need to compare different types of men’s t-shirts, such as cotton, fashion, or stylish options. To meet this intent, it’s important to consider fabric composition, fit, and design when choosing a t-shirt. To find the best men’s t-shirt for your needs, follow these steps:"
+                - list [ref=e1551]:
+                  - listitem [ref=e1552]: Identify your primary use case (e.g., daily wear, gym, fashion).
+                  - listitem [ref=e1553]: Choose the right fabric (e.g., cotton for comfort, blends for durability).
+                  - listitem [ref=e1554]: Consider the fit (e.g., slim, regular, oversized).
+                  - listitem [ref=e1555]: Look for design elements that match your style (e.g., plain, printed, vintage).
+                  - listitem [ref=e1556]: Check reviews and ratings to ensure quality and satisfaction.
+                - text: "Here are some key terms and definitions to help you understand the features of men’s t-shirts:"
+                - generic [ref=e1557]:
+                  - term [ref=e1558]:
+                    - strong [ref=e1559]: Cotton
+                  - definition [ref=e1560]: A natural fabric known for breathability and softness, ideal for everyday wear.
+                  - term [ref=e1561]:
+                    - strong [ref=e1562]: Fit
+                  - definition [ref=e1563]: Describes how a t-shirt sits on the body, including slim, regular, and oversized fits.
+                  - term [ref=e1564]:
+                    - strong [ref=e1565]: Blend
+                  - definition [ref=e1566]: A combination of fabrics, such as cotton and polyester, to enhance durability and comfort.
+                  - term [ref=e1567]:
+                    - strong [ref=e1568]: Stylish
+                  - definition [ref=e1569]: Refers to t-shirts with unique designs, colors, or patterns that stand out in fashion.
+                  - term [ref=e1570]:
+                    - strong [ref=e1571]: Fashion
+                  - definition [ref=e1572]: Relates to current trends in clothing, including t-shirts with modern cuts and prints.
+                  - text: "To compare different types of men’s t-shirts, consider the following table:"
+                  - table [ref=e1573]:
+                    - rowgroup [ref=e1574]:
+                      - row [ref=e1575]:
+                        - columnheader "Type" [ref=e1576]
+                        - columnheader "Material" [ref=e1577]
+                        - columnheader "Fit Options" [ref=e1578]
+                        - columnheader "Best For" [ref=e1579]
+                    - rowgroup [ref=e1580]:
+                      - row [ref=e1581]:
+                        - cell [ref=e1582]:
+                          - link "Men T Shirt Cotton" [ref=e1583] [cursor=pointer]:
+                            - /url: https://www.aliexpress.com/w/wholesale-Men T Shirt Cotton.html
+                        - cell "100% Cotton" [ref=e1584]
+                        - cell "Regular, Slim" [ref=e1585]
+                        - cell "Comfortable daily wear" [ref=e1586]
+                      - row [ref=e1587]:
+                        - cell [ref=e1588]:
+                          - link "Men Stylish T Shirt" [ref=e1589] [cursor=pointer]:
+                            - /url: https://www.aliexpress.com/w/wholesale-Men Stylish T Shirt.html
+                        - cell "Cotton Blend" [ref=e1590]
+                        - cell "Regular, Oversized" [ref=e1591]
+                        - cell "Streetwear and fashion" [ref=e1592]
+                      - row [ref=e1593]:
+                        - cell [ref=e1594]:
+                          - link "Men Fashion T Shirt" [ref=e1595] [cursor=pointer]:
+                            - /url: https://www.aliexpress.com/w/wholesale-Men Fashion T Shirt.html
+                        - cell "50% Cotton, 50% Polyester" [ref=e1596]
+                        - cell "Slender, Slim" [ref=e1597]
+                        - cell "Modern, trendy looks" [ref=e1598]
+                      - row [ref=e1599]:
+                        - cell [ref=e1600]:
+                          - link "Men T Shirts" [ref=e1601] [cursor=pointer]:
+                            - /url: https://www.aliexpress.com/w/wholesale-Men T Shirts.html
+                        - cell "Variety of blends" [ref=e1602]
+                        - cell "All fits" [ref=e1603]
+                        - cell "General use and casual wear" [ref=e1604]
+                  - text: When shopping for men’s t-shirts, it’s also helpful to consider related terms such as
+                  - link "men clothing t shirt" [ref=e1605] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men clothing t shirt.html
+                  - text: ","
+                  - link "men stylish t shirt" [ref=e1606] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men stylish t shirt.html
+                  - text: ","
+                  - link "t shirt men s" [ref=e1607] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-t shirt men s.html
+                  - text: ","
+                  - link "men fashion tshirt" [ref=e1608] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men fashion tshirt.html
+                  - text: ","
+                  - link "men shirt t shirt" [ref=e1609] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men shirt t shirt.html
+                  - text: ","
+                  - link "men t shirts" [ref=e1610] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men t shirts.html
+                  - text: ","
+                  - link "men te shirt" [ref=e1611] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men te shirt.html
+                  - text: ","
+                  - link "tshirt men" [ref=e1612] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-tshirt men.html
+                  - text: ","
+                  - link "men in t shirt" [ref=e1613] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men in t shirt.html
+                  - text: ","
+                  - link "t shirt men" [ref=e1614] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-t shirt men.html
+                  - text: ","
+                  - link "men tshirts" [ref=e1615] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men tshirts.html
+                  - text: ","
+                  - link "men shirt and t shirt" [ref=e1616] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men shirt and t shirt.html
+                  - text: ","
+                  - link "men t shirt fashion" [ref=e1617] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men t shirt fashion.html
+                  - text: ","
+                  - link "men s clothing t shirt" [ref=e1618] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men s clothing t shirt.html
+                  - text: ","
+                  - link "men s fashion t shirt" [ref=e1619] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men s fashion t shirt.html
+                  - text: ","
+                  - link "men t shirt tshirts" [ref=e1620] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men t shirt tshirts.html
+                  - text: ","
+                  - link "men fashion t shirt" [ref=e1621] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men fashion t shirt.html
+                  - text: ", and"
+                  - link "men t shirt d" [ref=e1622] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men t shirt d.html
+                  - text: . These terms often appear in searches and can help you find the right product for your needs. For example, if you're looking for something trendy, you might search for men fashion t shirt, while for comfort,
+                  - link "men t shirt cotton" [ref=e1623] [cursor=pointer]:
+                    - /url: https://www.aliexpress.com/w/wholesale-men t shirt cotton.html
+                  - text: is a great choice.
+          - generic [ref=e1625]:
+            - heading "How to Choose the Best Men's T-Shirt for Comfort and Style" [level=2] [ref=e1626]
+            - generic [ref=e1628]:
+              - generic [ref=e1629] [cursor=pointer]
+              - generic [ref=e1632]:
+                - heading "What Makes a Men's T-Shirt Comfortable for Daily Wear?" [level=2] [ref=e1633]
+                - text: "When it comes to choosing a men's t-shirt, comfort is often the top priority, especially for daily wear. If you're looking for a men t shirt that feels soft, breathable, and durable, you need to consider the fabric, fit, and construction. Answer: The best men's t-shirt for daily wear is made from 100% cotton, has a relaxed fit, and is designed with a double-stitched collar and seams for durability."
+                - generic [ref=e1634]:
+                  - term [ref=e1635]:
+                    - strong [ref=e1636]: 100% Cotton
+                  - definition [ref=e1637]: Soft, breathable, and hypoallergenic, making it ideal for sensitive skin and long wear.
+                  - term [ref=e1638]:
+                    - strong [ref=e1639]: Relaxed Fit
+                  - definition [ref=e1640]: Offers more room in the chest and shoulders, making it comfortable for all body types.
+                  - term [ref=e1641]:
+                    - strong [ref=e1642]: Double-Stitched Seams
+                  - definition [ref=e1643]: Increases the durability of the men t shirt, preventing fraying and tearing over time.
+                - list [ref=e1644]:
+                  - listitem [ref=e1645]: Look for a men t shirt made from 100% cotton or a cotton-blend fabric for breathability and softness.
+                  - listitem [ref=e1646]: Choose a relaxed or regular fit to ensure comfort without being too tight or too loose.
+                  - listitem [ref=e1647]: Check for reinforced seams and a double-stitched collar to ensure the men t shirt lasts longer.
+                - text: For example, I recently purchased a men's t-shirt from AliExpress that was 100% cotton with a relaxed fit. It was perfect for wearing to work, running errands, or even relaxing at home. The fabric was soft against my skin, and the double-stitched collar and seams gave it a premium feel.
+                - heading "How Can I Style a Men's T-Shirt for a More Fashionable Look?" [level=2] [ref=e1648]
+                - text: "A men's t-shirt is a versatile piece of clothing, but many people struggle to style it in a way that looks fashionable. If you're wondering how to elevate your men t shirt from basic to stylish, you're not alone. Answer: To style a"
+                - link "men t shirt fashion" [ref=e1649] [cursor=pointer]:
+                  - /url: https://www.aliexpress.com/w/wholesale-men t shirt fashion.html
+                - text: ably, pair it with well-fitted jeans, a leather jacket, or layer it under a blazer for a smart-casual look.
+                - table [ref=e1650]:
+                  - rowgroup [ref=e1651]:
+                    - row [ref=e1652]:
+                      - columnheader "Outfit Type" [ref=e1653]
+                      - columnheader "Styling Tips" [ref=e1654]
+                      - columnheader "Recommended Accessories" [ref=e1655]
+                  - rowgroup [ref=e1656]:
+                    - row [ref=e1657]:
+                      - cell "Casual" [ref=e1658]
+                      - cell "Pair with slim-fit jeans and white sneakers." [ref=e1659]
+                      - cell "Watch, sunglasses" [ref=e1660]
+                    - row [ref=e1661]:
+                      - cell "Smart-Casual" [ref=e1662]
+                      - cell "Layer under a blazer or wear with chinos and loafers." [ref=e1663]
+                      - cell "Necklace, belt" [ref=e1664]
+                    - row [ref=e1665]:
+                      - cell "Streetwear" [ref=e1666]
+                      - cell "Wear with cargo pants and high-top sneakers." [ref=e1667]
+                      - cell "Hat, backpack" [ref=e1668]
+                - list [ref=e1669]:
+                  - listitem [ref=e1670]: Choose a men's t-shirt with a modern fit and a clean design for a more stylish look.
+                  - listitem [ref=e1671]: Pair it with well-fitted pants or jeans to create a balanced silhouette.
+                  - listitem [ref=e1672]: Accessorize with a watch, sunglasses, or a belt to add a touch of sophistication.
+                - text: I once wore a men t shirt with a subtle graphic design under a tailored blazer for a weekend brunch. The combination of the men's t-shirt and blazer gave me a smart-casual look that was both comfortable and stylish. It was a great way to dress up a basic men t shirt without overdoing it.
+                - heading "What Are the Best Men's T-Shirts for Different Body Types?" [level=2] [ref=e1673]
+                - text: Not all
+                - link "men t shirts" [ref=e1674] [cursor=pointer]:
+                  - /url: https://www.aliexpress.com/w/wholesale-men t shirts.html
+                - text: "are created equal, and finding the right fit for your body type is essential for both comfort and appearance. If you're unsure which men's t-shirt style suits you best, it's important to consider your body shape and how different fits will look on you. Answer: The best men's t-shirt for your body type depends on your build. Slim-fit is ideal for lean builds, while relaxed or oversized fits work better for broader or taller individuals."
+                - table [ref=e1675]:
+                  - rowgroup [ref=e1676]:
+                    - row [ref=e1677]:
+                      - columnheader "Body Type" [ref=e1678]
+                      - columnheader "Recommended Fit" [ref=e1679]
+                      - columnheader "Why It Works" [ref=e1680]
+                  - rowgroup [ref=e1681]:
+                    - row [ref=e1682]:
+                      - cell "Lean or Slim" [ref=e1683]
+                      - cell "Slim-fit" [ref=e1684]
+                      - cell "Highlights your shape without being too tight." [ref=e1685]
+                    - row [ref=e1686]:
+                      - cell "Average Build" [ref=e1687]
+                      - cell "Regular-fit" [ref=e1688]
+                      - cell "Offers a balanced look and is versatile for most occasions." [ref=e1689]
+                    - row [ref=e1690]:
+                      - cell "Broad or Tall" [ref=e1691]
+                      - cell "Relaxed or Oversized" [ref=e1692]
+                      - cell "Provides more room and a more comfortable fit." [ref=e1693]
+                - list [ref=e1694]:
+                  - listitem [ref=e1695]: Identify your body type to determine the best men t shirt fit for you.
+                  - listitem [ref=e1696]: Try on different fits to see which one looks and feels best on your body.
+                  - listitem [ref=e1697]: Consider the occasion and how the men's t-shirt will be styled when choosing a fit.
+                - text: I have a friend who is tall and broad-shouldered, and he always struggled to find a men t shirt that fit well. After trying a few different fits, he found that a relaxed-fit men's t-shirt worked best for him. It gave him the room he needed without looking boxy or oversized.
+                - heading "What Do Users Say About Men's T-Shirts on AliExpress?" [level=2] [ref=e1698]
+                - text: "When shopping for a men t shirt, it's always helpful to read what other users have to say about the product. Reviews can give you insight into the quality, fit, and overall satisfaction of the men's t-shirt you're considering. Answer: Most users on AliExpress praise the affordability and variety of men's t-shirts, but some mention issues with sizing and fabric quality."
+                - generic [ref=e1699]:
+                  - term [ref=e1700]:
+                    - strong [ref=e1701]: Positive Feedback
+                  - definition [ref=e1702]:
+                    - text: Users often highlight the softness of the fabric, the variety of styles, and the competitive pricing of
+                    - link "men t shirts" [ref=e1703] [cursor=pointer]:
+                      - /url: https://www.aliexpress.com/w/wholesale-men t shirts.html
+                    - text: on AliExpress.
+                  - term [ref=e1704]:
+                    - strong [ref=e1705]: Negative Feedback
+                  - definition [ref=e1706]: Some users report that the sizing can be inconsistent and that the fabric may shrink after washing.
+                - list [ref=e1707]:
+                  - listitem [ref=e1708]: Read multiple reviews to get a balanced view of the men t shirt you're considering.
+                  - listitem [ref=e1709]: Pay attention to comments about sizing, fabric quality, and overall comfort.
+                  - listitem [ref=e1710]: Look for men's t-shirts with high ratings and detailed descriptions to ensure you're making an informed purchase.
+                - text: I've personally purchased several men t shirts from AliExpress and found that the quality can vary depending on the seller. However, by reading reviews and checking the product details, I was able to find a few men's t-shirts that were both comfortable and stylish.
+                - heading "Other Men's T-Shirt Styles and Variations You Might Like" [level=2] [ref=e1711]
+                - text: If you're interested in exploring more men t shirts, there are several related styles and variations that you might find appealing. These include
+                - link "men t shirt cotton" [ref=e1712] [cursor=pointer]:
+                  - /url: https://www.aliexpress.com/w/wholesale-men t shirt cotton.html
+                - text: ","
+                - link "men stylish t shirt" [ref=e1713] [cursor=pointer]:
+                  - /url: https://www.aliexpress.com/w/wholesale-men stylish t shirt.html
+                - text: ","
+                - link "men fashion tshirt" [ref=e1714] [cursor=pointer]:
+                  - /url: https://www.aliexpress.com/w/wholesale-men fashion tshirt.html
+                - text: ","
+                - link "men shirt t shirt" [ref=e1715] [cursor=pointer]:
+                  - /url: https://www.aliexpress.com/w/wholesale-men shirt t shirt.html
+                - text: ", and more."
+                - generic [ref=e1716]:
+                  - term [ref=e1717]:
+                    - strong [ref=e1718]:
+                      - link "Men T Shirt Cotton" [ref=e1719] [cursor=pointer]:
+                        - /url: https://www.aliexpress.com/w/wholesale-Men T Shirt Cotton.html
+                  - definition [ref=e1720]: Soft and breathable, ideal for everyday wear and sensitive skin.
+                  - term [ref=e1721]:
+                    - strong [ref=e1722]:
+                      - link "Men Stylish T Shirt" [ref=e1723] [cursor=pointer]:
+                        - /url: https://www.aliexpress.com/w/wholesale-Men Stylish T Shirt.html
+                  - definition [ref=e1724]: Designed with modern cuts and graphics for a more fashion-forward look.
+                  - term [ref=e1725]:
+                    - strong [ref=e1726]:
+                      - link "Men Fashion Tshirt" [ref=e1727] [cursor=pointer]:
+                        - /url: https://www.aliexpress.com/w/wholesale-Men Fashion Tshirt.html
+                  - definition [ref=e1728]: Offers a blend of comfort and style, often with unique patterns or colors.
+                  - term [ref=e1729]:
+                    - strong [ref=e1730]:
+                      - link "Men Shirt T Shirt" [ref=e1731] [cursor=pointer]:
+                        - /url: https://www.aliexpress.com/w/wholesale-Men Shirt T Shirt.html
+                  - definition [ref=e1732]: A hybrid style that combines the fit of a dress shirt with the comfort of a t-shirt.
+                - text: If you're looking for something beyond the basic men t shirt, these variations offer more options to suit your personal style and needs.
+    - generic [ref=e1733]:
+      - generic [ref=e1734]:
+        - generic [ref=e1735]:
+          - link "facebook" [ref=e1737] [cursor=pointer]:
+            - /url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.aliexpress.com%2Fw%2Fwholesale-men-t-shirt.html%3Fchannel%3Dfacebook
+          - link "twitter" [ref=e1739] [cursor=pointer]:
+            - /url: https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.aliexpress.com%2Fw%2Fwholesale-men-t-shirt.html%3Fchannel%3Dtwinner&text=men%20t%20shirt%2C%20t%20shirt%2C%20men's%20clothing
+          - link "pinterest" [ref=e1741] [cursor=pointer]:
+            - /url: https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.aliexpress.com%2Fw%2Fwholesale-men-t-shirt.html%3Fchannel%3Dpinterest&media=https%3A&description=This%20article%20discusses%20how%20to%20choose%20the%20best%20men%20t%20shirt%20for%20comfort%20and%20style%2C%20covering%20fabric%2C%20fit%2C%20and%20construction%2C%20along%20with%20styling%20tips%20and%20user%20reviews%20from%20AliExpress.
+        - link "feedback" [ref=e1744] [cursor=pointer]:
+          - /url: javascript:void(0);
+      - generic [ref=e1746] [cursor=pointer]
+  - contentinfo [ref=e1747]:
+    - generic [ref=e1749]:
+      - generic [ref=e1750]:
+        - generic [ref=e1752]:
+          - term [ref=e1753]:
+            - heading "Help" [level=5] [ref=e1754]
+          - definition [ref=e1755]:
+            - link "Help Center" [ref=e1756] [cursor=pointer]:
+              - /url: //so.aliexpress.com/s/ByrCmn?language=en_US
+            - text: ","
+            - link "Disputes & Reports" [ref=e1757] [cursor=pointer]:
+              - /url: //report.aliexpress.com
+            - text: ","
+            - link "Return&refund policy" [ref=e1758] [cursor=pointer]:
+              - /url: https://www.aliexpress.com/ssr/300000437/PinKTaDpEb?disableNav=YES&pha_manifest=ssr&_immersiveMode=true
+            - text: ","
+            - link "Report IPR infringement" [ref=e1759] [cursor=pointer]:
+              - /url: https://ipp.aidcgroup.net/#/ippHome
+            - text: ","
+            - link "DSA/OSA Information" [ref=e1760] [cursor=pointer]:
+              - /url: https://www.aliexpress.com/p/transparencycenter/dsa.html
+            - text: ","
+            - link "Information and contacts for Brazil" [ref=e1761] [cursor=pointer]:
+              - /url: https://www.aliexpress.com/ssr/300000414/informaes-e-contato-para-o-brasil-e57p63?disableNav=YES&pha_manifest=ssr&_immersiveMode=true
+            - text: ","
+            - link "Integrity Compliance" [ref=e1762] [cursor=pointer]:
+              - /url: https://aidc.jubao.alibaba.com
+            - text: ","
+            - link "Transparency Center" [ref=e1763] [cursor=pointer]:
+              - /url: https://www.aliexpress.com/p/transparencycenter/index.html
+            - text: ","
+            - link "Submit report (non-registered users)" [ref=e1764] [cursor=pointer]:
+              - /url: https://m.aliexpress.com/p/complaint-center/index.html#/complaint/report
+            - text: ","
+            - link "Recalls," [ref=e1765] [cursor=pointer]:
+              - /url: https://helpcenter.aliexpress.com/s/BuyerHelp/knowledge?categoryId=1000110454&language=en_US&m_station=BuyerHelp&questionId=1061297473&regulation=US-product-recall
+            - link "Return Policy" [ref=e1766] [cursor=pointer]:
+              - /url: https://www.aliexpress.com/ssr/300000437/G7ZED4yXte?disableNav=YES&pha_manifest=ssr&_immersiveMode=true
+        - generic [ref=e1768]:
+          - term [ref=e1769]:
+            - heading "AliExpress Multi-Language Sites" [level=5] [ref=e1770]
+          - definition [ref=e1771]:
+            - link "Russian" [ref=e1772] [cursor=pointer]:
+              - /url: //ru.aliexpress.com
+            - text: ","
+            - link "Portuguese" [ref=e1773] [cursor=pointer]:
+              - /url: //pt.aliexpress.com
+            - text: ","
+            - link "Spanish" [ref=e1774] [cursor=pointer]:
+              - /url: //es.aliexpress.com
+            - text: ","
+            - link "French" [ref=e1775] [cursor=pointer]:
+              - /url: //fr.aliexpress.com
+            - text: ","
+            - link "German" [ref=e1776] [cursor=pointer]:
+              - /url: //de.aliexpress.com
+            - text: ","
+            - link "Italian" [ref=e1777] [cursor=pointer]:
+              - /url: //it.aliexpress.com
+            - text: ","
+            - link "Dutch" [ref=e1778] [cursor=pointer]:
+              - /url: //nl.aliexpress.com
+            - text: ","
+            - link "Turkish" [ref=e1779] [cursor=pointer]:
+              - /url: //tr.aliexpress.com
+            - text: ","
+            - link "Japanese" [ref=e1780] [cursor=pointer]:
+              - /url: //ja.aliexpress.com
+            - text: ","
+            - link "Korean" [ref=e1781] [cursor=pointer]:
+              - /url: //ko.aliexpress.com
+            - text: ","
+            - link "Thai" [ref=e1782] [cursor=pointer]:
+              - /url: //th.aliexpress.com
+            - text: ","
+            - link "Arabic" [ref=e1783] [cursor=pointer]:
+              - /url: //ar.aliexpress.com
+            - text: ","
+            - link "Hebrew" [ref=e1784] [cursor=pointer]:
+              - /url: //he.aliexpress.com
+            - text: ","
+            - link "Polish" [ref=e1785] [cursor=pointer]:
+              - /url: //pl.aliexpress.com
+      - generic [ref=e1787]:
+        - term [ref=e1788]:
+          - heading "Browse by Category" [level=5] [ref=e1789]
+        - definition [ref=e1790]:
+          - generic [ref=e1791]:
+            - link "All Popular" [ref=e1792] [cursor=pointer]:
+              - /url: //www.aliexpress.com/popular.html
+            - text: ","
+            - link "Product" [ref=e1793] [cursor=pointer]:
+              - /url: //www.aliexpress.com/wholesale.html
+            - text: ","
+            - link "Promotion" [ref=e1794] [cursor=pointer]:
+              - /url: //www.aliexpress.com/promotion.html
+            - text: ","
+            - link "Low Price" [ref=e1795] [cursor=pointer]:
+              - /url: //www.aliexpress.com/price.html
+            - text: ","
+            - link "Great Value" [ref=e1796] [cursor=pointer]:
+              - /url: //www.aliexpress.com/cheap.html
+            - text: ","
+            - link "Reviews" [ref=e1797] [cursor=pointer]:
+              - /url: //www.aliexpress.com/reviews.html
+            - text: ","
+            - link "Wiki" [ref=e1798] [cursor=pointer]:
+              - /url: https://www.aliexpress.com/p/wiki/home.html
+            - text: ","
+            - link "Blog" [ref=e1799] [cursor=pointer]:
+              - /url: https://www.aliexpress.com/p/blog/home.html
+            - text: ","
+            - link "Video" [ref=e1800] [cursor=pointer]:
+              - /url: https://www.aliexpress.com/p/video/home.html
+      - generic [ref=e1802]:
+        - term [ref=e1803]:
+          - heading "Alibaba Group" [level=5] [ref=e1804]
+        - definition [ref=e1805]:
+          - link "Alibaba Group Website" [ref=e1806] [cursor=pointer]:
+            - /url: http://www.alibabagroup.com/en/global/home
+          - text: ","
+          - link "AliExpress" [ref=e1807] [cursor=pointer]:
+            - /url: //www.aliexpress.com/
+          - text: ","
+          - link "Alimama" [ref=e1808] [cursor=pointer]:
+            - /url: http://www.alimama.com/
+          - text: ","
+          - link "Fliggy" [ref=e1809] [cursor=pointer]:
+            - /url: http://www.fliggy.com/
+          - text: ","
+          - link "Alibaba Cloud" [ref=e1810] [cursor=pointer]:
+            - /url: http://www.alibabacloud.com
+          - text: ","
+          - link "Alibaba International" [ref=e1811] [cursor=pointer]:
+            - /url: http://www.alibaba.com/
+          - text: ","
+          - link "AliTelecom" [ref=e1812] [cursor=pointer]:
+            - /url: http://aliqin.tmall.com/
+          - text: ","
+          - link "DingTalk" [ref=e1813] [cursor=pointer]:
+            - /url: http://www.dingtalk.com/
+          - text: ","
+          - link "Juhuasuan" [ref=e1814] [cursor=pointer]:
+            - /url: http://ju.taobao.com/
+          - text: ","
+          - link "Taobao Marketplace" [ref=e1815] [cursor=pointer]:
+            - /url: http://www.taobao.com/
+          - text: ","
+          - link "Tmall" [ref=e1816] [cursor=pointer]:
+            - /url: http://www.tmall.com/
+          - text: ","
+          - link "Taobao Global" [ref=e1817] [cursor=pointer]:
+            - /url: https://world.taobao.com/
+          - text: ","
+          - link "AliOS" [ref=e1818] [cursor=pointer]:
+            - /url: http://www.alios.cn/
+          - text: ","
+          - link "1688" [ref=e1819] [cursor=pointer]:
+            - /url: http://www.1688.com/
+    - generic [ref=e1821]:
+      - link "Intellectual Property Protection" [ref=e1822] [cursor=pointer]:
+        - /url: https://ipp.aidcgroup.net/#/ippHome
+      - text: "-"
+      - link "Privacy Policy" [ref=e1823] [cursor=pointer]:
+        - /url: https://campaign.aliexpress.com/wow/gcp/app-redirect-terms/index
+      - text: "-"
+      - link "Sitemap" [ref=e1824] [cursor=pointer]:
+        - /url: https://www.aliexpress.com/sitemap.html
+      - text: "-"
+      - link "Terms of Use" [ref=e1825] [cursor=pointer]:
+        - /url: https://terms.alicdn.com/legal-agreement/terms/suit_bu1_aliexpress/suit_bu1_aliexpress202204182115_66077.html
+      - text: "-"
+      - link "Information for EU consumers" [ref=e1826] [cursor=pointer]:
+        - /url: https://cdn.contract.alibaba.com/terms/c_platform_service_agreement/20260106183827470/20260106183827470.html?lng=en
+      - text: "-"
+      - link "Legal Information / Imprint" [ref=e1828] [cursor=pointer]:
+        - /url: https://terms.alicdn.com/legal-agreement/terms/c_end_product_protocol/20230928165112460/20230928165112460.html
+      - text: "-"
+      - link "Transaction Services Agreement for non-EU/UK Consumers" [ref=e1829] [cursor=pointer]:
+        - /url: https://rulechannel.alibaba.com/icbu?type=detail&ruleId=2054&cId=1304#/rule/detail?cId=1304&ruleId=2054
+      - text: "-"
+      - link "Terms and Conditions for EU/EEA/UK Consumers" [ref=e1830] [cursor=pointer]:
+        - /url: https://campaign.aliexpress.com/wow/gcp-plus/ae/tupr?_immersiveMode=true&pha_manifest=upr&disableNav=YES&wh_pid=300000414/pt8AMcBikk
+      - text: "-"
+      - link "User Information Legal Enquiry Guide" [ref=e1831] [cursor=pointer]:
+        - /url: https://terms.alicdn.com/legal-agreement/terms/data_processing_agreement_others/20231101174825691/20231101174825691.html
+      - text: ©️2010-2025 AliExpress.com. All rights reserved.
+      - link [ref=e1832] [cursor=pointer]:
+        - /url: https://zzlz.gsxt.gov.cn/businessCheck/verifKey.do?showType=p&serial=91330108MACUEGT78K-SAIC_SHOW_10000091330108MACUEGT78K1783934792025&signData=MEYCIQDhB1Y1o7gD9/BMgwkWkQZ2ROKRFMviBExfpVBcWz3t7gIhANBC1pvM9xUuadcvYA6nIppH8wrAy/iPJ/sqb0oijfyP
+        - img "增值电信业务经营许可证" [ref=e1833]
+      - link "增值电信业务经营许可证 浙B2-20120091-8" [ref=e1834] [cursor=pointer]:
+        - /url: https://beian.miit.gov.cn/
+      - link [ref=e1835] [cursor=pointer]:
+        - /url: https://beian.mps.gov.cn/#/query/webSearch?code=33010802014622
+        - img "浙公网安备" [ref=e1836]
+        - text: 浙公网安备33010802014622号
+      - link "浙ICP备2024067534号-11" [ref=e1837] [cursor=pointer]:
+        - /url: https://beian.miit.gov.cn/
+  - generic [ref=e1840]:
+    - generic [ref=e1844]:
+      - generic [ref=e1845]:
+        - strong [ref=e1848]: Shipped by AliExpress
+        - strong [ref=e1852]: Free shipping
+        - generic [ref=e1853]:
+          - generic [ref=e1854]:
+            - generic [ref=e1855]:
+              - generic:
+                - generic [ref=e1856] [cursor=pointer]
+                - generic [ref=e1857] [cursor=pointer]:
+                  - checkbox "select product"
+              - link "Only 1 left" [ref=e1860] [cursor=pointer]:
+                - /url: https://www.aliexpress.com/item/3256806803846127.html?mp=1&pdp_npi=6%40dis%21USD%21USD%207.49%21USD%200.99%21%21USD%200.99%21%21%21%400bab027717871322045434607e0f4e%2112000038967490041%21ct%21US%216004519251%21%211%210%21
+            - generic [ref=e1863]: $0.99
+            - generic [ref=e1866]:
+              - generic "decrease" [ref=e1867] [cursor=pointer]
+              - textbox "number" [ref=e1871]: "1"
+              - generic "increase" [ref=e1872]
+          - generic [ref=e1876]:
+            - generic [ref=e1877]:
+              - generic:
+                - generic [ref=e1878] [cursor=pointer]
+                - generic [ref=e1879] [cursor=pointer]:
+                  - checkbox "select product"
+              - link "Only 1 left" [ref=e1882] [cursor=pointer]:
+                - /url: https://www.aliexpress.com/item/3256807861618109.html?mp=1&pdp_npi=6%40dis%21USD%21USD%207.15%21USD%200.99%21%21USD%200.99%21%21%21%400bab027717871322045434607e0f4e%2112000043421371508%21ct%21US%216004519251%21%211%210%21
+            - generic [ref=e1885]: $0.99
+            - generic [ref=e1888]:
+              - generic "decrease" [ref=e1889] [cursor=pointer]
+              - textbox "number" [ref=e1893]: "1"
+              - generic "increase" [ref=e1894]
+      - generic [ref=e1899]:
+        - generic [ref=e1900]:
+          - generic [ref=e1901]: Unavailable
+          - generic [ref=e1902]: (1)
+        - generic [ref=e1905]:
+          - checkbox [disabled]
+    - generic [ref=e1911]:
+      - generic [ref=e1912]: $0.00
+      - button "Checkout" [disabled] [ref=e1913]
+      - link "Go to cart" [ref=e1914] [cursor=pointer]:
+        - /url: https://www.aliexpress.com/p/shoppingcart/index.html

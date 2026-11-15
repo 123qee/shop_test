@@ -1,0 +1,683 @@
+- generic [ref=f1e3]:
+  - complementary [ref=f1e4]:
+    - button "收起菜单栏" [expanded] [ref=f1e5] [cursor=pointer]: ‹
+    - link "我的工作台 工作与生活" [ref=f1e6] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f1e13]:
+        - strong [ref=f1e14]: 我的工作台
+        - generic [ref=f1e15]: 工作与生活
+    - navigation "主导航" [ref=f1e16]:
+      - generic [ref=f1e17]: 概览
+      - link "工作台" [ref=f1e18] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f1e26]: 个人管理
+      - link "任务" [ref=f1e27] [cursor=pointer]:
+        - /url: /tasks
+      - link "项目" [ref=f1e32] [cursor=pointer]:
+        - /url: /projects
+      - generic [ref=f1e38]: 商品
+      - link "采集母库" [ref=f1e39] [cursor=pointer]:
+        - /url: /sources
+      - link "商品浏览" [ref=f1e44] [cursor=pointer]:
+        - /url: /joom
+      - generic [ref=f1e49]: Joom 发布
+      - link "发布清单" [ref=f1e50] [cursor=pointer]:
+        - /url: /joom/publish-list
+      - link "删除清单" [ref=f1e55] [cursor=pointer]:
+        - /url: /joom/delete-list
+      - link "店铺与模板" [ref=f1e60] [cursor=pointer]:
+        - /url: /settings
+      - generic [ref=f1e66]: 其他平台
+      - link "美客多刊登" [ref=f1e67] [cursor=pointer]:
+        - /url: /mercadolibre
+      - link "美客多设置" [ref=f1e73] [cursor=pointer]:
+        - /url: /mercadolibre/settings
+    - generic [ref=f1e79]: 蒋卫华一店 已连接
+  - generic [ref=f1e82]:
+    - banner [ref=f1e83]:
+      - generic [ref=f1e84]:
+        - heading "商品浏览" [level=1] [ref=f1e85]
+        - paragraph [ref=f1e86]: 筛选商品并加入发布清单或删除清单
+      - generic [ref=f1e109]:
+        - combobox "切换当前店铺：发布、同步、授权都走这家" [ref=f1e110]:
+          - option "蒋卫华一店 · 已授权" [selected]
+          - option "蒋卫华二店 · 已授权"
+          - option "蒋红一店 · 已授权"
+        - text: 已连接 蒋卫华一店（production）
+        - button "断开" [ref=f1e112] [cursor=pointer]
+    - main [ref=f1e89]:
+      - region "分拣模板" [ref=f1e113]:
+        - generic [ref=f1e114]:
+          - strong [ref=f1e115]: 644 件商品还没确认模板
+          - generic [ref=f1e116]: 一次一件看大图：Enter 接受建议，1–9 换模板，Z 撤销
+        - button "开始分拣" [ref=f1e117] [cursor=pointer]
+      - group [ref=f1e90]:
+        - generic "商品筛选与工具 7443 个待处理商品 · 点击展开筛选与操作 快速选择商品 展开" [ref=f1e118] [cursor=pointer]:
+          - generic [ref=f1e92]:
+            - strong [ref=f1e93]: 商品筛选与工具
+            - generic [ref=f1e94]: 7443 个待处理商品 · 点击展开筛选与操作
+          - group "快速选择商品" [ref=f1e119]:
+            - button "选择本页" [ref=f1e120]
+            - button "选择全部 7443" [ref=f1e122]
+          - generic [ref=f1e95]: 展开
+        - option "全部状态（7443）" [selected]
+        - option "未发布（1343）"
+        - option "刚编辑（1）"
+        - option "发布失败（91）"
+        - option "已发布（4296）"
+        - option "废弃箱（1804）"
+        - option "含非英文（14）"
+        - option "全部质量" [selected]
+        - option "待完善（752）"
+        - option "优秀（96）"
+        - option "良好（6595）"
+        - option "需完善（752）"
+        - option "高风险（0）"
+        - option "全部审核原因" [selected]
+        - option "当前店铺没有该类目权限（721）"
+        - option "类目或属性不正确（2643）"
+        - option "商品信息不完整或不合规（65）"
+        - option "图片不符合要求（1435）"
+        - option "疑似侵权 / 品牌风险（294）"
+        - option "商品可能受限或禁售（1128）"
+        - option "变体信息有问题（132）"
+        - option "价格或物流信息有问题（0）" [disabled]
+        - option "缺少合规资料（0）" [disabled]
+        - option "商品重复（138）"
+        - option "Joom 审核未通过（329）"
+      - group [ref=f1e96]:
+        - generic "分组与快捷模板 需要批量套用模板时再展开 展开" [ref=f1e97] [cursor=pointer]:
+          - generic [ref=f1e98]:
+            - strong [ref=f1e99]: 分组与快捷模板
+            - generic [ref=f1e100]: 需要批量套用模板时再展开
+          - generic [ref=f1e101]: 展开
+        - option "全部材质（7443）" [selected]
+        - option "聚酯纤维（146）"
+        - option "棉（2362）"
+        - option "混纺（326）"
+        - option "其他材质（5）"
+        - option "材质未知（4604）"
+        - option "男装短袖" [selected]
+        - option "女装短袖"
+        - option "童装短袖"
+        - option "短袖 · 人群待判断"
+        - option "男装卫衣"
+        - option "女装卫衣"
+        - option "童装卫衣"
+        - option "卫衣 · 人群待判断"
+        - option "男装其他上衣"
+        - option "女装其他上衣"
+        - option "童装其他上衣"
+        - option "上衣 · 人群待判断"
+        - option "裤装"
+        - option "裙装"
+        - option "鞋类"
+        - option "家居"
+        - option "其他商品"
+        - option "待判断"
+        - option "保留原材质判断" [selected]
+        - option "聚酯纤维"
+        - option "棉"
+        - option "混纺"
+        - option "其他材质"
+        - option "材质未知"
+      - group [ref=f1e102]:
+        - generic "Joom 店铺状态 上次同步 2 分钟前 展开" [ref=f1e123] [cursor=pointer]:
+          - generic [ref=f1e104]:
+            - strong [ref=f1e105]: Joom 店铺状态
+            - generic [ref=f1e106]: 上次同步 2 分钟前
+          - generic [ref=f1e107]: 展开
+      - generic [ref=f1e124]:
+        - generic [ref=f1e125] [cursor=pointer]:
+          - checkbox "选择商品：adidas Manchester United 26/27 OG Men's Cotton T-Shirt Black Red" [ref=f1e127]
+          - generic [ref=f1e128]:
+            - generic [ref=f1e129]: 已编辑
+            - generic [ref=f1e130]: 刚编辑
+            - generic [ref=f1e131]: adidas Manchester United 26/27 OG Men's Cotton T-Shirt Black Red
+            - generic "根据原商品类别属性分组；材质依据原商品信息" [ref=f1e132]:
+              - generic [ref=f1e133]: 男装短袖
+              - generic [ref=f1e134]: 棉
+              - generic [ref=f1e135]: 已确认预设
+            - generic [ref=f1e136]: 4.5 USD
+            - button "当前模板 聚酯纤维成人短袖 重新套用此模板" [ref=f1e137]:
+              - generic [ref=f1e138]: 当前模板
+              - generic [ref=f1e139]: 聚酯纤维成人短袖
+              - generic [ref=f1e140]: 重新套用此模板
+            - generic [ref=f1e141]:
+              - generic [ref=f1e142]: 质量分
+              - generic [ref=f1e143]: "70"
+          - link [ref=f1e145]:
+            - /url: /products/30b66a6c-fb4b-4053-ae59-12d0eb3bdb80
+            - button "编辑" [ref=f1e146]
+        - generic [ref=f1e147] [cursor=pointer]:
+          - checkbox "选择商品：1pc Vintage Anime Jojo Bizarre Adventure Steel Ball Run T Shirts Washed Kid Men Women's High Quality Loose Casual" [ref=f1e149]
+          - generic [ref=f1e150]:
+            - generic [ref=f1e151]: 已编辑
+            - generic [ref=f1e152]: 1pc Vintage Anime Jojo Bizarre Adventure Steel Ball Run T Shirts Washed Kid Men Women's High Quality Loose Casual
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e153]:
+              - generic [ref=f1e154]: 童装短袖
+              - generic [ref=f1e155]: 材质未知
+              - generic [ref=f1e156]: 已确认预设
+            - generic [ref=f1e157]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e158]:
+              - generic [ref=f1e159]: 当前模板
+              - generic [ref=f1e160]: 童装短袖棉
+              - generic [ref=f1e161]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e162]:
+              - generic [ref=f1e163]: 质量分
+              - generic [ref=f1e164]: "72"
+          - link [ref=f1e166]:
+            - /url: /products/3896eb0f-d102-4f05-8920-6132c6ff805d
+            - button "编辑" [ref=f1e167]
+        - generic [ref=f1e168] [cursor=pointer]:
+          - checkbox "选择商品：1pc Summer Spice Girls Pop Group Tour 2026 Merch T Shirts Washed Kid Men Women's High Quality Loose Casual" [ref=f1e170]
+          - generic [ref=f1e171]:
+            - generic [ref=f1e172]: 已编辑
+            - generic [ref=f1e173]: 1pc Summer Spice Girls Pop Group Tour 2026 Merch T Shirts Washed Kid Men Women's High Quality Loose Casual
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e174]:
+              - generic [ref=f1e175]: 童装短袖
+              - generic [ref=f1e176]: 材质未知
+              - generic [ref=f1e177]: 已确认预设
+            - generic [ref=f1e178]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e179]:
+              - generic [ref=f1e180]: 当前模板
+              - generic [ref=f1e181]: 童装短袖棉
+              - generic [ref=f1e182]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e183]:
+              - generic [ref=f1e184]: 质量分
+              - generic [ref=f1e185]: "72"
+          - link [ref=f1e187]:
+            - /url: /products/02131dab-9d0c-4911-b623-31aed53999f0
+            - button "编辑" [ref=f1e188]
+        - generic [ref=f1e189] [cursor=pointer]:
+          - checkbox "选择商品：1pc Fashion 2pac Graphic Hip Hop 3D Printed T Shirt Unisex Men Women Kids Summer Streetwear Casual Short Sleeve Tops" [ref=f1e191]
+          - generic [ref=f1e192]:
+            - generic [ref=f1e193]: 已编辑
+            - generic [ref=f1e194]: 1pc Fashion 2pac Graphic Hip Hop 3D Printed T Shirt Unisex Men Women Kids Summer Streetwear Casual Short Sleeve Tops
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e195]:
+              - generic [ref=f1e196]: 童装短袖
+              - generic [ref=f1e197]: 材质未知
+              - generic [ref=f1e198]: 已确认预设
+            - generic [ref=f1e199]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e200]:
+              - generic [ref=f1e201]: 当前模板
+              - generic [ref=f1e202]: 童装短袖棉
+              - generic [ref=f1e203]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e204]:
+              - generic [ref=f1e205]: 质量分
+              - generic [ref=f1e206]: "72"
+          - link [ref=f1e208]:
+            - /url: /products/4a924f15-16e9-4036-87de-c229063b946e
+            - button "编辑" [ref=f1e209]
+        - generic [ref=f1e210] [cursor=pointer]:
+          - checkbox "选择商品：1pc Alice's Face Transformation In The Chain 1991 Concert Tour T Shirts Washed Kid Men Women's High Quality Loose Casual" [ref=f1e212]
+          - generic [ref=f1e213]:
+            - generic [ref=f1e214]: 已编辑
+            - generic [ref=f1e215]: 1pc Alice's Face Transformation In The Chain 1991 Concert Tour T Shirts Washed Kid Men Women's High Quality Loose Casual
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e216]:
+              - generic [ref=f1e217]: 童装短袖
+              - generic [ref=f1e218]: 材质未知
+              - generic [ref=f1e219]: 已确认预设
+            - generic [ref=f1e220]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e221]:
+              - generic [ref=f1e222]: 当前模板
+              - generic [ref=f1e223]: 童装短袖棉
+              - generic [ref=f1e224]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e225]:
+              - generic [ref=f1e226]: 质量分
+              - generic [ref=f1e227]: "72"
+          - link [ref=f1e229]:
+            - /url: /products/b77a6eb1-80cb-4589-9b4b-5ba82d5a0195
+            - button "编辑" [ref=f1e230]
+        - generic [ref=f1e231] [cursor=pointer]:
+          - checkbox "选择商品：1pc Rapper Karan Aujla P-POP Culture Tour 2026 Graphic T Shirts Washed Kid Men Women's High Quality Loose Casual" [ref=f1e233]
+          - generic [ref=f1e234]:
+            - generic [ref=f1e235]: 已编辑
+            - generic [ref=f1e236]: 1pc Rapper Karan Aujla P-POP Culture Tour 2026 Graphic T Shirts Washed Kid Men Women's High Quality Loose Casual
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e237]:
+              - generic [ref=f1e238]: 童装短袖
+              - generic [ref=f1e239]: 材质未知
+              - generic [ref=f1e240]: 已确认预设
+            - generic [ref=f1e241]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e242]:
+              - generic [ref=f1e243]: 当前模板
+              - generic [ref=f1e244]: 童装短袖棉
+              - generic [ref=f1e245]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e246]:
+              - generic [ref=f1e247]: 质量分
+              - generic [ref=f1e248]: "72"
+          - link [ref=f1e250]:
+            - /url: /products/325c951f-7784-434c-bf98-a7674ee6af3e
+            - button "编辑" [ref=f1e251]
+        - generic [ref=f1e252] [cursor=pointer]:
+          - checkbox "选择商品：1pc Harry Styles \"Together\" Tour 2026 Pop Music Washed Graphic T Shirts Men Women Kids Hip Hop Aesthetic Fashion Short Sleeve" [ref=f1e254]
+          - generic [ref=f1e255]:
+            - generic [ref=f1e256]: 已编辑
+            - generic [ref=f1e257]: 1pc Harry Styles "Together" Tour 2026 Pop Music Washed Graphic T Shirts Men Women Kids Hip Hop Aesthetic Fashion Short Sleeve
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e258]:
+              - generic [ref=f1e259]: 童装短袖
+              - generic [ref=f1e260]: 材质未知
+              - generic [ref=f1e261]: 已确认预设
+            - generic [ref=f1e262]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e263]:
+              - generic [ref=f1e264]: 当前模板
+              - generic [ref=f1e265]: 童装短袖棉
+              - generic [ref=f1e266]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e267]:
+              - generic [ref=f1e268]: 质量分
+              - generic [ref=f1e269]: "72"
+          - link [ref=f1e271]:
+            - /url: /products/e397721a-40f0-4053-9c52-347cfe44a97c
+            - button "编辑" [ref=f1e272]
+        - generic [ref=f1e273] [cursor=pointer]:
+          - checkbox "选择商品：1pc Love Bombing？T Shirt Hell Yeah I Do Cute Benjamin Netanyahu Meme Gaza War Protest Funny Men Women Kids Summer Streetwear" [ref=f1e275]
+          - generic [ref=f1e276]:
+            - generic [ref=f1e277]: 已编辑
+            - generic [ref=f1e278]: 1pc Love Bombing？T Shirt Hell Yeah I Do Cute Benjamin Netanyahu Meme Gaza War Protest Funny Men Women Kids Summer Streetwear
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e279]:
+              - generic [ref=f1e280]: 童装短袖
+              - generic [ref=f1e281]: 材质未知
+              - generic [ref=f1e282]: 已确认预设
+            - generic [ref=f1e283]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e284]:
+              - generic [ref=f1e285]: 当前模板
+              - generic [ref=f1e286]: 童装短袖棉
+              - generic [ref=f1e287]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e288]:
+              - generic [ref=f1e289]: 质量分
+              - generic [ref=f1e290]: "72"
+          - link [ref=f1e292]:
+            - /url: /products/0a4b8b3d-376b-40c4-994a-845318597b1e
+            - button "编辑" [ref=f1e293]
+        - generic [ref=f1e294] [cursor=pointer]:
+          - checkbox "选择商品：1pc Vintage Shakira Las Mujeres Ya No Lloran World Tour 2026 Merch T Shirts Washed Kid Men Women's High Quality Loose Casual" [ref=f1e296]
+          - generic [ref=f1e297]:
+            - generic [ref=f1e298]: 已编辑
+            - generic [ref=f1e299]: 1pc Vintage Shakira Las Mujeres Ya No Lloran World Tour 2026 Merch T Shirts Washed Kid Men Women's High Quality Loose Casual
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e300]:
+              - generic [ref=f1e301]: 童装短袖
+              - generic [ref=f1e302]: 材质未知
+              - generic [ref=f1e303]: 已确认预设
+            - generic [ref=f1e304]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e305]:
+              - generic [ref=f1e306]: 当前模板
+              - generic [ref=f1e307]: 童装短袖棉
+              - generic [ref=f1e308]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e309]:
+              - generic [ref=f1e310]: 质量分
+              - generic [ref=f1e311]: "72"
+          - link [ref=f1e313]:
+            - /url: /products/d567f297-5665-40aa-9489-88102266a18f
+            - button "编辑" [ref=f1e314]
+        - generic [ref=f1e315] [cursor=pointer]:
+          - checkbox "选择商品：1pc New Harajuku 2pac Graphic Hip Hop 3D Printed T Shirt Unisex Men Women Kids Summer Streetwear Casual Short Sleeve Tops" [ref=f1e317]
+          - generic [ref=f1e318]:
+            - generic [ref=f1e319]: 已编辑
+            - generic [ref=f1e320]: 1pc New Harajuku 2pac Graphic Hip Hop 3D Printed T Shirt Unisex Men Women Kids Summer Streetwear Casual Short Sleeve Tops
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e321]:
+              - generic [ref=f1e322]: 童装短袖
+              - generic [ref=f1e323]: 材质未知
+              - generic [ref=f1e324]: 已确认预设
+            - generic [ref=f1e325]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e326]:
+              - generic [ref=f1e327]: 当前模板
+              - generic [ref=f1e328]: 童装短袖棉
+              - generic [ref=f1e329]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e330]:
+              - generic [ref=f1e331]: 质量分
+              - generic [ref=f1e332]: "72"
+          - link [ref=f1e334]:
+            - /url: /products/01c519a8-b982-4e91-9cf1-2eb1cdfbb740
+            - button "编辑" [ref=f1e335]
+        - generic [ref=f1e336] [cursor=pointer]:
+          - checkbox "选择商品：1pc Halloween Terrifying Graphics T-Shirt Short Sleeve Unisex Men Women Kids Summer Streetwear Casual Short Sleeve Tops" [ref=f1e338]
+          - generic [ref=f1e339]:
+            - generic [ref=f1e340]: 已编辑
+            - generic [ref=f1e341]: 1pc Halloween Terrifying Graphics T-Shirt Short Sleeve Unisex Men Women Kids Summer Streetwear Casual Short Sleeve Tops
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e342]:
+              - generic [ref=f1e343]: 童装短袖
+              - generic [ref=f1e344]: 材质未知
+              - generic [ref=f1e345]: 已确认预设
+            - generic [ref=f1e346]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e347]:
+              - generic [ref=f1e348]: 当前模板
+              - generic [ref=f1e349]: 童装短袖棉
+              - generic [ref=f1e350]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e351]:
+              - generic [ref=f1e352]: 质量分
+              - generic [ref=f1e353]: "72"
+          - link [ref=f1e355]:
+            - /url: /products/3f2919b0-7c33-44ef-8b30-2966ae986b7a
+            - button "编辑" [ref=f1e356]
+        - generic [ref=f1e357] [cursor=pointer]:
+          - checkbox "选择商品：1pc Vintage Shakira LMYNL World Tour 2026 Washed Merch T-shirts Men Women Kids High Quality Fashion" [ref=f1e359]
+          - generic [ref=f1e360]:
+            - generic [ref=f1e361]: 已编辑
+            - generic [ref=f1e362]: 1pc Vintage Shakira LMYNL World Tour 2026 Washed Merch T-shirts Men Women Kids High Quality Fashion
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e363]:
+              - generic [ref=f1e364]: 童装短袖
+              - generic [ref=f1e365]: 材质未知
+              - generic [ref=f1e366]: 已确认预设
+            - generic [ref=f1e367]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e368]:
+              - generic [ref=f1e369]: 当前模板
+              - generic [ref=f1e370]: 童装短袖棉
+              - generic [ref=f1e371]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e372]:
+              - generic [ref=f1e373]: 质量分
+              - generic [ref=f1e374]: "72"
+          - link [ref=f1e376]:
+            - /url: /products/63ac6ae9-cedf-46b5-955c-be37e80c1e12
+            - button "编辑" [ref=f1e377]
+        - generic [ref=f1e378] [cursor=pointer]:
+          - checkbox "选择商品：1pc 2026 Game Azur Lane Cosplay 3D T Shirt Short Sleeve Unisex Men Women Kids Summer Streetwear Casual Short Sleeve Tops" [ref=f1e380]
+          - generic [ref=f1e381]:
+            - generic [ref=f1e382]: 已编辑
+            - generic [ref=f1e383]: 1pc 2026 Game Azur Lane Cosplay 3D T Shirt Short Sleeve Unisex Men Women Kids Summer Streetwear Casual Short Sleeve Tops
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e384]:
+              - generic [ref=f1e385]: 童装短袖
+              - generic [ref=f1e386]: 材质未知
+              - generic [ref=f1e387]: 已确认预设
+            - generic [ref=f1e388]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e389]:
+              - generic [ref=f1e390]: 当前模板
+              - generic [ref=f1e391]: 童装短袖棉
+              - generic [ref=f1e392]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e393]:
+              - generic [ref=f1e394]: 质量分
+              - generic [ref=f1e395]: "72"
+          - link [ref=f1e397]:
+            - /url: /products/de095776-ffc0-4f9e-a939-f3c8a4827055
+            - button "编辑" [ref=f1e398]
+        - generic [ref=f1e399] [cursor=pointer]:
+          - checkbox "选择商品：1pc Stephon Castle Dunk San Antonio Basketball Fan Washed Graphic T Shirts Men Women Kids Hip Hop Aesthetic Fashion Short Sleeve" [ref=f1e401]
+          - generic [ref=f1e402]:
+            - generic [ref=f1e403]: 已编辑
+            - generic [ref=f1e404]: 1pc Stephon Castle Dunk San Antonio Basketball Fan Washed Graphic T Shirts Men Women Kids Hip Hop Aesthetic Fashion Short Sleeve
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e405]:
+              - generic [ref=f1e406]: 童装短袖
+              - generic [ref=f1e407]: 材质未知
+              - generic [ref=f1e408]: 已确认预设
+            - generic [ref=f1e409]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e410]:
+              - generic [ref=f1e411]: 当前模板
+              - generic [ref=f1e412]: 童装短袖棉
+              - generic [ref=f1e413]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e414]:
+              - generic [ref=f1e415]: 质量分
+              - generic [ref=f1e416]: "72"
+          - link [ref=f1e418]:
+            - /url: /products/d396df43-ff25-46cf-bdc5-e42ac02b6edd
+            - button "编辑" [ref=f1e419]
+        - generic [ref=f1e420] [cursor=pointer]:
+          - checkbox "选择商品：1pc Fashion Figure Letter Print T Shirt 2026 Summer Unisex Men Women Kids Summer Streetwear Casual Short Sleeve Tops" [ref=f1e422]
+          - generic [ref=f1e423]:
+            - generic [ref=f1e424]: 已编辑
+            - generic [ref=f1e425]: 1pc Fashion Figure Letter Print T Shirt 2026 Summer Unisex Men Women Kids Summer Streetwear Casual Short Sleeve Tops
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e426]:
+              - generic [ref=f1e427]: 童装短袖
+              - generic [ref=f1e428]: 材质未知
+              - generic [ref=f1e429]: 已确认预设
+            - generic [ref=f1e430]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e431]:
+              - generic [ref=f1e432]: 当前模板
+              - generic [ref=f1e433]: 童装短袖棉
+              - generic [ref=f1e434]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e435]:
+              - generic [ref=f1e436]: 质量分
+              - generic [ref=f1e437]: "72"
+          - link [ref=f1e439]:
+            - /url: /products/7f6647bd-c7e1-45ac-93d5-d97e1d2ba8bf
+            - button "编辑" [ref=f1e440]
+        - generic [ref=f1e441] [cursor=pointer]:
+          - checkbox "选择商品：1pc System Of A Down Europe 2026 Tour Cotton T shirt Unisex Men Women Kids Streetwear Casual Short Sleeve Tops Fashion" [ref=f1e443]
+          - generic [ref=f1e444]:
+            - generic [ref=f1e445]: 已编辑
+            - generic [ref=f1e446]: 1pc System Of A Down Europe 2026 Tour Cotton T shirt Unisex Men Women Kids Streetwear Casual Short Sleeve Tops Fashion
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e447]:
+              - generic [ref=f1e448]: 童装短袖
+              - generic [ref=f1e449]: 棉
+              - generic [ref=f1e450]: 已确认预设
+            - generic [ref=f1e451]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e452]:
+              - generic [ref=f1e453]: 当前模板
+              - generic [ref=f1e454]: 童装短袖棉
+              - generic [ref=f1e455]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e456]:
+              - generic [ref=f1e457]: 质量分
+              - generic [ref=f1e458]: "72"
+          - link [ref=f1e460]:
+            - /url: /products/c8f19b6c-9ac0-428e-9087-5761b7985104
+            - button "编辑" [ref=f1e461]
+        - generic [ref=f1e462] [cursor=pointer]:
+          - checkbox "选择商品：1pc 2026 Halloween Floral Leopard-Print Pumpkin Cotton T shirt Unisex Men Women Kids Streetwear Casual Short Sleeve Tops" [ref=f1e464]
+          - generic [ref=f1e465]:
+            - generic [ref=f1e466]: 已编辑
+            - generic [ref=f1e467]: 1pc 2026 Halloween Floral Leopard-Print Pumpkin Cotton T shirt Unisex Men Women Kids Streetwear Casual Short Sleeve Tops
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e468]:
+              - generic [ref=f1e469]: 童装短袖
+              - generic [ref=f1e470]: 棉
+              - generic [ref=f1e471]: 已确认预设
+            - generic [ref=f1e472]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e473]:
+              - generic [ref=f1e474]: 当前模板
+              - generic [ref=f1e475]: 童装短袖棉
+              - generic [ref=f1e476]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e477]:
+              - generic [ref=f1e478]: 质量分
+              - generic [ref=f1e479]: "72"
+          - link [ref=f1e481]:
+            - /url: /products/aa3c5bd8-cc7a-4ecb-b0a3-1a6a132ef301
+            - button "编辑" [ref=f1e482]
+        - generic [ref=f1e483] [cursor=pointer]:
+          - checkbox "选择商品：1pc 2026 Halloween Pumpkin Leopard Bow Graphic Cotton T shirt Unisex Men Women Kids Streetwear Casual Short Sleeve Tops" [ref=f1e485]
+          - generic [ref=f1e486]:
+            - generic [ref=f1e487]: 已编辑
+            - generic [ref=f1e488]: 1pc 2026 Halloween Pumpkin Leopard Bow Graphic Cotton T shirt Unisex Men Women Kids Streetwear Casual Short Sleeve Tops
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e489]:
+              - generic [ref=f1e490]: 童装短袖
+              - generic [ref=f1e491]: 棉
+              - generic [ref=f1e492]: 已确认预设
+            - generic [ref=f1e493]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e494]:
+              - generic [ref=f1e495]: 当前模板
+              - generic [ref=f1e496]: 童装短袖棉
+              - generic [ref=f1e497]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e498]:
+              - generic [ref=f1e499]: 质量分
+              - generic [ref=f1e500]: "72"
+          - link [ref=f1e502]:
+            - /url: /products/ce33e744-d773-43ad-9fd7-7dff1b38a026
+            - button "编辑" [ref=f1e503]
+        - generic [ref=f1e504] [cursor=pointer]:
+          - checkbox "选择商品：EVA Unit-01 Full Print Compression T-Shirt, Anime Mecha Cosplay Sport Tee For Men Women Kids, Quick Dry Fitness Short Sleeve Top" [ref=f1e506]
+          - generic [ref=f1e507]:
+            - generic [ref=f1e508]: 已编辑
+            - generic [ref=f1e509]: EVA Unit-01 Full Print Compression T-Shirt, Anime Mecha Cosplay Sport Tee For Men Women Kids, Quick Dry Fitness Short Sleeve Top
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e510]:
+              - generic [ref=f1e511]: 童装短袖
+              - generic [ref=f1e512]: 材质未知
+              - generic [ref=f1e513]: 已确认预设
+            - generic [ref=f1e514]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e515]:
+              - generic [ref=f1e516]: 当前模板
+              - generic [ref=f1e517]: 童装短袖棉
+              - generic [ref=f1e518]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e519]:
+              - generic [ref=f1e520]: 质量分
+              - generic [ref=f1e521]: "72"
+          - link [ref=f1e523]:
+            - /url: /products/021cd51a-583d-46bf-a98a-601f7e64b824
+            - button "编辑" [ref=f1e524]
+        - generic [ref=f1e525] [cursor=pointer]:
+          - checkbox "选择商品：Dragon Ball Vegeta Cosplay Armor 3D Print Short Sleeve T-Shirt, Anime Costume Casual Tee For Men Women Kids,Quick Dry Sport Tops" [ref=f1e527]
+          - generic [ref=f1e528]:
+            - generic [ref=f1e529]: 已编辑
+            - generic [ref=f1e530]: Dragon Ball Vegeta Cosplay Armor 3D Print Short Sleeve T-Shirt, Anime Costume Casual Tee For Men Women Kids,Quick Dry Sport Tops
+            - generic "根据原商品标题分组；材质依据原商品信息" [ref=f1e531]:
+              - generic [ref=f1e532]: 童装短袖
+              - generic [ref=f1e533]: 材质未知
+              - generic [ref=f1e534]: 已确认预设
+            - generic [ref=f1e535]: 5 USD
+            - button "当前模板 童装短袖棉 切换为：聚酯纤维成人短袖" [ref=f1e536]:
+              - generic [ref=f1e537]: 当前模板
+              - generic [ref=f1e538]: 童装短袖棉
+              - generic [ref=f1e539]: 切换为：聚酯纤维成人短袖
+            - generic [ref=f1e540]:
+              - generic [ref=f1e541]: 质量分
+              - generic [ref=f1e542]: "72"
+          - link [ref=f1e544]:
+            - /url: /products/70f3ea92-1251-4202-b435-16c737c2fe1a
+            - button "编辑" [ref=f1e545]
+      - generic [ref=f1e546]:
+        - generic [ref=f1e547]: 共 7443 条 · 第 1/373 页
+        - generic [ref=f1e548]:
+          - text: 每页
+          - combobox "每页商品数量" [ref=f1e549]:
+            - option "10 条"
+            - option "20 条" [selected]
+            - option "50 条"
+            - option "100 条"
+            - option "150 条"
+            - option "200 条"
+        - generic [ref=f1e550]:
+          - text: 跳到
+          - spinbutton "跳转到页码" [ref=f1e551]: "1"
+          - text: / 373 页
+          - button "跳转" [ref=f1e552] [cursor=pointer]
+        - button "首页" [disabled] [ref=f1e553]
+        - button "上一页" [disabled] [ref=f1e554]
+        - generic [ref=f1e555]: "1"
+        - button "下一页" [ref=f1e556] [cursor=pointer]
+        - button "末页" [ref=f1e557] [cursor=pointer]
+      - dialog "分拣模板" [active] [ref=f1e558]:
+        - generic [ref=f1e559]:
+          - generic [ref=f1e560]:
+            - generic [ref=f1e561]:
+              - strong [ref=f1e562]: 分拣模板
+              - generic [ref=f1e563]: 第 1 / 644 件 · 已定 0
+            - button "退出 Esc" [ref=f1e564] [cursor=pointer]
+          - generic [ref=f1e566]:
+            - region "商品图片" [ref=f1e567]:
+              - emphasis [ref=f1e569]: 1 / 5 · ←/→ 切换
+              - generic [ref=f1e570]:
+                - button "第 1 张图" [ref=f1e571] [cursor=pointer]
+                - button "第 2 张图" [ref=f1e572] [cursor=pointer]
+                - button "第 3 张图" [ref=f1e573] [cursor=pointer]
+                - button "第 4 张图" [ref=f1e574] [cursor=pointer]
+                - button "第 5 张图" [ref=f1e575] [cursor=pointer]
+            - generic [ref=f1e576]:
+              - generic [ref=f1e577]: Armani Exchange chest logo t-shirt in navy
+              - generic [ref=f1e578]: 改后标题：Armani Exchange Crew Neck Chest Logo Men's Cotton T-Shirt Navy
+              - generic [ref=f1e579]:
+                - generic [ref=f1e580]: 男装短袖 · 棉
+                - generic [ref=f1e581]: 1 个颜色
+                - link "编辑页" [ref=f1e582] [cursor=pointer]:
+                  - /url: /products/a556b462-1d3d-4bf8-b289-ea52122c0a48
+                - link "原商品" [ref=f1e583] [cursor=pointer]:
+                  - /url: https://www.asos.com/armani-exchange/armani-exchange-chest-logo-t-shirt-in-navy/prd/210060347#colourWayId-210060360
+              - generic "采集到的尺码" [ref=f1e584]:
+                - generic [ref=f1e585]: XS
+                - generic [ref=f1e586]: S
+                - generic [ref=f1e587]: M
+                - generic [ref=f1e588]: L
+                - generic [ref=f1e589]: XL
+                - generic [ref=f1e590]: 2XL
+              - generic [ref=f1e591]:
+                - paragraph [ref=f1e592]:
+                  - text: 当前模板：
+                  - generic [ref=f1e593]: 成人棉短袖
+                - generic [ref=f1e594]: 和商品没有发现矛盾
+              - generic [ref=f1e595]:
+                - paragraph [ref=f1e596]:
+                  - text: 建议：
+                  - generic [ref=f1e597]: 成人棉短袖
+                  - generic [ref=f1e598]: 有把握
+                  - generic [ref=f1e599]: Enter
+                - list [ref=f1e600]:
+                  - listitem [ref=f1e601]: 尺码 XS–2XL → 成人款
+                  - listitem [ref=f1e602]: 类别像短袖 T 恤
+                  - listitem [ref=f1e603]: 材质写的是棉
+              - group "选择模板" [ref=f1e604]:
+                - generic [ref=f1e605]:
+                  - generic [ref=f1e606]: 成人 · 短袖
+                  - generic [ref=f1e607]:
+                    - button "1 成人棉短袖 建议 当前" [ref=f1e608] [cursor=pointer]:
+                      - generic [ref=f1e609]: "1"
+                      - generic [ref=f1e610]: 成人棉短袖
+                      - generic [ref=f1e611]: 建议
+                      - generic [ref=f1e612]: 当前
+                    - button "3 聚酯纤维成人短袖 不符" [ref=f1e613] [cursor=pointer]:
+                      - generic [ref=f1e614]: "3"
+                      - generic [ref=f1e615]: 聚酯纤维成人短袖
+                      - generic [ref=f1e616]: 不符
+                - generic [ref=f1e617]:
+                  - generic [ref=f1e618]: 童装 · 短袖
+                  - generic [ref=f1e619]:
+                    - button "2 童装短袖棉 不符" [ref=f1e620] [cursor=pointer]:
+                      - generic [ref=f1e621]: "2"
+                      - generic [ref=f1e622]: 童装短袖棉
+                      - generic [ref=f1e623]: 不符
+                    - button "7 童短袖聚酯纤维 不符" [ref=f1e624] [cursor=pointer]:
+                      - generic [ref=f1e625]: "7"
+                      - generic [ref=f1e626]: 童短袖聚酯纤维
+                      - generic [ref=f1e627]: 不符
+                - generic [ref=f1e628]:
+                  - generic [ref=f1e629]: 成人 · 卫衣
+                  - generic [ref=f1e630]:
+                    - button "8 成人连帽卫衣无拉链棉 不符" [ref=f1e631] [cursor=pointer]:
+                      - generic [ref=f1e632]: "8"
+                      - generic [ref=f1e633]: 成人连帽卫衣无拉链棉
+                      - generic [ref=f1e634]: 不符
+                    - button "9 成人连帽卫衣有拉链棉 不符" [ref=f1e635] [cursor=pointer]:
+                      - generic [ref=f1e636]: "9"
+                      - generic [ref=f1e637]: 成人连帽卫衣有拉链棉
+                      - generic [ref=f1e638]: 不符
+                - generic [ref=f1e639]:
+                  - generic [ref=f1e640]: 童装 · 卫衣
+                  - generic [ref=f1e641]:
+                    - button "4 童装卫衣套装棉 不符" [ref=f1e642] [cursor=pointer]:
+                      - generic [ref=f1e643]: "4"
+                      - generic [ref=f1e644]: 童装卫衣套装棉
+                      - generic [ref=f1e645]: 不符
+                    - button "5 童装连帽卫衣无拉链 不符" [ref=f1e646] [cursor=pointer]:
+                      - generic [ref=f1e647]: "5"
+                      - generic [ref=f1e648]: 童装连帽卫衣无拉链
+                      - generic [ref=f1e649]: 不符
+                    - button "6 童装连帽卫衣有拉链 不符" [ref=f1e650] [cursor=pointer]:
+                      - generic [ref=f1e651]: "6"
+                      - generic [ref=f1e652]: 童装连帽卫衣有拉链
+                      - generic [ref=f1e653]: 不符
+              - button "不需要套模板 · 移入废弃箱 X" [ref=f1e655] [cursor=pointer]:
+                - text: 不需要套模板 · 移入废弃箱
+                - generic [ref=f1e656]: X
+          - generic [ref=f1e657]:
+            - generic [ref=f1e658]:
+              - generic [ref=f1e659]: Enter
+              - text: 接受建议
+            - generic [ref=f1e660]:
+              - generic [ref=f1e661]: "1"
+              - text: –
+              - generic [ref=f1e662]: "9"
+              - text: 选模板
+            - generic [ref=f1e663]:
+              - generic [ref=f1e664]: ←
+              - generic [ref=f1e665]: →
+              - text: 看图
+            - generic [ref=f1e666]:
+              - generic [ref=f1e667]: S
+              - text: 跳过
+            - generic [ref=f1e668]:
+              - generic [ref=f1e669]: X
+              - text: 移入废弃箱
+            - generic [ref=f1e670]:
+              - generic [ref=f1e671]: ↑
+              - generic [ref=f1e672]: ↓
+              - text: 上一件/下一件
+            - generic [ref=f1e673]:
+              - generic [ref=f1e674]: Z
+              - text: 撤销
+            - generic [ref=f1e675]:
+              - generic [ref=f1e676]: Esc
+              - text: 退出
+            - generic [ref=f1e677]: 换模板和快捷模板一样：标题、SKU、图片保持不变

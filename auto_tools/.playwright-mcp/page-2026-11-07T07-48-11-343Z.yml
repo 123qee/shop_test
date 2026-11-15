@@ -1,0 +1,442 @@
+- generic [active] [ref=f15e1]:
+  - generic: on on on
+  - generic [ref=f15e3]:
+    - banner [ref=f15e5]:
+      - generic:
+        - link "Skip to main content" [ref=f15e6] [cursor=pointer]:
+          - /url: "#chrome-app-container"
+        - link "Accessibility Statement" [ref=f15e7] [cursor=pointer]:
+          - /url: https://www.asos.com/accessibility/
+      - list [ref=f15e10]:
+        - listitem [ref=f15e11]:
+          - link "Download our new app" [ref=f15e12] [cursor=pointer]:
+            - /url: https://www.asos.com/discover/our-apps?ctaref=topbar%7Cdownload+app%7Cour+apps
+        - listitem [ref=f15e13]:
+          - link "Help & FAQs" [ref=f15e14] [cursor=pointer]:
+            - /url: https://www.asos.com/customer-care/
+        - listitem [ref=f15e15]:
+          - button "You're in United Kingdom Change" [ref=f15e17]:
+            - img "United Kingdom" [ref=f15e18]
+      - generic [ref=f15e20]:
+        - generic [ref=f15e22]:
+          - generic [ref=f15e23]:
+            - link [ref=f15e24] [cursor=pointer]:
+              - /url: https://www.asos.com/men/
+              - img "ASOS home" [ref=f15e25]
+            - list [ref=f15e26]:
+              - listitem [ref=f15e27]:
+                - link "WOMEN" [ref=f15e28] [cursor=pointer]:
+                  - /url: https://www.asos.com/women/
+              - listitem [ref=f15e29]:
+                - link "MEN" [ref=f15e30] [cursor=pointer]:
+                  - /url: https://www.asos.com/men/
+            - generic [ref=f15e32]:
+              - generic:
+                - searchbox "Search for items and brands" [ref=f15e33]
+                - button "Search" [disabled] [ref=f15e34]:
+                  - img "Search" [ref=f15e35]
+          - list [ref=f15e37]:
+            - listitem [ref=f15e38]:
+              - button "My Account" [ref=f15e42] [cursor=pointer]
+            - listitem [ref=f15e46]:
+              - link "Saved Items" [ref=f15e47] [cursor=pointer]:
+                - /url: https://www.asos.com/saved-lists/?nlid=nav header
+            - listitem [ref=f15e49]:
+              - link "Bag 0 items" [ref=f15e50] [cursor=pointer]:
+                - /url: https://www.asos.com/bag?nlid=nav header
+        - navigation "Men's products" [ref=f15e55]:
+          - tablist [ref=f15e56]:
+            - tab "New in" [ref=f15e57]
+            - tab "Clothing" [ref=f15e59]
+            - tab "Shoes" [ref=f15e61]
+            - tab "Gifting" [ref=f15e63]
+            - tab "Accessories" [ref=f15e65]
+            - tab "Brands" [ref=f15e67]
+            - tab "Activewear" [ref=f15e69]
+            - tab "Grooming" [ref=f15e71]
+            - tab "Trending" [ref=f15e73]
+            - tab "TOPMAN" [ref=f15e75]
+            - tab "Vintage" [ref=f15e77]
+            - tab "Sale" [ref=f15e79]
+            - tab "Credit Card" [ref=f15e81]
+      - region "promotion" [ref=f15e83]:
+        - generic [ref=f15e86]:
+          - link "WOMEN" [ref=f15e87] [cursor=pointer]:
+            - /url: /women/new-in/cat/?cid=27108&ctaref=10offnewcustomer|globalbanner|ww
+          - strong [ref=f15e90]: New here? Get 15% off + Free Next Day Delivery on your first order with code NEWHERE*
+          - tooltip "Tooltip":
+            - generic: "*Enter code NEWHERE at checkout, or HEYAPP at checkout in app to receive the stated discount on your first order up to a maximum pre-discount spend of £500/€690. Code valid for new customers who opt in to receive our marketing communications. Discount may be withdrawn from site at any time. Can’t be used with other promo codes or on gift vouchers, delivery charges, Premier Delivery or ASOS Marketplace. Selected marked products excluded from promo. Country exclusions apply."
+          - link "MEN" [ref=f15e91] [cursor=pointer]:
+            - /url: /men/new-in/cat/?cid=27110&ctaref=10offnewcustomer|globalbanner|mw
+    - navigation "breadcrumbs" [ref=f15e94]:
+      - list [ref=f15e95]:
+        - listitem [ref=f15e96]:
+          - link "Home" [ref=f15e97] [cursor=pointer]:
+            - /url: https://www.asos.com/?hrd=1
+        - listitem [ref=f15e98]:
+          - generic [aria-hidden] [ref=f15e99]: ›
+          - link "Men" [ref=f15e100] [cursor=pointer]:
+            - /url: https://www.asos.com/men/
+        - listitem [ref=f15e101]:
+          - generic [aria-hidden] [ref=f15e102]: ›
+          - link "Hoodies & Sweatshirts" [ref=f15e103] [cursor=pointer]:
+            - /url: https://www.asos.com/men/hoodies-sweatshirts/cat/?cid=5668
+        - listitem [ref=f15e104]:
+          - generic [aria-hidden] [ref=f15e105]: ›
+          - text: ASOS DESIGN relaxed zip through funnel neck hoodie with piping and cinch in black
+    - main [ref=f15e106]:
+      - generic [ref=f15e107]:
+        - status [ref=f15e108]
+        - region "Product Gallery" [ref=f15e109]:
+          - generic [ref=f15e111]:
+            - paragraph [aria-hidden] [ref=f15e112]: Select thumbnail to enlarge image
+            - list "Product thumbnails" [ref=f15e113]:
+              - listitem [ref=f15e114]:
+                - button "Thumbnail 1 of 5" [ref=f15e115] [cursor=pointer]:
+                  - img "Thumbnail 1 of 5"
+              - listitem [ref=f15e116]:
+                - button "Thumbnail 2 of 5" [ref=f15e117] [cursor=pointer]:
+                  - img "Thumbnail 2 of 5"
+              - listitem [ref=f15e118]:
+                - button "Thumbnail 3 of 5" [ref=f15e119] [cursor=pointer]:
+                  - img "Thumbnail 3 of 5"
+              - listitem [ref=f15e120]:
+                - button "Thumbnail 4 of 5" [ref=f15e121] [cursor=pointer]:
+                  - img "Thumbnail 4 of 5"
+              - listitem [ref=f15e122]:
+                - button "Thumbnail 5 of 5" [ref=f15e123] [cursor=pointer]:
+                  - img "Thumbnail 5 of 5"
+            - button "Buy the look" [ref=f15e125] [cursor=pointer]
+          - generic [ref=f15e128]:
+            - region "Product carousel" [ref=f15e130]:
+              - generic [ref=f15e131]:
+                - generic [ref=f15e132]:
+                  - generic [ref=f15e133]:
+                    - button [aria-hidden] [ref=f15e137] [cursor=pointer]
+                    - generic [ref=f15e141]:
+                      - img "ASOS DESIGN relaxed zip through funnel neck hoodie with piping and cinch in black, 1 of 5" [ref=f15e142]
+                      - button "Click to zoom. Use keyboard arrow keys to pan image" [ref=f15e143] [cursor=pointer]
+                    - button [aria-hidden] [ref=f15e149] [cursor=pointer]
+                    - button [aria-hidden] [ref=f15e155] [cursor=pointer]
+                    - button [aria-hidden] [ref=f15e161] [cursor=pointer]
+                    - button [aria-hidden] [ref=f15e167] [cursor=pointer]
+                    - button [aria-hidden] [ref=f15e173] [cursor=pointer]
+                  - generic:
+                    - button "Show next image" [ref=f15e176] [cursor=pointer]
+                    - button "Show previous image" [ref=f15e178] [cursor=pointer]
+                - generic [ref=f15e180]:
+                  - generic [aria-hidden] [ref=f15e181]: "437"
+                  - generic [ref=f15e182]: 437 people have this product in their Saved Items
+            - generic [ref=f15e184]: "Model: 188cm / 6'2\" | Wearing M - Chest 38-40"
+        - generic [ref=f15e185]:
+          - generic [ref=f15e186]:
+            - heading "ASOS DESIGN relaxed zip through funnel neck hoodie with piping and cinch in black" [level=1] [ref=f15e188]
+            - button "SHARE" [ref=f15e190] [cursor=pointer]
+          - generic [ref=f15e192]:
+            - generic [ref=f15e193]:
+              - generic [ref=f15e194]: £36.00
+              - generic [aria-hidden] [ref=f15e195]: £36.00
+            - generic [ref=f15e197]:
+              - text: Pay in 3 interest-free payments of £12.00 with
+              - link [ref=f15e198] [cursor=pointer]:
+                - /url: https://www.paypal.com/credit-presentment/lander/modal?payer_id=L8B4QJCEZY5C6&offer=PAY_LATER_SHORT_TERM&buyer_country=GB
+                - img "PayPal" [ref=f15e199]
+          - generic [ref=f15e200]:
+            - generic [ref=f15e201]:
+              - paragraph [aria-hidden] [ref=f15e204]:
+                - text: "NEW HERE? Get 15% off + Free Next Day Delivery with code:"
+                - strong [ref=f15e205]: NEWHERE
+              - paragraph [ref=f15e206]: "new here? get 15% off + free next day delivery with code: newhere"
+            - generic [ref=f15e207]:
+              - generic [ref=f15e208]: "COLOUR:"
+              - generic [ref=f15e209]: BLACK
+            - generic [ref=f15e210]:
+              - generic [ref=f15e211]:
+                - generic [ref=f15e212]: "SIZE:"
+                - button "Size Guide" [ref=f15e213] [cursor=pointer]
+              - combobox "SIZE:" [ref=f15e215]:
+                - option "Please select" [selected]
+                - option "S - Chest 35-37"
+                - option "M - Chest 38-40"
+                - option "L - Chest 42-44"
+                - option "XL - Chest 46-48"
+            - generic [ref=f15e216]:
+              - button "Add to bag" [ref=f15e217] [cursor=pointer]
+              - button "Save for later" [ref=f15e219] [cursor=pointer]
+            - generic [ref=f15e225]:
+              - generic [ref=f15e226]: Free delivery on orders over £40.00. Standard delivery £4.50
+              - generic [ref=f15e229]: Free returns on qualifying orders.
+              - link "View Delivery & Returns rates. Opens in a new window." [ref=f15e234] [cursor=pointer]:
+                - /url: https://www.asos.com/payments-and-deliveries/delivery/#feemsg=pdp%20returns%20message%20free
+                - generic [aria-hidden] [ref=f15e235]: View Delivery & Returns rates
+              - button "This product has shipping restrictions." [ref=f15e238] [cursor=pointer]
+            - list "PRODUCT INFORMATION" [ref=f15e240]:
+              - listitem [ref=f15e241]:
+                - heading [level=2] [ref=f15e243]:
+                  - button "Size & Fit" [ref=f15e244] [cursor=pointer]
+              - listitem [ref=f15e246]:
+                - heading [level=2] [ref=f15e248]:
+                  - button "Product Details" [ref=f15e249] [cursor=pointer]
+      - generic [ref=f15e252]:
+        - generic [ref=f15e255]:
+          - generic [ref=f15e256]:
+            - generic [ref=f15e257]:
+              - heading "Buy the look" [level=2] [ref=f15e258]
+              - paragraph [ref=f15e259]: Shop the model's full 'fit
+            - paragraph [ref=f15e260]: 6 items
+          - generic [ref=f15e261]:
+            - img "ASOS DESIGN relaxed zip through funnel neck hoodie with piping and cinch in black"
+            - generic [ref=f15e262]:
+              - generic "Activate to select a product" [ref=f15e263]:
+                - tablist [ref=f15e264]:
+                  - tab [disabled] [selected] [ref=f15e265] [cursor=pointer]:
+                    - img "ASOS DESIGN heavyweight boxy oversized t-shirt in grey marl" [ref=f15e266]
+                  - tab [ref=f15e267] [cursor=pointer]:
+                    - img "Levi's 568 loose straight jeans in light vintage wash" [ref=f15e268]
+                  - tab [ref=f15e269] [cursor=pointer]:
+                    - img "NOAK made in Portugal loafers in black leather with ruched apron" [ref=f15e270]
+                  - tab [ref=f15e271] [cursor=pointer]:
+                    - img "ASOS DESIGN faux leather bucket bag in black" [ref=f15e272]
+                  - tab [ref=f15e273] [cursor=pointer]:
+                    - img "Weekday Noah 3-pack socks in black" [ref=f15e274]
+                  - tab [ref=f15e275] [cursor=pointer]:
+                    - img "Calvin Klein Icon Cotton Stretch 3 pack boxer briefs in black" [ref=f15e276]
+              - generic [ref=f15e278]:
+                - generic [ref=f15e279]:
+                  - link "ASOS DESIGN heavyweight boxy oversized t-shirt in grey marl" [ref=f15e280] [cursor=pointer]:
+                    - /url: https://www.asos.com/asos-design/asos-design-heavyweight-boxy-oversized-t-shirt-in-grey-marl/prd/209768694#ctaRef-btl+content+-+btl+carousel_2&featureref1-btl+content+btl+carousel
+                    - img "ASOS DESIGN heavyweight boxy oversized t-shirt in grey marl"
+                  - button "Save for later" [ref=f15e281] [cursor=pointer]
+                - generic [ref=f15e288]:
+                  - link "ASOS DESIGN heavyweight boxy oversized t-shirt in grey marl" [ref=f15e289] [cursor=pointer]:
+                    - /url: https://www.asos.com/asos-design/asos-design-heavyweight-boxy-oversized-t-shirt-in-grey-marl/prd/209768694#ctaRef-btl+content+-+btl+carousel_2&featureref1-btl+content+btl+carousel
+                  - generic [ref=f15e291]:
+                    - generic [ref=f15e292]: Now £8.99. Was £14.00. (-35%)
+                    - generic [aria-hidden] [ref=f15e293]: Now £8.99
+                    - generic [ref=f15e294]:
+                      - text: Was £14.00
+                      - generic [aria-hidden] [ref=f15e295]: (-35%)
+                  - generic [ref=f15e296]:
+                    - generic [ref=f15e297]: "COLOUR:"
+                    - generic [ref=f15e298]: GREY MARL
+                  - generic [ref=f15e299]:
+                    - generic [ref=f15e300]:
+                      - generic [ref=f15e301]: "SIZE:"
+                      - combobox "SIZE:" [ref=f15e304]:
+                        - option "Please select" [selected]
+                        - option "XS - Chest 33-34 - Out of stock"
+                        - option "S - Chest 35-37"
+                        - option "M - Chest 38-40 - Out of stock"
+                        - option "L - Chest 42-44 - Out of stock"
+                        - option "XL - Chest 46-48"
+                        - option "2XL - Chest 50-52"
+                        - option "3XL - Chest 52-54 - Out of stock"
+                    - generic [ref=f15e305]:
+                      - button "Add to bag" [ref=f15e306] [cursor=pointer]
+                      - button "See similar" [ref=f15e308] [cursor=pointer]
+        - generic [ref=f15e309]:
+          - paragraph [ref=f15e310]: A carousel showing products often bought together based on customer purchases.
+          - region "People Also Bought carousel" [ref=f15e311]:
+            - heading "People also bought" [level=2] [ref=f15e313]
+            - generic [ref=f15e314]:
+              - generic [ref=f15e315]:
+                - button "No previous products to show" [disabled] [ref=f15e316]
+                - generic "Showing 1 to 4 of 18 products" [ref=f15e319]:
+                  - group "Product" [ref=f15e321]:
+                    - link "ONLY & SONS puffer gilet in black. £26.00" [ref=f15e322] [cursor=pointer]:
+                      - /url: https://www.asos.com/only-sons/only-sons-puffer-gilet-in-black/prd/211886915#ctaref-complementary+items_0&recsreqid-76ee4c31f8924c4e14a70cddc099d54b&featureref1-complementary+items
+                      - generic "ONLY & SONS puffer gilet in black" [ref=f15e325]
+                      - generic [aria-hidden] [ref=f15e328]: £26.00
+                    - button "Save for later" [ref=f15e329] [cursor=pointer]
+                  - group "Product" [ref=f15e336]:
+                    - link "ASOS DESIGN essentials cuffed joggers in black. £22.00" [ref=f15e337] [cursor=pointer]:
+                      - /url: https://www.asos.com/asos-design/asos-design-essentials-cuffed-joggers-in-black/prd/211090092#ctaref-complementary+items_1&recsreqid-76ee4c31f8924c4e14a70cddc099d54b&featureref1-complementary+items
+                      - generic "ASOS DESIGN essentials cuffed joggers in black" [ref=f15e340]
+                      - generic [aria-hidden] [ref=f15e343]: £22.00
+                    - button "Save for later" [ref=f15e344] [cursor=pointer]
+                  - group "Product" [ref=f15e351]:
+                    - link "ASOS DESIGN relaxed t-shirt in grey waffle. £12.00" [ref=f15e352] [cursor=pointer]:
+                      - /url: https://www.asos.com/asos-design/asos-design-relaxed-t-shirt-in-grey-waffle/prd/211424189#ctaref-complementary+items_2&recsreqid-76ee4c31f8924c4e14a70cddc099d54b&featureref1-complementary+items
+                      - generic "ASOS DESIGN relaxed t-shirt in grey waffle" [ref=f15e355]
+                      - generic [aria-hidden] [ref=f15e358]: £12.00
+                    - button "Save for later" [ref=f15e359] [cursor=pointer]
+                  - group "Product" [ref=f15e366]:
+                    - link "Jack & Jones windbreaker jacket in black. £35.00" [ref=f15e367] [cursor=pointer]:
+                      - /url: https://www.asos.com/jack-jones/jack-jones-windbreaker-jacket-in-black/prd/211017636#ctaref-complementary+items_3&recsreqid-76ee4c31f8924c4e14a70cddc099d54b&featureref1-complementary+items
+                      - generic "Jack & Jones windbreaker jacket in black" [ref=f15e370]
+                      - generic [aria-hidden] [ref=f15e373]: £35.00
+                    - button "Save for later" [ref=f15e374] [cursor=pointer]
+                - button "Show 5 to 8 of 18 products" [ref=f15e380] [cursor=pointer]
+              - list "Pagination" [ref=f15e382]:
+                - listitem [ref=f15e383]:
+                  - button "Show 1 to 4 of 18 products" [ref=f15e384] [cursor=pointer]
+                - listitem [ref=f15e385]:
+                  - button "Show 5 to 8 of 18 products" [ref=f15e386] [cursor=pointer]
+                - listitem [ref=f15e387]:
+                  - button "Show 9 to 12 of 18 products" [ref=f15e388] [cursor=pointer]
+                - listitem [ref=f15e389]:
+                  - button "Show 13 to 16 of 18 products" [ref=f15e390] [cursor=pointer]
+                - listitem [ref=f15e391]:
+                  - button "Show 17 to 18 of 18 products" [ref=f15e392] [cursor=pointer]
+    - contentinfo [ref=f15e394]:
+      - link "Download the App" [ref=f15e396] [cursor=pointer]:
+        - /url: https://www.asos.com/discover/our-apps/?ctaRef=global+footer%7CappDownload+banner%7Cour+apps
+      - generic [ref=f15e399]:
+        - link [ref=f15e402] [cursor=pointer]:
+          - /url: https://www.asos.com/men/
+          - img "ASOS home" [ref=f15e403]
+        - generic [ref=f15e405]:
+          - generic [ref=f15e406]:
+            - heading "Help & Information" [level=2] [ref=f15e407]
+            - list [ref=f15e408]:
+              - listitem [ref=f15e409]:
+                - link "Help" [ref=f15e410] [cursor=pointer]:
+                  - /url: https://www.asos.com/customer-care/
+              - listitem [ref=f15e411]:
+                - link "Track order" [ref=f15e412] [cursor=pointer]:
+                  - /url: https://my.asos.com/my-account/orders?country=GB&keyStoreDataversion=7qyyrb1-46&lang=en-GB&store=COM
+              - listitem [ref=f15e413]:
+                - link "Delivery & returns" [ref=f15e414] [cursor=pointer]:
+                  - /url: https://www.asos.com/payments-and-deliveries/delivery/
+              - listitem [ref=f15e415]:
+                - link "ASOS Premier" [ref=f15e416] [cursor=pointer]:
+                  - /url: https://www.asos.com/customer-service/premier-delivery/
+              - listitem [ref=f15e417]:
+                - link "10% Student Discount" [ref=f15e418] [cursor=pointer]:
+                  - /url: https://www.asos.com/student-validation
+              - listitem [ref=f15e419]:
+                - link "Sitemap" [ref=f15e420] [cursor=pointer]:
+                  - /url: https://www.asos.com/sitemap/
+              - listitem [ref=f15e421]:
+                - link "Data Protection" [ref=f15e422] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/data-protection-and-privacy/
+              - listitem [ref=f15e423]:
+                - link "Ethics & Compliance" [ref=f15e424] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/ethics-and-compliance/
+              - listitem [ref=f15e425]:
+                - link "Use of AI" [ref=f15e426] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/use-of-ai/
+          - generic [ref=f15e427]:
+            - heading "About ASOS" [level=2] [ref=f15e428]
+            - list [ref=f15e429]:
+              - listitem [ref=f15e430]:
+                - link "About us" [ref=f15e431] [cursor=pointer]:
+                  - /url: https://www.asos.com/about/
+              - listitem [ref=f15e432]:
+                - link "Careers at ASOS" [ref=f15e433] [cursor=pointer]:
+                  - /url: https://asoscareers.asos.com/
+              - listitem [ref=f15e434]:
+                - link "Corporate responsibility" [ref=f15e435] [cursor=pointer]:
+                  - /url: https://www.asosplc.com/fashion-with-integrity/
+              - listitem [ref=f15e436]:
+                - link "Investors' site" [ref=f15e437] [cursor=pointer]:
+                  - /url: https://www.asosplc.com/
+              - listitem [ref=f15e438]:
+                - link "Cyber Security" [ref=f15e439] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/cyber-security/
+          - generic [ref=f15e440]:
+            - heading "More From ASOS" [level=2] [ref=f15e441]
+            - list [ref=f15e442]:
+              - listitem [ref=f15e443]:
+                - link "Mobile and ASOS apps" [ref=f15e444] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/our-apps/?ctaref=global%20footer|our%20apps
+              - listitem [ref=f15e445]:
+                - link "Gift vouchers" [ref=f15e446] [cursor=pointer]:
+                  - /url: https://www.asos.com/gift-vouchers/?ctaref=global%20footer|gift%20vouchers
+              - listitem [ref=f15e447]:
+                - link "Corporate gift vouchers" [ref=f15e448] [cursor=pointer]:
+                  - /url: https://www.asoscorporategiftcard.com/home
+              - listitem [ref=f15e449]:
+                - link "Black Friday" [ref=f15e450] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/black-friday-cyber-monday-deals/
+              - listitem [ref=f15e451]:
+                - link "Info for Partners" [ref=f15e452] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/partner-fulfils/
+              - listitem [ref=f15e453]:
+                - link "Discover the ASOS Credit Card" [ref=f15e454] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/asos-credit-card
+          - generic [ref=f15e455]:
+            - heading "Shopping from:" [level=2] [ref=f15e456]
+            - button "You're in United Kingdom Change" [ref=f15e458]:
+              - generic [ref=f15e459]: You're in
+              - img "United Kingdom" [ref=f15e460]
+              - generic [ref=f15e461]:
+                - generic [aria-hidden] [ref=f15e462]: "|"
+                - text: Change
+            - generic [ref=f15e463]:
+              - heading "Some of our international sites:" [level=3] [ref=f15e464]
+              - list "Some of our international sites:" [ref=f15e465]:
+                - listitem [ref=f15e466]:
+                  - button "Spain" [ref=f15e467] [cursor=pointer]:
+                    - img "Spain" [ref=f15e468]
+                - listitem [ref=f15e469]:
+                  - button "Germany" [ref=f15e470] [cursor=pointer]:
+                    - img "Germany" [ref=f15e471]
+                - listitem [ref=f15e472]:
+                  - button "Australia" [ref=f15e473] [cursor=pointer]:
+                    - img "Australia" [ref=f15e474]
+                - listitem [ref=f15e475]:
+                  - button "France" [ref=f15e476] [cursor=pointer]:
+                    - img "France" [ref=f15e477]
+                - listitem [ref=f15e478]:
+                  - button "Denmark" [ref=f15e479] [cursor=pointer]:
+                    - img "Denmark" [ref=f15e480]
+                - listitem [ref=f15e481]:
+                  - button "Italy" [ref=f15e482] [cursor=pointer]:
+                    - img "Italy" [ref=f15e483]
+                - listitem [ref=f15e484]:
+                  - button "Netherlands" [ref=f15e485] [cursor=pointer]:
+                    - img "Netherlands" [ref=f15e486]
+                - listitem [ref=f15e487]:
+                  - button "Poland" [ref=f15e488] [cursor=pointer]:
+                    - img "Poland" [ref=f15e489]
+                - listitem [ref=f15e490]:
+                  - button "United States" [ref=f15e491] [cursor=pointer]:
+                    - img "United States" [ref=f15e492]
+                - listitem [ref=f15e493]:
+                  - button "Sweden" [ref=f15e494] [cursor=pointer]:
+                    - img "Sweden" [ref=f15e495]
+        - generic [ref=f15e496]:
+          - list [ref=f15e497]:
+            - listitem [ref=f15e498]:
+              - link "Facebook" [ref=f15e499] [cursor=pointer]:
+                - /url: https://www.facebook.com/ASOS/
+            - listitem [ref=f15e501]:
+              - link "Instagram" [ref=f15e502] [cursor=pointer]:
+                - /url: https://www.instagram.com/asos/
+            - listitem [ref=f15e504]:
+              - link "Snapchat" [ref=f15e505] [cursor=pointer]:
+                - /url: https://www.snapchat.com/add/asosfashion
+          - list [ref=f15e507]:
+            - listitem:
+              - img "VISA"
+            - listitem:
+              - img "Mastercard"
+            - listitem:
+              - img "PayPal"
+            - listitem:
+              - img "American Express"
+            - listitem:
+              - img "VISA Electron"
+            - listitem:
+              - img "Maestro"
+            - listitem:
+              - img "Apple Pay"
+            - listitem:
+              - img "Klarna"
+            - listitem:
+              - img "Clearpay"
+      - generic [ref=f15e509]:
+        - paragraph [ref=f15e510]: © 2026 ASOS
+        - list [ref=f15e511]:
+          - listitem [ref=f15e512]:
+            - link "Privacy & Cookies" [ref=f15e513] [cursor=pointer]:
+              - /url: https://www.asos.com/privacy-policy/
+            - text: "|"
+          - listitem [ref=f15e514]:
+            - link "Ts&Cs" [ref=f15e515] [cursor=pointer]:
+              - /url: https://www.asos.com/terms-and-conditions/
+            - text: "|"
+          - listitem [ref=f15e516]:
+            - link "Accessibility" [ref=f15e517] [cursor=pointer]:
+              - /url: https://www.asos.com/accessibility/

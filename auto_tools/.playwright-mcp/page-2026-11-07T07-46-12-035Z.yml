@@ -1,0 +1,889 @@
+- generic [ref=e1]:
+  - generic:
+    - region "Cookie banner" [active] [ref=e2]:
+      - dialog "Privacy" [ref=e3]:
+        - generic [ref=e5]:
+          - generic [ref=e8]:
+            - text: We use cookies to give you the best experience of ASOS and to make sure the ASOS ads you see on other sites are relevant. By continuing, you agree to our use of cookies – find out more
+            - link "here., opens in a new tab" [ref=e9] [cursor=pointer]:
+              - /url: https://www.asos.com/discover/marketing-terms-and-conditions/privacy-policy-cookies/
+              - text: here.
+          - generic [ref=e11]:
+            - button "Do Not Sell My Personal Information, Opens the preference center dialog" [ref=e12] [cursor=pointer]: Do Not Sell My Personal Information
+            - button "That's ok" [ref=e13] [cursor=pointer]
+    - text: on on on
+  - generic [ref=e15]:
+    - banner [ref=e17]:
+      - generic:
+        - link "Skip to main content" [ref=e18] [cursor=pointer]:
+          - /url: "#chrome-app-container"
+        - link "Accessibility Statement" [ref=e19] [cursor=pointer]:
+          - /url: https://www.asos.com/accessibility/
+      - list [ref=e22]:
+        - listitem [ref=e23]:
+          - link "Download our new app" [ref=e24] [cursor=pointer]:
+            - /url: https://www.asos.com/discover/our-apps?ctaref=topbar%7Cdownload+app%7Cour+apps
+        - listitem [ref=e25]:
+          - link "Help & FAQs" [ref=e26] [cursor=pointer]:
+            - /url: https://www.asos.com/customer-care/
+        - listitem [ref=e27]:
+          - button "You're in United Kingdom Change" [ref=e29]:
+            - img "United Kingdom" [ref=e30]
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - link [ref=e36] [cursor=pointer]:
+            - /url: https://www.asos.com/
+            - img "ASOS home" [ref=e37]
+          - list [ref=e38]:
+            - listitem [ref=e39]:
+              - link "WOMEN" [ref=e40] [cursor=pointer]:
+                - /url: https://www.asos.com/women/
+            - listitem [ref=e41]:
+              - link "MEN" [ref=e42] [cursor=pointer]:
+                - /url: https://www.asos.com/men/
+          - generic [ref=e44]:
+            - generic:
+              - searchbox "Search for items and brands" [ref=e45]: oversized hoodie
+              - button "Clear text" [ref=e46]:
+                - generic [ref=e47] [cursor=pointer]
+              - button "Search" [ref=e48]:
+                - img "Search" [ref=e49]
+        - list [ref=e51]:
+          - listitem [ref=e52]:
+            - button "My Account" [ref=e56] [cursor=pointer]
+          - listitem [ref=e60]:
+            - link "Saved Items" [ref=e61] [cursor=pointer]:
+              - /url: https://www.asos.com/saved-lists/?nlid=nav header
+          - listitem [ref=e63]:
+            - 'link "Bag %{smart_count} item |||| %{smart_count} items" [ref=e64] [cursor=pointer]':
+              - /url: https://www.asos.com/bag?nlid=nav header
+      - region "promotion" [ref=e66]
+    - main [ref=e67]:
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - paragraph [ref=e71]: "Your search results for:"
+          - paragraph [ref=e72]: "\"oversized hoodie\""
+        - generic:
+          - complementary
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - generic [ref=e77]:
+              - button "Sort" [ref=e78] [cursor=pointer]
+              - button "Filter" [ref=e81] [cursor=pointer]
+            - generic [ref=e84]:
+              - generic [ref=e85]:
+                - generic [ref=e86]: Unisex
+                - button "Close" [ref=e87] [cursor=pointer]
+              - generic [ref=e88]:
+                - generic [ref=e89]: Men
+                - button "Close" [ref=e90] [cursor=pointer]
+            - paragraph [ref=e91]: 1,127 styles found
+          - link "Load previous" [ref=e92] [cursor=pointer]:
+            - /url: https://www.asos.com/search/?page=6&q=oversized+hoodie&refine=floor:1001,2001
+          - list [ref=e94]:
+            - listitem [ref=e95]:
+              - link "ASOS DESIGN relaxed zip through funnel neck hoodie with piping and cinch in black, Price £36.00" [ref=e96] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-zip-through-funnel-neck-hoodie-with-piping-and-cinch-in-black/prd/211778736#colourWayId-211778744
+                - generic [ref=e98]:
+                  - img "ASOS DESIGN relaxed zip through funnel neck hoodie with piping and cinch in black - view 1" [ref=e99]
+                  - img "ASOS DESIGN relaxed zip through funnel neck hoodie with piping and cinch in black - view 2" [ref=e100]
+                - region "ASOS DESIGN relaxed zip through funnel neck hoodie with piping and cinch in black, Price £36.00" [ref=e101]:
+                  - paragraph [ref=e102]: ASOS DESIGN relaxed zip through funnel neck hoodie with piping and cinch in black
+                  - paragraph [aria-hidden] [ref=e103]:
+                    - generic [ref=e104]: £36.00
+              - button "Save for later" [ref=e105] [cursor=pointer]
+            - listitem [ref=e109]:
+              - link "ASOS DESIGN relaxed boxy zip through hoodie in red, Price £30.00" [ref=e110] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-boxy-zip-through-hoodie-in-red/prd/211757796#colourWayId-211757832
+                - generic [ref=e112]:
+                  - img "ASOS DESIGN relaxed boxy zip through hoodie in red - view 1" [ref=e113]
+                  - img "ASOS DESIGN relaxed boxy zip through hoodie in red - view 2" [ref=e114]
+                - region "ASOS DESIGN relaxed boxy zip through hoodie in red, Price £30.00" [ref=e115]:
+                  - paragraph [ref=e116]: ASOS DESIGN relaxed boxy zip through hoodie in red
+                  - paragraph [aria-hidden] [ref=e117]:
+                    - generic [ref=e118]: £30.00
+                  - generic [ref=e119]: MORE COLOURS
+              - button "Save for later" [ref=e120] [cursor=pointer]
+            - listitem [ref=e124]:
+              - link "Abercrombie & Fitch essential hoodie in washed lilac, Price £60.00" [ref=e125] [cursor=pointer]:
+                - /url: https://www.asos.com/abercrombie-fitch/abercrombie-fitch-essential-hoodie-in-washed-lilac/prd/211801703#colourWayId-211801704
+                - generic [ref=e127]:
+                  - img "Abercrombie & Fitch essential hoodie in washed lilac - view 1" [ref=e128]
+                  - img "Abercrombie & Fitch essential hoodie in washed lilac - view 2" [ref=e129]
+                - region "Abercrombie & Fitch essential hoodie in washed lilac, Price £60.00" [ref=e130]:
+                  - paragraph [ref=e131]: Abercrombie & Fitch essential hoodie in washed lilac
+                  - paragraph [aria-hidden] [ref=e132]:
+                    - generic [ref=e133]: £60.00
+              - button "Save for later" [ref=e134] [cursor=pointer]
+            - listitem [ref=e138]:
+              - link "Threadbare zip through relaxed fit hoodie in sage green, Price £32.00" [ref=e139] [cursor=pointer]:
+                - /url: https://www.asos.com/threadbare/threadbare-zip-through-relaxed-fit-hoodie-in-sage-green/prd/211488780#colourWayId-211488781
+                - generic [ref=e141]:
+                  - img "Threadbare zip through relaxed fit hoodie in sage green - view 1" [ref=e142]
+                  - img "Threadbare zip through relaxed fit hoodie in sage green - view 2" [ref=e143]
+                - region "Threadbare zip through relaxed fit hoodie in sage green, Price £32.00" [ref=e144]:
+                  - paragraph [ref=e145]: Threadbare zip through relaxed fit hoodie in sage green
+                  - paragraph [aria-hidden] [ref=e146]:
+                    - generic [ref=e147]: £32.00
+              - button "Save for later" [ref=e148] [cursor=pointer]
+            - listitem [ref=e152]:
+              - link "Champion Champion Laundry Full Zip hoodie in khaki, Original price £65.00 current price £49.99" [ref=e153] [cursor=pointer]:
+                - /url: https://www.asos.com/champion/champion-champion-laundry-full-zip-hoodie-in-khaki/prd/211290626#colourWayId-211290636
+                - generic [ref=e155]:
+                  - img "Champion Champion Laundry Full Zip hoodie in khaki - view 1" [ref=e156]
+                  - img "Champion Champion Laundry Full Zip hoodie in khaki - view 2" [ref=e157]
+                - region "Champion Champion Laundry Full Zip hoodie in khaki, Original price £65.00 current price £49.99" [ref=e158]:
+                  - paragraph [ref=e159]: Champion Champion Laundry Full Zip hoodie in khaki
+                  - paragraph [aria-hidden] [ref=e160]:
+                    - generic [ref=e161]: £65.00
+                    - generic [ref=e162]: £49.99
+              - button "Save for later" [ref=e163] [cursor=pointer]
+            - listitem [ref=e167]:
+              - link "ASOS DESIGN relaxed funnel neck fleece hoodie in blue, Price £45.00" [ref=e168] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-funnel-neck-fleece-hoodie-in-blue/prd/211143804#colourWayId-211143816
+                - generic [ref=e170]:
+                  - img "ASOS DESIGN relaxed funnel neck fleece hoodie in blue - view 1" [ref=e171]
+                  - img "ASOS DESIGN relaxed funnel neck fleece hoodie in blue - view 2" [ref=e172]
+                - region "ASOS DESIGN relaxed funnel neck fleece hoodie in blue, Price £45.00" [ref=e173]:
+                  - paragraph [ref=e174]: ASOS DESIGN relaxed funnel neck fleece hoodie in blue
+                  - paragraph [aria-hidden] [ref=e175]:
+                    - generic [ref=e176]: £45.00
+              - button "Save for later" [ref=e177] [cursor=pointer]
+            - listitem [ref=e181]:
+              - link "adidas Originals Trefoil essentials crew french terry sweatshirt in medium grey heather, Price £40.00" [ref=e182] [cursor=pointer]:
+                - /url: https://www.asos.com/adidas-originals/adidas-originals-trefoil-essentials-crew-french-terry-sweatshirt-in-medium-grey-heather/prd/211055932#colourWayId-211055953
+                - generic [ref=e184]:
+                  - img "adidas Originals Trefoil essentials crew french terry sweatshirt in medium grey heather - view 1" [ref=e185]
+                  - img "adidas Originals Trefoil essentials crew french terry sweatshirt in medium grey heather - view 2" [ref=e186]
+                - region "adidas Originals Trefoil essentials crew french terry sweatshirt in medium grey heather, Price £40.00" [ref=e187]:
+                  - paragraph [ref=e188]: adidas Originals Trefoil essentials crew french terry sweatshirt in medium grey heather
+                  - paragraph [aria-hidden] [ref=e189]:
+                    - generic [ref=e190]: £40.00
+                  - generic [ref=e191]: MORE COLOURS
+              - button "Save for later" [ref=e192] [cursor=pointer]
+            - listitem [ref=e196]:
+              - link "ASOS DESIGN relaxed boxy zip through hoodie with print, cut & sew and piping in brown, Price £38.00" [ref=e197] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-boxy-zip-through-hoodie-with-print-cut-sew-and-piping-in-brown/prd/211861933#colourWayId-211861937
+                - generic [ref=e199]:
+                  - img "ASOS DESIGN relaxed boxy zip through hoodie with print, cut & sew and piping in brown - view 1" [ref=e200]
+                  - img "ASOS DESIGN relaxed boxy zip through hoodie with print, cut & sew and piping in brown - view 2" [ref=e201]
+                - region "ASOS DESIGN relaxed boxy zip through hoodie with print, cut & sew and piping in brown, Price £38.00" [ref=e202]:
+                  - paragraph [ref=e203]: ASOS DESIGN relaxed boxy zip through hoodie with print, cut & sew and piping in brown
+                  - paragraph [aria-hidden] [ref=e204]:
+                    - generic [ref=e205]: £38.00
+              - button "Save for later" [ref=e206] [cursor=pointer]
+            - listitem [ref=e210]:
+              - link "Pull&Bear Stwd hood sweatshirt in green, Price £32.99" [ref=e211] [cursor=pointer]:
+                - /url: https://www.asos.com/pullbear/pullbear-stwd-hood-sweatshirt-in-green/prd/211907819#colourWayId-211907820
+                - region "Pull&Bear Stwd hood sweatshirt in green, Price £32.99" [ref=e214]:
+                  - paragraph [ref=e215]: Pull&Bear Stwd hood sweatshirt in green
+                  - paragraph [aria-hidden] [ref=e216]:
+                    - generic [ref=e217]: £32.99
+              - button "Save for later" [ref=e218] [cursor=pointer]
+            - listitem [ref=e222]:
+              - link "ASOS DESIGN relaxed boxy hoodie with print in blue, Price £26.00" [ref=e223] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-boxy-hoodie-with-print-in-blue/prd/211815411#colourWayId-211815415
+                - region "ASOS DESIGN relaxed boxy hoodie with print in blue, Price £26.00" [ref=e226]:
+                  - paragraph [ref=e227]: ASOS DESIGN relaxed boxy hoodie with print in blue
+                  - paragraph [aria-hidden] [ref=e228]:
+                    - generic [ref=e229]: £26.00
+                  - generic [ref=e230]: MORE COLOURS
+              - button "Save for later" [ref=e231] [cursor=pointer]
+            - listitem [ref=e235]:
+              - link "Hollister reversible zip up hoodie in black and leopard, Price £59.95" [ref=e236] [cursor=pointer]:
+                - /url: https://www.asos.com/hollister/hollister-reversible-zip-up-hoodie-in-black-and-leopard/prd/211909486#colourWayId-211909487
+                - region "Hollister reversible zip up hoodie in black and leopard, Price £59.95" [ref=e239]:
+                  - paragraph [ref=e240]: Hollister reversible zip up hoodie in black and leopard
+                  - paragraph [aria-hidden] [ref=e241]:
+                    - generic [ref=e242]: £59.95
+              - button "Save for later" [ref=e243] [cursor=pointer]
+            - listitem [ref=e247]:
+              - link "PRNT Hotline relaxed hoody in black, Original price £37.00 current price £29.60" [ref=e248] [cursor=pointer]:
+                - /url: https://www.asos.com/prnt/prnt-hotline-relaxed-hoody-in-black/prd/211858659#colourWayId-211858660
+                - region "PRNT Hotline relaxed hoody in black, Original price £37.00 current price £29.60" [ref=e251]:
+                  - paragraph [ref=e252]: PRNT Hotline relaxed hoody in black
+                  - paragraph [aria-hidden] [ref=e253]:
+                    - generic [ref=e254]: £37.00
+                    - generic [ref=e255]: £29.60
+              - button "Save for later" [ref=e256] [cursor=pointer]
+            - listitem [ref=e260]:
+              - link "Pull&Bear Boxy fit hoodie in pale marl, Price £35.99" [ref=e261] [cursor=pointer]:
+                - /url: https://www.asos.com/pullbear/pullbear-boxy-fit-hoodie-in-pale-marl/prd/211623656#colourWayId-211623670
+                - region "Pull&Bear Boxy fit hoodie in pale marl, Price £35.99" [ref=e264]:
+                  - paragraph [ref=e265]: Pull&Bear Boxy fit hoodie in pale marl
+                  - paragraph [aria-hidden] [ref=e266]:
+                    - generic [ref=e267]: £35.99
+                  - generic [ref=e268]: MORE COLOURS
+              - button "Save for later" [ref=e269] [cursor=pointer]
+            - listitem [ref=e273]:
+              - link "Abercrombie & Fitch essential zip up hoodie in black, Price £60.00" [ref=e274] [cursor=pointer]:
+                - /url: https://www.asos.com/abercrombie-fitch/abercrombie-fitch-essential-zip-up-hoodie-in-black/prd/211887028#colourWayId-211887030
+                - region "Abercrombie & Fitch essential zip up hoodie in black, Price £60.00" [ref=e277]:
+                  - paragraph [ref=e278]: Abercrombie & Fitch essential zip up hoodie in black
+                  - paragraph [aria-hidden] [ref=e279]:
+                    - generic [ref=e280]: £60.00
+              - button "Save for later" [ref=e281] [cursor=pointer]
+            - listitem [ref=e285]:
+              - link "Threadbare classic relaxed fit hoodie in chocolate brown, Price £28.00" [ref=e286] [cursor=pointer]:
+                - /url: https://www.asos.com/threadbare/threadbare-classic-relaxed-fit-hoodie-in-chocolate-brown/prd/211514589#colourWayId-211514590
+                - region "Threadbare classic relaxed fit hoodie in chocolate brown, Price £28.00" [ref=e289]:
+                  - paragraph [ref=e290]: Threadbare classic relaxed fit hoodie in chocolate brown
+                  - paragraph [aria-hidden] [ref=e291]:
+                    - generic [ref=e292]: £28.00
+                  - generic [ref=e293]: MORE COLOURS
+              - button "Save for later" [ref=e294] [cursor=pointer]
+            - listitem [ref=e298]:
+              - link "Pull&Bear Hoodie with zipper in navy, Price £29.99" [ref=e299] [cursor=pointer]:
+                - /url: https://www.asos.com/pullbear/pullbear-hoodie-with-zipper-in-navy/prd/211764728#colourWayId-211764729
+                - region "Pull&Bear Hoodie with zipper in navy, Price £29.99" [ref=e302]:
+                  - paragraph [ref=e303]: Pull&Bear Hoodie with zipper in navy
+                  - paragraph [aria-hidden] [ref=e304]:
+                    - generic [ref=e305]: £29.99
+                  - generic [ref=e306]: MORE COLOURS
+              - button "Save for later" [ref=e307] [cursor=pointer]
+            - listitem [ref=e311]:
+              - link "Jack & Jones heavyweight double zip hoodie in light grey, Original price £38.00 current price £28.99" [ref=e312] [cursor=pointer]:
+                - /url: https://www.asos.com/jack-jones/jack-jones-heavyweight-double-zip-hoodie-in-light-grey/prd/211017352#colourWayId-211017363
+                - region "Jack & Jones heavyweight double zip hoodie in light grey, Original price £38.00 current price £28.99" [ref=e315]:
+                  - paragraph [ref=e316]: Jack & Jones heavyweight double zip hoodie in light grey
+                  - paragraph [aria-hidden] [ref=e317]:
+                    - generic [ref=e318]: £38.00
+                    - generic [ref=e319]: £28.99
+                  - generic [ref=e320]: MORE COLOURS
+              - button "Save for later" [ref=e321] [cursor=pointer]
+            - listitem [ref=e325]:
+              - link "Wrangler graphic print hoodie in black, Price £80.00" [ref=e326] [cursor=pointer]:
+                - /url: https://www.asos.com/wrangler/wrangler-graphic-print-hoodie-in-black/prd/210967798#colourWayId-210967800
+                - region "Wrangler graphic print hoodie in black, Price £80.00" [ref=e329]:
+                  - paragraph [ref=e330]: Wrangler graphic print hoodie in black
+                  - paragraph [aria-hidden] [ref=e331]:
+                    - generic [ref=e332]: £80.00
+              - button "Save for later" [ref=e333] [cursor=pointer]
+            - listitem [ref=e337]:
+              - link "Jack & Jones script chest logo hoodie in beige, Price £30.00" [ref=e338] [cursor=pointer]:
+                - /url: https://www.asos.com/jack-jones/jack-jones-script-chest-logo-hoodie-in-beige/prd/210398667#colourWayId-210398672
+                - region "Jack & Jones script chest logo hoodie in beige, Price £30.00" [ref=e341]:
+                  - paragraph [ref=e342]: Jack & Jones script chest logo hoodie in beige
+                  - paragraph [aria-hidden] [ref=e343]:
+                    - generic [ref=e344]: £30.00
+                  - generic [ref=e345]: MORE COLOURS
+              - button "Save for later" [ref=e346] [cursor=pointer]
+            - listitem [ref=e350]:
+              - link "ASOS DESIGN relaxed hoodie with floral print in washed khaki, Price £32.00" [ref=e351] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-hoodie-with-floral-print-in-washed-khaki/prd/210043143#colourWayId-210043144
+                - region "ASOS DESIGN relaxed hoodie with floral print in washed khaki, Price £32.00" [ref=e354]:
+                  - paragraph [ref=e355]: ASOS DESIGN relaxed hoodie with floral print in washed khaki
+                  - paragraph [aria-hidden] [ref=e356]:
+                    - generic [ref=e357]: £32.00
+                  - generic [ref=e358]: MORE COLOURS
+              - button "Save for later" [ref=e359] [cursor=pointer]
+            - listitem [ref=e363]:
+              - link "ASOS DESIGN essentials relaxed hoodie in grey marl, Price £24.00" [ref=e364] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-essentials-relaxed-hoodie-in-grey-marl/prd/210261692#colourWayId-210261697
+                - region "ASOS DESIGN essentials relaxed hoodie in grey marl, Price £24.00" [ref=e367]:
+                  - paragraph [ref=e368]: ASOS DESIGN essentials relaxed hoodie in grey marl
+                  - paragraph [aria-hidden] [ref=e369]:
+                    - generic [ref=e370]: £24.00
+                  - generic [ref=e371]: MORE COLOURS
+              - button "Save for later" [ref=e372] [cursor=pointer]
+            - listitem [ref=e376]:
+              - link "Brave Soul Relaxed fit colourblock hoodie & wide leg jogger co-ord in navy, Price £36.00" [ref=e377] [cursor=pointer]:
+                - /url: https://www.asos.com/brave-soul/brave-soul-relaxed-fit-colourblock-hoodie-wide-leg-jogger-co-ord-in-navy/prd/211941911#colourWayId-211941913
+                - region "Brave Soul Relaxed fit colourblock hoodie & wide leg jogger co-ord in navy, Price £36.00" [ref=e380]:
+                  - paragraph [ref=e381]: Brave Soul Relaxed fit colourblock hoodie & wide leg jogger co-ord in navy
+                  - paragraph [aria-hidden] [ref=e382]:
+                    - generic [ref=e383]: £36.00
+              - button "Save for later" [ref=e384] [cursor=pointer]
+            - listitem [ref=e388]:
+              - link "Topman relaxed fit heavyweight hoodie in grey marl, Price £50.00" [ref=e389] [cursor=pointer]:
+                - /url: https://www.asos.com/topman/topman-relaxed-fit-heavyweight-hoodie-in-grey-marl/prd/211554495#colourWayId-211554505
+                - region "Topman relaxed fit heavyweight hoodie in grey marl, Price £50.00" [ref=e392]:
+                  - paragraph [ref=e393]: Topman relaxed fit heavyweight hoodie in grey marl
+                  - paragraph [aria-hidden] [ref=e394]:
+                    - generic [ref=e395]: £50.00
+                  - generic [ref=e396]: MORE COLOURS
+              - button "Save for later" [ref=e397] [cursor=pointer]
+            - listitem [ref=e401]:
+              - link "ASOS DESIGN relaxed hoodie with print in khaki - KHAKI, Price £26.00" [ref=e402] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-hoodie-with-print-in-khaki-khaki/prd/211815335#colourWayId-211815359
+                - region "ASOS DESIGN relaxed hoodie with print in khaki - KHAKI, Price £26.00" [ref=e405]:
+                  - paragraph [ref=e406]: ASOS DESIGN relaxed hoodie with print in khaki - KHAKI
+                  - paragraph [aria-hidden] [ref=e407]:
+                    - generic [ref=e408]: £26.00
+                  - generic [ref=e409]: MORE COLOURS
+              - button "Save for later" [ref=e410] [cursor=pointer]
+            - listitem [ref=e414]:
+              - link "Hollister zip up back graphic logo hoodie in red, Price £49.95" [ref=e415] [cursor=pointer]:
+                - /url: https://www.asos.com/hollister/hollister-zip-up-back-graphic-logo-hoodie-in-red/prd/211887120#colourWayId-211887121
+                - region "Hollister zip up back graphic logo hoodie in red, Price £49.95" [ref=e418]:
+                  - paragraph [ref=e419]: Hollister zip up back graphic logo hoodie in red
+                  - paragraph [aria-hidden] [ref=e420]:
+                    - generic [ref=e421]: £49.95
+              - button "Save for later" [ref=e422] [cursor=pointer]
+            - listitem [ref=e426]:
+              - link "Threadbare Relaxed fit le castellet graphic print hoodie in grey marl, Price £28.00" [ref=e427] [cursor=pointer]:
+                - /url: https://www.asos.com/threadbare/threadbare-relaxed-fit-le-castellet-graphic-print-hoodie-in-grey-marl/prd/211753131#colourWayId-211753143
+                - region "Threadbare Relaxed fit le castellet graphic print hoodie in grey marl, Price £28.00" [ref=e430]:
+                  - paragraph [ref=e431]: Threadbare Relaxed fit le castellet graphic print hoodie in grey marl
+                  - paragraph [aria-hidden] [ref=e432]:
+                    - generic [ref=e433]: £28.00
+              - button "Save for later" [ref=e434] [cursor=pointer]
+            - listitem [ref=e438]:
+              - link "The North Face relaxed fit hoodie with back print in grey, Price £80.00" [ref=e439] [cursor=pointer]:
+                - /url: https://www.asos.com/the-north-face/the-north-face-relaxed-fit-hoodie-with-back-print-in-grey/prd/211437226#colourWayId-211437228
+                - region "The North Face relaxed fit hoodie with back print in grey, Price £80.00" [ref=e442]:
+                  - paragraph [ref=e443]: The North Face relaxed fit hoodie with back print in grey
+                  - paragraph [aria-hidden] [ref=e444]:
+                    - generic [ref=e445]: £80.00
+              - button "Save for later" [ref=e446] [cursor=pointer]
+            - listitem [ref=e450]:
+              - link "PRNT x Wu-Tang Clan stamp relaxed relaxed fit hoody in black - BLACK, Price £45.00" [ref=e451] [cursor=pointer]:
+                - /url: https://www.asos.com/prnt/prnt-x-wu-tang-clan-stamp-relaxed-relaxed-fit-hoody-in-black-black/prd/210663824#colourWayId-210663825
+                - region "PRNT x Wu-Tang Clan stamp relaxed relaxed fit hoody in black - BLACK, Price £45.00" [ref=e454]:
+                  - paragraph [ref=e455]: PRNT x Wu-Tang Clan stamp relaxed relaxed fit hoody in black - BLACK
+                  - paragraph [aria-hidden] [ref=e456]:
+                    - generic [ref=e457]: £45.00
+              - button "Save for later" [ref=e458] [cursor=pointer]
+            - listitem [ref=e462]:
+              - link "Jack & Jones script chest logo hoodie in charcoal, Price £30.00" [ref=e463] [cursor=pointer]:
+                - /url: https://www.asos.com/jack-jones/jack-jones-script-chest-logo-hoodie-in-charcoal/prd/210399253#colourWayId-210399255
+                - region "Jack & Jones script chest logo hoodie in charcoal, Price £30.00" [ref=e466]:
+                  - paragraph [ref=e467]: Jack & Jones script chest logo hoodie in charcoal
+                  - paragraph [aria-hidden] [ref=e468]:
+                    - generic [ref=e469]: £30.00
+                  - generic [ref=e470]: MORE COLOURS
+              - button "Save for later" [ref=e471] [cursor=pointer]
+            - listitem [ref=e475]:
+              - link "ASOS DESIGN relaxed printed hoodie co-ord in navy, Price £28.00" [ref=e476] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-printed-hoodie-co-ord-in-navy/grp/210872753#colourWayId-210043283&productId-210043279
+                - region "ASOS DESIGN relaxed printed hoodie co-ord in navy, Price £28.00" [ref=e479]:
+                  - paragraph [ref=e480]: ASOS DESIGN relaxed printed hoodie co-ord in navy
+                  - paragraph [aria-hidden] [ref=e481]:
+                    - generic [ref=e482]: £28.00
+                  - generic [ref=e483]: MIX & MATCH
+              - button "Save for later" [ref=e484] [cursor=pointer]
+            - listitem [ref=e488]:
+              - link "Armani EA7 train visibility tracksuit set in black, Price £175.00" [ref=e489] [cursor=pointer]:
+                - /url: https://www.asos.com/ea7/armani-ea7-train-visibility-tracksuit-set-in-black/prd/210029370#colourWayId-210029377
+                - region "Armani EA7 train visibility tracksuit set in black, Price £175.00" [ref=e492]:
+                  - paragraph [ref=e493]: Armani EA7 train visibility tracksuit set in black
+                  - paragraph [aria-hidden] [ref=e494]:
+                    - generic [ref=e495]: £175.00
+              - button "Save for later" [ref=e496] [cursor=pointer]
+            - listitem [ref=e500]:
+              - link "ASOS DESIGN relaxed hoodie with front and back print in black, Price £32.00" [ref=e501] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-hoodie-with-front-and-back-print-in-black/prd/211396164#colourWayId-211396165
+                - region "ASOS DESIGN relaxed hoodie with front and back print in black, Price £32.00" [ref=e504]:
+                  - paragraph [ref=e505]: ASOS DESIGN relaxed hoodie with front and back print in black
+                  - paragraph [aria-hidden] [ref=e506]:
+                    - generic [ref=e507]: £32.00
+                  - generic [aria-hidden] [ref=e508]: Back in stock soon
+                  - generic [ref=e509]: MORE COLOURS
+              - button "Save for later" [ref=e510] [cursor=pointer]
+            - listitem [ref=e514]:
+              - link "ASOS DESIGN essentials relaxed boxy hoodie in dark brown, Price £26.00" [ref=e515] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-essentials-relaxed-boxy-hoodie-in-dark-brown/prd/210275427#colourWayId-210275436
+                - region "ASOS DESIGN essentials relaxed boxy hoodie in dark brown, Price £26.00" [ref=e518]:
+                  - paragraph [ref=e519]: ASOS DESIGN essentials relaxed boxy hoodie in dark brown
+                  - paragraph [aria-hidden] [ref=e520]:
+                    - generic [ref=e521]: £26.00
+                  - generic [ref=e522]: MORE COLOURS
+              - button "Save for later" [ref=e523] [cursor=pointer]
+            - listitem [ref=e527]:
+              - link "ASOS DESIGN essentials relaxed boxy zip through hoodie in grey, Price £28.00" [ref=e528] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-essentials-relaxed-boxy-zip-through-hoodie-in-grey/prd/210100659#colourWayId-210100662
+                - region "ASOS DESIGN essentials relaxed boxy zip through hoodie in grey, Price £28.00" [ref=e531]:
+                  - paragraph [ref=e532]: ASOS DESIGN essentials relaxed boxy zip through hoodie in grey
+                  - paragraph [aria-hidden] [ref=e533]:
+                    - generic [ref=e534]: £28.00
+                  - generic [ref=e535]: MORE COLOURS
+              - button "Save for later" [ref=e536] [cursor=pointer]
+            - listitem [ref=e540]:
+              - link "Abercrombie & Fitch front graphic hoodie in cream, Price £65.00" [ref=e541] [cursor=pointer]:
+                - /url: https://www.asos.com/abercrombie-fitch/abercrombie-fitch-front-graphic-hoodie-in-cream/prd/211972541#colourWayId-211972556
+                - region "Abercrombie & Fitch front graphic hoodie in cream, Price £65.00" [ref=e544]:
+                  - paragraph [ref=e545]: Abercrombie & Fitch front graphic hoodie in cream
+                  - paragraph [aria-hidden] [ref=e546]:
+                    - generic [ref=e547]: £65.00
+              - button "Save for later" [ref=e548] [cursor=pointer]
+            - listitem [ref=e552]:
+              - link "Topman relaxed fit heavyweight hoodie in black, Price £50.00" [ref=e553] [cursor=pointer]:
+                - /url: https://www.asos.com/topman/topman-relaxed-fit-heavyweight-hoodie-in-black/prd/211554470#colourWayId-211554472
+                - region "Topman relaxed fit heavyweight hoodie in black, Price £50.00" [ref=e556]:
+                  - paragraph [ref=e557]: Topman relaxed fit heavyweight hoodie in black
+                  - paragraph [aria-hidden] [ref=e558]:
+                    - generic [ref=e559]: £50.00
+                  - generic [ref=e560]: MORE COLOURS
+              - button "Save for later" [ref=e561] [cursor=pointer]
+            - listitem [ref=e565]:
+              - link "Brave Soul Relaxed fit colourblock hoodie & wide leg jogger co-ord in ecru, Price £36.00" [ref=e566] [cursor=pointer]:
+                - /url: https://www.asos.com/brave-soul/brave-soul-relaxed-fit-colourblock-hoodie-wide-leg-jogger-co-ord-in-ecru/prd/211944037#colourWayId-211944038
+                - region "Brave Soul Relaxed fit colourblock hoodie & wide leg jogger co-ord in ecru, Price £36.00" [ref=e569]:
+                  - paragraph [ref=e570]: Brave Soul Relaxed fit colourblock hoodie & wide leg jogger co-ord in ecru
+                  - paragraph [aria-hidden] [ref=e571]:
+                    - generic [ref=e572]: £36.00
+              - button "Save for later" [ref=e573] [cursor=pointer]
+            - listitem [ref=e577]:
+              - link "PRNT Prnt studios vinyl relaxed hoody in sand, Price £37.00" [ref=e578] [cursor=pointer]:
+                - /url: https://www.asos.com/prnt/prnt-prnt-studios-vinyl-relaxed-hoody-in-sand/prd/209386384#colourWayId-209386385
+                - region "PRNT Prnt studios vinyl relaxed hoody in sand, Price £37.00" [ref=e581]:
+                  - paragraph [ref=e582]: PRNT Prnt studios vinyl relaxed hoody in sand
+                  - paragraph [aria-hidden] [ref=e583]:
+                    - generic [ref=e584]: £37.00
+              - button "Save for later" [ref=e585] [cursor=pointer]
+            - listitem [ref=e589]:
+              - link "ASOS DESIGN relaxed hoodie with star graphic print in dark grey, Original price £26.00 current price £19.99" [ref=e590] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-hoodie-with-star-graphic-print-in-dark-grey/prd/211702628#colourWayId-211702633
+                - region "ASOS DESIGN relaxed hoodie with star graphic print in dark grey, Original price £26.00 current price £19.99" [ref=e593]:
+                  - paragraph [ref=e594]: ASOS DESIGN relaxed hoodie with star graphic print in dark grey
+                  - paragraph [aria-hidden] [ref=e595]:
+                    - generic [ref=e596]: £26.00
+                    - generic [ref=e597]: £19.99
+                  - generic [ref=e598]: MORE COLOURS
+              - button "Save for later" [ref=e599] [cursor=pointer]
+            - listitem [ref=e603]:
+              - link "ASOS DESIGN relaxed hoodie with contrast in blue, Original price £30.00 current price £22.99" [ref=e604] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-hoodie-with-contrast-in-blue/prd/211702593#colourWayId-211702599
+                - region "ASOS DESIGN relaxed hoodie with contrast in blue, Original price £30.00 current price £22.99" [ref=e607]:
+                  - paragraph [ref=e608]: ASOS DESIGN relaxed hoodie with contrast in blue
+                  - paragraph [aria-hidden] [ref=e609]:
+                    - generic [ref=e610]: £30.00
+                    - generic [ref=e611]: £22.99
+              - button "Save for later" [ref=e612] [cursor=pointer]
+            - listitem [ref=e616]:
+              - link "ASOS DESIGN essentials relaxed zip through hoodie in off white, Price £26.00" [ref=e617] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-essentials-relaxed-zip-through-hoodie-in-off-white/prd/210275226#colourWayId-210275227
+                - region "ASOS DESIGN essentials relaxed zip through hoodie in off white, Price £26.00" [ref=e620]:
+                  - paragraph [ref=e621]: ASOS DESIGN essentials relaxed zip through hoodie in off white
+                  - paragraph [aria-hidden] [ref=e622]:
+                    - generic [ref=e623]: £26.00
+                  - generic [ref=e624]: MORE COLOURS
+              - button "Save for later" [ref=e625] [cursor=pointer]
+            - listitem [ref=e629]:
+              - link "ASOS DESIGN essentials relaxed fit hoodie in khaki, Price £24.00" [ref=e630] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-essentials-relaxed-fit-hoodie-in-khaki/prd/209757282#colourWayId-209757301
+                - region "ASOS DESIGN essentials relaxed fit hoodie in khaki, Price £24.00" [ref=e633]:
+                  - paragraph [ref=e634]: ASOS DESIGN essentials relaxed fit hoodie in khaki
+                  - paragraph [aria-hidden] [ref=e635]:
+                    - generic [ref=e636]: £24.00
+                  - generic [ref=e637]: MORE COLOURS
+              - button "Save for later" [ref=e638] [cursor=pointer]
+            - listitem [ref=e642]:
+              - link "Champion Main Street hoodie in brown, Price £60.00" [ref=e643] [cursor=pointer]:
+                - /url: https://www.asos.com/champion/champion-main-street-hoodie-in-brown/prd/211290825#colourWayId-211290829
+                - region "Champion Main Street hoodie in brown, Price £60.00" [ref=e646]:
+                  - paragraph [ref=e647]: Champion Main Street hoodie in brown
+                  - paragraph [aria-hidden] [ref=e648]:
+                    - generic [ref=e649]: £60.00
+              - button "Save for later" [ref=e650] [cursor=pointer]
+            - listitem [ref=e654]:
+              - link "Reclaimed Vintage unisex heavyweight boxy hoodie in grey marl, Price £29.99" [ref=e655] [cursor=pointer]:
+                - /url: https://www.asos.com/reclaimed-vintage/reclaimed-vintage-unisex-heavyweight-boxy-hoodie-in-grey-marl/prd/208544615#colourWayId-208544617
+                - region "Reclaimed Vintage unisex heavyweight boxy hoodie in grey marl, Price £29.99" [ref=e658]:
+                  - paragraph [ref=e659]: Reclaimed Vintage unisex heavyweight boxy hoodie in grey marl
+                  - paragraph [aria-hidden] [ref=e660]:
+                    - generic [ref=e661]: £29.99
+                  - generic [ref=e662]: MORE COLOURS
+              - button "Save for later" [ref=e663] [cursor=pointer]
+            - listitem [ref=e667]:
+              - link "Brave Soul Zip through hoodie & jogger co-ord in black, Price £36.00" [ref=e668] [cursor=pointer]:
+                - /url: https://www.asos.com/brave-soul/brave-soul-zip-through-hoodie-jogger-co-ord-in-black/prd/211942893#colourWayId-211942895
+                - region "Brave Soul Zip through hoodie & jogger co-ord in black, Price £36.00" [ref=e671]:
+                  - paragraph [ref=e672]: Brave Soul Zip through hoodie & jogger co-ord in black
+                  - paragraph [aria-hidden] [ref=e673]:
+                    - generic [ref=e674]: £36.00
+              - button "Save for later" [ref=e675] [cursor=pointer]
+            - listitem [ref=e679]:
+              - link "ASOS DESIGN relaxed hoodie with Pokemon Pikachu print in black, Price £36.00" [ref=e680] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-hoodie-with-pokemon-pikachu-print-in-black/prd/211645093#colourWayId-211645107
+                - region "ASOS DESIGN relaxed hoodie with Pokemon Pikachu print in black, Price £36.00" [ref=e683]:
+                  - paragraph [ref=e684]: ASOS DESIGN relaxed hoodie with Pokemon Pikachu print in black
+                  - paragraph [aria-hidden] [ref=e685]:
+                    - generic [ref=e686]: £36.00
+                  - generic [ref=e687]: MORE COLOURS
+              - button "Save for later" [ref=e688] [cursor=pointer]
+            - listitem [ref=e692]:
+              - link "Threadbare classic relaxed fit hoodie in forest green, Price £28.00" [ref=e693] [cursor=pointer]:
+                - /url: https://www.asos.com/threadbare/threadbare-classic-relaxed-fit-hoodie-in-forest-green/prd/211514519#colourWayId-211514522
+                - region "Threadbare classic relaxed fit hoodie in forest green, Price £28.00" [ref=e696]:
+                  - paragraph [ref=e697]: Threadbare classic relaxed fit hoodie in forest green
+                  - paragraph [aria-hidden] [ref=e698]:
+                    - generic [ref=e699]: £28.00
+              - button "Save for later" [ref=e700] [cursor=pointer]
+            - listitem [ref=e704]:
+              - link "Obey post zip through hoodie in dusty black, Price £95.00" [ref=e705] [cursor=pointer]:
+                - /url: https://www.asos.com/obey/obey-post-zip-through-hoodie-in-dusty-black/prd/211009210#colourWayId-211009212
+                - region "Obey post zip through hoodie in dusty black, Price £95.00" [ref=e708]:
+                  - paragraph [ref=e709]: Obey post zip through hoodie in dusty black
+                  - paragraph [aria-hidden] [ref=e710]:
+                    - generic [ref=e711]: £95.00
+              - button "Save for later" [ref=e712] [cursor=pointer]
+            - listitem [ref=e716]:
+              - link "Colt regular fit arc logo zip through hoodie in light grey, Price £65.00" [ref=e717] [cursor=pointer]:
+                - /url: https://www.asos.com/colt-mcr/colt-regular-fit-arc-logo-zip-through-hoodie-in-light-grey/prd/211658034#colourWayId-211658039
+                - region "Colt regular fit arc logo zip through hoodie in light grey, Price £65.00" [ref=e720]:
+                  - paragraph [ref=e721]: Colt regular fit arc logo zip through hoodie in light grey
+                  - paragraph [aria-hidden] [ref=e722]:
+                    - generic [ref=e723]: £65.00
+              - button "Save for later" [ref=e724] [cursor=pointer]
+            - listitem [ref=e728]:
+              - link "The North Face U zumu 2.0 relaxed hoodie in tnf black, Price £70.00" [ref=e729] [cursor=pointer]:
+                - /url: https://www.asos.com/the-north-face/the-north-face-u-zumu-20-relaxed-hoodie-in-tnf-black/prd/211588426#colourWayId-211588430
+                - region "The North Face U zumu 2.0 relaxed hoodie in tnf black, Price £70.00" [ref=e732]:
+                  - paragraph [ref=e733]: The North Face U zumu 2.0 relaxed hoodie in tnf black
+                  - paragraph [aria-hidden] [ref=e734]:
+                    - generic [ref=e735]: £70.00
+              - button "Save for later" [ref=e736] [cursor=pointer]
+            - listitem [ref=e740]:
+              - link "Tommy Jeans new classics logo relaxed fit zip up hoodie in light grey, Original price £100.00 current price £74.99" [ref=e741] [cursor=pointer]:
+                - /url: https://www.asos.com/tommy-jeans/tommy-jeans-new-classics-logo-relaxed-fit-zip-up-hoodie-in-light-grey/prd/211093574#colourWayId-211093576
+                - region "Tommy Jeans new classics logo relaxed fit zip up hoodie in light grey, Original price £100.00 current price £74.99" [ref=e744]:
+                  - paragraph [ref=e745]: Tommy Jeans new classics logo relaxed fit zip up hoodie in light grey
+                  - paragraph [aria-hidden] [ref=e746]:
+                    - generic [ref=e747]: £100.00
+                    - generic [ref=e748]: £74.99
+              - button "Save for later" [ref=e749] [cursor=pointer]
+            - listitem [ref=e753]:
+              - link "ASOS DESIGN relaxed zip through hoodie with print in green, Price £34.00" [ref=e754] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-zip-through-hoodie-with-print-in-green/prd/211778673#colourWayId-211778681
+                - region "ASOS DESIGN relaxed zip through hoodie with print in green, Price £34.00" [ref=e757]:
+                  - paragraph [ref=e758]: ASOS DESIGN relaxed zip through hoodie with print in green
+                  - paragraph [aria-hidden] [ref=e759]:
+                    - generic [ref=e760]: £34.00
+                  - generic [ref=e761]: MORE COLOURS
+              - button "Save for later" [ref=e762] [cursor=pointer]
+            - listitem [ref=e766]:
+              - link "Brave Soul Relaxed fit overhead hoodie in navy, Price £38.00" [ref=e767] [cursor=pointer]:
+                - /url: https://www.asos.com/brave-soul/brave-soul-relaxed-fit-overhead-hoodie-in-navy/prd/210513975#colourWayId-210513985
+                - region "Brave Soul Relaxed fit overhead hoodie in navy, Price £38.00" [ref=e770]:
+                  - paragraph [ref=e771]: Brave Soul Relaxed fit overhead hoodie in navy
+                  - paragraph [aria-hidden] [ref=e772]:
+                    - generic [ref=e773]: £38.00
+              - button "Save for later" [ref=e774] [cursor=pointer]
+            - listitem [ref=e778]:
+              - link "Reclaimed Vintage unisex heavyweight boxy hoodie co-ord in grey marl, Price £29.99" [ref=e779] [cursor=pointer]:
+                - /url: https://www.asos.com/reclaimed-vintage/reclaimed-vintage-unisex-heavyweight-boxy-hoodie-co-ord-in-grey-marl/prd/207622665#colourWayId-207622676
+                - region "Reclaimed Vintage unisex heavyweight boxy hoodie co-ord in grey marl, Price £29.99" [ref=e782]:
+                  - paragraph [ref=e783]: Reclaimed Vintage unisex heavyweight boxy hoodie co-ord in grey marl
+                  - paragraph [aria-hidden] [ref=e784]:
+                    - generic [ref=e785]: £29.99
+                  - generic [ref=e786]: MORE COLOURS
+              - button "Save for later" [ref=e787] [cursor=pointer]
+            - listitem [ref=e791]:
+              - link "Jack & Jones double zip knit hoodie in navy, Price £45.00" [ref=e792] [cursor=pointer]:
+                - /url: https://www.asos.com/jack-jones/jack-jones-double-zip-knit-hoodie-in-navy/prd/211223345#colourWayId-211223347
+                - region "Jack & Jones double zip knit hoodie in navy, Price £45.00" [ref=e795]:
+                  - paragraph [ref=e796]: Jack & Jones double zip knit hoodie in navy
+                  - paragraph [aria-hidden] [ref=e797]:
+                    - generic [ref=e798]: £45.00
+              - button "Save for later" [ref=e799] [cursor=pointer]
+            - listitem [ref=e803]:
+              - link "The Ragged Priest zip through fuzzy gradient hoodie knit in blue and grey stripe, Price £80.00" [ref=e804] [cursor=pointer]:
+                - /url: https://www.asos.com/the-ragged-priest/the-ragged-priest-zip-through-fuzzy-gradient-hoodie-knit-in-blue-and-grey-stripe/prd/211438625#colourWayId-211438628
+                - region "The Ragged Priest zip through fuzzy gradient hoodie knit in blue and grey stripe, Price £80.00" [ref=e807]:
+                  - paragraph [ref=e808]: The Ragged Priest zip through fuzzy gradient hoodie knit in blue and grey stripe
+                  - paragraph [aria-hidden] [ref=e809]:
+                    - generic [ref=e810]: £80.00
+              - button "Save for later" [ref=e811] [cursor=pointer]
+            - listitem [ref=e815]:
+              - link "ASOS DESIGN relaxed hoodie with back print in ecru, Price £32.00" [ref=e816] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-hoodie-with-back-print-in-ecru/prd/211284620#colourWayId-211284626
+                - region "ASOS DESIGN relaxed hoodie with back print in ecru, Price £32.00" [ref=e819]:
+                  - paragraph [ref=e820]: ASOS DESIGN relaxed hoodie with back print in ecru
+                  - paragraph [aria-hidden] [ref=e821]:
+                    - generic [ref=e822]: £32.00
+                  - generic [ref=e823]: MORE COLOURS
+              - button "Save for later" [ref=e824] [cursor=pointer]
+            - listitem [ref=e828]:
+              - link "Obey gothic zip through hoodie in dusty black, Price £105.00" [ref=e829] [cursor=pointer]:
+                - /url: https://www.asos.com/obey/obey-gothic-zip-through-hoodie-in-dusty-black/prd/211008979#colourWayId-211008982
+                - region "Obey gothic zip through hoodie in dusty black, Price £105.00" [ref=e832]:
+                  - paragraph [ref=e833]: Obey gothic zip through hoodie in dusty black
+                  - paragraph [aria-hidden] [ref=e834]:
+                    - generic [ref=e835]: £105.00
+              - button "Save for later" [ref=e836] [cursor=pointer]
+            - listitem [ref=e840]:
+              - link "Lyle & Scott Mid layers heavyweight loopback pullover hoodie in z865 jet black, Price £85.00" [ref=e841] [cursor=pointer]:
+                - /url: https://www.asos.com/lyle-scott/lyle-scott-mid-layers-heavyweight-loopback-pullover-hoodie-in-z865-jet-black/prd/211959288#colourWayId-211959290
+                - region "Lyle & Scott Mid layers heavyweight loopback pullover hoodie in z865 jet black, Price £85.00" [ref=e844]:
+                  - paragraph [ref=e845]: Lyle & Scott Mid layers heavyweight loopback pullover hoodie in z865 jet black
+                  - paragraph [aria-hidden] [ref=e846]:
+                    - generic [ref=e847]: £85.00
+              - button "Save for later" [ref=e848] [cursor=pointer]
+            - listitem [ref=e852]:
+              - link "PRNT Kyoto dragon relaxed hoody in sand, Price £37.00" [ref=e853] [cursor=pointer]:
+                - /url: https://www.asos.com/prnt/prnt-kyoto-dragon-relaxed-hoody-in-sand/prd/211671629#colourWayId-211671636
+                - region "PRNT Kyoto dragon relaxed hoody in sand, Price £37.00" [ref=e856]:
+                  - paragraph [ref=e857]: PRNT Kyoto dragon relaxed hoody in sand
+                  - paragraph [aria-hidden] [ref=e858]:
+                    - generic [ref=e859]: £37.00
+              - button "Save for later" [ref=e860] [cursor=pointer]
+            - listitem [ref=e864]:
+              - link "adidas performance Essentials 3-stripes french terry sweatshirt in black / white, Price £38.00" [ref=e865] [cursor=pointer]:
+                - /url: https://www.asos.com/adidas-performance/adidas-performance-essentials-3-stripes-french-terry-sweatshirt-in-black-white/prd/211109324#colourWayId-211109334
+                - region "adidas performance Essentials 3-stripes french terry sweatshirt in black / white, Price £38.00" [ref=e868]:
+                  - paragraph [ref=e869]: adidas performance Essentials 3-stripes french terry sweatshirt in black / white
+                  - paragraph [aria-hidden] [ref=e870]:
+                    - generic [ref=e871]: £38.00
+              - button "Save for later" [ref=e872] [cursor=pointer]
+            - listitem [ref=e876]:
+              - link "ASOS DESIGN relaxed hoodie with FA England three lions print in grey marl, Price £32.00" [ref=e877] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-hoodie-with-fa-england-three-lions-print-in-grey-marl/prd/210967403#colourWayId-210967405
+                - region "ASOS DESIGN relaxed hoodie with FA England three lions print in grey marl, Price £32.00" [ref=e880]:
+                  - paragraph [ref=e881]: ASOS DESIGN relaxed hoodie with FA England three lions print in grey marl
+                  - paragraph [aria-hidden] [ref=e882]:
+                    - generic [ref=e883]: £32.00
+                  - generic [ref=e884]: MORE COLOURS
+              - button "Save for later" [ref=e885] [cursor=pointer]
+            - listitem [ref=e889]:
+              - link "HUGO Blue Nazardo loose fit back print co-ord hoodie in ecru, Price £119.00" [ref=e890] [cursor=pointer]:
+                - /url: https://www.asos.com/hugo-blue/hugo-blue-nazardo-loose-fit-back-print-co-ord-hoodie-in-ecru/prd/210952175#colourWayId-210952177
+                - region "HUGO Blue Nazardo loose fit back print co-ord hoodie in ecru, Price £119.00" [ref=e893]:
+                  - paragraph [ref=e894]: HUGO Blue Nazardo loose fit back print co-ord hoodie in ecru
+                  - paragraph [aria-hidden] [ref=e895]:
+                    - generic [ref=e896]: £119.00
+              - button "Save for later" [ref=e897] [cursor=pointer]
+            - listitem [ref=e901]:
+              - link "HUGO Blue Nardimez loose fit back print zip through hoodie in black, Price £129.00" [ref=e902] [cursor=pointer]:
+                - /url: https://www.asos.com/hugo-blue/hugo-blue-nardimez-loose-fit-back-print-zip-through-hoodie-in-black/prd/210952002#colourWayId-210952004
+                - region "HUGO Blue Nardimez loose fit back print zip through hoodie in black, Price £129.00" [ref=e905]:
+                  - paragraph [ref=e906]: HUGO Blue Nardimez loose fit back print zip through hoodie in black
+                  - paragraph [aria-hidden] [ref=e907]:
+                    - generic [ref=e908]: £129.00
+              - button "Save for later" [ref=e909] [cursor=pointer]
+            - listitem [ref=e913]:
+              - link "Jack & Jones Hoodie in navy blazer, Original price £35.00 current price £21.00" [ref=e914] [cursor=pointer]:
+                - /url: https://www.asos.com/jack-jones/jack-jones-hoodie-in-navy-blazer/prd/210753109#colourWayId-210753110
+                - region "Jack & Jones Hoodie in navy blazer, Original price £35.00 current price £21.00" [ref=e917]:
+                  - paragraph [ref=e918]: Jack & Jones Hoodie in navy blazer
+                  - paragraph [aria-hidden] [ref=e919]:
+                    - generic [ref=e920]: £35.00
+                    - generic [ref=e921]: £21.00
+              - button "Save for later" [ref=e922] [cursor=pointer]
+            - listitem [ref=e926]:
+              - link "PRNT Japanese vase relaxed hoody in sand, Price £37.00" [ref=e927] [cursor=pointer]:
+                - /url: https://www.asos.com/prnt/prnt-japanese-vase-relaxed-hoody-in-sand/prd/210135217#colourWayId-210135218
+                - region "PRNT Japanese vase relaxed hoody in sand, Price £37.00" [ref=e930]:
+                  - paragraph [ref=e931]: PRNT Japanese vase relaxed hoody in sand
+                  - paragraph [aria-hidden] [ref=e932]:
+                    - generic [ref=e933]: £37.00
+              - button "Save for later" [ref=e934] [cursor=pointer]
+            - listitem [ref=e938]:
+              - link "HUGO Red dalentinos heart logo hoodie in white, Original price £129.00 current price £94.99" [ref=e939] [cursor=pointer]:
+                - /url: https://www.asos.com/hugo-red/hugo-red-dalentinos-heart-logo-hoodie-in-white/prd/209933133#colourWayId-209933134
+                - region "HUGO Red dalentinos heart logo hoodie in white, Original price £129.00 current price £94.99" [ref=e942]:
+                  - paragraph [ref=e943]: HUGO Red dalentinos heart logo hoodie in white
+                  - paragraph [aria-hidden] [ref=e944]:
+                    - generic [ref=e945]: £129.00
+                    - generic [ref=e946]: £94.99
+              - button "Save for later" [ref=e947] [cursor=pointer]
+            - listitem [ref=e951]:
+              - link "ASOS DESIGN relaxed hoodie with black print in navy, Price £26.00" [ref=e952] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-relaxed-hoodie-with-black-print-in-navy/prd/211702656#colourWayId-211702661
+                - region "ASOS DESIGN relaxed hoodie with black print in navy, Price £26.00" [ref=e955]:
+                  - paragraph [ref=e956]: ASOS DESIGN relaxed hoodie with black print in navy
+                  - paragraph [aria-hidden] [ref=e957]:
+                    - generic [ref=e958]: £26.00
+                  - generic [ref=e959]: MORE COLOURS
+              - button "Save for later" [ref=e960] [cursor=pointer]
+            - listitem [ref=e964]:
+              - link "HUGO Blue Nazardo loose fit back print co-ord hoodie in light green, Price £119.00" [ref=e965] [cursor=pointer]:
+                - /url: https://www.asos.com/hugo-blue/hugo-blue-nazardo-loose-fit-back-print-co-ord-hoodie-in-light-green/prd/210952049#colourWayId-210952051
+                - region "HUGO Blue Nazardo loose fit back print co-ord hoodie in light green, Price £119.00" [ref=e968]:
+                  - paragraph [ref=e969]: HUGO Blue Nazardo loose fit back print co-ord hoodie in light green
+                  - paragraph [aria-hidden] [ref=e970]:
+                    - generic [ref=e971]: £119.00
+              - button "Save for later" [ref=e972] [cursor=pointer]
+            - listitem [ref=e976]:
+              - link "ASOS DESIGN heavyweight relaxed boxy zip-through hoodie in scuba-style fabric in black, Price £40.00" [ref=e977] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-heavyweight-relaxed-boxy-zip-through-hoodie-in-scuba-style-fabric-in-black/prd/210444192#colourWayId-210444203
+                - region "ASOS DESIGN heavyweight relaxed boxy zip-through hoodie in scuba-style fabric in black, Price £40.00" [ref=e980]:
+                  - paragraph [ref=e981]: ASOS DESIGN heavyweight relaxed boxy zip-through hoodie in scuba-style fabric in black
+                  - paragraph [aria-hidden] [ref=e982]:
+                    - generic [ref=e983]: £40.00
+                  - generic [ref=e984]: MORE COLOURS
+              - button "Save for later" [ref=e985] [cursor=pointer]
+            - listitem [ref=e989]:
+              - link "ASOS DESIGN essentials boxy relaxed zip through hoodie in khaki, Price £28.00" [ref=e990] [cursor=pointer]:
+                - /url: https://www.asos.com/asos-design/asos-design-essentials-boxy-relaxed-zip-through-hoodie-in-khaki/prd/210275584#colourWayId-210275601
+                - region "ASOS DESIGN essentials boxy relaxed zip through hoodie in khaki, Price £28.00" [ref=e993]:
+                  - paragraph [ref=e994]: ASOS DESIGN essentials boxy relaxed zip through hoodie in khaki
+                  - paragraph [aria-hidden] [ref=e995]:
+                    - generic [ref=e996]: £28.00
+                  - generic [ref=e997]: MORE COLOURS
+              - button "Save for later" [ref=e998] [cursor=pointer]
+            - listitem [ref=e1002]:
+              - link "Threadbare zip thru relaxed fit hoody in black, Price £32.00" [ref=e1003] [cursor=pointer]:
+                - /url: https://www.asos.com/threadbare/threadbare-zip-thru-relaxed-fit-hoody-in-black/prd/211557045#colourWayId-211557051
+                - region "Threadbare zip thru relaxed fit hoody in black, Price £32.00" [ref=e1006]:
+                  - paragraph [ref=e1007]: Threadbare zip thru relaxed fit hoody in black
+                  - paragraph [aria-hidden] [ref=e1008]:
+                    - generic [ref=e1009]: £32.00
+              - button "Save for later" [ref=e1010] [cursor=pointer]
+          - generic [ref=e1014]:
+            - paragraph [ref=e1015]: You've viewed 504 of 1,127 products
+            - progressbar [aria-hidden] [ref=e1016]
+          - link "Load more" [ref=e1017] [cursor=pointer]:
+            - /url: https://www.asos.com/search/?page=8&q=oversized+hoodie&refine=floor:1001,2001
+    - contentinfo [ref=e1019]:
+      - link "Download the App" [ref=e1021] [cursor=pointer]:
+        - /url: https://www.asos.com/discover/our-apps/?ctaRef=global+footer%7CappDownload+banner%7Cour+apps
+      - generic [ref=e1024]:
+        - link [ref=e1027] [cursor=pointer]:
+          - /url: https://www.asos.com/
+          - img "ASOS home" [ref=e1028]
+        - generic [ref=e1030]:
+          - generic [ref=e1031]:
+            - heading "Help & Information" [level=2] [ref=e1032]
+            - list [ref=e1033]:
+              - listitem [ref=e1034]:
+                - link "Help" [ref=e1035] [cursor=pointer]:
+                  - /url: https://www.asos.com/customer-care/
+              - listitem [ref=e1036]:
+                - link "Track order" [ref=e1037] [cursor=pointer]:
+                  - /url: https://my.asos.com/my-account/orders?country=GB&keyStoreDataversion=7qyyrb1-46&lang=en-GB&store=COM
+              - listitem [ref=e1038]:
+                - link "Delivery & returns" [ref=e1039] [cursor=pointer]:
+                  - /url: https://www.asos.com/payments-and-deliveries/delivery/
+              - listitem [ref=e1040]:
+                - link "ASOS Premier" [ref=e1041] [cursor=pointer]:
+                  - /url: https://www.asos.com/customer-service/premier-delivery/
+              - listitem [ref=e1042]:
+                - link "10% Student Discount" [ref=e1043] [cursor=pointer]:
+                  - /url: https://www.asos.com/student-validation
+              - listitem [ref=e1044]:
+                - link "Sitemap" [ref=e1045] [cursor=pointer]:
+                  - /url: https://www.asos.com/sitemap/
+              - listitem [ref=e1046]:
+                - link "Data Protection" [ref=e1047] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/data-protection-and-privacy/
+              - listitem [ref=e1048]:
+                - link "Ethics & Compliance" [ref=e1049] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/ethics-and-compliance/
+              - listitem [ref=e1050]:
+                - link "Use of AI" [ref=e1051] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/use-of-ai/
+          - generic [ref=e1052]:
+            - heading "About ASOS" [level=2] [ref=e1053]
+            - list [ref=e1054]:
+              - listitem [ref=e1055]:
+                - link "About us" [ref=e1056] [cursor=pointer]:
+                  - /url: https://www.asos.com/about/
+              - listitem [ref=e1057]:
+                - link "Careers at ASOS" [ref=e1058] [cursor=pointer]:
+                  - /url: https://asoscareers.asos.com/
+              - listitem [ref=e1059]:
+                - link "Corporate responsibility" [ref=e1060] [cursor=pointer]:
+                  - /url: https://www.asosplc.com/fashion-with-integrity/
+              - listitem [ref=e1061]:
+                - link "Investors' site" [ref=e1062] [cursor=pointer]:
+                  - /url: https://www.asosplc.com/
+              - listitem [ref=e1063]:
+                - link "Cyber Security" [ref=e1064] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/cyber-security/
+          - generic [ref=e1065]:
+            - heading "More From ASOS" [level=2] [ref=e1066]
+            - list [ref=e1067]:
+              - listitem [ref=e1068]:
+                - link "Mobile and ASOS apps" [ref=e1069] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/our-apps/?ctaref=global%20footer|our%20apps
+              - listitem [ref=e1070]:
+                - link "Gift vouchers" [ref=e1071] [cursor=pointer]:
+                  - /url: https://www.asos.com/gift-vouchers/?ctaref=global%20footer|gift%20vouchers
+              - listitem [ref=e1072]:
+                - link "Corporate gift vouchers" [ref=e1073] [cursor=pointer]:
+                  - /url: https://www.asoscorporategiftcard.com/home
+              - listitem [ref=e1074]:
+                - link "Black Friday" [ref=e1075] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/black-friday-cyber-monday-deals/
+              - listitem [ref=e1076]:
+                - link "Info for Partners" [ref=e1077] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/partner-fulfils/
+              - listitem [ref=e1078]:
+                - link "Discover the ASOS Credit Card" [ref=e1079] [cursor=pointer]:
+                  - /url: https://www.asos.com/discover/asos-credit-card
+          - generic [ref=e1080]:
+            - heading "Shopping from:" [level=2] [ref=e1081]
+            - button "You're in United Kingdom Change" [ref=e1083]:
+              - generic [ref=e1084]: You're in
+              - img "United Kingdom" [ref=e1085]
+              - generic [ref=e1086]:
+                - generic [aria-hidden] [ref=e1087]: "|"
+                - text: Change
+            - generic [ref=e1088]:
+              - heading "Some of our international sites:" [level=3] [ref=e1089]
+              - list "Some of our international sites:" [ref=e1090]:
+                - listitem [ref=e1091]:
+                  - button "Spain" [ref=e1092] [cursor=pointer]:
+                    - img "Spain" [ref=e1093]
+                - listitem [ref=e1094]:
+                  - button "Germany" [ref=e1095] [cursor=pointer]:
+                    - img "Germany" [ref=e1096]
+                - listitem [ref=e1097]:
+                  - button "Australia" [ref=e1098] [cursor=pointer]:
+                    - img "Australia" [ref=e1099]
+                - listitem [ref=e1100]:
+                  - button "France" [ref=e1101] [cursor=pointer]:
+                    - img "France" [ref=e1102]
+                - listitem [ref=e1103]:
+                  - button "Denmark" [ref=e1104] [cursor=pointer]:
+                    - img "Denmark" [ref=e1105]
+                - listitem [ref=e1106]:
+                  - button "Italy" [ref=e1107] [cursor=pointer]:
+                    - img "Italy" [ref=e1108]
+                - listitem [ref=e1109]:
+                  - button "Netherlands" [ref=e1110] [cursor=pointer]:
+                    - img "Netherlands" [ref=e1111]
+                - listitem [ref=e1112]:
+                  - button "Poland" [ref=e1113] [cursor=pointer]:
+                    - img "Poland" [ref=e1114]
+                - listitem [ref=e1115]:
+                  - button "United States" [ref=e1116] [cursor=pointer]:
+                    - img "United States" [ref=e1117]
+                - listitem [ref=e1118]:
+                  - button "Sweden" [ref=e1119] [cursor=pointer]:
+                    - img "Sweden" [ref=e1120]
+        - generic [ref=e1121]:
+          - list [ref=e1122]:
+            - listitem [ref=e1123]:
+              - link "Facebook" [ref=e1124] [cursor=pointer]:
+                - /url: https://www.facebook.com/ASOS/
+            - listitem [ref=e1126]:
+              - link "Instagram" [ref=e1127] [cursor=pointer]:
+                - /url: https://www.instagram.com/asos/
+            - listitem [ref=e1129]:
+              - link "Snapchat" [ref=e1130] [cursor=pointer]:
+                - /url: https://www.snapchat.com/add/asosfashion
+          - list [ref=e1132]:
+            - listitem:
+              - img "VISA"
+            - listitem:
+              - img "Mastercard"
+            - listitem:
+              - img "PayPal"
+            - listitem:
+              - img "American Express"
+            - listitem:
+              - img "VISA Electron"
+            - listitem:
+              - img "Maestro"
+            - listitem:
+              - img "Apple Pay"
+            - listitem:
+              - img "Klarna"
+            - listitem:
+              - img "Clearpay"
+      - generic [ref=e1134]:
+        - paragraph [ref=e1135]: © 2026 ASOS
+        - list [ref=e1136]:
+          - listitem [ref=e1137]:
+            - link "Privacy & Cookies" [ref=e1138] [cursor=pointer]:
+              - /url: https://www.asos.com/privacy-policy/
+            - text: "|"
+          - listitem [ref=e1139]:
+            - link "Ts&Cs" [ref=e1140] [cursor=pointer]:
+              - /url: https://www.asos.com/terms-and-conditions/
+            - text: "|"
+          - listitem [ref=e1141]:
+            - link "Accessibility" [ref=e1142] [cursor=pointer]:
+              - /url: https://www.asos.com/accessibility/

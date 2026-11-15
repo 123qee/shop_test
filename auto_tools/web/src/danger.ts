@@ -1,0 +1,21 @@
+/** Joom dangerInfo.dangerKinds 允许值 + 中文标签(仅前端展示用)。 */
+export const DANGER_KINDS: Array<{ value: string; label: string }> = [
+  { value: 'battery', label: '电池' },
+  { value: 'withBattery', label: '含电池' },
+  { value: 'liquid', label: '液体' },
+  { value: 'semiLiquid', label: '半液体' },
+  { value: 'powder', label: '粉末' },
+  { value: 'flammable', label: '易燃' },
+  { value: 'aerosoleAndGases', label: '气雾/气体' },
+  { value: 'dangerousChemicals', label: '危险化学品' },
+  { value: 'magnets', label: '磁性' },
+  { value: 'sharp', label: '锐利' },
+  { value: 'perfumes', label: '香水' },
+  { value: 'highDensity', label: '高密度' },
+  { value: 'lookAlikeWeapon', label: '仿真武器' },
+  { value: 'weaponAccessories', label: '武器配件' },
+  { value: 'adult', label: '成人用品' },
+  { value: 'hair', label: '毛发' },
+  { value: 'plants', label: '植物' },
+  { value: 'teaLeafs', label: '茶叶' },
+];

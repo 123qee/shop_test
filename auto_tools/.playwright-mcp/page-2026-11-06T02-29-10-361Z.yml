@@ -1,0 +1,116 @@
+- generic [ref=f3e3]:
+  - complementary [ref=f3e4]:
+    - button "收起菜单栏" [expanded] [ref=f3e5] [cursor=pointer]: ‹
+    - link "我的工作台 工作与生活" [ref=f3e6] [cursor=pointer]:
+      - /url: /
+      - generic [ref=f3e13]:
+        - strong [ref=f3e14]: 我的工作台
+        - generic [ref=f3e15]: 工作与生活
+    - navigation "主导航" [ref=f3e16]:
+      - generic [ref=f3e17]: 概览
+      - link "工作台" [ref=f3e18] [cursor=pointer]:
+        - /url: /
+      - generic [ref=f3e26]: 个人管理
+      - link "任务" [ref=f3e27] [cursor=pointer]:
+        - /url: /tasks
+      - link "项目" [ref=f3e32] [cursor=pointer]:
+        - /url: /projects
+      - generic [ref=f3e38]: 商品
+      - link "采集母库" [ref=f3e39] [cursor=pointer]:
+        - /url: /sources
+      - link "商品浏览" [ref=f3e44] [cursor=pointer]:
+        - /url: /joom
+      - generic [ref=f3e49]: Joom 发布
+      - link "发布清单" [ref=f3e50] [cursor=pointer]:
+        - /url: /joom/publish-list
+      - link "删除清单" [ref=f3e55] [cursor=pointer]:
+        - /url: /joom/delete-list
+      - link "店铺与模板" [ref=f3e60] [cursor=pointer]:
+        - /url: /settings
+      - generic [ref=f3e66]: 其他平台
+      - link "美客多刊登" [ref=f3e67] [cursor=pointer]:
+        - /url: /mercadolibre
+      - link "美客多设置" [ref=f3e73] [cursor=pointer]:
+        - /url: /mercadolibre/settings
+    - generic [ref=f3e79]: Joom 未连接
+  - generic [ref=f3e82]:
+    - banner [ref=f3e83]:
+      - generic [ref=f3e84]:
+        - heading "商品浏览" [level=1] [ref=f3e85]
+        - paragraph [ref=f3e86]: 筛选商品并加入发布清单或删除清单
+      - generic [ref=f3e87]: 后端未连接
+    - main [ref=f3e89]:
+      - group [ref=f3e90]:
+        - generic "商品筛选与工具 0 个待处理商品 · 点击展开筛选与操作 展开" [ref=f3e91] [cursor=pointer]:
+          - generic [ref=f3e92]:
+            - strong [ref=f3e93]: 商品筛选与工具
+            - generic [ref=f3e94]: 0 个待处理商品 · 点击展开筛选与操作
+          - generic [ref=f3e95]: 展开
+        - option "全部状态（0）"
+        - option "未发布（0）"
+        - option "刚编辑（0）"
+        - option "发布失败（0）"
+        - option "已发布（0）"
+        - option "废弃箱（0）" [selected]
+        - option "含非英文（0）"
+        - option "全部质量" [selected]
+        - option "待完善（0）"
+        - option "优秀（0）"
+        - option "良好（0）"
+        - option "需完善（0）"
+        - option "高风险（0）"
+        - option "全部审核原因" [selected]
+        - option "当前店铺没有该类目权限（0）" [disabled]
+        - option "类目或属性不正确（0）" [disabled]
+        - option "商品信息不完整或不合规（0）" [disabled]
+        - option "图片不符合要求（0）" [disabled]
+        - option "疑似侵权 / 品牌风险（0）" [disabled]
+        - option "商品可能受限或禁售（0）" [disabled]
+        - option "变体信息有问题（0）" [disabled]
+        - option "价格或物流信息有问题（0）" [disabled]
+        - option "缺少合规资料（0）" [disabled]
+        - option "商品重复（0）" [disabled]
+        - option "Joom 审核未通过（0）" [disabled]
+      - group [ref=f3e96]:
+        - generic "分组与快捷模板 需要批量套用模板时再展开 展开" [ref=f3e97] [cursor=pointer]:
+          - generic [ref=f3e98]:
+            - strong [ref=f3e99]: 分组与快捷模板
+            - generic [ref=f3e100]: 需要批量套用模板时再展开
+          - generic [ref=f3e101]: 展开
+        - option "全部材质（0）" [selected]
+        - option "聚酯纤维（0）"
+        - option "棉（0）"
+        - option "混纺（0）"
+        - option "其他材质（0）"
+        - option "材质未知（0）"
+        - option "男装短袖" [selected]
+        - option "女装短袖"
+        - option "童装短袖"
+        - option "短袖 · 人群待判断"
+        - option "男装卫衣"
+        - option "女装卫衣"
+        - option "童装卫衣"
+        - option "卫衣 · 人群待判断"
+        - option "男装其他上衣"
+        - option "女装其他上衣"
+        - option "童装其他上衣"
+        - option "上衣 · 人群待判断"
+        - option "裤装"
+        - option "裙装"
+        - option "鞋类"
+        - option "家居"
+        - option "其他商品"
+        - option "待判断"
+        - option "保留原材质判断" [selected]
+        - option "聚酯纤维"
+        - option "棉"
+        - option "混纺"
+        - option "其他材质"
+        - option "材质未知"
+      - group [ref=f3e102]:
+        - generic "Joom 店铺状态 尚未同步 展开" [ref=f3e103] [cursor=pointer]:
+          - generic [ref=f3e104]:
+            - strong [ref=f3e105]: Joom 店铺状态
+            - generic [ref=f3e106]: 尚未同步
+          - generic [ref=f3e107]: 展开
+      - paragraph [ref=f3e108]: 加载中…

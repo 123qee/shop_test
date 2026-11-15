@@ -1,0 +1,20 @@
+- generic [ref=f1e2]:
+  - generic [ref=f1e3]:
+    - heading "点击查看源网页" [level=1]:
+      - link "点击查看源网页":
+        - /url: https://aliexpress.com/
+        - img "点击查看源网页"
+  - generic:
+    - generic:
+      - generic [ref=f1e6]:
+        - generic [ref=f1e7]:
+          - text: 亲，请拖动下方滑块完成验证
+          - paragraph [ref=f1e8]: 通过验证以确保正常访问
+        - generic [ref=f1e9]:
+          - paragraph
+          - generic [ref=f1e36]:
+            - generic "ZLPB1czxxFSzBel4UgAmZg|aoVT_g|0WLlUQ_0|BffswA|1" [ref=f1e37]
+            - link "点我反馈 >" [ref=f1e39] [cursor=pointer]:
+              - /url: https://es.aliexpress.com:443//item/1005012177439277.html/_____tmd_____/page/feedback?rand=S3WxGHAgAt756EpznwfNzJq2AFA2qBNla3j6EINUS8We9dazM_iKElp8DwVSHZUevpC41Bx7RzivXIj9RnZgdg&x5secdata=xg24a11a84c125530cka64b3c1d5ccf1c454b305e978520026661787122686a-1168960602a-782047919abaac3aaa33bc0f6ca238658600ad3041aa1f13b994e__bx__es.aliexpress.com%3A443%2Fitem%2F1005012177439277.html&type=1&language=cn
+            - paragraph
+      - generic [ref=f1e40]: ©️ 2010-2023 AliExpress.com.All rights reserved.

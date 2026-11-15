@@ -1,0 +1,645 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - heading [level=1] [ref=e4]:
+      - link "Joom 采集编辑后台" [ref=e5] [cursor=pointer]:
+        - /url: /
+    - link "经营看板" [ref=e6] [cursor=pointer]:
+      - /url: /dashboard
+    - link "采集预设" [ref=e7] [cursor=pointer]:
+      - /url: /settings
+    - generic [ref=e8]:
+      - text: 已连接 Joom（production）
+      - button "断开" [ref=e10] [cursor=pointer]
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - button "← 返回" [ref=e13] [cursor=pointer]
+      - generic [ref=e14]: 已发布
+      - link "查看来源页 ↗" [ref=e15] [cursor=pointer]:
+        - /url: https://www.joom.com/en/products/69d779b0a8db7701e4cafbba
+      - button "应用预设" [ref=e16] [cursor=pointer]
+      - button "保存" [ref=e17] [cursor=pointer]
+      - button "校验" [ref=e18] [cursor=pointer]
+      - button "同步 Joom 状态" [ref=e19] [cursor=pointer]
+      - button "保存并更新 Joom 商品" [ref=e20] [cursor=pointer]
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - heading "基本信息" [level=3] [ref=e24]
+          - generic [ref=e25]:
+            - generic [ref=e26]: 商品名称 *
+            - textbox [ref=e27]: Men's Straight Fit T-Shirt with Printed Slogan, Summer 8061-001-33-3 HC… More
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - generic [ref=e30]: 商品 SKU * 全店唯一
+              - textbox [disabled] [ref=e31]: 69d779b0a8db7701e4cafbba
+              - generic [ref=e32]: 已发布商品的 Joom SKU 用于定位，不能在此修改。
+            - generic [ref=e33]:
+              - generic [ref=e34]: 品牌
+              - textbox [ref=e35]
+          - generic [ref=e36]:
+            - generic [ref=e37]: 描述 纯文本,不支持 HTML
+            - textbox [ref=e38]: "Product Type: t shirt Manufacture Country: China Applicable scene: daily style: Casual Applicable season: summer Neckline: round Tops closure type: pullover Clothing decoration: no decoration Leather Label: no Sleeve length (cm): Short Sleeve Sex: Unisex Age: Ages 18-45 Years Old Pattern: print Material: cotton Label: Yes Washing care:do not tumble drying Size chart (cm): Size: XXS, Length: 60cm, Bust: 88cm, Shoulder: 41cm, Sleeve: 18cm Size: XS, Length: 66cm, Bust: 96cm, Shoulder: 45cm, Sleeve: 19cm Size: S, Length: 68cm, Bust: 100cm, Shoulder: 47cm, Sleeve: 19cm Size: M, Length: 70cm, Bust: 104cm, Shoulder: 49cm, Sleeve: 20cm Size: L, Length: 72cm, Bust: 108cm, Shoulder: 51cm, Sleeve: 20cm Size: XL, Length: 74cm, Bust: 112cm, Shoulder: 53cm, Sleeve: 21cm Size: 2XL, Length: 76cm, Bust: 116cm, Shoulder: 55cm, Sleeve: 21cm Size: 3XL, Length: 78cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm Note: 1. Please carefully measure yourself according to the chart before purchasing, thank you! 2. Due to manual measurement, please allow an error of 2-3 cm. 3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand. 4. All our products are advertised in size, study the size chart before buying."
+        - generic [ref=e39]:
+          - heading "商品图片 第一张为主图,其余为附图(最多 20 张)" [level=3] [ref=e40]
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - generic [ref=e43]: 主图
+              - button "删除" [ref=e45] [cursor=pointer]
+            - generic [ref=e47]:
+              - button "设主图" [ref=e48] [cursor=pointer]
+              - button "删除" [ref=e49] [cursor=pointer]
+            - generic [ref=e51]:
+              - button "设主图" [ref=e52] [cursor=pointer]
+              - button "删除" [ref=e53] [cursor=pointer]
+            - generic [ref=e55]:
+              - button "设主图" [ref=e56] [cursor=pointer]
+              - button "删除" [ref=e57] [cursor=pointer]
+            - generic [ref=e59]:
+              - button "设主图" [ref=e60] [cursor=pointer]
+              - button "删除" [ref=e61] [cursor=pointer]
+            - generic [ref=e63]:
+              - button "设主图" [ref=e64] [cursor=pointer]
+              - button "删除" [ref=e65] [cursor=pointer]
+            - generic [ref=e67]:
+              - button "设主图" [ref=e68] [cursor=pointer]
+              - button "删除" [ref=e69] [cursor=pointer]
+            - generic [ref=e71]:
+              - button "设主图" [ref=e72] [cursor=pointer]
+              - button "删除" [ref=e73] [cursor=pointer]
+            - generic [ref=e75]:
+              - button "设主图" [ref=e76] [cursor=pointer]
+              - button "删除" [ref=e77] [cursor=pointer]
+            - generic [ref=e79]:
+              - button "设主图" [ref=e80] [cursor=pointer]
+              - button "删除" [ref=e81] [cursor=pointer]
+            - generic [ref=e83]:
+              - button "设主图" [ref=e84] [cursor=pointer]
+              - button "删除" [ref=e85] [cursor=pointer]
+          - generic [ref=e86]:
+            - textbox "粘贴图片 URL 添加" [ref=e87]
+            - button "添加" [ref=e88] [cursor=pointer]
+          - generic [ref=e89]:
+            - button "检查图片质量" [ref=e90] [cursor=pointer]
+            - generic [ref=e91]: 检查 URL 可达性、Content-Type 和重复图片
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - heading "变体 / SKU 共 16 个 · 价格不含 VAT · 已有变体 SKU 不要改名，改名会被 Joom 视为新增变体" [level=3] [ref=e94]:
+              - text: 变体 / SKU
+              - generic [ref=e95]: 共 16 个 · 价格不含 VAT · 已有变体 SKU 不要改名，改名会被 Joom 视为新增变体
+            - button "+ 添加变体" [ref=e96] [cursor=pointer]
+          - table [ref=e98]:
+            - rowgroup [ref=e99]:
+              - row [ref=e100]:
+                - columnheader "图" [ref=e101]
+                - columnheader "变体 SKU *" [ref=e102]
+                - columnheader "颜色" [ref=e103]
+                - columnheader "尺码" [ref=e104]
+                - columnheader "价格 *" [ref=e105]
+                - columnheader "促销价" [ref=e106]
+                - columnheader "库存" [ref=e107]
+                - columnheader [ref=e108]
+            - rowgroup [ref=e109]:
+              - row [ref=e110]:
+                - cell "图10" [ref=e111]:
+                  - combobox "选择变体图片" [ref=e113]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10" [selected]
+                    - option "图11"
+                - cell [ref=e114]:
+                  - textbox [ref=e115]: 69d779b0a8db7701e4cafbba-1-2XS
+                - cell [ref=e116]:
+                  - combobox [ref=e117]: ball blue
+                - cell [ref=e118]:
+                  - textbox [ref=e119]: 2XS
+                - cell [ref=e120]:
+                  - spinbutton [ref=e121]: "3.99"
+                - cell [ref=e122]:
+                  - spinbutton "可选" [ref=e123]
+                - cell [ref=e124]:
+                  - spinbutton [ref=e125]: "990"
+                - cell [ref=e126]:
+                  - button "⋯" [ref=e127] [cursor=pointer]
+                  - button "✕" [ref=e128] [cursor=pointer]
+              - row [ref=e129]:
+                - cell "图10" [ref=e130]:
+                  - combobox "选择变体图片" [ref=e132]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10" [selected]
+                    - option "图11"
+                - cell [ref=e133]:
+                  - textbox [ref=e134]: 69d779b0a8db7701e4cafbba-1-XS
+                - cell [ref=e135]:
+                  - combobox [ref=e136]: ball blue
+                - cell [ref=e137]:
+                  - textbox [ref=e138]: XS
+                - cell [ref=e139]:
+                  - spinbutton [ref=e140]: "3.99"
+                - cell [ref=e141]:
+                  - spinbutton "可选" [ref=e142]
+                - cell [ref=e143]:
+                  - spinbutton [ref=e144]: "990"
+                - cell [ref=e145]:
+                  - button "⋯" [ref=e146] [cursor=pointer]
+                  - button "✕" [ref=e147] [cursor=pointer]
+              - row [ref=e148]:
+                - cell "图10" [ref=e149]:
+                  - combobox "选择变体图片" [ref=e151]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10" [selected]
+                    - option "图11"
+                - cell [ref=e152]:
+                  - textbox [ref=e153]: 69d779b0a8db7701e4cafbba-1-S
+                - cell [ref=e154]:
+                  - combobox [ref=e155]: ball blue
+                - cell [ref=e156]:
+                  - textbox [ref=e157]: S
+                - cell [ref=e158]:
+                  - spinbutton [ref=e159]: "3.99"
+                - cell [ref=e160]:
+                  - spinbutton "可选" [ref=e161]
+                - cell [ref=e162]:
+                  - spinbutton [ref=e163]: "990"
+                - cell [ref=e164]:
+                  - button "⋯" [ref=e165] [cursor=pointer]
+                  - button "✕" [ref=e166] [cursor=pointer]
+              - row [ref=e167]:
+                - cell "图10" [ref=e168]:
+                  - combobox "选择变体图片" [ref=e170]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10" [selected]
+                    - option "图11"
+                - cell [ref=e171]:
+                  - textbox [ref=e172]: 69d779b0a8db7701e4cafbba-1
+                - cell [ref=e173]:
+                  - combobox [ref=e174]: ball blue
+                - cell [ref=e175]:
+                  - textbox [ref=e176]: M
+                - cell [ref=e177]:
+                  - spinbutton [ref=e178]: "3.99"
+                - cell [ref=e179]:
+                  - spinbutton "可选" [ref=e180]
+                - cell [ref=e181]:
+                  - spinbutton [ref=e182]: "990"
+                - cell [ref=e183]:
+                  - button "⋯" [ref=e184] [cursor=pointer]
+                  - button "✕" [ref=e185] [cursor=pointer]
+              - row [ref=e186]:
+                - cell "图10" [ref=e187]:
+                  - combobox "选择变体图片" [ref=e189]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10" [selected]
+                    - option "图11"
+                - cell [ref=e190]:
+                  - textbox [ref=e191]: 69d779b0a8db7701e4cafbba-1-L
+                - cell [ref=e192]:
+                  - combobox [ref=e193]: ball blue
+                - cell [ref=e194]:
+                  - textbox [ref=e195]: L
+                - cell [ref=e196]:
+                  - spinbutton [ref=e197]: "3.99"
+                - cell [ref=e198]:
+                  - spinbutton "可选" [ref=e199]
+                - cell [ref=e200]:
+                  - spinbutton [ref=e201]: "990"
+                - cell [ref=e202]:
+                  - button "⋯" [ref=e203] [cursor=pointer]
+                  - button "✕" [ref=e204] [cursor=pointer]
+              - row [ref=e205]:
+                - cell "图10" [ref=e206]:
+                  - combobox "选择变体图片" [ref=e208]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10" [selected]
+                    - option "图11"
+                - cell [ref=e209]:
+                  - textbox [ref=e210]: 69d779b0a8db7701e4cafbba-1-XL
+                - cell [ref=e211]:
+                  - combobox [ref=e212]: ball blue
+                - cell [ref=e213]:
+                  - textbox [ref=e214]: XL
+                - cell [ref=e215]:
+                  - spinbutton [ref=e216]: "3.99"
+                - cell [ref=e217]:
+                  - spinbutton "可选" [ref=e218]
+                - cell [ref=e219]:
+                  - spinbutton [ref=e220]: "990"
+                - cell [ref=e221]:
+                  - button "⋯" [ref=e222] [cursor=pointer]
+                  - button "✕" [ref=e223] [cursor=pointer]
+              - row [ref=e224]:
+                - cell "图10" [ref=e225]:
+                  - combobox "选择变体图片" [ref=e227]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10" [selected]
+                    - option "图11"
+                - cell [ref=e228]:
+                  - textbox [ref=e229]: 69d779b0a8db7701e4cafbba-1-2XL
+                - cell [ref=e230]:
+                  - combobox [ref=e231]: ball blue
+                - cell [ref=e232]:
+                  - textbox [ref=e233]: 2XL
+                - cell [ref=e234]:
+                  - spinbutton [ref=e235]: "3.99"
+                - cell [ref=e236]:
+                  - spinbutton "可选" [ref=e237]
+                - cell [ref=e238]:
+                  - spinbutton [ref=e239]: "990"
+                - cell [ref=e240]:
+                  - button "⋯" [ref=e241] [cursor=pointer]
+                  - button "✕" [ref=e242] [cursor=pointer]
+              - row [ref=e243]:
+                - cell "图10" [ref=e244]:
+                  - combobox "选择变体图片" [ref=e246]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10" [selected]
+                    - option "图11"
+                - cell [ref=e247]:
+                  - textbox [ref=e248]: 69d779b0a8db7701e4cafbba-1-3XL
+                - cell [ref=e249]:
+                  - combobox [ref=e250]: ball blue
+                - cell [ref=e251]:
+                  - textbox [ref=e252]: 3XL
+                - cell [ref=e253]:
+                  - spinbutton [ref=e254]: "3.99"
+                - cell [ref=e255]:
+                  - spinbutton "可选" [ref=e256]
+                - cell [ref=e257]:
+                  - spinbutton [ref=e258]: "990"
+                - cell [ref=e259]:
+                  - button "⋯" [ref=e260] [cursor=pointer]
+                  - button "✕" [ref=e261] [cursor=pointer]
+              - row [ref=e262]:
+                - cell "图11" [ref=e263]:
+                  - combobox "选择变体图片" [ref=e265]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10"
+                    - option "图11" [selected]
+                - cell [ref=e266]:
+                  - textbox [ref=e267]: 69d779b0a8db7701e4cafbba-2-2XS
+                - cell [ref=e268]:
+                  - combobox [ref=e269]: cream
+                - cell [ref=e270]:
+                  - textbox [ref=e271]: 2XS
+                - cell [ref=e272]:
+                  - spinbutton [ref=e273]: "3.99"
+                - cell [ref=e274]:
+                  - spinbutton "可选" [ref=e275]
+                - cell [ref=e276]:
+                  - spinbutton [ref=e277]: "990"
+                - cell [ref=e278]:
+                  - button "⋯" [ref=e279] [cursor=pointer]
+                  - button "✕" [ref=e280] [cursor=pointer]
+              - row [ref=e281]:
+                - cell "图11" [ref=e282]:
+                  - combobox "选择变体图片" [ref=e284]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10"
+                    - option "图11" [selected]
+                - cell [ref=e285]:
+                  - textbox [ref=e286]: 69d779b0a8db7701e4cafbba-2-XS
+                - cell [ref=e287]:
+                  - combobox [ref=e288]: cream
+                - cell [ref=e289]:
+                  - textbox [ref=e290]: XS
+                - cell [ref=e291]:
+                  - spinbutton [ref=e292]: "3.99"
+                - cell [ref=e293]:
+                  - spinbutton "可选" [ref=e294]
+                - cell [ref=e295]:
+                  - spinbutton [ref=e296]: "990"
+                - cell [ref=e297]:
+                  - button "⋯" [ref=e298] [cursor=pointer]
+                  - button "✕" [ref=e299] [cursor=pointer]
+              - row [ref=e300]:
+                - cell "图11" [ref=e301]:
+                  - combobox "选择变体图片" [ref=e303]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10"
+                    - option "图11" [selected]
+                - cell [ref=e304]:
+                  - textbox [ref=e305]: 69d779b0a8db7701e4cafbba-2-S
+                - cell [ref=e306]:
+                  - combobox [ref=e307]: cream
+                - cell [ref=e308]:
+                  - textbox [ref=e309]: S
+                - cell [ref=e310]:
+                  - spinbutton [ref=e311]: "3.99"
+                - cell [ref=e312]:
+                  - spinbutton "可选" [ref=e313]
+                - cell [ref=e314]:
+                  - spinbutton [ref=e315]: "990"
+                - cell [ref=e316]:
+                  - button "⋯" [ref=e317] [cursor=pointer]
+                  - button "✕" [ref=e318] [cursor=pointer]
+              - row [ref=e319]:
+                - cell "图11" [ref=e320]:
+                  - combobox "选择变体图片" [ref=e322]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10"
+                    - option "图11" [selected]
+                - cell [ref=e323]:
+                  - textbox [ref=e324]: 69d779b0a8db7701e4cafbba-5
+                - cell [ref=e325]:
+                  - combobox [ref=e326]: cream
+                - cell [ref=e327]:
+                  - textbox [ref=e328]: M
+                - cell [ref=e329]:
+                  - spinbutton [ref=e330]: "3.99"
+                - cell [ref=e331]:
+                  - spinbutton "可选" [ref=e332]
+                - cell [ref=e333]:
+                  - spinbutton [ref=e334]: "990"
+                - cell [ref=e335]:
+                  - button "⋯" [ref=e336] [cursor=pointer]
+                  - button "✕" [ref=e337] [cursor=pointer]
+              - row [ref=e338]:
+                - cell "图11" [ref=e339]:
+                  - combobox "选择变体图片" [ref=e341]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10"
+                    - option "图11" [selected]
+                - cell [ref=e342]:
+                  - textbox [ref=e343]: 69d779b0a8db7701e4cafbba-2-L
+                - cell [ref=e344]:
+                  - combobox [ref=e345]: cream
+                - cell [ref=e346]:
+                  - textbox [ref=e347]: L
+                - cell [ref=e348]:
+                  - spinbutton [ref=e349]: "3.99"
+                - cell [ref=e350]:
+                  - spinbutton "可选" [ref=e351]
+                - cell [ref=e352]:
+                  - spinbutton [ref=e353]: "990"
+                - cell [ref=e354]:
+                  - button "⋯" [ref=e355] [cursor=pointer]
+                  - button "✕" [ref=e356] [cursor=pointer]
+              - row [ref=e357]:
+                - cell "图11" [ref=e358]:
+                  - combobox "选择变体图片" [ref=e360]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10"
+                    - option "图11" [selected]
+                - cell [ref=e361]:
+                  - textbox [ref=e362]: 69d779b0a8db7701e4cafbba-2-XL
+                - cell [ref=e363]:
+                  - combobox [ref=e364]: cream
+                - cell [ref=e365]:
+                  - textbox [ref=e366]: XL
+                - cell [ref=e367]:
+                  - spinbutton [ref=e368]: "3.99"
+                - cell [ref=e369]:
+                  - spinbutton "可选" [ref=e370]
+                - cell [ref=e371]:
+                  - spinbutton [ref=e372]: "990"
+                - cell [ref=e373]:
+                  - button "⋯" [ref=e374] [cursor=pointer]
+                  - button "✕" [ref=e375] [cursor=pointer]
+              - row [ref=e376]:
+                - cell "图11" [ref=e377]:
+                  - combobox "选择变体图片" [ref=e379]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10"
+                    - option "图11" [selected]
+                - cell [ref=e380]:
+                  - textbox [ref=e381]: 69d779b0a8db7701e4cafbba-2-2XL
+                - cell [ref=e382]:
+                  - combobox [ref=e383]: cream
+                - cell [ref=e384]:
+                  - textbox [ref=e385]: 2XL
+                - cell [ref=e386]:
+                  - spinbutton [ref=e387]: "3.99"
+                - cell [ref=e388]:
+                  - spinbutton "可选" [ref=e389]
+                - cell [ref=e390]:
+                  - spinbutton [ref=e391]: "990"
+                - cell [ref=e392]:
+                  - button "⋯" [ref=e393] [cursor=pointer]
+                  - button "✕" [ref=e394] [cursor=pointer]
+              - row [ref=e395]:
+                - cell "图11" [ref=e396]:
+                  - combobox "选择变体图片" [ref=e398]:
+                    - option "无图"
+                    - option "图1(主图)"
+                    - option "图2"
+                    - option "图3"
+                    - option "图4"
+                    - option "图5"
+                    - option "图6"
+                    - option "图7"
+                    - option "图8"
+                    - option "图9"
+                    - option "图10"
+                    - option "图11" [selected]
+                - cell [ref=e399]:
+                  - textbox [ref=e400]: 69d779b0a8db7701e4cafbba-2-3XL
+                - cell [ref=e401]:
+                  - combobox [ref=e402]: cream
+                - cell [ref=e403]:
+                  - textbox [ref=e404]: 3XL
+                - cell [ref=e405]:
+                  - spinbutton [ref=e406]: "3.99"
+                - cell [ref=e407]:
+                  - spinbutton "可选" [ref=e408]
+                - cell [ref=e409]:
+                  - spinbutton [ref=e410]: "990"
+                - cell [ref=e411]:
+                  - button "⋯" [ref=e412] [cursor=pointer]
+                  - button "✕" [ref=e413] [cursor=pointer]
+          - paragraph [ref=e414]: 颜色建议使用 Joom 允许的颜色名(连接 Joom 后可下拉选择);可用 &、,、and 分隔多个颜色。
+          - generic [ref=e415]:
+            - button "打开变体矩阵" [ref=e416] [cursor=pointer]
+            - generic [ref=e417]: 适合服装快速检查颜色 × 尺码是否完整
+      - complementary [ref=e418]:
+        - generic [ref=e419]:
+          - heading "发布信息" [level=3] [ref=e420]
+          - generic [ref=e421]:
+            - generic [ref=e422]: 目标平台
+            - generic [ref=e423]: Joom
+          - generic [ref=e425]:
+            - generic [ref=e426]: 预设模板 切换会按模板重生成草稿
+            - combobox [ref=e427]:
+              - option "T恤模板" [selected]
+          - generic [ref=e428]:
+            - generic [ref=e429]: 店铺 storeId 店铺身份授权可留空
+            - textbox "留空(Nineteen Wear 店铺授权)" [ref=e430]
+          - generic [ref=e431]:
+            - generic [ref=e432]: 类目
+            - combobox "连接 Joom 后可搜索,或手填 categoryId" [ref=e433]: 1473502947697243574-128-2-118-2775194205
+            - generic [ref=e434]: "categoryId: 1473502947697243574-128-2-118-2775194205"
+          - generic [ref=e435]:
+            - generic [ref=e436]: 币种 currency
+            - textbox [ref=e437]: USD
+          - generic [ref=e438]:
+            - generic [ref=e439]: 敏感货 dangerInfo 普通货(如服装)不勾选
+            - generic [ref=e440] [cursor=pointer]:
+              - checkbox "这是危险品 / 敏感货" [ref=e441]
+              - text: 这是危险品 / 敏感货
+          - generic [ref=e442]:
+            - generic [ref=e443]: 标签 tags 搜索关键词,买家不可见
+            - generic [ref=e444]:
+              - textbox "输入后回车添加" [ref=e445]
+              - button "添加" [ref=e446] [cursor=pointer]
+        - generic [ref=e447]:
+          - heading "概览" [level=3] [ref=e448]
+          - generic [ref=e449]:
+            - term [ref=e450]: 变体数
+            - definition [ref=e451]: "16"
+            - term [ref=e452]: 总库存
+            - definition [ref=e453]: "15840"
+            - term [ref=e454]: 价格区间
+            - definition [ref=e455]: 3.99–3.99 USD
+            - term [ref=e456]: Joom 商品 id
+            - definition [ref=e457]: 6a87c84393749b019b381b22
+        - generic [ref=e458]:
+          - heading "来源信息" [level=3] [ref=e459]
+          - generic [ref=e460]:
+            - term [ref=e461]: 平台
+            - definition [ref=e462]: joom
+            - term [ref=e463]: 来源 id
+            - definition [ref=e464]: 69d779b0a8db7701e4cafbba
+            - term [ref=e465]: 原价
+            - definition [ref=e466]: 41.23 USD
+        - generic [ref=e467]:
+          - generic [ref=e468]:
+            - heading "操作记录" [level=3] [ref=e469]
+            - generic [ref=e470]: 保存、同步和发布会留下记录
+          - generic [ref=e472]:
+            - generic [ref=e473]: ✦
+            - generic [ref=e474]:
+              - strong [ref=e475]: 发布到 Joom 成功
+              - generic [ref=e476]: 2026/8/21 11:38:43
+            - button "恢复" [ref=e477] [cursor=pointer]

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body { width: 280px; margin: 0; padding: 16px; font-family: -apple-system, system-ui, sans-serif; color: #222; }
+      h1 { font-size: 15px; margin: 0 0 12px; }
+      .row { display: flex; justify-content: space-between; align-items: center; margin: 8px 0; font-size: 13px; }
+      .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+      .ok { background: #16a34a; } .err { background: #dc2626; } .wait { background: #d1d5db; }
+      .val { color: #555; }
+      button { width: 100%; margin-top: 10px; padding: 9px; border: none; border-radius: 6px;
+        background: #ff4747; color: #fff; font-weight: 600; font-size: 13px; cursor: pointer; }
+      button.ghost { background: #f3f4f6; color: #333; }
+      a { color: #2563eb; font-size: 12px; text-decoration: none; }
+      .hint { font-size: 11px; color: #888; margin-top: 12px; line-height: 1.5; }
+      button:disabled { opacity: .55; cursor: default; }
+    </style>
+  </head>
+  <body>
+    <h1>Joom 采集助手</h1>
+    <div class="row">
+      <span><span id="statusDot" class="dot wait"></span>后端连接</span>
+      <span class="val" id="statusText">检测中…</span>
+    </div>
+    <div class="row">
+      <span>已采集商品</span>
+      <span class="val" id="total">—</span>
+    </div>
+    <div class="row">
+      <span>Joom 环境</span>
+      <span class="val" id="joomEnv">—</span>
+    </div>
+    <button id="openWeb">打开编辑后台</button>
+    <button id="openOptions" class="ghost">设置后端地址</button>
+    <p class="hint">在 AliExpress、Allegro、ASOS、Joom、Mercado Libre 或 Wildberries 商品列表/详情页，点「采集此产品 / 采集当前商品」按钮即可采集。</p>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

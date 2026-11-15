@@ -1,0 +1,18 @@
+{
+  "name": "@auto-tools/extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --watch",
+    "typecheck": "tsc -p tsconfig.json",
+    "test:erp": "node scripts/check-erp.mjs && node scripts/check-erp-batch.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.270",
+    "@types/node": "^20.14.0",
+    "esbuild": "^0.23.0",
+    "typescript": "^5.5.0"
+  }
+}
