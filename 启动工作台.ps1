@@ -85,7 +85,7 @@ try {
     Write-Host "服务已经在运行：http://localhost:$port"
   }
   else {
-    if (-not (Test-Path (Join-Path $serverDir 'node_modules'))) {
+    if (-not (Test-Path (Join-Path $serverDir 'node_modules')) -or -not (Test-Path (Join-Path $serverDir 'node_modules/sharp'))) {
       Write-Host '正在安装后端依赖……'
       Invoke-Npm $serverDir @('install')
     }

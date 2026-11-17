@@ -1,3 +1,4 @@
+import { restoreTemplateSeed } from './services/template-sync.js';
 import { createApp } from './app.js';
 import { bootstrap } from './bootstrap.js';
 import { config } from './config/index.js';
@@ -9,7 +10,9 @@ import { orderSyncService } from './orders/sync-service.js';
 import { orderExportService } from './orders/export-service.js';
 
 function main() {
-  getDb(); // 初始化数据库 + 迁移
+  const db = getDb(); // 初始化数据库 + 迁移
+  const restored = restoreTemplateSeed(db);
+  if (restored.length) logger.info('已从仓库恢复模板配置', { settings: restored });
   bootstrap(); // 注册扩展点
   publishJobService.start();
   joomVideoService.start();

@@ -1,0 +1,382 @@
+{
+  "schema_version": 1,
+  "captured_on": "2026-11-17",
+  "capture_time": null,
+  "source": "https://merchant.joom.com/panel/ads/campaigns?limit=100&orderBy=acos&order=asc",
+  "provenance": "从本聊天已读取的后台数据归档，本次归档未重新抓取",
+  "window": {
+    "start": "2026-10-20",
+    "end": "2026-11-16",
+    "platform_timezone": null
+  },
+  "source_updated_at_displayed": "2026-11-17 03:39:31",
+  "currency": "USD",
+  "amount_precision": "页面显示金额，存在四舍五入",
+  "totals": {
+    "campaigns": 35,
+    "impressions": 70054,
+    "purchases": 101,
+    "pogs_usd": 564.14,
+    "spend_usd": 99.16,
+    "no_sales_spend_usd": 2.69,
+    "acos": 0.17577197149643706
+  },
+  "campaigns": [
+    {
+      "id": "6afaf12b580914000721c763",
+      "name": "CPM_50商品_01",
+      "impressions": 0,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6afaf5c7977c400007671131",
+      "name": "CPM_50商品_02",
+      "impressions": 0,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6afb0ede18ef9e0007cf39d9",
+      "name": "CPM_50商品_03",
+      "impressions": 4,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6afb168119acb0000753ec7d",
+      "name": "CPM_50商品_04",
+      "impressions": 59,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.03,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6afb1850b4eaf70007a68d4f",
+      "name": "CPM_50商品_05",
+      "impressions": 6,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6afb186418ef9e0007cf39da",
+      "name": "CPM_50商品_06",
+      "impressions": 138,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.07,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6afb18794e94f5000716e046",
+      "name": "CPM_50商品_07",
+      "impressions": 11,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.01,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6afb1891822a8100076cb0a8",
+      "name": "CPM_50商品_08",
+      "impressions": 42,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.02,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6afb18a234ee6b000745598b",
+      "name": "CPM_50商品_09",
+      "impressions": 8,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.01,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c823822a8100076caffd",
+      "name": "大额度尝试2",
+      "impressions": 752,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.45,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c8699197610007483bdc",
+      "name": "大额度尝试3",
+      "impressions": 440,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.25,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c7da843fbe000793c40a",
+      "name": "大额度尝试",
+      "impressions": 1649,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 1.04,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c2e09197610007483bd1",
+      "name": "cpm3",
+      "impressions": 48,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.03,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c31f9a0dcc0007280b39",
+      "name": "cpm4",
+      "impressions": 392,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.23,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c3b9843fbe000793c400",
+      "name": "cpm6",
+      "impressions": 113,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.07,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c47f822a8100076caff7",
+      "name": "cpm8",
+      "impressions": 63,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.04,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c4dc843fbe000793c402",
+      "name": "cpm9",
+      "impressions": 46,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.03,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c525843fbe000793c404",
+      "name": "cpm10",
+      "impressions": 116,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.06,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c56c07bc8b0007c7fcec",
+      "name": "成人11月cpm1",
+      "impressions": 17,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.01,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c5b407bc8b0007c7fced",
+      "name": "成人11月cpm2",
+      "impressions": 10,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c6079197610007483bd7",
+      "name": "成人11月cpm3",
+      "impressions": 35,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.02,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c706822a8100076caffa",
+      "name": "成人11月cpm4",
+      "impressions": 19,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.01,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c7969197610007483bda",
+      "name": "10月成人儿童50cpm1",
+      "impressions": 352,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.22,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6a9a9db5a7e89c0007872164",
+      "name": "热销产品",
+      "impressions": 605,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6a936f3b622671000778ea8e",
+      "name": "有销量产品",
+      "impressions": 245,
+      "purchases": 0,
+      "pogs_usd": 0,
+      "spend_usd": 0.09,
+      "displayed_acos_percent": 0,
+      "computed_acos": null
+    },
+    {
+      "id": "6af7c40c07bc8b0007c7fce9",
+      "name": "cpm7",
+      "impressions": 365,
+      "purchases": 1,
+      "pogs_usd": 3.99,
+      "spend_usd": 0.19,
+      "displayed_acos_percent": 5,
+      "computed_acos": 0.047619047619047616
+    },
+    {
+      "id": "6aa266b1ffbca40007fc76a7",
+      "name": "高价产生",
+      "impressions": 12433,
+      "purchases": 11,
+      "pogs_usd": 66.47,
+      "spend_usd": 5.8,
+      "displayed_acos_percent": 9,
+      "computed_acos": 0.08725740935760494
+    },
+    {
+      "id": "6a8cd24de84d9f0007cae4cb",
+      "name": "1",
+      "impressions": 14655,
+      "purchases": 15,
+      "pogs_usd": 65.87,
+      "spend_usd": 9.88,
+      "displayed_acos_percent": 15,
+      "computed_acos": 0.14999240929102778
+    },
+    {
+      "id": "6abdada863e0d400072905cf",
+      "name": "童装卫衣竞价15%",
+      "impressions": 2004,
+      "purchases": 3,
+      "pogs_usd": 29.97,
+      "spend_usd": 4.5,
+      "displayed_acos_percent": 15,
+      "computed_acos": 0.15015015015015015
+    },
+    {
+      "id": "6a88653b1c9ca4000752a6cf",
+      "name": "折扣活动",
+      "impressions": 11340,
+      "purchases": 34,
+      "pogs_usd": 136.06,
+      "spend_usd": 23.7,
+      "displayed_acos_percent": 17,
+      "computed_acos": 0.17418785829780978
+    },
+    {
+      "id": "6af7c2a5822a8100076caff6",
+      "name": "cpm2",
+      "impressions": 2619,
+      "purchases": 2,
+      "pogs_usd": 7.98,
+      "spend_usd": 1.45,
+      "displayed_acos_percent": 18,
+      "computed_acos": 0.18170426065162906
+    },
+    {
+      "id": "6aac7aa210e2ac00077587fd",
+      "name": "蒋卫华二店的广告",
+      "impressions": 11996,
+      "purchases": 28,
+      "pogs_usd": 223.84,
+      "spend_usd": 42.28,
+      "displayed_acos_percent": 19,
+      "computed_acos": 0.18888491779842745
+    },
+    {
+      "id": "6af7c2269a0dcc0007280b38",
+      "name": "1",
+      "impressions": 1329,
+      "purchases": 1,
+      "pogs_usd": 3.98,
+      "spend_usd": 0.76,
+      "displayed_acos_percent": 19,
+      "computed_acos": 0.19095477386934673
+    },
+    {
+      "id": "6a9d3599b5cfff0007d9fca1",
+      "name": "童装卫衣",
+      "impressions": 1779,
+      "purchases": 4,
+      "pogs_usd": 18,
+      "spend_usd": 4.5,
+      "displayed_acos_percent": 25,
+      "computed_acos": 0.25
+    },
+    {
+      "id": "6af7c37f0f93510007f57abc",
+      "name": "cpm5",
+      "impressions": 6364,
+      "purchases": 2,
+      "pogs_usd": 7.98,
+      "spend_usd": 3.41,
+      "displayed_acos_percent": 43,
+      "computed_acos": 0.4273182957393484
+    }
+  ],
+  "unavailable": [
+    "当时各活动预算及出价",
+    "当时实际活动启停状态",
+    "各商品广告明细",
+    "平台统计时区"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "captured_on": "2026-11-17",
+  "exchange_rate_assumption_cny_per_usd": 6.66,
+  "exchange_rate_reference": "https://api.exchangerate.guru/usd/cny/",
+  "calculation_scope": "正常成交单笔贡献利润；未包含未来退款、固定经营开支及最终提现汇差。采购成本为用户提供约值；商品分类来自订单标题。不是全店利润",
+  "samples": [
+    {
+      "order_id": "38QW97DW",
+      "source": "https://merchant.joom.com/panel/orders/38QW97DW",
+      "category": "折扣T恤",
+      "quantity": 1,
+      "original_price_usd": 3.98,
+      "seller_income_after_commission_and_discount_usd": 3.02,
+      "cost_cny": 10,
+      "weight_deduction_usd": 0,
+      "ad_spend_usd": 0.69,
+      "normal_order_break_even_acos": 0.38153228605489914,
+      "normal_order_contribution_after_ad_cny": 5.517800000000001
+    },
+    {
+      "order_id": "M2M32Q4L",
+      "source": "https://merchant.joom.com/panel/orders/M2M32Q4L",
+      "category": "T恤",
+      "quantity": 1,
+      "original_price_usd": 5,
+      "seller_income_after_commission_and_discount_usd": 4.04,
+      "cost_cny": 10,
+      "weight_deduction_usd": 0,
+      "ad_spend_usd": 0,
+      "normal_order_break_even_acos": 0.5076996996996997,
+      "normal_order_contribution_after_ad_cny": 16.9064
+    },
+    {
+      "order_id": "M2M633M3",
+      "source": "https://merchant.joom.com/panel/orders/M2M633M3",
+      "category": "无拉链卫衣",
+      "quantity": 1,
+      "original_price_usd": 9.99,
+      "seller_income_after_commission_and_discount_usd": 8.49,
+      "cost_cny": 10,
+      "weight_deduction_usd": 1.25,
+      "ad_spend_usd": 0,
+      "normal_order_break_even_acos": 0.5744242741239739,
+      "normal_order_contribution_after_ad_cny": 38.2184
+    },
+    {
+      "order_id": "EVL8PJQJ",
+      "source": "https://merchant.joom.com/panel/orders/EVL8PJQJ",
+      "category": "无拉链卫衣",
+      "quantity": 1,
+      "original_price_usd": 9.99,
+      "seller_income_after_commission_and_discount_usd": 7.9,
+      "cost_cny": 10,
+      "weight_deduction_usd": 0,
+      "ad_spend_usd": 0,
+      "normal_order_break_even_acos": 0.6404903401900399,
+      "normal_order_contribution_after_ad_cny": 42.614000000000004
+    },
+    {
+      "order_id": "VL8N5Q4L",
+      "source": "https://merchant.joom.com/panel/orders/VL8N5Q4L",
+      "category": "拉链卫衣",
+      "quantity": 1,
+      "original_price_usd": 9.99,
+      "seller_income_after_commission_and_discount_usd": 7.64,
+      "cost_cny": 16,
+      "weight_deduction_usd": 1.19,
+      "ad_spend_usd": 2,
+      "normal_order_break_even_acos": 0.4051649246844442,
+      "normal_order_contribution_after_ad_cny": 13.636999999999997
+    },
+    {
+      "order_id": "XMGEL4W2",
+      "source": "https://merchant.joom.com/panel/orders/XMGEL4W2",
+      "category": "拉链卫衣",
+      "quantity": 1,
+      "original_price_usd": 9.99,
+      "seller_income_after_commission_and_discount_usd": 8.49,
+      "cost_cny": 16,
+      "weight_deduction_usd": 0,
+      "ad_spend_usd": 0,
+      "normal_order_break_even_acos": 0.6093691288886484,
+      "normal_order_contribution_after_ad_cny": 40.543400000000005
+    }
+  ]
+}

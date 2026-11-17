@@ -73,9 +73,7 @@ export function OrderHistoryTab({ version }: { version: number }) {
                           {file.name}
                         </a>
                       ))}
-                      {record.files.length > 1 && (
-                        <a className="orders-zip-link" href={api.orderExportZipUrl(record.id)} download>打包下载</a>
-                      )}
+
                     </div>
                   )}
                 </td>

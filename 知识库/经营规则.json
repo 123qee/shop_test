@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "confirmed_on": "2026-11-17",
+  "source": "本聊天中用户确认；后台定义与订单样本由本次会话读取",
+  "report_timezone": "Asia/Shanghai",
+  "schedule": {
+    "time": "11:00",
+    "frequency": "daily",
+    "automation_ids": {
+      "advertising": "joom",
+      "store_health": "joom-2"
+    }
+  },
+  "costs": [
+    {
+      "category": "普通单件衣服和T恤",
+      "platform_scope": "joom",
+      "currency": "CNY",
+      "per_unit": 10,
+      "approximate": true
+    },
+    {
+      "category": "无拉链卫衣",
+      "platform_scope": "joom",
+      "currency": "CNY",
+      "per_unit": 10,
+      "approximate": true
+    },
+    {
+      "category": "拉链卫衣",
+      "platform_scope": "joom",
+      "currency": "CNY",
+      "per_unit": 16,
+      "approximate": true
+    }
+  ],
+  "cost_includes": [
+    "采购或生产",
+    "印花",
+    "包装",
+    "国内发到Joom仓的运费"
+  ],
+  "unknown_cost_categories": [
+    "套装",
+    "未可靠识别品类的商品",
+    "未与已确认成本可靠对应的美客多商品"
+  ],
+  "profit_rules": {
+    "normal_order_break_even_acos": "(seller_income_after_platform_commission_and_discount - full_unit_cost_in_usd * quantity - additional_seller_deductions_usd) / corresponding_pogs_usd",
+    "acos": "total_ad_spend / total_pogs；总计用金额加总计算，不平均各行百分比",
+    "zero_sales_acos": "null；展示为无成交或不可计算，即便后台显示0%",
+    "pogs_definition_observed": "通过特定广告售出的产品的原价总额；不是实际到账金额",
+    "platform_commission": "取实际订单或账单；样本约15%不是所有商品固定值",
+    "payment_commission": "后台提示为Joom向支付服务商支付的费用；卖家可能在取消或质量退款时承担。未经实际账单确认，不对每笔正常订单固定扣除",
+    "logistics": "不重复扣买家承担的国际物流；只计明确卖家承担的费用。重量扣款和同一运费差额不重复计入",
+    "refunds": "按订单归属期及实际承担额匹配；不跨期直接相减，不重复冲减收入和记损失",
+    "exchange_rate": "每次核实近期汇率并记录日期和来源；6.66仅为初始样本计算假设",
+    "profit_scope": "正常成交贡献利润不等于包含未来售后、固定经营开支和汇差的最终净利润"
+  },
+  "operating_targets": {
+    "initial_acos_target": 0.2,
+    "kind": "分析建议，不是用户已执行的设置或保证不亏的保本线"
+  },
+  "sources": {
+    "joom_ads": "https://merchant.joom.com/panel/ads/campaigns?limit=100&orderBy=acos&order=asc",
+    "joom_analytics": "https://merchant.joom.com/panel/analytics/orders",
+    "mercadolibre_summary": "https://sellers.mercadolibre.com/sales-summary",
+    "mercadolibre_metrics": "https://sellers.mercadolibre.com/metrics#summary"
+  },
+  "permissions": {
+    "analysis_only": true,
+    "automatic_business_changes_authorized": false
+  },
+  "data_hygiene": "不保存客户姓名、联系方式、地址、登录令牌、API密钥或带凭据的下载链接"
+}

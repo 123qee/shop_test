@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "captured_on": "2026-11-17",
+  "capture_time": null,
+  "source": "https://merchant.joom.com/panel/analytics/orders",
+  "provenance": "本聊天已读取的后台历史快照",
+  "current_window": {
+    "start": "2026-10-19",
+    "end": "2026-11-15"
+  },
+  "comparison_window": {
+    "start": "2026-09-21",
+    "end": "2026-10-18"
+  },
+  "platform_timezone": null,
+  "source_updated_at_displayed": "2026-11-16 18:21:44",
+  "totals_displayed": {
+    "shops": 3,
+    "purchases": 219,
+    "gmv_usd": 1266.78,
+    "impressions": 162052,
+    "clicks": 6942,
+    "ctr": 0.0428,
+    "cr": 0.0315
+  },
+  "shops": [
+    {
+      "name": "jh",
+      "current": {
+        "purchases": 13,
+        "gmv_usd": 137,
+        "impressions": 15657,
+        "clicks": 883,
+        "ctr": 0.0564,
+        "cr": 0.0147
+      },
+      "previous": {
+        "purchases": 5,
+        "gmv_usd": 27,
+        "impressions": 6068,
+        "clicks": 179,
+        "ctr": 0.0295,
+        "cr": 0.0279
+      }
+    },
+    {
+      "name": "jwh second",
+      "current": {
+        "purchases": 57,
+        "gmv_usd": 403.76,
+        "impressions": 26658,
+        "clicks": 1661,
+        "ctr": 0.0623,
+        "cr": 0.0343
+      },
+      "previous": {
+        "purchases": 5,
+        "gmv_usd": 52.97,
+        "impressions": 7040,
+        "clicks": 367,
+        "ctr": 0.0521,
+        "cr": 0.0136
+      }
+    },
+    {
+      "name": "Nineteen Wear",
+      "current": {
+        "purchases": 149,
+        "gmv_usd": 726.02,
+        "impressions": 119737,
+        "clicks": 4398,
+        "ctr": 0.0367,
+        "cr": 0.0339
+      },
+      "previous": {
+        "purchases": 246,
+        "gmv_usd": 1181.49,
+        "impressions": 96821,
+        "clicks": 5212,
+        "ctr": 0.0538,
+        "cr": 0.0472
+      }
+    }
+  ],
+  "coverage_note": "与广告快照统计窗口不同；不能直接相减推断自然流量或利润"
+}

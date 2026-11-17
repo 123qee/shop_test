@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "note": "由 npm run templates:export 从本机数据库导出，不含密钥，请勿手改。换电脑后在 server 目录执行 npm run templates:import 预览，确认后执行 npm run templates:import -- --apply 写入。",
+  "note": "模板配置快照，不含密钥。默认数据库保存模板时自动更新；新电脑启动时自动恢复。自定义数据库可用 templates:export 和 templates:import 手动同步。",
   "settings": {
     "presets": {
       "templates": [
@@ -940,7 +940,7 @@
           }
         ],
         "unknown": {
-          "handling": "separate",
+          "handling": "skip",
           "label": "待确认"
         },
         "columns": [
@@ -955,28 +955,29 @@
           "title",
           "color",
           "size",
-          "quantity",
-          "imageUrl",
-          "recipient",
-          "phone",
-          "country",
-          "state",
-          "city",
-          "address",
-          "zipCode",
-          "carrier",
-          "trackingNumber",
-          "materialEvidence",
-          "note"
+          "quantity"
         ],
         "defaults": {
-          "shops": [],
+          "shops": [
+            {
+              "platform": "joom",
+              "shopId": "default"
+            },
+            {
+              "platform": "joom",
+              "shopId": "jiang-weihua-2"
+            },
+            {
+              "platform": "joom",
+              "shopId": "shop_6a8c4690b1e1819ed91f9baa"
+            }
+          ],
           "statuses": [
             "to_ship"
           ],
           "onlyNew": true
         },
-        "updatedAt": "2026-11-16T03:00:47.547Z"
+        "updatedAt": "2026-11-17T03:16:29.142Z"
       }
     ]
   }

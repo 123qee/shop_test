@@ -1,4 +1,4 @@
-import { createZip } from '../../util/zip.js';
+import { createZip, type ZipEntry } from '../../util/zip.js';
 
 /**
  * 极简 xlsx 写入：内联字符串、冻结表头、自动筛选、列宽。
@@ -11,7 +11,19 @@ export interface XlsxColumn {
   numeric?: boolean;
 }
 
-export type XlsxCell = string | number | null | undefined;
+export interface XlsxImageCell {
+  kind: 'image';
+  /** 已解码和规范化的 JPEG 内容。 */
+  data: Buffer;
+  width: number;
+  height: number;
+}
+
+export type XlsxCell = string | number | null | undefined | XlsxImageCell;
+
+function isImage(value: XlsxCell): value is XlsxImageCell {
+  return typeof value === 'object' && value !== null && value.kind === 'image';
+}
 
 export interface XlsxSheet {
   name: string;
@@ -67,7 +79,7 @@ function textCell(ref: string, value: string, style: number): string {
   return `<c r="${ref}" t="inlineStr" s="${style}"><is><t${space}>${text}</t></is></c>`;
 }
 
-function sheetXml(sheet: XlsxSheet, selected: boolean): string {
+function sheetXml(sheet: XlsxSheet, selected: boolean, hasDrawing: boolean): string {
   const columnCount = Math.max(1, sheet.columns.length);
   const lastColumn = columnLetter(columnCount - 1);
   const lastRow = sheet.rows.length + 1;
@@ -79,6 +91,7 @@ function sheetXml(sheet: XlsxSheet, selected: boolean): string {
     const rowNumber = r + 2;
     const cells = sheet.columns.map((column, c) => {
       const value = row[c];
+      if (isImage(value)) return '';
       if (value === null || value === undefined || value === '') return '';
       const ref = `${columnLetter(c)}${rowNumber}`;
       if (column.numeric && typeof value === 'number' && Number.isFinite(value)) {
@@ -86,7 +99,7 @@ function sheetXml(sheet: XlsxSheet, selected: boolean): string {
       }
       return textCell(ref, String(value), column.numeric ? STYLE_DEFAULT : STYLE_TEXT);
     }).join('');
-    return `<row r="${rowNumber}">${cells}</row>`;
+    return `<row r="${rowNumber}"${row.some(isImage) ? ' ht="108" customHeight="1"' : ''}>${cells}</row>`;
   }).join('');
   return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
     + '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">'
@@ -100,7 +113,57 @@ function sheetXml(sheet: XlsxSheet, selected: boolean): string {
     + `<sheetData><row r="1">${header}</row>${body}</sheetData>`
     + (sheet.columns.length ? `<autoFilter ref="A1:${lastColumn}${lastRow}"/>` : '')
     + '<pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>'
+    + (hasDrawing ? '<drawing r:id="rIdDrawing"/>' : '')
     + '</worksheet>';
+}
+
+const XML_HEADER = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
+const REL_NS = 'http://schemas.openxmlformats.org/package/2006/relationships';
+const OFFICE_REL_NS = 'http://schemas.openxmlformats.org/officeDocument/2006/relationships';
+const EMU_PER_PIXEL = 9525;
+
+/** 标准 DrawingML 嵌图：随所属单元格移动，按原比例放进图片列，媒体直接存在 xlsx 包内。 */
+function drawingParts(sheets: XlsxSheet[]) {
+  const parts: ZipEntry[] = [];
+  const media = new Map<XlsxImageCell, number>();
+  const drawn = new Set<number>();
+  sheets.forEach((sheet, sheetIndex) => {
+    const anchors: string[] = [];
+    const relationships: string[] = [];
+    sheet.rows.forEach((row, rowIndex) => row.forEach((cell, colIndex) => {
+      if (!isImage(cell) || colIndex >= sheet.columns.length) return;
+      if (!cell.width || !cell.height || !cell.data.length) throw new Error('无效的 Excel 图片');
+      if (!media.has(cell)) {
+        const id = media.size + 1;
+        media.set(cell, id);
+        parts.push({ name: `xl/media/image${id}.jpeg`, data: cell.data });
+      }
+      const id = anchors.length + 1;
+      const colWidth = Math.max(4, Math.min(80, sheet.columns[colIndex].width ?? 12)) * 7 + 5;
+      const scale = Math.min((colWidth - 12) / cell.width, 132 / cell.height);
+      const width = Math.round(cell.width * scale * EMU_PER_PIXEL);
+      const height = Math.round(cell.height * scale * EMU_PER_PIXEL);
+      const offsetX = Math.round((colWidth * EMU_PER_PIXEL - width) / 2);
+      const offsetY = Math.round((144 * EMU_PER_PIXEL - height) / 2);
+      anchors.push('<xdr:oneCellAnchor>'
+        + `<xdr:from><xdr:col>${colIndex}</xdr:col><xdr:colOff>${offsetX}</xdr:colOff><xdr:row>${rowIndex + 1}</xdr:row><xdr:rowOff>${offsetY}</xdr:rowOff></xdr:from>`
+        + `<xdr:ext cx="${width}" cy="${height}"/>`
+        + `<xdr:pic><xdr:nvPicPr><xdr:cNvPr id="${id}" name="图片 ${id}"/><xdr:cNvPicPr><a:picLocks noChangeAspect="1"/></xdr:cNvPicPr></xdr:nvPicPr>`
+        + `<xdr:blipFill><a:blip r:embed="rId${id}"/><a:stretch><a:fillRect/></a:stretch></xdr:blipFill>`
+        + `<xdr:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="${width}" cy="${height}"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></xdr:spPr></xdr:pic>`
+        + '<xdr:clientData/></xdr:oneCellAnchor>');
+      relationships.push(`<Relationship Id="rId${id}" Type="${OFFICE_REL_NS}/image" Target="../media/image${media.get(cell)}.jpeg"/>`);
+    }));
+    if (!anchors.length) return;
+    const number = sheetIndex + 1;
+    drawn.add(sheetIndex);
+    parts.push(
+      { name: `xl/worksheets/_rels/sheet${number}.xml.rels`, data: `${XML_HEADER}<Relationships xmlns="${REL_NS}"><Relationship Id="rIdDrawing" Type="${OFFICE_REL_NS}/drawing" Target="../drawings/drawing${number}.xml"/></Relationships>` },
+      { name: `xl/drawings/drawing${number}.xml`, data: `${XML_HEADER}<xdr:wsDr xmlns:xdr="http://schemas.openxmlformats.org/drawingml/2006/spreadsheetDrawing" xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:r="${OFFICE_REL_NS}">${anchors.join('')}</xdr:wsDr>` },
+      { name: `xl/drawings/_rels/drawing${number}.xml.rels`, data: `${XML_HEADER}<Relationships xmlns="${REL_NS}">${relationships.join('')}</Relationships>` },
+    );
+  });
+  return { parts, drawn };
 }
 
 const STYLES_XML = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
@@ -127,6 +190,7 @@ const STYLES_XML = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
 /** 生成 xlsx 文件内容。 */
 export function buildXlsx(sheets: XlsxSheet[], now = new Date()): Buffer {
   if (!sheets.length) throw new Error('xlsx 至少需要一个工作表');
+  const { parts: imageParts, drawn } = drawingParts(sheets);
   const names = sheetNames(sheets.map((sheet) => sheet.name));
   const timestamp = now.toISOString().replace(/\.\d{3}Z$/, 'Z');
   const sheetOverrides = sheets
@@ -136,9 +200,11 @@ export function buildXlsx(sheets: XlsxSheet[], now = new Date()): Buffer {
     + '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">'
     + '<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>'
     + '<Default Extension="xml" ContentType="application/xml"/>'
+    + (drawn.size ? '<Default Extension="jpeg" ContentType="image/jpeg"/>' : '')
     + '<Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>'
     + '<Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/>'
     + sheetOverrides
+    + [...drawn].map((i) => `<Override PartName="/xl/drawings/drawing${i + 1}.xml" ContentType="application/vnd.openxmlformats-officedocument.drawing+xml"/>`).join('')
     + '<Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/>'
     + '<Override PartName="/docProps/app.xml" ContentType="application/vnd.openxmlformats-officedocument.extended-properties+xml"/>'
     + '</Types>';
@@ -177,6 +243,7 @@ export function buildXlsx(sheets: XlsxSheet[], now = new Date()): Buffer {
     { name: 'xl/workbook.xml', data: workbook, date: now },
     { name: 'xl/_rels/workbook.xml.rels', data: workbookRels, date: now },
     { name: 'xl/styles.xml', data: STYLES_XML, date: now },
-    ...sheets.map((sheet, i) => ({ name: `xl/worksheets/sheet${i + 1}.xml`, data: sheetXml(sheet, i === 0), date: now })),
+    ...sheets.map((sheet, i) => ({ name: `xl/worksheets/sheet${i + 1}.xml`, data: sheetXml(sheet, i === 0, drawn.has(i)), date: now })),
+    ...imageParts.map((part) => ({ ...part, date: now })),
   ]);
 }

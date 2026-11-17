@@ -275,6 +275,7 @@ function migrate(d: Database.Database) {
   `);
 
   // 增量列(SQLite 无 ADD COLUMN IF NOT EXISTS,先探测)
+  addColumnIfMissing(d, 'order_lines', 'image_urls', 'TEXT');
   addColumnIfMissing(d, 'products', 'template_id', 'TEXT');
   addColumnIfMissing(d, 'products', 'grouping', 'TEXT');
   addColumnIfMissing(d, 'products', 'template_confirmed', 'INTEGER NOT NULL DEFAULT 0');

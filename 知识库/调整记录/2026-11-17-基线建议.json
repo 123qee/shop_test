@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-11-17",
+  "source_report": "../历史基线/2026-11-17/分析结论.md",
+  "records": [
+    {
+      "suggestion_id": "baseline-20261117-acos-target",
+      "scope": "joom_ads",
+      "action": "以约20%实际ACOS作为初始管理目标，按商品利润与退款修正",
+      "status": "待确认",
+      "actual_setting_changed": false,
+      "current_setting": null,
+      "suggested_actual_acos_target": 0.2
+    },
+    {
+      "suggestion_id": "baseline-20261117-cpm5",
+      "scope": "joom_ads",
+      "campaign_id": "6af7c37f0f93510007f57abc",
+      "action": "核实cpm5商品利润、样本与归因；无预算证据时先不建议放量",
+      "status": "待确认",
+      "actual_setting_changed": false
+    },
+    {
+      "suggestion_id": "baseline-20261117-nineteen",
+      "scope": "joom_store",
+      "shop": "Nineteen Wear",
+      "action": "按商品、国家及来源拆解曝光增但点击/转化下降原因",
+      "status": "待确认",
+      "actual_setting_changed": false
+    },
+    {
+      "suggestion_id": "baseline-20261117-ml-policy",
+      "scope": "mercadolibre",
+      "site": "CL",
+      "action": "重新核实9项政策失效与282项待改进商品，优先处理影响可售和核心流量的项",
+      "status": "待确认",
+      "actual_setting_changed": false
+    }
+  ]
+}

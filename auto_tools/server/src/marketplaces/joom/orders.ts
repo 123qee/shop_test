@@ -34,6 +34,7 @@ export interface JoomVariantInfo {
 
 export interface JoomProductInfo {
   name?: string;
+  imageUrls?: string[];
   imageUrl?: string;
   materialHint?: string;
   /** key 为 Joom 变体 id */
@@ -112,6 +113,7 @@ export function extractJoomProductInfo(raw: any): JoomProductInfo {
   return {
     name: text(raw?.name),
     imageUrl: imageOf(raw?.mainImage),
+    imageUrls: [imageOf(raw?.mainImage), ...(Array.isArray(raw?.extraImages) ? raw.extraImages.map(imageOf) : [])].filter((url): url is string => Boolean(url)),
     materialHint: materialHintOf(raw?.attributes, raw?.parsedAttributes),
     variants,
     variantsBySku,
@@ -186,6 +188,7 @@ function toLine(
     color: variant?.color,
     size: variant?.size,
     imageUrl: variant?.imageUrl ?? info?.imageUrl,
+    imageUrls: info?.imageUrls,
     quantity,
     ...prices,
     materialHint: variant?.materialHint ?? info?.materialHint,
@@ -342,7 +345,7 @@ export class JoomOrderSource implements OrderSourceAdapter {
       const fresh = cached
         && Date.now() - Date.parse(cached.fetchedAt) < PRODUCT_CACHE_TTL_MS
         && [...variantIds].every((id) => cached.data.variants?.[id]);
-      if (cached && fresh) {
+      if (cached && cached.data.imageUrls && fresh) {
         result.set(productId, cached.data);
         continue;
       }
@@ -379,6 +382,7 @@ export class JoomOrderSource implements OrderSourceAdapter {
     return {
       name: edited?.title || record.collected.title,
       imageUrl: edited?.images?.[0] ?? record.collected.images?.[0],
+      imageUrls: edited?.images?.length ? edited.images : record.collected.images,
       variants: {},
       variantsBySku,
     };

@@ -10,6 +10,8 @@ import {
   ORDER_COLUMN_GROUPS,
   ORDER_COLUMN_KEYS,
   ORDER_COLUMNS,
+  REQUIRED_ORDER_COLUMNS,
+  orderExportColumns,
   ORDER_STATUSES,
   ORDER_STATUS_LABELS,
   renderFileName,
@@ -21,7 +23,6 @@ import {
   type OrderExportProfile,
   type OrderMaterialRule,
   type OrderStatus,
-  type UnknownMaterialHandling,
 } from '@shared/orders';
 import { addDays } from '@shared/planner';
 import { materialLabel } from '@shared/product-grouping';
@@ -48,11 +49,6 @@ const TEMPLATE_MAX = 200;
 const LAYOUTS: Array<{ id: OrderExportLayout; label: string; hint: string }> = [
   { id: 'file-per-material', label: '每种材质一个文件', hint: '每种材质各生成一个 Excel，方便分别发给不同的工厂' },
   { id: 'sheet-per-material', label: '一个文件，每种材质一个工作表', hint: '只生成一个 Excel，每种材质放在单独的工作表里' },
-];
-
-const UNKNOWN_OPTIONS: Array<{ id: UnknownMaterialHandling; label: string }> = [
-  { id: 'separate', label: '单独导出' },
-  { id: 'skip', label: '本次不导出' },
 ];
 
 /** 文件名预览用的示例数量，依次对应各材质 */
@@ -331,7 +327,7 @@ export function OrderProfilesTab({ profiles, onChange }: Props) {
       const selected = new Set(current.columns);
       if (on) selected.add(key);
       else selected.delete(key);
-      return { ...current, columns: ORDER_COLUMN_KEYS.filter((item) => selected.has(item)) };
+      return { ...current, columns: orderExportColumns(ORDER_COLUMN_KEYS.filter((item) => selected.has(item))) };
     });
   }
 
@@ -757,55 +753,14 @@ export function OrderProfilesTab({ profiles, onChange }: Props) {
                   />
                   <FieldError message={problems['label:unknown']} />
                 </div>
-                {perFile && draft.unknown.handling === 'separate' ? (
-                  <div className="orders-material-cell">
-                    <input
-                      ref={registerInput('unknown')}
-                      className={`orders-input mono${problems.unknown ? ' invalid' : ''}`}
-                      value={draft.unknown.fileName ?? ''}
-                      placeholder={draft.fileName}
-                      spellCheck={false}
-                      aria-label="未识别订单的文件名"
-                      onFocus={() => setActiveField('unknown')}
-                      onChange={(event) => updateUnknown({ fileName: event.target.value })}
-                    />
-                    <FieldError message={problems.unknown} />
-                  </div>
-                ) : (
-                  <span className="orders-hint">
-                    {draft.unknown.handling === 'skip' ? '本次不导出' : '有未识别的订单时，放在最后一个工作表'}
-                  </span>
-                )}
+                <span className="orders-hint">确认材质后才能导出</span>
                 <span />
               </div>
             </div>
-            <div className="orders-row">
-              <span className="orders-label">未识别的订单</span>
-              <div className="orders-control">
-                <div className="orders-segmented" role="radiogroup" aria-label="未识别的订单">
-                  {UNKNOWN_OPTIONS.map((item) => (
-                    <button
-                      key={item.id}
-                      type="button"
-                      role="radio"
-                      aria-checked={draft.unknown.handling === item.id}
-                      className={draft.unknown.handling === item.id ? 'on' : ''}
-                      onClick={() => updateUnknown({ handling: item.id })}
-                    >
-                      {item.label}
-                    </button>
-                  ))}
-                </div>
-                <span className="orders-hint">
-                  {draft.unknown.handling === 'separate'
-                    ? `单独放进「${unknownLabel}」，导出前可以在预览里逐条改材质`
-                    : '本次不导出，也不标记为已导出；在预览里改好材质后，下次导出会带上'}
-                </span>
-              </div>
-            </div>
+            <p className="orders-hint">未确定材质的订单会保留在待确认区，不生成文件，也不会标记为已导出。</p>
           </Section>
 
-          <Section title="导出列" hint={`已选 ${draft.columns.length} 列，在 Excel 里按下面的顺序从左到右排列`}>
+          <Section title="导出列" hint="图片、数量、尺码、店铺、材质固定在最前面；其他勾选字段放在后面">
             {problems.columns && <FieldError message={problems.columns} />}
             <div className="orders-columns">
               {ORDER_COLUMN_GROUPS.map((group) => {
@@ -822,7 +777,7 @@ export function OrderProfilesTab({ profiles, onChange }: Props) {
                         const on = selectedColumns.has(column.key);
                         return (
                           <label key={column.key} className={`orders-column-option${on ? ' on' : ''}`}>
-                            <input type="checkbox" checked={on} onChange={(event) => toggleColumn(column.key, event.target.checked)} />
+                            <input type="checkbox" checked={on} disabled={REQUIRED_ORDER_COLUMNS.includes(column.key)} onChange={(event) => toggleColumn(column.key, event.target.checked)} />
                             {column.label}
                           </label>
                         );

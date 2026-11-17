@@ -30,7 +30,8 @@ const querySchema = z.object({
   from: date.optional(),
   to: date.optional(),
   onlyNew: z.boolean().default(true),
-  overrides: z.record(z.string().max(300), exportMaterial).default({}),
+  overrides: z.record(z.string().max(300), z.enum([...EXPORT_MATERIALS, 'unknown'])).default({}),
+  selectedImages: z.record(z.string().max(300), z.array(z.string().url().max(4000)).min(1).max(21)).default({}),
 });
 
 const syncSchema = z.object({

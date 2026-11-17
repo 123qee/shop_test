@@ -60,7 +60,7 @@ if curl -s -m 2 "http://localhost:$PORT/api/health" >/dev/null 2>&1; then
   echo "✅ 服务已在运行:http://localhost:$PORT"
 else
   # 依赖
-  if [ ! -d "$ROOT/server/node_modules" ]; then
+  if [ ! -d "$ROOT/server/node_modules" ] || [ ! -d "$ROOT/server/node_modules/sharp" ]; then
     echo "📦 安装后端依赖…"; (cd "$ROOT/server" && npm install)
   fi
   if [ ! -d "$ROOT/web/node_modules" ]; then

@@ -11,7 +11,7 @@ import './orders.css';
 const TABS = [
   { id: 'export', label: '导出' },
   { id: 'history', label: '导出记录' },
-  { id: 'settings', label: '方案与材质' },
+  { id: 'settings', label: '高级设置' },
 ] as const;
 type TabId = typeof TABS[number]['id'];
 

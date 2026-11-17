@@ -6,11 +6,9 @@ import {
   ORDER_STATUSES,
   ORDER_STATUS_LABELS,
   rangeForPreset,
-  type ExportMaterial,
   type OrderExportProfile,
   type OrderExportRecord,
   type OrderPreview,
-  type OrderPreviewBucket,
   type OrderPreviewLine,
   type OrderQueryInput,
   type OrderRangePreset,
@@ -19,6 +17,9 @@ import {
   type OrderStatus,
   type OrderSyncJob,
 } from '@shared/orders';
+import type { ProductMaterial } from '@shared/types';
+import { GarmentCards } from './GarmentCards';
+import { downloadFiles } from './download-files';
 import { materialLabel } from '@shared/product-grouping';
 import { api } from '../../api';
 import { showFeedback } from '../../feedback';
@@ -27,7 +28,6 @@ import {
   describeProfile,
   errorMessage,
   fileSize,
-  MATERIAL_OPTIONS,
   parseShopKey,
   PROFILE_STORAGE_KEY,
   readStored,
@@ -37,7 +37,6 @@ import {
 } from './order-ui';
 
 const REMEMBER_KEY = 'auto_tools.orders.rememberMaterial';
-const ROW_LIMIT = 100;
 const POLL_MS = 800;
 
 interface Props {
@@ -57,7 +56,10 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
   const [customTo, setCustomTo] = useState('');
   const [statuses, setStatuses] = useState<Set<OrderStatus>>(new Set(['to_ship']));
   const [onlyNew, setOnlyNew] = useState(true);
-  const [overrides, setOverrides] = useState<Record<string, ExportMaterial>>({});
+  const [overrides, setOverrides] = useState<Record<string, ProductMaterial>>({});
+  const [selectedImages, setSelectedImages] = useState<Record<string, string[]>>({});
+  const [savingMaterial, setSavingMaterial] = useState(false);
+  const [previewQueryKey, setPreviewQueryKey] = useState('');
   const [remember, setRemember] = useState(() => readStored(REMEMBER_KEY) !== '0');
   const [syncJob, setSyncJob] = useState<OrderSyncJob | null>(null);
   const [syncing, setSyncing] = useState(false);
@@ -66,6 +68,8 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
   const [previewError, setPreviewError] = useState('');
   const [exporting, setExporting] = useState(false);
   const [result, setResult] = useState<OrderExportRecord | null>(null);
+  const [downloading, setDownloading] = useState(false);
+  const [downloadFailedIds, setDownloadFailedIds] = useState<string[]>([]);
   const mounted = useRef(true);
   const previewSeq = useRef(0);
   const appliedProfile = useRef('');
@@ -106,6 +110,7 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
     setStatuses(new Set(profile.defaults.statuses));
     setOnlyNew(profile.defaults.onlyNew);
     setOverrides({});
+    setSelectedImages({});
     setPreview(null);
     setResult(null);
     setSyncJob(null);
@@ -126,12 +131,13 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
       ...(range.to ? { to: range.to } : {}),
       onlyNew,
       overrides,
+      selectedImages,
     };
-  }, [profile, shopKeys, statuses, range, onlyNew, overrides]);
+  }, [profile, shopKeys, statuses, range, onlyNew, overrides, selectedImages]);
   const queryKey = JSON.stringify(query);
 
   const invalidReason = !query
-    ? '请先在「方案与材质」里创建导出方案'
+    ? '请先在「高级设置」里创建导出方案'
     : !query.shops.length
       ? '请至少选择一家店铺'
       : !query.statuses.length
@@ -146,7 +152,10 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
     setPreviewError('');
     try {
       const data = await api.previewOrders(input);
-      if (seq === previewSeq.current && mounted.current) setPreview(data);
+      if (seq === previewSeq.current && mounted.current) {
+        setPreview(data);
+        setPreviewQueryKey(JSON.stringify(input));
+      }
     } catch (error) {
       if (seq === previewSeq.current && mounted.current) setPreviewError(errorMessage(error));
     } finally {
@@ -202,28 +211,23 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
     await runPreview(query);
   }
 
-  async function changeMaterial(line: OrderPreviewLine, material: ExportMaterial) {
-    const canRemember = remember && Boolean(line.productId || line.productSku);
-    if (!canRemember) {
-      setOverrides((current) => ({ ...current, [line.uid]: material }));
-      return;
-    }
+  async function changeMaterial(lines: OrderPreviewLine[], material: ProductMaterial) {
+    const line = lines[0];
+    setOverrides((current) => ({ ...current, ...Object.fromEntries(lines.map((item) => [item.uid, material])) }));
+    if (!remember || material === 'unknown' || !(line.productId || line.productSku)) return;
+    setSavingMaterial(true);
     try {
       await api.saveOrderMaterialRule({
-        platform: line.platform,
-        productId: line.productId,
-        productSku: line.productSku,
-        title: line.title,
-        material,
+        platform: line.platform, productId: line.productId, productSku: line.productSku, title: line.title, material,
       });
       showFeedback(`已记住：这个商品以后按「${materialLabel(material)}」导出`);
-      const nextOverrides = { ...overrides };
-      delete nextOverrides[line.uid];
-      setOverrides(nextOverrides);
-      if (query) await runPreview({ ...query, overrides: nextOverrides });
     } catch (error) {
       showFeedback(errorMessage(error), 'error');
-    }
+    } finally { if (mounted.current) setSavingMaterial(false); }
+  }
+
+  function changeImages(lines: OrderPreviewLine[], images: string[]) {
+    setSelectedImages((current) => ({ ...current, ...Object.fromEntries(lines.map((line) => [line.uid, images])) }));
   }
 
   async function runExport() {
@@ -233,15 +237,20 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
       const record = await api.exportOrders(query);
       if (!mounted.current) return;
       setResult(record);
-      setOverrides({});
-      showFeedback(`已导出 ${record.files.length} 个文件`);
+      setDownloading(true);
+      setDownloadFailedIds([]);
       onExported(record);
       void loadSources();
-      await runPreview({ ...query, overrides: {} });
+      const failed = await downloadFiles(record.files.map((file) => ({ id: file.id, name: file.name, url: api.orderExportFileUrl(record.id, file.id) })));
+      if (!mounted.current) return;
+      setDownloadFailedIds(failed);
+      setDownloading(false);
+      showFeedback(failed.length ? `已导出，${failed.length} 个文件下载失败，请在结果中重试下载` : `已自动开始下载 ${record.files.length} 个 Excel 文件`, failed.length ? 'error' : 'success');
+      await runPreview(query);
     } catch (error) {
       showFeedback(errorMessage(error), 'error');
     } finally {
-      if (mounted.current) setExporting(false);
+      if (mounted.current) { setExporting(false); setDownloading(false); }
     }
   }
 
@@ -268,24 +277,7 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
   return (
     <div className="orders-export">
       <section className="orders-card">
-        <div className="orders-row">
-          <span className="orders-label">导出方案</span>
-          <div className="orders-control">
-            <select
-              className="orders-select"
-              value={profile?.id ?? ''}
-              onChange={(event) => {
-                setProfileId(event.target.value);
-                writeStored(PROFILE_STORAGE_KEY, event.target.value);
-              }}
-            >
-              {profiles.map((item) => <option key={item.id} value={item.id}>{item.name}</option>)}
-            </select>
-            <button type="button" className="ghost orders-small" onClick={onManageProfiles}>管理方案</button>
-            {profile && <span className="orders-hint">{describeProfile(profile)}</span>}
-          </div>
-        </div>
-
+        <div className="orders-preview-head"><div><h3>1. 选择店铺，同步订单</h3><span className="orders-hint">默认导出待发货、未导出订单。看图选择需要的图片，未确定材质的衣服会自动跳过。</span></div></div>
         <div className="orders-row">
           <span className="orders-label">店铺</span>
           <div className="orders-control orders-shop-groups">
@@ -306,6 +298,26 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
                 ))}
               </div>
             ))}
+          </div>
+        </div>
+
+        <details className="orders-advanced">
+          <summary>更多选项 · 日期、订单状态、导出格式</summary>
+        <div className="orders-row">
+          <span className="orders-label">导出方案</span>
+          <div className="orders-control">
+            <select
+              className="orders-select"
+              value={profile?.id ?? ''}
+              onChange={(event) => {
+                setProfileId(event.target.value);
+                writeStored(PROFILE_STORAGE_KEY, event.target.value);
+              }}
+            >
+              {profiles.map((item) => <option key={item.id} value={item.id}>{item.name}</option>)}
+            </select>
+            <button type="button" className="ghost orders-small" onClick={onManageProfiles}>管理方案</button>
+            {profile && <span className="orders-hint">{describeProfile(profile)}</span>}
           </div>
         </div>
 
@@ -361,15 +373,17 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
           </div>
         </div>
 
+        </details>
+
         <div className="orders-actions">
           <span className={invalidReason ? 'orders-error-text' : 'orders-hint'}>
-            {invalidReason || `先从平台拉取所选店铺的最新订单，再按方案拆分预览。首次同步回溯 ${sources?.lookbackDays ?? 30} 天，选更早的日期会自动补拉。`}
+            {invalidReason || `首次同步回溯 ${sources?.lookbackDays ?? 30} 天，选更早的日期会自动补拉。`}
           </span>
           <button type="button" className="ghost" disabled={busy || previewing || Boolean(invalidReason)} onClick={() => void previewLocal()}>
-            仅预览本地数据
+            查看已同步订单
           </button>
           <button type="button" disabled={busy || Boolean(invalidReason)} onClick={() => void syncAndPreview()}>
-            {syncing ? '正在同步…' : '同步并预览'}
+            {syncing ? '正在同步…' : '同步订单'}
           </button>
         </div>
 
@@ -381,22 +395,24 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
       {preview && (
         <PreviewPanel
           preview={preview}
-          refreshing={previewing}
-          blockedReason={invalidReason}
+          refreshing={previewing || previewQueryKey !== queryKey || savingMaterial}
+          blockedReason={invalidReason || previewError}
           exporting={exporting}
           remember={remember}
           onlyNew={onlyNew}
-          overrides={overrides}
+          selectedImages={selectedImages}
           onRememberChange={(value) => {
             setRemember(value);
             writeStored(REMEMBER_KEY, value ? '1' : '0');
           }}
-          onChangeMaterial={(line, material) => void changeMaterial(line, material)}
+          onChangeMaterial={(lines, material) => void changeMaterial(lines, material)}
+          onChangeImages={changeImages}
+          disabled={busy || savingMaterial}
           onExport={() => void runExport()}
         />
       )}
 
-      {result && <ExportResult record={result} />}
+      {result && <ExportResult record={result} downloading={downloading} downloadFailedIds={downloadFailedIds} />}
     </div>
   );
 }
@@ -449,17 +465,8 @@ function SyncProgress({ job }: { job: OrderSyncJob }) {
   );
 }
 
-function PreviewPanel({
-  preview,
-  refreshing,
-  blockedReason,
-  exporting,
-  remember,
-  onlyNew,
-  overrides,
-  onRememberChange,
-  onChangeMaterial,
-  onExport,
+function PreviewPanel({ preview, refreshing, blockedReason, exporting, remember, onlyNew, selectedImages,
+  onRememberChange, onChangeMaterial, onChangeImages, onExport, disabled,
 }: {
   preview: OrderPreview;
   refreshing: boolean;
@@ -467,189 +474,67 @@ function PreviewPanel({
   exporting: boolean;
   remember: boolean;
   onlyNew: boolean;
-  overrides: Record<string, ExportMaterial>;
+  selectedImages: Record<string, string[]>;
   onRememberChange: (value: boolean) => void;
-  onChangeMaterial: (line: OrderPreviewLine, material: ExportMaterial) => void;
+  onChangeMaterial: (lines: OrderPreviewLine[], material: ProductMaterial) => void;
+  onChangeImages: (lines: OrderPreviewLine[], images: string[]) => void;
   onExport: () => void;
+  disabled: boolean;
 }) {
-  const fileOf = (bucket: OrderPreviewBucket) => preview.files.find((file) => file.sheets.includes(bucket.label));
-  const overrideCount = Object.keys(overrides).length;
+  const [pendingOnly, setPendingOnly] = useState(false);
+  const pending = preview.buckets.filter((bucket) => bucket.excluded).reduce((sum, bucket) => sum + bucket.lines.length, 0);
+  const ready = preview.buckets.filter((bucket) => !bucket.excluded).reduce((sum, bucket) => sum + bucket.lines.length, 0);
   return (
-    <section className={`orders-card orders-preview${refreshing ? ' refreshing' : ''}`}>
+    <section className="orders-card orders-preview">
       <div className="orders-preview-head">
         <div>
-          <h3>预览</h3>
-          <span className="orders-hint">
-            共 {preview.totals.orders} 单 · {preview.totals.quantity} 件
-            {refreshing ? ' · 正在刷新…' : ''}
-            {overrideCount ? ` · 本次临时改了 ${overrideCount} 行材质` : ''}
-          </span>
+          <h3>2. 看衣服，选图片</h3>
+          <span className="orders-hint">可导出 {ready} 行 · 待确认 {pending} 行{refreshing ? ' · 正在更新…' : ''}</span>
         </div>
-        <label className="orders-check" title="勾选后，在下面改材质会记住这个商品，以后自动归类；不勾选只对本次导出生效">
-          <input type="checkbox" checked={remember} onChange={(event) => onRememberChange(event.target.checked)} />
-          改材质时记住这个商品
+        <label className="orders-check">
+          <input type="checkbox" checked={remember} disabled={disabled} onChange={(event) => onRememberChange(event.target.checked)} />记住商品材质
         </label>
       </div>
-
-      {preview.warnings.length > 0 && (
-        <ul className="orders-warnings">
-          {preview.warnings.map((warning) => <li key={warning}>{warning}</li>)}
-        </ul>
-      )}
-
-      <div className="orders-buckets">
-        {preview.buckets.map((bucket) => {
-          const file = fileOf(bucket);
-          return (
-            <div key={bucket.key} className={`orders-bucket ${bucket.kind === 'unknown' ? 'unknown' : bucket.key}${bucket.lines.length ? '' : ' empty'}`}>
-              <span className="orders-bucket-label">{bucket.label}</span>
-              <span className="orders-bucket-count"><strong>{bucket.orderCount}</strong> 单 · {bucket.quantity} 件</span>
-              <span className="orders-bucket-file" title={file?.name}>
-                {bucket.excluded
-                  ? '本次不导出'
-                  : file
-                    ? file.sheets.length > 1 ? `${file.name} · 工作表「${bucket.label}」` : file.name
-                    : '没有订单，不生成文件'}
-              </span>
-            </div>
-          );
-        })}
-      </div>
-
-      {preview.buckets.filter((bucket) => bucket.lines.length).map((bucket) => (
-        <BucketLines
-          key={bucket.key}
-          bucket={bucket}
-          overrides={overrides}
-          onChangeMaterial={onChangeMaterial}
-        />
-      ))}
-
-      {preview.totals.lines === 0 && (
-        <div className="orders-empty">
-          没有符合条件的订单{onlyNew ? '。导出过的订单不会再出现，需要重新导出可以取消「只导出这个方案没导过的订单」。' : '。'}
-        </div>
-      )}
-
+      <p className="orders-hint">默认只选订单图；正反面、细节图按需多选，点图片可放大。所选图片直接嵌入 Excel，件数不重复。</p>
+      {preview.warnings.length > 0 && <ul className="orders-warnings">{preview.warnings.map((warning) => <li key={warning}>{warning}</li>)}</ul>}
+      {pending > 0 && <label className="orders-check"><input type="checkbox" checked={pendingOnly} onChange={(event) => setPendingOnly(event.target.checked)} />只看待确认</label>}
+      {(pendingOnly && pending ? preview.buckets.filter((bucket) => bucket.excluded) : preview.buckets)
+        .filter((bucket) => bucket.lines.length).map((bucket) => (
+          <div key={bucket.key} className="orders-garment-section">
+            <h4>{bucket.label} · {bucket.quantity} 件{bucket.excluded ? ' · 确认材质后才能导出' : ''}</h4>
+            <GarmentCards bucket={bucket} selectedImages={selectedImages} onChangeMaterial={onChangeMaterial} onChangeImages={onChangeImages} disabled={disabled} />
+          </div>
+        ))}
+      {preview.totals.lines === 0 && <div className="orders-empty">没有符合条件的订单{onlyNew ? '。已导出的订单自动隐藏，可以在更多选项里取消「只导出这个方案没导过的订单」。' : '。'}</div>}
       <div className="orders-export-bar">
-        <div className="orders-export-files">
-          {preview.files.length
-            ? <>将生成 {preview.files.length} 个文件：{preview.files.map((file) => file.name).join('、')}</>
-            : '没有可以导出的文件'}
-        </div>
-        <button type="button" disabled={exporting || refreshing || Boolean(blockedReason) || !preview.files.length} onClick={onExport}>
-          {exporting ? '正在导出…' : `导出 ${preview.files.length} 个文件`}
-        </button>
+        <div className="orders-export-files">{preview.files.length ? <>将生成：{preview.files.map((file) => file.name).join('、')}{pending > 0 ? `；${pending} 行待确认，本次不导出` : ''}</> : '没有可导出的订单，请先确认材质'}</div>
+        <button type="button" disabled={disabled || exporting || refreshing || Boolean(blockedReason) || !preview.files.length} onClick={onExport}>{exporting ? '正在下载图片并导出…' : `3. 导出 ${preview.files.length} 个文件`}</button>
       </div>
     </section>
   );
 }
 
-function BucketLines({ bucket, overrides, onChangeMaterial }: {
-  bucket: OrderPreviewBucket;
-  overrides: Record<string, ExportMaterial>;
-  onChangeMaterial: (line: OrderPreviewLine, material: ExportMaterial) => void;
-}) {
-  const [showAll, setShowAll] = useState(false);
-  const rows = showAll ? bucket.lines : bucket.lines.slice(0, ROW_LIMIT);
-  return (
-    <details className={`orders-lines${bucket.kind === 'unknown' ? ' unknown' : ''}`} open={bucket.kind === 'unknown'}>
-      <summary>
-        <b>{bucket.label}</b>
-        <span>{bucket.orderCount} 单 · {bucket.quantity} 件</span>
-        {bucket.kind === 'unknown' && <span className="orders-hint">{bucket.excluded ? '本次不导出，确认材质后下次可以导出' : '请确认这些订单的材质'}</span>}
-      </summary>
-      <div className="orders-table-wrap">
-        <table className="orders-table">
-          <thead>
-            <tr>
-              <th>商品</th>
-              <th>颜色 / 尺码</th>
-              <th className="num">数量</th>
-              <th>店铺 / 订单号</th>
-              <th>下单时间</th>
-              <th>材质</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((line) => {
-              const known = MATERIAL_OPTIONS.some((option) => option.id === line.material);
-              return (
-                <tr key={line.uid} className={overrides[line.uid] ? 'overridden' : undefined}>
-                  <td>
-                    <div className="orders-product">
-                      {line.imageUrl
-                        ? <img src={line.imageUrl} alt="" loading="lazy" referrerPolicy="no-referrer" />
-                        : <span className="orders-noimg"><PlannerIcon name="package" size={16} /></span>}
-                      <div>
-                        <div className="orders-title" title={line.title}>
-                          {line.title || '（没有商品名称）'}
-                          {line.isGift && <span className="orders-tag">赠品</span>}
-                        </div>
-                        <div className="orders-sub mono">{line.variantSku || line.productSku || line.productId || '—'}</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>{[line.color, line.size].filter(Boolean).join(' / ') || '—'}</td>
-                  <td className="num">{line.quantity}</td>
-                  <td>
-                    <div>{line.shopName}</div>
-                    <div className="orders-sub mono">{line.orderId}</div>
-                  </td>
-                  <td>
-                    <div>{formatChinaDateTime(line.orderedAt)}</div>
-                    {line.exportedAt && <div className="orders-sub">已于 {formatChinaDateTime(line.exportedAt)} 导出</div>}
-                  </td>
-                  <td>
-                    <select
-                      className="orders-select small"
-                      value={known ? line.material : ''}
-                      onChange={(event) => onChangeMaterial(line, event.target.value as ExportMaterial)}
-                      aria-label={`订单 ${line.orderId} 的材质`}
-                    >
-                      {!known && <option value="" disabled>{materialLabel(line.material)}，请选择</option>}
-                      {MATERIAL_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
-                    </select>
-                    <div className="orders-sub orders-evidence" title={line.materialEvidence}>{line.materialEvidence}</div>
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
-      {bucket.lines.length > ROW_LIMIT && !showAll && (
-        <button type="button" className="ghost orders-small orders-more" onClick={() => setShowAll(true)}>
-          显示全部 {bucket.lines.length} 行
-        </button>
-      )}
-    </details>
-  );
-}
-
-function ExportResult({ record }: { record: OrderExportRecord }) {
+function ExportResult({ record, downloading, downloadFailedIds }: { record: OrderExportRecord; downloading: boolean; downloadFailedIds: string[] }) {
   return (
     <section className="orders-card orders-result">
       <div className="orders-result-head">
         <span className="orders-result-icon" aria-hidden="true">✓</span>
         <div>
-          <h3>已导出 {record.files.length} 个文件</h3>
+          <h3>{downloadFailedIds.length ? `${downloadFailedIds.length} 个文件下载失败` : `${downloading ? '正在自动下载' : '已开始自动下载'} ${record.files.length} 个文件`}</h3>
           <span className="orders-hint">
             {formatChinaDateTime(record.createdAt)} · 方案「{record.profileName}」 · 这些订单已标记为导出过
           </span>
         </div>
-        {record.files.length > 1 && (
-          <a className="orders-link-button" href={api.orderExportZipUrl(record.id)} download>
-            <PlannerIcon name="download" size={15} /> 打包下载
-          </a>
-        )}
+
       </div>
       <ul className="orders-files">
         {record.files.map((file) => (
           <li key={file.id}>
             <span className="orders-file-name">{file.name}</span>
             <span className="orders-hint">{file.orderCount} 单 · {file.quantity} 件 · {fileSize(file.size)}</span>
-            <a className="orders-link-button ghost" href={api.orderExportFileUrl(record.id, file.id)} download>下载</a>
+            {downloadFailedIds.includes(file.id)
+              ? <a className="orders-link-button ghost" href={api.orderExportFileUrl(record.id, file.id)} download>重试下载</a>
+              : <span className="orders-hint">{downloading ? '自动下载中…' : '已开始下载'}</span>}
           </li>
         ))}
       </ul>

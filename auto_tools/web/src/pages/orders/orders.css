@@ -316,3 +316,31 @@ button.ghost.orders-danger:not(:disabled):hover { border-color: #fecaca; backgro
   .orders-sync-row.running .orders-sync-dot { animation: none; }
   .orders-lines > summary::before { transition: none; }
 }
+
+.orders-advanced { border-top: 1px solid #eee; padding-top: 12px; }
+.orders-advanced > summary { color: #737373; cursor: pointer; font-size: 13px; }
+.orders-advanced[open] > summary { margin-bottom: 16px; }
+.orders-garment-section h4 { margin: 20px 0 12px; font-size: 14px; }
+.orders-garments { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 310px), 1fr)); gap: 16px; align-items: start; }
+.orders-garment { min-width: 0; border: 1px solid #e5e5e5; border-radius: 12px; overflow: hidden; }
+.orders-garment.pending { border-color: #e5c78f; }
+.orders-image-button { display: block; border: 0; border-radius: 0; background: transparent; color: inherit; padding: 0; width: 100%; height: 100%; cursor: zoom-in; }
+.orders-image-button:hover { background: transparent; }
+.orders-image-button img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.orders-garment-info { display: grid; gap: 8px; padding: 14px; }
+.orders-garment-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.orders-garment-shop { font-size: 13px; font-weight: 600; min-width: 0; overflow-wrap: anywhere; }
+.orders-garment-header .orders-select { width: auto; min-width: 100px; max-width: 60%; }
+.orders-garment-sizes { display: flex; flex-wrap: wrap; gap: 6px; }
+.orders-size-chip { padding: 4px 8px; border-radius: 5px; background: #f5f5f5; font-size: 12px; }
+.orders-garment-footer { display: flex; align-items: center; justify-content: space-between; font-size: 12px; color: #737373; }
+.orders-garment-footer > strong { font-size: 13px; color: #262626; }
+.orders-image-choices { display: grid; grid-template-columns: repeat(auto-fill, minmax(68px, 1fr)); gap: 6px; max-height: 220px; overflow: auto; }
+.orders-image-choice { min-width: 0; border: 2px solid #eee; border-radius: 6px; overflow: hidden; }
+.orders-image-choice.selected { border-color: #176b53; background: #f0f8f4; }
+.orders-image-choice > button { height: 76px; background: #fafafa; }
+.orders-image-choice > label { display: flex; align-items: center; justify-content: center; gap: 4px; padding: 5px 0; font-size: 12px; cursor: pointer; }
+.orders-image-dialog { max-width: 92vw; max-height: 94vh; border: 0; border-radius: 12px; padding: 12px; }
+.orders-image-dialog::backdrop { background: #000a; }
+.orders-image-dialog > button { display: block; margin: 0 0 8px auto; }
+.orders-image-dialog > img { display: block; max-width: 86vw; max-height: 78vh; object-fit: contain; }

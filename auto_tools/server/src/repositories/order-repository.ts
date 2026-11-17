@@ -95,6 +95,7 @@ interface LineRow {
   color: string | null;
   size: string | null;
   image_url: string | null;
+  image_urls: string | null;
   quantity: number;
   unit_price: number | null;
   amount: number | null;
@@ -157,6 +158,7 @@ function rowToLine(row: LineRow): StoredOrderLine {
     color: row.color ?? undefined,
     size: row.size ?? undefined,
     imageUrl: row.image_url ?? undefined,
+    imageUrls: parseJson<string[]>(row.image_urls),
     quantity: row.quantity,
     unitPrice: row.unit_price ?? undefined,
     amount: row.amount ?? undefined,
@@ -215,9 +217,9 @@ export class OrderRepository {
     `);
     const upsertLine = db.prepare(`
       INSERT INTO order_lines (uid, order_uid, line_id, product_id, product_sku, variant_id, variant_sku, title, color, size,
-                               image_url, quantity, unit_price, amount, material_hint, is_gift, position)
+                               image_url, image_urls, quantity, unit_price, amount, material_hint, is_gift, position)
       VALUES (@uid, @orderUid, @lineId, @productId, @productSku, @variantId, @variantSku, @title, @color, @size,
-              @imageUrl, @quantity, @unitPrice, @amount, @materialHint, @isGift, @position)
+              @imageUrl, @imageUrls, @quantity, @unitPrice, @amount, @materialHint, @isGift, @position)
       ON CONFLICT(uid) DO UPDATE SET
         product_id = excluded.product_id,
         product_sku = excluded.product_sku,
@@ -227,6 +229,7 @@ export class OrderRepository {
         color = COALESCE(excluded.color, order_lines.color),
         size = COALESCE(excluded.size, order_lines.size),
         image_url = COALESCE(excluded.image_url, order_lines.image_url),
+        image_urls = COALESCE(excluded.image_urls, order_lines.image_urls),
         material_hint = COALESCE(excluded.material_hint, order_lines.material_hint),
         quantity = excluded.quantity,
         unit_price = excluded.unit_price,
@@ -278,6 +281,7 @@ export class OrderRepository {
             color: line.color ?? null,
             size: line.size ?? null,
             imageUrl: line.imageUrl ?? null,
+            imageUrls: line.imageUrls?.length ? JSON.stringify(line.imageUrls) : null,
             quantity: Math.max(1, Math.round(line.quantity) || 1),
             unitPrice: Number.isFinite(line.unitPrice) ? line.unitPrice : null,
             amount: Number.isFinite(line.amount) ? line.amount : null,

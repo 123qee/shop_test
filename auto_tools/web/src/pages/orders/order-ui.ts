@@ -72,6 +72,6 @@ export function rangeText(from?: string, to?: string): string {
 export function describeProfile(profile: OrderExportProfile): string {
   const layout = profile.layout === 'sheet-per-material' ? '一个文件，每种材质一个工作表' : '每种材质一个文件';
   const materials = profile.buckets.map((bucket) => bucket.label).join(' / ');
-  const unknown = profile.unknown.handling === 'skip' ? '未识别的跳过' : `未识别的放进「${profile.unknown.label}」`;
+  const unknown = '未确定材质不导出';
   return `${layout} · ${materials} · ${unknown}`;
 }

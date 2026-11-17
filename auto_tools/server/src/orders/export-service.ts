@@ -12,6 +12,7 @@ import {
   isOrderStatus,
   ORDER_COLUMNS,
   ORDER_STATUS_LABELS,
+  orderExportColumns,
   renderFileName,
   sanitizeFileName,
   type OrderColumnKey,
@@ -30,6 +31,8 @@ import { orderExportRepository } from '../repositories/order-export-repository.j
 import { createZip } from '../util/zip.js';
 import { logger } from '../util/logger.js';
 import { OrderInputError } from './errors.js';
+import { createOrderImageResolver } from './product-images.js';
+import { loadExportImages } from './export-images.js';
 import { createMaterialClassifier, type MaterialDecision } from './material-classifier.js';
 import { orderProfileService } from './profile-service.js';
 import { orderSourceRegistry } from './registry.js';
@@ -40,6 +43,8 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 interface ClassifiedLine {
   line: StoredOrderLine;
   decision: MaterialDecision;
+  imageUrls: string[];
+  selectedImages: string[];
 }
 
 interface PlanBucket {
@@ -70,6 +75,7 @@ interface NormalizedQuery {
   to?: string;
   onlyNew: boolean;
   overrides: Record<string, ProductMaterial>;
+  selectedImages: Record<string, string[]>;
 }
 
 interface ExportPlan {
@@ -109,7 +115,7 @@ const CELL_VALUES: Record<OrderColumnKey, (ctx: CellContext) => XlsxCell> = {
   unitPrice: ({ item }) => item.line.unitPrice,
   amount: ({ item }) => item.line.amount,
   currency: ({ item }) => item.line.currency,
-  imageUrl: ({ item }) => item.line.imageUrl,
+  imageUrl: ({ item }) => item.selectedImages[0],
   recipient: ({ item }) => item.line.address?.name,
   phone: ({ item }) => item.line.address?.phone,
   email: ({ item }) => item.line.address?.email,
@@ -154,7 +160,7 @@ function compareLines(a: ClassifiedLine, b: ClassifiedLine): number {
   return 0;
 }
 
-function toPreviewLine({ line, decision }: ClassifiedLine, shopNames: Map<string, string>): OrderPreviewLine {
+function toPreviewLine({ line, decision, imageUrls, selectedImages }: ClassifiedLine, shopNames: Map<string, string>): OrderPreviewLine {
   return {
     uid: line.uid,
     platform: line.platform,
@@ -171,6 +177,8 @@ function toPreviewLine({ line, decision }: ClassifiedLine, shopNames: Map<string
     color: line.color,
     size: line.size,
     imageUrl: line.imageUrl,
+    imageUrls,
+    selectedImages,
     quantity: line.quantity,
     isGift: line.isGift,
     material: decision.material,
@@ -271,7 +279,7 @@ export class OrderExportService {
     if (input.from !== undefined && !isDateString(input.from)) throw new OrderInputError('开始日期格式不正确');
     if (input.to !== undefined && !isDateString(input.to)) throw new OrderInputError('结束日期格式不正确');
     if (input.from && input.to && input.from > input.to) throw new OrderInputError('开始日期不能晚于结束日期');
-    return { shops, statuses, from: input.from, to: input.to, onlyNew: input.onlyNew, overrides: input.overrides ?? {} };
+    return { shops, statuses, from: input.from, to: input.to, onlyNew: input.onlyNew, overrides: input.overrides ?? {}, selectedImages: input.selectedImages ?? {} };
   }
 
   private shopInfo(shops: OrderShopRef[]): { shops: PlanShop[]; names: Map<string, string> } {
@@ -303,6 +311,7 @@ export class OrderExportService {
     });
 
     const classify = createMaterialClassifier();
+    const imagesFor = createOrderImageResolver();
     const materialBuckets: PlanBucket[] = profile.buckets.map((bucket) => ({
       key: bucket.material,
       label: bucket.label,
@@ -315,14 +324,20 @@ export class OrderExportService {
       key: 'unknown',
       label: profile.unknown.label,
       kind: 'unknown',
-      excluded: profile.unknown.handling === 'skip',
+      excluded: true,
       fileTemplate: profile.unknown.fileName || profile.fileName,
       lines: [],
     };
     const byMaterial = new Map(materialBuckets.map((bucket) => [bucket.key, bucket]));
     for (const line of lines) {
       const decision = classify(line, query.overrides[line.uid]);
-      (byMaterial.get(decision.material) ?? unknownBucket).lines.push({ line, decision });
+      const imageUrls = imagesFor(line);
+      const requested = query.selectedImages[line.uid];
+      if (requested && (!requested.length || requested.length > 21 || requested.some((url) => !imageUrls.includes(url)))) {
+        throw new OrderInputError(`订单 ${line.orderId} 的选图已失效，请重新预览后选择商品图片`);
+      }
+      const selectedImages = requested ? [...new Set(requested)] : imageUrls.slice(0, 1);
+      (byMaterial.get(decision.material) ?? unknownBucket).lines.push({ line, decision, imageUrls, selectedImages });
     }
     const buckets = unknownBucket.lines.length ? [...materialBuckets, unknownBucket] : materialBuckets;
     for (const bucket of buckets) bucket.lines.sort(compareLines);
@@ -410,20 +425,24 @@ export class OrderExportService {
     }
     if (renamed) warnings.push('有文件名重复，已自动加 (2)、(3) 区分；可以在文件名模板里加上 {material}。');
     if (unknownBucket.excluded && unknownBucket.lines.length) {
-      warnings.push(`${statsOf(unknownBucket.lines).orderCount} 单材质未识别，按方案设置本次不导出；修正材质后可以再导出。`);
+      warnings.push(`${statsOf(unknownBucket.lines).orderCount} 单材质待确认或未启用，本次不导出；确认材质后可以再导出。`);
     }
     return warnings;
   }
 
-  private runExport(input: OrderQueryInput): OrderExportRecord {
+  private async runExport(input: OrderQueryInput): Promise<OrderExportRecord> {
     const now = new Date();
     const plan = this.buildPlan(input, now);
     if (!plan.files.length) throw new OrderInputError('没有需要导出的订单');
     const { profile, query } = plan;
     const exportId = uuid();
     const dir = path.join(config.orders.exportDir, exportId);
-    const columns = profile.columns.map((key) => COLUMN_BY_KEY.get(key)!).filter(Boolean);
+    const columnKeys = orderExportColumns(profile.columns);
+    const columns = columnKeys.map((key) => COLUMN_BY_KEY.get(key)!).filter(Boolean);
     const exported = plan.files.flatMap((file) => file.buckets.flatMap((bucket) => bucket.lines));
+    const missing = exported.find((item) => !item.selectedImages.length);
+    if (missing) throw new OrderInputError(`订单 ${missing.line.orderId} 没有可导出的图片，请重新同步订单后再导出`);
+    const images = await loadExportImages(exported.flatMap((item) => item.selectedImages));
     let record: OrderExportRecord;
 
     fs.mkdirSync(dir, { recursive: true });
@@ -431,10 +450,16 @@ export class OrderExportService {
       // 先写文件，全部成功后再在一个事务里记录并标记「已导出」
       const files: OrderExportFileInfo[] = plan.files.map((file, index) => {
         const id = String(index + 1);
+        // 一件衣服始终一行，多选图扩展为图片 2、图片 3…，不重复数量和金额。
+        const imageCount = file.buckets.reduce((max, bucket) => bucket.lines.reduce((n, item) => Math.max(n, item.selectedImages.length), max), 1);
         const buffer = buildXlsx(file.buckets.map((bucket) => ({
           name: bucket.label,
-          columns: columns.map((column) => ({ header: column.label, width: column.width, numeric: 'numeric' in column ? column.numeric : false })),
-          rows: bucket.lines.map((item) => columns.map((column) => CELL_VALUES[column.key]({ item, bucket, shopNames: plan.shopNames }))),
+          columns: columns.flatMap<{ header: string; width: number; numeric: boolean }>((column) => column.key === 'imageUrl'
+            ? Array.from({ length: imageCount }, (_, i) => ({ header: i ? `图片 ${i + 1}` : '图片', width: 22, numeric: false }))
+            : [{ header: column.label, width: column.width, numeric: 'numeric' in column ? column.numeric : false }]),
+          rows: bucket.lines.map((item) => columns.flatMap((column) => column.key === 'imageUrl'
+            ? Array.from({ length: imageCount }, (_, i) => images.get(item.selectedImages[i]) ?? '')
+            : [CELL_VALUES[column.key]({ item, bucket, shopNames: plan.shopNames })])),
         })), now);
         fs.writeFileSync(path.join(dir, `${id}.xlsx`), buffer);
         return {

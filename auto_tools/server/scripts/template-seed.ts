@@ -36,8 +36,7 @@ const LOCAL_ONLY_FIELDS: Partial<Record<TemplateSettingKey, readonly string[]>> 
 const SECRET_FIELD = /token|secret|passw|cookie|api_?key|access_?key|private_?key|authorization/i;
 
 const SEED_VERSION = 1;
-const SEED_NOTE = '由 npm run templates:export 从本机数据库导出，不含密钥，请勿手改。'
-  + '换电脑后在 server 目录执行 npm run templates:import 预览，确认后执行 npm run templates:import -- --apply 写入。';
+const SEED_NOTE = '模板配置快照，不含密钥。默认数据库保存模板时自动更新；新电脑启动时自动恢复。自定义数据库可用 templates:export 和 templates:import 手动同步。';
 
 export interface TemplateSeed {
   version: typeof SEED_VERSION;

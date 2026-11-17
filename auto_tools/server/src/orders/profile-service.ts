@@ -4,6 +4,7 @@ import {
   EXPORT_MATERIALS,
   ORDER_COLUMN_KEYS,
   isOrderStatus,
+  orderExportColumns,
   type ExportMaterial,
   type OrderColumnKey,
   type OrderExportProfile,
@@ -50,11 +51,11 @@ function normalizeProfile(input: Partial<OrderExportProfile> | null | undefined)
     fileName: optionalText(input.fileName) ?? base.fileName,
     buckets: buckets.length ? buckets : base.buckets,
     unknown: {
-      handling: input.unknown?.handling === 'skip' ? 'skip' : 'separate',
+      handling: 'skip',
       label: optionalText(input.unknown?.label) ?? base.unknown.label,
       ...(optionalText(input.unknown?.fileName) ? { fileName: optionalText(input.unknown?.fileName) } : {}),
     },
-    columns: columns.length ? [...new Set(columns)] : [...DEFAULT_ORDER_COLUMNS],
+    columns: orderExportColumns(columns.length ? columns : DEFAULT_ORDER_COLUMNS),
     defaults: {
       shops,
       statuses: statuses.length ? [...new Set(statuses)] : base.defaults.statuses,

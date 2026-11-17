@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "captured_on": "2026-11-17",
+  "capture_time": null,
+  "sources": [
+    "https://sellers.mercadolibre.com/sales-summary",
+    "https://sellers.mercadolibre.com/metrics#summary"
+  ],
+  "provenance": "本聊天设置经营监控时读到的智利站数据，未重新抓取",
+  "site": "CL",
+  "platform_timezone_displayed": "智利标准时间 GMT-03:00",
+  "window_label": "最近7天",
+  "window_start": null,
+  "window_end": null,
+  "window_note": "未核实精确起止、是否包含当日及两个小部件窗口是否完全一致；不能视为完整自然日数据",
+  "currency_displayed": "USD",
+  "business_metrics": {
+    "sales_usd_displayed": 62,
+    "visits": 615,
+    "orders": 7,
+    "units_sold": 8,
+    "conversion_rate": 0.011,
+    "average_unit_price_usd": 7.75,
+    "average_order_value_usd": 8.86,
+    "cancelled_sales": 0,
+    "returns": 0,
+    "funnel_sales_usd_displayed": 61
+  },
+  "summary_signals": {
+    "sales_change": -0.244,
+    "listings_needing_improvement": 282,
+    "listings_invalidated_for_policy": 9,
+    "price_tasks": 2,
+    "reputation": "绿色",
+    "complaints_rate": 0.0212,
+    "seller_cancel_rate": 0.0212,
+    "mediation_rate": 0,
+    "noncompliant_shipments_rate": 0
+  },
+  "homepage_metrics": {
+    "window_label": "最近30天",
+    "visits": 24,
+    "visits_change": -0.47,
+    "new_followers": 1,
+    "note": "主页访问不是业务商品访问，不与615相加或替代"
+  },
+  "site_options_observed": [
+    "墨西哥",
+    "巴西",
+    "阿根廷",
+    "智利",
+    "哥伦比亚"
+  ],
+  "validated_site_data": [
+    "智利"
+  ],
+  "other_sites_status": "仅观察到菜单选项，尚未逐站核实权限、经营状态与指标",
+  "rounding_note": "业务总览显示62美元，漏斗显示61美元；保留原显示值，不强行统一",
+  "small_sample_note": "7笔订单不足以认定稳定转化；单个商品1次访问1次成交不能外推"
+}

@@ -83,6 +83,7 @@ test('Joom 商品信息：变体颜色尺码图片与材质原文', () => {
       { url: 'https://img.test/200.jpg', width: 200, height: 200 },
       { url: 'https://img.test/500.jpg', width: 500, height: 500 },
     ] },
+    extraImages: [{ origUrl: 'https://img.test/back.jpg' }, { origUrl: 'https://img.test/detail.jpg' }],
     // 本系统发布时类目属性的 key 是属性 id，靠纤维词兜底
     attributes: [{ key: '1001', value: '100% Cotton' }, { key: 'Season', value: 'Summer' }],
     variants: [
@@ -92,6 +93,7 @@ test('Joom 商品信息：变体颜色尺码图片与材质原文', () => {
   });
   assert.equal(info.name, 'Basic Tee');
   assert.equal(info.imageUrl, 'https://img.test/500.jpg', '取约 400px 以上最小的一张');
+  assert.deepEqual(info.imageUrls, ['https://img.test/500.jpg', 'https://img.test/back.jpg', 'https://img.test/detail.jpg']);
   assert.equal(info.materialHint, '100% Cotton');
   assert.deepEqual(info.variants.V1, { sku: 'TEE-BLK-M', color: 'black', size: 'M', imageUrl: 'https://img.test/v1.jpg', materialHint: undefined });
   assert.equal(info.variantsBySku['TEE-WHT-L'].materialHint, '95% polyester, 5% elastane');
@@ -137,7 +139,7 @@ test('Joom 订单映射：按官方文档字段，含赠品、地址、物流、
     { ...order.lines[0] },
     {
       lineId: 'main', productId: 'P1', productSku: 'TEE', variantId: 'V1', variantSku: 'TEE-BLK-M',
-      title: 'Basic Tee', color: 'black', size: 'M', imageUrl: undefined, quantity: 2,
+      title: 'Basic Tee', color: 'black', size: 'M', imageUrl: undefined, imageUrls: [], quantity: 2,
       unitPrice: 4.52, amount: 8.04, materialHint: '100% cotton',
     },
   );

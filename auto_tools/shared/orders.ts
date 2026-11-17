@@ -51,6 +51,8 @@ export interface OrderLine {
   color?: string;
   size?: string;
   imageUrl?: string;
+  /** 可供看图选择的商品图片；订单图优先。 */
+  imageUrls?: string[];
   quantity: number;
   unitPrice?: number;
   /** 本行金额（平台口径；Joom 为折后订单价）。 */
@@ -120,7 +122,7 @@ export const ORDER_COLUMNS = [
   { key: 'unitPrice', label: '单价', width: 8, numeric: true, group: 'product' },
   { key: 'amount', label: '订单金额', width: 10, numeric: true, group: 'product' },
   { key: 'currency', label: '币种', width: 6, group: 'product' },
-  { key: 'imageUrl', label: '图片链接', width: 30, group: 'product' },
+  { key: 'imageUrl', label: '图片', width: 22, group: 'product' },
   { key: 'recipient', label: '收件人', width: 16, group: 'recipient' },
   { key: 'phone', label: '电话', width: 16, group: 'recipient' },
   { key: 'email', label: '邮箱', width: 22, group: 'recipient' },
@@ -139,18 +141,24 @@ export const ORDER_COLUMNS = [
 export type OrderColumnKey = typeof ORDER_COLUMNS[number]['key'];
 export const ORDER_COLUMN_KEYS = ORDER_COLUMNS.map((column) => column.key) as OrderColumnKey[];
 
+/** 发厂时最关心的字段始终在前，兼容已保存的旧方案。多选图在图片位置展开。 */
+export const REQUIRED_ORDER_COLUMNS: OrderColumnKey[] = ['imageUrl', 'quantity', 'size', 'shop', 'material'];
+export function orderExportColumns(columns: readonly OrderColumnKey[]): OrderColumnKey[] {
+  return [...REQUIRED_ORDER_COLUMNS, ...new Set(columns.filter((key) => !REQUIRED_ORDER_COLUMNS.includes(key)))];
+}
+
 /** 默认不带价格、邮箱和税号：导出文件通常发给工厂。需要时在方案里勾选。 */
-export const DEFAULT_ORDER_COLUMNS: OrderColumnKey[] = [
+export const DEFAULT_ORDER_COLUMNS: OrderColumnKey[] = orderExportColumns([
   'platform', 'shop', 'orderId', 'orderedAt', 'status',
   'material', 'productSku', 'variantSku', 'title', 'color', 'size', 'quantity', 'imageUrl',
   'recipient', 'phone', 'country', 'state', 'city', 'address', 'zipCode',
   'carrier', 'trackingNumber', 'materialEvidence', 'note',
-];
+]);
 
 // ---- 导出方案 ----
 
 export type OrderExportLayout = 'file-per-material' | 'sheet-per-material';
-/** separate：单独输出「待确认」文件；skip：本次不导出，修正后下次再导。 */
+/** separate 为旧配置兼容值；未确定材质始终跳过，修正后再导。 */
 export type UnknownMaterialHandling = 'separate' | 'skip';
 
 export interface OrderShopRef {
@@ -194,7 +202,7 @@ export function createDefaultOrderExportProfile(now = new Date()): OrderExportPr
       { material: 'cotton', label: '棉' },
       { material: 'polyester', label: '聚酯纤维' },
     ],
-    unknown: { handling: 'separate', label: '待确认' },
+    unknown: { handling: 'skip', label: '待确认' },
     columns: [...DEFAULT_ORDER_COLUMNS],
     defaults: { shops: [], statuses: ['to_ship'], onlyNew: true },
     updatedAt: now.toISOString(),
@@ -400,6 +408,8 @@ export interface OrderQueryInput {
   onlyNew: boolean;
   /** 本次临时改的材质（key 为订单行 uid），不记住 */
   overrides?: Record<string, ProductMaterial>;
+  /** 按订单行选图；未指定时只导出订单图片，不重复数量。 */
+  selectedImages?: Record<string, string[]>;
 }
 
 export type MaterialSource =
@@ -427,6 +437,8 @@ export interface OrderPreviewLine {
   color?: string;
   size?: string;
   imageUrl?: string;
+  imageUrls: string[];
+  selectedImages: string[];
   quantity: number;
   isGift: boolean;
   material: ProductMaterial;
@@ -441,7 +453,7 @@ export interface OrderPreviewBucket {
   key: string;
   label: string;
   kind: 'material' | 'unknown';
-  /** 未识别且方案设置为跳过 */
+  /** 待确认的订单始终不导出 */
   excluded: boolean;
   orderCount: number;
   quantity: number;

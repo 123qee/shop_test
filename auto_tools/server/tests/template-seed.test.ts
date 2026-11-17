@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
 import Database from 'better-sqlite3';
-import { mkdtempSync, rmSync } from 'node:fs';
+import { mkdtempSync, rmSync, writeFileSync, readFileSync, readdirSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import {
@@ -106,4 +106,64 @@ test('写入数据库后，后端读到的模板和分组绑定与来源一致�
   assert.deepEqual(settingsService.getConfig().templates.map((template) => template.name), ['成人棉短袖', '成人连帽卫衣无拉链棉']);
   assert.deepEqual(settingsService.getGroupTemplateBindings(), bindings);
   assert.equal(settingsService.getPicuiToken(), 'local-token');
+});
+
+
+test('启动自动恢复仓库模板和产品描述；升级不覆盖本机修改，保存时去密钥更新快照', async (t) => {
+  const { restoreTemplateSeed, snapshotTemplateSetting } = await import('../src/services/template-sync');
+  const { FACTORY_DEFAULTS, FACTORY_SIZE_TEMPLATES } = await import('../src/services/preset-defaults');
+  const dir = mkdtempSync(join(tmpdir(), 'auto-tools-template-auto-'));
+  t.after(() => rmSync(dir, { recursive: true, force: true }));
+  const seedPath = join(dir, 'templates.json');
+  const source = presets([adultTee, adultHoodie]);
+  const description = 'Material: Cotton\nSize chart: M 100cm';
+  source.templates[0].defaults = { ...defaults, description } as any;
+  const seed = buildTemplateSeed(settingsOf({ presets: source, groupTemplateBindings: bindings }));
+  writeFileSync(seedPath, JSON.stringify(seed));
+  const db = new Database(join(dir, 'fresh.db'));
+  t.after(() => db.close());
+  ensureSettingsTable(db);
+  assert.deepEqual(restoreTemplateSeed(db, seedPath), ['presets', 'groupTemplateBindings']);
+  assert.equal((readSetting(db, 'presets') as any).templates[0].defaults.description, description);
+  assert.deepEqual(restoreTemplateSeed(db, seedPath), [], '重复启动不重复写配置');
+
+  // 换电脑已经启动过旧版，留下空白出厂模板和本机图床 Token。
+  const factoryDb = new Database(join(dir, 'factory.db'));
+  t.after(() => factoryDb.close());
+  ensureSettingsTable(factoryDb);
+  writeSettings(factoryDb, [['presets', { ...presets([{ id: 'default', name: '默认模板' }]), sizeTemplates: FACTORY_SIZE_TEMPLATES, picuiToken: 'local-token', templates: [{ id: 'default', name: '默认模板', defaults: FACTORY_DEFAULTS }] }]]);
+  restoreTemplateSeed(factoryDb, seedPath);
+  assert.equal((readSetting(factoryDb, 'presets') as any).templates[0].defaults.description, description);
+  assert.equal((readSetting(factoryDb, 'presets') as any).picuiToken, 'local-token');
+  assert.ok(readdirSync(join(dir, 'backups')).length);
+  const customDb = new Database(join(dir, 'custom.db'));
+  t.after(() => customDb.close());
+  ensureSettingsTable(customDb);
+  const custom = { templates: [{ id: 'default', name: '默认模板', defaults: { ...FACTORY_DEFAULTS, shippingWeight: 0.7 } }], activeId: 'default' };
+  writeSettings(customDb, [['presets', custom]]);
+  restoreTemplateSeed(customDb, seedPath);
+  assert.deepEqual(readSetting(customDb, 'presets'), custom, '已有本机修改的默认模板也保留');
+
+
+  // 拉到新版模板，未修改的本机配置随之更新。
+  const nextSeed = structuredClone(seed);
+  (nextSeed.settings.presets as any).templates[0].defaults.description = 'updated description';
+  writeFileSync(seedPath, JSON.stringify(nextSeed));
+  restoreTemplateSeed(db, seedPath);
+  assert.equal((readSetting(db, 'presets') as any).templates[0].defaults.description, 'updated description');
+
+  // 本机已编辑的描述不被仓库新版覆盖。
+  const local = readSetting(db, 'presets') as any;
+  local.templates[0].defaults.description = 'local edit';
+  local.picuiToken = 'secret-local-token';
+  writeSettings(db, [['presets', local]]);
+  (nextSeed.settings.presets as any).templates[0].defaults.description = 'another update';
+  writeFileSync(seedPath, JSON.stringify(nextSeed));
+  restoreTemplateSeed(db, seedPath);
+  assert.equal((readSetting(db, 'presets') as any).templates[0].defaults.description, 'local edit');
+  snapshotTemplateSetting(db, 'presets', seedPath);
+  const text = readFileSync(seedPath, 'utf8');
+  assert.ok(text.includes('local edit'));
+  assert.ok(!text.includes('secret-local-token'));
+  assert.equal((readSetting(db, 'presets') as any).picuiToken, 'secret-local-token');
 });

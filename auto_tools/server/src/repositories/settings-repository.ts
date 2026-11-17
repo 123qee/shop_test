@@ -1,3 +1,7 @@
+import path from 'node:path';
+import { config } from '../config/index.js';
+import { snapshotTemplateSetting, templateSeedPath } from '../services/template-sync.js';
+import { logger } from '../util/logger.js';
 import { getDb } from '../db/index.js';
 
 /** settings 表的通用 JSON 读写(key -> 任意 JSON 值)。 */
@@ -26,6 +30,13 @@ export class SqliteSettingsRepository implements SettingsRepository {
          ON CONFLICT(key) DO UPDATE SET value = excluded.value`,
       )
       .run(key, JSON.stringify(value));
+    if (config.dbPath === path.resolve(path.dirname(templateSeedPath), '../data/app.db')) {
+      try { snapshotTemplateSetting(getDb(), key); }
+      catch (error) {
+        logger.error('模板已保存到本机，但仓库快照更新失败，请执行 templates:export', { message: error instanceof Error ? error.message : String(error) });
+        throw new Error('配置已保存到本机，但模板快照更新失败，请检查文件权限后重新保存，或执行 npm run templates:export');
+      }
+    }
   }
 }
 

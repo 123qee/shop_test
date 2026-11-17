@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import http from 'node:http';
+import sharp from 'sharp';
 import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -38,6 +39,7 @@ function order(input: OrderInput): UnifiedOrder {
     lines: input.lines.map((line, index) => ({
       lineId: index ? `l${index}` : 'main',
       quantity: 1,
+      imageUrl: 'https://example.test/front.jpg',
       productSku: `${line.productId}-SKU`,
       variantSku: `${line.productId}-V`,
       ...line,
@@ -67,22 +69,35 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
   const { orderSourceRegistry } = await import('../src/orders/registry');
   const { orderExportService } = await import('../src/orders/export-service');
   const { productRepository } = await import('../src/repositories/product-repository');
+  const front = await sharp({ create: { width: 40, height: 60, channels: 3, background: '#e00000' } }).webp().toBuffer();
+  const back = await sharp({ create: { width: 60, height: 40, channels: 3, background: '#0000e0' } }).png().toBuffer();
+  const originalFetch = globalThis.fetch;
+  const imageCalls: string[] = [];
+  let imageFailure = false;
+  globalThis.fetch = async (input, init) => {
+    const url = new URL(typeof input === 'string' ? input : input instanceof URL ? input.href : input.url);
+    if (url.hostname !== 'example.test') return originalFetch(input, init);
+    imageCalls.push(url.pathname);
+    if (imageFailure || url.pathname === '/must-not-download.jpg') return new Response('unavailable', { status: 503 });
+    return new Response(url.pathname === '/back.jpg' ? back : front, { headers: { 'Content-Type': 'image/webp' } });
+  };
+  t.after(() => { globalThis.fetch = originalFetch; });
 
   // 商品库里人工确认为「棉」的商品
   const local = productRepository.create({
     source: 'joom', sourceUrl: 'https://example.test/local', sourceProductId: 'local',
-    title: 'Basic Tee', images: [], variants: [], attributes: {},
+    title: 'Basic Tee', images: ['https://example.test/front.jpg', 'https://example.test/back.jpg'], variants: [], attributes: {},
   } as any);
   productRepository.update(local.id, { grouping: { groupId: 'men-short', material: 'cotton', source: 'manual', reason: '人工确认' } });
 
   const orders: UnifiedOrder[] = [
-    order({ shopId: 'A', orderId: 'A-1', orderedAgo: 5 * HOUR, lines: [{ productId: 'P-LOCAL', title: 'Basic Tee', quantity: 2, color: 'black', size: 'M' }] }),
+    order({ shopId: 'A', orderId: 'A-1', orderedAgo: 5 * HOUR, lines: [{ productId: 'P-LOCAL', title: 'Basic Tee', imageUrl: 'https://example.test/front.jpg', quantity: 2, color: 'black', size: 'M' }] }),
     order({ shopId: 'A', orderId: 'A-2', orderedAgo: 4 * HOUR, lines: [{ productId: 'P-ATTR', title: 'Classic Tee', materialHint: '100% Cotton' }] }),
     order({ shopId: 'A', orderId: 'A-3', orderedAgo: 3 * HOUR, lines: [{ productId: 'P-POLY', title: 'Polyester Sport T-Shirt' }] }),
     order({ shopId: 'B', orderId: 'B-1', orderedAgo: 2 * HOUR, lines: [{ productId: 'P-BLEND', title: 'Soft Tee', materialHint: '65% polyester, 35% cotton' }] }),
     order({
       shopId: 'B', orderId: 'B-2', orderedAgo: 1 * HOUR,
-      lines: [{ productId: 'P-NONE', title: 'Mystery item' }, { productId: 'P-POLY', title: 'Polyester Sport T-Shirt', isGift: true }],
+      lines: [{ productId: 'P-NONE', title: 'Mystery item', imageUrl: 'https://example.test/must-not-download.jpg' }, { productId: 'P-POLY', title: 'Polyester Sport T-Shirt', isGift: true }],
     }),
     order({ shopId: 'B', orderId: 'B-3', status: 'cancelled', rawStatus: 'cancelled', orderedAgo: HOUR, lines: [{ productId: 'P-POLY', title: 'Polyester Sport T-Shirt' }] }),
     order({ shopId: 'A', orderId: 'A-OLD', orderedAgo: 40 * DAY, lines: [{ productId: 'P-ATTR', title: 'Classic Tee', materialHint: '100% Cotton' }] }),
@@ -171,8 +186,9 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       const unknown = bucket(data, 'unknown');
       assert.deepEqual(unknown.lines.map((l: any) => [l.orderId, l.material]), [['B-1', 'blend'], ['B-2', 'unknown']]);
       assert.match(unknown.lines[0].materialEvidence, /65% polyester/);
-      assert.deepEqual(data.files.map((f: any) => f.name), [`${today}_棉_测试平台订单.xlsx`, `${today}_聚酯纤维_测试平台订单.xlsx`, `${today}_待确认_测试平台订单.xlsx`]);
-      assert.deepEqual(data.warnings, []);
+      assert.deepEqual(data.files.map((f: any) => f.name), [`${today}_棉_测试平台订单.xlsx`, `${today}_聚酯纤维_测试平台订单.xlsx`]);
+      assert.equal(bucket(data, 'unknown').excluded, true);
+      assert.match(data.warnings[0], /本次不导出/);
     });
 
     await t.test('本次临时改材质与记住商品材质', async () => {
@@ -193,31 +209,78 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       assert.equal((await request('/material-rules')).data.length, 1);
     });
 
+    await t.test('旧方案也不能导出待确认材质；选图必须属于该商品', async () => {
+      const db = getDb();
+      const profiles = (await request('/profiles')).data;
+      profiles[0].unknown.handling = 'separate';
+      db.prepare("UPDATE settings SET value = ? WHERE key = 'order_export_profiles'").run(JSON.stringify(profiles));
+      const data = (await request('/preview', 'POST', daily)).data;
+      assert.equal(bucket(data, 'unknown').excluded, true);
+      assert.ok(data.files.every((file: any) => !file.sheets.includes('待确认')));
+      const localLine = bucket(data, 'cotton').lines.find((line: any) => line.orderId === 'A-1');
+      assert.deepEqual(localLine.imageUrls, ['https://example.test/front.jpg', 'https://example.test/back.jpg']);
+      assert.deepEqual(localLine.selectedImages, ['https://example.test/front.jpg']);
+      const invalid = await request('/exports', 'POST', { ...daily, selectedImages: { [localLine.uid]: ['https://example.test/unrelated.jpg'] } });
+      assert.equal(invalid.status, 400);
+      assert.match(invalid.data.error, /选图已失效/);
+      assert.equal((await request('/exports', 'POST', { ...daily, selectedImages: { [localLine.uid]: [] } })).status, 400);
+    });
+
+    await t.test('图片缺失或下载失败时不生成记录、不标记订单，重试仍可导出', async () => {
+      const db = getDb();
+      const uid = lineUid('A', 'A-2');
+      db.prepare('UPDATE order_lines SET image_url = NULL WHERE uid = ?').run(uid);
+      const missing = await request('/exports', 'POST', daily);
+      assert.equal(missing.status, 400);
+      assert.match(missing.data.error, /没有可导出的图片/);
+      db.prepare('UPDATE order_lines SET image_url = ? WHERE uid = ?').run('https://example.test/front.jpg', uid);
+      imageFailure = true;
+      const failed = await request('/exports', 'POST', daily);
+      imageFailure = false;
+      assert.equal(failed.status, 400);
+      assert.match(failed.data.error, /图片下载或处理失败/);
+      assert.deepEqual((await request('/exports')).data, []);
+      assert.equal((db.prepare('SELECT COUNT(*) AS n FROM order_export_marks').get() as any).n, 0);
+      assert.equal((await request('/preview', 'POST', daily)).data.totals.lines, 6);
+      imageCalls.length = 0;
+    });
+
     let exportId = '';
     await t.test('导出：每种材质一个文件，内容、文件名和下载头正确', async () => {
-      const { status, data } = await request('/exports', 'POST', daily);
+      const { status, data } = await request('/exports', 'POST', { ...daily, selectedImages: { [lineUid('A', 'A-1')]: ['https://example.test/back.jpg', 'https://example.test/front.jpg'] } });
       assert.equal(status, 201, JSON.stringify(data));
       exportId = data.id;
       assert.deepEqual(data.files.map((f: any) => [f.name, f.orderCount, f.quantity]), [
         [`${today}_棉_测试平台订单.xlsx`, 3, 4],
         [`${today}_聚酯纤维_测试平台订单.xlsx`, 2, 2],
-        [`${today}_待确认_测试平台订单.xlsx`, 1, 1],
       ]);
       assert.equal(data.zipName, `${today}_每日发厂_01.zip`);
       assert.deepEqual(data.query.shops.map((s: any) => s.shopName), ['店铺A', '店铺B']);
 
-      const res = await fetch(`${base}/exports/${exportId}/files/3`);
-      assert.equal(res.status, 200);
-      assert.equal(res.headers.get('content-type'), 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-      assert.ok(res.headers.get('content-disposition')!.includes(`filename*=UTF-8''${encodeURIComponent(`${today}_待确认_测试平台订单.xlsx`)}`));
-      const sheet = unzip(Buffer.from(await res.arrayBuffer())).get('xl/worksheets/sheet1.xml')!.toString();
-      for (const text of ['订单号', '材质判定依据', 'B-2', 'Mystery item', '材质未知', '0012345678', '010203', '买家 B-2', 'Lenina 10']) {
-        assert.ok(sheet.includes(text), `待确认文件应包含 ${text}`);
-      }
-      assert.ok(!sheet.includes('单价'), '默认列不含价格');
-
+      assert.equal((await fetch(`${base}/exports/${exportId}/files/3`)).status, 404, '不会生成待确认文件');
+      assert.equal(data.summary.find((item: any) => item.key === 'unknown').exported, false);
       const cotton = unzip(Buffer.from(await (await fetch(`${base}/exports/${exportId}/files/1`)).arrayBuffer()));
       const cottonSheet = cotton.get('xl/worksheets/sheet1.xml')!.toString();
+      assert.ok(cottonSheet.includes('图片 2'));
+      const headers = [...cottonSheet.match(/<row r="1">(.*?)<\/row>/)![1].matchAll(/<t[^>]*>(.*?)<\/t>/g)].map((item) => item[1]);
+      assert.deepEqual(headers.slice(0, 6), ['图片', '图片 2', '数量', '尺码', '店铺', '材质'], '旧方案也固定把发厂字段放前面');
+      assert.match(cottonSheet, /<c r="C3" s="0"><v>2<\/v>/, '件数仍是衣服件数');
+      assert.match(cottonSheet, /<c r="D3"[^>]*><is><t>M<\/t>/, '尺码与衣服对应');
+      assert.match(cottonSheet, /<c r="E3"[^>]*><is><t>店铺A<\/t>/, '店铺归属与衣服对应');
+
+      assert.ok(!cottonSheet.includes('https://example.test/'), '图片列不再写入链接');
+      assert.match(cottonSheet, /<drawing r:id="rIdDrawing"\/>/);
+      const media = [...cotton.keys()].filter((name) => name.startsWith('xl/media/'));
+      assert.equal(media.length, 2, '重复选中的图片只嵌入一次媒体内容');
+      for (const name of media) assert.equal((await sharp(cotton.get(name)!).metadata()).format, 'jpeg', 'WebP 和 PNG 统一转成兼容图片');
+      const drawing = cotton.get('xl/drawings/drawing1.xml')!.toString();
+      assert.equal((drawing.match(/<xdr:oneCellAnchor>/g) ?? []).length, 4, '3 行订单，共 4 张选图');
+      const rels = cotton.get('xl/drawings/_rels/drawing1.xml.rels')!.toString();
+      assert.match(rels, /Id="rId2"[^>]*image2.jpeg/);
+      assert.match(rels, /Id="rId3"[^>]*image1.jpeg/, '同一行第二张图为选中的正面图');
+      assert.deepEqual(imageCalls.sort(), ['/back.jpg', '/front.jpg'], '仅下载已选图片，同一图片只下载一次，不下载待确认订单图片');
+      assert.equal((cottonSheet.match(/>A-1<\/t>/g) ?? []).length, 1, '多图不重复订单行');
+      assert.ok(!cottonSheet.includes('Mystery item'));
       assert.ok(cottonSheet.includes('已记住的商品材质') && cottonSheet.includes('商品库分组（人工确认）'));
       assert.match(cotton.get('xl/workbook.xml')!.toString(), /<sheet name="棉"/);
 
@@ -230,14 +293,15 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
 
     await t.test('只导新订单：导过的不再出现；关掉后能看到导出时间', async () => {
       const preview = (await request('/preview', 'POST', daily)).data;
-      assert.deepEqual(preview.totals, { orders: 0, lines: 0, quantity: 0 });
+      assert.deepEqual(preview.totals, { orders: 1, lines: 1, quantity: 1 });
+      assert.deepEqual(orderIds(bucket(preview, 'unknown')), ['B-2']);
       assert.deepEqual(preview.files, []);
       const empty = await request('/exports', 'POST', daily);
       assert.equal(empty.status, 400);
       assert.match(empty.data.error, /没有需要导出的订单/);
       const all = (await request('/preview', 'POST', { ...daily, onlyNew: false })).data;
       assert.equal(all.totals.lines, 6);
-      assert.ok(all.buckets.every((b: any) => b.lines.every((l: any) => l.exportedAt)));
+      assert.ok(all.buckets.every((b: any) => b.lines.every((l: any) => b.excluded ? !l.exportedAt : l.exportedAt)));
       const profile = (await request('/profiles')).data.find((p: any) => p.id === 'daily');
       assert.deepEqual(profile.defaults, { shops, statuses: ['to_ship'], onlyNew: true }, '导出后记住勾选条件');
     });
@@ -254,7 +318,7 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       const since = sinceCalls.at(-1)!.since.getTime();
       assert.ok(since > previousSyncEnd - 11 * 60_000 && since < previousSyncEnd, '从上次同步时间减 10 分钟开始');
       const preview = (await request('/preview', 'POST', daily)).data;
-      assert.deepEqual(preview.buckets.flatMap((b: any) => b.lines.map((l: any) => l.orderId)), ['A-4']);
+      assert.deepEqual(preview.buckets.flatMap((b: any) => b.lines.map((l: any) => l.orderId)), ['A-4', 'B-2']);
       const all = (await request('/preview', 'POST', { ...daily, onlyNew: false })).data;
       assert.ok(!all.buckets.some((b: any) => b.lines.some((l: any) => l.orderId === 'B-1')), '已发货的不在待发货里');
       const shipped = (await request('/preview', 'POST', { ...daily, statuses: ['shipped'], onlyNew: false })).data;
@@ -284,7 +348,7 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       assert.match(sources.platforms[0].shops[1].lastError, /授权已过期/);
       failShopB = false;
       assert.equal((await sync({ shops })).status, 'succeeded');
-      assert.deepEqual((await request('/preview', 'POST', daily)).data.warnings, [], '恢复后不再提示');
+      assert.ok(!(await request('/preview', 'POST', daily)).data.warnings.some((w: string) => w.includes('授权已过期')), '恢复后不再提示同步错误');
     });
 
     await t.test('方案：校验、一个文件多工作表、未识别跳过且不标记', async () => {
@@ -317,10 +381,13 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       const workbook = unzip(Buffer.from(await (await fetch(`${base}/exports/${exported.id}/files/1`)).arrayBuffer()));
       assert.match(workbook.get('xl/workbook.xml')!.toString(), /<sheet name="全棉".*<sheet name="涤纶"/);
       assert.ok(workbook.get('xl/worksheets/sheet1.xml')!.toString().includes('单价'));
+      const customHeaders = [...workbook.get('xl/worksheets/sheet1.xml')!.toString().match(/<row r="1">(.*?)<\/row>/)![1].matchAll(/<t[^>]*>(.*?)<\/t>/g)].map((item) => item[1]);
+      assert.deepEqual(customHeaders, ['图片', '数量', '尺码', '店铺', '材质', '订单号', '单价'], '自定义方案缺少必需字段时自动补齐并放在前面');
+
       const remaining = (await request('/preview', 'POST', query)).data;
       assert.deepEqual(remaining.buckets.flatMap((b: any) => b.lines.map((l: any) => l.orderId)), ['B-2'], '跳过的未识别订单下次仍会出现');
       const dailyLeft = (await request('/preview', 'POST', daily)).data;
-      assert.deepEqual(dailyLeft.buckets.flatMap((b: any) => b.lines.map((l: any) => l.orderId)).sort(), ['A-4', 'A-OLD'], '不同方案的「已导出」互不影响');
+      assert.deepEqual(dailyLeft.buckets.flatMap((b: any) => b.lines.map((l: any) => l.orderId)).sort(), ['A-4', 'A-OLD', 'B-2'], '不同方案的「已导出」互不影响');
 
       assert.equal((await request('/profiles/daily', 'DELETE')).status, 200);
       assert.equal((await request('/profiles/sheet', 'DELETE')).status, 400, '至少保留一个方案');
@@ -351,7 +418,7 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       const db = getDb();
       assert.equal((db.prepare('SELECT COUNT(*) AS n FROM orders').get() as any).n, 8);
       const marks = db.prepare("SELECT profile_id, COUNT(*) AS n FROM order_export_marks GROUP BY profile_id ORDER BY profile_id").all();
-      assert.deepEqual(marks, [{ profile_id: 'daily', n: 6 }, { profile_id: 'sheet', n: 6 }]);
+      assert.deepEqual(marks, [{ profile_id: 'daily', n: 5 }, { profile_id: 'sheet', n: 6 }]);
     });
   } finally {
     server.close();

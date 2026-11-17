@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "captured_on": "2026-11-17",
+  "scope": "当时订单列表全部范围，非近28天广告归属范围",
+  "all_order_records_at_observation": 589,
+  "refunded_status_records": 21,
+  "refunded_status_share": 0.035653650254668934,
+  "records_with_refund_invoice_amount": 20,
+  "records_with_blank_invoice_amount": 1,
+  "refund_invoice_sum_usd": 175.36,
+  "blank_is_zero": false,
+  "example": {
+    "order_id": "8LJNMN8G",
+    "source": "https://merchant.joom.com/panel/orders/8LJNMN8G",
+    "original_price_usd": 9.99,
+    "refund_ratio_displayed": 0.5,
+    "refund_reason_displayed": "颜色错误",
+    "refund_invoice_amount_usd": 14.22
+  },
+  "limitations": [
+    "近期订单仍在运输，状态占比不是最终退款率",
+    "退款账单可能包含商品之外的责任；不能等同商品价格乘退款比例",
+    "未经逐项账单匹配，不直接把该历史金额扣到近28天广告利润中",
+    "不重复扣除已经冲减收入的同一笔退款"
+  ]
+}
