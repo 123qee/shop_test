@@ -13,6 +13,7 @@ import { operationsRouter } from './routes/operations.js';
 import { imagesRouter } from './routes/images.js';
 import { mercadoLibreRouter } from './routes/mercadolibre.js';
 import { plannerRouter } from './routes/planner.js';
+import { ordersRouter } from './routes/orders.js';
 import { logger } from './util/logger.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -48,6 +49,7 @@ export function createApp() {
   app.use('/api', imagesRouter);
   app.use('/api', mercadoLibreRouter);
   app.use('/api', plannerRouter);
+  app.use('/api', ordersRouter);
 
   // 生产环境托管 web 后台(web/dist)
   const webDist = path.resolve(__dirname, '../../web/dist');

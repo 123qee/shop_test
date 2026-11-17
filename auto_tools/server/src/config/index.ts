@@ -55,6 +55,16 @@ export const config = {
       return Boolean(this.clientId && this.clientSecret && this.redirectUri);
     },
   },
+  orders: {
+    /** 导出文件目录（server/data 已在 .gitignore 中） */
+    exportDir: path.resolve(process.env.ORDER_EXPORT_DIR || './data/exports'),
+    /** 导出文件保留天数，过期删除文件、保留记录 */
+    exportRetentionDays: Number(process.env.ORDER_EXPORT_RETENTION_DAYS) || 30,
+    /** 首次同步回溯天数 */
+    syncLookbackDays: Number(process.env.ORDER_SYNC_LOOKBACK_DAYS) || 30,
+    /** 订单含买家信息，默认只允许本机访问；局域网使用时设为 1 */
+    allowRemote: bool(process.env.ORDERS_ALLOW_REMOTE, false),
+  },
   verbose: bool(process.env.VERBOSE, false),
   deepseek: {
     apiKey: process.env.DEEPSEEK_API_KEY || '',

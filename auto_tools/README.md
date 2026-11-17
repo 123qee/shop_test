@@ -87,6 +87,21 @@ NGROK_ENABLED=0 ./start.sh
 
 详细流程见各子目录 README 与根目录计划文档。
 
+## 模板同步（换电脑恢复模板）
+
+预设模板（成人短袖、连帽卫衣等）、尺码模板、类目收藏、分组与模板的绑定、美客多模板、速卖通自动填写配置和订单导出配置都存在数据库 `server/data/app.db` 里，这个目录不进 git。要让模板随仓库推送，需要先导出成 `server/seed/templates.json`，再提交这个文件：
+
+```bash
+cd server
+npm run templates:export              # 从数据库导出到 seed/templates.json，然后提交这个文件
+npm run templates:import              # 新电脑：预览导入会改哪些配置，不写数据库
+npm run templates:import -- --apply   # 确认后写入数据库，原来的配置会先备份到 data/backups/
+```
+
+- 导出文件不含密钥：图床 Token（`picuiToken`）会被去掉，AI、店铺和美客多的密钥配置不导出；导入时保留本机原来的图床 Token。
+- 导入会用文件里的模板覆盖本机模板；本机有、文件里没有的模板会被移除，移除前已备份。
+- 改完模板后重新导出一次再提交。数据库不在 `server/data/app.db` 时，用 `DB_PATH=/绝对路径/app.db npm run templates:export` 指定。
+
 ## Mercado Libre 工作区
 
 - 入口：`/mercadolibre`；设置：`/mercadolibre/settings`；回调：`/api/mercadolibre/callback`。

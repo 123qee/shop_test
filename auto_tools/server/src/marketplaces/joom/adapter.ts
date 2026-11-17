@@ -102,10 +102,16 @@ export class JoomAdapter implements MarketplaceAdapter {
     return { marketplaceProductId, raw: data };
   }
 
-  private clientForShop(shopId: string): JoomClient {
+  /** 指定店铺的客户端：token 刷新后写回该店铺，不依赖「当前店铺」。订单同步按店铺逐个使用。 */
+  clientForShop(shopId: string): JoomClient {
     return shopId === shopService.getActiveId()
       ? this.client
       : new JoomClient(() => this.getValidAccessToken(shopId));
+  }
+
+  /** 该店铺是否已完成授权。 */
+  isShopConnected(shopId: string): boolean {
+    return Boolean(this.readToken(shopId));
   }
 
   async startVideoUpload(

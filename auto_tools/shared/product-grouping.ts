@@ -72,6 +72,11 @@ function materialFrom(text: string): ProductMaterial {
   return 'unknown';
 }
 
+/** 从任意文本（材质属性、标题）判断材质，规则与采集分组一致。 */
+export function inferMaterialFromText(text: string): ProductMaterial {
+  return materialFrom(normalized(text ?? ''));
+}
+
 /** 仅使用来源信息，不读取 editable 或预设。 */
 export function inferProductGrouping(product: CollectedProduct): ProductGrouping {
   const title = normalized(product.title ?? '');

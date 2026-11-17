@@ -161,6 +161,117 @@ function migrate(d: Database.Database) {
       picture_id    TEXT NOT NULL,
       updated_at    TEXT NOT NULL
     );
+
+    -- 订单导出：各平台订单统一存储，uid = 平台:店铺:订单号。时间均为 UTC ISO。
+    CREATE TABLE IF NOT EXISTS orders (
+      uid         TEXT PRIMARY KEY,
+      platform    TEXT NOT NULL,
+      shop_id     TEXT NOT NULL,
+      order_id    TEXT NOT NULL,
+      shop_name   TEXT NOT NULL DEFAULT '',
+      status      TEXT NOT NULL,
+      raw_status  TEXT NOT NULL DEFAULT '',
+      ordered_at  TEXT NOT NULL,
+      updated_at  TEXT NOT NULL,
+      currency    TEXT,
+      address     TEXT,                    -- JSON: OrderAddress（买家信息，仅本机）
+      tracking    TEXT,                    -- JSON: OrderTracking
+      raw         TEXT,                    -- 平台原始返回
+      synced_at   TEXT NOT NULL,
+      UNIQUE(platform, shop_id, order_id)
+    );
+    CREATE INDEX IF NOT EXISTS idx_orders_shop_ordered ON orders(platform, shop_id, ordered_at);
+    CREATE INDEX IF NOT EXISTS idx_orders_status ON orders(status);
+
+    CREATE TABLE IF NOT EXISTS order_lines (
+      uid          TEXT PRIMARY KEY,         -- 订单 uid + '#' + line_id
+      order_uid    TEXT NOT NULL REFERENCES orders(uid) ON DELETE CASCADE,
+      line_id      TEXT NOT NULL,
+      product_id   TEXT,
+      product_sku  TEXT,
+      variant_id   TEXT,
+      variant_sku  TEXT,
+      title        TEXT,
+      color        TEXT,
+      size         TEXT,
+      image_url    TEXT,
+      quantity     INTEGER NOT NULL,
+      unit_price   REAL,
+      amount       REAL,
+      material_hint TEXT,
+      is_gift      INTEGER NOT NULL DEFAULT 0,
+      position     INTEGER NOT NULL DEFAULT 0
+    );
+    CREATE INDEX IF NOT EXISTS idx_order_lines_order ON order_lines(order_uid);
+
+    CREATE TABLE IF NOT EXISTS order_sync_state (
+      platform        TEXT NOT NULL,
+      shop_id         TEXT NOT NULL,
+      synced_until    TEXT,                 -- 下次增量从这里（减重叠）开始
+      covered_from    TEXT,                 -- 本地已覆盖的最早更新时间
+      last_run_at     TEXT,
+      last_success_at TEXT,
+      last_error      TEXT,
+      PRIMARY KEY (platform, shop_id)
+    );
+
+    CREATE TABLE IF NOT EXISTS order_sync_jobs (
+      id          TEXT PRIMARY KEY,
+      status      TEXT NOT NULL,
+      params      TEXT NOT NULL,
+      progress    TEXT NOT NULL,
+      created_at  TEXT NOT NULL,
+      finished_at TEXT
+    );
+
+    -- 订单里只有商品/变体 id，标题、颜色、尺码、材质原文从平台商品接口读取后缓存
+    CREATE TABLE IF NOT EXISTS order_product_cache (
+      platform    TEXT NOT NULL,
+      shop_id     TEXT NOT NULL,
+      product_id  TEXT NOT NULL,
+      data        TEXT NOT NULL,
+      fetched_at  TEXT NOT NULL,
+      PRIMARY KEY (platform, shop_id, product_id)
+    );
+
+    -- 预览里「记住」的商品材质，只用于订单导出，不回写商品库分组
+    CREATE TABLE IF NOT EXISTS order_material_rules (
+      id          TEXT PRIMARY KEY,
+      platform    TEXT NOT NULL,
+      product_id  TEXT,
+      product_sku TEXT,
+      title       TEXT,
+      material    TEXT NOT NULL,
+      created_at  TEXT NOT NULL,
+      updated_at  TEXT NOT NULL
+    );
+    CREATE UNIQUE INDEX IF NOT EXISTS idx_order_material_rules_product
+      ON order_material_rules(platform, product_id) WHERE product_id IS NOT NULL;
+    CREATE INDEX IF NOT EXISTS idx_order_material_rules_sku ON order_material_rules(platform, product_sku);
+
+    CREATE TABLE IF NOT EXISTS order_exports (
+      id            TEXT PRIMARY KEY,
+      profile_id    TEXT NOT NULL,
+      profile_name  TEXT NOT NULL,
+      query         TEXT NOT NULL,
+      summary       TEXT NOT NULL,
+      files         TEXT NOT NULL,
+      zip_name      TEXT NOT NULL,
+      files_expired INTEGER NOT NULL DEFAULT 0,
+      created_at    TEXT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS idx_order_exports_created ON order_exports(created_at);
+
+    -- 按方案记录已导出的订单行；同一订单在不同方案里各算各的
+    CREATE TABLE IF NOT EXISTS order_export_marks (
+      profile_id  TEXT NOT NULL,
+      line_uid    TEXT NOT NULL,
+      export_id   TEXT NOT NULL,
+      material    TEXT NOT NULL,
+      exported_at TEXT NOT NULL,
+      PRIMARY KEY (profile_id, line_uid)
+    );
+    CREATE INDEX IF NOT EXISTS idx_order_export_marks_line ON order_export_marks(line_uid);
   `);
 
   // 增量列(SQLite 无 ADD COLUMN IF NOT EXISTS,先探测)
@@ -176,6 +287,12 @@ function migrate(d: Database.Database) {
   addColumnIfMissing(d, 'products', 'joom_issue_details', 'TEXT');
   addColumnIfMissing(d, 'products', 'joom_video', 'TEXT');
   addColumnIfMissing(d, 'products', 'edited_at', 'TEXT');
+  // 订单按 Joom 商品 id / SKU 找本地商品（读取材质）。products 行里有大段 JSON，无索引时每次查询约 1.5 秒。
+  d.exec(`
+    CREATE INDEX IF NOT EXISTS idx_products_joom_product_id ON products(joom_product_id);
+    CREATE INDEX IF NOT EXISTS idx_joom_shop_listings_joom_product ON joom_shop_listings(joom_product_id);
+    CREATE INDEX IF NOT EXISTS idx_joom_shop_listings_sku ON joom_shop_listings(sku);
+  `);
   // Recover shop ownership where a successful publish job recorded both the store and
   // the product's current Joom id. Legacy snapshots without this evidence remain unassigned.
   d.exec(`

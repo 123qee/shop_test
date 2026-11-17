@@ -31,6 +31,7 @@ function pageMeta(pathname: string) {
   if (pathname === '/joom/delete-list') return ['删除清单', '集中复核待删除商品，避免误操作'];
   if (pathname.startsWith('/products/')) return ['编辑商品', '完善商品信息并检查发布准备度'];
   if (pathname === '/settings') return ['Joom 设置', '店铺、模板和发布配置'];
+  if (pathname.startsWith('/orders')) return ['订单导出', '多店铺订单按材质拆分，导出 Excel'];
   if (pathname === '/mercadolibre/settings') return ['美客多设置', '应用、卖家账号与刊登模板'];
   if (pathname === '/aliexpress/auto-fill') return ['速卖通自动填充', '查看并维护扩展自动填写的字段和值'];
   if (pathname.startsWith('/mercadolibre/products/')) return ['编辑美客多商品', '完善站点刊登内容'];
@@ -44,6 +45,8 @@ export function App() {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(readSidebarCollapsed);
   const location = useLocation();
   const inMercadoLibre = location.pathname.startsWith('/mercadolibre');
+  // 订单导出按页面里勾选的店铺工作，与「当前店铺」无关，不显示店铺切换器以免误会
+  const inOrders = location.pathname.startsWith('/orders');
   const inPersonal = location.pathname.startsWith('/projects') || location.pathname === '/tasks';
   const inTasks = location.pathname === '/tasks';
   const inProjects = location.pathname === '/projects';
@@ -152,6 +155,10 @@ export function App() {
           <NavLink to="/settings" title="店铺与模板" className={({ isActive }) => `sidebar-link${isActive ? ' on' : ''}`}>
             <span className="sidebar-link-icon"><PlannerIcon name="settings" size={17}/></span><span className="sidebar-link-label">店铺与模板</span>
           </NavLink>
+          <span className="sidebar-group-label">订单</span>
+          <NavLink to="/orders" title="订单导出" className={({ isActive }) => `sidebar-link${isActive ? ' on' : ''}`}>
+            <span className="sidebar-link-icon"><PlannerIcon name="download" size={17}/></span><span className="sidebar-link-label">订单导出</span>
+          </NavLink>
           <span className="sidebar-group-label">速卖通工具</span>
           <NavLink to="/aliexpress/auto-fill" title="自动填充字段" className={({ isActive }) => `sidebar-link${isActive ? ' on' : ''}`}>
             <span className="sidebar-link-icon"><PlannerIcon name="settings" size={17}/></span><span className="sidebar-link-label">自动填充字段</span>
@@ -177,7 +184,11 @@ export function App() {
             {!compactPersonal && <p>{subtitle}</p>}
           </div>
           <div className="app-header-actions">
-            {!compactPersonal && (inPersonal ? <span className="pl-header-note">个人空间</span> : !inMercadoLibre && <JoomChip status={joom} onChange={refresh} />)}
+            {!compactPersonal && (inPersonal
+              ? <span className="pl-header-note">个人空间</span>
+              : inOrders
+                ? <span className="orders-header-note">订单数据只保存在本机</span>
+                : !inMercadoLibre && <JoomChip status={joom} onChange={refresh} />)}
           </div>
         </header>
         <main className="container">

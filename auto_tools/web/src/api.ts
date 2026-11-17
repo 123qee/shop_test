@@ -34,6 +34,17 @@ import type {
 } from '@shared/types';
 import type { PlannerData, PersonalProject, PersonalTask, ProjectInput, TaskInput } from '@shared/planner';
 import type { AliExpressAutoFillConfig } from '@shared/aliexpress-auto-fill';
+import type {
+  ExportMaterial,
+  OrderExportProfile,
+  OrderExportRecord,
+  OrderMaterialRule,
+  OrderPreview,
+  OrderQueryInput,
+  OrderShopRef,
+  OrderSourcesResponse,
+  OrderSyncJob,
+} from '@shared/orders';
 
 async function req<T>(url: string, init?: RequestInit, timeoutMs?: number): Promise<T> {
   const controller = timeoutMs ? new AbortController() : undefined;
@@ -221,4 +232,30 @@ export const api = {
     req<unknown>(`/api/mercadolibre/categories?accountId=${encodeURIComponent(accountId)}&siteId=${encodeURIComponent(siteId)}`),
   mercadoLibreCategoryPredict: (accountId: string, siteId: string, title: string) =>
     req<unknown>(`/api/mercadolibre/categories/predict?accountId=${encodeURIComponent(accountId)}&siteId=${encodeURIComponent(siteId)}&title=${encodeURIComponent(title)}`),
+
+  // ---- 订单导出 ----
+  orderSources: () => req<OrderSourcesResponse>('/api/orders/sources'),
+  syncOrders: (shops: OrderShopRef[], from?: string) =>
+    req<OrderSyncJob>('/api/orders/sync', { method: 'POST', body: JSON.stringify({ shops, ...(from ? { from } : {}) }) }),
+  orderSyncJob: (id: string) => req<OrderSyncJob>(`/api/orders/sync/${encodeURIComponent(id)}`),
+  previewOrders: (input: OrderQueryInput) =>
+    req<OrderPreview>('/api/orders/preview', { method: 'POST', body: JSON.stringify(input) }),
+  exportOrders: (input: OrderQueryInput) =>
+    req<OrderExportRecord>('/api/orders/exports', { method: 'POST', body: JSON.stringify(input) }),
+  orderExports: () => req<OrderExportRecord[]>('/api/orders/exports'),
+  orderExportFileUrl: (exportId: string, fileId: string) =>
+    `/api/orders/exports/${encodeURIComponent(exportId)}/files/${encodeURIComponent(fileId)}`,
+  orderExportZipUrl: (exportId: string) => `/api/orders/exports/${encodeURIComponent(exportId)}/zip`,
+  orderProfiles: () => req<OrderExportProfile[]>('/api/orders/profiles'),
+  saveOrderProfile: (profile: OrderExportProfile) =>
+    req<OrderExportProfile[]>(`/api/orders/profiles/${encodeURIComponent(profile.id)}`, { method: 'PUT', body: JSON.stringify(profile) }),
+  deleteOrderProfile: (id: string) =>
+    req<OrderExportProfile[]>(`/api/orders/profiles/${encodeURIComponent(id)}`, { method: 'DELETE' }),
+  orderMaterialRules: () => req<OrderMaterialRule[]>('/api/orders/material-rules'),
+  saveOrderMaterialRule: (input: { platform: string; productId?: string; productSku?: string; title?: string; material: ExportMaterial }) =>
+    req<OrderMaterialRule>('/api/orders/material-rules', { method: 'POST', body: JSON.stringify(input) }),
+  updateOrderMaterialRule: (id: string, material: ExportMaterial) =>
+    req<OrderMaterialRule>(`/api/orders/material-rules/${encodeURIComponent(id)}`, { method: 'PUT', body: JSON.stringify({ material }) }),
+  deleteOrderMaterialRule: (id: string) =>
+    req<void>(`/api/orders/material-rules/${encodeURIComponent(id)}`, { method: 'DELETE' }),
 };

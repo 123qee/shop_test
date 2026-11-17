@@ -1,5 +1,6 @@
-export type IconName = 'folder' | 'tasks' | 'plus' | 'search' | 'grid' | 'list' | 'board' | 'arrow' | 'star' | 'calendar' | 'repeat' | 'check' | 'close' | 'archive' | 'piano' | 'shop' | 'sun' | 'leaf' | 'edit' | 'collection' | 'package' | 'upload' | 'trash' | 'settings' | 'globe' | 'filter' | 'more' | 'expand' | 'collapse';
+export type IconName = 'folder' | 'tasks' | 'plus' | 'search' | 'grid' | 'list' | 'board' | 'arrow' | 'star' | 'calendar' | 'repeat' | 'check' | 'close' | 'archive' | 'piano' | 'shop' | 'sun' | 'leaf' | 'edit' | 'collection' | 'package' | 'upload' | 'download' | 'trash' | 'settings' | 'globe' | 'filter' | 'more' | 'expand' | 'collapse';
 const paths: Record<IconName, React.ReactNode> = {
+  download: <><path d="M12 3v13m-5-5 5 5 5-5M4 15v5h16v-5"/></>,
   expand: <><path d="M14 3h7v7M21 3l-8 8M10 21H3v-7m0 7 8-8"/></>,
   collapse: <><path d="M21 3 14 10m0-7v7h7M3 21l7-7m0 7v-7H3"/></>,
   filter: <path d="M3 4h18l-7 8v7l-4 2v-9L3 4Z"/>,

@@ -14,6 +14,7 @@ import { SourceProductLibrary } from './pages/SourceProductLibrary';
 import { NativePromptProvider } from './components/NativePromptProvider';
 import { PlannerPage } from './pages/planner/PlannerPage';
 import { AliExpressAutoFillPage } from './pages/AliExpressAutoFillPage';
+import { OrdersPage } from './pages/orders/OrdersPage';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,7 @@ const router = createBrowserRouter([
       { path: 'dashboard', element: <DashboardPage /> },
       { path: 'products/:id', element: <ProductEditor /> },
       { path: 'settings', element: <SettingsPage /> },
+      { path: 'orders', element: <OrdersPage /> },
       { path: 'mercadolibre', element: <MercadoLibreWorkspacePage /> },
       { path: 'mercadolibre/settings', element: <MercadoLibreSettingsPage /> },
       { path: 'mercadolibre/products/:productId', element: <MercadoLibreProductEditor /> },

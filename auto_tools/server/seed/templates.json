@@ -1,0 +1,983 @@
+{
+  "version": 1,
+  "note": "由 npm run templates:export 从本机数据库导出，不含密钥，请勿手改。换电脑后在 server 目录执行 npm run templates:import 预览，确认后执行 npm run templates:import -- --apply 写入。",
+  "settings": {
+    "presets": {
+      "templates": [
+        {
+          "id": "default",
+          "name": "成人棉短袖",
+          "defaults": {
+            "currency": "USD",
+            "priceMode": "fixed",
+            "priceMultiplier": 0.075,
+            "fixedPrice": 5,
+            "inventory": 990,
+            "shippingWeight": 0.25,
+            "shippingLength": 10,
+            "shippingWidth": 10,
+            "shippingHeight": 2,
+            "committedFulfillmentDays": 2,
+            "categoryId": "1473502947697243574-128-2-118-2775194205",
+            "sizeMap": {
+              "XXL": "2XL",
+              "XXS": "2XS",
+              "XXXL": "3XL"
+            },
+            "targetSizes": [
+              "2XS",
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL",
+              "2XL",
+              "3XL"
+            ],
+            "description": "Product Type: t shirt\nManufacture Country: China\nApplicable scene: daily\nstyle: Casual\nApplicable season: summer\nNeckline: round\nTops closure type: pullover\nClothing decoration: no decoration\nLeather Label: no\nSleeve length (cm): Short Sleeve\nSex: Unisex\nAge: Ages 18-45 Years Old\nPattern: print\nMaterial: cotton\nLabel: Yes\nWashing care:do not tumble drying\n\nSize chart (cm):\nSize: XXS, Length: 60cm, Bust: 88cm, Shoulder: 41cm, Sleeve: 18cm\nSize: XS, Length: 66cm, Bust: 96cm, Shoulder: 45cm, Sleeve: 19cm\nSize: S, Length: 68cm, Bust: 100cm, Shoulder: 47cm, Sleeve: 19cm\nSize: M, Length: 70cm, Bust: 104cm, Shoulder: 49cm, Sleeve: 20cm\nSize: L, Length: 72cm, Bust: 108cm, Shoulder: 51cm, Sleeve: 20cm\nSize: XL, Length: 74cm, Bust: 112cm, Shoulder: 53cm, Sleeve: 21cm\nSize: 2XL, Length: 76cm, Bust: 116cm, Shoulder: 55cm, Sleeve: 21cm\nSize: 3XL, Length: 78cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm\nNote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4. All our products are advertised in size, study the size chart before buying.",
+            "dangerInfo": {
+              "isDangerous": false
+            },
+            "attributes": {
+              "material": "Cotton"
+            }
+          }
+        },
+        {
+          "id": "tpl_1787322369866_0",
+          "name": "童装短袖棉",
+          "defaults": {
+            "currency": "USD",
+            "priceMode": "fixed",
+            "priceMultiplier": 1,
+            "fixedPrice": 5,
+            "inventory": 999,
+            "msrPrice": 7,
+            "shippingWeight": 0.22,
+            "shippingLength": 20,
+            "shippingWidth": 20,
+            "shippingHeight": 2,
+            "committedFulfillmentDays": 2,
+            "categoryId": "1474913408999209670-73-2-118-1571556385",
+            "targetSizes": [
+              "100",
+              "110",
+              "120",
+              "130",
+              "140",
+              "150",
+              "160"
+            ],
+            "description": "Product Type: Kids’ T-Shirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Summer\nNeckline: Round Neck\nClosure Type: Pullover\nClothing Decoration: No Decoration\nLeather Label: No\nSleeve Length: Short Sleeve\nGender: Unisex\nAge Group: Kids\nPattern: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Do Not Tumble Dry  \nSize Chart:\nSize 100: Length 42 cm, Bust 60 cm, Shoulder 28 cm, Sleeve 39 cm.\nSize 110: Length 45 cm, Bust 66 cm, Shoulder 30 cm, Sleeve 41 cm.\nSize 120: Length 48 cm, Bust 72 cm, Shoulder 32 cm, Sleeve 43 cm.\nSize 130: Length 51 cm, Bust 78 cm, Shoulder 34 cm, Sleeve 45 cm.\nSize 140: Length 54 cm, Bust 84 cm, Shoulder 36 cm, Sleeve 47 cm.\nSize 150: Length 57 cm, Bust 90 cm, Shoulder 38 cm, Sleeve 49 cm.\nSize 160: Length 60 cm, Bust 96 cm, Shoulder 40 cm, Sleeve 51 cm.\nPlease carefully measure your child and compare the measurements with the size chart before purchasing.\nDue to manual measurement, please allow a 2–3 cm deviation.\nThe actual color may vary slightly due to lighting and different screen settings.\nPlease choose the size according to your child’s actual measurements.",
+            "dangerInfo": {
+              "isDangerous": false
+            },
+            "attributes": {
+              "material": "Cotton"
+            }
+          }
+        },
+        {
+          "id": "tpl_1787583598694_0",
+          "name": "聚酯纤维成人短袖",
+          "defaults": {
+            "currency": "USD",
+            "priceMode": "fixed",
+            "priceMultiplier": 1,
+            "fixedPrice": 4.5,
+            "inventory": 999,
+            "msrPrice": 7,
+            "shippingWeight": 0.2,
+            "shippingLength": 10,
+            "shippingWidth": 10,
+            "shippingHeight": 2,
+            "committedFulfillmentDays": 2,
+            "categoryId": "1473502947697243574-128-2-118-2775194205",
+            "targetSizes": [
+              "2XS",
+              "XS",
+              "S",
+              "M",
+              "L",
+              "XL",
+              "2XL",
+              "3XL",
+              "4XL",
+              "5XL",
+              "6XL"
+            ],
+            "description": "Product Type: T-Shirt\nMaterial: Polyester\nManufacture Country: China\nApplicable Scene: Daily\nStyle: Casual\nApplicable Season: Summer\nNeckline: Round Neck\nClosure Type: Pullover\nClothing Decoration: No Decoration\nLeather Label: No\nSleeve Length: Short Sleeve\nSex: Unisex\nAge: 18–45 Years Old\nPattern: Print\nLabel: Yes\nWashing Care: Do Not Tumble Dry  \nSize Chart (cm):\n2XS: Shoulder 40 cm, Bust 88 cm, Sleeve 18 cm, Length 62 cm.\nXS: Shoulder 42 cm, Bust 92 cm, Sleeve 18 cm, Length 64 cm.\nS: Shoulder 44 cm, Bust 96 cm, Sleeve 19 cm, Length 66 cm.\nM: Shoulder 46 cm, Bust 100 cm, Sleeve 19 cm, Length 68 cm.\nL: Shoulder 50 cm, Bust 104 cm, Sleeve 20 cm, Length 70 cm.\nXL: Shoulder 52 cm, Bust 108 cm, Sleeve 20 cm, Length 72 cm.\n2XL: Shoulder 54 cm, Bust 114 cm, Sleeve 21 cm, Length 74 cm.\n3XL: Shoulder 57 cm, Bust 120 cm, Sleeve 22 cm, Length 76 cm.\n4XL: Shoulder 60 cm, Bust 126 cm, Sleeve 23 cm, Length 78 cm.\n5XL: Shoulder 62 cm, Bust 132 cm, Sleeve 24 cm, Length 80 cm.\n6XL: Shoulder 64 cm, Bust 138 cm, Sleeve 25 cm, Length 82 cm.  \nNotes: Please carefully check the size chart before purchasing. Due to manual measurement, please allow a 2–3 cm difference. The actual color may vary slightly due to lighting and screen settings.",
+            "dangerInfo": {
+              "isDangerous": false
+            },
+            "attributes": {
+              "material": "Polyster"
+            }
+          }
+        },
+        {
+          "id": "tpl_1788610975396_1",
+          "name": "童装卫衣套装棉",
+          "defaults": {
+            "currency": "USD",
+            "priceMode": "fixed",
+            "priceMultiplier": 1,
+            "fixedPrice": 18,
+            "inventory": 999,
+            "msrPrice": 40,
+            "shippingWeight": 0.5,
+            "shippingLength": 10,
+            "shippingWidth": 10,
+            "shippingHeight": 2,
+            "committedFulfillmentDays": 2,
+            "categoryId": "1474913408903469243-42-2-118-2583827489",
+            "targetSizes": [
+              "100",
+              "110",
+              "120",
+              "130",
+              "140",
+              "150",
+              "160"
+            ],
+            "description": "Product type: 2-piece set of children's hoodies and pants\nApplicable season: Autumn and Winter\nApplicable scenarios: General\nManufacture Country: China\nPattern type: Printing\nOuter length: Long\nAge: Ages 3-14 Years Old\nLabel: no\nPants closure type: elastic waist circumference\nMaterial composition: 100% cotton\nCollar: Round neck\nDecoration: None\nStyle: Casual\nSleeve Length: Long Sleeve\nClosure type: None\nOrigin: Chinese Mainland\nWaistline Type: Middle Waistline\nGender: Child\nTag: Yes\nWashing Care: Machine wash at 30C, do not tumble drying\nSize\n100:  bust 60cm, Top length 41cm, waist 42cm, pant length 55cm, hip 68cm \n110:  bust 66cm, Top length 45cm, waist 48cm, pant length 60cm, hip 72cm \n120:  bust 72cm, Top length 48cm, waist 50cm, pant length 67cm, hip 76cm \n130:  bust 78cm, Top length 51cm, waist 52cm, pant length 72cm, hip 82cm\n140:  bust 84cm, Top length 54cm, waist 55cm, pant length 78cm, hip 88cm \n150:  bust 90cm, Top length 58cm, waist 58cm, pant length 85cm, hip 93cm\n160:  bust 96cm, Top length 61cm, waist 62cm, pant length 94cm, hip 97cm \nnote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4.All our products are advertised in size ,  study the size chart before buying.",
+            "dangerInfo": {
+              "isDangerous": false
+            },
+            "attributes": {
+              "material": "cotton",
+              "piecesQuantityPerSet": "2",
+              "manufactureCountry": "china"
+            }
+          }
+        },
+        {
+          "id": "tpl_1788612705598_0",
+          "name": "童装连帽卫衣无拉链棉",
+          "defaults": {
+            "currency": "USD",
+            "priceMode": "fixed",
+            "priceMultiplier": 1,
+            "fixedPrice": 9.99,
+            "inventory": 999,
+            "shippingWeight": 0.28,
+            "shippingLength": 20,
+            "shippingWidth": 20,
+            "shippingHeight": 2,
+            "committedFulfillmentDays": 2,
+            "categoryId": "1605614754933037318-196-2-62735-1604558435",
+            "targetSizes": [
+              "100",
+              "110",
+              "120",
+              "130",
+              "140",
+              "150",
+              "160"
+            ],
+            "description": "Product Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Round Neck\nTop Closure Type: Pullover\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: 100% Cotton\nLabel: Yes\nWashing Care: Machine Wash at 30°C, Do Not Tumble Dry  \nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm  \nNotes:  \nPlease measure yourself carefully according to the size chart before purchasing, thank you!  \nDue to manual measurement, please allow an error of 2–3 cm.  \nDue to differences in lighting and screen settings, the actual product color may vary slightly.  \nPlease carefully review the size chart before purchasing.\n\n",
+            "dangerInfo": {
+              "isDangerous": false
+            },
+            "attributes": {
+              "material": "cotton",
+              "setsQuantity": "1",
+              "piecesQuantity": "1",
+              "manufactureCountry": "china"
+            }
+          }
+        },
+        {
+          "id": "tpl_1788938884901_0",
+          "name": "童装连帽卫衣有拉链",
+          "defaults": {
+            "currency": "USD",
+            "priceMode": "fixed",
+            "priceMultiplier": 1,
+            "fixedPrice": 9.99,
+            "inventory": 999,
+            "shippingWeight": 0.28,
+            "shippingLength": 20,
+            "shippingWidth": 20,
+            "shippingHeight": 2,
+            "committedFulfillmentDays": 2,
+            "categoryId": "1473502947691956288-126-2-118-286289588",
+            "targetSizes": [
+              "100",
+              "110",
+              "120",
+              "130",
+              "140",
+              "150",
+              "160"
+            ],
+            "description": "Product Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Round Neck\nTop Closure Type: Zip-up\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: 100% Cotton\nLabel: Yes\nWashing Care: Machine Wash at 30°C, Do Not Tumble Dry  \nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm  \nNotes:  \nPlease measure yourself carefully according to the size chart before purchasing, thank you!  \nDue to manual measurement, please allow an error of 2–3 cm.  \nDue to differences in lighting and screen settings, the actual product color may vary slightly.  \nPlease carefully review the size chart before purchasing.\n\n",
+            "dangerInfo": {
+              "isDangerous": false
+            },
+            "attributes": {
+              "material": "cotton",
+              "setsQuantity": "1",
+              "piecesQuantity": "1",
+              "manufactureCountry": "china"
+            }
+          }
+        },
+        {
+          "id": "tpl_1789973437530_0",
+          "name": "童短袖聚酯纤维",
+          "defaults": {
+            "currency": "USD",
+            "priceMode": "fixed",
+            "priceMultiplier": 1,
+            "fixedPrice": 5,
+            "inventory": 999,
+            "msrPrice": 7,
+            "shippingWeight": 0.2,
+            "shippingLength": 10,
+            "shippingWidth": 10,
+            "shippingHeight": 2,
+            "committedFulfillmentDays": 2,
+            "categoryId": "1474913408999209670-73-2-118-1571556385",
+            "targetSizes": [
+              "100",
+              "110",
+              "120",
+              "130",
+              "140",
+              "150",
+              "160"
+            ],
+            "description": "Product Type: Kids’ T-Shirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Summer\nNeckline: Round Neck\nClosure Type: Pullover\nClothing Decoration: No Decoration\nLeather Label: No\nSleeve Length: Short Sleeve\nGender: Unisex\nAge Group: Kids\nPattern: Printed\nMaterial:  Polyster\nLabel: Yes\nWashing Care: Do Not Tumble Dry  \nSize Chart:\nSize 100: Length 42 cm, Bust 60 cm, Shoulder 28 cm, Sleeve 39 cm.\nSize 110: Length 45 cm, Bust 66 cm, Shoulder 30 cm, Sleeve 41 cm.\nSize 120: Length 48 cm, Bust 72 cm, Shoulder 32 cm, Sleeve 43 cm.\nSize 130: Length 51 cm, Bust 78 cm, Shoulder 34 cm, Sleeve 45 cm.\nSize 140: Length 54 cm, Bust 84 cm, Shoulder 36 cm, Sleeve 47 cm.\nSize 150: Length 57 cm, Bust 90 cm, Shoulder 38 cm, Sleeve 49 cm.\nSize 160: Length 60 cm, Bust 96 cm, Shoulder 40 cm, Sleeve 51 cm.\nPlease carefully measure your child and compare the measurements with the size chart before purchasing.\nDue to manual measurement, please allow a 2–3 cm deviation.\nThe actual color may vary slightly due to lighting and different screen settings.\nPlease choose the size according to your child’s actual measurements.",
+            "dangerInfo": {
+              "isDangerous": false
+            },
+            "attributes": {
+              "material": "Polyster"
+            }
+          }
+        },
+        {
+          "id": "tpl_1790736344023_0",
+          "name": "成人连帽卫衣无拉链棉",
+          "defaults": {
+            "currency": "USD",
+            "priceMode": "fixed",
+            "priceMultiplier": 1,
+            "fixedPrice": 10,
+            "inventory": 999,
+            "msrPrice": 15,
+            "shippingWeight": 0.42,
+            "shippingLength": 20,
+            "shippingWidth": 20,
+            "shippingHeight": 2,
+            "committedFulfillmentDays": 2,
+            "categoryId": "1473502943153754907-255-2-118-3004891753",
+            "targetSizes": [
+              "S",
+              "M",
+              "L",
+              "XL",
+              "2XL",
+              "3XL"
+            ],
+            "description": "Product Type: Hooded Sweatshirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Round Neck\nTop Closure Type: Pullovers\nSleeve Length: Long Sleeve\nGender: Unisex\nAge: Adults\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine Wash at 30°C, Do Not Tumble Dry  \nSize:\nS: Length 66 cm, Bust 96 cm, Waist Not specified, Shoulder 46 cm\nM: Length 68 cm, Bust 100 cm, Waist Not specified, Shoulder 48 cm\nL: Length 70 cm, Bust 104 cm, Waist Not specified, Shoulder 50 cm\nXL: Length 72 cm, Bust 108 cm, Waist Not specified, Shoulder 52 cm\n2XL: Length 74 cm, Bust 112 cm, Waist Not specified, Shoulder 54 cm\n3XL: Length 76 cm, Bust 116 cm, Waist Not specified, Shoulder 56 cm\n\nNotes:  \nPlease measure yourself carefully according to the size chart before purchasing, thank you!  \nDue to manual measurement, please allow an error of 2–3 cm.  \nDue to differences in lighting and screen settings, the actual product color may vary slightly.  \nPlease carefully review the size chart before purchasing.\n\n",
+            "dangerInfo": {
+              "isDangerous": false
+            },
+            "attributes": {
+              "material": "cotton",
+              "setsQuantity": "1",
+              "piecesQuantity": "1",
+              "manufactureCountry": "china"
+            }
+          }
+        },
+        {
+          "id": "tpl_1790737843757_1",
+          "name": "成人连帽卫衣有拉链棉",
+          "defaults": {
+            "currency": "USD",
+            "priceMode": "fixed",
+            "priceMultiplier": 1,
+            "fixedPrice": 9.99,
+            "inventory": 999,
+            "shippingWeight": 0.42,
+            "shippingLength": 20,
+            "shippingWidth": 20,
+            "shippingHeight": 2,
+            "committedFulfillmentDays": 2,
+            "categoryId": "1473502943153754907-255-2-118-3004891753",
+            "targetSizes": [
+              "S",
+              "M",
+              "L",
+              "XL",
+              "2XL",
+              "3XL"
+            ],
+            "description": "Product Type: Hooded Sweatshirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Round Neck\nTop Closure Type:Zip-up\nSleeve Length: Long Sleeve\nGender: Unisex\nAge: Adults\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine Wash at 30°C, Do Not Tumble Dry  \nSize:\nS: Length 66 cm, Bust 96 cm, Waist Not specified, Shoulder 46 cm\nM: Length 68 cm, Bust 100 cm, Waist Not specified, Shoulder 48 cm\nL: Length 70 cm, Bust 104 cm, Waist Not specified, Shoulder 50 cm\nXL: Length 72 cm, Bust 108 cm, Waist Not specified, Shoulder 52 cm\n2XL: Length 74 cm, Bust 112 cm, Waist Not specified, Shoulder 54 cm\n3XL: Length 76 cm, Bust 116 cm, Waist Not specified, Shoulder 56 cm\n\nNotes:  \nPlease measure yourself carefully according to the size chart before purchasing, thank you!  \nDue to manual measurement, please allow an error of 2–3 cm.  \nDue to differences in lighting and screen settings, the actual product color may vary slightly.  \nPlease carefully review the size chart before purchasing.\n\n",
+            "dangerInfo": {
+              "isDangerous": false
+            },
+            "attributes": {
+              "material": "cotton",
+              "setsQuantity": "1",
+              "piecesQuantity": "1",
+              "manufactureCountry": "china"
+            }
+          }
+        },
+        {
+          "id": "tpl_1794037135721_0",
+          "name": "ASOS成人连帽卫衣无拉链棉",
+          "defaults": {
+            "currency": "USD",
+            "priceMode": "fixed",
+            "priceMultiplier": 1,
+            "fixedPrice": 13,
+            "inventory": 999,
+            "msrPrice": 20,
+            "shippingWeight": 0.4,
+            "shippingLength": 20,
+            "shippingWidth": 20,
+            "shippingHeight": 2,
+            "committedFulfillmentDays": 2,
+            "categoryId": "1473502943153754907-255-2-118-3004891753",
+            "targetSizes": [
+              "S",
+              "M",
+              "L",
+              "XL",
+              "2XL",
+              "3XL"
+            ],
+            "description": "Product Type: Hooded Sweatshirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Round Neck\nTop Closure Type: Pullovers\nSleeve Length: Long Sleeve\nGender: Unisex\nAge: Adults\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine Wash at 30°C, Do Not Tumble Dry  \nSize:\nS: Length 66 cm, Bust 96 cm, Waist Not specified, Shoulder 46 cm\nM: Length 68 cm, Bust 100 cm, Waist Not specified, Shoulder 48 cm\nL: Length 70 cm, Bust 104 cm, Waist Not specified, Shoulder 50 cm\nXL: Length 72 cm, Bust 108 cm, Waist Not specified, Shoulder 52 cm\n2XL: Length 74 cm, Bust 112 cm, Waist Not specified, Shoulder 54 cm\n3XL: Length 76 cm, Bust 116 cm, Waist Not specified, Shoulder 56 cm\n\nNotes:  \nPlease measure yourself carefully according to the size chart before purchasing, thank you!  \nDue to manual measurement, please allow an error of 2–3 cm.  \nDue to differences in lighting and screen settings, the actual product color may vary slightly.  \nPlease carefully review the size chart before purchasing.\n\n",
+            "dangerInfo": {
+              "isDangerous": false
+            },
+            "attributes": {
+              "material": "cotton",
+              "setsQuantity": "1",
+              "piecesQuantity": "1",
+              "manufactureCountry": "china"
+            }
+          }
+        },
+        {
+          "id": "tpl_1794184307034_0",
+          "name": "成人连帽卫衣无拉链polyster",
+          "defaults": {
+            "currency": "USD",
+            "priceMode": "fixed",
+            "priceMultiplier": 1,
+            "fixedPrice": 9,
+            "inventory": 999,
+            "msrPrice": 15,
+            "shippingWeight": 0.42,
+            "shippingLength": 20,
+            "shippingWidth": 20,
+            "shippingHeight": 2,
+            "committedFulfillmentDays": 2,
+            "categoryId": "1473502943153754907-255-2-118-3004891753",
+            "targetSizes": [
+              "S",
+              "M",
+              "L",
+              "XL",
+              "2XL",
+              "3XL"
+            ],
+            "description": "Product Type: Hooded Sweatshirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Round Neck\nTop Closure Type: Pullovers\nSleeve Length: Long Sleeve\nGender: Unisex\nAge: Adults\nPattern Type: Printed\nMaterial: Polyster\nLabel: Yes\nWashing Care: Machine Wash at 30°C, Do Not Tumble Dry  \nSize:\nSize: S, Length: 67cm, Bust: 100cm, Waist: 96cm, Shoulder: 46cm\nSize: M, Length: 69cm, Bust: 104cm, Waist: 100cm, Shoulder: 48cm\nSize: L, Length: 71cm, Bust: 108cm, Waist: 104cm, Shoulder: 50cm\nSize: XL, Length: 73cm, Bust: 112cm, Waist: 108cm, Shoulder: 52cm\nSize: 2XL, Length: 75cm, Bust: 116cm, Waist: 112cm, Shoulder: 54cm\nSize: 3XL, Length: 77cm, Bust: 120cm, Waist: 116cm, Shoulder: 56cm\nSize: 4XL, Length: 79cm, Bust: 124cm, Waist: 120cm, Shoulder: 58cm\nSize: 5XL, Length: 81cm, Bust: 128cm, Waist: 124cm, Shoulder: 60cm\nSize: 6XL, Length: 83cm, Bust: 132cm, Waist: 128cm, Shoulder: 62cm\nNotes:  \nPlease measure yourself carefully according to the size chart before purchasing, thank you!  \nDue to manual measurement, please allow an error of 2–3 cm.  \nDue to differences in lighting and screen settings, the actual product color may vary slightly.  \nPlease carefully review the size chart before purchasing.\n\n",
+            "dangerInfo": {
+              "isDangerous": false
+            },
+            "attributes": {
+              "material": "cotton",
+              "setsQuantity": "1",
+              "piecesQuantity": "1",
+              "manufactureCountry": "china"
+            }
+          }
+        },
+        {
+          "id": "tpl_1794185569212_1",
+          "name": "童装连帽卫衣无拉链polyster",
+          "defaults": {
+            "currency": "USD",
+            "priceMode": "fixed",
+            "priceMultiplier": 1,
+            "fixedPrice": 9.99,
+            "inventory": 999,
+            "shippingWeight": 0.28,
+            "shippingLength": 20,
+            "shippingWidth": 20,
+            "shippingHeight": 2,
+            "committedFulfillmentDays": 2,
+            "categoryId": "1605614754933037318-196-2-62735-1604558435",
+            "targetSizes": [
+              "100",
+              "110",
+              "120",
+              "130",
+              "140",
+              "150",
+              "160"
+            ],
+            "description": "Product Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Round Neck\nTop Closure Type: Pullover\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: polyster\nLabel: Yes\nWashing Care: Machine Wash at 30°C, Do Not Tumble Dry  \nSize:\nSize: 100cm, Bust: 32cm, Height: 90–105cm, Length: 44cm, Shoulder: 28cm, Sleeve Length: 42cm\nSize: 110cm, Bust: 34cm, Height: 105–115cm, Length: 46cm, Shoulder: 30cm, Sleeve Length: 44cm\nSize: 120cm, Bust: 38cm, Height: 115–125cm, Length: 50cm, Shoulder: 32cm, Sleeve Length: 47cm\nSize: 130cm, Bust: 40cm, Height: 125–135cm, Length: 52cm, Shoulder: 34cm, Sleeve Length: 49cm\nSize: 140cm, Bust: 42cm, Height: 135–145cm, Length: 55cm, Shoulder: 36cm, Sleeve Length: 51cm\nSize: 150cm, Bust: 44cm, Height: 145–155cm, Length: 58cm, Shoulder: 38cm, Sleeve Length: 55cm\nSize: 160cm, Bust: 46cm, Height: 150–160cm, Length: 61cm, Shoulder: 40cm, Sleeve Length: 56cm\nNotes:  \nPlease measure yourself carefully according to the size chart before purchasing, thank you!  \nDue to manual measurement, please allow an error of 2–3 cm.  \nDue to differences in lighting and screen settings, the actual product color may vary slightly.  \nPlease carefully review the size chart before purchasing.\n\n",
+            "dangerInfo": {
+              "isDangerous": false
+            },
+            "attributes": {
+              "material": "cotton",
+              "setsQuantity": "1",
+              "piecesQuantity": "1",
+              "manufactureCountry": "china"
+            }
+          }
+        },
+        {
+          "id": "tpl_1794187021663_0",
+          "name": "成人圆领卫衣无拉链polyster",
+          "defaults": {
+            "currency": "USD",
+            "priceMode": "fixed",
+            "priceMultiplier": 1,
+            "fixedPrice": 13,
+            "inventory": 999,
+            "msrPrice": 15,
+            "shippingWeight": 0.36,
+            "shippingLength": 20,
+            "shippingWidth": 20,
+            "shippingHeight": 2,
+            "committedFulfillmentDays": 2,
+            "categoryId": "1473502943153754907-255-2-118-3004891753",
+            "targetSizes": [
+              "S",
+              "M",
+              "L",
+              "XL",
+              "2XL",
+              "3XL"
+            ],
+            "description": "Product Type: Crewneck Sweatshirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Round Neck\nTop Closure Type: Pullovers\nSleeve Length: Long Sleeve\nGender: Unisex\nAge: Adults\nPattern Type: Printed\nMaterial: Polyster\nLabel: Yes\nWashing Care: Machine Wash at 30°C, Do Not Tumble Dry  \nSize:\nSize: M, Length: 64cm, Bust: 48cm, Waist: 46cm, Shoulder: 45cm\nSize: L, Length: 66cm, Bust: 50cm, Waist: 48cm, Shoulder: 47cm\nSize: XL, Length: 68cm, Bust: 52cm, Waist: 50cm, Shoulder: 49cm\nSize: 2XL, Length: 70cm, Bust: 54cm, Waist: 52cm, Shoulder: 51cm\nSize: 3XL, Length: 71.5cm, Bust: 56cm, Waist: 54cm, Shoulder: 53cm\nSize: 4XL, Length: 73cm, Bust: 58cm, Waist: 56cm, Shoulder: 55cm\nSize: 5XL, Length: 74.5cm, Bust: 60cm, Waist: 58cm, Shoulder: 57cm\n\nNotes:  \nPlease measure yourself carefully according to the size chart before purchasing, thank you!  \nDue to manual measurement, please allow an error of 2–3 cm.  \nDue to differences in lighting and screen settings, the actual product color may vary slightly.  \nPlease carefully review the size chart before purchasing.\n\n",
+            "dangerInfo": {
+              "isDangerous": false
+            },
+            "attributes": {
+              "material": "cotton",
+              "setsQuantity": "1",
+              "piecesQuantity": "1",
+              "manufactureCountry": "china"
+            }
+          }
+        }
+      ],
+      "activeId": "tpl_1790736344023_0",
+      "sizeTemplates": [
+        {
+          "id": "men-standard",
+          "name": "男装 2XS-3XL",
+          "sizes": [
+            "2XS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL",
+            "3XL"
+          ]
+        },
+        {
+          "id": "men-plus",
+          "name": "男装加大 2XS-6XL",
+          "sizes": [
+            "2XS",
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL",
+            "2XL",
+            "3XL",
+            "4XL",
+            "5XL",
+            "6XL"
+          ]
+        },
+        {
+          "id": "kids-top",
+          "name": "童装上衣 100-160",
+          "sizes": [
+            "100",
+            "110",
+            "120",
+            "130",
+            "140",
+            "150",
+            "160"
+          ]
+        }
+      ],
+      "categoryFavorites": [
+        {
+          "id": "tpl_1787491638282_0",
+          "name": "中性童装",
+          "categoryId": "1474913408999209670-73-2-118-1571556385"
+        },
+        {
+          "id": "tpl_1788610928049_0",
+          "name": "童装卫衣套装",
+          "categoryId": "1605614754933037318-196-2-62735-1604558435"
+        },
+        {
+          "id": "tpl_1788611480716_2",
+          "name": "童装卫衣套装",
+          "categoryId": "1474913408903469243-42-2-118-2583827489"
+        },
+        {
+          "id": "tpl_1788689201782_0",
+          "name": "tshirt",
+          "categoryId": "1473502947697243574-128-2-118-2775194205"
+        },
+        {
+          "id": "tpl_1790736952901_0",
+          "name": "成人连帽卫衣",
+          "categoryId": "1473502947691956288-126-2-118-286289588"
+        }
+      ],
+      "categoryAttributeTemplates": []
+    },
+    "groupTemplateBindings": [
+      {
+        "groupId": "men-short",
+        "material": "cotton",
+        "templateId": "default"
+      },
+      {
+        "groupId": "men-sweat",
+        "material": "all",
+        "templateId": "tpl_1790736344023_0"
+      },
+      {
+        "groupId": "men-short",
+        "material": "all",
+        "templateId": "default"
+      },
+      {
+        "groupId": "kids-sweat",
+        "material": "all",
+        "templateId": "tpl_1787322369866_0"
+      },
+      {
+        "groupId": "kids-short",
+        "material": "all",
+        "templateId": "tpl_1787322369866_0"
+      }
+    ],
+    "mercadolibreTemplates": [
+      {
+        "id": "ml_tpl_1789827659663_y2ichi",
+        "name": "童装tshirt 棉",
+        "siteIds": [
+          "MLC",
+          "MLM",
+          "MCO"
+        ],
+        "descriptionTemplate": "Kids' T-Shirt 100% Cotton - Premium Quality\nGive your little ones ultimate comfort and style with our high-quality cotton kids tee! Created with the softness children need for their daily adventures, this garment delivers long-lasting wear, breathability and a relaxed, comfortable fit.\nWhy choose our kids’ t-shirt?\n● 100% Pure Cotton: Feel the unbeatable softness of natural cotton. Our tee features premium fabric, excellent air permeability and hypoallergenic material that is gentle on children’s skin, perfect for everyday wear.\n● Premium Grade Fabric: Pure cotton keeps kids cool in summer and cozy all year round.\n● Built to Last: Made to stand up to kids’ active lifestyles and frequent washing, the fabric stays in great condition without fading or deforming.\n● Relaxed Comfort Fit: Versatile loose cut, ideal for playing, school activities and sports.\n● Customizable Design: Support custom printing patterns and multiple clothing color options, you can create exclusive styles for your kids.\nFast Shipping Promise\nWe know you want your order as soon as possible! We guarantee your order will be shipped out within 24 hours after payment confirmation.\nSatisfaction Guarantee\n● 30-Day Manufacturer Warranty: We stand fully behind the quality of our products.\n● Buyer Protection: Get exactly what you ordered, or we’ll refund your payment.\n● Free Returns: You have 30 days after receiving the item to request exchanges or full refunds.\nSIZE GUIDE (Measurements in CM)\nTo pick the perfect size, measure a well-fitting t-shirt your child already owns and compare it to our size chart below:\nSize 100: Length 41 cm | Bust 32 cm | Height 100 cm | Weight 10–15 kg\nSize 110: Length 44 cm | Bust 34 cm | Height 110 cm | Weight 15–17.5 kg\nSize 120: Length 47 cm | Bust 36 cm | Height 120 cm | Weight 17.5–22.5 kg\nSize 130: Length 50 cm | Bust 38 cm | Height 130 cm | Weight 22.5–27.5 kg\nSize 140: Length 53 cm | Bust 40 cm | Height 140 cm | Weight 27.5–32.5 kg\nSize 150: Length 57 cm | Bust 42 cm | Height 150 cm | Weight 32.5–40 kg\nSize 160: Length 60 cm | Bust 44 cm | Height 160 cm | Weight 40–50 kg\nNote: All measurements are taken manually, a slight deviation of 1–2 cm may occur.\n",
+        "attributes": [],
+        "currency": "USD",
+        "logisticType": "remote",
+        "priceMode": "net_proceeds",
+        "priceValue": 27.99,
+        "language": "spanish"
+      }
+    ],
+    "aliexpress_auto_fill": {
+      "fields": [
+        {
+          "id": "titleMaxChars",
+          "group": "标题与基础",
+          "label": "标题上限",
+          "value": "128",
+          "enabled": true,
+          "kind": "number",
+          "help": "超过此字符数时自动截短。"
+        },
+        {
+          "id": "sizeList",
+          "group": "标题与基础",
+          "label": "目标尺码",
+          "value": "XXS|XS|S|M|L|XL|XXL|XXXL",
+          "enabled": true,
+          "kind": "text",
+          "help": "用 | 分隔尺码，顺序即 ERP 显示顺序。"
+        },
+        {
+          "id": "categoryPath",
+          "group": "分类与基础",
+          "label": "产品分类路径",
+          "value": "男装|上衣，T恤|T恤",
+          "enabled": true,
+          "kind": "text",
+          "help": "从一级到末级分类用 | 分隔；当前页面分类不一致时自动选择。"
+        },
+        {
+          "id": "brand",
+          "group": "商品属性",
+          "label": "品牌",
+          "value": "NONE",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "origin",
+          "group": "商品属性",
+          "label": "产地",
+          "value": "中国大陆|Mainland China",
+          "enabled": true,
+          "kind": "text",
+          "help": "多个可匹配选项用 | 分隔。"
+        },
+        {
+          "id": "province",
+          "group": "商品属性",
+          "label": "中国省份",
+          "value": "江西|Jiangxi",
+          "enabled": true,
+          "kind": "text",
+          "help": "多个可匹配选项用 | 分隔。"
+        },
+        {
+          "id": "sleeveLength",
+          "group": "商品属性",
+          "label": "袖长(cm)",
+          "value": "短款（4-16inch）|Short (4 - 16 Inch)",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "style",
+          "group": "商品属性",
+          "label": "风格",
+          "value": "休闲|Casual",
+          "enabled": true,
+          "kind": "text",
+          "help": "多个可匹配选项用 | 分隔。"
+        },
+        {
+          "id": "material",
+          "group": "商品属性",
+          "label": "材质",
+          "value": "COTTON",
+          "enabled": true,
+          "kind": "text",
+          "help": "自动流程仅对棉质 T 恤应用当前比例。"
+        },
+        {
+          "id": "scene",
+          "group": "商品属性",
+          "label": "适用场景",
+          "value": "Daily",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "season",
+          "group": "商品属性",
+          "label": "适用季节",
+          "value": "夏季|summer",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "knit",
+          "group": "商品属性",
+          "label": "编织工艺",
+          "value": "针织|Knit",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "features",
+          "group": "商品属性",
+          "label": "特殊功能",
+          "value": "可拉伸|可持续|防皱",
+          "enabled": true,
+          "kind": "text",
+          "help": "多选项会全部勾选。"
+        },
+        {
+          "id": "chemicals",
+          "group": "商品属性",
+          "label": "高关注化学品",
+          "value": "无",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "care",
+          "group": "商品属性",
+          "label": "产品保养说明",
+          "value": "机洗|Machine Wash",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "gender",
+          "group": "商品属性",
+          "label": "性别",
+          "value": "男性|Men",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "topType",
+          "group": "商品属性",
+          "label": "上衣类型",
+          "value": "T恤|TEES",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "productType",
+          "group": "商品属性",
+          "label": "产品类型",
+          "value": "tops",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "collar",
+          "group": "商品属性",
+          "label": "领型",
+          "value": "圆领|O-Neck",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "pattern",
+          "group": "商品属性",
+          "label": "图案类型",
+          "value": "印花",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "hood",
+          "group": "商品属性",
+          "label": "是否带帽",
+          "value": "无帽|No",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "fabricType",
+          "group": "商品属性",
+          "label": "面料类型",
+          "value": "细平布|Broadcloth",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标选项。"
+        },
+        {
+          "id": "shippingTemplate",
+          "group": "模板与资质",
+          "label": "运费模板",
+          "value": "copy copy copy copy copy 人民币20.9预算模板",
+          "enabled": true,
+          "kind": "text",
+          "help": "匹配人民币20.9预算模板；ERP显示的copy前缀数量可能变化。"
+        },
+        {
+          "id": "serviceTemplate",
+          "group": "模板与资质",
+          "label": "服务模板",
+          "value": "Service Template for New Sellers",
+          "enabled": true,
+          "kind": "text",
+          "help": "必须与当前账号中的模板名称一致。"
+        },
+        {
+          "id": "euResponsible",
+          "group": "模板与资质",
+          "label": "欧盟责任人",
+          "value": "Jiang Weijia",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标账号中已维护的责任人。"
+        },
+        {
+          "id": "manufacturer",
+          "group": "模板与资质",
+          "label": "关联制造商",
+          "value": "Lead shan county qixie century trading co., ltd",
+          "enabled": true,
+          "kind": "text",
+          "help": "目标账号中已维护的制造商。"
+        },
+        {
+          "id": "physicalLabel",
+          "group": "模板与资质",
+          "label": "纺织品实物标签",
+          "value": "assets/physical-label.png",
+          "enabled": true,
+          "kind": "text",
+          "help": "扩展内图片资源路径；替换图片文件后重载扩展即可。"
+        },
+        {
+          "id": "materialRatio",
+          "group": "成分信息",
+          "label": "棉质成分比例(%)",
+          "value": "100",
+          "enabled": true,
+          "kind": "number",
+          "help": "检测到 COTTON 后，自动移除其他已选材质并设置此比例。"
+        },
+        {
+          "id": "euFiberComposition",
+          "group": "成分信息",
+          "label": "欧盟纺织纤维成分",
+          "value": "100% cotton",
+          "enabled": true,
+          "kind": "text",
+          "help": "将填写到欧盟纺织纤维成分字段。"
+        },
+        {
+          "id": "price",
+          "group": "价格与库存",
+          "label": "零售价(CNY)",
+          "value": "85",
+          "enabled": true,
+          "kind": "number",
+          "help": "批量填写到所有 SKU。"
+        },
+        {
+          "id": "cargoValue",
+          "group": "价格与库存",
+          "label": "货值(CNY)",
+          "value": "45",
+          "enabled": true,
+          "kind": "number",
+          "help": "批量填写到所有 SKU。"
+        },
+        {
+          "id": "inventory",
+          "group": "价格与库存",
+          "label": "库存",
+          "value": "999",
+          "enabled": true,
+          "kind": "number",
+          "help": "批量填写到所有 SKU。"
+        },
+        {
+          "id": "skuWeight",
+          "group": "包裹与物流",
+          "label": "SKU重量(kg)",
+          "value": "0.22",
+          "enabled": true,
+          "kind": "number",
+          "help": "每个 SKU 的重量。"
+        },
+        {
+          "id": "skuDimensions",
+          "group": "包裹与物流",
+          "label": "SKU尺寸(cm)",
+          "value": "20|20|2",
+          "enabled": true,
+          "kind": "text",
+          "help": "长|宽|高。"
+        },
+        {
+          "id": "packageWeight",
+          "group": "包裹与物流",
+          "label": "包装后重量(kg)",
+          "value": "0.22",
+          "enabled": true,
+          "kind": "number",
+          "help": "包装与物流区域的重量。"
+        },
+        {
+          "id": "packageDimensions",
+          "group": "包裹与物流",
+          "label": "包装后尺寸(cm)",
+          "value": "15|15|2",
+          "enabled": true,
+          "kind": "text",
+          "help": "长|宽|高。"
+        }
+      ],
+      "updatedAt": "2026-11-15T12:03:20.349Z"
+    },
+    "order_export_profiles": [
+      {
+        "id": "daily",
+        "name": "每日发厂",
+        "layout": "file-per-material",
+        "fileName": "{date}_{material}_{platform}订单",
+        "buckets": [
+          {
+            "material": "cotton",
+            "label": "棉"
+          },
+          {
+            "material": "polyester",
+            "label": "聚酯纤维"
+          }
+        ],
+        "unknown": {
+          "handling": "separate",
+          "label": "待确认"
+        },
+        "columns": [
+          "platform",
+          "shop",
+          "orderId",
+          "orderedAt",
+          "status",
+          "material",
+          "productSku",
+          "variantSku",
+          "title",
+          "color",
+          "size",
+          "quantity",
+          "imageUrl",
+          "recipient",
+          "phone",
+          "country",
+          "state",
+          "city",
+          "address",
+          "zipCode",
+          "carrier",
+          "trackingNumber",
+          "materialEvidence",
+          "note"
+        ],
+        "defaults": {
+          "shops": [],
+          "statuses": [
+            "to_ship"
+          ],
+          "onlyNew": true
+        },
+        "updatedAt": "2026-11-16T03:00:47.547Z"
+      }
+    ]
+  }
+}

@@ -5,12 +5,16 @@ import { getDb } from './db/index.js';
 import { logger } from './util/logger.js';
 import { publishJobService } from './services/publish-job-service.js';
 import { joomVideoService } from './services/joom-video-service.js';
+import { orderSyncService } from './orders/sync-service.js';
+import { orderExportService } from './orders/export-service.js';
 
 function main() {
   getDb(); // 初始化数据库 + 迁移
   bootstrap(); // 注册扩展点
   publishJobService.start();
   joomVideoService.start();
+  orderSyncService.start();
+  orderExportService.cleanupExpired();
   const app = createApp();
   app.listen(config.port, () => {
     logger.info(`server 已启动`, {
