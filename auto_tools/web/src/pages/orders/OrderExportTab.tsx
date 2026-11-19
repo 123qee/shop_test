@@ -19,11 +19,10 @@ import {
 } from '@shared/orders';
 import type { ProductMaterial } from '@shared/types';
 import { GarmentCards } from './GarmentCards';
-import { downloadFiles } from './download-files';
+import { retryOrderExportFile, startOrderExport } from './export-task';
 import { materialLabel } from '@shared/product-grouping';
 import { api } from '../../api';
 import { showFeedback } from '../../feedback';
-import { PlannerIcon } from '../planner/PlannerIcon';
 import {
   describeProfile,
   errorMessage,
@@ -41,11 +40,13 @@ const POLL_MS = 800;
 
 interface Props {
   profiles: OrderExportProfile[];
-  onExported: (record: OrderExportRecord) => void;
+  active: boolean;
+  exporting: boolean;
+  exportedId?: string;
   onManageProfiles: () => void;
 }
 
-export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props) {
+export function OrderExportTab({ profiles, active, exporting, exportedId, onManageProfiles }: Props) {
   const [sources, setSources] = useState<OrderSourcesResponse | null>(null);
   const [sourcesError, setSourcesError] = useState('');
   const [profileId, setProfileId] = useState(() => readStored(PROFILE_STORAGE_KEY));
@@ -66,13 +67,9 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
   const [preview, setPreview] = useState<OrderPreview | null>(null);
   const [previewing, setPreviewing] = useState(false);
   const [previewError, setPreviewError] = useState('');
-  const [exporting, setExporting] = useState(false);
-  const [result, setResult] = useState<OrderExportRecord | null>(null);
-  const [downloading, setDownloading] = useState(false);
-  const [downloadFailedIds, setDownloadFailedIds] = useState<string[]>([]);
   const mounted = useRef(true);
   const previewSeq = useRef(0);
-  const appliedProfile = useRef('');
+  const appliedProfile = useRef<OrderExportProfile>();
   const hasPreview = useRef(false);
 
   // 挂载时也要置 true：开发模式的 StrictMode 会先模拟一次卸载再挂载
@@ -95,24 +92,37 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
   }, []);
 
   useEffect(() => {
-    void loadSources();
-  }, [loadSources]);
+    if (active) void loadSources();
+  }, [active, exportedId, loadSources]);
+
+  useEffect(() => {
+    if (!active) return;
+    const stored = readStored(PROFILE_STORAGE_KEY);
+    if (stored && profiles.some((item) => item.id === stored)) setProfileId(stored);
+  }, [active, profiles]);
 
   const allShops = useMemo(() => sources?.platforms.flatMap((platform) => platform.shops) ?? [], [sources]);
 
   // 切换方案时套用该方案记住的店铺和条件；没记住店铺时默认勾选全部已授权店铺
   useEffect(() => {
-    if (!profile || !sources || appliedProfile.current === profile.id) return;
-    appliedProfile.current = profile.id;
+    if (!profile || !sources) return;
+    const previous = appliedProfile.current;
+    appliedProfile.current = profile;
+    const sameProfile = previous?.id === profile.id;
+    if (sameProfile && JSON.stringify(previous.defaults) === JSON.stringify(profile.defaults)) return;
     const connected = allShops.filter((shop) => shop.connected).map(shopRefKey);
     const remembered = profile.defaults.shops.map(shopRefKey).filter((key) => connected.includes(key));
     setShopKeys(new Set(remembered.length ? remembered : connected));
     setStatuses(new Set(profile.defaults.statuses));
     setOnlyNew(profile.defaults.onlyNew);
+    if (sameProfile) return;
     setOverrides({});
     setSelectedImages({});
+    previewSeq.current++;
+    hasPreview.current = false;
     setPreview(null);
-    setResult(null);
+    setPreviewing(false);
+    setPreviewError('');
     setSyncJob(null);
   }, [profile, sources, allShops]);
 
@@ -134,7 +144,7 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
       selectedImages,
     };
   }, [profile, shopKeys, statuses, range, onlyNew, overrides, selectedImages]);
-  const queryKey = JSON.stringify(query);
+  const queryKey = JSON.stringify([query, profile?.updatedAt, exportedId]);
 
   const invalidReason = !query
     ? '请先在「高级设置」里创建导出方案'
@@ -154,14 +164,14 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
       const data = await api.previewOrders(input);
       if (seq === previewSeq.current && mounted.current) {
         setPreview(data);
-        setPreviewQueryKey(JSON.stringify(input));
+        setPreviewQueryKey(JSON.stringify([input, profile?.updatedAt, exportedId]));
       }
     } catch (error) {
       if (seq === previewSeq.current && mounted.current) setPreviewError(errorMessage(error));
     } finally {
       if (seq === previewSeq.current && mounted.current) setPreviewing(false);
     }
-  }, []);
+  }, [profile?.updatedAt, exportedId]);
 
   useEffect(() => {
     hasPreview.current = Boolean(preview);
@@ -169,11 +179,12 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
 
   // 已经预览过时，条件一改就用本地数据自动刷新预览（不重新同步）
   useEffect(() => {
-    if (!hasPreview.current || !query || invalidReason) return;
+    if (!active || !hasPreview.current || !query || invalidReason) return;
+    setPreviewing(true);
     const timer = window.setTimeout(() => void runPreview(query), 250);
     return () => window.clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [queryKey]);
+  }, [active, queryKey]);
 
   async function syncAndPreview() {
     if (!query || invalidReason) {
@@ -181,7 +192,6 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
       return;
     }
     setSyncing(true);
-    setResult(null);
     try {
       let job = await api.syncOrders(query.shops, query.from);
       setSyncJob(job);
@@ -207,7 +217,6 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
       showFeedback(invalidReason, 'error');
       return;
     }
-    setResult(null);
     await runPreview(query);
   }
 
@@ -228,30 +237,6 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
 
   function changeImages(lines: OrderPreviewLine[], images: string[]) {
     setSelectedImages((current) => ({ ...current, ...Object.fromEntries(lines.map((line) => [line.uid, images])) }));
-  }
-
-  async function runExport() {
-    if (!query || invalidReason) return;
-    setExporting(true);
-    try {
-      const record = await api.exportOrders(query);
-      if (!mounted.current) return;
-      setResult(record);
-      setDownloading(true);
-      setDownloadFailedIds([]);
-      onExported(record);
-      void loadSources();
-      const failed = await downloadFiles(record.files.map((file) => ({ id: file.id, name: file.name, url: api.orderExportFileUrl(record.id, file.id) })));
-      if (!mounted.current) return;
-      setDownloadFailedIds(failed);
-      setDownloading(false);
-      showFeedback(failed.length ? `已导出，${failed.length} 个文件下载失败，请在结果中重试下载` : `已自动开始下载 ${record.files.length} 个 Excel 文件`, failed.length ? 'error' : 'success');
-      await runPreview(query);
-    } catch (error) {
-      showFeedback(errorMessage(error), 'error');
-    } finally {
-      if (mounted.current) { setExporting(false); setDownloading(false); }
-    }
   }
 
   function toggleShop(key: string, on: boolean) {
@@ -275,7 +260,7 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
   const busy = syncing || exporting;
 
   return (
-    <div className="orders-export">
+    <div className="orders-export" hidden={!active}>
       <section className="orders-card">
         <div className="orders-preview-head"><div><h3>1. 选择店铺，同步订单</h3><span className="orders-hint">默认导出待发货、未导出订单。看图选择需要的图片，未确定材质的衣服会自动跳过。</span></div></div>
         <div className="orders-row">
@@ -408,11 +393,10 @@ export function OrderExportTab({ profiles, onExported, onManageProfiles }: Props
           onChangeMaterial={(lines, material) => void changeMaterial(lines, material)}
           onChangeImages={changeImages}
           disabled={busy || savingMaterial}
-          onExport={() => void runExport()}
+          onExport={() => { if (query && !invalidReason) void startOrderExport(query); }}
         />
       )}
 
-      {result && <ExportResult record={result} downloading={downloading} downloadFailedIds={downloadFailedIds} />}
     </div>
   );
 }
@@ -514,13 +498,13 @@ function PreviewPanel({ preview, refreshing, blockedReason, exporting, remember,
   );
 }
 
-function ExportResult({ record, downloading, downloadFailedIds }: { record: OrderExportRecord; downloading: boolean; downloadFailedIds: string[] }) {
+export function ExportResult({ record, downloading, downloadFailedIds }: { record: OrderExportRecord; downloading: boolean; downloadFailedIds: string[] }) {
   return (
     <section className="orders-card orders-result">
       <div className="orders-result-head">
         <span className="orders-result-icon" aria-hidden="true">✓</span>
         <div>
-          <h3>{downloadFailedIds.length ? `${downloadFailedIds.length} 个文件下载失败` : `${downloading ? '正在自动下载' : '已开始自动下载'} ${record.files.length} 个文件`}</h3>
+          <h3 role="status">{`已生成 ${record.files.length} 个 Excel 文件`}{downloading ? ' · 正在下载' : downloadFailedIds.length ? ` · ${downloadFailedIds.length} 个下载失败` : ' · 已开始下载'}</h3>
           <span className="orders-hint">
             {formatChinaDateTime(record.createdAt)} · 方案「{record.profileName}」 · 这些订单已标记为导出过
           </span>
@@ -533,8 +517,8 @@ function ExportResult({ record, downloading, downloadFailedIds }: { record: Orde
             <span className="orders-file-name">{file.name}</span>
             <span className="orders-hint">{file.orderCount} 单 · {file.quantity} 件 · {fileSize(file.size)}</span>
             {downloadFailedIds.includes(file.id)
-              ? <a className="orders-link-button ghost" href={api.orderExportFileUrl(record.id, file.id)} download>重试下载</a>
-              : <span className="orders-hint">{downloading ? '自动下载中…' : '已开始下载'}</span>}
+              ? <button type="button" className="ghost orders-small" disabled={downloading} onClick={() => void retryOrderExportFile(file)}>重试下载</button>
+              : <a className="orders-link-button ghost" href={api.orderExportFileUrl(record.id, file.id)} download={file.name}>下载文件</a>}
           </li>
         ))}
       </ul>

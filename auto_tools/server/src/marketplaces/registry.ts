@@ -1,4 +1,4 @@
-import type { MarketplaceAdapter } from './types.js';
+import { MarketplaceError, type MarketplaceAdapter } from './types.js';
 
 /** 目标平台注册表。加平台时在 index.ts 里 register 即可。 */
 class MarketplaceRegistry {
@@ -13,10 +13,12 @@ class MarketplaceRegistry {
   }
 
   /** 取出唯一/默认平台(当前只有 Joom);多平台时按 id 取。 */
-  require(id: string): MarketplaceAdapter {
+  require(id: string, shopId?: string): MarketplaceAdapter {
     const a = this.adapters.get(id);
     if (!a) throw new Error(`未注册的目标平台: ${id}`);
-    return a;
+    if (!shopId) return a;
+    if (!a.forShop) throw new MarketplaceError(`${a.name} 无法绑定目标店铺`);
+    return a.forShop(shopId);
   }
 
   list(): MarketplaceAdapter[] {

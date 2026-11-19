@@ -8,14 +8,17 @@ import type {
   ValidationIssue,
 } from '@shared/types';
 import { productRepository, type ProductRepository } from '../repositories/product-repository.js';
+import { joomListingRepository } from '../repositories/joom-listing-repository.js';
 import { marketplaceRegistry } from '../marketplaces/registry.js';
-import { MarketplaceError, type MarketplaceAdapter } from '../marketplaces/types.js';
+import { MarketplaceError, PublishReceiptError, type MarketplaceAdapter } from '../marketplaces/types.js';
+import { getDb } from '../db/index.js';
+import { beginPublishSubmission, finishPublishSubmission, requireNoPendingPublishReview } from './publish-reconciliation.js';
 import { transformPipeline, type TransformPipeline } from '../transforms/pipeline.js';
 import { logger } from '../util/logger.js';
 import { deriveEditable } from './product-service.js';
 import { applyDefaults } from './defaults.js';
 import { settingsService } from './settings-service.js';
-import { shopService } from './shop-service.js';
+import { PublishShopError, shopService } from './shop-service.js';
 import { PublishValidationError, validateForPublish } from './validation.js';
 import { auditService } from './audit-service.js';
 import { loadOfficialJoomColors, normalizeProductColors } from './listing-language.js';
@@ -54,6 +57,17 @@ interface DuplicateVariantPlan {
   repaired: EditableProduct;
 }
 
+function targetListing(record: ProductRecord, shopId?: string) {
+  if (!shopId || !record.joomListings?.length) return undefined;
+  const matches = record.joomListings.filter((entry) => entry.shopId === shopId && entry.present);
+  const listing = matches.find((entry) => entry.joomProductId === record.joomProductId) ?? (matches.length === 1 ? matches[0] : undefined);
+  if (!listing && matches.length > 1) throw new PublishShopError('目标店铺存在多个匹配的刊登，请先核对线上商品 ID。', 409);
+  if (!listing && (record.joomProductId || record.joomListings.some((entry) => entry.present))) {
+    throw new PublishShopError('目标店铺没有该商品的有效刊登，请核对店铺及商品状态后重试。', 409);
+  }
+  return listing;
+}
+
 /**
  * 发布编排:取可编辑数据 -> 过 transform 管线 -> 交给目标平台 adapter 发布 -> 回写状态。
  * 平台无关,通过 registry + adapter 抽象;加平台不改此处。
@@ -65,13 +79,17 @@ export class PublishService {
   ) {}
 
   /** 取商品的可编辑数据(优先 edited,否则采集派生并套用预设)。 */
-  private editableOf(record: ProductRecord): EditableProduct {
+  private editableOf(record: ProductRecord, shopId?: string): EditableProduct {
     const raw = record.edited
       ? record.edited
-      : applyDefaults(deriveEditable(record.collected), settingsService.getDefaultsFor(record.templateId));
+      : applyDefaults(deriveEditable(record.collected), settingsService.getDefaultsFor(record.templateId, shopId));
+    const targetStore = shopService.getStoreId(shopId);
+    if (shopId && !targetStore && raw.storeId && shopService.getConfig().profiles.some((p) => p.id !== shopId && p.storeId === raw.storeId)) {
+      throw new PublishShopError('商品草稿的 storeId 属于其他店铺，请检查草稿中的店铺设置。', 409);
+    }
     return rewriteEditableImages({
       ...raw,
-      storeId: raw.storeId || shopService.getActiveStoreId(),
+      storeId: shopId ? targetStore || raw.storeId : raw.storeId || targetStore,
     });
   }
 
@@ -118,11 +136,11 @@ export class PublishService {
    * 批量发布:顺序执行(尊重 Joom 限流),单个失败不影响其余,返回每项结果。
    * 每个商品仍会先经过发布前校验(publish 内置)。
    */
-  async publishMany(ids: string[], marketplaceId = 'joom'): Promise<BatchPublishItem[]> {
+  async publishMany(ids: string[], marketplaceId = 'joom', shopId = marketplaceId === 'joom' ? shopService.getActiveId() : undefined): Promise<BatchPublishItem[]> {
     const out: BatchPublishItem[] = [];
     for (const id of ids) {
       try {
-        const rec = await this.publish(id, marketplaceId);
+        const rec = await this.publish(id, marketplaceId, shopId);
         out.push({ id, ok: true, joomProductId: rec.joomProductId });
       } catch (e) {
         if (e instanceof PublishValidationError) {
@@ -147,11 +165,12 @@ export class PublishService {
     ids?: string[],
     marketplaceId = 'joom',
     dryRun = false,
+    shopId = marketplaceId === 'joom' ? shopService.getActiveId() : undefined,
   ): Promise<DuplicateVariantRepairItem[]> {
     const records = (ids?.length
       ? ids.map((id) => this.repo.get(id)).filter((record): record is ProductRecord => Boolean(record))
       : this.repo.list().filter(hasDuplicateVariantIssue));
-    const adapter = marketplaceRegistry.require(marketplaceId);
+    const adapter = marketplaceRegistry.require(marketplaceId, shopId);
     if (!(await adapter.isConnected())) {
       throw new MarketplaceError(`尚未连接 ${adapter.name},请先完成授权`);
     }
@@ -161,7 +180,7 @@ export class PublishService {
 
     const out: DuplicateVariantRepairItem[] = [];
     for (const record of records) {
-      out.push(await this.repairDuplicateVariantsOne(record, adapter, marketplaceId, dryRun));
+      out.push(await this.repairDuplicateVariantsOne(record, adapter, marketplaceId, dryRun, shopId));
     }
     return out;
   }
@@ -171,6 +190,7 @@ export class PublishService {
     adapter: MarketplaceAdapter,
     marketplaceId: string,
     dryRun: boolean,
+    shopId?: string,
   ): Promise<DuplicateVariantRepairItem> {
     const base: DuplicateVariantRepairItem = {
       id: record.id,
@@ -182,10 +202,12 @@ export class PublishService {
     };
     let step = '读取线上商品';
     try {
-      if (!record.joomProductId) throw new MarketplaceError('缺少 Joom 商品 id');
+      const remoteId = targetListing(record, shopId)?.joomProductId ?? record.joomProductId;
+      if (!remoteId) throw new MarketplaceError('缺少 Joom 商品 id');
+      base.joomProductId = remoteId;
       if (!adapter.getProduct) throw new MarketplaceError(`${adapter.name} 暂不支持读取商品`);
-      const remoteBefore = await adapter.getProduct({ id: record.joomProductId });
-      const plan = buildDuplicateVariantPlan(this.storedEditableOf(record), remoteBefore.raw);
+      const remoteBefore = await adapter.getProduct({ id: remoteId });
+      const plan = buildDuplicateVariantPlan(this.storedEditableOf(record, shopId), remoteBefore.raw);
       const planned = { ...base, duplicateGroups: plan.duplicateGroups, removeCount: plan.remove.length };
       if (!plan.duplicateGroups) return { ...planned, ok: true, skipped: true, verified: true };
       if (!plan.remove.length) throw new MarketplaceError('发现重复规格，但线上变体缺少可删除的 id/SKU，已跳过');
@@ -193,15 +215,15 @@ export class PublishService {
 
       this.repo.update(record.id, { edited: plan.repaired, status: 'edited', lastError: '' });
       step = '更新 Joom 商品';
-      await this.publish(record.id, marketplaceId);
+      await this.publish(record.id, marketplaceId, shopId);
       step = '删除 Joom 重复变体';
-      await adapter.removeVariants!({ id: record.joomProductId }, plan.remove);
+      await adapter.removeVariants!({ id: remoteId }, plan.remove);
 
       step = '复核线上商品';
-      const remoteAfter = await adapter.getProduct!({ id: record.joomProductId });
+      const remoteAfter = await adapter.getProduct!({ id: remoteId });
       const remaining = countDuplicateVariantGroups(remoteAfter.raw);
       try {
-        await syncService.sync(record.id, marketplaceId);
+        syncService.saveRemoteStatus(record, remoteAfter);
       } catch (syncError) {
         logger.warn('重复变体修复后同步状态失败', { id: record.id, error: (syncError as Error).message });
       }
@@ -219,10 +241,10 @@ export class PublishService {
   }
 
   /** 与 editableOf 相同的数据来源，但不重写图片，避免批量修复改动无关字段。 */
-  private storedEditableOf(record: ProductRecord): EditableProduct {
+  private storedEditableOf(record: ProductRecord, shopId?: string): EditableProduct {
     return record.edited
       ? record.edited
-      : applyDefaults(deriveEditable(record.collected), settingsService.getDefaultsFor(record.templateId));
+      : applyDefaults(deriveEditable(record.collected), settingsService.getDefaultsFor(record.templateId, shopId));
   }
 
   /**
@@ -234,8 +256,9 @@ export class PublishService {
     ids: string[],
     options: { reason: JoomRemoveReason; deleteLocal?: boolean; extraRemoteIds?: string[] },
     marketplaceId = 'joom',
+    shopId = marketplaceId === 'joom' ? shopService.getActiveId() : undefined,
   ): Promise<BatchRemoveRemoteItem[]> {
-    const adapter = marketplaceRegistry.require(marketplaceId);
+    const adapter = marketplaceRegistry.require(marketplaceId, shopId);
     if (!(await adapter.isConnected())) {
       throw new MarketplaceError(`尚未连接 ${adapter.name},请先完成授权`);
     }
@@ -253,7 +276,13 @@ export class PublishService {
         continue;
       }
       const sku = record.edited?.sku || record.collected.generatedSku || record.collected.sourceProductId || '';
-      const joomId = record.joomProductId?.trim() || '';
+      let joomId: string;
+      try {
+        joomId = targetListing(record, shopId)?.joomProductId || record.joomProductId?.trim() || '';
+      } catch (error) {
+        out.push({ id, ok: false, error: formatMarketplaceError(error) });
+        continue;
+      }
       if (!joomId && !sku) {
         out.push({ id, ok: false, error: '没有 Joom 商品 id 或 SKU，无法删除线上商品' });
         continue;
@@ -262,21 +291,27 @@ export class PublishService {
         out.push({ id, ok: false, error: '未发布到 Joom，没有线上商品可删' });
         continue;
       }
-      const item = await this.removeOne(adapter, record, { id: joomId || undefined, sku: joomId ? undefined : sku }, options);
+      const item = await this.removeOne(adapter, record, { id: joomId || undefined, sku: joomId ? undefined : sku }, options, shopId);
       if (joomId) processedRemote.add(joomId);
       out.push(item);
     }
 
+    const localCandidates = options.extraRemoteIds?.length ? this.repo.list() : [];
     for (const remoteId of options.extraRemoteIds ?? []) {
       const joomId = remoteId.trim();
       if (!joomId || processedRemote.has(joomId)) continue;
-      const local = this.repo.list().find((p) => p.joomProductId === joomId);
+      const local = localCandidates.find((p) => p.joomProductId === joomId || p.joomListings?.some((l) => l.joomProductId === joomId));
       if (local && ids.includes(local.id)) continue;
+      if (shopId && local?.joomListings?.length && !local.joomListings.some((l) => l.shopId === shopId && l.joomProductId === joomId && l.present)) {
+        out.push({ id: local.id, joomProductId: joomId, ok: false, error: '指定的线上商品不在目标店铺的有效刊登中' });
+        continue;
+      }
       const item = await this.removeOne(
         adapter,
         local ?? null,
         { id: joomId },
         options,
+        shopId,
         local?.id ?? joomId,
       );
       processedRemote.add(joomId);
@@ -291,6 +326,7 @@ export class PublishService {
     record: ProductRecord | null,
     reference: { id?: string; sku?: string },
     options: { reason: JoomRemoveReason; deleteLocal?: boolean },
+    shopId?: string,
     resultId = record?.id ?? reference.id ?? reference.sku ?? '',
   ): Promise<BatchRemoveRemoteItem> {
     const joomProductId = reference.id || record?.joomProductId;
@@ -301,16 +337,19 @@ export class PublishService {
         ok: true,
         joomProductId,
         deleteLocal: options.deleteLocal,
-      });
+      }, shopId);
     } catch (e) {
       if (isRemoteAlreadyGone(e)) {
+        if (shopId && record && !record.joomListings?.some((entry) => entry.shopId === shopId && entry.joomProductId === joomProductId)) {
+          return { id: resultId, ok: false, joomProductId, error: '目标店铺未找到该商品，无法确认归属，本地记录已保留。' };
+        }
         return this.afterRemoteRemoved(record, {
           id: resultId,
           ok: true,
           joomProductId,
           alreadyGone: true,
           deleteLocal: options.deleteLocal,
-        });
+        }, shopId);
       }
       return { id: resultId, ok: false, joomProductId, error: formatMarketplaceError(e) };
     }
@@ -319,7 +358,9 @@ export class PublishService {
   private afterRemoteRemoved(
     record: ProductRecord | null,
     base: { id: string; ok: true; joomProductId?: string; alreadyGone?: boolean; deleteLocal?: boolean },
+    shopId?: string,
   ): BatchRemoveRemoteItem {
+    if (shopId && base.joomProductId) joomListingRepository.markAbsent(shopId, base.joomProductId);
     if (!record) {
       return { id: base.id, ok: true, joomProductId: base.joomProductId, alreadyGone: base.alreadyGone };
     }
@@ -337,6 +378,13 @@ export class PublishService {
       return { ...base, deletedLocal: true };
     }
 
+    const remaining = shopId ? record.joomListings?.find((l) => l.present && (l.shopId !== shopId || l.joomProductId !== base.joomProductId)) : undefined;
+    if (remaining) {
+      this.repo.update(record.id, { joomProductId: remaining.joomProductId, joomState: remaining.state,
+        joomInventory: remaining.inventory, joomHasActiveVersion: remaining.hasActiveVersion, joomIssues: remaining.issues || '', joomIssueDetails: remaining.issueDetails ?? [] });
+      auditService.record({ productId: record.id, action: 'product.removeRemote', summary: '已从目标店铺删除，保留其他线上刊登', after: { shopId, joomProductId: base.joomProductId } });
+      return base;
+    }
     this.repo.update(record.id, {
       status: 'discarded',
       joomProductId: '',
@@ -359,69 +407,94 @@ export class PublishService {
     return { ...base, discarded: true };
   }
 
-  async publish(id: string, marketplaceId = 'joom'): Promise<ProductRecord> {
+  async publish(id: string, marketplaceId = 'joom', shopId = marketplaceId === 'joom' ? shopService.getActiveId() : undefined, queuedJob?: string): Promise<ProductRecord> {
     const record = this.repo.get(id);
     if (!record) throw new MarketplaceError('商品不存在');
     if (record.status === 'discarded') {
       throw new MarketplaceError('商品已在废弃箱，请先恢复后再发布');
     }
+    if (marketplaceId === 'joom') requireNoPendingPublishReview(id);
 
-    const adapter = marketplaceRegistry.require(marketplaceId);
+    const adapter = marketplaceRegistry.require(marketplaceId, shopId);
     if (!(await adapter.isConnected())) {
       throw new MarketplaceError(`尚未连接 ${adapter.name},请先完成授权`);
     }
 
     // 发布前校验:存在 error 级问题则不调用 Joom,直接返回问题清单
-    let editable = this.editableOf(record);
+    const listing = targetListing(record, shopId);
+    const remoteId = listing?.joomProductId ?? record.joomProductId;
+    let editable = this.editableOf(record, shopId);
     const requiredAttributeIds = await this.gatherRequiredAttributes(adapter, editable);
-    const allowedColors = marketplaceId === 'joom' ? await loadOfficialJoomColors() : undefined;
+    const allowedColors = marketplaceId === 'joom' ? await loadOfficialJoomColors(false, shopId) : undefined;
     editable = normalizeProductColors(editable, { officialColors: allowedColors }).product;
     const issues = await validateForPublish(editable, { requiredAttributeIds, allowedColors });
     if (issues.some((i) => i.severity === 'error')) {
       throw new PublishValidationError(issues);
     }
 
-    this.repo.update(id, { status: 'publishing', lastError: '' }); // 开始发布即清除旧错误
-
+    let trackingId: string | undefined;
+    let accepted = false;
     try {
       const processed = await this.pipeline.run(editable, { record, marketplaceId });
+      if (marketplaceId === 'joom' && shopId) {
+        trackingId = beginPublishSubmission(id, shopId, { sku: processed.sku, remoteId, storeId: processed.storeId, editedAt: record.editedAt }, queuedJob);
+      }
+      this.repo.update(id, { status: 'publishing', lastError: '' });
       let result;
-      if (record.joomProductId) {
+      if (remoteId) {
         if (!adapter.update) {
           throw new MarketplaceError(`${adapter.name} 暂不支持更新已发布商品`);
         }
         // Joom 优先使用稳定的平台商品 id；若未来某平台没有 id，则可回退到商家 SKU。
-        result = await adapter.update(processed, { id: record.joomProductId, sku: processed.sku });
+        result = await adapter.update(processed, { id: remoteId, sku: processed.sku });
       } else {
         result = await adapter.publish(processed);
       }
-      const updated = this.repo.update(id, {
-        status: 'published',
-        joomProductId: result.marketplaceProductId,
-        lastError: '', // 清除上次失败的错误(空串 -> 仓库写入 NULL)
-      })!;
-      if (marketplaceId === 'joom' && processed.video) {
-        const ownerShopId = record.joomListings?.find((listing) => listing.joomProductId === updated.joomProductId)?.shopId;
-        joomVideoService.enqueue(updated, processed, ownerShopId || shopService.getActiveId());
-      }
-      auditService.record({ productId: id, action: record.joomProductId ? 'product.update' : 'product.publish', summary: record.joomProductId ? '更新 Joom 商品成功' : '发布到 Joom 成功', before: { status: record.status, joomProductId: record.joomProductId }, after: { status: updated.status, joomProductId: updated.joomProductId } });
-      logger.info('发布成功', { id, marketplace: marketplaceId, productId: result.marketplaceProductId });
-      return updated;
+      accepted = true;
+      return getDb().transaction(() => {
+        if (shopId && marketplaceId === 'joom' && result.marketplaceProductId && !listing) {
+          joomListingRepository.linkPublishedProduct(
+            shopId, shopService.getProfile(shopId)?.name ?? shopId, result.marketplaceProductId, id, processed.title, processed.sku,
+          );
+        }
+        const updated = this.repo.update(id, {
+          status: 'published',
+          joomProductId: result.marketplaceProductId,
+          lastError: '', // 清除上次失败的错误(空串 -> 仓库写入 NULL)
+        })!;
+        if (marketplaceId === 'joom' && processed.video) {
+          const ownerShopId = record.joomListings?.find((listing) => listing.joomProductId === updated.joomProductId)?.shopId;
+          joomVideoService.enqueue(updated, processed, shopId || ownerShopId || shopService.getActiveId());
+        }
+        auditService.record({ productId: id, action: remoteId ? 'product.update' : 'product.publish', summary: remoteId ? '更新 Joom 商品成功' : '发布到 Joom 成功', before: { status: record.status, joomProductId: record.joomProductId }, after: { status: updated.status, joomProductId: updated.joomProductId, shopId } });
+        if (trackingId) finishPublishSubmission(trackingId, id, 'succeeded', undefined, result.marketplaceProductId);
+        logger.info('发布成功', { id, marketplace: marketplaceId, productId: result.marketplaceProductId });
+        return updated;
+      })();
     } catch (err) {
+      if (err instanceof PublishShopError) {
+        if (trackingId) getDb().transaction(() => {
+          this.repo.update(id, { status: record.status, lastError: record.lastError ?? '' });
+          finishPublishSubmission(trackingId!, id, 'failed', err.message);
+        })();
+        throw err;
+      }
       const message =
         err instanceof MarketplaceError
           ? err.message + (err.details?.length ? ': ' + err.details.map((d) => d.message).join('; ') : '')
           : (err as Error).message;
-      const alreadyExists = marketplaceId === 'joom' && /already[\s_-]*exists/i.test(message);
-      const nextStatus = alreadyExists ? 'discarded' : 'failed';
-      this.repo.update(id, { status: nextStatus, lastError: message });
-      auditService.record({
-        productId: id,
-        action: alreadyExists ? 'product.discarded' : 'product.publishFailed',
-        summary: alreadyExists ? 'Joom 商品已存在，自动移入废弃箱' : '发布/更新 Joom 失败',
-        before: { status: record.status },
-        after: { status: nextStatus, error: message },
-      });
+      const needsReview = err instanceof PublishReceiptError || accepted;
+      getDb().transaction(() => {
+        this.repo.update(id, { status: 'failed', lastError: message });
+        if (trackingId) finishPublishSubmission(trackingId, id, needsReview ? 'needs_review' : 'failed', message);
+        auditService.record({
+          productId: id,
+          action: 'product.publishFailed',
+          summary: needsReview ? '发布回执不明确，请核对原店铺' : '发布/更新 Joom 失败',
+          before: { status: record.status },
+          after: { status: 'failed', error: message, shopId, jobId: trackingId },
+        });
+      })();
       logger.error('发布失败', { id, message });
       throw err;
     }

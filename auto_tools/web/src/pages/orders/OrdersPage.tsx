@@ -2,7 +2,8 @@ import { useCallback, useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import type { OrderExportProfile } from '@shared/orders';
 import { api } from '../../api';
-import { OrderExportTab } from './OrderExportTab';
+import { ExportResult, OrderExportTab } from './OrderExportTab';
+import { startOrderExport, useOrderExportTask } from './export-task';
 import { OrderHistoryTab } from './OrderHistoryTab';
 import { OrderProfilesTab } from './OrderProfilesTab';
 import { errorMessage } from './order-ui';
@@ -21,7 +22,9 @@ export function OrdersPage() {
   const tab: TabId = TABS.some((item) => item.id === requested) ? (requested as TabId) : 'export';
   const [profiles, setProfiles] = useState<OrderExportProfile[] | null>(null);
   const [error, setError] = useState('');
-  const [historyVersion, setHistoryVersion] = useState(0);
+  const task = useOrderExportTask();
+  const record = 'record' in task ? task.record : undefined;
+  const exporting = task.phase === 'generating' || task.phase === 'downloading';
 
   const loadProfiles = useCallback(async () => {
     try {
@@ -34,7 +37,7 @@ export function OrdersPage() {
 
   useEffect(() => {
     void loadProfiles();
-  }, [loadProfiles]);
+  }, [loadProfiles, record?.id]);
 
   function openTab(next: TabId) {
     setParams(next === 'export' ? {} : { tab: next });
@@ -57,6 +60,15 @@ export function OrdersPage() {
         ))}
       </div>
 
+      {task.phase === 'generating' && <div className="orders-card" role="status">正在生成 Excel 文件…</div>}
+      {task.phase === 'error' && (
+        <div className="error" role="alert">
+          导出失败：{task.message}{' '}
+          <button type="button" className="ghost orders-small" onClick={() => void startOrderExport(task.query)}>重试本次导出</button>
+        </div>
+      )}
+      {'record' in task && <ExportResult record={task.record} downloading={task.phase === 'downloading'} downloadFailedIds={task.failedIds} />}
+
       {error && (
         <div className="error">
           {error}
@@ -66,17 +78,16 @@ export function OrdersPage() {
       )}
       {!profiles && !error && <div className="orders-loading">正在加载…</div>}
 
-      {profiles && tab === 'export' && (
+      {profiles && (
         <OrderExportTab
           profiles={profiles}
-          onExported={() => {
-            setHistoryVersion((value) => value + 1);
-            void loadProfiles();
-          }}
+          active={tab === 'export'}
+          exporting={exporting}
+          exportedId={record?.id}
           onManageProfiles={() => openTab('settings')}
         />
       )}
-      {tab === 'history' && <OrderHistoryTab version={historyVersion} />}
+      {tab === 'history' && <OrderHistoryTab version={record?.id} />}
       {profiles && tab === 'settings' && <OrderProfilesTab profiles={profiles} onChange={setProfiles} />}
     </div>
   );

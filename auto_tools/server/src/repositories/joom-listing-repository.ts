@@ -116,6 +116,20 @@ export class JoomListingRepository {
       .map(rowToSnapshot);
   }
 
+  /** 发布回执确认了店铺与商品的对应关系，保留上次同步得到的审核状态和库存。 */
+  linkPublishedProduct(shopId: string, shopName: string, remoteId: string, productId: string, name: string, sku?: string): void {
+    getDb().prepare(`
+      INSERT INTO joom_shop_listings (shop_id, shop_name, joom_product_id, product_id, name, sku, last_synced_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?)
+      ON CONFLICT(shop_id, joom_product_id) DO UPDATE SET product_id = excluded.product_id, present = 1
+    `).run(shopId, shopName, remoteId, productId, name, sku ?? null, new Date().toISOString());
+  }
+
+  markAbsent(shopId: string, remoteId: string): void {
+    getDb().prepare('UPDATE joom_shop_listings SET present = 0, last_synced_at = ? WHERE shop_id = ? AND joom_product_id = ?')
+      .run(new Date().toISOString(), shopId, remoteId);
+  }
+
   upsertShopListing(shopId: string, shopName: string, remote: RemoteProduct, productId: string | undefined, syncedAt: string): void {
     if (!remote.id) return;
     getDb().prepare(`

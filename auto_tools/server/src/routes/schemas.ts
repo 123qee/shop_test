@@ -18,7 +18,7 @@ export const variantSchema = z.object({
 });
 
 export const collectedProductSchema = z.object({
-  source: z.enum(['aliexpress', 'allegro', 'amazon', 'asos', 'george', 'joom', 'mercadolibre', 'wildberries']),
+  source: z.enum(['aliexpress', 'allegro', 'amazon', 'asos', 'george', 'joom', 'mercadolibre', 'ozon', 'wildberries']),
   sourceUrl: z.string(),
   sourceProductId: z.string(),
   title: z.string().min(1),
@@ -159,6 +159,7 @@ export const aiTitlePreviewSchema = z.object({
 });
 
 export const batchRemoveRemoteSchema = z.object({
+  shopId: z.string().optional(),
   ids: z.array(z.string().min(1)).max(200).default([]),
   remoteIds: z.array(z.string().min(1)).max(200).optional(),
   reason: z.enum(['stopSelling', 'legalRequirement']).default('stopSelling'),

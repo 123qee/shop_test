@@ -57,11 +57,12 @@ settingsRouter.get(
 );
 
 /** 保存预设配置 */
+const savePresetsSchema = presetsConfigSchema.extend({ base: presetsConfigSchema.optional() });
 settingsRouter.put(
   '/settings',
   asyncHandler(async (req, res) => {
-    const config = presetsConfigSchema.parse(req.body);
-    res.json(settingsService.saveConfig(config));
+    const { base, ...config } = savePresetsSchema.parse(req.body);
+    res.json(settingsService.saveConfig(config, base));
   }),
 );
 
@@ -102,7 +103,6 @@ settingsRouter.post(
   '/shops/active',
   asyncHandler(async (req, res) => {
     const { id } = shopActiveSchema.parse(req.body);
-    if (id !== shopService.getActiveId() && publishJobService.hasActive()) return res.status(409).json({ error: '发布任务进行中，请完成后再切换店铺' });
     res.json(shopService.setActive(id));
   }),
 );

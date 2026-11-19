@@ -1,6 +1,9 @@
+import type { ProductIndexItem, ProductListCard, ProductSortCandidate } from '@shared/product-catalog';
+import { lastSorterBatch, leaveSorterBatch, saveSorterProgress } from '../sorter-progress';
+import { useProductCards } from '../product-cards';
 import { useEffect, useMemo, useRef, useState, type ClipboardEvent, type FormEvent, type MouseEvent } from 'react';
 import { Link, useOutletContext } from 'react-router-dom';
-import type { AiTitleMaterial, BatchOperation, BatchOperationItem, BatchPublishItem, BatchRemoveRemoteItem, JoomIssueDetail, JoomRemoveReason, JoomShopStatusSummary, JoomShopSyncResult, JoomStatus, ProductQualityScore, ProductRecord, PublishJob } from '@shared/types';
+import type { AiTitleMaterial, BatchOperation, BatchOperationItem, BatchPublishItem, BatchRemoveRemoteItem, JoomIssueDetail, JoomRemoveReason, JoomShopStatusSummary, JoomShopSyncResult, JoomStatus, ProductQualityScore, ProductRecord, PublishJob, PublishReviewAction } from '@shared/types';
 import { classifyJoomListing, JOOM_BUCKET_META, PRIMARY_JOOM_BUCKETS, type JoomListingBucket } from '@shared/joom-listing';
 import { QUALITY_GRADE_META } from '@shared/quality';
 import { JOOM_REVIEW_REASON_META, summarizeJoomIssues, type JoomReviewReasonKey } from '@shared/joom-review';
@@ -13,7 +16,7 @@ import { ErrorSummary } from '../components/ErrorSummary';
 import { AiTitleDialog } from './AiTitleDialog';
 import type { GroupTemplateBinding, PresetTemplate, ProductGroupId, ProductMaterial } from '@shared/types';
 import { isProductGroup, isProductMaterial, PRODUCT_GROUPS } from '@shared/product-grouping';
-import { groupingOf, matchesGroupFilters, ProductGroupingBadges, ProductGroupingPanel, type GroupFilters } from './ProductGroupingPanel';
+import { matchesGroupFilters, ProductGroupingBadges, ProductGroupingPanel, type GroupFilters } from './ProductGroupingPanel';
 import { needsTemplateDecision, TemplateSorter } from './TemplateSorter';
 import { useNativePrompt } from '../components/NativePromptProvider';
 import { showFeedback } from '../feedback';
@@ -87,24 +90,9 @@ function parseListingParam(value: string | null): ListingFilter {
   return 'all';
 }
 
-function shopListingBucket(listing: { state?: string; inventory?: number; hasActiveVersion?: boolean }): JoomListingBucket | undefined {
-  return classifyJoomListing({
-    joomState: listing.state,
-    joomInventory: listing.inventory,
-    joomHasActiveVersion: listing.hasActiveVersion,
-  });
-}
-
-function productBucketForShop(product: ProductRecord, shopId?: string): JoomListingBucket | undefined {
-  const listing = shopId ? product.joomListings?.find((entry) => entry.shopId === shopId) : undefined;
-  if (listing) return shopListingBucket(listing);
-  if (shopId && product.joomListings?.length) return undefined;
+function productBucketForShop(product: ProductListCard, shopId?: string): JoomListingBucket | undefined {
+  if (shopId && product.listings.length) return product.listings.find((entry) => entry.shopId === shopId)?.bucket;
   return classifyJoomListing(product);
-}
-
-function productMatchesListingBucket(product: ProductRecord, bucket: JoomListingBucket): boolean {
-  if (product.joomListings?.length) return product.joomListings.some((listing) => shopListingBucket(listing) === bucket);
-  return classifyJoomListing(product) === bucket;
 }
 
 function parsePublishFilter(value: string | null): PublishFilter {
@@ -126,23 +114,18 @@ function parseReviewReasonFilter(value: string | null): ReviewReasonFilter {
   return 'all';
 }
 
-function matchesQuality(p: ProductRecord, filter: QualityFilter) {
+function matchesQuality(p: ProductIndexItem, filter: QualityFilter) {
   if (filter === 'all') return true;
-  const grade = p.qualityScore?.grade;
+  const grade = p.qualityGrade;
   if (filter === 'weak') return grade === 'attention' || grade === 'risk';
   return grade === filter;
 }
 
-function reviewGroupsFor(p: ProductRecord) {
-  return summarizeJoomIssues(p.joomIssueDetails, p.joomIssues || undefined);
+function matchesReviewReason(p: ProductIndexItem, filter: ReviewReasonFilter) {
+  return filter === 'all' || p.reviewReasons.includes(filter);
 }
 
-function matchesReviewReason(p: ProductRecord, filter: ReviewReasonFilter) {
-  if (filter === 'all') return true;
-  return reviewGroupsFor(p).some((group) => group.key === filter);
-}
-
-function matchesSearch(p: ProductRecord, q: string) {
+function matchesSearch(p: ProductIndexItem, q: string) {
   if (!q) return true;
   const hay = [productTitle(p), productSku(p), p.joomProductId ?? '', p.collected.sourceProductId, p.collected.store?.name ?? '']
     .join(' ')
@@ -151,7 +134,7 @@ function matchesSearch(p: ProductRecord, q: string) {
 }
 
 /** 多个值、Joom 长 ID 或商品 SKU 自动进入精确 ID 查找；普通文字走模糊搜索。 */
-function looksLikeIdLookup(raw: string, items: ProductRecord[]): boolean {
+function looksLikeIdLookup(raw: string, items: ProductIndexItem[]): boolean {
   const parsed = parseProductIds(raw);
   if (!parsed.ids.length) return false;
   const isIdToken = (rawToken: string) => {
@@ -232,9 +215,10 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
   const nativePrompt = useNativePrompt();
   const { joom } = useOutletContext<{ joom: JoomStatus | null }>();
   const actionListScope = joom?.shopId ?? 'default';
+  const shopLabel = joom?.shopName || joom?.shopId || '目标店铺';
   const actionListScopeRef = useRef(actionListScope);
   actionListScopeRef.current = actionListScope;
-  const [items, setItems] = useState<ProductRecord[]>([]);
+  const [items, setItems] = useState<ProductIndexItem[]>([]);
   const [groupFilters, setGroupFilters] = useState<GroupFilters>(() => {
     const params = new URLSearchParams(window.location.search);
     const group = params.get('group');
@@ -255,6 +239,8 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
   const [submittingId, setSubmittingId] = useState('');
   const [pausingJobId, setPausingJobId] = useState('');
   const [refreshingJobs, setRefreshingJobs] = useState(false);
+  const [reviewingId, setReviewingId] = useState('');
+  const [reviewError, setReviewError] = useState<{ id: string; message: string } | null>(null);
   const [copiedId, setCopiedId] = useState('');
   const [publishFilter, setPublishFilter] = useState<PublishFilter>(() =>
     parsePublishFilter(new URLSearchParams(window.location.search).get('status')),
@@ -293,7 +279,12 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
   const [templates, setTemplates] = useState<Array<{ id: string; name: string }>>([]);
   /** 完整预设（含默认值），分拣时据此核对和推荐。 */
   const [presetTemplates, setPresetTemplates] = useState<PresetTemplate[]>([]);
-  const [sorterOpen, setSorterOpen] = useState(false);
+  const [sorterSession, setSorterSession] = useState<{ products: ProductSortCandidate[]; scope: string; excluded: Set<string>; batchId?: string } | null>(null);
+  const [batchLoadError, setBatchLoadError] = useState<{ id: string; scope: string; message: string } | null>(null);
+  const [sorterLoading, setSorterLoading] = useState(false);
+  const [sorterReady, setSorterReady] = useState(false);
+  const requestedSorter = useRef(new URLSearchParams(window.location.search).get('sort') === '1');
+  const mounted = useRef(false);
   const [presetId, setPresetId] = useState('');
   const [defaultTemplateId, setDefaultTemplateId] = useState('');
   const [quickTemplateBusy, setQuickTemplateBusy] = useState(false);
@@ -306,7 +297,8 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
   const autoSyncTried = useRef(false);
   const pendingUrlSelect = useRef(false);
   const quickTemplateTimer = useRef<number | null>(null);
-  const listRequest = useRef<Promise<ProductRecord[] | undefined> | null>(null);
+  const listRequest = useRef<Promise<ProductIndexItem[] | undefined> | null>(null);
+  const listRequestNumber = useRef(0);
   const jobsRefreshing = useRef(false);
   const jobItemVersions = useRef<Map<string, string> | null>(null);
 
@@ -320,18 +312,20 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     }
   }
 
-  function load(opts?: { silent?: boolean; preservePage?: boolean }) {
-    if (listRequest.current) return listRequest.current;
-    const request = loadList(opts);
+  function load(opts?: { silent?: boolean; preservePage?: boolean; reusePending?: boolean }) {
+    if (opts?.reusePending && listRequest.current) return listRequest.current;
+    const requestNumber = ++listRequestNumber.current;
+    const request = loadList(requestNumber, opts);
     listRequest.current = request;
-    void request.finally(() => { listRequest.current = null; });
+    void request.finally(() => { if (listRequest.current === request) listRequest.current = null; });
     return request;
   }
 
-  async function loadList(opts?: { silent?: boolean; preservePage?: boolean }) {
+  async function loadList(requestNumber: number, opts?: { silent?: boolean; preservePage?: boolean }) {
     if (!opts?.silent) setLoading(true);
     try {
-      const list = await api.listProducts();
+      const list = await api.productIndex();
+      if (!mounted.current || requestNumber !== listRequestNumber.current) return;
       setItems(list);
       const currentScope = actionListScopeRef.current;
       setActionLists(pruneProductActionLists(readProductActionLists(currentScope), list.map((p) => p.id), currentScope));
@@ -343,9 +337,9 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
       setError('');
       return list;
     } catch (e) {
-      setError((e as Error).message);
+      if (mounted.current && requestNumber === listRequestNumber.current) setError((e as Error).message);
     } finally {
-      setLoading(false);
+      if (mounted.current && requestNumber === listRequestNumber.current) setLoading(false);
     }
   }
 
@@ -374,13 +368,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
           if (previous && (previous.has(key) ? previous.get(key) !== version : item.status !== 'queued')) changedIds.add(item.productId);
         }
       }
-      const updates = new Map<string, ProductRecord>();
-      // 顺序拉取，限制并发及详情数据的峰值内存。
-      for (const id of changedIds) {
-        const { record } = await api.getProduct(id);
-        updates.set(id, record);
-      }
-      if (updates.size) setItems((current) => current.map((p) => updates.get(p.id) ?? p));
+      if (changedIds.size) await load({ silent: true, preservePage: true });
       jobItemVersions.current = versions;
       setPublishJobs(orderPublishJobs(jobs));
       if (showBusy) showFeedback('发布进度已刷新');
@@ -403,14 +391,15 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
       pendingUrlSelect.current = true;
       replaceListSearch({ joomIds: parsed.ids });
     }
-    load();
-    void refreshPublishJobs();
+    mounted.current = true;
+    const initialIndex = load({ reusePending: true });
+    const initialJobs = refreshPublishJobs();
     api.joomShopStatusSummary().then(setJoomStatusSummary).catch(() => {});
     const onVisible = () => {
-      if (document.visibilityState === 'visible') load({ silent: true });
+      if (document.visibilityState === 'visible') load({ silent: true, preservePage: true, reusePending: true });
     };
     document.addEventListener('visibilitychange', onVisible);
-    api
+    const templatesRequest = api
       .getSettings()
       .then((config) => {
         const nextTemplates = config.templates.map((t) => ({ id: t.id, name: t.name }));
@@ -427,8 +416,12 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
         setAiPreview(c.preview);
       })
       .catch(() => {});
-    api.getGroupTemplateBindings().then(setGroupBindings).catch((e) => setError((e as Error).message));
+    const bindingsRequest = api.getGroupTemplateBindings().then(setGroupBindings).catch((e) => setError((e as Error).message));
+    void Promise.all([templatesRequest, bindingsRequest, initialIndex, initialJobs]).then(() => {
+      if (mounted.current) setSorterReady(true);
+    });
     return () => {
+      mounted.current = false;
       document.removeEventListener('visibilitychange', onVisible);
       if (quickTemplateTimer.current) window.clearTimeout(quickTemplateTimer.current);
     };
@@ -452,7 +445,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     setBatchPanel(null);
     setActionListNotice('');
     setPage(1);
-  }, [mode]);
+  }, [mode, actionListScope]);
 
   const publishStatusById = useMemo(() => {
     const statuses = new Map<string, 'queued' | 'running'>();
@@ -464,17 +457,20 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     return statuses;
   }, [publishJobs]);
   const activePublishIds = useMemo(() => new Set(publishStatusById.keys()), [publishStatusById]);
-  const activePublishJobs = useMemo(() => publishJobs.filter(hasActiveItems), [publishJobs]);
+  const shopJobs = useMemo(() => publishJobs.filter((job) => job.shopId === actionListScope), [publishJobs, actionListScope]);
+  const activePublishJobs = useMemo(() => shopJobs.filter(hasActiveItems), [shopJobs]);
   const activePublishItems = useMemo(() => activePublishJobs.flatMap((job) => job.items), [activePublishJobs]);
-  const shownPublishJob = activePublishJobs[0] ?? publishJobs[0];
+  const shownPublishJob = activePublishJobs[0] ?? shopJobs[0];
+  const pendingReviews = shopJobs.flatMap((job) => job.items.filter((item) => item.status === 'needs_review').map((item) => ({ job, item })));
   const hasActivePublishJobs = activePublishJobs.length > 0;
   const displayedPublishItems = hasActivePublishJobs ? activePublishItems : (shownPublishJob?.items ?? []);
   const displayedPublishCompleted = displayedPublishItems.filter((item) => item.status === 'succeeded' || item.status === 'failed').length;
   const displayedPublishQueued = displayedPublishItems.filter((item) => item.status === 'queued').length;
   const displayedPublishSucceeded = displayedPublishItems.filter((item) => item.status === 'succeeded').length;
   const displayedPublishFailed = displayedPublishItems.filter((item) => item.status === 'failed').length;
+  const pollingNeeded = activePublishIds.size > 0;
   useEffect(() => {
-    if (!hasActivePublishJobs) return;
+    if (!pollingNeeded) return;
     let stopped = false;
     let timer: number;
     const poll = async () => {
@@ -483,7 +479,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     };
     timer = window.setTimeout(poll, 2500);
     return () => { stopped = true; window.clearTimeout(timer); };
-  }, [hasActivePublishJobs]);
+  }, [pollingNeeded]);
 
   useEffect(() => {
     if (autoSyncTried.current || loading || !joomStatusSummary) return;
@@ -496,7 +492,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     });
     if (!stale) return;
     autoSyncTried.current = true;
-    void syncShop();
+    void syncShop(false);
   }, [joom?.connected, joom?.shops, joomStatusSummary, loading]);
 
   const titleOf = useMemo(() => {
@@ -537,10 +533,10 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     }).filter((p) => {
       if (listingFilter === 'all') return true;
       if (listingFilter === 'unsynced') {
-        return !p.joomListings?.length
+        return !p.hasShopListings
           && Boolean(p.joomProductId || p.status === 'published');
       }
-      return productMatchesListingBucket(p, listingFilter);
+      return p.listingBuckets.includes(listingFilter);
     }).filter((p) => matchesQuality(p, qualityFilter)).filter((p) => matchesReviewReason(p, reasonFilter)).filter((p) => matchesSearch(p, searchQ));
     return filtered.sort(compareProductQueue);
   }, [items, publishFilter, listingFilter, qualityFilter, reasonFilter, searchQ, idLookup]);
@@ -585,12 +581,66 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     [activePublishIds, actionLists],
   );
   const sortableCount = useMemo(() => items.filter((p) => needsTemplateDecision(p, sorterExcludedIds)).length, [items, sorterExcludedIds]);
+
+  async function openSorter(batchId?: string) {
+    if (sorterLoading) return;
+    if (!joom) {
+      showFeedback('尚未获取当前店铺信息，请刷新后再分拣', 'error');
+      return;
+    }
+    const scope = actionListScope;
+    const lists = readProductActionLists(scope);
+    const excluded = new Set([...activePublishIds, ...lists.publish, ...lists.remove]);
+    if (!presetTemplates.length) {
+      showFeedback('请先配置分拣模板');
+      return;
+    }
+    setBatchLoadError(null);
+    setSorterLoading(true);
+    try {
+      const sortableIds = batchId
+        ? (await api.collectBatchProducts(batchId)).productIds.filter((id) => !excluded.has(id))
+        : items.filter((p) => needsTemplateDecision(p, excluded)).map((p) => p.id);
+      const records: ProductSortCandidate[] = [];
+      for (let start = 0; start < sortableIds.length; start += 100) {
+        if (!mounted.current) return;
+        records.push(...await api.sortCandidates(sortableIds.slice(start, start + 100)));
+      }
+      if (!mounted.current) return;
+      if (scope !== actionListScopeRef.current) showFeedback('当前店铺已切换，请重新开始分拣');
+      else if (records.length) setSorterSession({ products: records, scope, excluded, batchId });
+      else {
+        saveSorterProgress(scope, batchId, null);
+        showFeedback(batchId ? '这批已入库的商品里没有待分拣商品' : '没有待分拣的商品');
+      }
+    } catch (error) {
+      if (mounted.current && scope === actionListScopeRef.current) {
+        const message = `分拣队列加载失败：${(error as Error).message}`;
+        if (batchId) setBatchLoadError({ id: batchId, scope, message });
+        else showFeedback(message, 'error');
+      }
+    } finally {
+      if (mounted.current) setSorterLoading(false);
+    }
+  }
+
+  useEffect(() => {
+    if (!requestedSorter.current || !sorterReady || !joom || loading || mode !== 'browse') return;
+    requestedSorter.current = false;
+    const url = new URL(window.location.href);
+    const batchId = url.searchParams.get('batch') ?? lastSorterBatch(actionListScope);
+    url.searchParams.delete('sort');
+    url.searchParams.delete('batch');
+    window.history.replaceState(window.history.state, '', url);
+    if (batchId === '') showFeedback('采集批次链接缺少批次编号', 'error');
+    else void openSorter(batchId);
+  }, [sorterReady, joom, loading, mode]);
   const selectedTemplate = templates.find((template) => template.id === presetId) ?? templates[0];
   const recentCount = useMemo(() => items.filter((p) => isRecentlyEdited(p)).length, [items]);
   const qualityCounts = useMemo(() => {
     const counts: Record<string, number> = { excellent: 0, good: 0, attention: 0, risk: 0, weak: 0 };
     for (const p of items) {
-      const grade = p.qualityScore?.grade;
+      const grade = p.qualityGrade;
       if (grade) counts[grade] += 1;
       if (grade === 'attention' || grade === 'risk') counts.weak += 1;
     }
@@ -599,7 +649,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
   const reviewReasonCounts = useMemo(() => {
     const counts: Partial<Record<JoomReviewReasonKey, number>> = {};
     for (const p of items) {
-      for (const group of reviewGroupsFor(p)) counts[group.key] = (counts[group.key] ?? 0) + 1;
+      for (const key of p.reviewReasons) counts[key] = (counts[key] ?? 0) + 1;
     }
     return counts;
   }, [items]);
@@ -609,7 +659,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
       unsynced: 0,
     };
     counts.unsynced = items.filter((product) =>
-      !product.joomListings?.length
+      !product.hasShopListings
       && Boolean(product.joomProductId || product.status === 'published'),
     ).length;
     return counts;
@@ -621,14 +671,15 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     () => visibleItems.slice((currentPage - 1) * pageSize, currentPage * pageSize),
     [visibleItems, currentPage, pageSize],
   );
+  const cardPage = useProductCards(pageItems);
   const selectedPages = useMemo(() => {
     const pages = new Set<number>();
     visibleItems.forEach((p, index) => { if (selected.has(p.id)) pages.add(Math.floor(index / pageSize)); });
     return pages.size;
   }, [visibleItems, selected, pageSize]);
-  const noticeJob = publishJobs.find((job) => job.id === publishNotice?.jobId);
+  const noticeJob = shopJobs.find((job) => job.id === publishNotice?.jobId);
   const noticeCompleted = noticeJob?.items.filter((item) => item.status === 'succeeded' || item.status === 'failed').length ?? 0;
-  const dockVisible = selected.size > 0 || batchPanel === 'remove-remote' || Boolean(publishNotice);
+  const dockVisible = selected.size > 0 || batchPanel === 'remove-remote' || Boolean(noticeJob);
   useEffect(() => {
     if (!dockVisible || !dockRef.current) return;
     const dock = dockRef.current;
@@ -942,15 +993,15 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     const ids = [...selected];
     const extra = removeIncludeMissed && idLookupActive ? (idLookup?.missed ?? []) : [];
     if (!ids.length && !extra.length) return;
-    if (!joom?.connected) {
+    if (!joom?.connected || !joom.shopId) {
       setError('请先在右上角连接 Joom，才能删除线上商品。');
       return;
     }
     const extraHint = extra.length ? `\n同时删除检索未命中的 ${extra.length} 个 Joom ID。` : '';
-    const localHint = removeDeleteLocal ? '同时从采集箱删除本地记录' : '本地记录将移入废弃箱，可稍后恢复后重新发布';
+    const localHint = removeDeleteLocal ? '同时从采集箱删除本地记录' : '在其他店铺还有刊登的商品将保留，其余本地记录移入废弃箱。';
     if (
       !await nativePrompt.confirm(
-        `确定从 Joom 删除选中的线上商品？此操作不可恢复，会删除线上商品及全部变体。不要用于临时下架。${extraHint}\n${localHint}`,
+        `确定从 Joom 店铺「${shopLabel}」删除选中的线上商品及全部变体？删除后无法恢复。${extraHint}\n${localHint}`,
       )
     ) {
       return;
@@ -959,6 +1010,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     setResult(null);
     try {
       const items = await api.batchRemoveRemote({
+        shopId: joom.shopId,
         ids,
         remoteIds: extra.length ? extra : undefined,
         reason: removeReason,
@@ -980,15 +1032,15 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
 
   async function batchPublish() {
     const ids = [...selected];
-    if (!ids.length) return;
-    if (!await nativePrompt.confirm(`确定发布选中的 ${ids.length} 个商品到 Joom?会创建真实商品(进审核)。`)) return;
+    if (!ids.length || !joom?.shopId) return;
+    if (!await nativePrompt.confirm(`确定将这 ${ids.length} 件商品提交到 Joom 店铺「${shopLabel}」？新商品会进入审核，已刊登的商品会更新。`)) return;
     setBusy('提交发布任务…');
     setResult(null);
     try {
-      const job = await api.enqueuePublish(ids);
+      const job = await api.enqueuePublish(ids, joom.shopId);
       setPublishJobs((current) => orderPublishJobs([job, ...current]));
       setPublishNotice({ jobId: job.id, count: ids.length });
-      setActionLists(removeProductsFromActionList(readProductActionLists(actionListScope), 'publish', ids, actionListScope));
+      removeProductsFromActionList(readProductActionLists(job.shopId), 'publish', ids, job.shopId);
       setBatchPanel(null);
       setSelected(new Set());
       setError('');
@@ -1005,11 +1057,12 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
   }
 
   async function publishOne(id: string) {
+    if (!joom?.shopId || !await nativePrompt.confirm(`确认将「${titleOf(id)}」提交到 Joom 店铺「${shopLabel}」？`)) return;
     setSubmittingId(id);
     try {
-      const job = await api.enqueuePublish([id]);
+      const job = await api.enqueuePublish([id], joom.shopId);
       setPublishJobs((current) => orderPublishJobs([job, ...current]));
-      setActionLists(removeProductsFromActionList(readProductActionLists(actionListScope), 'publish', [id], actionListScope));
+      removeProductsFromActionList(readProductActionLists(job.shopId), 'publish', [id], job.shopId);
       setError('');
       showFeedback(job.aheadCount > 0
         ? `已追加到队列末尾，前面还有 ${job.aheadCount} 件`
@@ -1023,6 +1076,25 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     }
   }
 
+  async function reviewPublish(job: PublishJob, id: string, action: PublishReviewAction) {
+    if (action === 'release' && !await nativePrompt.confirm(`已在「${shopLabel}」人工核对该商品？结束本次任务后可重新提交。`)) return;
+    if (action === 'confirm-update' && !await nativePrompt.confirm(`已在「${shopLabel}」确认本次修改的字段全部生效？将把任务标记为成功。`)) return;
+    setReviewingId(id);
+    setReviewError(null);
+    try {
+      const result = await api.reconcilePublish(job.id, id, job.shopId, action);
+      setPublishJobs((current) => orderPublishJobs([result.job, ...current.filter((other) => other.id !== job.id)]));
+      const outcome = result.job.items.find((item) => item.productId === id);
+      if (outcome?.status === 'failed' && items.some((p) => p.id === id && p.status !== 'discarded')) {
+        addProductsToActionList(readProductActionLists(job.shopId), 'publish', [id], job.shopId);
+      }
+      await load({ silent: true, preservePage: true });
+      showFeedback(result.message);
+    } catch (error) {
+      setReviewError({ id, message: (error as Error).message });
+    } finally { setReviewingId(''); }
+  }
+
   async function pausePublishJob(jobId: string) {
     setPausingJobId(jobId);
     try {
@@ -1030,7 +1102,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
       setPublishJobs((current) => orderPublishJobs([job, ...current.filter((item) => item.id !== job.id)]));
       const pausedIds = job.items.filter((item) => item.status === 'paused').map((item) => item.productId);
       if (pausedIds.length) {
-        setActionLists(addProductsToActionList(readProductActionLists(actionListScope), 'publish', pausedIds, actionListScope));
+        addProductsToActionList(readProductActionLists(job.shopId), 'publish', pausedIds, job.shopId);
         setActionListNotice(`已暂停发布，${pausedIds.length} 件尚未开始的商品已放回发布清单`);
         showFeedback(`已暂停任务，${pausedIds.length} 件商品已放回发布清单`, 'info');
       }
@@ -1054,7 +1126,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
         ...current.filter((item) => !pausedJobs.some((paused) => paused.id === item.id)),
       ]));
       if (pausedIds.length) {
-        setActionLists(addProductsToActionList(readProductActionLists(actionListScope), 'publish', pausedIds, actionListScope));
+        addProductsToActionList(readProductActionLists(actionListScope), 'publish', pausedIds, actionListScope);
         setActionListNotice(`已暂停全部发布任务，${pausedIds.length} 件尚未开始的商品已放回发布清单`);
       }
       setError('');
@@ -1096,7 +1168,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     }
   }
 
-  async function syncShop() {
+  async function syncShop(notifyOnSuccess = true) {
     const hasConnectedShop = joom?.shops?.some((shop) => shop.connected) ?? joom?.connected ?? false;
     if (!hasConnectedShop) {
       setError('请先连接至少一个 Joom 店铺，才能同步店铺状态。');
@@ -1110,7 +1182,9 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
       setJoomStatusSummary(summary.overview);
       await load({ silent: true });
       setError('');
-      showFeedback(`店铺状态同步完成：匹配 ${summary.ok} 个商品${summary.failed ? `，失败 ${summary.failed} 个` : ''}`, summary.failed ? 'info' : 'success');
+      if (notifyOnSuccess || summary.failed) {
+        showFeedback(`店铺状态同步完成：匹配 ${summary.ok} 个商品${summary.failed ? `，失败 ${summary.failed} 个` : ''}`, summary.failed ? 'info' : 'success');
+      }
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -1174,12 +1248,12 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
       // 待确认视图处理完整组后，直接进入下一组；部分失败留在当前组。
       if (list && !failed.length && groupFilters.template === 'pending' && groupFilters.group !== 'all') {
         const latest = new Map(list.map((p) => [p.id, p]));
-        const remaining = filteredItems.map((p) => latest.get(p.id)).filter((p): p is ProductRecord => Boolean(p && !p.templateConfirmed && p.status !== 'discarded' && p.status !== 'publishing' && !activePublishIds.has(p.id)));
+        const remaining = filteredItems.map((p) => latest.get(p.id)).filter((p): p is ProductIndexItem => Boolean(p && !p.templateConfirmed && p.status !== 'discarded' && p.status !== 'publishing' && !activePublishIds.has(p.id)));
         if (!remaining.some((p) => matchesGroupFilters(p, groupFilters))) {
-          if (remaining.some((p) => groupingOf(p).groupId === groupFilters.group)) {
+          if (remaining.some((p) => p.grouping.groupId === groupFilters.group)) {
             changeGroupFilters({ ...groupFilters, material: 'all' });
           } else {
-            const next = PRODUCT_GROUPS.find((g) => remaining.some((p) => groupingOf(p).groupId === g.id));
+            const next = PRODUCT_GROUPS.find((g) => remaining.some((p) => p.grouping.groupId === g.id));
             if (next) changeGroupFilters({ group: next.id, material: 'all', template: 'pending' });
           }
         }
@@ -1230,7 +1304,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
         setError('这次没有生成成功的标题，请检查 DeepSeek 配置或换几个商品再试。');
         return;
       }
-      const syncRemote = await nativePrompt.confirm(`已生成 ${ok.length}/${ids.length} 条。是否同时把已发布商品提交到 Joom？未发布商品只保存本地草稿。`);
+      const syncRemote = await nativePrompt.confirm(`已生成 ${ok.length}/${ids.length} 条。是否同时把已发布商品提交到 Joom 店铺「${shopLabel}」？未发布商品只保存本地草稿。`);
       const results = await api.batchOperate(
         ok.map((item) => item.id),
         {
@@ -1238,6 +1312,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
           items: ok.map((item) => ({ id: item.id, title: item.title!.trim(), tags: item.tags?.length ? item.tags : undefined })),
         },
         syncRemote,
+        joom?.shopId,
       );
       const failedGen = generated.filter((item) => !item.ok).map((item) => ({ id: item.id, ok: false, error: item.error }));
       setResult({ kind: 'ai-title', items: [...results, ...failedGen] });
@@ -1259,7 +1334,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     setBusy(`写入 AI 标题中…(${ids.length} 个)`);
     setResult(null);
     try {
-      const results = await api.batchOperate(ids, { type: 'title', items }, syncRemote);
+      const results = await api.batchOperate(ids, { type: 'title', items }, syncRemote, joom?.shopId);
       setResult({ kind: 'ai-title', items: results });
       setSelected(new Set());
       setAiOpen(false);
@@ -1277,12 +1352,12 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     const ids = [...selected];
     if (!ids.length || operationBusy) return;
     if (!await nativePrompt.confirm(`将选中的 ${ids.length} 个商品的变体颜色映射为 Joom 英文色名（如 черный → Black）。不会改变体 SKU。`)) return;
-    const syncRemote = await nativePrompt.confirm('是否同时把已发布商品的修改提交到 Joom？未发布商品只保存本地草稿。');
+    const syncRemote = await nativePrompt.confirm(`是否同时把已发布商品的修改提交到 Joom 店铺「${shopLabel}」？未发布商品只保存本地草稿。`);
     setOperationBusy(true);
     setBusy(`规范化颜色中…(${ids.length} 个)`);
     setResult(null);
     try {
-      const items = await api.batchOperate(ids, { type: 'normalizeColors' }, syncRemote);
+      const items = await api.batchOperate(ids, { type: 'normalizeColors' }, syncRemote, joom?.shopId);
       setResult({ kind: 'operation', items });
       setSelected(new Set());
       await load({ silent: true });
@@ -1325,7 +1400,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
     setBusy('批量更新本地草稿…');
     setResult(null);
     try {
-      const items = await api.batchOperate(ids, operation, syncRemote);
+      const items = await api.batchOperate(ids, operation, syncRemote, joom?.shopId);
       setResult({ kind: 'operation', items });
       setSelected(new Set());
       setBatchPanel(null);
@@ -1380,13 +1455,20 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
         </section>
       )}
       {actionListNotice && <div className="action-list-notice" role="status">{actionListNotice}</div>}
+      {mode === 'browse' && batchLoadError?.scope === actionListScope && <div className="error" role="alert">{batchLoadError.message}{' '}
+        <button type="button" className="ghost" onClick={() => void openSorter(batchLoadError.id)}>重试本批</button>{' '}
+        <button type="button" className="ghost" onClick={() => {
+          leaveSorterBatch(actionListScope, batchLoadError.id);
+          setBatchLoadError(null);
+        }}>返回商品列表</button>
+      </div>}
       {mode === 'browse' && sortableCount > 0 && presetTemplates.length > 0 && (
         <section className="template-sort-entry" aria-label="分拣模板">
           <div>
             <strong>{sortableCount} 件商品还没确认模板</strong>
             <span>一次一件看大图：Enter 确认模板并进发布清单，X 进删除清单，1–9 换模板，Z 撤销</span>
           </div>
-          <button type="button" onClick={() => setSorterOpen(true)} disabled={loading || operationBusy}>开始分拣</button>
+          <button type="button" onClick={() => void openSorter()} disabled={loading || operationBusy || sorterLoading || !sorterReady}>{sorterLoading ? '正在加载分拣队列…' : '开始分拣'}</button>
         </section>
       )}
       <details className="workspace-disclosure product-control-disclosure">
@@ -1520,7 +1602,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
             </form>
             <div className="product-utility-actions">
               <button className="ghost" onClick={() => void refreshList()} disabled={!!busy || loading}>{loading ? '刷新中…' : '刷新数据'}</button>
-              {mode === 'browse' && <button className="ghost" onClick={syncShop} disabled={!!busy || !(joom?.shops?.some((shop) => shop.connected) ?? joom?.connected)}>{busy.startsWith('正在同步所有') ? '同步中…' : '同步所有店铺状态'}</button>}
+              {mode === 'browse' && <button className="ghost" onClick={() => void syncShop()} disabled={!!busy || !(joom?.shops?.some((shop) => shop.connected) ?? joom?.connected)}>{busy.startsWith('正在同步所有') ? '同步中…' : '同步所有店铺状态'}</button>}
             </div>
           </div>
         </section>
@@ -1586,7 +1668,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
                 {listingCounts.unsynced > 0 ? ` · ${listingCounts.unsynced} 个未同步` : ''}
               </span>
             </div>
-            <button onClick={syncShop} disabled={!!busy || !(joom?.shops?.some((shop) => shop.connected) ?? joom?.connected)} title="同步所有已连接店铺，只更新状态快照">
+            <button onClick={() => void syncShop()} disabled={!!busy || !(joom?.shops?.some((shop) => shop.connected) ?? joom?.connected)} title="同步所有已连接店铺，只更新状态快照">
               {busy.startsWith('正在同步所有') ? '同步中…' : '同步状态'}
             </button>
           </div>
@@ -1674,10 +1756,32 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
       )}
 
       {/* 批量操作条:选中时出现 */}
+      {mode === 'publish' && pendingReviews.length > 0 && (
+        <section className="publish-job" aria-label="发布结果待核对">
+          <strong>发布结果待核对 · {shopLabel}（{pendingReviews.length} 件）</strong>
+          <ul className="publish-job-failures">
+            {pendingReviews.map(({ job, item }) => (
+              <li key={job.id + item.productId}>
+                <Link to={`/products/${item.productId}`} target="_blank">{titleOf(item.productId)}</Link>
+                <ErrorSummary message={reviewError?.id === item.productId ? reviewError.message : item.error || '发布回执不明确'} />
+                <div className="modal-actions">
+                  {items.some((p) => p.id === item.productId && p.status === 'discarded') ?
+                    <button type="button" className="ghost" onClick={() => void restore(item.productId)}>从废弃箱恢复后核对</button> :
+                    <button type="button" disabled={!!reviewingId} onClick={() => void reviewPublish(job, item.productId, 'check')}>
+                      {reviewingId === item.productId ? '核对中…' : '核对原店线上结果'}
+                    </button>}
+                  {item.joomProductId && <button type="button" className="ghost" disabled={!!reviewingId} onClick={() => void reviewPublish(job, item.productId, 'confirm-update')}>已确认更新生效</button>}
+                  <button type="button" className="ghost" disabled={!!reviewingId} onClick={() => void reviewPublish(job, item.productId, 'release')}>人工核对后结束</button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       {mode === 'publish' && shownPublishJob && (
         <div className="publish-job" role="status" aria-live="polite">
           <div className="publish-job-head">
-            <strong>{hasActivePublishJobs ? `后台发布队列${activePublishJobs.length > 1 ? `（${activePublishJobs.length} 个任务）` : ''}` : shownPublishJob.items.some((item) => item.status === 'paused') ? '发布已暂停' : '最近一次发布已完成'}</strong>
+            <strong>{hasActivePublishJobs ? `后台发布队列${activePublishJobs.length > 1 ? `（${activePublishJobs.length} 个任务）` : ''}` : shownPublishJob.items.some((item) => item.status === 'needs_review') ? '最近一次发布待核对' : shownPublishJob.items.some((item) => item.status === 'paused') ? '发布已暂停' : '最近一次发布已完成'}</strong>
             <span>
               完成 {displayedPublishCompleted}/{displayedPublishItems.length}
               {displayedPublishQueued > 0 && ` · 排队 ${displayedPublishQueued}`}
@@ -1746,7 +1850,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
                 </>
               ) : mode === 'publish' ? (
                 <>
-                  <button type="button" className="batch-publish-button" onClick={() => void batchPublish()} disabled={!!busy || !joom?.connected || [...selected].some((id) => activePublishIds.has(id))} title={!joom?.connected ? '请先连接 Joom' : undefined}>{busy === '提交发布任务…' ? '提交中…' : `发布到 Joom（${selected.size}）`}</button>
+                  <button type="button" className="batch-publish-button" onClick={() => void batchPublish()} disabled={!!busy || !joom?.connected || !joom.shopId || [...selected].some((id) => activePublishIds.has(id))} title={!joom?.connected ? '请先连接 Joom' : undefined}>{busy === '提交发布任务…' ? '提交中…' : `发布 ${selected.size} 件到「${shopLabel}」`}</button>
                   <button type="button" className="ghost" onClick={removeSelectedFromCurrentList} disabled={!!busy}>移出清单</button>
                 </>
               ) : (
@@ -1801,7 +1905,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
           />
           <label className="ck">
             <input type="checkbox" checked={syncRemoteOp} onChange={(e) => setSyncRemoteOp(e.target.checked)} />
-            已发布同时提交 Joom
+            已发布同时提交到「{shopLabel}」
           </label>
           <button onClick={() => void submitPrice()} disabled={!!busy}>执行</button>
           <button className="ghost" onClick={() => setBatchPanel(null)} disabled={!!busy}>取消</button>
@@ -1820,7 +1924,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
           />
           <label className="ck">
             <input type="checkbox" checked={syncRemoteOp} onChange={(e) => setSyncRemoteOp(e.target.checked)} />
-            已发布同时提交 Joom
+            已发布同时提交到「{shopLabel}」
           </label>
           <button onClick={() => void submitInventory()} disabled={!!busy}>执行</button>
           <button className="ghost" onClick={() => setBatchPanel(null)} disabled={!!busy}>取消</button>
@@ -1867,7 +1971,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
           </button>
         </div>
       )}
-      {!selected.size && publishNotice && <div className="batch-publish-notice" role="status">
+      {!selected.size && publishNotice && noticeJob && <div className="batch-publish-notice" role="status">
         <div>
           <strong>{noticeCompleted === publishNotice.count ? '本次发布已完成' : noticeJob?.items.some((item) => item.status === 'paused') ? '本次发布已暂停' : noticeJob?.aheadCount ? '已追加到发布队列末尾' : '已加入后台发布队列'}</strong>
           <span>{publishNotice.count} 件商品 · 完成 {noticeCompleted}/{publishNotice.count}{noticeJob && ` · 失败 ${noticeJob.items.filter((item) => item.status === 'failed').length}`}{noticeJob?.items.some((item) => item.status === 'paused') && ` · 暂停 ${noticeJob.items.filter((item) => item.status === 'paused').length}`}{noticeJob?.aheadCount ? ` · 前面还有 ${noticeJob.aheadCount} 件` : ''} · 可以继续选品</span>
@@ -1942,7 +2046,9 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
         </div>
       )}
 
-      {loading ? (
+      {cardPage.error ? (
+        <p className="error">{cardPage.error} <button className="ghost" onClick={cardPage.retry}>重试本页</button></p>
+      ) : loading || cardPage.loading ? (
         <p className="muted">加载中…</p>
       ) : visibleItems.length === 0 ? (
         <div className="empty-state">
@@ -1979,8 +2085,8 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
               </tr>
             </thead>
             <tbody>
-              {pageItems.map((p) => {
-                const snap = productSnap(p);
+              {cardPage.cards.map((p) => {
+                const title = productTitle(p);
                 const isSel = selected.has(p.id);
                 return (
                   <tr
@@ -1989,24 +2095,24 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
                     onClick={(event) => { if (!clickedSelectionControl(event)) toggle(p.id); }}
                   >
                     <td>
-                      <input type="checkbox" checked={isSel} onChange={() => toggle(p.id)} aria-label={`选择商品：${snap.title}`} />
+                      <input type="checkbox" checked={isSel} onChange={() => toggle(p.id)} aria-label={`选择商品：${title}`} />
                     </td>
                     <td className="plist-image-cell">
-                      {snap.images[0] ? (
+                      {p.image ? (
                         <img
                           className="plist-thumb"
-                          src={snap.images[0]}
+                          src={p.image}
                           alt=""
                           loading="lazy"
                           onError={(e) => fallbackToAllegroOriginal(e.currentTarget)}
-                          onMouseEnter={(e) => setImagePreview({ src: imagePreviewSource(snap.images[0]), x: e.clientX, y: e.clientY })}
-                          onMouseMove={(e) => setImagePreview({ src: imagePreviewSource(snap.images[0]), x: e.clientX, y: e.clientY })}
+                          onMouseEnter={(e) => setImagePreview({ src: imagePreviewSource(p.image!), x: e.clientX, y: e.clientY })}
+                          onMouseMove={(e) => setImagePreview({ src: imagePreviewSource(p.image!), x: e.clientX, y: e.clientY })}
                           onMouseLeave={() => setImagePreview(null)}
                         />
                       ) : <span className="muted">无图</span>}
                     </td>
                     <td>
-                      <div className="plist-title">{snap.title}</div>
+                      <div className="plist-title">{title}</div>
                       <ProductGroupingBadges product={p} />
                       {(productBucketForShop(p, joom?.shopId) === 'error' || productBucketForShop(p, joom?.shopId) === 'optimize' || p.joomIssues) && (
                         <div className="plist-issue" title={p.joomIssues || undefined}>
@@ -2020,7 +2126,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
                         {p.joomProductId && <code title={p.joomProductId}>{p.joomProductId}</code>}
                       </div>
                     </td>
-                    <td className="price">{snap.price} {snap.currency}</td>
+                    <td className="price">{p.price} {p.currency}</td>
                     <td><span className={`badge ${publishStatusById.has(p.id) ? 'publishing' : p.status}`}>{publishStatusById.get(p.id) === 'queued' ? '排队中' : publishStatusById.get(p.id) === 'running' ? '发布中' : STATUS_LABEL[p.status] ?? p.status}</span></td>
                     <td><ListingBadge p={p} shopId={joom?.shopId} /></td>
                     <td className="quick-template-cell">
@@ -2043,7 +2149,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
                         </small>
                       </button>
                     </td>
-                    <td>{p.qualityScore ? <b className={`score-${p.qualityScore.grade}`}>{p.qualityScore.score}</b> : '—'}</td>
+                    <td>{p.qualityGrade ? <b className={`score-${p.qualityGrade}`}>{p.score}</b> : '—'}</td>
                     <td className="plist-actions">
                       {p.status === 'discarded' ? (
                         <button onClick={() => restore(p.id)}>恢复</button>
@@ -2057,7 +2163,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
                       )}
                       {mode === 'remove' && <ConfirmPopover
                         title="删除这个商品？"
-                        description={deleteConfirmDescription(snap.title)}
+                        description={deleteConfirmDescription(title)}
                         disabled={deletingId === p.id || activePublishIds.has(p.id)}
                         onConfirm={() => remove(p.id)}
                       >
@@ -2074,8 +2180,8 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
         </div>
       ) : (
         <div className="grid">
-          {pageItems.map((p) => {
-            const snap = productSnap(p);
+          {cardPage.cards.map((p) => {
+            const title = productTitle(p);
             const isSel = selected.has(p.id);
             return (
               <div
@@ -2084,11 +2190,11 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
                 onClick={(event) => { if (!clickedSelectionControl(event)) toggle(p.id); }}
               >
                 <label className="cardsel">
-                  <input type="checkbox" checked={isSel} onChange={() => toggle(p.id)} aria-label={`选择商品：${snap.title}`} />
+                  <input type="checkbox" checked={isSel} onChange={() => toggle(p.id)} aria-label={`选择商品：${title}`} />
                 </label>
-                {snap.images[0] ? (
+                {p.image ? (
                   <img
-                    src={snap.images[0]}
+                    src={p.image}
                     alt=""
                     loading="lazy"
                     onError={(e) => fallbackToAllegroOriginal(e.currentTarget)}
@@ -2119,10 +2225,10 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
                       )}
                     </div>
                   )}
-                  <div className="title">{snap.title}</div>
+                  <div className="title">{title}</div>
                   <ProductGroupingBadges product={p} />
                   <div className="price">
-                    {snap.price} {snap.currency}
+                    {p.price} {p.currency}
                   </div>
                   <button
                     type="button"
@@ -2141,7 +2247,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
                           : `切换为：${selectedTemplate?.name ?? '选择模板'}`}
                     </small>
                   </button>
-                  {p.qualityScore && <div className="quality-line"><span>质量分</span><b className={`score-${p.qualityScore.grade}`}>{p.qualityScore.score}</b></div>}
+                  {p.qualityGrade && <div className="quality-line"><span>质量分</span><b className={`score-${p.qualityGrade}`}>{p.score}</b></div>}
                   {p.joomProductId && (
                     <div className="joomid" title={`Joom 商品 id: ${p.joomProductId}`}>
                       <span className="muted">Joom id</span>
@@ -2177,7 +2283,7 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
                   )}
                   {mode === 'remove' && <ConfirmPopover
                     title="删除这个商品？"
-                    description={deleteConfirmDescription(snap.title)}
+                    description={deleteConfirmDescription(title)}
                     disabled={deletingId === p.id || activePublishIds.has(p.id)}
                     onConfirm={() => remove(p.id)}
                   >
@@ -2257,19 +2363,18 @@ export function ProductList({ mode = 'browse' }: { mode?: ProductListMode }) {
         </div>
       )}
       {dockVisible && <div className="batch-dock-spacer" style={{ height: dockHeight + 32 }} aria-hidden="true" />}
-      {sorterOpen && (
+      {sorterSession && (
         <TemplateSorter
-          products={items}
+          products={sorterSession.products}
           templates={presetTemplates}
           bindings={groupBindings}
-          activeIds={sorterExcludedIds}
-          scope={actionListScope}
+          activeIds={sorterSession.excluded}
+          scope={sorterSession.scope}
+          batchId={sorterSession.batchId}
           onClose={(updated) => {
-            setSorterOpen(false);
+            setSorterSession(null);
             if (!updated.length) return;
-            // 只替换分拣改过的商品，避免重新下载全库。
-            const latest = new Map(updated.map((record) => [record.id, record]));
-            setItems((current) => current.map((p) => latest.get(p.id) ?? p));
+            void load({ silent: true, preservePage: true });
             showFeedback(`分拣已保存，更新了 ${updated.length} 件商品`);
           }}
         />
@@ -2349,23 +2454,7 @@ function formatSyncTime(iso: string): string {
   return new Date(iso).toLocaleString();
 }
 
-function productSnap(p: ProductRecord) {
-  return p.edited
-    ? {
-        title: p.edited.title,
-        images: p.edited.images,
-        price: p.edited.variants[0]?.price ?? 0,
-        currency: p.edited.currency,
-      }
-    : {
-        title: p.collected.title,
-        images: p.collected.images,
-        price: p.collected.price?.value ?? 0,
-        currency: p.collected.price?.currency ?? '',
-      };
-}
-
-function ListingBadge({ p, shopId }: { p: ProductRecord; shopId?: string }) {
+function ListingBadge({ p, shopId }: { p: ProductListCard; shopId?: string }) {
   const bucket = productBucketForShop(p, shopId);
   if (bucket) return <span className={`badge listing-${bucket}`}>{JOOM_BUCKET_META[bucket].label}</span>;
   if (p.joomProductId || p.status === 'published') return <span className="badge listing-unsynced">未同步</span>;

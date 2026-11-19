@@ -10,6 +10,9 @@ export interface MarketplaceAdapter {
   /** 展示名 */
   readonly name: string;
 
+  /** 固定使用该店铺的授权，包括异步校验、重试和最终写入。 */
+  forShop?(shopId: string): MarketplaceAdapter;
+
   /** 是否已完成 OAuth 连接(可发布) */
   isConnected(): boolean | Promise<boolean>;
 
@@ -101,3 +104,6 @@ export class MarketplaceError extends Error {
     this.name = 'MarketplaceError';
   }
 }
+
+/** A product submission may already have reached Joom. Verify before sending another write. */
+export class PublishReceiptError extends MarketplaceError {}

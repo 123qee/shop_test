@@ -4,7 +4,7 @@
  */
 
 /** 采集来源平台 */
-export type SourcePlatform = 'aliexpress' | 'allegro' | 'amazon' | 'asos' | 'george' | 'joom' | 'mercadolibre' | 'wildberries';
+export type SourcePlatform = 'aliexpress' | 'allegro' | 'amazon' | 'asos' | 'george' | 'joom' | 'mercadolibre' | 'ozon' | 'wildberries';
 
 /** 商品变体(SKU 组合) */
 export interface Variant {
@@ -655,7 +655,8 @@ export interface BatchPublishItem {
   issues?: ValidationIssue[];
 }
 
-export type PublishJobItemStatus = 'queued' | 'running' | 'paused' | 'succeeded' | 'failed';
+export type PublishJobItemStatus = 'queued' | 'running' | 'paused' | 'succeeded' | 'failed' | 'needs_review';
+export type PublishReviewAction = 'check' | 'release' | 'confirm-update';
 
 export interface PublishJobItem {
   productId: string;

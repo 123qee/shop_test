@@ -1,6 +1,7 @@
 import type { CollectedProduct, EditableProduct, ProductRecord, ProductStatus } from '@shared/types';
 import { v4 as uuid } from 'uuid';
 import { getDb } from '../db/index.js';
+import { collectionKeys } from '../db/collection-keys.js';
 import { inferProductGrouping } from '@shared/product-grouping';
 import { joomListingRepository } from './joom-listing-repository.js';
 
@@ -40,6 +41,10 @@ export interface ProductCreateOptions {
 export interface ProductRepository {
   create(collected: CollectedProduct, templateId?: string, options?: ProductCreateOptions): ProductRecord;
   list(filter?: { status?: ProductStatus }): ProductRecord[];
+  byIds(ids: string[]): ProductRecord[];
+  count(): number;
+  findCollected(product: Pick<CollectedProduct, 'source' | 'sourceProductId' | 'sourceUrl'>): ProductRecord | null;
+  hasSku(sku: string): boolean;
   get(id: string): ProductRecord | null;
   update(id: string, patch: ProductPatch): ProductRecord | null;
   delete(id: string): boolean;
@@ -100,6 +105,36 @@ function attachJoomListings(records: ProductRecord[]): ProductRecord[] {
 }
 
 export class SqliteProductRepository implements ProductRepository {
+  count(): number {
+    return getDb().prepare('SELECT COUNT(*) FROM products').pluck().get() as number;
+  }
+
+  findCollected(product: Pick<CollectedProduct, 'source' | 'sourceProductId' | 'sourceUrl'>): ProductRecord | null {
+    const sourceId = product.sourceProductId.trim();
+    const url = product.sourceUrl.trim().replace(/[?#].*$/, '').replace(/\/+$/, '');
+    // For two nonempty IDs only an ID match counts. Old records without an ID can match by URL.
+    // Both indexed branches participate in the same newest-first order as the product list.
+    const id = getDb().prepare(`
+      SELECT id FROM (
+        SELECT id, created_at, rowid AS seq FROM products
+        WHERE @sourceId <> '' AND ${collectionKeys.sourceId} = @sourceId AND ${collectionKeys.source} = @source
+          AND status <> 'discarded'
+        UNION ALL
+        SELECT id, created_at, rowid AS seq FROM products
+        WHERE @url <> '' AND ${collectionKeys.url} = @url AND ${collectionKeys.source} = @source
+          AND (@sourceId = '' OR coalesce(${collectionKeys.sourceId}, '') = '') AND status <> 'discarded'
+      ) ORDER BY created_at DESC, seq DESC LIMIT 1
+    `).pluck().get({ source: product.source, sourceId, url }) as string | undefined;
+    return id ? this.get(id) : null;
+  }
+
+  hasSku(sku: string): boolean {
+    return Boolean(getDb().prepare(`
+      SELECT 1 FROM products WHERE ${collectionKeys.generatedSku} = @sku OR ${collectionKeys.editedSku} = @sku
+        OR ${collectionKeys.sourceId} = @sku LIMIT 1
+    `).get({ sku }));
+  }
+
   create(collected: CollectedProduct, templateId?: string, options: ProductCreateOptions = {}): ProductRecord {
     const now = new Date().toISOString();
     const id = uuid();
@@ -125,6 +160,15 @@ export class SqliteProductRepository implements ProductRepository {
       ? (getDb().prepare(`SELECT * FROM products WHERE status = ? ORDER BY created_at DESC`).all(filter.status) as Row[])
       : (getDb().prepare(`SELECT * FROM products ORDER BY created_at DESC`).all() as Row[]);
     return attachJoomListings(rows.map(rowToRecord));
+  }
+
+  byIds(ids: string[]): ProductRecord[] {
+    if (!ids.length) return [];
+    const rows = getDb().prepare(
+      `SELECT * FROM products WHERE id IN (${ids.map(() => '?').join(',')})`,
+    ).all(...ids) as Row[];
+    const byId = new Map(rows.map((row) => [row.id, rowToRecord(row)]));
+    return attachJoomListings([...new Set(ids)].flatMap((id) => byId.get(id) ?? []));
   }
 
   get(id: string): ProductRecord | null {

@@ -2,8 +2,9 @@ import { v4 as uuid } from 'uuid';
 import type { PublishJob, PublishJobItem } from '@shared/types';
 import { getDb } from '../db/index.js';
 import { productRepository } from '../repositories/product-repository.js';
-import { shopService } from './shop-service.js';
+import { PublishShopError, shopService } from './shop-service.js';
 import { publishService } from './publish-service.js';
+import { requireNoPendingPublishReview } from './publish-reconciliation.js';
 import { logger } from '../util/logger.js';
 import { PublishValidationError } from './validation.js';
 import { MarketplaceError } from '../marketplaces/types.js';
@@ -54,17 +55,16 @@ class PublishJobService {
       FROM publish_jobs j
       WHERE EXISTS (
         SELECT 1 FROM publish_job_items i
-        WHERE i.job_id = j.id AND i.status IN ('queued', 'running')
+        WHERE i.job_id = j.id AND i.status IN ('queued', 'running', 'needs_review')
       )
       ORDER BY j.rowid
-      LIMIT 50
     `).all() as Array<{ id: string }>;
     const completed = db.prepare(`
       SELECT j.id
       FROM publish_jobs j
       WHERE NOT EXISTS (
         SELECT 1 FROM publish_job_items i
-        WHERE i.job_id = j.id AND i.status IN ('queued', 'running')
+        WHERE i.job_id = j.id AND i.status IN ('queued', 'running', 'needs_review')
       )
       ORDER BY j.rowid DESC
       LIMIT ?
@@ -80,13 +80,15 @@ class PublishJobService {
     return Boolean(getDb().prepare("SELECT 1 FROM publish_job_items WHERE product_id = ? AND status IN ('queued', 'running') LIMIT 1").get(id));
   }
 
-  enqueue(ids: string[]): PublishJob {
+  enqueue(ids: string[], requestedShopId: unknown): PublishJob {
+    const shopId = shopService.confirmPublishTarget(requestedShopId);
     const unique = [...new Set(ids.map(String))];
     if (!unique.length || unique.length > 500) throw new PublishJobInputError('请选择 1–500 个商品');
     const db = getDb();
     const jobId = uuid();
     db.transaction(() => {
       for (const id of unique) {
+        requireNoPendingPublishReview(id);
         const record = productRepository.get(id);
         if (!record) throw new PublishJobInputError(`商品不存在：${id}`);
         if (record.status === 'discarded') throw new PublishJobInputError('废弃箱商品不能发布，请先恢复');
@@ -94,8 +96,9 @@ class PublishJobService {
           throw new PublishJobInputError('所选商品已有发布任务，请等待任务完成');
         }
       }
-      db.prepare('INSERT INTO publish_jobs (id, shop_id, created_at) VALUES (?, ?, ?)').run(jobId, shopService.getActiveId(), new Date().toISOString());
-      const insert = db.prepare("INSERT INTO publish_job_items (job_id, product_id, status, position) VALUES (?, ?, 'queued', ?)");
+      db.prepare('INSERT INTO publish_jobs (id, shop_id, created_at) VALUES (?, ?, ?)').run(jobId, shopId, new Date().toISOString());
+      // JSON null means the new worker has not handed anything to Joom. SQL NULL is an older task.
+      const insert = db.prepare("INSERT INTO publish_job_items (job_id, product_id, status, position, submission) VALUES (?, ?, 'queued', ?, 'null')");
       unique.forEach((id, position) => insert.run(jobId, id, position));
     })();
     this.schedule();
@@ -113,12 +116,16 @@ class PublishJobService {
   start() {
     const db = getDb();
     const message = '服务在发布过程中重启，结果可能已提交到 Joom；请先核对店铺，再重试';
-    const interrupted = db.prepare("SELECT product_id FROM publish_job_items WHERE status = 'running'").all() as Array<{ product_id: string }>;
-    db.prepare("UPDATE publish_job_items SET status = 'failed', error = ? WHERE status = 'running'").run(message);
-    for (const { product_id } of interrupted) {
-      const record = productRepository.get(product_id);
-      if (record?.status === 'publishing') productRepository.update(product_id, { status: 'failed', lastError: message });
-    }
+    db.transaction(() => {
+      db.prepare("UPDATE publish_job_items SET status = 'failed', error = ? WHERE status = 'running' AND submission = 'null'")
+        .run('服务在向 Joom 发送商品前已停止，可手动重试。');
+      const interrupted = db.prepare("SELECT product_id FROM publish_job_items WHERE status = 'running'").all() as Array<{ product_id: string }>;
+      db.prepare("UPDATE publish_job_items SET status = 'needs_review', error = ? WHERE status = 'running'").run(message);
+      for (const { product_id } of interrupted) {
+        const record = productRepository.get(product_id);
+        if (record?.status === 'publishing') productRepository.update(product_id, { status: 'failed', lastError: message });
+      }
+    })();
     this.schedule();
   }
 
@@ -136,20 +143,19 @@ class PublishJobService {
         if (!next) break;
         db.prepare("UPDATE publish_job_items SET status = 'running' WHERE job_id = ? AND product_id = ?").run(next.job_id, next.product_id);
         try {
-          if (next.shop_id !== shopService.getActiveId()) throw new Error('当前店铺已切换，请切回原店铺后重试');
-          const record = await publishService.publish(next.product_id, 'joom');
-          db.prepare("UPDATE publish_job_items SET status = 'succeeded', error = NULL, joom_product_id = ? WHERE job_id = ? AND product_id = ?")
-            .run(record.joomProductId ?? null, next.job_id, next.product_id);
+          await publishService.publish(next.product_id, 'joom', next.shop_id, next.job_id);
         } catch (error) {
           const message = error instanceof PublishValidationError
             ? error.issues.filter((issue) => issue.severity === 'error').map((issue) => `${issue.field ? `${issue.field}: ` : ''}${issue.message}`).join('；') || error.message
             : error instanceof MarketplaceError
               ? error.message + (error.details?.length ? `：${error.details.map((detail) => detail.message).join('；')}` : '')
               : error instanceof Error ? error.message : String(error);
-          db.prepare("UPDATE publish_job_items SET status = 'failed', error = ? WHERE job_id = ? AND product_id = ?")
+          const changed = db.prepare("UPDATE publish_job_items SET status = 'failed', error = ? WHERE job_id = ? AND product_id = ? AND status = 'running'")
             .run(message, next.job_id, next.product_id);
           const record = productRepository.get(next.product_id);
-          if (record && record.status !== 'discarded') productRepository.update(next.product_id, { status: 'failed', lastError: message });
+          if (changed.changes && record && record.status !== 'discarded' && !(error instanceof PublishShopError)) {
+            productRepository.update(next.product_id, { status: 'failed', lastError: message });
+          }
           logger.error('后台发布失败', { productId: next.product_id, message });
         }
       }

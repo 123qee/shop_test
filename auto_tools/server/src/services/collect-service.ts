@@ -2,6 +2,7 @@ import type { CollectedProduct, CollectTemplateOutcome, GroupTemplateBinding, Pr
 import { inferProductGrouping } from '@shared/product-grouping';
 import { reviewTemplates } from '@shared/template-fit';
 import { productRepository, type ProductRepository } from '../repositories/product-repository.js';
+import { getDb } from '../db/index.js';
 import { settingsService } from './settings-service.js';
 import { auditService } from './audit-service.js';
 import { logger } from '../util/logger.js';
@@ -71,49 +72,36 @@ export class CollectService {
   constructor(private readonly repo: ProductRepository = productRepository) {}
 
   async collect(product: CollectedProduct, templateId?: string, options: CollectOptions = {}): Promise<CollectResult> {
-    const existingRecords = this.repo.list();
-    const sourceProductId = product.sourceProductId.trim();
-    const sourceUrl = product.sourceUrl.trim().replace(/[?#].*$/, '').replace(/\/+$/, '');
-    const duplicate = existingRecords.find((record) => {
-      if (record.status === 'discarded' || record.collected.source !== product.source) return false;
-      const existingProductId = record.collected.sourceProductId.trim();
-      if (sourceProductId && existingProductId) return existingProductId === sourceProductId;
-      const existingUrl = record.collected.sourceUrl.trim().replace(/[?#].*$/, '').replace(/\/+$/, '');
-      return Boolean(sourceUrl && existingUrl && sourceUrl === existingUrl);
-    });
-    if (duplicate) {
-      // A previous anti-bot/offline response may have created a record without
-      // images. Let a successful retry repair that record in place.
-      if (duplicate.collected.images.length === 0 && product.images.length > 0) {
-        const normalized = await normalizeCollectedImages(dedupeCollectedProduct(product));
-        normalized.generatedSku = duplicate.collected.generatedSku;
-        const repaired = this.repo.update(duplicate.id, { collected: normalized });
-        if (repaired) {
-          logger.info('重复采集补全空图片', { id: repaired.id, sourceProductId, imageCount: normalized.images.length });
-          return { record: repaired, duplicate: true };
-        }
-      }
-      logger.info('跳过重复采集', { id: duplicate.id, sourceProductId, title: product.title });
+    const duplicate = this.repo.findCollected(product);
+    if (duplicate && (duplicate.collected.images.length > 0 || product.images.length === 0)) {
       return { record: duplicate, duplicate: true };
     }
 
-    const normalized = await cachePrimaryCollectedVideo(
-      await normalizeCollectedImages(dedupeCollectedProduct(product)),
-    );
-    const usedSkus = new Set(existingRecords.flatMap((record) => [
-      record.edited?.sku,
-      record.collected.generatedSku,
-      record.collected.sourceProductId,
-    ]).filter((sku): sku is string => Boolean(sku)));
-    normalized.generatedSku = randomProductSku(usedSkus);
-    const template = chooseCollectTemplate(normalized, settingsService.getConfig(), templateId, {
-      ...options,
-      bindings: settingsService.getGroupTemplateBindings(),
-    });
-    const record = this.repo.create(normalized, template.templateId, { templateConfirmed: template.confirmed });
-    auditService.record({ productId: record.id, action: 'collect.template', summary: outcomeSummary(template), after: template });
-    logger.info('采集入库', { id: record.id, title: product.title, source: product.source, template: template.templateId, confirmed: template.confirmed });
-    return { record, duplicate: false, template };
+    const withImages = await normalizeCollectedImages(dedupeCollectedProduct(product));
+    const normalized = duplicate ? withImages : await cachePrimaryCollectedVideo(withImages);
+
+    // Media work can yield to another tab or server process. Make the final lookup,
+    // SKU reservation, product insert and audit one write transaction.
+    return getDb().transaction((): CollectResult => {
+      const existing = this.repo.findCollected(product);
+      if (existing) {
+        if (existing.collected.images.length || !normalized.images.length) return { record: existing, duplicate: true };
+        const repaired = this.repo.update(existing.id, {
+          collected: { ...normalized, generatedSku: existing.collected.generatedSku },
+        })!;
+        logger.info('重复采集补全空图片', { id: repaired.id, imageCount: normalized.images.length });
+        return { record: repaired, duplicate: true };
+      }
+      normalized.generatedSku = randomProductSku((sku) => this.repo.hasSku(sku));
+      const template = chooseCollectTemplate(normalized, settingsService.getConfig(), templateId, {
+        ...options,
+        bindings: settingsService.getGroupTemplateBindings(),
+      });
+      const record = this.repo.create(normalized, template.templateId, { templateConfirmed: template.confirmed });
+      auditService.record({ productId: record.id, action: 'collect.template', summary: outcomeSummary(template), after: template });
+      logger.info('采集入库', { id: record.id, title: product.title, source: product.source, template: template.templateId, confirmed: template.confirmed });
+      return { record, duplicate: false, template };
+    }).immediate();
   }
 }
 

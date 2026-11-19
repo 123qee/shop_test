@@ -98,6 +98,7 @@ export function SettingsPage() {
   const nativePrompt = useNativePrompt();
   const navigate = useNavigate();
   const [config, setConfig] = useState<PresetsConfig | null>(null);
+  const [savedConfig, setSavedConfig] = useState<PresetsConfig | null>(null);
   const [selId, setSelId] = useState('');
   const [msg, setMsg] = useState('');
   const [error, setError] = useState('');
@@ -135,6 +136,7 @@ export function SettingsPage() {
     api
       .getSettings()
       .then((c) => {
+        setSavedConfig(c);
         setConfig(c);
         setSelId(c.activeId);
       })
@@ -219,7 +221,10 @@ export function SettingsPage() {
     setConfig({ ...config, templates, activeId });
     setSelId(templates[0].id);
   };
-  const setActive = () => setConfig({ ...config, activeId: selId });
+  const setActive = () => {
+    setConfig({ ...config, activeId: selId });
+    setMsg(`点击「保存采集预设」后，新采集将默认使用「${selected.name}」。`);
+  };
 
   const addSize = () => {
     const f = sizeFrom.trim();
@@ -430,13 +435,16 @@ export function SettingsPage() {
   }
 
   async function save() {
+    if (!config || !savedConfig) return;
     setBusy(true);
     setError('');
     setMsg('');
     try {
-      const saved = await api.saveSettings(config!);
+      const saved = await api.saveSettings(config, savedConfig);
+      setSavedConfig(saved);
       setConfig(saved);
-      setMsg('已保存。新采集的商品套用默认模板;编辑页可切换模板');
+      setSelId(id => saved.templates.some(t => t.id === id) ? id : saved.activeId);
+      setMsg(`采集预设已保存。默认模板为「${saved.templates.find((t) => t.id === saved.activeId)?.name}」。`);
     } catch (e) {
       setError((e as Error).message);
     } finally {
@@ -657,16 +665,11 @@ export function SettingsPage() {
 
       <section className="section" id="settings-template">
         <div className="tpl-bar">
-          <label>模板</label>
+          <label htmlFor="editing-template">正在编辑的模板</label>
           <select
+            id="editing-template"
             value={selId}
-            onChange={(e) => {
-              const nextId = e.target.value;
-              setSelId(nextId);
-              // 采集实际读取的是 activeId。选择模板时同步切换采集默认模板，
-              // 保存后，新采集才会使用这里选中的模板。
-              setConfig({ ...config, activeId: nextId });
-            }}
+            onChange={(e) => setSelId(e.target.value)}
           >
             {config.templates.map((t) => (
               <option key={t.id} value={t.id}>

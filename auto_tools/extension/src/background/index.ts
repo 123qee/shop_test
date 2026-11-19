@@ -1,7 +1,11 @@
 import type { CollectResponse, CollectedProduct, PresetsConfig } from '@shared/types';
 import { getConfig } from '../common/config.js';
+import { collectBatchApi, sortBatchUrl } from '../common/collect-batch-api.js';
+import { collectionSourceForUrl, isBatchProductUrl } from '@shared/collect-batches';
+import type { SourcePlatform } from '@shared/types';
 import './erp-batch.js';
 import type { CollectTally, Message, MessageResponse, VideoBackfillStatus } from '../common/messages.js';
+import { cleanOzonProductUrl, ozonProductId } from '../extractors/ozon.js';
 import {
   extractWildberriesProduct,
   extractWildberriesProducts,
@@ -11,7 +15,7 @@ import {
 
 /** 后端请求集中在 background:有 host 权限、不受页面 CORS 限制。 */
 chrome.runtime.onMessage.addListener((msg: Message, sender, sendResponse) => {
-  if (msg.type?.startsWith('ERP_')) return false;
+  if (msg.type?.startsWith('ERP_') || msg.type === 'BATCH_PROGRESS') return false;
   handle(msg, sender)
     .then(sendResponse)
     .catch((e: Error) => sendResponse({ ok: false, error: e.message } satisfies MessageResponse));
@@ -22,12 +26,14 @@ chrome.runtime.onMessage.addListener((msg: Message, sender, sendResponse) => {
  * 上报采集结果。content 只在用户主动选了模板时才传 templateId，
  * 因此带 templateId 就标记为 picked：服务端核对无矛盾会直接确认。
  */
-async function postCollect(product: CollectedProduct, templateId?: string, signal?: AbortSignal): Promise<CollectResponse> {
+type BatchItemRef = { id: string; url: string };
+
+async function postCollect(product: CollectedProduct, templateId?: string, signal?: AbortSignal, batch?: BatchItemRef): Promise<CollectResponse> {
   const { backendUrl } = await getConfig();
   const res = await fetch(`${backendUrl}/api/collect`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ product, ...(templateId ? { templateId, templateSource: 'picked' } : {}) }),
+    body: JSON.stringify({ product, batch, ...(templateId ? { templateId, templateSource: 'picked' } : {}) }),
     signal,
   });
   if (!res.ok) {
@@ -50,6 +56,9 @@ function countCollect(tally: CollectTally, res: CollectResponse): void {
 /** 每个来源标签页一个独立任务；限制总数，避免同时打开过多详情页。 */
 const MAX_CONCURRENT_BATCHES = 6;
 const activeBatches = new Map<number, AbortController>();
+const batchByTab = new Map<number, string>();
+const ozonBatches = new Map<number, string>();
+const historyTabs = new Set<number>();
 const VIDEO_BACKFILL_KEY = 'videoBackfill';
 const VIDEO_BACKFILL_ALARM = 'video-backfill-resume';
 type VideoCandidate = { id: string; sourceUrl: string; title: string };
@@ -57,7 +66,13 @@ type StoredVideoBackfill = VideoBackfillStatus & { candidates: VideoCandidate[];
 let videoBackfillController: AbortController | null = null;
 let videoBackfillRunning = false;
 
-chrome.tabs.onRemoved.addListener((tabId) => activeBatches.get(tabId)?.abort());
+chrome.tabs.onRemoved.addListener((tabId) => {
+  activeBatches.get(tabId)?.abort();
+  ozonBatches.delete(tabId);
+});
+chrome.tabs.onUpdated.addListener((tabId, change) => {
+  if (change.status === 'loading') ozonBatches.delete(tabId);
+});
 
 async function handle(msg: Message, sender: chrome.runtime.MessageSender): Promise<MessageResponse> {
   switch (msg.type) {
@@ -65,21 +80,80 @@ async function handle(msg: Message, sender: chrome.runtime.MessageSender): Promi
       const res = await postCollect(msg.product, msg.templateId);
       return { ok: true, type: 'COLLECT_PRODUCT', id: res.id, duplicate: res.duplicate, template: res.template };
     }
-    case 'BATCH_COLLECT': {
+    case 'BATCH_HISTORY': {
+      const page = new URL(chrome.runtime.getURL('batches.html'));
+      if (msg.batchId) page.searchParams.set('batch', msg.batchId);
+      await chrome.tabs.create({ url: page.href });
+      return { ok: true, type: 'BATCH_OPENED' };
+    }
+    case 'BATCH_SORT': {
+      const { backendUrl } = await getConfig();
+      await chrome.tabs.create({ url: sortBatchUrl(backendUrl, msg.batchId) });
+      return { ok: true, type: 'BATCH_OPENED' };
+    }
+    case 'BATCH_BEGIN_OZON': {
+      const tabId = sender.tab?.id;
+      if (tabId == null || !isBatchProductUrl('ozon', sender.url ?? '')) throw new Error('无法识别 Ozon 来源页面');
+      const { id } = await collectBatchApi.create('ozon', msg.urls, msg.templateId);
+      ozonBatches.set(tabId, id);
+      return { ok: true, type: 'BATCH_BEGIN_OZON', batchId: id };
+    }
+    case 'BATCH_END_OZON': {
+      const tabId = sender.tab?.id;
+      if (tabId != null && ozonBatches.get(tabId) === msg.batchId) ozonBatches.delete(tabId);
+      return { ok: true, type: 'BATCH_END_OZON' };
+    }
+    case 'OZON_COLLECT_ITEM': {
+      const tabId = sender.tab?.id;
+      const url = cleanOzonProductUrl(msg.url);
+      if (tabId == null || !url || !isBatchProductUrl('ozon', sender.url ?? '')) throw new Error('只有 Ozon 页面可以发起 Ozon 商品采集');
+      return withBatch(tabId, async (signal) => {
+        const stage = (note: string) => {
+          chrome.tabs.sendMessage(tabId, { type: 'OZON_ITEM_STAGE', note } satisfies Message).catch(() => {});
+        };
+        try {
+          const result = await collectOzonItem(url, tabId, msg.templateId, signal, stage, msg.batchId ? { id: msg.batchId, url: msg.url } : undefined);
+          return { ok: true, type: 'OZON_COLLECT_ITEM', duplicate: Boolean(result.duplicate), confirmed: Boolean(result.template?.confirmed) };
+        } catch (error) {
+          if (msg.batchId && !signal.aborted) await recordFailures(msg.batchId, [msg.url], error);
+          throw error;
+        }
+      });
+    }
+    case 'BATCH_COLLECT':
+    case 'BATCH_RETRY': {
       const tabId = sender.tab?.id;
       if (tabId == null) throw new Error('无法识别发起采集的页面');
-      if (activeBatches.has(tabId)) throw new Error('此页面已有批量采集在进行，请先停止当前任务');
-      if (activeBatches.size >= MAX_CONCURRENT_BATCHES) {
-        throw new Error(`最多同时运行 ${MAX_CONCURRENT_BATCHES} 个批量采集任务，请等待其中一个完成`);
-      }
-      const controller = new AbortController();
-      activeBatches.set(tabId, controller);
-      try {
-        const summary = await batchCollect(msg.urls, tabId, msg.templateId, controller.signal);
-        return { ok: true, type: 'BATCH_COLLECT', ...summary };
-      } finally {
-        if (activeBatches.get(tabId) === controller) activeBatches.delete(tabId);
-      }
+      return withBatch(tabId, async (signal) => {
+        let urls: string[], batchId: string, source: SourcePlatform, templateId: string | undefined;
+        if (msg.type === 'BATCH_RETRY') {
+          if (sender.url?.split('?')[0] !== chrome.runtime.getURL('batches.html')) throw new Error('请从采集批次页面重试');
+          const saved = await collectBatchApi.detail(msg.batchId);
+          batchId = saved.id;
+          if ([...batchByTab.values(), ...ozonBatches.values()].includes(batchId)) throw new Error('该批次仍在采集，请等本轮结束');
+          urls = saved.items.filter(item => item.status === msg.target).map(item => item.url);
+          if (!urls.length) throw new Error(msg.target === 'failed' ? '这批没有失败商品' : '这批没有未处理商品');
+          source = saved.source;
+          templateId = saved.templateId ?? undefined;
+        } else {
+          const pageSource = collectionSourceForUrl(sender.url ?? '');
+          if (!pageSource || (msg.source && msg.source !== pageSource)) throw new Error('无法识别采集来源，请刷新来源页后重试');
+          source = pageSource;
+          urls = [...new Set(msg.urls)];
+          templateId = msg.templateId;
+          batchId = (await collectBatchApi.create(source, urls, templateId)).id;
+        }
+        if (urls.some(url => !isBatchProductUrl(source, url))) throw new Error('部分商品链接不属于本批来源平台');
+        batchByTab.set(tabId, batchId);
+        if (msg.type === 'BATCH_RETRY') historyTabs.add(tabId);
+        try {
+          const summary = await batchCollect(urls, tabId, templateId, signal, batchId, source);
+          return { ok: true, type: 'BATCH_COLLECT', batchId, ...summary };
+        } finally {
+          batchByTab.delete(tabId);
+          historyTabs.delete(tabId);
+        }
+      });
     }
     case 'GET_PRESETS': {
       const { backendUrl } = await getConfig();
@@ -120,10 +194,10 @@ async function handle(msg: Message, sender: chrome.runtime.MessageSender): Promi
     }
     case 'GET_STATS': {
       const { backendUrl } = await getConfig();
-      const res = await fetch(`${backendUrl}/api/products`);
+      const res = await fetch(`${backendUrl}/api/products/count`);
       if (!res.ok) throw new Error(`后端不可达 (${res.status})`);
-      const data = (await res.json()) as unknown[];
-      return { ok: true, type: 'GET_STATS', total: data.length };
+      const data = (await res.json()) as { total: number };
+      return { ok: true, type: 'GET_STATS', total: data.total };
     }
     case 'VIDEO_BACKFILL_START': {
       const current = await readVideoBackfill();
@@ -154,6 +228,20 @@ async function handle(msg: Message, sender: chrome.runtime.MessageSender): Promi
     }
     default:
       throw new Error('unsupported message');
+  }
+}
+
+async function withBatch(tabId: number, run: (signal: AbortSignal) => Promise<MessageResponse>): Promise<MessageResponse> {
+  if (activeBatches.has(tabId)) throw new Error('此页面已有批量采集在进行，请先停止当前任务');
+  if (activeBatches.size >= MAX_CONCURRENT_BATCHES) {
+    throw new Error(`最多同时运行 ${MAX_CONCURRENT_BATCHES} 个批量采集任务，请等待其中一个完成`);
+  }
+  const controller = new AbortController();
+  activeBatches.set(tabId, controller);
+  try {
+    return await run(controller.signal);
+  } finally {
+    activeBatches.delete(tabId);
   }
 }
 
@@ -257,7 +345,9 @@ function isBlockedTitle(title: string): boolean {
 
 function notify(tabId: number | undefined, payload: Omit<Extract<Message, { type: 'BATCH_PROGRESS' }>, 'type'>) {
   if (tabId == null) return;
-  chrome.tabs.sendMessage(tabId, { type: 'BATCH_PROGRESS', ...payload } satisfies Message).catch(() => {});
+  const message: Message = { type: 'BATCH_PROGRESS', ...payload };
+  if (historyTabs.has(tabId)) chrome.runtime.sendMessage(message).catch(() => {});
+  else chrome.tabs.sendMessage(tabId, message).catch(() => {});
 }
 
 function makeFetcher(tabId?: number): JsonFetcher {
@@ -300,102 +390,89 @@ function isCollectable(product: CollectedProduct | null | undefined): boolean {
   );
 }
 
-async function batchCollectWildberries(urls: string[], signal: AbortSignal, notifyTabId?: number, templateId?: string) {
-  const total = urls.length;
-  notify(notifyTabId, { done: 0, total, ok: 0, fail: 0, note: '正在通过 Wildberries 接口读取商品…' });
-  let products: Map<string, CollectedProduct>;
+async function recordFailures(batchId: string, urls: string[], error: unknown) {
+  const reason = error instanceof Error ? error.message : String(error);
   try {
-    products = await waitOrStop(extractWildberriesProducts(urls, makeFetcher(notifyTabId), (done, n) => {
-      if (!signal.aborted) notify(notifyTabId, { done, total: n, ok: 0, fail: 0, note: `读取商品 ${done}/${n}` });
-    }), signal);
-  } catch (e) {
-    if (signal.aborted) {
-      notify(notifyTabId, { done: 0, total, ok: 0, fail: 0, stopped: true });
-      return { total, okCount: 0, fail: 0, stopped: true };
-    }
-    const reason = e instanceof Error ? e.message : String(e);
-    notify(notifyTabId, { done: total, total, ok: 0, fail: total, note: `失败: ${reason}` });
-    return { total, okCount: 0, fail: total, stopped: false };
+    await collectBatchApi.fail(batchId, urls, reason || '读取商品失败');
+  } catch (saveError) {
+    throw new Error(`批次进度保存失败：${(saveError as Error).message}。可在采集批次中继续未处理商品。`);
   }
-
-  let okCount = 0;
-  let fail = 0;
-  let done = 0;
-  const tally = emptyTally();
-  for (const url of urls) {
-    if (signal.aborted) break;
-    const product = products.get(url);
-    try {
-      if (isCollectable(product) && product) {
-        countCollect(tally, await postCollect(product, templateId, signal));
-        okCount++;
-      } else {
-        fail++;
-        notify(notifyTabId, { done, total, ok: okCount, fail, note: '失败: 接口未返回该商品，可能已下架' });
-      }
-    } catch (e) {
-      if (signal.aborted) break;
-      const reason = e instanceof Error ? e.message : String(e);
-      fail++;
-      notify(notifyTabId, { done, total, ok: okCount, fail, note: `失败: ${reason.slice(0, 80)}` });
-    }
-    done += 1;
-    notify(notifyTabId, { done, total, ok: okCount, fail, tally });
-    if (!signal.aborted && done < total) await waitOrStop(sleep(200), signal).catch(() => {});
-  }
-  const stopped = signal.aborted;
-  if (stopped || done < total) notify(notifyTabId, { done, total, ok: okCount, fail, stopped, tally });
-  return { total, okCount, fail, stopped, tally };
 }
 
-async function batchCollect(urls: string[], notifyTabId: number | undefined, templateId: string | undefined, signal: AbortSignal) {
-  if (urls.length && urls.every(isWildberriesUrl)) {
-    return batchCollectWildberries(urls, signal, notifyTabId, templateId);
+async function collectOzonItem(url: string, tabId: number, templateId: string | undefined, signal: AbortSignal,
+  stage: (note: string) => void, batch?: BatchItemRef): Promise<CollectResponse> {
+  const product = await extractViaTab(url, stage, tabId, signal, 120_000);
+  if (!product || product.source !== 'ozon' || product.sourceProductId !== ozonProductId(url) || !isCollectable(product)) {
+    throw new Error('详情页未返回对应的 Ozon 商品');
   }
-  let okCount = 0;
-  let fail = 0;
-  let done = 0;
+  stage('正在保存到采集箱');
+  const request = new AbortController();
+  const cancel = () => request.abort();
+  throwIfStopped(signal);
+  signal.addEventListener('abort', cancel, { once: true });
+  const timeout = setTimeout(cancel, 25_000);
+  try {
+    return await postCollect(product, templateId, request.signal, batch);
+  } catch (error) {
+    if (request.signal.aborted && !signal.aborted) throw new Error('保存商品超时，可重试');
+    throw error;
+  } finally {
+    clearTimeout(timeout);
+    signal.removeEventListener('abort', cancel);
+  }
+}
+
+async function batchCollect(urls: string[], tabId: number, templateId: string | undefined, signal: AbortSignal, batchId: string, source: SourcePlatform) {
   const total = urls.length;
   const tally = emptyTally();
-  for (let i = 0; i < urls.length; i++) {
+  let okCount = 0, fail = 0, done = 0;
+  const report = (note?: string, stopped?: boolean) => notify(tabId, { batchId, done, total, ok: okCount, fail, tally, note, stopped });
+  report();
+  let wbProducts: Map<string, CollectedProduct> | undefined;
+  if (source === 'wildberries') {
+    report('正在通过 Wildberries 接口读取商品…');
+    try {
+      wbProducts = await waitOrStop(extractWildberriesProducts(urls, makeFetcher(tabId), (read, size) => {
+        if (!signal.aborted) report(`读取商品 ${read}/${size}`);
+      }), signal);
+    } catch (error) {
+      if (signal.aborted) { report(undefined, true); return { total, okCount, fail, stopped: true, tally }; }
+      await recordFailures(batchId, urls, error);
+      fail = done = total;
+      report(`读取失败：${(error as Error).message}`);
+      return { total, okCount, fail, stopped: false, tally };
+    }
+  }
+  for (const url of urls) {
     if (signal.aborted) break;
     try {
-      const product = await extractViaTab(
-        urls[i],
-        (note) => notify(notifyTabId, { done, total, ok: okCount, fail, note }),
-        notifyTabId,
-        signal,
-      );
-      throwIfStopped(signal);
-      if (isCollectable(product) && product) {
-        countCollect(tally, await postCollect(product, templateId, signal));
-        okCount++;
+      const batch = { id: batchId, url };
+      let result: CollectResponse;
+      if (source === 'ozon') {
+        result = await collectOzonItem(url, tabId, templateId, signal, report, batch);
       } else {
-        const reason = !product
-          ? '详情页未返回商品数据'
-          : !product.title
-            ? '详情页标题为空'
-            : !product.variants?.length
-              ? '详情页未识别到变体'
-              : '商品数据未通过校验';
-        console.warn('[Joom采集助手] 商品采集失败', { url: urls[i], reason });
-        notify(notifyTabId, { done, total, ok: okCount, fail, note: `失败: ${reason}` });
-        fail++;
+        const product = wbProducts ? wbProducts.get(url) : await extractViaTab(url, report, tabId, signal);
+        throwIfStopped(signal);
+        if (!product) throw new Error(wbProducts ? '接口未返回该商品，可能已下架' : '详情页未返回商品数据');
+        if (!product.title) throw new Error('详情页标题为空');
+        if (!product.variants?.length) throw new Error('详情页未识别到变体');
+        if (!isCollectable(product)) throw new Error('商品数据未通过校验');
+        result = await postCollect(product, templateId, signal, batch);
       }
-    } catch (e) {
+      countCollect(tally, result);
+      okCount++;
+    } catch (error) {
       if (signal.aborted) break;
-      const reason = e instanceof Error ? e.message : String(e);
-      console.warn('[Joom采集助手] 批量采集异常', { url: urls[i], error: reason });
-      notify(notifyTabId, { done, total, ok: okCount, fail, note: `失败: ${reason.slice(0, 80)}` });
+      await recordFailures(batchId, [url], error);
       fail++;
+      report(`失败：${(error as Error).message}`);
     }
-    done = i + 1;
-    notify(notifyTabId, { done, total, ok: okCount, fail, tally });
-    if (i < urls.length - 1 && !signal.aborted) await waitOrStop(sleep(ITEM_GAP_MS), signal).catch(() => {});
+    done++;
+    report();
+    if (done < total && !signal.aborted) await waitOrStop(sleep(wbProducts ? 200 : ITEM_GAP_MS), signal).catch(() => {});
   }
-  const stopped = signal.aborted;
-  if (stopped || done < total) notify(notifyTabId, { done, total, ok: okCount, fail, stopped, tally });
-  return { total, okCount, fail, stopped, tally };
+  if (signal.aborted || done < total) report(undefined, true);
+  return { total, okCount, fail, stopped: signal.aborted, tally };
 }
 
 /** 标签页是否为验证码/风控拦截页(按 URL/标题特征判断)。 */
@@ -424,7 +501,7 @@ async function isTabBlocked(tabId: number): Promise<boolean> {
  * 后台打开详情页 -> 若命中验证码:切到前台、通知用户、轮询等待人工完成 ->
  * 提取结果 -> 关闭标签页。onBlocked 用于向列表页透出「等待验证」提示。
  */
-async function extractViaTab(url: string, onBlocked: ((note: string) => void) | undefined, pageTabId: number | undefined, signal: AbortSignal): Promise<CollectedProduct | null> {
+async function extractViaTab(url: string, onBlocked: ((note: string) => void) | undefined, pageTabId: number | undefined, signal: AbortSignal, verificationWaitMs = CAPTCHA_WAIT_MS): Promise<CollectedProduct | null> {
   throwIfStopped(signal);
   if (isWildberriesUrl(url)) {
     return waitOrStop(extractWildberriesProduct(url, makeFetcher(pageTabId)), signal);
@@ -443,7 +520,7 @@ async function extractViaTab(url: string, onBlocked: ((note: string) => void) | 
       while (await waitOrStop(isTabBlocked(tabId), signal)) {
         await waitOrStop(sleep(2000), signal);
         waited += 2000;
-        if (waited >= CAPTCHA_WAIT_MS) return null; // 超时放弃该商品
+        if (waited >= verificationWaitMs) throw new Error('等待手动验证超时，可重试');
       }
       // 验证通过后等页面重新加载完成
       await waitForComplete(tabId, 20000, signal);
@@ -495,13 +572,31 @@ async function sendToTabWithRetry(
   for (let i = 0; i < tries; i++) {
     throwIfStopped(signal);
     try {
-      const res = (await waitOrStop(chrome.tabs.sendMessage(tabId, msg), signal)) as MessageResponse;
+      const res = await waitOrStop(sendDetailMessage(tabId, msg), signal);
       if (res) return res;
-    } catch {
+    } catch (error) {
       throwIfStopped(signal);
+      if (error instanceof DetailResponseTimeout) throw error;
       /* 未就绪,稍后重试 */
     }
     await waitOrStop(sleep(gapMs), signal);
   }
   return null;
+}
+
+class DetailResponseTimeout extends Error {}
+
+/** 页面脚本可能收到消息后不返回；超时后关闭详情页，由批次处理下一件。 */
+async function sendDetailMessage(tabId: number, msg: Message): Promise<MessageResponse> {
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  try {
+    return await Promise.race([
+      chrome.tabs.sendMessage(tabId, msg) as Promise<MessageResponse>,
+      new Promise<never>((_, reject) => {
+        timer = setTimeout(() => reject(new DetailResponseTimeout('读取商品详情超时')), 15_000);
+      }),
+    ]);
+  } finally {
+    clearTimeout(timer);
+  }
 }

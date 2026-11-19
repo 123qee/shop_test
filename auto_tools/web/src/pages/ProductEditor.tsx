@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useRef, useState, type MouseEvent } from 'react';
-import { useBlocker, useNavigate, useParams } from 'react-router-dom';
+import { useBlocker, useNavigate, useOutletContext, useParams } from 'react-router-dom';
 import type {
   CategoryRequirements,
   EditableProduct,
@@ -9,6 +9,7 @@ import type {
   AuditLogEntry,
   ImageCheckResult,
   JoomIssueDetail,
+  JoomStatus,
 } from '@shared/types';
 import { api } from '../api';
 import { fallbackToAllegroOriginal, imagePreviewSource } from '../image-utils';
@@ -96,6 +97,8 @@ function uniqueVariantSku(productSku: string, color: string, size: string, exist
 
 export function ProductEditor() {
   const nativePrompt = useNativePrompt();
+  const { joom } = useOutletContext<{ joom: JoomStatus | null }>();
+  const shopLabel = joom?.shopName || joom?.shopId || '目标店铺';
   const blockerPromptOpen = useRef(false);
   const saveNavigationTarget = useRef<string | null>(null);
   const { id } = useParams();
@@ -151,12 +154,14 @@ export function ProductEditor() {
     api
       .getProduct(id)
       .then(({ record, editable }) => {
+        if (cancelled) return;
         setRecord(record);
         setForm(editable);
         setSavedJson(JSON.stringify(editable));
       })
-      .catch((e) => setError((e as Error).message));
-    api.listProducts().then((list) => {
+      .catch((e) => { if (!cancelled) setError((e as Error).message); });
+    api.productIndex().then((list) => {
+      if (cancelled) return;
       const unpublished = list.filter((p) => isUnpublished(p.status)).sort(compareProductQueue);
       const all = [...list].sort(compareProductQueue);
       const current = list.find((p) => p.id === id);
@@ -184,7 +189,8 @@ export function ProductEditor() {
         const latest = await api.getProduct(id);
         if (cancelled) return;
         setRecord(latest.record);
-        if (item.status === 'failed') { setError(item.error || '发布失败'); setMsg(''); }
+        if (item.status === 'needs_review') { setError('发布回执待核对，请在原店铺的「发布清单」点击「核对原店线上结果」。'); setMsg(''); }
+        else if (item.status === 'failed' || item.status === 'paused') { setError(item.error || '发布已停止'); setMsg(''); }
         else { setError(''); setMsg(`发布成功，Joom 商品 id: ${item.joomProductId || latest.record.joomProductId || '—'}`); }
         setPublishJobId('');
       } catch (e) { if (!cancelled) setError((e as Error).message); }
@@ -617,11 +623,12 @@ export function ProductEditor() {
   }
 
   async function publish() {
+    if (!joom?.shopId || !await nativePrompt.confirm(`保存修改并将本商品提交到 Joom 店铺「${shopLabel}」？`)) return;
     const saved = await save();
     if (!saved) return;
     setBusy(true);
     try {
-      const job = await api.enqueuePublish([id!]);
+      const job = await api.enqueuePublish([id!], joom.shopId);
       setPublishJobId(job.id);
       setIssues(null);
       const message = job.aheadCount > 0
@@ -638,10 +645,10 @@ export function ProductEditor() {
   }
 
   async function removeFromJoom() {
-    if (!id || !isPublished) return;
+    if (!id || !isPublished || !joom?.shopId) return;
     if (
       !await nativePrompt.confirm(
-        '确定从 Joom 删除该商品？此操作不可恢复，会删除线上商品及全部变体。不要用于临时下架。本地记录将移入废弃箱。',
+        `确定从 Joom 店铺「${joom.shopName || joom.shopId}」删除该商品及全部变体？删除后无法恢复。若其他店铺仍有刊登，本地记录将保留。`,
       )
     ) {
       return;
@@ -650,14 +657,14 @@ export function ProductEditor() {
     setError('');
     setMsg('正在从 Joom 删除…');
     try {
-      const items = await api.batchRemoveRemote({ ids: [id], reason: 'stopSelling' });
+      const items = await api.batchRemoveRemote({ ids: [id], shopId: joom.shopId, reason: 'stopSelling' });
       const item = items[0];
       if (!item?.ok) throw new Error(item?.error || '删除失败');
       const latest = await api.getProduct(id);
       setRecord(latest.record);
       setForm(latest.editable);
       setSavedJson(JSON.stringify(latest.editable));
-      setMsg(item.alreadyGone ? 'Joom 上已不存在该商品，本地已移入废弃箱' : '已从 Joom 删除，本地已移入废弃箱');
+      setMsg(item.discarded ? '线上商品已删除，本地已移入废弃箱' : '该店铺的线上商品已删除，其他店铺仍有刊登');
     } catch (e) {
       setError((e as Error).message);
       setMsg('');
@@ -746,12 +753,12 @@ export function ProductEditor() {
         </button>
         {isPublished && <button className="ghost" onClick={syncRemote} disabled={busy}>同步 Joom 状态</button>}
         {isPublished && (
-          <button className="ghost danger" onClick={removeFromJoom} disabled={busy}>
+          <button className="ghost danger" onClick={removeFromJoom} disabled={busy || !joom?.connected || !joom.shopId}>
             从 Joom 删除
           </button>
         )}
-        <button onClick={publish} disabled={busy || !!publishJobId}>
-          {publishJobId ? '后台发布中' : isPublished ? '保存并后台更新 Joom' : '保存并后台发布到 Joom'}
+        <button onClick={publish} disabled={busy || !!publishJobId || !joom?.connected || !joom.shopId}>
+          {publishJobId ? '后台发布中' : `${isPublished ? '保存并更新到' : '保存并发布到'}「${shopLabel}」`}
         </button>
       </div>
 

@@ -4,9 +4,9 @@ import { config } from '../../config/index.js';
 import { logger } from '../../util/logger.js';
 import type { TokenRepository } from '../../repositories/token-repository.js';
 import { tokenRepository } from '../../repositories/token-repository.js';
-import { shopService, shopTokenKey } from '../../services/shop-service.js';
+import { PublishShopError, shopService, shopTokenKey } from '../../services/shop-service.js';
 import type { MarketplaceAdapter, MarketplaceStatus, PublishResult, RemoteProduct } from '../types.js';
-import { MarketplaceError } from '../types.js';
+import { MarketplaceError, PublishReceiptError } from '../types.js';
 import { JoomClient } from './client.js';
 import {
   extractJoomProductId,
@@ -28,12 +28,16 @@ export class JoomAdapter implements MarketplaceAdapter {
   readonly name = 'Joom';
   private readonly client: JoomClient;
 
-  constructor(private readonly tokens: TokenRepository = tokenRepository) {
-    this.client = new JoomClient(() => this.getValidAccessToken());
+  constructor(private readonly tokens: TokenRepository = tokenRepository, private readonly shopId?: string) {
+    this.client = new JoomClient(() => this.getValidAccessToken(this.shopId));
+  }
+
+  forShop(shopId: string): JoomAdapter {
+    return new JoomAdapter(this.tokens, shopId);
   }
 
   isConnected(): boolean {
-    return Boolean(this.readToken());
+    return Boolean(this.readToken(this.shopId));
   }
 
   async getStatus(): Promise<MarketplaceStatus> {
@@ -97,16 +101,15 @@ export class JoomAdapter implements MarketplaceAdapter {
     // storeId 条件必填:商户身份授权时必填、店铺身份授权时省略。
     // 这里不硬性拦截,交由 Joom 校验并把字段级错误透传给前端。
     const payload = mapToJoomCreatePayload(product);
-    const data = await this.client.request<unknown>('POST', JOOM_CREATE_PRODUCT_PATH, payload);
+    const data = await this.submitProduct(this.client, JOOM_CREATE_PRODUCT_PATH, payload);
     const marketplaceProductId = extractJoomProductId(data);
+    if (!marketplaceProductId) throw new PublishReceiptError('Joom 创建请求未返回商品 ID，请核对原店铺');
     return { marketplaceProductId, raw: data };
   }
 
   /** 指定店铺的客户端：token 刷新后写回该店铺，不依赖「当前店铺」。订单同步按店铺逐个使用。 */
   clientForShop(shopId: string): JoomClient {
-    return shopId === shopService.getActiveId()
-      ? this.client
-      : new JoomClient(() => this.getValidAccessToken(shopId));
+    return new JoomClient(() => this.getValidAccessToken(shopId));
   }
 
   /** 该店铺是否已完成授权。 */
@@ -153,10 +156,23 @@ export class JoomAdapter implements MarketplaceAdapter {
     if (!key || !value) throw new MarketplaceError('更新 Joom 商品缺少商品 id 或 SKU');
 
     const query = new URLSearchParams({ [key]: value }).toString();
-    const { client } = await this.findProductShop(reference);
-    const data = await client.request<unknown>('POST', `${JOOM_UPDATE_PRODUCT_PATH}?${query}`, mapToJoomUpdatePayload(product));
+    const { client } = await this.findProductShop(reference, product.storeId);
+    const data = await this.submitProduct(client, `${JOOM_UPDATE_PRODUCT_PATH}?${query}`, mapToJoomUpdatePayload(product));
     const marketplaceProductId = extractJoomProductId(data) || reference.id || '';
     return { marketplaceProductId, raw: data };
+  }
+
+  private async submitProduct(client: JoomClient, path: string, body: unknown): Promise<unknown> {
+    try {
+      return await client.request('POST', path, body);
+    } catch (error) {
+      if (error instanceof MarketplaceError) {
+        const details = (error.details ?? []).map((detail) => `${detail.code ?? ''} ${detail.message}`).join(' ');
+        if (!/already[\s_-]*exists/i.test(error.message + ' ' + details) && !/Joom 请求失败 \((?:408|5\d\d)\)/.test(error.message)) throw error;
+        throw new PublishReceiptError(error.message + '，请在原店铺的发布清单核对线上结果', error.details, error.requestId);
+      }
+      throw new PublishReceiptError(`Joom 未返回发布结果：${error instanceof Error ? error.message : String(error)}`);
+    }
   }
 
   /**
@@ -197,11 +213,18 @@ export class JoomAdapter implements MarketplaceAdapter {
   }
 
   /** 已发布商品可能属于非当前选中的店铺；只读查询确认归属后再更新。 */
-  private async findProductShop(reference: { id?: string; sku?: string }): Promise<{ client: JoomClient; data: any; shopId: string }> {
+  private async findProductShop(reference: { id?: string; sku?: string }, expectedStoreId?: string): Promise<{ client: JoomClient; data: any; shopId: string }> {
     const key = reference.id ? 'id' : 'sku';
     const value = reference.id ?? reference.sku;
     if (!value) throw new MarketplaceError('查询 Joom 商品缺少商品 id 或 SKU');
     const path = `/products?${new URLSearchParams({ [key]: value }).toString()}`;
+    if (this.shopId) {
+      const data = await this.client.request<any>('GET', path);
+      const storeId = shopService.getStoreId(this.shopId) || expectedStoreId;
+      if (storeId && !data?.storeId) throw new PublishShopError('Joom 未返回线上商品的 storeId，无法确认目标店铺。', 409);
+      if (storeId && data.storeId !== storeId) throw new PublishShopError('线上商品属于其他店铺，请切换到该商品的店铺后操作。', 409);
+      return { client: this.client, data, shopId: this.shopId };
+    }
     const activeId = shopService.getActiveId();
     const shopIds = [activeId, ...shopService.getPublic().profiles.map((shop) => shop.id).filter((id) => id !== activeId)];
     let accessError: unknown;
@@ -210,6 +233,8 @@ export class JoomAdapter implements MarketplaceAdapter {
       const client = new JoomClient(() => this.getValidAccessToken(shopId));
       try {
         const data = await client.request<any>('GET', path);
+        const storeId = shopService.getStoreId(shopId);
+        if (storeId && data?.storeId && data.storeId !== storeId) continue;
         logger.info('已定位 Joom 商品所属店铺', { productId: reference.id, shopId });
         return { client, data, shopId };
       } catch (error) {
@@ -224,10 +249,9 @@ export class JoomAdapter implements MarketplaceAdapter {
   async listProducts(shopId = shopService.getActiveId()): Promise<RemoteProduct[]> {
     const out: RemoteProduct[] = [];
     const seen = new Set<string>();
-    const client = shopId === shopService.getActiveId()
-      ? this.client
-      : new JoomClient(() => this.getValidAccessToken(shopId));
-    const shopName = shopService.getProfile(shopId)?.name ?? shopId;
+    const client = this.clientForShop(shopId);
+    const profile = shopService.getProfile(shopId);
+    const shopName = profile?.name ?? shopId;
     let path: string | undefined = `/products/multi?${new URLSearchParams({ limit: '500' }).toString()}`;
     let pages = 0;
     while (path) {
@@ -237,6 +261,7 @@ export class JoomAdapter implements MarketplaceAdapter {
       pages++;
       const env: { data?: unknown; paging?: { next?: string } } = await client.requestEnvelope('GET', path);
       for (const row of normalizeProductList(env.data)) {
+        if (profile?.storeId && row?.storeId && row.storeId !== profile.storeId) continue;
         out.push(toRemoteProduct(row, undefined, shopId, shopName));
       }
       path = env.paging?.next;
@@ -324,7 +349,7 @@ function normalizeProductList(data: unknown): any[] {
     if (Array.isArray(o.products)) return o.products;
     if (Array.isArray(o.results)) return o.results;
   }
-  return [];
+  throw new MarketplaceError('Joom 未返回可识别的店铺商品列表，请稍后重试');
 }
 
 function toRemoteProduct(data: any, reference?: { id?: string; sku?: string }, shopId?: string, shopName?: string): RemoteProduct {

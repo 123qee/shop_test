@@ -26,6 +26,7 @@ document.getElementById('openWeb')!.addEventListener('click', async () => {
   const { backendUrl } = await getConfig();
   chrome.tabs.create({ url: backendUrl });
 });
+document.getElementById('openBatches')!.addEventListener('click', () => chrome.tabs.create({ url: chrome.runtime.getURL('batches.html') }));
 document.getElementById('openOptions')!.addEventListener('click', () => chrome.runtime.openOptionsPage());
 
 refresh().catch(() => {

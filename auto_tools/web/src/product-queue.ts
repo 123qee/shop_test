@@ -1,3 +1,4 @@
+import type { ProductIndexItem } from '@shared/product-catalog';
 import type { ProductRecord } from '@shared/types';
 
 /** 2 小时内保存过内容，视为「刚编辑」，方便回到列表立刻勾选发布。 */
@@ -7,16 +8,16 @@ export function isUnpublished(status: ProductRecord['status']) {
   return status !== 'published' && status !== 'discarded';
 }
 
-export function queueTime(p: ProductRecord): string {
+export function queueTime(p: Pick<ProductRecord, 'editedAt' | 'createdAt'>): string {
   return p.editedAt || p.createdAt;
 }
 
-export function isRecentlyEdited(p: ProductRecord, now = Date.now()): boolean {
+export function isRecentlyEdited(p: Pick<ProductRecord, 'editedAt' | 'status'>, now = Date.now()): boolean {
   return Boolean(p.editedAt && isUnpublished(p.status) && now - Date.parse(p.editedAt) < RECENT_EDIT_MS);
 }
 
 /** 未发布按最近编辑(无编辑则采集时间)；已发布/废弃仍按采集时间，避免店铺同步打乱队列。 */
-export function compareProductQueue(a: ProductRecord, b: ProductRecord): number {
+export function compareProductQueue(a: Pick<ProductRecord, 'status' | 'editedAt' | 'createdAt'>, b: Pick<ProductRecord, 'status' | 'editedAt' | 'createdAt'>): number {
   const group = (status: ProductRecord['status']) => (status === 'published' ? 2 : status === 'discarded' ? 1 : 0);
   const byGroup = group(a.status) - group(b.status);
   if (byGroup) return byGroup;
@@ -24,10 +25,10 @@ export function compareProductQueue(a: ProductRecord, b: ProductRecord): number 
   return b.createdAt.localeCompare(a.createdAt);
 }
 
-export function productTitle(p: ProductRecord): string {
+export function productTitle(p: Pick<ProductIndexItem, 'edited' | 'collected'>): string {
   return p.edited?.title ?? p.collected.title;
 }
 
-export function productSku(p: ProductRecord): string {
+export function productSku(p: Pick<ProductIndexItem, 'edited' | 'collected'>): string {
   return p.edited?.sku ?? p.collected.generatedSku ?? p.collected.sourceProductId ?? '';
 }

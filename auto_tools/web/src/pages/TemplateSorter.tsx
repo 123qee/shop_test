@@ -2,43 +2,36 @@ import { useEffect, useMemo, useReducer, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { GroupTemplateBinding, PresetTemplate, ProductRecord, TemplateDecisionResult } from '@shared/types';
 import { groupLabel, materialLabel } from '@shared/product-grouping';
-import { productSizeEntries, reviewTemplates, templateTraits, type TemplateReview, type TemplateTraits } from '@shared/template-fit';
+import type { ProductSortCandidate } from '@shared/product-catalog';
+import { productSizeEntries, reviewTemplates, templateTraits, type TemplateTraits } from '@shared/template-fit';
 import { api } from '../api';
 import { fallbackToAllegroOriginal, sizedImageSource } from '../image-utils';
 import { addProductsToActionList, readProductActionLists, removeProductsFromActionList, type ProductActionListKind } from '../product-action-lists';
 import { groupingOf } from './ProductGroupingPanel';
+import { readSorterProgress, saveSorterProgress, sorterSourceName, type SorterProgress } from '../sorter-progress';
 
 const SORTABLE_STATUSES = new Set<ProductRecord['status']>(['collected', 'edited', 'failed']);
 
 /** 需要分拣的商品：模板还没确认，并且现在可以修改（未发布、未废弃、不在发布队列里）。 */
-export function needsTemplateDecision(p: ProductRecord, activeIds?: Set<string>): boolean {
+export function needsTemplateDecision(p: Pick<ProductRecord, 'id' | 'status' | 'templateConfirmed'>, activeIds?: Set<string>): boolean {
   return !p.templateConfirmed && SORTABLE_STATUSES.has(p.status) && !activeIds?.has(p.id);
 }
 
-interface QueueItem {
-  product: ProductRecord;
-  review: TemplateReview;
-}
-
 /** 同一建议的商品排在一起，有把握且建议就是当前模板的排最前，节奏最快。 */
-function buildQueue(products: ProductRecord[], templates: PresetTemplate[], bindings: GroupTemplateBinding[], activeIds: Set<string>): QueueItem[] {
+function buildQueue(products: ProductSortCandidate[], templates: PresetTemplate[], activeIds: Set<string>): ProductSortCandidate[] {
   const order = new Map(templates.map((t, index) => [t.id, index]));
-  const rank = (item: QueueItem) => {
-    const suggestion = item.review.suggestion;
+  const rank = (item: ProductSortCandidate) => {
+    const suggestion = item.suggestion;
     if (!suggestion) return 3;
     if (suggestion.confidence !== 'high') return 2;
-    return suggestion.templateId === item.product.templateId ? 0 : 1;
+    return suggestion.templateId === item.templateId ? 0 : 1;
   };
   return products
-    .filter((product) => needsTemplateDecision(product, activeIds))
-    .map((product) => ({
-      product,
-      review: reviewTemplates(product.collected, templates, { grouping: groupingOf(product), bindings, preferredId: product.templateId }),
-    }))
+    .filter((product) => !activeIds.has(product.id))
     .sort((a, b) => {
-      const ta = a.review.suggestion ? order.get(a.review.suggestion.templateId) ?? 98 : 99;
-      const tb = b.review.suggestion ? order.get(b.review.suggestion.templateId) ?? 98 : 99;
-      return ta - tb || rank(a) - rank(b) || b.product.createdAt.localeCompare(a.product.createdAt);
+      const ta = a.suggestion ? order.get(a.suggestion.templateId) ?? 98 : 99;
+      const tb = b.suggestion ? order.get(b.suggestion.templateId) ?? 98 : 99;
+      return ta - tb || rank(a) - rank(b) || b.createdAt.localeCompare(a.createdAt);
     });
 }
 
@@ -56,11 +49,13 @@ const PARKED_LABEL: Record<Parked, string> = { publish: '发布清单', remove: 
 interface HistoryEntry {
   key: number;
   id: string;
-  kind: 'decision' | 'park' | 'image';
+  kind: 'decision' | 'park' | 'image' | 'skip';
 }
 
 interface SorterState {
+  source: string;
   index: number;
+  choices: Record<string, string>;
   decisions: Record<string, Decision>;
   skipped: Record<string, true>;
   /** 按发生顺序排列，撤销从最后一项开始。废弃不进这里，不能撤销。 */
@@ -73,6 +68,8 @@ interface SorterState {
 }
 
 type SorterAction =
+  | { type: 'selectSource'; source: string }
+  | { type: 'pick'; id: string; templateId: string }
   | { type: 'decide'; id: string; templateId: string; key: number }
   | { type: 'saved'; record: ProductRecord; templateId: string; action: Decision['action'] }
   | { type: 'failed'; id: string; templateId: string; key: number }
@@ -82,39 +79,53 @@ type SorterAction =
   | { type: 'pushHistory'; entry: HistoryEntry }
   | { type: 'dropHistory'; key: number }
   | { type: 'latest'; record: ProductRecord }
-  | { type: 'skip' }
+  | { type: 'skip'; key: number }
+  | { type: 'unskip'; entry: HistoryEntry }
   | { type: 'move'; delta: 1 | -1 }
   | { type: 'reviewSkipped' };
 
-function makeReducer(ids: string[]) {
+function makeReducer(queues: Map<string, ProductSortCandidate[]>) {
   const isOpen = (s: SorterState, id: string) => (!s.decisions[id] || s.decisions[id].status === 'error') && !s.skipped[id] && !s.parked[id];
   const advance = (s: SorterState): SorterState => {
-    for (let i = s.index + 1; i < ids.length; i++) if (isOpen(s, ids[i])) return { ...s, index: i, finished: false };
-    for (let i = 0; i <= s.index && i < ids.length; i++) if (isOpen(s, ids[i])) return { ...s, index: i, finished: false };
+    const queue = queues.get(s.source)!;
+    for (let i = s.index + 1; i < queue.length; i++) if (isOpen(s, queue[i].id)) return { ...s, index: i, finished: false };
+    for (let i = 0; i <= s.index && i < queue.length; i++) if (isOpen(s, queue[i].id)) return { ...s, index: i, finished: false };
     return { ...s, finished: true };
   };
   const focus = (s: SorterState, id: string): SorterState => {
-    const index = ids.indexOf(id);
+    const index = queues.get(s.source)!.findIndex((item) => item.id === id);
     return index < 0 ? s : { ...s, index, finished: false };
   };
   return (s: SorterState, action: SorterAction): SorterState => {
+    const queue = queues.get(s.source)!;
+    const currentId = queue[s.index]?.id;
     switch (action.type) {
+      case 'selectSource':
+        return advance({ ...s, source: action.source, index: -1 });
+      case 'pick':
+        return { ...s, choices: { ...s.choices, [action.id]: action.templateId } };
       case 'decide': {
         const skipped = { ...s.skipped };
         delete skipped[action.id];
-        return advance({
+        return {
           ...s,
           skipped,
           decisions: { ...s.decisions, [action.id]: { status: 'saving', templateId: action.templateId } },
           history: [...s.history, { key: action.key, id: action.id, kind: 'decision' }],
-        });
+        };
       }
-      case 'saved':
-        return {
+      case 'saved': {
+        const choices = { ...s.choices };
+        delete choices[action.record.id];
+        const next: SorterState = {
           ...s,
+          choices,
           decisions: { ...s.decisions, [action.record.id]: { status: 'saved', templateId: action.templateId, action: action.action } },
+          parked: { ...s.parked, [action.record.id]: 'publish' },
           latest: { ...s.latest, [action.record.id]: action.record },
         };
+        return currentId === action.record.id ? advance(next) : next;
+      }
       case 'failed': {
         // 保存失败的这一步不会在服务端留下记录，不能撤销，从栈里去掉。
         const next = {
@@ -127,7 +138,9 @@ function makeReducer(ids: string[]) {
       case 'undone': {
         const { record, entry } = action;
         const decisions = { ...s.decisions };
+        const parked = { ...s.parked };
         if (entry.kind === 'decision') {
+          delete parked[record.id];
           // 同一件改过两次时，撤销后回到第一次的确认结果。
           if (record.templateConfirmed && record.templateId) decisions[record.id] = { status: 'saved', templateId: record.templateId, action: 'confirmed' };
           else delete decisions[record.id];
@@ -135,6 +148,7 @@ function makeReducer(ids: string[]) {
         return focus({
           ...s,
           decisions,
+          parked,
           history: s.history.filter((item) => item.key !== entry.key),
           latest: { ...s.latest, [record.id]: record },
         }, record.id);
@@ -152,7 +166,7 @@ function makeReducer(ids: string[]) {
             : [...s.history, { key: action.key, id: action.id, kind: 'park' }],
           latest: action.record ? { ...s.latest, [action.record.id]: action.record } : s.latest,
         };
-        return ids[s.index] === action.id ? advance(next) : next;
+        return currentId === action.id ? advance(next) : next;
       }
       case 'unparked': {
         const parked = { ...s.parked };
@@ -166,12 +180,24 @@ function makeReducer(ids: string[]) {
       case 'latest':
         return { ...s, latest: { ...s.latest, [action.record.id]: action.record } };
       case 'skip':
-        return s.finished || !ids[s.index] ? s : advance({ ...s, skipped: { ...s.skipped, [ids[s.index]]: true } });
+        if (s.finished || !currentId || s.parked[currentId] || s.decisions[currentId]?.status === 'saving') return s;
+        if (s.skipped[currentId]) return advance(s);
+        return advance({ ...s, skipped: { ...s.skipped, [currentId]: true },
+          history: [...s.history, { key: action.key, id: currentId, kind: 'skip' }] });
+      case 'unskip': {
+        const skipped = { ...s.skipped };
+        delete skipped[action.entry.id];
+        return focus({ ...s, skipped, history: s.history.filter((entry) => entry.key !== action.entry.key) }, action.entry.id);
+      }
       case 'move':
-        return { ...s, index: Math.min(ids.length - 1, Math.max(0, s.index + action.delta)), finished: false };
+        return { ...s, index: Math.min(queue.length - 1, Math.max(0, s.index + action.delta)), finished: false };
       case 'reviewSkipped': {
-        const first = ids.findIndex((id) => s.skipped[id]);
-        return first < 0 ? s : { ...s, skipped: {}, index: first, finished: false };
+        const first = queue.findIndex(({ id }) => s.skipped[id]);
+        if (first < 0) return s;
+        const skipped = { ...s.skipped };
+        for (const { id } of queue) delete skipped[id];
+        const history = s.history.filter((entry) => entry.kind !== 'skip' || !s.skipped[entry.id] || skipped[entry.id]);
+        return { ...s, skipped, history, index: first, finished: false };
       }
     }
   };
@@ -191,23 +217,47 @@ function imagesOf(p: ProductRecord): string[] {
 }
 
 export function TemplateSorter(props: {
-  products: ProductRecord[];
+  products: ProductSortCandidate[];
   templates: PresetTemplate[];
   bindings: GroupTemplateBinding[];
   /** 不参与分拣的商品：发布中，或已在发布/删除清单里。 */
   activeIds: Set<string>;
   /** 清单按店铺分开保存，写入时用同一个范围。 */
   scope: string;
+  batchId?: string;
   /** updated：本次分拣改动过的商品（服务端返回的最新记录），列表据此就地更新。 */
   onClose: (updated: ProductRecord[]) => void;
 }) {
-  const { templates, scope } = props;
-  const [queue] = useState(() => buildQueue(props.products, templates, props.bindings, props.activeIds));
-  const ids = useMemo(() => queue.map((item) => item.product.id), [queue]);
-  const reducer = useMemo(() => makeReducer(ids), [ids]);
-  const [state, dispatch] = useReducer(reducer, undefined, (): SorterState => ({
-    index: 0, decisions: {}, skipped: {}, history: [], parked: {}, latest: {}, finished: ids.length === 0,
-  }));
+  const { templates, scope, batchId } = props;
+  const [checkpoint] = useState(() => readSorterProgress(scope, batchId));
+  const [queues] = useState(() => {
+    const all = buildQueue(props.products, templates, props.activeIds);
+    const groups = new Map([['all', all]]);
+    for (const item of all) {
+      const source = item.source;
+      const group = groups.get(source);
+      if (group) group.push(item);
+      else groups.set(source, [item]);
+    }
+    if (checkpoint?.source && !groups.has(checkpoint.source)) groups.set(checkpoint.source, []);
+    return groups;
+  });
+  const sources = useMemo(() => [...queues.keys()].filter((source) => source !== 'all').sort(), [queues]);
+  const reducer = useMemo(() => makeReducer(queues), [queues]);
+  const [state, dispatch] = useReducer(reducer, checkpoint, (saved): SorterState => {
+    const all = queues.get('all')!;
+    const ids = new Set(all.map((item) => item.id));
+    const templateIds = new Set(templates.map((t) => t.id));
+    const source = saved && queues.has(saved.source) ? saved.source : 'all';
+    const queue = queues.get(source)!;
+    const skipped = Object.fromEntries(Object.entries(saved?.skipped ?? {}).filter(([id]) => ids.has(id)));
+    const choices = Object.fromEntries(Object.entries(saved?.choices ?? {}).filter(([id, choice]) => ids.has(id) && templateIds.has(choice)));
+    let index = queue.findIndex((item) => item.id === saved?.currentId);
+    if (index < 0) index = queue.findIndex((item) => !skipped[item.id]);
+    return { source, index: Math.max(index, 0), choices, skipped, decisions: {}, history: [], parked: {}, latest: {}, finished: index < 0 };
+  });
+  const queue = queues.get(state.source)!;
+  const visibleIds = useMemo(() => new Set(queue.map(({ id }) => id)), [queue]);
   const [imageIndex, setImageIndex] = useState(0);
   /** 主图加载完成的地址，用来决定是否显示“加载图片…”。 */
   const [loadedSrc, setLoadedSrc] = useState<string | null>(null);
@@ -241,35 +291,74 @@ export function TemplateSorter(props: {
   const nameOf = (id?: string) => templates.find((t) => t.id === id)?.name;
 
   const item = state.finished ? undefined : queue[state.index];
-  const product = item ? state.latest[item.product.id] ?? item.product : undefined;
-  const decision = item ? state.decisions[item.product.id] : undefined;
-  const suggestion = item?.review.suggestion;
+  const id = item?.id;
+  const lastCheckpoint = useRef<SorterProgress | null>(checkpoint);
+  const warnedStorage = useRef(false);
+  const completed = state.finished && queues.get('all')!.every((item) => Boolean(state.parked[item.id]));
+  useEffect(() => {
+    const next = completed ? null : { source: state.source, currentId: id ?? null, choices: state.choices, skipped: state.skipped };
+    const saved = saveSorterProgress(scope, batchId, next, lastCheckpoint.current);
+    if (saved) lastCheckpoint.current = next;
+    else if (!warnedStorage.current) {
+      warnedStorage.current = true;
+      setNotice({ tone: 'error', text: '浏览器无法保存分拣进度，关闭后可能需要重新选择来源。' });
+    }
+  }, [scope, batchId, id, state.source, state.skipped, state.choices, completed]);
+  const latest = id ? state.latest[id] : undefined;
+  const [detail, setDetail] = useState<{ id: string; record?: ProductRecord; error?: string }>();
+  const [attempt, setAttempt] = useState(0);
+  useEffect(() => {
+    if (!id || latest) return;
+    let cancelled = false;
+    setDetail(undefined);
+    api.getProduct(id).then(({ record }) => {
+      if (!cancelled) setDetail({ id, record });
+    }).catch((error: Error) => {
+      if (!cancelled) setDetail({ id, error: error.message });
+    });
+    return () => { cancelled = true; };
+  }, [id, latest, attempt]);
+  const loaded = detail?.id === id ? detail : undefined;
+  const product = latest ?? loaded?.record;
+  const review = useMemo(() => product && reviewTemplates(product.collected, templates, {
+    grouping: groupingOf(product), bindings: props.bindings, preferredId: product.templateId,
+  }), [product, templates, props.bindings]);
+  const decision = item ? state.decisions[item.id] : undefined;
+  const choice = item ? state.choices[item.id] : undefined;
+  const suggestion = review?.suggestion;
   const images = product ? imagesOf(product) : [];
   const shownImage = images[Math.min(imageIndex, Math.max(0, images.length - 1))];
   const shownSrc = shownImage ? sizedImageSource(shownImage, 'preview') : undefined;
 
-  const decisionList = Object.values(state.decisions);
+  const decisionIds = Object.keys(state.decisions).filter((id) => visibleIds.has(id));
+  const parkedIds = Object.keys(state.parked).filter((id) => visibleIds.has(id));
+  const decisionList = decisionIds.map((id) => state.decisions[id]);
   const settledCount = new Set([
-    ...Object.keys(state.parked),
-    ...Object.keys(state.decisions).filter((id) => state.decisions[id].status !== 'error'),
+    ...parkedIds,
+    ...decisionIds.filter((id) => state.decisions[id].status === 'saved'),
   ]).size;
   const confirmedCount = decisionList.filter((d) => d.status === 'saved' && d.action === 'confirmed').length;
   const changedCount = decisionList.filter((d) => d.status === 'saved' && d.action === 'changed').length;
   const errorCount = decisionList.filter((d) => d.status === 'error').length;
-  const skippedCount = Object.keys(state.skipped).length;
-  const parkedList = Object.values(state.parked);
+  const skippedCount = Object.keys(state.skipped).filter((id) => visibleIds.has(id)).length;
+  const parkedList = parkedIds.map((id) => state.parked[id]);
+  const lastAction = state.history.filter((entry) => visibleIds.has(entry.id)).at(-1);
   const publishCount = parkedList.filter((k) => k === 'publish').length;
   const removeCount = parkedList.filter((k) => k === 'remove').length;
   const discardCount = parkedList.filter((k) => k === 'discard').length;
 
   useEffect(() => {
     const previous = document.body.style.overflow;
+    const opener = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     document.body.style.overflow = 'hidden';
     dialogRef.current?.focus();
-    return () => { document.body.style.overflow = previous; };
+    return () => {
+      document.body.style.overflow = previous;
+      if (opener?.isConnected) opener.focus({ preventScroll: true });
+    };
   }, []);
 
-  useEffect(() => { setImageIndex(0); }, [item?.product.id]);
+  useEffect(() => { setImageIndex(0); }, [item?.id]);
 
   useEffect(() => {
     if (!notice) return;
@@ -282,7 +371,7 @@ export function TemplateSorter(props: {
   useEffect(() => {
     const keep = new Map<string, HTMLImageElement>();
     for (const next of queue.slice(state.index + 1, state.index + 4)) {
-      const src = imagesOf(next.product)[0];
+      const src = next.image;
       if (!src) continue;
       const url = sizedImageSource(src, 'preview');
       const img = preloaded.current.get(url) ?? new Image();
@@ -300,35 +389,28 @@ export function TemplateSorter(props: {
     removeProductsFromActionList(readProductActionLists(scope), kind, [id], scope);
   }
 
-  /** 套模板并保存；then 为 publish 时保存成功后再加入发布清单。 */
-  function decide(templateId: string, then?: 'publish') {
-    const s = stateRef.current;
-    const current = s.finished ? undefined : queue[s.index];
-    if (!current) return;
-    const id = current.product.id;
-    const parked = s.parked[id];
-    if (parked) {
-      setNotice({ tone: 'info', text: `这件已在${PARKED_LABEL[parked]}，不能再套模板` });
-      return;
-    }
-    if (s.decisions[id]?.status === 'saving') return;
+  function pickTemplate(templateId: string) {
+    if (!product || closing || state.parked[product.id] || pending.current.has(product.id)) return;
+    dispatch({ type: 'pick', id: product.id, templateId });
+  }
+
+  /** 保存的是按下确认时的商品和模板，加入清单成功后再换到下一件。 */
+  function confirmAndQueue(product: ProductRecord, templateId: string) {
+    const id = product.id;
     const key = nextKey();
     dispatch({ type: 'decide', id, templateId, key });
     const task = api.decideTemplate(id, templateId)
       .then((res) => {
         updated.current.set(id, res.record);
         outcomes.current.set(key, 'saved');
+        putInList('publish', id);
         dispatch({ type: 'saved', record: res.record, templateId, action: res.action });
-        if (then) {
-          putInList(then, id);
-          dispatch({ type: 'parked', id, kind: then, key: nextKey() });
-          setNotice({ tone: 'info', text: `「${current.product.collected.title.slice(0, 24)}」已确认模板，加入发布清单` });
-        }
+        setNotice({ tone: 'info', text: `「${product.collected.title.slice(0, 24)}」已确认模板，加入发布清单` });
       })
       .catch((error: Error) => {
         outcomes.current.set(key, 'error');
         dispatch({ type: 'failed', id, templateId, key });
-        setNotice({ tone: 'error', text: `「${current.product.collected.title.slice(0, 24)}」保存失败：${error.message}。这件还留在队列里。` });
+        setNotice({ tone: 'error', text: `「${product.collected.title.slice(0, 24)}」保存失败：${error.message}。这件还留在队列里。` });
       })
       .finally(() => pending.current.delete(id));
     pending.current.set(id, task);
@@ -337,37 +419,35 @@ export function TemplateSorter(props: {
   /** Enter：按建议（或已选的模板）确认，并加入发布清单。 */
   function sendToPublish() {
     const s = stateRef.current;
-    const current = s.finished ? undefined : queue[s.index];
-    if (!current) return;
-    const id = current.product.id;
+    if (!product || closing) return;
+    const id = product.id;
     const parked = s.parked[id];
     if (parked) {
       setNotice({ tone: 'info', text: `这件已在${PARKED_LABEL[parked]}，按 Z 可以撤销` });
       return;
     }
     const existing = s.decisions[id];
-    if (existing?.status === 'saving') return;
-    if (existing?.status === 'saved') {
+    if (pending.current.has(id) || existing?.status === 'saving') return;
+    const target = s.choices[id] ?? existing?.templateId ?? suggestion?.templateId;
+    if (existing?.status === 'saved' && existing.templateId === target) {
       // 已经在本轮确认过模板，直接加入发布清单。
       putInList('publish', id);
       dispatch({ type: 'parked', id, kind: 'publish', key: nextKey() });
-      setNotice({ tone: 'info', text: `「${current.product.collected.title.slice(0, 24)}」已加入发布清单` });
+      setNotice({ tone: 'info', text: `「${product.collected.title.slice(0, 24)}」已加入发布清单` });
       return;
     }
-    const target = current.review.suggestion?.templateId;
     if (!target) {
       setNotice({ tone: 'info', text: '这件没有合适的模板：按数字键选一个再按 Enter，或按 X 加入删除清单' });
       return;
     }
-    decide(target, 'publish');
+    confirmAndQueue(product, target);
   }
 
   /** X：加入删除清单。只改本地清单，不动模板，之后可在删除清单里统一处理。 */
   function sendToRemove() {
     const s = stateRef.current;
-    const current = s.finished ? undefined : queue[s.index];
-    if (!current) return;
-    const id = current.product.id;
+    if (!product || closing) return;
+    const id = product.id;
     const parked = s.parked[id];
     if (parked) {
       setNotice({ tone: 'info', text: `这件已在${PARKED_LABEL[parked]}，按 Z 可以撤销` });
@@ -376,19 +456,18 @@ export function TemplateSorter(props: {
     if (s.decisions[id]?.status === 'saving' || pending.current.has(id)) return;
     putInList('remove', id);
     dispatch({ type: 'parked', id, kind: 'remove', key: nextKey() });
-    setNotice({ tone: 'info', text: `「${current.product.collected.title.slice(0, 24)}」已加入删除清单，按 Z 可以撤销` });
+    setNotice({ tone: 'info', text: `「${product.collected.title.slice(0, 24)}」已加入删除清单，按 Z 可以撤销` });
   }
 
   /** 移入废弃箱：只改本地状态，可在废弃箱恢复，不能用 Z 撤销。 */
   function discard() {
     const s = stateRef.current;
-    const current = s.finished ? undefined : queue[s.index];
-    if (!current) return;
-    const id = current.product.id;
+    if (!product || closing) return;
+    const id = product.id;
     if (s.parked[id]) return;
     // 正在保存中（套模板或废弃）的商品先不动，等结果回来再说。
     if (pending.current.has(id)) return;
-    const name = current.product.collected.title.slice(0, 24);
+    const name = product.collected.title.slice(0, 24);
     const task = api.discardProduct(id)
       .then((record) => {
         updated.current.set(id, record);
@@ -405,9 +484,8 @@ export function TemplateSorter(props: {
   /** D：删除当前显示的这张图（只改可编辑草稿，与编辑页删除一致）。已进清单或正在保存的商品先不动。 */
   function deleteImage() {
     const s = stateRef.current;
-    const current = s.finished ? undefined : queue[s.index];
-    if (!current) return;
-    const id = current.product.id;
+    if (!product || closing) return;
+    const id = product.id;
     const parked = s.parked[id];
     if (parked) {
       setNotice({ tone: 'info', text: `这件已在${PARKED_LABEL[parked]}，不能再删图片` });
@@ -429,12 +507,12 @@ export function TemplateSorter(props: {
         updated.current.set(id, record);
         outcomes.current.set(key, 'saved');
         dispatch({ type: 'latest', record });
-        setNotice({ tone: 'info', text: `已删除这张图，还剩 ${imagesOf(record).length} 张，按 Z 可以撤销` });
+        setNotice({ tone: 'info', text: `「${record.collected.title.slice(0, 24)}」已删图，还剩 ${imagesOf(record).length} 张` });
       })
       .catch((error: Error) => {
         outcomes.current.set(key, 'error');
         dispatch({ type: 'dropHistory', key });
-        setNotice({ tone: 'error', text: `删除图片失败：${error.message}` });
+        setNotice({ tone: 'error', text: `「${product.collected.title.slice(0, 24)}」删除图片失败：${error.message}` });
       })
       .finally(() => pending.current.delete(id));
     pending.current.set(id, task);
@@ -443,9 +521,8 @@ export function TemplateSorter(props: {
   /** 拖动缩略图：把 from 位置的图移到 to 位置（只改可编辑草稿，第一张为主图）。已进清单或正在保存的商品先不动。 */
   function reorderImages(from: number, to: number) {
     const s = stateRef.current;
-    const current = s.finished ? undefined : queue[s.index];
-    if (!current || from === to) return;
-    const id = current.product.id;
+    if (!product || closing || from === to) return;
+    const id = product.id;
     const parked = s.parked[id];
     if (parked) {
       setNotice({ tone: 'info', text: `这件已在${PARKED_LABEL[parked]}，不能再调整图片顺序` });
@@ -455,7 +532,7 @@ export function TemplateSorter(props: {
       setNotice({ tone: 'info', text: '这件正在保存，稍等一下再调整顺序' });
       return;
     }
-    const list = imagesOf(s.latest[id] ?? current.product);
+    const list = imagesOf(s.latest[id] ?? product);
     if (from < 0 || to < 0 || from >= list.length || to >= list.length) return;
     const next = [...list];
     const [moved] = next.splice(from, 1);
@@ -465,11 +542,12 @@ export function TemplateSorter(props: {
         updated.current.set(id, record);
         dispatch({ type: 'latest', record });
         // 大图跟着被拖动的那张走；若期间已切到别的商品，就不动当前的大图位置。
-        if (queue[stateRef.current.index]?.product.id === id) setImageIndex(to);
-        setNotice({ tone: 'info', text: to === 0 ? '已调整顺序，这张现在是主图' : '已调整图片顺序' });
+        const view = stateRef.current;
+        if (!view.finished && queues.get(view.source)![view.index]?.id === id) setImageIndex(to);
+        setNotice({ tone: 'info', text: `「${record.collected.title.slice(0, 24)}」${to === 0 ? '已更新主图' : '已调整图片顺序'}` });
       })
       .catch((error: Error) => {
-        setNotice({ tone: 'error', text: `调整图片顺序失败：${error.message}` });
+        setNotice({ tone: 'error', text: `「${product.collected.title.slice(0, 24)}」调整图片顺序失败：${error.message}` });
       })
       .finally(() => pending.current.delete(id));
     pending.current.set(id, task);
@@ -477,14 +555,19 @@ export function TemplateSorter(props: {
 
   /** Z：撤销栈顶的一步。清单操作只改本地；套模板和删图要等保存完成，再由服务端按同样的顺序撤销。 */
   async function undo() {
-    if (undoBusy.current) return;
-    const top = stateRef.current.history[stateRef.current.history.length - 1];
+    if (undoBusy.current || closing) return;
+    const top = lastAction;
     if (!top) {
       setNotice({ tone: 'info', text: '没有可以撤销的操作' });
       return;
     }
     undoBusy.current = true;
     try {
+      if (top.kind === 'skip') {
+        dispatch({ type: 'unskip', entry: top });
+        setNotice({ tone: 'info', text: '已回到刚才跳过的商品' });
+        return;
+      }
       if (top.kind === 'park') {
         const list = stateRef.current.parked[top.id];
         // 进过清单的，先把它从清单里移出来。
@@ -500,10 +583,11 @@ export function TemplateSorter(props: {
         return;
       }
       const res = await api.undoTemplateDecision(top.id);
+      if (top.kind === 'decision') takeOutOfList('publish', top.id);
       updated.current.set(top.id, res.record);
       outcomes.current.delete(top.key);
       dispatch({ type: 'undone', record: res.record, entry: top });
-      setNotice({ tone: 'info', text: top.kind === 'image' ? '已撤销删图，图片已恢复' : '已撤销，回到这件商品' });
+      setNotice({ tone: 'info', text: `「${res.record.collected.title.slice(0, 24)}」${top.kind === 'image' ? '已恢复图片' : '已撤销模板确认并移出发布清单'}` });
     } catch (error) {
       setNotice({ tone: 'error', text: `撤销失败：${(error as Error).message}` });
     } finally {
@@ -513,6 +597,10 @@ export function TemplateSorter(props: {
 
   async function close() {
     if (closing) return;
+    if (undoBusy.current) {
+      setNotice({ tone: 'info', text: '正在撤销，请稍候再退出' });
+      return;
+    }
     setClosing(true);
     await Promise.allSettled([...pending.current.values()]);
     props.onClose([...updated.current.values()]);
@@ -523,26 +611,45 @@ export function TemplateSorter(props: {
     setImageIndex((index) => (Math.min(index, images.length - 1) + delta + images.length) % images.length);
   }
 
+  function skipCurrent() {
+    if (!closing && id && !pending.current.has(id)) dispatch({ type: 'skip', key: nextKey() });
+  }
+
   // 键盘处理器每次渲染更新，监听只注册一次，避免读到旧状态。
   const keyHandler = useRef<(event: KeyboardEvent) => void>(() => undefined);
   keyHandler.current = (event) => {
     if (event.isComposing) return;
     const target = event.target instanceof HTMLElement ? event.target : null;
+    const dialog = dialogRef.current;
+    if (event.key === 'Tab' && dialog) {
+      const controls = Array.from(dialog.querySelectorAll<HTMLElement>('button:enabled, a[href], select:enabled'));
+      const first = controls[0], last = controls.at(-1);
+      if (first && last && (event.shiftKey ? target === first || target === dialog : target === last)) {
+        event.preventDefault();
+        (event.shiftKey ? last : first).focus();
+      }
+      return;
+    }
     if (target && (target.isContentEditable || target.closest('input, textarea, select'))) return;
     const { key } = event;
     if (key === 'Escape') { event.preventDefault(); void close(); return; }
-    if ((key === 'z' || key === 'Z') && !event.altKey && !event.shiftKey) { event.preventDefault(); void undo(); return; }
+    if ((key === 'z' || key === 'Z') && !event.altKey && !event.shiftKey) { event.preventDefault(); if (!event.repeat) void undo(); return; }
     if (event.metaKey || event.ctrlKey || event.altKey) return;
-    if (key === 'Enter') { event.preventDefault(); if (!event.repeat) sendToPublish(); return; }
+    if (key === 'Enter') {
+      if (target?.closest('button, a[href], summary')) return;
+      event.preventDefault();
+      if (!event.repeat) sendToPublish();
+      return;
+    }
     if (/^[1-9]$/.test(key)) {
       event.preventDefault();
       const template = templates[Number(key) - 1];
-      if (template && !event.repeat) decide(template.id);
+      if (template && !event.repeat) pickTemplate(template.id);
       return;
     }
     if (key === 'ArrowLeft') { event.preventDefault(); stepImage(-1); return; }
     if (key === 'ArrowRight') { event.preventDefault(); stepImage(1); return; }
-    if (key === 's' || key === 'S') { event.preventDefault(); dispatch({ type: 'skip' }); return; }
+    if (key === 's' || key === 'S') { event.preventDefault(); if (!event.repeat) skipCurrent(); return; }
     if (key === 'x' || key === 'X') { event.preventDefault(); sendToRemove(); return; }
     if (key === 'd' || key === 'D') { event.preventDefault(); deleteImage(); return; }
     if (key === 'ArrowUp') { event.preventDefault(); dispatch({ type: 'move', delta: -1 }); return; }
@@ -559,8 +666,8 @@ export function TemplateSorter(props: {
   const colorCount = product
     ? new Set(product.collected.variants.flatMap((v) => Object.entries(v.options ?? {}).filter(([k]) => COLOR_KEY.test(k)).map(([, value]) => value))).size
     : 0;
-  const currentTemplateId = decision && decision.status !== 'error' ? decision.templateId : product?.templateId;
-  const currentIssues = item?.review.fits.find((fit) => fit.templateId === product?.templateId)?.issues ?? [];
+  const currentTemplateId = choice ?? decision?.templateId ?? product?.templateId;
+  const currentIssues = review?.fits.find((fit) => fit.templateId === product?.templateId)?.issues ?? [];
   const currentKnown = Boolean(product?.templateId && nameOf(product.templateId));
 
   return (
@@ -568,7 +675,7 @@ export function TemplateSorter(props: {
       <div className="template-sorter-dialog">
         <header className="template-sorter-head">
           <div>
-            <strong>分拣模板</strong>
+            <strong>{batchId ? '分拣这批采集商品' : '分拣模板'}</strong>
             <span>
               {queue.length
                 ? `${state.finished ? '已看完' : `第 ${state.index + 1} / ${queue.length} 件`} · 已处理 ${settledCount}${skippedCount ? ` · 跳过 ${skippedCount}` : ''}${errorCount ? ` · 保存失败 ${errorCount}` : ''}`
@@ -578,14 +685,27 @@ export function TemplateSorter(props: {
               {discardCount ? ` · 废弃 ${discardCount}` : ''}
             </span>
           </div>
+          <label className="template-sorter-source">
+            来源平台
+            <select className="sort-select" aria-label="来源平台" value={state.source} disabled={closing} onChange={(event) => {
+              setNotice(null);
+              dispatch({ type: 'selectSource', source: event.target.value });
+              dialogRef.current?.focus();
+            }}>
+              <option value="all">全部来源（{queues.get('all')!.length}）</option>
+              {sources.map((source) => (
+                <option key={source} value={source}>{sorterSourceName(source)}（{queues.get(source)!.length}）</option>
+              ))}
+            </select>
+          </label>
           <button type="button" className="ghost" onClick={() => void close()} disabled={closing}>{closing ? '正在保存…' : '退出 Esc'}</button>
         </header>
         <div className="template-sorter-progress" aria-hidden="true"><i style={{ width: `${queue.length ? (settledCount / queue.length) * 100 : 100}%` }} /></div>
         {notice && <div className={`template-sorter-notice ${notice.tone}`} role="status">{notice.text}</div>}
 
-        {!item || !product ? (
+        {!item ? (
           <div className="template-sorter-done">
-            <strong>{queue.length ? '这一轮分完了' : '没有需要分拣的商品'}</strong>
+            <strong>{queue.length ? '这一轮分完了' : `${sorterSourceName(state.source)}暂无待分拣商品`}</strong>
             {queue.length > 0 && (
               <p>
                 确认 {confirmedCount} 件，换模板 {changedCount} 件
@@ -597,10 +717,23 @@ export function TemplateSorter(props: {
               </p>
             )}
             <div>
+              {state.source !== 'all' && queues.get('all')!.length > queue.length && (
+                <button type="button" className="ghost" onClick={() => dispatch({ type: 'selectSource', source: 'all' })}>查看全部来源</button>
+              )}
               {skippedCount > 0 && <button type="button" className="ghost" onClick={() => dispatch({ type: 'reviewSkipped' })}>回头看跳过的 {skippedCount} 件</button>}
+              {lastAction && <button type="button" className="ghost" onClick={() => void undo()} disabled={closing}>撤销上一步</button>}
               <button type="button" onClick={() => void close()} disabled={closing}>完成</button>
             </div>
-            {state.history.length > 0 && <small>按 Z 可以撤销上一件</small>}
+          </div>
+        ) : !product || !review ? (
+          <div className="template-sorter-done" role="status">
+            {loaded?.error ? <>
+              <p>商品详情读取失败：{loaded.error}</p>
+              <div>
+                <button type="button" onClick={() => setAttempt((value) => value + 1)}>重试</button>
+                <button type="button" className="ghost" onClick={skipCurrent}>跳过这件</button>
+              </div>
+            </> : '正在读取商品详情…'}
           </div>
         ) : (
           <div className="template-sorter-body">
@@ -681,6 +814,7 @@ export function TemplateSorter(props: {
                 <div className="template-sorter-subtitle">改后标题：{product.edited.title}</div>
               )}
               <div className="template-sorter-meta">
+                <span>来源：{sorterSourceName(product.collected.source)}</span>
                 {grouping && <span>{groupLabel(grouping.groupId)} · {materialLabel(grouping.material)}</span>}
                 {colorCount > 0 && <span>{colorCount} 个颜色</span>}
                 <Link to={`/products/${product.id}`} target="_blank" rel="noopener noreferrer">编辑页</Link>
@@ -694,8 +828,8 @@ export function TemplateSorter(props: {
               )}
 
               <div className={`template-sorter-current ${decision && decision.status !== 'error' ? 'decided' : currentIssues.length || !currentKnown ? 'warn' : 'ok'}`}>
-                {decision && decision.status !== 'error' ? (
-                  <p><b>已定为「{nameOf(currentTemplateId) ?? '未知模板'}」</b>{decision.status === 'saving' ? ' · 保存中…' : ''}。按其他数字可以改。</p>
+                {choice || (decision && decision.status !== 'error') ? (
+                  <p aria-live="polite"><b>{decision?.status === 'saving' ? '正在确认' : choice ? '已选' : '已确认'}「{nameOf(currentTemplateId)}」</b>{decision?.status === 'error' ? '保存失败，可按 Enter 重试' : choice && decision?.status !== 'saving' ? '按 Enter 确认并加入发布清单' : ''}</p>
                 ) : (
                   <>
                     <p>当前模板：<b>{nameOf(product.templateId) ?? (product.templateId ? '已删除的模板' : '未指定')}</b></p>
@@ -713,7 +847,7 @@ export function TemplateSorter(props: {
                     <p>
                       建议：<b>{nameOf(suggestion.templateId)}</b>
                       <span className="chip">{suggestion.confidence === 'high' ? '有把握' : '要看图确认'}</span>
-                      <kbd>Enter</kbd>
+                      {!choice && <kbd>Enter</kbd>}
                     </p>
                     {suggestion.reasons.length > 0 && <ul>{suggestion.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ul>}
                     {suggestion.note && <small>提示：{suggestion.note}</small>}
@@ -729,7 +863,7 @@ export function TemplateSorter(props: {
                     <span>{row.label}</span>
                     <div>
                       {row.items.map(({ template, number }) => {
-                        const issues = item.review.fits.find((fit) => fit.templateId === template.id)?.issues ?? [];
+                        const issues = review.fits.find((fit) => fit.templateId === template.id)?.issues ?? [];
                         const classes = [
                           'template-sorter-option',
                           suggestion?.templateId === template.id ? 'suggested' : '',
@@ -741,17 +875,18 @@ export function TemplateSorter(props: {
                             key={template.id}
                             type="button"
                             className={classes}
+                            aria-pressed={choice === template.id}
+                            disabled={closing || decision?.status === 'saving' || Boolean(state.parked[product.id])}
                             onClick={() => {
-                              decide(template.id, 'publish');
-                              // 焦点留在按钮上时，空格会把同一模板误套到下一件。
+                              pickTemplate(template.id);
                               dialogRef.current?.focus();
                             }}
-                            title={issues.length ? `与商品不符：\n${issues.map((x) => x.message).join('\n')}` : `套用「${template.name}」并确认`}
+                            title={issues.length ? `与商品不符：\n${issues.map((x) => x.message).join('\n')}` : `选择「${template.name}」`}
                           >
                             <span className="num">{number <= 9 ? number : '·'}</span>
                             <b>{template.name}</b>
                             {suggestion?.templateId === template.id && <small className="tag suggested">建议</small>}
-                            {currentTemplateId === template.id && <small className="tag current">{decision && decision.status !== 'error' ? '已定' : '当前'}</small>}
+                            {currentTemplateId === template.id && <small className="tag current">{choice ? '已选' : decision?.status === 'saved' ? '已定' : '当前'}</small>}
                             {issues.length > 0 && <small className="tag conflict">不符</small>}
                           </button>
                         );
@@ -760,33 +895,40 @@ export function TemplateSorter(props: {
                   </div>
                 ))}
               </div>
-
-              <div className="template-sorter-actions">
-                <button
-                  type="button"
-                  className="ghost danger"
-                  onClick={() => { sendToRemove(); dialogRef.current?.focus(); }}
-                  title="不需要的商品：加入删除清单，不改模板。之后可以在删除清单里统一处理。"
-                >
-                  加入删除清单 <kbd>X</kbd>
-                </button>
-                <button
-                  type="button"
-                  className="ghost"
-                  onClick={() => { discard(); dialogRef.current?.focus(); }}
-                  title="移入本地废弃箱，可在废弃箱恢复，不影响 Joom 线上商品。不能用 Z 撤销。"
-                >
-                  移入废弃箱
-                </button>
-                <button
-                  type="button"
-                  onClick={() => { sendToPublish(); dialogRef.current?.focus(); }}
-                  title="确认模板（按建议或已选的模板）并加入发布清单。"
-                >
-                  加入发布清单 <kbd>Enter</kbd>
-                </button>
-              </div>
             </section>
+          </div>
+        )}
+
+        {product && (
+          <div className="template-sorter-actions">
+            <button type="button" className="ghost" disabled={closing || decision?.status === 'saving' || Boolean(state.parked[product.id])}
+              onClick={() => { skipCurrent(); dialogRef.current?.focus(); }}>暂时跳过 <kbd>S</kbd></button>
+            <button type="button" className="ghost sorter-undo" disabled={closing || !lastAction}
+              onClick={() => { void undo(); dialogRef.current?.focus(); }}>撤销上一步 <kbd>Z</kbd></button>
+            <button
+              type="button"
+              className="ghost danger"
+              onClick={() => { sendToRemove(); dialogRef.current?.focus(); }}
+              title="不需要的商品：加入删除清单，不改模板。之后可以在删除清单里统一处理。"
+            >
+              加入删除清单 <kbd>X</kbd>
+            </button>
+            <button
+              type="button"
+              className="ghost"
+              onClick={() => { discard(); dialogRef.current?.focus(); }}
+              title="移入本地废弃箱，可在废弃箱恢复，不影响 Joom 线上商品。不能用 Z 撤销。"
+            >
+              移入废弃箱
+            </button>
+            <button
+              type="button"
+              disabled={closing || decision?.status === 'saving' || Boolean(state.parked[product.id])}
+              onClick={() => { sendToPublish(); dialogRef.current?.focus(); }}
+              title="确认模板（按建议或已选的模板）并加入发布清单。"
+            >
+              {decision?.status === 'saving' ? '正在确认…' : '确认并加入发布清单'} <kbd>Enter</kbd>
+            </button>
           </div>
         )}
 

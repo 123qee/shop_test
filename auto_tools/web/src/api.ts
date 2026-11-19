@@ -1,7 +1,9 @@
+import type { ProductIndexItem, ProductListCard, CatalogIndexResponse, ProductSortCandidate } from '@shared/product-catalog';
 import type {
   ApiError,
   BatchPublishItem,
   PublishJob,
+  PublishReviewAction,
   BatchRemoveRemoteItem,
   BatchValidateItem,
   CategoryRequirements,
@@ -80,6 +82,22 @@ function readFileAsDataUrl(file: File): Promise<string> {
   });
 }
 
+let indexRequestNumber = 0;
+let lastIndex: { version: string; items: ProductIndexItem[]; requestNumber: number } | undefined;
+
+async function productIndex(): Promise<ProductIndexItem[]> {
+  const requestNumber = ++indexRequestNumber;
+  const previous = lastIndex;
+  const query = previous ? `?version=${encodeURIComponent(previous.version)}` : '';
+  const result = await req<CatalogIndexResponse>(`/api/products/catalog-index${query}`);
+  // A slower verification from another view must not roll the shared cache back.
+  if (lastIndex && requestNumber < lastIndex.requestNumber) return lastIndex.items;
+  const items = result.items ?? (previous?.version === result.version ? previous.items : undefined);
+  if (!items) throw new Error('商品索引版本不匹配，请刷新列表');
+  lastIndex = { version: result.version, items, requestNumber };
+  return items;
+}
+
 export const api = {
   planner: () => req<PlannerData>('/api/planner'),
   createPersonalProject: (input: Partial<ProjectInput> & { name: string }) => req<PersonalProject>('/api/planner/projects', { method: 'POST', body: JSON.stringify(input) }),
@@ -87,6 +105,10 @@ export const api = {
   createPersonalTask: (input: Partial<TaskInput> & { title: string }) => req<PersonalTask>('/api/planner/tasks', { method: 'POST', body: JSON.stringify(input) }),
   updatePersonalTask: (id: string, patch: Partial<TaskInput>) => req<PersonalTask>(`/api/planner/tasks/${id}`, { method: 'PATCH', body: JSON.stringify(patch) }),
   completePersonalTask: (task: PersonalTask) => req<PersonalTask>(`/api/planner/tasks/${task.id}/complete`, { method: 'POST', body: JSON.stringify({ expectedDueDate: task.dueDate }) }),
+  productIndex,
+  productCards: (ids: string[]) => req<ProductListCard[]>('/api/products/catalog-cards', { method: 'POST', body: JSON.stringify({ ids }) }),
+  sortCandidates: (ids: string[]) => req<ProductSortCandidate[]>('/api/products/sort-candidates', { method: 'POST', body: JSON.stringify({ ids }) }),
+  collectBatchProducts: (id: string) => req<{ id: string; productIds: string[] }>(`/api/collect/batches/${encodeURIComponent(id)}/products`),
   listProducts: () => req<ProductRecord[]>('/api/products'),
   getProduct: (id: string) => req<{ record: ProductRecord; editable: EditableProduct }>(`/api/products/${id}`),
   saveProduct: (id: string, edited: EditableProduct, templateConfirmed = false) =>
@@ -99,27 +121,30 @@ export const api = {
     req<{ editable: EditableProduct }>(`/api/products/${id}/apply-preset`, { method: 'POST', body: JSON.stringify({}) }),
   validateProduct: (id: string) =>
     req<ValidateResponse>(`/api/products/${id}/validate`, { method: 'POST', body: JSON.stringify({}) }),
-  publishProduct: (id: string) =>
-    req<ProductRecord>(`/api/products/${id}/publish`, { method: 'POST', body: JSON.stringify({}) }),
+  publishProduct: (id: string, shopId: string) =>
+    req<ProductRecord>(`/api/products/${id}/publish`, { method: 'POST', body: JSON.stringify({ shopId }) }),
   batchValidate: (ids: string[]) =>
     req<BatchValidateItem[]>('/api/products/batch/validate', { method: 'POST', body: JSON.stringify({ ids }) }),
-  batchPublish: (ids: string[]) =>
-      req<BatchPublishItem[]>('/api/products/batch/publish', { method: 'POST', body: JSON.stringify({ ids }) }),
-  enqueuePublish: (ids: string[]) =>
-    req<PublishJob>('/api/products/publish-jobs', { method: 'POST', body: JSON.stringify({ ids }) }),
+  batchPublish: (ids: string[], shopId: string) =>
+    req<BatchPublishItem[]>('/api/products/batch/publish', { method: 'POST', body: JSON.stringify({ ids, shopId }) }),
+  enqueuePublish: (ids: string[], shopId: string) =>
+    req<PublishJob>('/api/products/publish-jobs', { method: 'POST', body: JSON.stringify({ ids, shopId }) }),
   listPublishJobs: () => req<PublishJob[]>('/api/products/publish-jobs'),
   getPublishJob: (id: string) => req<PublishJob>(`/api/products/publish-jobs/${id}`),
   pausePublishJob: (id: string) =>
     req<PublishJob>(`/api/products/publish-jobs/${id}/pause`, { method: 'POST', body: JSON.stringify({}) }),
+  reconcilePublish: (job: string, id: string, shopId: string, action: PublishReviewAction) =>
+    req<{ message: string; job: PublishJob }>(`/api/products/publish-jobs/${job}/items/${id}/reconcile`, { method: 'POST', body: JSON.stringify({ shopId, action }) }),
   batchRemoveRemote: (payload: {
+    shopId: string;
     ids: string[];
     remoteIds?: string[];
     reason?: JoomRemoveReason;
     deleteLocal?: boolean;
   }) =>
     req<BatchRemoveRemoteItem[]>('/api/products/batch/remove-remote', { method: 'POST', body: JSON.stringify(payload) }),
-  batchOperate: (ids: string[], operation: BatchOperation, syncRemote = false) =>
-    req<BatchOperationItem[]>('/api/products/batch/operate', { method: 'POST', body: JSON.stringify({ ids, operation, syncRemote }) }),
+  batchOperate: (ids: string[], operation: BatchOperation, syncRemote = false, shopId?: string) =>
+    req<BatchOperationItem[]>('/api/products/batch/operate', { method: 'POST', body: JSON.stringify({ ids, operation, syncRemote, shopId }) }),
   batchSync: (ids: string[]) =>
     req<JoomSyncItem[]>('/api/products/batch/sync', { method: 'POST', body: JSON.stringify({ ids }) }),
   syncShop: () => req<JoomShopSyncResult>('/api/products/sync-shop', { method: 'POST', body: JSON.stringify({}) }),
@@ -160,8 +185,8 @@ export const api = {
   }),
   saveGroupTemplateBinding: (binding: Omit<GroupTemplateBinding, 'templateId'> & { templateId: string | null }) =>
     req<GroupTemplateBinding[]>('/api/settings/group-templates', { method: 'PUT', body: JSON.stringify(binding) }),
-  saveSettings: (c: PresetsConfig) =>
-    req<PresetsConfig>('/api/settings', { method: 'PUT', body: JSON.stringify(c) }),
+  saveSettings: (c: PresetsConfig, base?: PresetsConfig) =>
+    req<PresetsConfig>('/api/settings', { method: 'PUT', body: JSON.stringify({ ...c, base }) }),
   getPicuiConfig: () => req<PicuiConfigPublic>('/api/settings/picui'),
   savePicuiConfig: (token: string) =>
     req<PicuiConfigPublic>('/api/settings/picui', { method: 'PUT', body: JSON.stringify({ token }) }),

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import type { DashboardStats, JoomStatus } from '@shared/types';
 import { Link, useOutletContext } from 'react-router-dom';
 import { api } from '../api';
+import { lastSorterBatch, readSorterProgress, sorterSourceName } from '../sorter-progress';
 import { PlannerIcon } from './planner/PlannerIcon';
 import { JOOM_BUCKET_META, PRIMARY_JOOM_BUCKETS } from '@shared/joom-listing';
 import {
@@ -14,6 +15,8 @@ import {
 export function DashboardPage() {
   const { joom } = useOutletContext<{ joom: JoomStatus | null }>();
   const actionListScope = joom?.shopId ?? 'default';
+  const batchId = lastSorterBatch(actionListScope);
+  const progress = readSorterProgress(actionListScope, batchId);
   const [data, setData] = useState<DashboardStats | null>(null);
   const [actionLists, setActionLists] = useState<ProductActionLists>(readProductActionLists);
   const [error, setError] = useState('');
@@ -31,34 +34,44 @@ export function DashboardPage() {
     return () => window.removeEventListener(PRODUCT_ACTION_LISTS_CHANGED, onListsChanged);
   }, [actionListScope]);
   useEffect(() => { setActionLists(readProductActionLists(actionListScope)); }, [actionListScope]);
-  if (error) return <div className="error">{error}</div>;
-  if (!data) return <p className="muted">加载看板…</p>;
+  return <>
+    <div className="dashboard-section-head"><h2>待处理</h2><Link to="/joom">浏览商品 →</Link></div>
+    <div className="dashboard-action-lists">
+      <Link className="dashboard-action-card" to="/joom?sort=1">
+        <span className="dashboard-action-icon"><PlannerIcon name="collection" size={20}/></span>
+        <span><strong>继续分拣</strong><small>{progress
+          ? `${batchId ? '上次的采集批次' : '上次分拣'} · ${sorterSourceName(progress.source)}`
+          : '按来源确认商品模板'}</small></span>
+      </Link>
+      <Link className="dashboard-action-card" to="/orders">
+        <span className="dashboard-action-icon"><PlannerIcon name="download" size={20}/></span>
+        <span><strong>订单导出</strong><small>同步店铺订单，下载 Excel</small></span>
+      </Link>
+      <Link className="dashboard-action-card publish" to="/joom/publish-list">
+        <span className="dashboard-action-icon"><PlannerIcon name="upload" size={20}/></span>
+        <span><strong>发布清单</strong><small>发布前集中检查商品内容</small></span>
+        <b>{actionLists.publish.length}</b>
+      </Link>
+      <Link className="dashboard-action-card remove" to="/joom/delete-list">
+        <span className="dashboard-action-icon"><PlannerIcon name="trash" size={20}/></span>
+        <span><strong>删除清单</strong><small>集中复核，避免误删商品</small></span>
+        <b>{actionLists.remove.length}</b>
+      </Link>
+    </div>
+    <div className="dashboard-toolbar"><span>数据概览</span><button className="ghost" onClick={load}>刷新数据</button></div>
+    {error ? <div className="error" role="alert">{error}</div> : data ? <DashboardOverview data={data} /> : <p className="muted">加载看板…</p>}
+  </>;
+}
+
+function DashboardOverview({ data }: { data: DashboardStats }) {
   const unpublished = data.total - (data.byStatus.published ?? 0) - (data.byStatus.discarded ?? 0);
   return <>
-    <div className="dashboard-toolbar"><span>数据概览</span><button className="ghost" onClick={load}>刷新数据</button></div>
     <div className="metric-grid dashboard-metrics">
       <Metric label="商品总数" value={data.total} tone="blue" to="/joom" />
       <Metric label="待发布商品" value={unpublished} tone="orange" to="/joom?status=unpublished" />
       <Metric label="店铺活性" value={data.byListing?.active ?? 0} tone="green" to="/joom?listing=active" />
       <Metric label="需要处理" value={data.byListing?.error ?? 0} tone="red" to="/joom?listing=error" />
     </div>
-
-    <div className="dashboard-section-head"><div><h2>待处理</h2><p>先整理清单，再执行发布或删除</p></div><Link to="/joom">浏览商品 →</Link></div>
-    <div className="dashboard-action-lists">
-      <Link className="dashboard-action-card publish" to="/joom/publish-list">
-        <span className="dashboard-action-icon"><PlannerIcon name="upload" size={20}/></span>
-        <span><strong>发布清单</strong><small>发布前集中检查商品内容</small></span>
-        <b>{actionLists.publish.length}</b>
-        <em>查看清单 →</em>
-      </Link>
-      <Link className="dashboard-action-card remove" to="/joom/delete-list">
-        <span className="dashboard-action-icon"><PlannerIcon name="trash" size={20}/></span>
-        <span><strong>删除清单</strong><small>集中复核，避免误删商品</small></span>
-        <b>{actionLists.remove.length}</b>
-        <em>查看清单 →</em>
-      </Link>
-    </div>
-
     <div className="dashboard-home-grid">
       <section className="section dashboard-compact-section">
         <div className="section-head"><h3>Joom 店铺状态</h3><Link to="/joom">查看商品 →</Link></div>

@@ -1,3 +1,4 @@
+import type { ProductIndexItem } from '@shared/product-catalog';
 import { useMemo, useState } from 'react';
 import type { GroupTemplateBinding, ProductGroupId, ProductMaterial, ProductRecord } from '@shared/types';
 import { findGroupTemplateBinding, groupLabel, inferProductGrouping, materialLabel, PRODUCT_GROUPS, PRODUCT_MATERIALS } from '@shared/product-grouping';
@@ -10,16 +11,16 @@ export interface GroupFilters {
 }
 export const EMPTY_GROUP_FILTERS: GroupFilters = { group: 'all', material: 'all', template: 'all' };
 export const groupingOf = (p: ProductRecord) => p.grouping ?? inferProductGrouping(p.collected);
-export function matchesGroupFilters(p: ProductRecord, filters: GroupFilters) {
-  const g = groupingOf(p);
+export function matchesGroupFilters(p: ProductIndexItem, filters: GroupFilters) {
+  const g = p.grouping;
   return (filters.group === 'all' || g.groupId === filters.group)
     && (filters.material === 'all' || g.material === filters.material)
     && (filters.template === 'all' || Boolean(p.templateConfirmed) === (filters.template === 'confirmed'));
 }
 
 export function ProductGroupingPanel(props: {
-  items: ProductRecord[];
-  visible: ProductRecord[];
+  items: ProductIndexItem[];
+  visible: ProductIndexItem[];
   filters: GroupFilters;
   onChange: (filters: GroupFilters) => void;
   templates: Array<{ id: string; name: string }>;
@@ -37,10 +38,10 @@ export function ProductGroupingPanel(props: {
   const [bindingTemplateId, setBindingTemplateId] = useState('');
   const [correctionGroup, setCorrectionGroup] = useState<ProductGroupId>(filters.group === 'all' ? 'men-short' : filters.group);
   const [correctionMaterial, setCorrectionMaterial] = useState<ProductMaterial | 'keep'>('keep');
-  const groups = useMemo(() => PRODUCT_GROUPS.map((g) => ({ ...g, count: items.filter((p) => groupingOf(p).groupId === g.id).length })), [items]);
-  const inGroup = items.filter((p) => filters.group === 'all' || groupingOf(p).groupId === filters.group);
-  const counts = PRODUCT_MATERIALS.map((m) => ({ ...m, count: inGroup.filter((p) => groupingOf(p).material === m.id).length }));
-  const withMaterial = inGroup.filter((p) => filters.material === 'all' || groupingOf(p).material === filters.material);
+  const groups = useMemo(() => PRODUCT_GROUPS.map((g) => ({ ...g, count: items.filter((p) => p.grouping.groupId === g.id).length })), [items]);
+  const inGroup = items.filter((p) => filters.group === 'all' || p.grouping.groupId === filters.group);
+  const counts = PRODUCT_MATERIALS.map((m) => ({ ...m, count: inGroup.filter((p) => p.grouping.material === m.id).length }));
+  const withMaterial = inGroup.filter((p) => filters.material === 'all' || p.grouping.material === filters.material);
   const confirmedCount = withMaterial.filter((p) => p.templateConfirmed).length;
   const eligible = visible.filter((p) => p.status !== 'discarded' && p.status !== 'publishing' && !props.activeIds.has(p.id));
   const pending = eligible.filter((p) => !p.templateConfirmed);
@@ -48,7 +49,7 @@ export function ProductGroupingPanel(props: {
   const recommended = templates.find((t) => t.id === binding?.templateId);
   const canBind = filters.group !== 'all' && filters.group !== 'pending' && filters.material !== 'unknown';
   const exactBinding = bindings.find((b) => b.groupId === filters.group && b.material === filters.material);
-  const nextGroup = groups.find((g) => g.id !== filters.group && items.some((p) => groupingOf(p).groupId === g.id && !p.templateConfirmed && p.status !== 'discarded' && p.status !== 'publishing' && !props.activeIds.has(p.id)));
+  const nextGroup = groups.find((g) => g.id !== filters.group && items.some((p) => p.grouping.groupId === g.id && !p.templateConfirmed && p.status !== 'discarded' && p.status !== 'publishing' && !props.activeIds.has(p.id)));
   const canAct = !disabled && !locked;
 
   return <section className="collection-group-panel" aria-label="采集自动分组">
@@ -116,8 +117,8 @@ export function ProductGroupingPanel(props: {
   </section>;
 }
 
-export function ProductGroupingBadges({ product }: { product: ProductRecord }) {
-  const grouping = groupingOf(product);
+export function ProductGroupingBadges({ product }: { product: ProductIndexItem }) {
+  const grouping = product.grouping;
   return <div className="collection-group-badges" title={grouping.reason}>
     <span>{groupLabel(grouping.groupId)}{grouping.source === 'manual' ? ' · 手动' : ''}</span>
     <span className={grouping.material === 'unknown' ? 'unknown' : ''}>{materialLabel(grouping.material)}</span>

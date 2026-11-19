@@ -6,6 +6,10 @@ import { settingsRepository, type SettingsRepository } from '../repositories/set
 const SHOPS_KEY = 'shops';
 const LEGACY_MARKETPLACE = 'joom';
 
+export class PublishShopError extends Error {
+  constructor(message: string, readonly status: 400 | 404 | 409) { super(message); }
+}
+
 export function shopTokenKey(shopId: string): string {
   return `joom:${shopId}`;
 }
@@ -100,6 +104,16 @@ export class ShopService {
     return this.getConfig().activeId;
   }
 
+  confirmPublishTarget(shopId: unknown): string {
+    if (typeof shopId !== 'string' || !shopId.trim()) {
+      throw new PublishShopError('缺少目标店铺，请刷新页面后重新确认发布。', 400);
+    }
+    if (shopId !== this.getActiveId()) {
+      throw new PublishShopError('当前店铺已切换，请刷新页面并重新确认目标店铺。', 409);
+    }
+    return shopId;
+  }
+
   getActive(): StoredShopProfile | undefined {
     const cfg = this.getConfig();
     return cfg.profiles.find((p) => p.id === cfg.activeId) ?? cfg.profiles[0];
@@ -112,10 +126,7 @@ export class ShopService {
   /** 指定/当前店铺的凭证。空档案不回退到别的店；仅「默认店铺」可回退 .env。 */
   getCredentials(shopId?: string): JoomCredentials | null {
     const cfg = this.getConfig();
-    const shop =
-      (shopId && cfg.profiles.find((p) => p.id === shopId)) ||
-      cfg.profiles.find((p) => p.id === cfg.activeId) ||
-      cfg.profiles[0];
+    const shop = cfg.profiles.find((p) => p.id === (shopId ?? cfg.activeId));
     if (!shop) return null;
     const clientId = shop.clientId?.trim() || (shop.id === 'default' ? config.joom.clientId : '');
     const clientSecret = shop.clientSecret?.trim() || (shop.id === 'default' ? config.joom.clientSecret : '');
@@ -133,8 +144,8 @@ export class ShopService {
     return Boolean(this.getCredentials(shopId));
   }
 
-  getActiveStoreId(): string | undefined {
-    return this.getActive()?.storeId;
+  getStoreId(shopId?: string): string | undefined {
+    return (shopId ? this.getProfile(shopId) : this.getActive())?.storeId;
   }
 
   setActive(shopId: string): ShopsConfigPublic {

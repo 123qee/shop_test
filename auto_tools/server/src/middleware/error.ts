@@ -4,12 +4,18 @@ import { MarketplaceError } from '../marketplaces/types.js';
 import { PublishValidationError } from '../services/validation.js';
 import { AiNotConfiguredError } from '../services/ai-title-service.js';
 import { PublishJobInputError } from '../services/publish-job-service.js';
+import { PublishShopError } from '../services/shop-service.js';
+import { PresetConflictError } from '../services/settings-service.js';
 import { TemplateDecisionError } from '../services/template-decision-service.js';
 import { DraftImageError } from '../services/product-service.js';
 import { logger } from '../util/logger.js';
 
 /** 统一错误响应,输出 shared 的 ApiError 结构。 */
 export function errorHandler(err: unknown, _req: Request, res: Response, _next: NextFunction): void {
+  if (err instanceof PresetConflictError) {
+    res.status(409).json({ error: err.message });
+    return;
+  }
   if (err instanceof TemplateDecisionError) {
     res.status(err.status).json({ error: err.message });
     return;
@@ -20,6 +26,10 @@ export function errorHandler(err: unknown, _req: Request, res: Response, _next: 
   }
   if (err instanceof PublishJobInputError) {
     res.status(400).json({ error: err.message });
+    return;
+  }
+  if (err instanceof PublishShopError) {
+    res.status(err.status).json({ error: err.message });
     return;
   }
   if (err instanceof AiNotConfiguredError) {

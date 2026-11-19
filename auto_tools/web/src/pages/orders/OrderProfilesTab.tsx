@@ -257,6 +257,7 @@ export function OrderProfilesTab({ profiles, onChange }: Props) {
   const blockerPromptOpen = useRef(false);
 
   const saved = isNew ? undefined : profiles.find((profile) => profile.id === draft.id);
+  const previousSaved = useRef(saved);
   const dirty = isNew || (saved ? !sameContent(draft, saved) : false);
   const problems = useMemo(() => validate(draft, profiles), [draft, profiles]);
   const firstProblem = Object.values(problems)[0] ?? '';
@@ -273,6 +274,15 @@ export function OrderProfilesTab({ profiles, onChange }: Props) {
   useEffect(() => {
     if (!isNew && !saved && profiles.length) setDraft(clone(profiles[0]));
   }, [isNew, saved, profiles]);
+
+  // 导出完成会刷新方案上次使用的条件。只同步仍未编辑的草稿，避免出现虚假的未保存提示。
+  useEffect(() => {
+    const previous = previousSaved.current;
+    previousSaved.current = saved;
+    if (saved && previous && previous !== saved && previous.id === saved.id) {
+      setDraft((current) => sameContent(current, previous) ? clone(saved) : current);
+    }
+  }, [saved]);
 
   // 有未保存的修改时，切换标签页或离开页面前先确认（标签页通过 ?tab= 切换，所以也比较 search）
   const blocker = useBlocker(({ currentLocation, nextLocation }) =>

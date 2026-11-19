@@ -6,6 +6,7 @@ export const MIN_IMAGE_SIZE = 550;
 export const PUBLISH_IMAGE_SIZE = 1200;
 const ASOS_IMAGE_HOST = /(^|\.)images\.asos-media\.com$/i;
 const ALLEGRO_IMAGE_HOST = /(^|\.)allegroimg\.com$/i;
+const OZON_IMAGE_HOST = /(^|\.)ozonstatic\.(ru|cn|com)$/i;
 
 interface ImageInfo {
   contentType?: string;
@@ -175,6 +176,12 @@ export async function normalizeCollectedImages<T extends { images: string[]; var
     if (isAllegroImageUrl(url)) return;
     // ASOS 原图是高清竖图；母商品库保留原图，发布时再生成正方形留白版。
     if (isAsosImageUrl(url)) return;
+    // Ozon 的商品原图由 CDN 提供，直接生成发布图链接，避免入库等待原图探测。
+    const parsed = parsedHttpUrl(original ?? url);
+    if (parsed && OZON_IMAGE_HOST.test(parsed.hostname) && parsed.pathname.startsWith('/s3/multimedia')) {
+      replacements.set(url, squareImageUrl(url));
+      return;
+    }
     if (needsImageProxy(url)) {
       replacements.set(url, squareImageUrl(url));
       return;

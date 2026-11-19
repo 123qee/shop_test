@@ -25,14 +25,14 @@ export function videoAssetPath(assetId: string): string | null {
   return target.startsWith(path.resolve(config.videoDir) + path.sep) ? target : null;
 }
 
-export async function cacheVideo(video: ProductVideo, referer?: string): Promise<ProductVideo> {
+export async function cacheVideo(video: ProductVideo, referer?: string, timeoutMs = 120_000): Promise<ProductVideo> {
   if (video.localAssetId && videoAssetPath(video.localAssetId) && fs.existsSync(videoAssetPath(video.localAssetId)!)) return video;
   if (/\.m3u8(?:[?#]|$)/i.test(video.url)) throw new Error('暂不支持缓存 HLS 播放列表，请采集 MP4/WebM 直链');
 
   fs.mkdirSync(config.videoDir, { recursive: true });
   const response = await fetch(video.url, {
     redirect: 'follow',
-    signal: AbortSignal.timeout(120_000),
+    signal: AbortSignal.timeout(timeoutMs),
     headers: {
       'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/140 Safari/537.36',
       ...(referer ? { Referer: referer } : {}),
@@ -68,7 +68,8 @@ export async function cacheVideo(video: ProductVideo, referer?: string): Promise
 export async function cachePrimaryCollectedVideo(product: CollectedProduct): Promise<CollectedProduct> {
   if (!product.videos?.length) return product;
   try {
-    const first = await cacheVideo(product.videos[0], product.sourceUrl);
+    // 浏览器扩展的采集请求要尽快返回。慢视频保留直链，可在发布时再缓存。
+    const first = await cacheVideo(product.videos[0], product.sourceUrl, product.source === 'ozon' ? 8_000 : undefined);
     return { ...product, videos: [first, ...product.videos.slice(1)] };
   } catch (error) {
     logger.warn('商品视频本地缓存失败，已保留来源 URL', {

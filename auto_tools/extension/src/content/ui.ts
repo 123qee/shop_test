@@ -47,6 +47,7 @@ export function ensureStyles(): void {
     .joom-batchbar {
       position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%);
       z-index: 100001; display: flex; align-items: center; gap: 12px;
+      width: max-content; max-width: calc(100vw - 24px); flex-wrap: wrap;
       background: #1f2937; color: #fff; padding: 10px 16px; border-radius: 12px;
       box-shadow: 0 6px 24px rgba(0,0,0,.35);
       font-family: -apple-system, system-ui, sans-serif; font-size: 13px;
@@ -134,11 +135,14 @@ export interface BatchBarHandlers {
   onCollectSelected: () => void;
   onCollectPage: () => void;
   onStop: () => void;
+  onHistory: () => void;
+  onSort: () => void;
 }
 
 export interface BatchBar {
   setCount: (n: number) => void;
   setStatus: (t: string) => void;
+  setSortable: (available: boolean) => void;
   setBusy: (b: boolean) => void;
   setTemplates: (templates: PresetOption[]) => void;
   /** 用户主动选的模板；「不指定」时为 undefined，由服务端推荐。 */
@@ -283,6 +287,9 @@ export function createBatchBar(h: BatchBarHandlers, label = 'Joom'): BatchBar {
   const clearBtn = mk('clear', '清空');
   const selBtn = mk('sel', '采集选中', true);
   const pageBtn = mk('page', '采集本页', true);
+  const historyBtn = mk('history', '采集批次');
+  const sortBtn = mk('batch-sort', '分拣这批');
+  sortBtn.style.display = 'none';
   const stopBtn = mk('stop', '■ 停止');
   stopBtn.style.display = 'none';
   stopBtn.style.background = '#b91c1c';
@@ -292,13 +299,15 @@ export function createBatchBar(h: BatchBarHandlers, label = 'Joom'): BatchBar {
   collapseBtn.className += ' jb-collapse';
   collapseBtn.title = '收起采集栏';
   collapseBtn.setAttribute('aria-label', '收起采集栏');
-  bar.append(title, count, templateWrap, allBtn, clearBtn, selBtn, pageBtn, stopBtn, status, collapseBtn);
+  bar.append(title, count, templateWrap, allBtn, clearBtn, selBtn, pageBtn, stopBtn, historyBtn, sortBtn, status, collapseBtn);
   document.body.appendChild(bar);
   allBtn.addEventListener('click', h.onSelectAll);
   clearBtn.addEventListener('click', h.onClear);
   selBtn.addEventListener('click', h.onCollectSelected);
   pageBtn.addEventListener('click', h.onCollectPage);
   stopBtn.addEventListener('click', h.onStop);
+  historyBtn.addEventListener('click', h.onHistory);
+  sortBtn.addEventListener('click', h.onSort);
   collapseBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     const collapsed = bar.classList.toggle('collapsed');
@@ -362,6 +371,7 @@ export function createBatchBar(h: BatchBarHandlers, label = 'Joom'): BatchBar {
       templateSelect.disabled = collectionBusy || !templates.length;
       renderTemplateChoice();
     },
+    setSortable: (available) => { sortBtn.style.display = available ? '' : 'none'; },
     getTemplateId: () => selectedTemplateId,
   };
 }

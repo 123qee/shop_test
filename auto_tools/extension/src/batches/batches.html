@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>采集批次</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #19232d;
+      background: #f4f6f8;
+    }
+    main { max-width: 1200px; margin: 32px auto; padding: 0 18px; }
+    h1, h2 { margin: 0; }
+    h1 { font-size: 26px; }
+    h2 { font-size: 18px; }
+    .bar, header, footer { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    header, footer { justify-content: space-between; }
+    header { margin-bottom: 16px; }
+    .layout { display: grid; grid-template-columns: minmax(240px, 305px) minmax(0, 1fr); gap: 16px; align-items: start; }
+    aside, section { background: white; border: 1px solid #d9dfe5; border-radius: 10px; padding: 16px; }
+    button, select, .action {
+      font: inherit;
+      color: inherit;
+      background: white;
+      border: 1px solid #bec8d2;
+      border-radius: 6px;
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+    button:disabled { opacity: .5; cursor: default; }
+    button:focus-visible, select:focus-visible, a:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
+    .action { background: #1e4dac; color: white; text-decoration: none; }
+    .history { display: grid; gap: 6px; margin: 12px 0; }
+    .history button { text-align: left; }
+    .history button[aria-current=true] { border-color: #2765cc; background: #edf4ff; }
+    .history small { display: block; color: #526270; }
+    .meta { color: #526270; }
+    .row { border-top: 1px solid #e2e7ec; padding: 10px 0; display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 0 10px; }
+    .row a { overflow-wrap: anywhere; color: #20509b; }
+    .reason { grid-column: 2; color: #a23a22; }
+    .failed, #message { color: #9a2c12; }
+    .toolbar { margin: 14px 0; }
+    .rows { margin-bottom: 12px; }
+    .rows:empty::before { content: '没有符合条件的商品'; color: #526270; }
+    [hidden] { display: none !important; }
+    @media (max-width: 700px) {
+      .layout { grid-template-columns: 1fr; }
+      main { margin: 14px auto; }
+      .history { max-height: 200px; overflow: auto; }
+    }
+  </style>
+</head>
+<body>
+<main>
+<header><h1>采集批次</h1><button id="refresh" type="button">刷新记录</button></header>
+<p id="message" role="status" hidden></p>
+<div class="layout"><aside><h2>历史批次</h2><div class="history" id="history"></div>
+<footer><button id="newer" type="button">上一页</button><button id="older" type="button">下一页</button></footer></aside>
+<section><p id="empty">选择一个批次查看商品。</p><div id="detail" hidden>
+<h2 id="title"></h2><p class="meta" id="counts"></p>
+<div class="bar toolbar"><a id="sort" class="action" target="_blank" rel="noopener">分拣这批</a><button id="retry" type="button">只重试失败项</button><button id="resume" type="button">继续未处理项</button><button id="stop" type="button" hidden>停止本次采集</button></div>
+<p id="progress" role="status" hidden></p>
+<label>商品状态 <select id="filter"><option value="all">全部</option><option value="failed">失败</option><option value="pending">未处理</option><option value="collected">新增</option><option value="duplicate">重复</option></select></label>
+<div id="rows" class="rows"></div><footer><button id="prevItems" type="button">上一页商品</button><span id="range"></span><button id="nextItems" type="button">下一页商品</button></footer>
+</div></section></div></main>
+<script type="module" src="batches.js"></script>
+</body>
+</html>

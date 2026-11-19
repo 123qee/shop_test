@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import type { JoomStatus } from '@shared/types';
 import { api } from './api';
@@ -43,7 +43,10 @@ export function App() {
   const [joom, setJoom] = useState<JoomStatus | null>(null);
   const [actionLists, setActionLists] = useState<ProductActionLists>(readProductActionLists);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(readSidebarCollapsed);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuToggle = useRef<HTMLButtonElement>(null);
   const location = useLocation();
+  useEffect(() => { setMenuOpen(false); }, [location.key]);
   const inMercadoLibre = location.pathname.startsWith('/mercadolibre');
   // 订单导出按页面里勾选的店铺工作，与「当前店铺」无关，不显示店铺切换器以免误会
   const inOrders = location.pathname.startsWith('/orders');
@@ -109,7 +112,14 @@ export function App() {
   return (
     <div className={`app-shell${inPersonal ? ' personal-space' : ''}${inTasks ? ' task-space' : inProjects ? ' project-space' : ''}`}>
       <FeedbackToast />
-      <aside className={`app-sidebar${sidebarCollapsed ? ' collapsed' : ''}`}>
+      <aside className={`app-sidebar${sidebarCollapsed ? ' collapsed' : ''}${menuOpen ? ' menu-open' : ''}`}
+        onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget)) setMenuOpen(false); }}
+        onKeyDown={(event) => {
+          if (menuOpen && event.key === 'Escape') {
+            setMenuOpen(false);
+            menuToggle.current?.focus();
+          }
+        }}>
         <button
           type="button"
           className="sidebar-collapse-button"
@@ -124,7 +134,11 @@ export function App() {
           <span className="sidebar-brand-mark"><PlannerIcon name="grid" size={20}/></span>
           <span className="sidebar-brand-copy"><strong>我的工作台</strong><small>工作与生活</small></span>
         </Link>
-        <nav className="sidebar-nav" aria-label="主导航">
+        <button type="button" className="ghost sidebar-menu-toggle" ref={menuToggle}
+          aria-controls="workspace-navigation" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? '收起菜单' : '全部功能'}
+        </button>
+        <nav id="workspace-navigation" className="sidebar-nav" aria-label="主导航">
           <span className="sidebar-group-label">概览</span>
           <NavLink to="/" end title="工作台" className={({ isActive }) => `sidebar-link${isActive ? ' on' : ''}`}>
             <span className="sidebar-link-icon"><PlannerIcon name="grid" size={17}/></span><span className="sidebar-link-label">工作台</span>

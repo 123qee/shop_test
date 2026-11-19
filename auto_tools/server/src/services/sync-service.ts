@@ -31,6 +31,10 @@ export class SyncService {
       id: record.joomProductId,
       sku: localSku(record),
     });
+    return this.saveRemoteStatus(record, remote);
+  }
+
+  saveRemoteStatus(record: ProductRecord, remote: RemoteProduct): ProductRecord {
     const now = new Date().toISOString();
     if (remote.shopId) {
       joomListingRepository.upsertShopListing(
@@ -43,7 +47,7 @@ export class SyncService {
     }
     const next = this.applyRemoteStatus(record, remote, now);
     auditService.record({
-      productId: id,
+      productId: record.id,
       action: 'product.sync',
       summary: `同步 Joom 状态${remote.state ? `（${remote.state}）` : ''}`,
       before: { joomState: record.joomState, joomInventory: record.joomInventory },

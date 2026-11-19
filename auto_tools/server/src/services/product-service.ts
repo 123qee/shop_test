@@ -1,4 +1,4 @@
-import type { CollectedProduct, EditableProduct, EditableVariant, ProductRecord, ProductStatus, ProductVideo } from '@shared/types';
+import type { CollectDefaults, CollectedProduct, EditableProduct, EditableVariant, ProductRecord, ProductStatus, ProductVideo } from '@shared/types';
 import { productRepository, type ProductRepository } from '../repositories/product-repository.js';
 import { applyDefaults } from './defaults.js';
 import { settingsService } from './settings-service.js';
@@ -113,9 +113,24 @@ export function preserveVariantSkus(next: EditableVariant[], previous: EditableV
 export class ProductService {
   constructor(private readonly repo: ProductRepository = productRepository) {}
 
+  count(): number {
+    return this.repo.count();
+  }
+
   list(status?: ProductStatus): ProductRecord[] {
     const validTemplates = new Set(settingsService.getConfig().templates.map((t) => t.id));
     return this.repo.list(status ? { status } : undefined).map((r) => this.withScores(r, validTemplates));
+  }
+
+  byIds(ids: string[]): ProductRecord[] {
+    const templates = new Set(settingsService.getConfig().templates.map((template) => template.id));
+    const defaults = new Map<string | undefined, CollectDefaults>();
+    return this.repo.byIds(ids).map((record) => {
+      if (!record.edited && !defaults.has(record.templateId)) {
+        defaults.set(record.templateId, settingsService.getDefaultsFor(record.templateId));
+      }
+      return this.withScores(record, templates, defaults.get(record.templateId));
+    });
   }
 
   get(id: string): ProductRecord | null {
@@ -166,16 +181,16 @@ export class ProductService {
     return saved;
   }
 
-  private withScores(r: ProductRecord, validTemplates = new Set(settingsService.getConfig().templates.map((t) => t.id))): ProductRecord {
-    const editable = this.getEditable(r);
+  private withScores(r: ProductRecord, validTemplates = new Set(settingsService.getConfig().templates.map((t) => t.id)), defaults?: CollectDefaults): ProductRecord {
+    const editable = this.getEditable(r, defaults);
     return { ...r, templateConfirmed: Boolean(r.templateConfirmed && validTemplates.has(r.templateId ?? '')), qualityScore: scoreProduct(editable, r), languageRisk: listingHasLanguageRisk(editable) };
   }
 
   /** 返回用于编辑的数据:优先已编辑,否则由采集派生草稿并套用该商品模板的预设。 */
-  getEditable(record: ProductRecord): EditableProduct {
+  getEditable(record: ProductRecord, defaults?: CollectDefaults): EditableProduct {
     const editable = record.edited
       ? record.edited
-      : applyDefaults(deriveEditable(record.collected), settingsService.getDefaultsFor(record.templateId));
+      : applyDefaults(deriveEditable(record.collected), defaults ?? settingsService.getDefaultsFor(record.templateId));
     // 已保存的旧草稿也要走内置颜色规范化,否则会绕过采集时的默认映射。
     return normalizeProductColors(editable).product;
   }

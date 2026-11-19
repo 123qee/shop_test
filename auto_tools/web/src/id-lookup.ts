@@ -1,11 +1,11 @@
-import type { ProductRecord } from '@shared/types';
+import type { ProductIndexItem } from '@shared/product-catalog';
 
 export const ID_LOOKUP_LIMIT = 100;
 
 export type IdMatchVia = 'joomId' | 'sku';
 
 export type IdLookupHit = {
-  product: ProductRecord;
+  product: ProductIndexItem;
   via: IdMatchVia;
   token: string;
   collision: boolean;
@@ -34,7 +34,7 @@ export function parseProductIds(raw: string): { ids: string[]; truncated: boolea
   };
 }
 
-function pushIndex(map: Map<string, ProductRecord[]>, key: string | undefined, product: ProductRecord) {
+function pushIndex(map: Map<string, ProductIndexItem[]>, key: string | undefined, product: ProductIndexItem) {
   const normalized = key?.trim().toLowerCase();
   if (!normalized) return;
   const list = map.get(normalized);
@@ -43,9 +43,9 @@ function pushIndex(map: Map<string, ProductRecord[]>, key: string | undefined, p
 }
 
 /** 先精确匹配 Joom 商品 ID，未中再精确匹配商品级 SKU。 */
-export function lookupProductsByIds(items: ProductRecord[], ids: string[]): IdLookupResult {
-  const byJoom = new Map<string, ProductRecord[]>();
-  const bySku = new Map<string, ProductRecord[]>();
+export function lookupProductsByIds(items: ProductIndexItem[], ids: string[]): IdLookupResult {
+  const byJoom = new Map<string, ProductIndexItem[]>();
+  const bySku = new Map<string, ProductIndexItem[]>();
   for (const product of items) {
     pushIndex(byJoom, product.joomProductId, product);
     pushIndex(bySku, product.edited?.sku, product);

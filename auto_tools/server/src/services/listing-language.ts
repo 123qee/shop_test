@@ -20,10 +20,11 @@ let cache: { at: number; colors: string[] } | null = null;
 const CACHE_MS = 10 * 60 * 1000;
 
 /** 拉取 Joom 官方色名；未连接或失败时返回 undefined，调用方跳过官方名单校验。 */
-export async function loadOfficialJoomColors(force = false): Promise<string[] | undefined> {
+export async function loadOfficialJoomColors(force = false, shopId?: string): Promise<string[] | undefined> {
   if (!force && cache && Date.now() - cache.at < CACHE_MS) return cache.colors;
   try {
-    const adapter = marketplaceRegistry.require('joom') as JoomAdapter;
+    const joom = marketplaceRegistry.require('joom') as JoomAdapter;
+    const adapter = shopId ? joom.forShop(shopId) : joom;
     if (!(await adapter.isConnected())) return undefined;
     const colors = normalizeJoomColorList(await adapter.getColors());
     if (!colors.length) return undefined;

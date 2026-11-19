@@ -22,6 +22,7 @@ const entries = {
   erp: 'src/erp/aliexpress-form.ts',
   background: 'src/background/index.ts',
   popup: 'src/popup/popup.ts',
+  batches: 'src/batches/batches.ts',
   options: 'src/options/options.ts',
 };
 
@@ -33,7 +34,7 @@ const iifeEntries = {
 /** 拷贝静态资源到 dist */
 function copyStatic() {
   fs.mkdirSync(outdir, { recursive: true });
-  for (const f of ['src/popup/popup.html', 'src/options/options.html']) {
+  for (const f of ['src/popup/popup.html', 'src/options/options.html', 'src/batches/batches.html']) {
     const base = path.basename(f);
     fs.copyFileSync(path.join(__dirname, f), path.join(outdir, base));
   }

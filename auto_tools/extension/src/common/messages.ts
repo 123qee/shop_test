@@ -1,4 +1,4 @@
-import type { CollectedProduct, CollectTemplateOutcome } from '@shared/types';
+import type { CollectedProduct, CollectTemplateOutcome, SourcePlatform } from '@shared/types';
 import type { AliExpressAutoFillConfig } from '@shared/aliexpress-auto-fill';
 
 /** 批量采集的模板处理结果统计。 */
@@ -23,7 +23,14 @@ export type Message =
   | { type: 'GET_PRESETS' }
   | { type: 'GET_ALIEXPRESS_AUTOFILL_CONFIG' }
   /** 列表页批量采集:传各商品详情页 URL,后台逐个开标签页提取全量数据 */
-  | { type: 'BATCH_COLLECT'; urls: string[]; templateId?: string }
+  | { type: 'BATCH_COLLECT'; urls: string[]; source?: SourcePlatform; templateId?: string }
+  | { type: 'BATCH_BEGIN_OZON'; urls: string[]; templateId?: string }
+  | { type: 'BATCH_END_OZON'; batchId: string }
+  | { type: 'BATCH_HISTORY'; batchId?: string }
+  | { type: 'BATCH_SORT'; batchId: string }
+  | { type: 'BATCH_RETRY'; batchId: string; target: 'failed' | 'pending' }
+  | { type: 'OZON_COLLECT_ITEM'; url: string; templateId?: string; batchId?: string }
+  | { type: 'OZON_ITEM_STAGE'; note: string }
   /** 中止正在进行的批量采集 */
   | { type: 'BATCH_STOP' }
   /** background -> 目标详情标签页:提取详情(不入库,返回数据由后台统一入库) */
@@ -31,7 +38,7 @@ export type Message =
   /** 按商品 URL 提取(Wildberries 走公开 JSON,不打开详情页) */
   | { type: 'EXTRACT_BY_URL'; url: string }
   /** background -> 发起列表页:批量进度通知 */
-  | { type: 'BATCH_PROGRESS'; done: number; total: number; ok: number; fail: number; stopped?: boolean; note?: string; tally?: CollectTally };
+  | { type: 'BATCH_PROGRESS'; done: number; total: number; ok: number; fail: number; batchId?: string; stopped?: boolean; note?: string; tally?: CollectTally };
 
 export type MessageResponse =
   | { ok: true; type: 'COLLECT_PRODUCT'; id: string; duplicate?: boolean; template?: CollectTemplateOutcome }
@@ -40,8 +47,11 @@ export type MessageResponse =
   | { ok: true; type: 'VIDEO_BACKFILL'; status: VideoBackfillStatus }
   | { ok: true; type: 'GET_PRESETS'; templates: Array<{ id: string; name: string }>; activeId: string }
   | { ok: true; type: 'GET_ALIEXPRESS_AUTOFILL_CONFIG'; config: AliExpressAutoFillConfig }
-  | { ok: true; type: 'BATCH_COLLECT'; total: number; okCount: number; fail: number; stopped: boolean; tally?: CollectTally }
+  | { ok: true; type: 'BATCH_COLLECT'; batchId: string; total: number; okCount: number; fail: number; stopped: boolean; tally?: CollectTally }
+  | { ok: true; type: 'BATCH_BEGIN_OZON'; batchId: string }
+  | { ok: true; type: 'BATCH_OPENED' | 'BATCH_END_OZON' }
   | { ok: true; type: 'BATCH_STOP'; active: boolean }
+  | { ok: true; type: 'OZON_COLLECT_ITEM'; duplicate: boolean; confirmed: boolean }
   | { ok: true; type: 'EXTRACT_DETAIL'; product: CollectedProduct | null }
   | { ok: true; type: 'EXTRACT_BY_URL'; product: CollectedProduct | null }
   | { ok: false; error: string };

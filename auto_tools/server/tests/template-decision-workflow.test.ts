@@ -4,7 +4,7 @@ import { mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { once } from 'node:events';
-import type { CollectResponse, ProductRecord } from '../../shared/types';
+import type { CollectResponse, PresetsConfig, ProductRecord } from '../../shared/types';
 
 const defaults = (material: string, targetSizes: string[]) => ({
   currency: 'USD', priceMode: 'fixed', priceMultiplier: 1, fixedPrice: 5, inventory: 999, attributes: { material }, targetSizes,
@@ -133,6 +133,35 @@ test('采集时指定模板自动确认，分拣确认与撤销', async (t) => {
       assert.equal((await request('/products/nope/template-decision', 'POST', { templateId: 'kids-cotton' })).status, 404);
       productRepository.update(id, { status: 'discarded' });
       assert.equal((await request(`/products/${id}/template-decision`, 'POST', { templateId: 'kids-cotton' })).status, 400);
+    });
+
+    await t.test('跨标签保存描述时保留其他窗口的采集默认，提示同一模板的编辑或删除冲突', async () => {
+      const read = async (): Promise<PresetsConfig> => (await request('/settings')).data;
+      const save = (draft: PresetsConfig, base: PresetsConfig) => request('/settings', 'PUT', { ...draft, base });
+      const initial = await read();
+      const tabA = structuredClone(initial);
+      tabA.templates[0].defaults.description = '窗口 A 的描述';
+      assert.equal((await save({ ...initial, activeId: 'kids-cotton' }, initial)).status, 200);
+      const merged = await save(tabA, initial);
+      assert.equal(merged.status, 200);
+      assert.equal(merged.data.activeId, 'kids-cotton');
+      assert.equal(merged.data.templates[0].defaults.description, '窗口 A 的描述');
+      assert.deepEqual(await read(), merged.data);
+
+      const stale = structuredClone(initial);
+      stale.templates[0].defaults.description = '同时修改的另一份描述';
+      const conflict = await save(stale, initial);
+      assert.equal(conflict.status, 409);
+      assert.match(conflict.data.error, /成人棉短袖/);
+      assert.deepEqual(await read(), merged.data);
+
+      const beforeDelete = await read();
+      const afterDelete = { ...beforeDelete, templates: beforeDelete.templates.filter(t => t.id !== 'kids-cotton'), activeId: 'adult-poly' };
+      assert.equal((await save(afterDelete, beforeDelete)).status, 200);
+      const editingDeleted = structuredClone(beforeDelete);
+      editingDeleted.templates.find(t => t.id === 'kids-cotton')!.name = '正在重命名';
+      assert.equal((await save(editingDeleted, beforeDelete)).status, 409);
+      assert.deepEqual(await read(), afterDelete);
     });
   } finally {
     server.closeAllConnections();

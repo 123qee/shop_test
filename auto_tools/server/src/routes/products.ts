@@ -8,10 +8,13 @@ import { batchService } from '../services/batch-service.js';
 import { syncService } from '../services/sync-service.js';
 import { auditService } from '../services/audit-service.js';
 import { checkProductImages } from '../services/image-service.js';
+import { productCatalogCards, productCatalogIndex, productSortCandidates } from '../services/product-catalog.js';
 import { productService } from '../services/product-service.js';
 import { aiTitleService } from '../services/ai-title-service.js';
 import { loadOfficialJoomColors } from '../services/listing-language.js';
 import { publishJobService } from '../services/publish-job-service.js';
+import { reconcilePublish } from '../services/publish-reconciliation.js';
+import { shopService } from '../services/shop-service.js';
 import { isProductGroup, isProductMaterial } from '@shared/product-grouping';
 import { settingsService } from '../services/settings-service.js';
 import { joomVideoService } from '../services/joom-video-service.js';
@@ -19,9 +22,13 @@ import { templateDecisionService } from '../services/template-decision-service.j
 
 export const productsRouter = Router();
 
+productsRouter.get('/products/count', asyncHandler(async (_req, res) => {
+  res.json({ total: productService.count() });
+}));
+
 productsRouter.get('/products/video-backfill-candidates', asyncHandler(async (req, res) => {
   const source = req.query.source ? String(req.query.source) : undefined;
-  const allowed = ['aliexpress', 'allegro', 'amazon', 'asos', 'george', 'joom', 'mercadolibre', 'wildberries'];
+  const allowed = ['aliexpress', 'allegro', 'amazon', 'asos', 'george', 'joom', 'mercadolibre', 'ozon', 'wildberries'];
   if (source && !allowed.includes(source)) return res.status(400).json({ error: '无效的采集来源' });
   res.json(productService.videoBackfillCandidates({
     source: source as any,
@@ -54,13 +61,32 @@ productsRouter.get('/products/publish-jobs/:jobId', asyncHandler(async (req, res
 
 productsRouter.post('/products/publish-jobs', asyncHandler(async (req, res) => {
   const ids = Array.isArray(req.body?.ids) ? req.body.ids.map(String) as string[] : [];
-  res.status(202).json(publishJobService.enqueue(ids));
+  res.status(202).json(publishJobService.enqueue(ids, req.body?.shopId));
 }));
 
 productsRouter.post('/products/publish-jobs/:jobId/pause', asyncHandler(async (req, res) => {
   const job = publishJobService.pause(req.params.jobId);
   if (!job) return res.status(404).json({ error: '发布任务不存在' });
   res.json(job);
+}));
+
+productsRouter.post('/products/publish-jobs/:jobId/items/:productId/reconcile', asyncHandler(async (req, res) => {
+  const { shopId, action } = z.object({
+    shopId: z.string().min(1), action: z.enum(['check', 'release', 'confirm-update']).default('check'),
+  }).parse(req.body);
+  const message = await reconcilePublish(req.params.jobId, req.params.productId, shopId, action);
+  res.json({ message, job: publishJobService.get(req.params.jobId) });
+}));
+
+const catalogIds = z.object({ ids: z.array(z.string().min(1)).max(200) });
+productsRouter.get('/products/catalog-index', asyncHandler(async (req, res) => {
+  res.json(productCatalogIndex(typeof req.query.version === 'string' ? req.query.version : undefined));
+}));
+productsRouter.post('/products/catalog-cards', asyncHandler(async (req, res) => {
+  res.json(productCatalogCards(catalogIds.parse(req.body).ids));
+}));
+productsRouter.post('/products/sort-candidates', asyncHandler(async (req, res) => {
+  res.json(productSortCandidates(catalogIds.parse(req.body).ids));
 }));
 
 /** 列表(可按 status 过滤) */
@@ -218,7 +244,7 @@ productsRouter.post(
   }),
 );
 
-/** 批量发布:body { ids: string[], marketplaceId? } */
+/** 批量发布：Joom 请求需传入用户确认的 shopId。 */
 productsRouter.post(
   '/products/batch/publish',
   asyncHandler(async (req, res) => {
@@ -226,7 +252,8 @@ productsRouter.post(
     if (!ids.length) return res.status(400).json({ error: '缺少 ids' });
     if (ids.some((id) => publishJobService.isProductActive(id))) return res.status(409).json({ error: '所选商品已有后台发布任务，请等待任务完成' });
     const marketplaceId = (req.body?.marketplaceId as string) || 'joom';
-    res.json(await publishService.publishMany(ids, marketplaceId));
+    const shopId = marketplaceId === 'joom' ? shopService.confirmPublishTarget(req.body?.shopId) : undefined;
+    res.json(await publishService.publishMany(ids, marketplaceId, shopId));
   }),
 );
 
@@ -237,7 +264,9 @@ productsRouter.post(
     const ids = Array.isArray(req.body?.ids) ? (req.body.ids as unknown[]).map(String) : undefined;
     const marketplaceId = (req.body?.marketplaceId as string) || 'joom';
     const dryRun = req.body?.dryRun === true;
-    res.json(await publishService.repairDuplicateVariantsMany(ids, marketplaceId, dryRun));
+    const shopId = marketplaceId === 'joom' && (!dryRun || req.body?.shopId !== undefined)
+      ? shopService.confirmPublishTarget(req.body?.shopId) : undefined;
+    res.json(await publishService.repairDuplicateVariantsMany(ids, marketplaceId, dryRun, shopId));
   }),
 );
 
@@ -246,12 +275,14 @@ productsRouter.post(
   '/products/batch/remove-remote',
   asyncHandler(async (req, res) => {
     const body = batchRemoveRemoteSchema.parse(req.body);
+    const marketplaceId = body.marketplaceId || 'joom';
+    const shopId = marketplaceId === 'joom' ? shopService.confirmPublishTarget(body.shopId) : undefined;
     if (body.ids.some((id) => publishJobService.isProductActive(id))) return res.status(409).json({ error: '所选商品有后台发布任务，请完成后再删除线上商品' });
     res.json(
       await publishService.removeMany(
         body.ids,
         { reason: body.reason, deleteLocal: body.deleteLocal, extraRemoteIds: body.remoteIds },
-        body.marketplaceId || 'joom',
+        marketplaceId, shopId,
       ),
     );
   }),
@@ -272,6 +303,7 @@ productsRouter.post(
   asyncHandler(async (req, res) => {
     const ids: string[] = Array.isArray(req.body?.ids) ? (req.body.ids as unknown[]).map(String) : [];
     if (ids.some((id) => publishJobService.isProductActive(id))) return res.status(409).json({ error: '所选商品中有正在排队或发布的商品，请完成后再修改' });
+    const shopId = req.body?.syncRemote ? shopService.confirmPublishTarget(req.body?.shopId) : undefined;
     let operation = req.body?.operation;
     if (!ids.length) return res.status(400).json({ error: '缺少 ids' });
     if (!operation?.type) return res.status(400).json({ error: '缺少 operation.type' });
@@ -281,12 +313,12 @@ productsRouter.post(
       if (req.body?.syncRemote) return res.status(400).json({ error: '调整分组只修改本地商品' });
     }
     if (operation.type === 'normalizeColors') {
-      operation = { type: 'normalizeColors', officialColors: await loadOfficialJoomColors() };
+      operation = { type: 'normalizeColors', officialColors: await loadOfficialJoomColors(false, shopId) };
     }
     const items = batchService.run(ids, operation);
     if (req.body?.syncRemote) {
       const remoteIds = ids.filter((id) => productService.get(id)?.joomProductId);
-      const remoteResults = await publishService.publishMany(remoteIds, 'joom');
+      const remoteResults = await publishService.publishMany(remoteIds, 'joom', shopId);
       for (const remote of remoteResults) {
         if (!remote.ok) {
           const item = items.find((x) => x.id === remote.id);
@@ -359,7 +391,8 @@ productsRouter.post(
   asyncHandler(async (req, res) => {
     if (publishJobService.isProductActive(req.params.id)) return res.status(409).json({ error: '该商品已有后台发布任务，请等待任务完成' });
     const marketplaceId = (req.body?.marketplaceId as string) || 'joom';
-    const record = await publishService.publish(req.params.id, marketplaceId);
+    const shopId = marketplaceId === 'joom' ? shopService.confirmPublishTarget(req.body?.shopId) : undefined;
+    const record = await publishService.publish(req.params.id, marketplaceId, shopId);
     res.json(record);
   }),
 );

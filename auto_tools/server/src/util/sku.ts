@@ -1,12 +1,11 @@
 import { randomInt } from 'node:crypto';
 
 /** 生成 16 位数字商品 SKU，并避开已有商品 SKU。 */
-export function randomProductSku(used: Set<string>): string {
+export function randomProductSku(isUsed: (sku: string) => boolean): string {
   let sku: string;
   do {
     sku = `${randomInt(10_000_000, 100_000_000)}${String(randomInt(0, 100_000_000)).padStart(8, '0')}`;
-  } while (used.has(sku));
-  used.add(sku);
+  } while (isUsed(sku));
   return sku;
 }
 

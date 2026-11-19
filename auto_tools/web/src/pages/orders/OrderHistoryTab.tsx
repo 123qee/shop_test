@@ -3,7 +3,7 @@ import { formatChinaDateTime, type OrderExportRecord } from '@shared/orders';
 import { api } from '../../api';
 import { errorMessage, fileSize, rangeText, statusText } from './order-ui';
 
-export function OrderHistoryTab({ version }: { version: number }) {
+export function OrderHistoryTab({ version }: { version?: string }) {
   const [records, setRecords] = useState<OrderExportRecord[] | null>(null);
   const [error, setError] = useState('');
 

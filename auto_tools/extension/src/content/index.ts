@@ -30,7 +30,15 @@ chrome.runtime.onMessage.addListener((msg: Message, _sender, sendResponse) => {
     })();
     return true; // 异步
   }
+  if (msg.type === 'OZON_ITEM_STAGE') {
+    updateOzonStage?.(msg.note);
+    return false;
+  }
   if (msg.type === 'BATCH_PROGRESS') {
+    if (msg.batchId) {
+      lastBatchId = msg.batchId;
+      batchBar?.setSortable(msg.ok > 0);
+    }
     if (msg.note) {
       batchBar?.setStatus(`进度 ${msg.done}/${msg.total} · ${msg.note}`);
       toast(msg.note, msg.note.includes('验证') && !msg.note.includes('完成') ? 'err' : 'ok');
@@ -64,6 +72,9 @@ function tallyText(tally?: CollectTally): string {
 const selected = new Set<string>(); // 选中的商品 URL
 const cardHandles = new Map<string, { set: (v: boolean) => void }>(); // url -> 复选框句柄
 let batchBar: BatchBar | null = null;
+let lastBatchId: string | undefined;
+let ozonBatch: AbortController | undefined;
+let updateOzonStage: ((note: string) => void) | undefined;
 
 // 状态先初始化，再启动页面 UI 扫描；否则列表页首次 scanCards 会访问到未初始化的 selected。
 if (extractor) init();
@@ -72,6 +83,7 @@ function init(): void {
   const url = location.href;
   const labels: Record<string, string> = {
     wildberries: 'Wildberries',
+    ozon: 'Ozon',
     aliexpress: 'AliExpress',
     allegro: 'Allegro',
     amazon: 'Amazon.de',
@@ -97,16 +109,21 @@ function init(): void {
     onClear: () => clearSelection(),
     onCollectSelected: () => runBatch([...selected]),
     onCollectPage: () => runBatch(currentCardUrls()),
+    onHistory: () => { void openBatchPage({ type: 'BATCH_HISTORY', batchId: lastBatchId }); },
+    onSort: () => { if (lastBatchId) void openBatchPage({ type: 'BATCH_SORT', batchId: lastBatchId }); },
     onStop: async () => {
+      ozonBatch?.abort();
       batchBar?.setStatus('停止中…');
       try {
         const res = await sendMessage({ type: 'BATCH_STOP' });
         if (!res.ok || res.type !== 'BATCH_STOP') throw new Error(res.ok ? '停止响应异常' : res.error);
+        if (ozonBatch) return;
         if (!res.active) {
           batchBar?.setBusy(false);
           batchBar?.setStatus('已停止');
         }
       } catch (e) {
+        if (ozonBatch) return;
         batchBar?.setBusy(false);
         batchBar?.setStatus(`停止失败：${(e as Error).message}`);
       }
@@ -115,6 +132,13 @@ function init(): void {
   void loadPresets();
   scanCards();
   observe();
+}
+
+async function openBatchPage(message: Extract<Message, { type: 'BATCH_SORT' | 'BATCH_HISTORY' }>) {
+  try {
+    const res = await sendMessage(message);
+    if (!res.ok) throw new Error(res.error);
+  } catch (error) { toast((error as Error).message, 'err'); }
 }
 
 /** 从本地服务读取模板名称,只在采集栏展示选择项,模板内容仍由服务端统一管理。 */
@@ -150,6 +174,7 @@ function isCurrentProductCard(href: string): boolean {
     const pagePath = new URL(location.href).pathname.replace(/\/+$/, '');
     if (cardPath === pagePath) return true;
     const idOf = (p: string) =>
+      p.match(/\/product\/(?:[^/]*-)?(\d+)\/?$/)?.[1] ??
       p.match(/\/item\/(\d+)/)?.[1] ??
       p.match(/\/products\/([^/]+)/)?.[1] ??
       p.match(/\/catalog\/(\d+)/)?.[1] ??
@@ -180,7 +205,7 @@ function scanCards(): void {
     cardHandles.set(url, ck);
 
     attachCardButton(card, async () => {
-      await runBatch([url]);
+      if (!await runBatch([url])) throw new Error('此商品尚未采集成功');
     });
   }
 }
@@ -201,30 +226,113 @@ function clearSelection(): void {
   batchBar?.setCount(0);
 }
 
+/** Ozon 的队列由列表标签页推进，每个后台消息只负责一件商品。 */
+async function runOzonBatch(urls: string[]): Promise<boolean> {
+  if (ozonBatch) return false;
+  const controller = new AbortController();
+  ozonBatch = controller;
+  const templateId = batchBar?.getTemplateId();
+  const tally: CollectTally = { confirmed: 0, review: 0, duplicates: 0 };
+  let done = 0;
+  let failed = 0;
+  let lastError = '';
+  let interrupted = false;
+  let batchId: string | undefined;
+  const counts = () => `新增 ${tally.confirmed + tally.review} · 重复 ${tally.duplicates} · 失败 ${failed}`;
+  batchBar?.setBusy(true);
+  try {
+    const begin = await sendMessage({ type: 'BATCH_BEGIN_OZON', urls, templateId });
+    if (!begin.ok || begin.type !== 'BATCH_BEGIN_OZON') throw new Error(begin.ok ? '批次创建失败' : begin.error);
+    batchId = lastBatchId = begin.batchId;
+    for (const url of urls) {
+      if (controller.signal.aborted) break;
+      updateOzonStage = (note) => {
+        if (controller.signal.aborted) return;
+        batchBar?.setStatus(`进度 ${done}/${urls.length} · ${counts()} · 第 ${done + 1} 件${note}`);
+      };
+      updateOzonStage('正在读取详情');
+      let result: MessageResponse;
+      try {
+        result = await sendMessage({ type: 'OZON_COLLECT_ITEM', url, templateId, batchId });
+      } catch {
+        // 后台通信断开时保留当前位置和剩余项，不把未处理的商品记作失败。
+        interrupted = !controller.signal.aborted;
+        break;
+      }
+      if (result.ok && result.type === 'OZON_COLLECT_ITEM') {
+        if (result.duplicate) tally.duplicates++;
+        else if (result.confirmed) tally.confirmed++;
+        else tally.review++;
+        selected.delete(url);
+        cardHandles.get(url)?.set(false);
+      } else {
+        if (controller.signal.aborted) break;
+        failed++;
+        selected.add(url);
+        cardHandles.get(url)?.set(true);
+        lastError = result.ok ? '后台返回格式异常' : result.error;
+      }
+      done++;
+      batchBar?.setCount(selected.size);
+      if (done < urls.length && !controller.signal.aborted) {
+        await new Promise((resolve) => setTimeout(resolve, 1200));
+      }
+    }
+  } finally {
+    if (batchId) void sendMessage({ type: 'BATCH_END_OZON', batchId }).catch(() => {});
+    batchBar?.setSortable(Boolean(batchId && tally.confirmed + tally.review + tally.duplicates));
+    updateOzonStage = undefined;
+    ozonBatch = undefined;
+    for (const url of urls.slice(done)) {
+      selected.add(url);
+      cardHandles.get(url)?.set(true);
+    }
+    batchBar?.setCount(selected.size);
+    batchBar?.setBusy(false);
+    const status = interrupted ? '后台连接中断，可采集选中继续' : controller.signal.aborted ? '已停止' : '采集完成';
+    const summary = `${status} ${done}/${urls.length} · ${counts()}`;
+    batchBar?.setStatus(lastError ? `${summary} · 最近失败：${lastError.slice(0, 70)}` : summary);
+    toast(summary, interrupted || failed ? 'err' : 'ok');
+  }
+  return !failed && !interrupted && done === urls.length;
+}
+
 /** 批量采集:交给 background 逐个开详情页提取全量数据。 */
-async function runBatch(urls: string[]): Promise<void> {
+async function runBatch(urls: string[]): Promise<boolean> {
   const list = Array.from(new Set(urls));
   if (!list.length) {
     toast('请先勾选商品', 'err');
-    return;
+    return false;
+  }
+  if (!extractor) return false;
+  batchBar?.setSortable(false);
+  if (extractor.id === 'ozon') {
+    try { return await runOzonBatch(list); }
+    catch (error) { batchBar?.setStatus((error as Error).message); toast((error as Error).message, 'err'); }
+    return false;
   }
   batchBar?.setBusy(true);
   batchBar?.setStatus(`开始采集 ${list.length} 个…`);
   toast(`开始批量采集 ${list.length} 个(后台逐个打开详情页)`, 'ok');
   try {
-    const res = await sendMessage({ type: 'BATCH_COLLECT', urls: list, templateId: batchBar?.getTemplateId() });
+    const res = await sendMessage({ type: 'BATCH_COLLECT', urls: list, source: extractor.id, templateId: batchBar?.getTemplateId() });
     if (!res.ok) {
       toast(`批量采集失败:${res.error}`, 'err');
       batchBar?.setBusy(false);
     } else if (res.type === 'BATCH_COLLECT') {
+      lastBatchId = res.batchId;
+      batchBar?.setSortable(res.okCount > 0);
       // 进度消息可能因页面重载而丢失，最终响应也必须能收起停止按钮。
       batchBar?.setBusy(false);
       batchBar?.setStatus(res.stopped ? '已停止' : `采集完成 · 成功 ${res.okCount}${res.fail ? ` · 失败 ${res.fail}` : ''}${tallyText(res.tally)}`);
     }
-    // 成功进度由 BATCH_PROGRESS 通知收尾
+    return res.ok && res.type === 'BATCH_COLLECT' && !res.stopped && res.fail === 0;
   } catch (e) {
-    toast(`批量采集失败:${(e as Error).message}`, 'err');
+    const reason = `批量采集已中断：${(e as Error).message}`;
+    toast(reason, 'err');
+    batchBar?.setStatus(reason);
     batchBar?.setBusy(false);
+    return false;
   }
 }
 

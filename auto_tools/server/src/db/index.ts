@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { config } from '../config/index.js';
 import { logger } from '../util/logger.js';
+import { collectionKeys } from './collection-keys.js';
 
 let db: Database.Database | null = null;
 
@@ -25,6 +26,17 @@ export function getDb(): Database.Database {
  */
 function migrate(d: Database.Database) {
   d.exec(`
+    CREATE TABLE IF NOT EXISTS collect_batches (
+      id TEXT PRIMARY KEY, source TEXT NOT NULL, template_id TEXT, created_at TEXT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS idx_collect_batches_created ON collect_batches(created_at);
+    CREATE TABLE IF NOT EXISTS collect_batch_items (
+      batch_id TEXT NOT NULL REFERENCES collect_batches(id) ON DELETE CASCADE,
+      position INTEGER NOT NULL, url TEXT NOT NULL, status TEXT NOT NULL DEFAULT 'pending',
+      product_id TEXT REFERENCES products(id) ON DELETE SET NULL, reason TEXT,
+      PRIMARY KEY (batch_id, url), UNIQUE (batch_id, position)
+    );
+    CREATE INDEX IF NOT EXISTS idx_collect_batch_items_product ON collect_batch_items(product_id);
     CREATE TABLE IF NOT EXISTS personal_projects (
       id TEXT PRIMARY KEY, data TEXT NOT NULL, created_at TEXT NOT NULL
     );
@@ -288,6 +300,18 @@ function migrate(d: Database.Database) {
   addColumnIfMissing(d, 'products', 'joom_issue_details', 'TEXT');
   addColumnIfMissing(d, 'products', 'joom_video', 'TEXT');
   addColumnIfMissing(d, 'products', 'edited_at', 'TEXT');
+  // Index existing JSON in place so old records and edits through other SQLite clients stay searchable.
+  // sourceId leads its index so it also supports the cross-platform SKU collision check.
+  d.exec(`
+    CREATE INDEX IF NOT EXISTS idx_products_collect_id
+      ON products(${collectionKeys.sourceId}, ${collectionKeys.source}, created_at DESC);
+    CREATE INDEX IF NOT EXISTS idx_products_collect_url
+      ON products(${collectionKeys.source}, ${collectionKeys.url}, created_at DESC) WHERE status <> 'discarded';
+    CREATE INDEX IF NOT EXISTS idx_products_generated_sku
+      ON products(${collectionKeys.generatedSku});
+    CREATE INDEX IF NOT EXISTS idx_products_edited_sku
+      ON products(${collectionKeys.editedSku});
+  `);
   // 订单按 Joom 商品 id / SKU 找本地商品（读取材质）。products 行里有大段 JSON，无索引时每次查询约 1.5 秒。
   d.exec(`
     CREATE INDEX IF NOT EXISTS idx_products_joom_product_id ON products(joom_product_id);
@@ -325,13 +349,49 @@ function migrate(d: Database.Database) {
     WHERE edited IS NOT NULL AND edited_at IS NULL
   `);
 
-  // 兼容已发生过的重复商品错误：服务升级后也自动归档，不再进入未发布列表。
+  addColumnIfMissing(d, 'publish_job_items', 'submission', 'TEXT');
+  // Recover the latest unresolved attempt from versions that only recorded a text error.
   d.exec(`
-    UPDATE products
-    SET status = 'discarded'
+    UPDATE publish_job_items AS item SET status = 'needs_review'
     WHERE status = 'failed'
-      AND lower(COALESCE(last_error, '')) LIKE '%already%exists%'
+      AND (error LIKE '服务在发布过程中重启%' OR lower(error) LIKE '%already%exists%')
+      AND EXISTS (SELECT 1 FROM products WHERE id = item.product_id)
+      AND NOT EXISTS (
+        SELECT 1 FROM publish_job_items newer
+        JOIN publish_jobs j ON j.id = newer.job_id
+        WHERE newer.product_id = item.product_id
+        AND j.rowid > (SELECT rowid FROM publish_jobs WHERE id = item.job_id)
+      )
   `);
+  // Derived cross-page filters. Keep dependent writes and invalidation atomic, including changes made by other processes.
+  d.exec(`
+    CREATE TABLE IF NOT EXISTS product_catalog_index (
+      product_id TEXT PRIMARY KEY REFERENCES products(id) ON DELETE CASCADE, summary TEXT NOT NULL
+    );
+    CREATE TABLE IF NOT EXISTS product_catalog_version (id INTEGER PRIMARY KEY CHECK(id = 1), version TEXT NOT NULL);
+    INSERT OR IGNORE INTO product_catalog_version VALUES (1, lower(hex(randomblob(16))));
+  `);
+  const bump = 'UPDATE product_catalog_version SET version = lower(hex(randomblob(16))) WHERE id = 1;';
+  for (const operation of ['INSERT', 'UPDATE', 'DELETE']) {
+    const row = operation === 'DELETE' ? 'OLD' : 'NEW';
+    d.exec(`
+      CREATE TRIGGER IF NOT EXISTS catalog_products_${operation} AFTER ${operation} ON products BEGIN
+        DELETE FROM product_catalog_index WHERE product_id = ${row}.id;
+        ${bump}
+      END;
+      CREATE TRIGGER IF NOT EXISTS catalog_listings_${operation} AFTER ${operation} ON joom_shop_listings BEGIN
+        DELETE FROM product_catalog_index WHERE product_id = ${row}.product_id
+          ${operation === 'UPDATE' ? 'OR product_id = OLD.product_id' : ''};
+        ${bump}
+      END;
+      CREATE TRIGGER IF NOT EXISTS catalog_presets_${operation} AFTER ${operation} ON settings
+      WHEN ${row}.key = 'presets' ${operation === 'UPDATE' ? 'AND OLD.value IS NOT NEW.value' : ''} BEGIN
+        DELETE FROM product_catalog_index;
+        ${bump}
+      END;
+    `);
+  }
+
 }
 
 /** 若列不存在则新增,保证向前兼容。 */

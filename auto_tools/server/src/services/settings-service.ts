@@ -1,5 +1,6 @@
-import type { CategoryFavorite, CollectDefaults, GroupTemplateBinding, PresetsConfig, PresetTemplate } from '@shared/types';
+import type { CollectDefaults, GroupTemplateBinding, PresetsConfig, PresetTemplate } from '@shared/types';
 import { isProductGroup, isProductMaterial } from '@shared/product-grouping';
+import { stableStringify } from '../../scripts/template-seed.js';
 import { settingsRepository, type SettingsRepository } from '../repositories/settings-repository.js';
 import { shopService } from './shop-service.js';
 import { config } from '../config/index.js';
@@ -13,6 +14,43 @@ import { FACTORY_DEFAULTS, FACTORY_SIZE_TEMPLATES } from './preset-defaults.js';
 
 function defaultTemplate(defaults: CollectDefaults = FACTORY_DEFAULTS): PresetTemplate {
   return { id: 'default', name: '默认模板', defaults };
+}
+
+export class PresetConflictError extends Error {
+  constructor(label: string) {
+    super(`${label}已在其他窗口更改。请先复制需要保留的改动，刷新页面后重新编辑。`);
+  }
+}
+
+function mergeSetting<T>(base: T, draft: T, current: T, label: string): T {
+  const before = stableStringify(base);
+  const local = stableStringify(draft);
+  if (local === before) return current;
+  const latest = stableStringify(current);
+  if (latest === before || latest === local) return draft;
+  throw new PresetConflictError(label);
+}
+
+function mergePresetChanges(base: PresetsConfig, draft: PresetsConfig, current: PresetsConfig): PresetsConfig {
+  const original = new Map(base.templates.map(t => [t.id, t]));
+  const edits = new Map(draft.templates.map(t => [t.id, t]));
+  const templates = new Map(current.templates.map(t => [t.id, t]));
+  for (const id of new Set([...original.keys(), ...edits.keys()])) {
+    const before = original.get(id);
+    const next = edits.get(id);
+    const merged = mergeSetting(before, next, templates.get(id), `模板「${before?.name ?? next?.name}」`);
+    if (merged) templates.set(id, merged);
+    else templates.delete(id);
+  }
+  const activeId = mergeSetting(base.activeId, draft.activeId, current.activeId, '采集默认模板');
+  if (!templates.has(activeId)) throw new PresetConflictError('采集默认模板');
+  return {
+    templates: [...templates.values()],
+    activeId,
+    sizeTemplates: mergeSetting(base.sizeTemplates, draft.sizeTemplates, current.sizeTemplates, '尺码模板库'),
+    categoryFavorites: mergeSetting(base.categoryFavorites, draft.categoryFavorites, current.categoryFavorites, '类目收藏'),
+    categoryAttributeTemplates: mergeSetting(base.categoryAttributeTemplates, draft.categoryAttributeTemplates, current.categoryAttributeTemplates, '类目属性模板库'),
+  };
 }
 
 export class SettingsService {
@@ -72,7 +110,8 @@ export class SettingsService {
     return this.publicConfig(config);
   }
 
-  saveConfig(config: PresetsConfig): PresetsConfig {
+  saveConfig(draft: PresetsConfig, base?: PresetsConfig): PresetsConfig {
+    const config = base ? mergePresetChanges(base, draft, this.getConfig()) : draft;
     const templates = config.templates?.length ? config.templates : [defaultTemplate()];
     const activeId = templates.some((t) => t.id === config.activeId) ? config.activeId : templates[0].id;
     const stored = this.repo.get<StoredPresetsConfig>(PRESETS_KEY);
@@ -85,7 +124,7 @@ export class SettingsService {
       picuiToken: stored?.picuiToken,
     };
     this.repo.set(PRESETS_KEY, next);
-    return this.publicConfig(next);
+    return base ? this.getConfig() : this.publicConfig(next);
   }
 
   getPicuiPublic() {
@@ -114,7 +153,7 @@ export class SettingsService {
   }
 
   /** 取某模板的 defaults(缺省回退默认模板 -> 出厂值),模板字段与出厂值合并补全。 */
-  getDefaultsFor(templateId?: string): CollectDefaults {
+  getDefaultsFor(templateId?: string, shopId?: string): CollectDefaults {
     const cfg = this.getConfig();
     const tpl =
       (templateId && cfg.templates.find((t) => t.id === templateId)) ||
@@ -123,7 +162,7 @@ export class SettingsService {
     const defaults = { ...FACTORY_DEFAULTS, ...(tpl?.defaults ?? {}) };
     return {
       ...defaults,
-      storeId: defaults.storeId || shopService.getActiveStoreId(),
+      storeId: defaults.storeId || shopService.getStoreId(shopId),
     };
   }
 }
