@@ -82,6 +82,10 @@ try {
   }
 
   if (Test-ServerReady) {
+    $page = Invoke-WebRequest -Uri "http://localhost:$port/" -TimeoutSec 5 -UseBasicParsing
+    if ($page.Content -cne [System.IO.File]::ReadAllText($webBuild)) {
+      throw "端口 $port 上的服务提供的网页与当前项目不同。请关闭旧工作台的启动窗口后，再双击当前目录的启动工作台.bat。"
+    }
     Write-Host "服务已经在运行：http://localhost:$port"
   }
   else {
