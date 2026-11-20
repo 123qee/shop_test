@@ -1,0 +1,606 @@
+{
+  "metadata": {
+    "platform": "joom",
+    "shop": "Nineteen Wear",
+    "captured_at": "2026-11-18T10:54:29.824183+08:00",
+    "report_timezone": "Asia/Shanghai",
+    "platform_timezone": null,
+    "platform_timezone_note": "后台当前页面没有展示统计时区，未推定为北京时间",
+    "window_start": "2026-10-20",
+    "window_end": "2026-11-16",
+    "data_updated_at_display": "2026-11-17 19:42:36",
+    "completeness": "商品点击降序第3页50款的筛选快照，不是全店全商品审计；逐款订单页核对全部状态、无日期过滤的历史订单数",
+    "source": "https://merchant.joom.com/panel/analytics/orders/store/6a817b93f5d3934528e70df7?limit=50&orderBy=openCount&order=desc&page=3"
+  },
+  "executed_at": "2026-11-18T11:29:33.245512+08:00",
+  "completed_count": 10,
+  "records": [
+    {
+      "product_id": "6aba59cdf8dad801a1e28955",
+      "name": "Kids' Gothic Graphic Zip-Up Hoodie, Cotton Long Sleeve Sweatshirt",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 35,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/c08c9f5c3afc8decf8c09f2be2a02616829a935b_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6aba59cdf8dad801a1e28955/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226aba59cdf8dad801a1e28955%22",
+            "text": "订单"
+          }
+        ],
+        "text": "2416946311032375\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n限售\n1\n需注意\n1\n审核中\n1\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\n绑定的文件\n欧代协议\nManufacturer Information: Qianshan County Nineteen Trade Co., Ltd\nKids' Gothic Graphic Zip-Up Hoodie, Cotton Long Sleeve Sweatshirt\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6aba59cdf8dad801a1e28955\n等级\n部分内容\n产品SKU\n2416946311032375\n类目ID\n1605614754933037318-196-2-62735-1604558435\n类目\nBaby & Kids\nKids Clothing\nUnisex Clothing\nUnisex (over 4 y.o.)\nTop\nHoodies & Sweatshirts (kids unisex)\n推荐类目ID\n1473502947691956288-126-2-118-286289588\n推荐类目\nHoodies & Sweatshirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月28日\n敏感货\n普通货\n描述\nChildren's cotton zip-up hoodie with a jagged lettering-style graphic, a hood and long sleeves. Select your preferred design and color, then compare your child's measurements with the size chart below before ordering.\n\nProduct Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Hooded\nTop Closure Type: Zip-up\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine Wash at 30°C, Do Not Tumble Dry\nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm\nNotes:\nPlease measure yourself carefully according to the size chart before purchasing, thank you!\nDue to manual measurement, please allow an error of 2–3 cm.\nDue to differences in lighting and screen settings, the actual product color may vary slightly.\nPlease carefully review the size chart before purchasing.\n未解析的属性\nsetsQuantity: 1\npiecesQuantity: 1\nmanufactureCountry: china\n产品属性\nMaterial: cotton\nManufacture Country: China\nStyle: casual\nSleeve Length: long sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry、Machine wash at temperatures below 30°C\n尺码表\n尺码\tBust\tJunk\tLength\tShoulders\tSleeve\n\n100\n\t\n60 cm\n\t\n90–100 cm\n\t\n42 cm\n\t\n28 cm\n\t\n39 cm\n\n\n110\n\t\n66 cm\n\t\n100–110 cm\n\t\n45 cm\n\t\n30 cm\n\t\n41 cm\n\n\n120\n\t\n72 cm\n\t\n110–120 cm\n\t\n48 cm\n\t\n32 cm\n\t\n43 cm\n\n\n130\n\t\n78 cm\n\t\n120–130 cm\n\t\n51 cm\n\t\n34 cm\n\t\n45 cm\n\n\n140\n\t\n84 cm\n\t\n130–140 cm\n\t\n54 cm\n\t\n36 cm\n\t\n47 cm\n\n\n150\n\t\n90 cm\n\t\n140–150 cm\n\t\n57 cm\n\t\n38 cm\n\t\n49 cm\n\n\n160\n\t\n96 cm\n\t\n150–160 cm\n\t\n60 cm\n\t\n40 cm\n\t\n51 cm\n搜索标签\nkids hoodie\ngraphic hoodie\ngothic print\nletter print\nzip up hoodie\ncotton hoodie\nlong sleeve\nboys hoodie\ngirls hoodie\n",
+        "title": "Kids' Gothic Graphic Zip-Up Hoodie, Cotton Long Sleeve Sweatshirt",
+        "url": "https://merchant.joom.com/panel/products/6aba59cdf8dad801a1e28955",
+        "variantCount": 35,
+        "variantDetailSha256": "3b0788c36b26767d8286454757f0bf144d5d760898186c89955a4eae7de13056"
+      },
+      "plan": {
+        "label": "哥特风图案拉链童装卫衣",
+        "title": "Kids' Gothic Graphic Zip-Up Hoodie, Cotton Long Sleeve Sweatshirt",
+        "intro": "Children's cotton zip-up hoodie with a jagged lettering-style graphic, a hood and long sleeves. Select your preferred design and color, then compare your child's measurements with the size chart below before ordering.",
+        "tags": [
+          "kids hoodie",
+          "graphic hoodie",
+          "gothic print",
+          "letter print",
+          "zip up hoodie",
+          "cotton hoodie",
+          "long sleeve",
+          "boys hoodie",
+          "girls hoodie"
+        ],
+        "replacements": {
+          "Collar Type: Round Neck": "Collar Type: Hooded",
+          "Material: 100% Cotton": "Material: Cotton"
+        }
+      }
+    },
+    {
+      "product_id": "6ac7a3665c2438011cc81578",
+      "name": "Oktoberfest Diamond Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 99,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/7deeb0420cf97f7658db884b7c207a105f098c1b_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6ac7a3665c2438011cc81578/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226ac7a3665c2438011cc81578%22",
+            "text": "订单"
+          }
+        ],
+        "text": "9608127603991611\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n审核中\n1\n产品待审核\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nOktoberfest Diamond Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6ac7a3665c2438011cc81578\n等级\n部分内容\n产品SKU\n9608127603991611\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502943246387503-24-2-118-3777727211\n推荐类目\nT-Shirts (men’s)\n店铺名称\nNineteen Wear\n创建日期\n2026年10月8日\n敏感货\n普通货\n描述\nUnisex polyester T-shirt with an Oktoberfest-inspired print, Munich lettering and a diamond pattern. The short-sleeve pullover has a round neckline. Select your preferred design and compare the measurements in the size chart below before ordering.\n\nProduct Type: T-Shirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Summer\nNeckline: Round Neck\nTops Closure Type: Pullover\nClothing Decoration: Print\nLeather Label: No\nSleeve Length: Short Sleeve\nSex: Unisex\nAge: Ages 8-45 Years Old\nPattern: Print\nMaterial: Polyester\nLabel: Yes\nWashing Care: Do Not Tumble Dry\n\nSize Chart (cm):\n\nSize: 2XS, Length: 62cm, Bust: 88cm, Shoulder: 40cm, Sleeve: 18cm\nSize: XS, Length: 64cm, Bust: 92cm, Shoulder: 42cm, Sleeve: 19cm\nSize: S, Length: 66cm, Bust: 96cm, Shoulder: 44cm, Sleeve: 19cm\nSize: M, Length: 68cm, Bust: 100cm, Shoulder: 46cm, Sleeve: 19cm\nSize: L, Length: 70cm, Bust: 104cm, Shoulder: 50cm, Sleeve: 20cm\nSize: XL, Length: 72cm, Bust: 108cm, Shoulder: 52cm, Sleeve: 20cm\nSize: 2XL, Length: 74cm, Bust: 114cm, Shoulder: 54cm, Sleeve: 21cm\nSize: 3XL, Length: 76cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm\nSize: 4XL, Length: 78cm, Bust: 126cm, Shoulder: 60cm, Sleeve: 23cm\nSize: 5XL, Length: 80cm, Bust: 132cm, Shoulder: 62cm, Sleeve: 24cm\nSize: 6XL, Length: 82cm, Bust: 138cm, Shoulder: 64cm, Sleeve: 25cm\n\nCritical Notice: Asian sizes run small. Please order 1–2 sizes larger for standard US/EU fitting.\n\nNotes:\n1. Please carefully measure yourself according to the size chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 1–3 cm.\n3. All measurements are taken flat and unstretched.\n4. For a loose fit, please order one additional size.\n5. Due to differences in lighting and screen settings, the actual product color may be slightly different from the picture.\n6. All our products are advertised in Asian sizes. Please study the size chart carefully before buying.\n产品属性\nMaterial for fur: polyster\nMaterial: polyester\nManufacture Country: China\nSeason: summer\nNeckline: round\nClothing Decoration: print\nLeather Label: no\nSleeve Length: short sleeve\nClothing Decoration: print\nPattern: print\nMaterial: polyester\nLabel: yes\nWashing Care: Do not tumble dry\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n62 cm\n\t\n40 cm\n\t\n18 cm\n\n\nXS\n\t\n92 cm\n\t\n64 cm\n\t\n42 cm\n\t\n19 cm\n\n\nS\n\t\n96 cm\n\t\n66 cm\n\t\n44 cm\n\t\n19 cm\n\n\nM\n\t\n100 cm\n\t\n68 cm\n\t\n46 cm\n\t\n19 cm\n\n\nL\n\t\n104 cm\n\t\n70 cm\n\t\n50 cm\n\t\n20 cm\n\n\nXL\n\t\n108 cm\n\t\n72 cm\n\t\n52 cm\n\t\n20 cm\n\n\n2XL\n\t\n114 cm\n\t\n74 cm\n\t\n54 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n76 cm\n\t\n57 cm\n\t\n22 cm\n\n\n4XL\n\t\n126 cm\n\t\n78 cm\n\t\n60 cm\n\t\n23 cm\n\n\n5XL\n\t\n132 cm\n\t\n80 cm\n\t\n62 cm\n\t\n24 cm\n\n\n6XL\n\t\n138 cm\n\t\n82 cm\n\t\n64 cm\n\t\n25 cm\n搜索标签\nOktoberfest shirt\nbeer festival shirt\nMunich print\ndiamond print\nfestival T-shirt\npolyester T-shirt\nunisex T-shirt\nshort sleeve\ncrew neck\n",
+        "title": "Oktoberfest Diamond Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+        "url": "https://merchant.joom.com/panel/products/6ac7a3665c2438011cc81578",
+        "variantCount": 99,
+        "variantDetailSha256": "1eaf686f74b517e94962fd269b2adbfc04e04675dd98edcbfb2104d05b0348dc"
+      },
+      "plan": {
+        "label": "啤酒节菱格图案T恤",
+        "title": "Oktoberfest Diamond Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+        "intro": "Unisex polyester T-shirt with an Oktoberfest-inspired print, Munich lettering and a diamond pattern. The short-sleeve pullover has a round neckline. Select your preferred design and compare the measurements in the size chart below before ordering.",
+        "tags": [
+          "Oktoberfest shirt",
+          "beer festival shirt",
+          "Munich print",
+          "diamond print",
+          "festival T-shirt",
+          "polyester T-shirt",
+          "unisex T-shirt",
+          "short sleeve",
+          "crew neck"
+        ],
+        "replacements": {
+          "Material: polyster": "Material: Polyester",
+          "Clothing Decoration: No Decoration": "Clothing Decoration: Print"
+        }
+      }
+    },
+    {
+      "product_id": "6aa1163e365a0701ec26bdd4",
+      "name": "Kids' Halloween Castle Print Zip-Up Hoodie, Cotton Long Sleeve Sweatshirt",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 98,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/f53476a6027b262f014ff8eb6fbdf674a85ba15b_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6aa1163e365a0701ec26bdd4/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226aa1163e365a0701ec26bdd4%22",
+            "text": "订单"
+          }
+        ],
+        "text": "1005013064024385\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n限售\n1\n需注意\n1\n审核中\n1\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nKids' Halloween Castle Print Zip-Up Hoodie, Cotton Long Sleeve Sweatshirt\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6aa1163e365a0701ec26bdd4\n等级\n部分内容\n产品SKU\n1005013064024385\n类目ID\n1605614754933037318-196-2-62735-1604558435\n类目\nBaby & Kids\nKids Clothing\nUnisex Clothing\nUnisex (over 4 y.o.)\nTop\nHoodies & Sweatshirts (kids unisex)\n推荐类目ID\n1473502947691956288-126-2-118-286289588\n推荐类目\nHoodies & Sweatshirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月9日\n敏感货\n普通货\n描述\nChildren's cotton zip-up hoodie with a Halloween castle, moon and bat print. The hooded, long-sleeve style has printed details on the front and back. Select your preferred design and check the size chart below before ordering.\n\nProduct Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Hooded\nTop Closure Type: Zip-up\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine Wash at 30°C, Do Not Tumble Dry\nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm\nNotes:\nPlease measure yourself carefully according to the size chart before purchasing, thank you!\nDue to manual measurement, please allow an error of 2–3 cm.\nDue to differences in lighting and screen settings, the actual product color may vary slightly.\nPlease carefully review the size chart before purchasing.\n未解析的属性\nsetsQuantity: 1\npiecesQuantity: 1\nmanufactureCountry: china\n产品属性\nMaterial: cotton\nManufacture Country: China\nStyle: casual\nSleeve Length: long sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry、Machine wash at temperatures below 30°C\n尺码表\n尺码\tBust\tJunk\tLength\tShoulders\tSleeve\n\n100\n\t\n60 cm\n\t\n90–100 cm\n\t\n42 cm\n\t\n28 cm\n\t\n39 cm\n\n\n110\n\t\n66 cm\n\t\n100–110 cm\n\t\n45 cm\n\t\n30 cm\n\t\n41 cm\n\n\n120\n\t\n72 cm\n\t\n110–120 cm\n\t\n48 cm\n\t\n32 cm\n\t\n43 cm\n\n\n130\n\t\n78 cm\n\t\n120–130 cm\n\t\n51 cm\n\t\n34 cm\n\t\n45 cm\n\n\n140\n\t\n84 cm\n\t\n130–140 cm\n\t\n54 cm\n\t\n36 cm\n\t\n47 cm\n\n\n150\n\t\n90 cm\n\t\n140–150 cm\n\t\n57 cm\n\t\n38 cm\n\t\n49 cm\n\n\n160\n\t\n96 cm\n\t\n150–160 cm\n\t\n60 cm\n\t\n40 cm\n\t\n51 cm\n搜索标签\nkids hoodie\nHalloween hoodie\ncastle print\nbat print\nmoon print\nzip up hoodie\ncotton hoodie\nboys hoodie\ngirls hoodie\n",
+        "title": "Kids' Halloween Castle Print Zip-Up Hoodie, Cotton Long Sleeve Sweatshirt",
+        "url": "https://merchant.joom.com/panel/products/6aa1163e365a0701ec26bdd4",
+        "variantCount": 98,
+        "variantDetailSha256": "4613f069460de3530fd6c7be507e1e36b84e14f354ffcd277f313da11270e3da"
+      },
+      "plan": {
+        "label": "万圣节城堡拉链童装卫衣",
+        "title": "Kids' Halloween Castle Print Zip-Up Hoodie, Cotton Long Sleeve Sweatshirt",
+        "intro": "Children's cotton zip-up hoodie with a Halloween castle, moon and bat print. The hooded, long-sleeve style has printed details on the front and back. Select your preferred design and check the size chart below before ordering.",
+        "tags": [
+          "kids hoodie",
+          "Halloween hoodie",
+          "castle print",
+          "bat print",
+          "moon print",
+          "zip up hoodie",
+          "cotton hoodie",
+          "boys hoodie",
+          "girls hoodie"
+        ],
+        "replacements": {
+          "Collar Type: Round Neck": "Collar Type: Hooded",
+          "Material: 100% Cotton": "Material: Cotton"
+        }
+      }
+    },
+    {
+      "product_id": "6aba4901772f9801e29c5a45",
+      "name": "Kids' Cartoon Girl Print Hoodie, Cotton Long Sleeve Pullover Sweatshirt",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 56,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/98b61d9074d238cd3b3b6940b06d1834b84e392d_original.jpeg",
+        "imageLoaded": false,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6aba4901772f9801e29c5a45/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226aba4901772f9801e29c5a45%22",
+            "text": "订单"
+          }
+        ],
+        "text": "3256812804187994\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n限售\n1\n需注意\n2\n审核中\n1\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nKids' Cartoon Girl Print Hoodie, Cotton Long Sleeve Pullover Sweatshirt\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6aba4901772f9801e29c5a45\n等级\n部分内容\n产品SKU\n3256812804187994\n类目ID\n1605614754933037318-196-2-62735-1604558435\n类目\nBaby & Kids\nKids Clothing\nUnisex Clothing\nUnisex (over 4 y.o.)\nTop\nHoodies & Sweatshirts (kids unisex)\n推荐类目ID\n1605614754933037318-196-2-62735-1604558435\n推荐类目\nHoodies & Sweatshirts (kids unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月28日\n敏感货\n普通货\n描述\nChildren's cotton pullover hoodie featuring a cartoon girl holding a drink. The hooded style has long sleeves for casual everyday outfits. Select your preferred print and compare your child's measurements with the size chart below before ordering.\n\nProduct Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Hooded\nTop Closure Type: Pullover\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine Wash at 30°C, Do Not Tumble Dry\nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm\nNotes:\nPlease measure yourself carefully according to the size chart before purchasing, thank you!\nDue to manual measurement, please allow an error of 2–3 cm.\nDue to differences in lighting and screen settings, the actual product color may vary slightly.\nPlease carefully review the size chart before purchasing.\n未解析的属性\nsetsQuantity: 1\npiecesQuantity: 1\nmanufactureCountry: china\n产品属性\nMaterial: cotton\nManufacture Country: China\nStyle: casual\nSleeve Length: long sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry、Machine wash at temperatures below 30°C\n尺码表\n尺码\tBust\tJunk\tLength\tShoulders\tSleeve\n\n100\n\t\n60 cm\n\t\n90–100 cm\n\t\n42 cm\n\t\n28 cm\n\t\n39 cm\n\n\n110\n\t\n66 cm\n\t\n100–110 cm\n\t\n45 cm\n\t\n30 cm\n\t\n41 cm\n\n\n120\n\t\n72 cm\n\t\n110–120 cm\n\t\n48 cm\n\t\n32 cm\n\t\n43 cm\n\n\n130\n\t\n78 cm\n\t\n120–130 cm\n\t\n51 cm\n\t\n34 cm\n\t\n45 cm\n\n\n140\n\t\n84 cm\n\t\n130–140 cm\n\t\n54 cm\n\t\n36 cm\n\t\n47 cm\n\n\n150\n\t\n90 cm\n\t\n140–150 cm\n\t\n57 cm\n\t\n38 cm\n\t\n49 cm\n\n\n160\n\t\n96 cm\n\t\n150–160 cm\n\t\n60 cm\n\t\n40 cm\n\t\n51 cm\n搜索标签\nkids hoodie\ncartoon girl\ngirl print\ndrink print\ncotton hoodie\npullover hoodie\nlong sleeve\nboys hoodie\ngirls hoodie\n",
+        "title": "Kids' Cartoon Girl Print Hoodie, Cotton Long Sleeve Pullover Sweatshirt",
+        "url": "https://merchant.joom.com/panel/products/6aba4901772f9801e29c5a45",
+        "variantCount": 56,
+        "variantDetailSha256": "a30f28ce93cba43384ce59e49934e3dd2db9d5c36c71082c4c18f394c0e66091"
+      },
+      "plan": {
+        "label": "卡通女孩饮品图案童装卫衣",
+        "title": "Kids' Cartoon Girl Print Hoodie, Cotton Long Sleeve Pullover Sweatshirt",
+        "intro": "Children's cotton pullover hoodie featuring a cartoon girl holding a drink. The hooded style has long sleeves for casual everyday outfits. Select your preferred print and compare your child's measurements with the size chart below before ordering.",
+        "tags": [
+          "kids hoodie",
+          "cartoon girl",
+          "girl print",
+          "drink print",
+          "cotton hoodie",
+          "pullover hoodie",
+          "long sleeve",
+          "boys hoodie",
+          "girls hoodie"
+        ],
+        "replacements": {
+          "Collar Type: Round Neck": "Collar Type: Hooded",
+          "Material: 100% Cotton": "Material: Cotton"
+        }
+      }
+    },
+    {
+      "product_id": "6ac7a4095c2438011cc838fc",
+      "name": "Rio de Janeiro Landmark Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 11,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/2e96645d04a6880e9675334d86b9d4036a0d4576_original.jpeg",
+        "imageLoaded": false,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6ac7a4095c2438011cc838fc/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226ac7a4095c2438011cc838fc%22",
+            "text": "订单"
+          }
+        ],
+        "text": "2614833387133101\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n1\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nRio de Janeiro Landmark Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6ac7a4095c2438011cc838fc\n等级\n部分内容\n产品SKU\n2614833387133101\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502943246387503-24-2-118-3777727211\n推荐类目\nT-Shirts (men’s)\n店铺名称\nNineteen Wear\n创建日期\n2026年10月8日\n敏感货\n普通货\n描述\nUnisex polyester T-shirt featuring a Rio de Janeiro landmark print with Christ the Redeemer and a cityscape design. The printed pullover has short sleeves and a round neckline. Select your preferred color and design, then compare the garment measurements below before ordering.\n\nProduct Type: T-Shirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Summer\nNeckline: Round Neck\nTops Closure Type: Pullover\nClothing Decoration: Print\nLeather Label: No\nSleeve Length: Short Sleeve\nSex: Unisex\nAge: Ages 8-45 Years Old\nPattern: Print\nMaterial: Polyester\nLabel: Yes\nWashing Care: Do Not Tumble Dry\n\nSize Chart (cm):\n\nSize: 2XS, Length: 62cm, Bust: 88cm, Shoulder: 40cm, Sleeve: 18cm\nSize: XS, Length: 64cm, Bust: 92cm, Shoulder: 42cm, Sleeve: 19cm\nSize: S, Length: 66cm, Bust: 96cm, Shoulder: 44cm, Sleeve: 19cm\nSize: M, Length: 68cm, Bust: 100cm, Shoulder: 46cm, Sleeve: 19cm\nSize: L, Length: 70cm, Bust: 104cm, Shoulder: 50cm, Sleeve: 20cm\nSize: XL, Length: 72cm, Bust: 108cm, Shoulder: 52cm, Sleeve: 20cm\nSize: 2XL, Length: 74cm, Bust: 114cm, Shoulder: 54cm, Sleeve: 21cm\nSize: 3XL, Length: 76cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm\nSize: 4XL, Length: 78cm, Bust: 126cm, Shoulder: 60cm, Sleeve: 23cm\nSize: 5XL, Length: 80cm, Bust: 132cm, Shoulder: 62cm, Sleeve: 24cm\nSize: 6XL, Length: 82cm, Bust: 138cm, Shoulder: 64cm, Sleeve: 25cm\n\nCritical Notice: Asian sizes run small. Please order 1–2 sizes larger for standard US/EU fitting.\n\nNotes:\n1. Please carefully measure yourself according to the size chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 1–3 cm.\n3. All measurements are taken flat and unstretched.\n4. For a loose fit, please order one additional size.\n5. Due to differences in lighting and screen settings, the actual product color may be slightly different from the picture.\n6. All our products are advertised in Asian sizes. Please study the size chart carefully before buying.\n产品属性\nMaterial for fur: polyster\nMaterial: polyester\nManufacture Country: China\nSeason: summer\nNeckline: round\nClothing Decoration: print\nLeather Label: no\nSleeve Length: short sleeve\nClothing Decoration: print\nPattern: print\nMaterial: polyester\nLabel: yes\nWashing Care: Do not tumble dry\nGender: unisex\nClothing Decoration: no decoration\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n62 cm\n\t\n40 cm\n\t\n18 cm\n\n\nXS\n\t\n92 cm\n\t\n64 cm\n\t\n42 cm\n\t\n19 cm\n\n\nS\n\t\n96 cm\n\t\n66 cm\n\t\n44 cm\n\t\n19 cm\n\n\nM\n\t\n100 cm\n\t\n68 cm\n\t\n46 cm\n\t\n19 cm\n\n\nL\n\t\n104 cm\n\t\n70 cm\n\t\n50 cm\n\t\n20 cm\n\n\nXL\n\t\n108 cm\n\t\n72 cm\n\t\n52 cm\n\t\n20 cm\n\n\n2XL\n\t\n114 cm\n\t\n74 cm\n\t\n54 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n76 cm\n\t\n57 cm\n\t\n22 cm\n\n\n4XL\n\t\n126 cm\n\t\n78 cm\n\t\n60 cm\n\t\n23 cm\n\n\n5XL\n\t\n132 cm\n\t\n80 cm\n\t\n62 cm\n\t\n24 cm\n\n\n6XL\n\t\n138 cm\n\t\n82 cm\n\t\n64 cm\n\t\n25 cm\n搜索标签\nRio de Janeiro shirt\nBrazil print\nlandmark T-shirt\ncityscape print\ngraphic T-shirt\npolyester T-shirt\nunisex T-shirt\nshort sleeve\ncrew neck\n",
+        "title": "Rio de Janeiro Landmark Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+        "url": "https://merchant.joom.com/panel/products/6ac7a4095c2438011cc838fc",
+        "variantCount": 11,
+        "variantDetailSha256": "41aa13bfa9332c40aefc892f1dbb07f57aeb629d78d0c00bbd54d477e117edbe"
+      },
+      "plan": {
+        "label": "里约地标图案T恤",
+        "title": "Rio de Janeiro Landmark Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+        "intro": "Unisex polyester T-shirt featuring a Rio de Janeiro landmark print with Christ the Redeemer and a cityscape design. The printed pullover has short sleeves and a round neckline. Select your preferred color and design, then compare the garment measurements below before ordering.",
+        "tags": [
+          "Rio de Janeiro shirt",
+          "Brazil print",
+          "landmark T-shirt",
+          "cityscape print",
+          "graphic T-shirt",
+          "polyester T-shirt",
+          "unisex T-shirt",
+          "short sleeve",
+          "crew neck"
+        ],
+        "replacements": {
+          "Material: polyster": "Material: Polyester",
+          "Clothing Decoration: No Decoration": "Clothing Decoration: Print"
+        }
+      }
+    },
+    {
+      "product_id": "6aa27a6433883401e8442178",
+      "name": "Sloth Dinosaur Pizza Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 165,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/486fad752edcfdeef7df674161e1ff8c37417484_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6aa27a6433883401e8442178/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226aa27a6433883401e8442178%22",
+            "text": "订单"
+          }
+        ],
+        "text": "1005006353722020\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n1\n尺寸表中的图片\n请将尺码表从图片中移除——请改用尺码表功能。\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\n绑定的文件\n欧代协议\nManufacturer Information: Qianshan County Nineteen Trade Co., Ltd\nSloth Dinosaur Pizza Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6aa27a6433883401e8442178\n等级\n部分内容\n产品SKU\n1005006353722020\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月10日\n敏感货\n普通货\n描述\nUnisex polyester T-shirt with a colorful sloth, dinosaur, pizza and galaxy-themed print. This pullover top has a round neckline and short sleeves. Select your preferred print and compare your measurements with the size chart below before ordering.\n\nProduct Type: T-Shirt\nMaterial: Polyester\nManufacture Country: China\nApplicable Scene: Daily\nStyle: Casual\nApplicable Season: Summer\nNeckline: Round Neck\nClosure Type: Pullover\nClothing Decoration: Print\nLeather Label: No\nSleeve Length: Short Sleeve\nSex: Unisex\nAge: 18–45 Years Old\nPattern: Print\nLabel: Yes\nWashing Care: Do Not Tumble Dry\nSize Chart (cm):\n2XS: Shoulder 40 cm, Bust 88 cm, Sleeve 18 cm, Length 62 cm.\nXS: Shoulder 42 cm, Bust 92 cm, Sleeve 18 cm, Length 64 cm.\nS: Shoulder 44 cm, Bust 96 cm, Sleeve 19 cm, Length 66 cm.\nM: Shoulder 46 cm, Bust 100 cm, Sleeve 19 cm, Length 68 cm.\nL: Shoulder 50 cm, Bust 104 cm, Sleeve 20 cm, Length 70 cm.\nXL: Shoulder 52 cm, Bust 108 cm, Sleeve 20 cm, Length 72 cm.\n2XL: Shoulder 54 cm, Bust 114 cm, Sleeve 21 cm, Length 74 cm.\n3XL: Shoulder 57 cm, Bust 120 cm, Sleeve 22 cm, Length 76 cm.\n4XL: Shoulder 60 cm, Bust 126 cm, Sleeve 23 cm, Length 78 cm.\n5XL: Shoulder 62 cm, Bust 132 cm, Sleeve 24 cm, Length 80 cm.\n6XL: Shoulder 64 cm, Bust 138 cm, Sleeve 25 cm, Length 82 cm.\nNotes: Please carefully check the size chart before purchasing. Due to manual measurement, please allow a 2–3 cm difference. The actual color may vary slightly due to lighting and screen settings.\n产品属性\nMaterial for fur: polyster\nMaterial: polyester\nMaterial: polyester\nManufacture Country: China\nSeason: summer\nNeckline: round\nClothing Decoration: print\nLeather Label: no\nSleeve Length: short sleeve\nClothing Decoration: print\nPattern: print\nLabel: yes\nWashing Care: Do not tumble dry\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n62 cm\n\t\n40 cm\n\t\n18 cm\n\n\nXS\n\t\n92 cm\n\t\n64 cm\n\t\n42 cm\n\t\n18 cm\n\n\nS\n\t\n96 cm\n\t\n66 cm\n\t\n44 cm\n\t\n19 cm\n\n\nM\n\t\n100 cm\n\t\n68 cm\n\t\n46 cm\n\t\n19 cm\n\n\nL\n\t\n104 cm\n\t\n70 cm\n\t\n50 cm\n\t\n20 cm\n\n\nXL\n\t\n108 cm\n\t\n72 cm\n\t\n52 cm\n\t\n20 cm\n\n\n2XL\n\t\n114 cm\n\t\n74 cm\n\t\n54 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n76 cm\n\t\n57 cm\n\t\n22 cm\n\n\n4XL\n\t\n126 cm\n\t\n78 cm\n\t\n60 cm\n\t\n23 cm\n\n\n5XL\n\t\n132 cm\n\t\n80 cm\n\t\n62 cm\n\t\n24 cm\n\n\n6XL\n\t\n138 cm\n\t\n82 cm\n\t\n64 cm\n\t\n25 cm\n搜索标签\nsloth T-shirt\ndinosaur shirt\npizza print\ngalaxy print\nanimal T-shirt\npolyester T-shirt\nunisex T-shirt\nshort sleeve\ncrew neck\n",
+        "title": "Sloth Dinosaur Pizza Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+        "url": "https://merchant.joom.com/panel/products/6aa27a6433883401e8442178",
+        "variantCount": 165,
+        "variantDetailSha256": "ef460a4d3f94c5bbc51786fbef007d5df53bd6b9c0252f919c78dad6ec6d0388"
+      },
+      "plan": {
+        "label": "树懒恐龙披萨印花T恤",
+        "title": "Sloth Dinosaur Pizza Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+        "intro": "Unisex polyester T-shirt with a colorful sloth, dinosaur, pizza and galaxy-themed print. This pullover top has a round neckline and short sleeves. Select your preferred print and compare your measurements with the size chart below before ordering.",
+        "tags": [
+          "sloth T-shirt",
+          "dinosaur shirt",
+          "pizza print",
+          "galaxy print",
+          "animal T-shirt",
+          "polyester T-shirt",
+          "unisex T-shirt",
+          "short sleeve",
+          "crew neck"
+        ],
+        "replacements": {
+          "Clothing Decoration: No Decoration": "Clothing Decoration: Print"
+        }
+      }
+    },
+    {
+      "product_id": "6a87c88c93749b019b381e23",
+      "name": "Solid Color Short Sleeve Crew Neck T-Shirt, Unisex Casual Pullover Top",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 64,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/76133adabe467b56abdf849d812146b03e9a316c_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a87c88c93749b019b381e23/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a87c88c93749b019b381e23%22",
+            "text": "订单"
+          }
+        ],
+        "text": "67f4c98e81aa200124a5bcb3\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n审核中\n1\n产品待审核\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nSolid Color Short Sleeve Crew Neck T-Shirt, Unisex Casual Pullover Top\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a87c88c93749b019b381e23\n等级\n部分内容\n产品SKU\n67f4c98e81aa200124a5bcb3\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月21日\n敏感货\n普通货\n描述\nSolid-color pullover T-shirt with short sleeves and a round neckline for casual everyday outfits. Select your preferred color and compare the garment measurements in the size chart below before ordering.\n\nProduct Type: t shirt\nManufacture Country: China\nApplicable scene: daily\nstyle: Casual\nApplicable season: summer\nNeckline: round\nTops closure type: pullover\nClothing decoration: no decoration\nLeather Label: no\nSleeve length (cm): Short Sleeve\nSex: Unisex\nAge: Ages 18-45 Years Old\nPattern: solid\nMaterial: cotton\nLabel: Yes\nWashing care:do not tumble drying\n\nSize chart (cm):\nSize: XXS, Length: 60cm, Bust: 88cm, Shoulder: 41cm, Sleeve: 18cm\nSize: XS, Length: 66cm, Bust: 96cm, Shoulder: 45cm, Sleeve: 19cm\nSize: S, Length: 68cm, Bust: 100cm, Shoulder: 47cm, Sleeve: 19cm\nSize: M, Length: 70cm, Bust: 104cm, Shoulder: 49cm, Sleeve: 20cm\nSize: L, Length: 72cm, Bust: 108cm, Shoulder: 51cm, Sleeve: 20cm\nSize: XL, Length: 74cm, Bust: 112cm, Shoulder: 53cm, Sleeve: 21cm\nSize: 2XL, Length: 76cm, Bust: 116cm, Shoulder: 55cm, Sleeve: 21cm\nSize: 3XL, Length: 78cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm\nNote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4. All our products are advertised in size, study the size chart before buying.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nManufacture Country: China\nSeason: summer\nNeckline: round\nClothing Decoration: no decoration\nLeather Label: no\nPattern: solid\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n搜索标签\nsolid color T-shirt\ncrew neck T-shirt\nshort sleeve\ncasual T-shirt\npullover top\nunisex T-shirt\nround neck\neveryday top\n",
+        "title": "Solid Color Short Sleeve Crew Neck T-Shirt, Unisex Casual Pullover Top",
+        "url": "https://merchant.joom.com/panel/products/6a87c88c93749b019b381e23",
+        "variantCount": 64,
+        "variantDetailSha256": "a9fcf2dae12c71d20a0d7be21bd5bae1cd4b71126e21966e5f2f11fc655376ef"
+      },
+      "plan": {
+        "label": "纯色圆领短袖T恤",
+        "title": "Solid Color Short Sleeve Crew Neck T-Shirt, Unisex Casual Pullover Top",
+        "intro": "Solid-color pullover T-shirt with short sleeves and a round neckline for casual everyday outfits. Select your preferred color and compare the garment measurements in the size chart below before ordering.",
+        "tags": [
+          "solid color T-shirt",
+          "crew neck T-shirt",
+          "short sleeve",
+          "casual T-shirt",
+          "pullover top",
+          "unisex T-shirt",
+          "round neck",
+          "everyday top"
+        ],
+        "replacements": {
+          "Pattern: print": "Pattern: solid"
+        }
+      }
+    },
+    {
+      "product_id": "6aba48d42611ba0106b21b88",
+      "name": "Kids' Penguin Print Hoodie, Cotton Long Sleeve Pullover Sweatshirt",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 35,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/e93614ccceece194f6942e913da50e519e8cc1c5_1024_1024.jpeg",
+        "imageLoaded": false,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6aba48d42611ba0106b21b88/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226aba48d42611ba0106b21b88%22",
+            "text": "订单"
+          }
+        ],
+        "text": "3256812930859728\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n限售\n1\n审核中\n1\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nKids' Penguin Print Hoodie, Cotton Long Sleeve Pullover Sweatshirt\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6aba48d42611ba0106b21b88\n等级\n部分内容\n产品SKU\n3256812930859728\n类目ID\n1605614754933037318-196-2-62735-1604558435\n类目\nHoodies & Sweatshirts (kids unisex)\n推荐类目ID\n1474913408999209670-73-2-118-1571556385\n推荐类目\nT-Shirts (kids unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月28日\n敏感货\n普通货\n描述\nChildren's cotton pullover hoodie with a cartoon penguin print, a hood and long sleeves. Select your preferred design and use the size chart below to compare your child's measurements before ordering.\n\nProduct Type: Kids' Hooded Sweatshirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nNeckline: Hooded\nClosure Type: Pullover\nClothing Decoration: No Decoration\nLeather Label: No\nSleeve Length: Long Sleeve\nGender: Unisex\nAge Group: Kids\nPattern: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Do Not Tumble Dry\nSize Chart:\nSize 100: Length 42 cm, Bust 60 cm, Shoulder 28 cm, Sleeve 39 cm.\nSize 110: Length 45 cm, Bust 66 cm, Shoulder 30 cm, Sleeve 41 cm.\nSize 120: Length 48 cm, Bust 72 cm, Shoulder 32 cm, Sleeve 43 cm.\nSize 130: Length 51 cm, Bust 78 cm, Shoulder 34 cm, Sleeve 45 cm.\nSize 140: Length 54 cm, Bust 84 cm, Shoulder 36 cm, Sleeve 47 cm.\nSize 150: Length 57 cm, Bust 90 cm, Shoulder 38 cm, Sleeve 49 cm.\nSize 160: Length 60 cm, Bust 96 cm, Shoulder 40 cm, Sleeve 51 cm.\nPlease carefully measure your child and compare the measurements with the size chart before purchasing.\nDue to manual measurement, please allow a 2–3 cm deviation.\nThe actual color may vary slightly due to lighting and different screen settings.\nPlease choose the size according to your child’s actual measurements.\n产品属性\nMaterial: cotton\nManufacture Country: China\nStyle: casual\nSleeve Length: long sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry\n搜索标签\nkids hoodie\npenguin hoodie\npenguin print\nanimal sweatshirt\ncotton hoodie\npullover hoodie\nlong sleeve\nboys hoodie\ngirls hoodie\n",
+        "title": "Kids' Penguin Print Hoodie, Cotton Long Sleeve Pullover Sweatshirt",
+        "url": "https://merchant.joom.com/panel/products/6aba48d42611ba0106b21b88",
+        "variantCount": 35,
+        "variantDetailSha256": "408ff01b24a185695f237999926e0cab0ce5742fe89f1be2bdd71a4c59073b4d"
+      },
+      "plan": {
+        "label": "企鹅图案童装卫衣",
+        "title": "Kids' Penguin Print Hoodie, Cotton Long Sleeve Pullover Sweatshirt",
+        "intro": "Children's cotton pullover hoodie with a cartoon penguin print, a hood and long sleeves. Select your preferred design and use the size chart below to compare your child's measurements before ordering.",
+        "tags": [
+          "kids hoodie",
+          "penguin hoodie",
+          "penguin print",
+          "animal sweatshirt",
+          "cotton hoodie",
+          "pullover hoodie",
+          "long sleeve",
+          "boys hoodie",
+          "girls hoodie"
+        ],
+        "replacements": {
+          "Product Type: Kids’ T-Shirt": "Product Type: Kids' Hooded Sweatshirt",
+          "Applicable Season: Summer\n": "",
+          "Neckline: Round Neck": "Neckline: Hooded",
+          "Sleeve Length: Short Sleeve": "Sleeve Length: Long Sleeve"
+        }
+      }
+    },
+    {
+      "product_id": "6a9d36e83f8ce801f4d97508",
+      "name": "Kids' Cat Ramen Print Hoodie, Cotton Long Sleeve Pullover Sweatshirt",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 126,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/140ac18abdd25708e1ee3796d8d995db7241d4a4_1024_1024.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a9d36e83f8ce801f4d97508/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a9d36e83f8ce801f4d97508%22",
+            "text": "订单"
+          }
+        ],
+        "text": "1005011635361444\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n限售\n1\n需注意\n1\n审核中\n1\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\n绑定的文件\n欧代协议\nManufacturer Information: Qianshan County Nineteen Trade Co., Ltd\nKids' Cat Ramen Print Hoodie, Cotton Long Sleeve Pullover Sweatshirt\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a9d36e83f8ce801f4d97508\n等级\n部分内容\n产品SKU\n1005011635361444\n类目ID\n1605614754933037318-196-2-62735-1604558435\n类目\nBaby & Kids\nKids Clothing\nUnisex Clothing\nUnisex (over 4 y.o.)\nTop\nHoodies & Sweatshirts (kids unisex)\n推荐类目ID\n1474913408999209670-73-2-118-1571556385\n推荐类目\nT-Shirts (kids unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月6日\n敏感货\n普通货\n描述\nChildren's cotton pullover hoodie with a cartoon cat eating ramen print, a hood and long sleeves. Select your preferred design and compare your child's measurements with the size chart below before ordering.\n\nProduct Type: Kids' Hooded Sweatshirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nNeckline: Hooded\nClosure Type: Pullover\nClothing Decoration: No Decoration\nLeather Label: No\nSleeve Length: Long Sleeve\nGender: Unisex\nAge Group: Kids\nPattern: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Do Not Tumble Dry\nSize Chart:\nSize 100: Length 42 cm, Bust 60 cm, Shoulder 28 cm, Sleeve 39 cm.\nSize 110: Length 45 cm, Bust 66 cm, Shoulder 30 cm, Sleeve 41 cm.\nSize 120: Length 48 cm, Bust 72 cm, Shoulder 32 cm, Sleeve 43 cm.\nSize 130: Length 51 cm, Bust 78 cm, Shoulder 34 cm, Sleeve 45 cm.\nSize 140: Length 54 cm, Bust 84 cm, Shoulder 36 cm, Sleeve 47 cm.\nSize 150: Length 57 cm, Bust 90 cm, Shoulder 38 cm, Sleeve 49 cm.\nSize 160: Length 60 cm, Bust 96 cm, Shoulder 40 cm, Sleeve 51 cm.\nPlease carefully measure your child and compare the measurements with the size chart before purchasing.\nDue to manual measurement, please allow a 2–3 cm deviation.\nThe actual color may vary slightly due to lighting and different screen settings.\nPlease choose the size according to your child’s actual measurements.\n产品属性\nMaterial: cotton\nManufacture Country: China\nStyle: casual\nSleeve Length: long sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n100\n\t\n60 cm\n\t\n42 cm\n\t\n28 cm\n\t\n39 cm\n\n\n110\n\t\n66 cm\n\t\n45 cm\n\t\n30 cm\n\t\n41 cm\n\n\n120\n\t\n72 cm\n\t\n48 cm\n\t\n32 cm\n\t\n43 cm\n\n\n130\n\t\n78 cm\n\t\n51 cm\n\t\n34 cm\n\t\n45 cm\n\n\n140\n\t\n84 cm\n\t\n54 cm\n\t\n36 cm\n\t\n47 cm\n\n\n150\n\t\n90 cm\n\t\n57 cm\n\t\n38 cm\n\t\n49 cm\n\n\n160\n\t\n96 cm\n\t\n60 cm\n\t\n40 cm\n\t\n51 cm\n搜索标签\nkids hoodie\ncat hoodie\nramen cat\ncat print\ncotton hoodie\npullover hoodie\nlong sleeve\nboys hoodie\ngirls hoodie\n",
+        "title": "Kids' Cat Ramen Print Hoodie, Cotton Long Sleeve Pullover Sweatshirt",
+        "url": "https://merchant.joom.com/panel/products/6a9d36e83f8ce801f4d97508",
+        "variantCount": 126,
+        "variantDetailSha256": "95bbd52f3c8907cec46eec764e5a48e96e0aa91528b5817c2905804ff13f2109"
+      },
+      "plan": {
+        "label": "猫咪拉面童装卫衣",
+        "title": "Kids' Cat Ramen Print Hoodie, Cotton Long Sleeve Pullover Sweatshirt",
+        "intro": "Children's cotton pullover hoodie with a cartoon cat eating ramen print, a hood and long sleeves. Select your preferred design and compare your child's measurements with the size chart below before ordering.",
+        "tags": [
+          "kids hoodie",
+          "cat hoodie",
+          "ramen cat",
+          "cat print",
+          "cotton hoodie",
+          "pullover hoodie",
+          "long sleeve",
+          "boys hoodie",
+          "girls hoodie"
+        ],
+        "replacements": {
+          "Product Type: Kids’ T-Shirt": "Product Type: Kids' Hooded Sweatshirt",
+          "Applicable Season: Summer\n": "",
+          "Neckline: Round Neck": "Neckline: Hooded",
+          "Sleeve Length: Short Sleeve": "Sleeve Length: Long Sleeve"
+        }
+      }
+    },
+    {
+      "product_id": "6aa1265e2da70501751a27e9",
+      "name": "Red-Eyed Tree Frog Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 77,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/b23e78eaae5838543b1d566b8679cd293af7a28f_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6aa1265e2da70501751a27e9/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226aa1265e2da70501751a27e9%22",
+            "text": "订单"
+          }
+        ],
+        "text": "1005012742362878\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n1\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nRed-Eyed Tree Frog Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6aa1265e2da70501751a27e9\n等级\n部分内容\n产品SKU\n1005012742362878\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月9日\n敏感货\n普通货\n描述\nUnisex polyester T-shirt featuring a red-eyed tree frog among green leaves. The printed top has short sleeves, a round neckline and pullover styling. Compare the measurements below with a T-shirt you own to choose your size.\n\nSIZE CHART (cm)\nSize: 2XS, Shoulder: 40 cm, Bust: 88 cm, Sleeve: 18 cm, Length: 62 cm\nSize: XS, Shoulder: 42 cm, Bust: 92 cm, Sleeve: 18 cm, Length: 64 cm\nSize: S, Shoulder: 44 cm, Bust: 96 cm, Sleeve: 19 cm, Length: 66 cm\nSize: M, Shoulder: 46 cm, Bust: 100 cm, Sleeve: 19 cm, Length: 68 cm\nSize: L, Shoulder: 50 cm, Bust: 104 cm, Sleeve: 20 cm, Length: 70 cm\nSize: XL, Shoulder: 52 cm, Bust: 108 cm, Sleeve: 20 cm, Length: 72 cm\nSize: 2XL, Shoulder: 54 cm, Bust: 114 cm, Sleeve: 21 cm, Length: 74 cm\nSize: 3XL, Shoulder: 57 cm, Bust: 120 cm, Sleeve: 22 cm, Length: 76 cm\nSize: 4XL, Shoulder: 60 cm, Bust: 126 cm, Sleeve: 23 cm, Length: 78 cm\nSize: 5XL, Shoulder: 62 cm, Bust: 132 cm, Sleeve: 24 cm, Length: 80 cm\nSize: 6XL, Shoulder: 64 cm, Bust: 138 cm, Sleeve: 25 cm, Length: 82 cm\n\nFIT: Compare these measurements with a similar T-shirt before ordering. Allow 2–3 cm variation due to manual measurement.\nCARE: Do not tumble dry.\n产品属性\nMaterial for fur: polyster\nMaterial: polyester\nLabel: yes\nWashing Care: Do not tumble dry、Machine wash at temperatures below 30°C\nGender: unisex\nClothing Decoration: print\nPattern: print\nSleeve Length: short sleeve\nNeckline: round\nWashing Care: Machine wash is allowed\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n62 cm\n\t\n40 cm\n\t\n18 cm\n\n\nXS\n\t\n92 cm\n\t\n64 cm\n\t\n42 cm\n\t\n18 cm\n\n\nS\n\t\n96 cm\n\t\n66 cm\n\t\n44 cm\n\t\n19 cm\n\n\nM\n\t\n100 cm\n\t\n68 cm\n\t\n46 cm\n\t\n19 cm\n\n\nL\n\t\n104 cm\n\t\n70 cm\n\t\n50 cm\n\t\n20 cm\n\n\nXL\n\t\n108 cm\n\t\n72 cm\n\t\n52 cm\n\t\n20 cm\n\n\n2XL\n\t\n114 cm\n\t\n74 cm\n\t\n54 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n76 cm\n\t\n57 cm\n\t\n22 cm\n\n\n4XL\n\t\n126 cm\n\t\n78 cm\n\t\n60 cm\n\t\n23 cm\n\n\n5XL\n\t\n132 cm\n\t\n80 cm\n\t\n62 cm\n\t\n24 cm\n\n\n6XL\n\t\n138 cm\n\t\n82 cm\n\t\n64 cm\n\t\n25 cm\n搜索标签\ntree frog shirt\nfrog print\nred eyed frog\nanimal T-shirt\nnature print\npolyester T-shirt\nunisex T-shirt\nshort sleeve\ncrew neck\n",
+        "title": "Red-Eyed Tree Frog Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+        "url": "https://merchant.joom.com/panel/products/6aa1265e2da70501751a27e9",
+        "variantCount": 77,
+        "variantDetailSha256": "013afdfea058ad113f54990767435f5095a72adb7923cca80250bd21180a1078"
+      },
+      "plan": {
+        "label": "红眼树蛙印花T恤",
+        "title": "Red-Eyed Tree Frog Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+        "intro": "Unisex polyester T-shirt featuring a red-eyed tree frog among green leaves. The printed top has short sleeves, a round neckline and pullover styling. Compare the measurements below with a T-shirt you own to choose your size.",
+        "tags": [
+          "tree frog shirt",
+          "frog print",
+          "red eyed frog",
+          "animal T-shirt",
+          "nature print",
+          "polyester T-shirt",
+          "unisex T-shirt",
+          "short sleeve",
+          "crew neck"
+        ],
+        "replacements": {
+          "Unisex polyester T-shirt with a 3D-printed tree frog graphic. It has a round neckline, short sleeves and pullover closure.\n\n": ""
+        }
+      }
+    }
+  ],
+  "skipped_inspections": [
+    {
+      "product_id": "6a8e79f917a6590152d2b248",
+      "all_time_orders": 11,
+      "title": "Kids' Architectural Graphic Cotton T-Shirt, Short Sleeve, Round Neck",
+      "reason": [
+        "历史已有订单，保留不动"
+      ]
+    },
+    {
+      "product_id": "6a9c2abc43fae501818bcc59",
+      "all_time_orders": 2,
+      "title": "Funny Stylish Casual Hoodie Axolotl Jacket for Boys Girls Zipper Spring and Autumn Trendy Animal Cartoon Sweatshirts Zip Up",
+      "reason": [
+        "历史已有订单，保留不动"
+      ]
+    },
+    {
+      "product_id": "6a98053dee82bc015073fe63",
+      "all_time_orders": 2,
+      "title": "Summer Fashion Trend Letter Graphic Print Cotton Crew Neck Oversized Unisex Casual Short Sleeve Tee Tops For Men Women",
+      "reason": [
+        "历史已有订单，保留不动",
+        "平台已标记仿冒/禁用，文案修改无法解决"
+      ]
+    },
+    {
+      "product_id": "6a87c6eb35e86a010857c9b7",
+      "all_time_orders": 0,
+      "title": "325 GSM 100% Cotton Washed T-Shirt Customized Pattern Print Men's Tees… More",
+      "reason": [
+        "未选入本轮；图片/商品范围或定制履约信息需要进一步核实"
+      ]
+    },
+    {
+      "product_id": "6a8697798809ae01f9a08124",
+      "all_time_orders": 0,
+      "title": "Men and Women Oversized T-shirts Cotton Short Sleeve O-neck Prints Summer Tee Tops… More",
+      "reason": [
+        "未选入本轮；图片/商品范围或定制履约信息需要进一步核实"
+      ]
+    },
+    {
+      "product_id": "6aa1163c365a0701ec26bd46",
+      "all_time_orders": 0,
+      "title": "Funny Stylish Kawaii Zip Up Hoodie Cat Print Boys Girls Zipper Winter Autumn Jacket Trendy Cartoon Sweatshirts Unisex",
+      "reason": [
+        "有重复变型限制，需要单独核对"
+      ]
+    },
+    {
+      "product_id": "6a8c60edb1e18101d921d8a1",
+      "all_time_orders": 1,
+      "title": "3D Printing Men's T-Shirts Women's Sexy Clothes Beautiful Butt Endless Cartoon T-Shirts Men's Summer Tops T-Shirts… More",
+      "reason": [
+        "历史已有订单，保留不动"
+      ]
+    },
+    {
+      "product_id": "6a9adcba018d89019e3d2761",
+      "all_time_orders": 0,
+      "title": "Chemise drôle pour hommes T-shirts imprimés en 3D pour hommes femmes Streetwear T-shirts décontractés à manches courtes… Voir plus",
+      "reason": [
+        "未选入本轮；图片/商品范围或定制履约信息需要进一步核实"
+      ]
+    }
+  ]
+}

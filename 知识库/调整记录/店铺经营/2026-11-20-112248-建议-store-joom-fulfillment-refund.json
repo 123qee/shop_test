@@ -1,0 +1,23 @@
+{
+  "suggestion_id": "store-joom-fulfillment-refund",
+  "priority": 1,
+  "platform": "joom",
+  "shop": "全账户；错货线索为jh",
+  "product_id": "6ac0ce4318081201574fa3df",
+  "source": "https://merchant.joom.com/panel/analytics/orders",
+  "status": "待逐单核对；本任务不发货/重开商品",
+  "facts": [
+    "当前待处理18笔，上一观察14笔，增加4笔，不等于18笔已逾期",
+    "双帽卫衣28天103点击20加购4购买；昨天有产品错误退款与商家禁用证据，今天未重开其详情核验禁用状态"
+  ],
+  "suggested_action": "今天优先按真实发货截止安排18笔订单，核对SKU/尺码/印花与拣货凭证；错货款确认原因与退款责任额后再评估，不能因历史流量直接重开。",
+  "evidence_strength": "强：当前待处理数量与商品漏斗；发货截止/错货根因待核",
+  "expected_improvement": "履约时效、减少错货取消与售后损耗",
+  "review_condition": "今天核对时限；24小时复查待处理量及异常原因",
+  "actual_setting_changed": false,
+  "event_type": "scheduled_recommendation_after_completion",
+  "recorded_at": "2026-11-20T11:22:48.107321+08:00",
+  "automation_id": "joom-2",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/112248.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/112248.json"
+}

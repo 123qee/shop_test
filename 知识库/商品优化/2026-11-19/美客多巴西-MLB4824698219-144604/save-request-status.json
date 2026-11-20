@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://sellers.mercadolibre.com/publicaciones/app/modificar/omni/api/event-request",
+    "method": "PUT",
+    "status": 200
+  },
+  {
+    "url": "https://o11y-proxy-otel-frontend.meli.com/v1/metrics",
+    "method": "POST",
+    "status": 200
+  },
+  {
+    "url": "https://o11y-proxy-otel-frontend.meli.com/v1/metrics",
+    "method": "POST",
+    "status": 200
+  },
+  {
+    "url": "https://o11y-proxy-otel-frontend.meli.com/v1/metrics",
+    "method": "POST",
+    "status": 200
+  }
+]

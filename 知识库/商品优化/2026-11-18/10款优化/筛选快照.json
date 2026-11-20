@@ -1,0 +1,424 @@
+{
+  "metadata": {
+    "platform": "joom",
+    "shop": "Nineteen Wear",
+    "captured_at": "2026-11-18T10:54:29.824183+08:00",
+    "report_timezone": "Asia/Shanghai",
+    "platform_timezone": null,
+    "platform_timezone_note": "后台当前页面没有展示统计时区，未推定为北京时间",
+    "window_start": "2026-10-20",
+    "window_end": "2026-11-16",
+    "data_updated_at_display": "2026-11-17 19:42:36",
+    "completeness": "商品点击降序第3页50款的筛选快照，不是全店全商品审计；逐款订单页核对全部状态、无日期过滤的历史订单数",
+    "source": "https://merchant.joom.com/panel/analytics/orders/store/6a817b93f5d3934528e70df7?limit=50&orderBy=openCount&order=desc&page=3"
+  },
+  "catalog": {
+    "date": [
+      "最近28 天 (2026/10/20 – 2026/11/16)"
+    ],
+    "footer": "lity Shirt\n6abdb8e11bfb960155e44e36\n\t\n2026/10/20 — 2026/11/16\n\t\n0\n\t\n0\n\t\nUS$0\n\t\nUS$0\n\t\n30\n\t\n3\n\t\n10%\n\t\n0%\n\t\n1\n\t\n33.33%\n\t\n0\n\t\n0%\n\t\n\n\n每页显示项： \n10\n25\n50\n100\n←3→\n更新日期 2026年11月17日 19:42:36",
+    "rows": [
+      {
+        "cart": "1",
+        "clicks": "5",
+        "impressions": "88",
+        "name": "230 GSM 100% Cotton T-Shirt Customized Pattern Print Men's Tees… More\n6a87c6b9fa1f4801e8bb393a",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a87c6b9fa1f4801e8bb393a"
+      },
+      {
+        "cart": "1",
+        "clicks": "5",
+        "impressions": "21",
+        "name": "2026 New Kids Boys Cotton T-Shirt Sing Movie Johnny Graphic Tee Short Sleeve Crew Neck Casual Summer Clothing for Children\n6a8b0c7232e0d1010fa6bc6e",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a8b0c7232e0d1010fa6bc6e"
+      },
+      {
+        "cart": "1",
+        "clicks": "5",
+        "impressions": "81",
+        "name": "Rapper Drake Certified Lover Boy Album Print Graphic T Shirt Unisex Hip Hop Fashion T-shirt Men's 100% Cotton Oversized T-shirts\n6a8c5a40c9ba4101fc395f59",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a8c5a40c9ba4101fc395f59"
+      },
+      {
+        "cart": "0",
+        "clicks": "5",
+        "impressions": "55",
+        "name": "Summer Horror Movie Horror 3D Printing T Shirts Men's Casual Fashion Thriller Clown Halloween Short Sleeve Fun Cool T Shirt Tops… More\n6a8cd6cfc9ba4101fc3e0585",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a8cd6cfc9ba4101fc3e0585"
+      },
+      {
+        "cart": "1",
+        "clicks": "5",
+        "impressions": "174",
+        "name": "Funny Stylish Casual Hoodie Axolotl Jacket for Boys Girls Zipper Spring and Autumn Trendy Animal Cartoon Sweatshirts Zip Up\n6a9c2abc43fae501818bcc59",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a9c2abc43fae501818bcc59"
+      },
+      {
+        "cart": "4",
+        "clicks": "5",
+        "impressions": "25",
+        "name": "Japanese Style Cat Eat Ramen Hoodie Manga Kids Cat Children's Sweatshirt Cute Hoody for Boys Girls Casual Hoodies Spring\n6a9d36e83f8ce801f4d97508",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a9d36e83f8ce801f4d97508"
+      },
+      {
+        "cart": "0",
+        "clicks": "5",
+        "impressions": "129",
+        "name": "NEW YORK CITY Graphic Fashion Zipper Coat Boys' Street Wear Sweatshirts Kids Zip Up Pullover Hoodies Teens Popular Jacket ZMNY3\n6aa1164f365a0701ec26c1cb",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6aa1164f365a0701ec26c1cb"
+      },
+      {
+        "cart": "0",
+        "clicks": "5",
+        "impressions": "130",
+        "name": "2026 Messi Football Fans Commemorative Jersey Quick Dry Breathable Casual Sports Soccer Shirt Short Sleeve Tee for Kids Adults\n6aa94adc70041c01164463cf",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6aa94adc70041c01164463cf"
+      },
+      {
+        "cart": "2",
+        "clicks": "5",
+        "impressions": "59",
+        "name": "Trendy Zipper Hoodie New Design Hot Cartoon Autumn Winter Kids Wear Crayon Shin Chan Boys Girls 3 14\n6aba57472611ba0106b3179d",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6aba57472611ba0106b3179d"
+      },
+      {
+        "cart": "1",
+        "clicks": "5",
+        "impressions": "61",
+        "name": "Cartoon Print Clothes Anime One Pieces Zipper Hoodie Kids Long-sleeved Luffy Hooded Sweatshirt Casual Printed Top for Boys Girls\n6aba57975ef7d90176395e19",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6aba57975ef7d90176395e19"
+      },
+      {
+        "cart": "2",
+        "clicks": "5",
+        "impressions": "72",
+        "name": "2026 New Kids Anime One Piece Luffy Zip Up Hoodie Jacket 3-12Y Casual Long Sleeve Sweatshirt Autumn\n6aba5d532611ba0106b3991f",
+        "purchases": "1",
+        "url": "https://merchant.joom.com/panel/products/6aba5d532611ba0106b3991f"
+      },
+      {
+        "cart": "1",
+        "clicks": "5",
+        "impressions": "28",
+        "name": "Autumn Funny Oktoberfest Shirt Beer Festival Tee German Munich Festival Street Sport Casual Tshirt Women Men's Tshirt Clothing\n6ac7a3665c2438011cc81578",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6ac7a3665c2438011cc81578"
+      },
+      {
+        "cart": "2",
+        "clicks": "5",
+        "impressions": "8",
+        "name": "Brazil Christ The Redeemer Soccer Jersey Pink White Rio De Janeiro Football Shirt Fan Edition Casual Sports Tee 2026\n6ac7a4095c2438011cc838fc",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6ac7a4095c2438011cc838fc"
+      },
+      {
+        "cart": "0",
+        "clicks": "4",
+        "impressions": "52",
+        "name": "Popular Rock Helloween Band Printing T-Shirts 3D Men Women Fashion Oversized Short Sleeve Tee Shirt Summer Kid Y2k Top Clothing\n6a8430c20fa41b013265540b",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a8430c20fa41b013265540b"
+      },
+      {
+        "cart": "2",
+        "clicks": "4",
+        "impressions": "45",
+        "name": "Męska koszulka z nadrukiem graficznym Tung Sahur, letnia, luźna, modna, zabawna, z krótkim rękawem i okrągłym dekoltem, unisex.\n6a846510188e77017415ef00",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a846510188e77017415ef00"
+      },
+      {
+        "cart": "0",
+        "clicks": "4",
+        "impressions": "45",
+        "name": "Men and Women Oversized T-shirts Cotton Short Sleeve O-neck Prints Summer Tee Tops… More\n6a8697798809ae01f9a08124",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a8697798809ae01f9a08124"
+      },
+      {
+        "cart": "1",
+        "clicks": "4",
+        "impressions": "54",
+        "name": "325 GSM 100% Cotton Washed T-Shirt Customized Pattern Print Men's Tees… More\n6a87c6eb35e86a010857c9b7",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a87c6eb35e86a010857c9b7"
+      },
+      {
+        "cart": "0",
+        "clicks": "4",
+        "impressions": "129",
+        "name": "JDM Tokyo Drift Car T Shirt Unisex Oversized Japanese Streetwear Sakura Graphic Tee Y2K Aesthetic Summer Cotton Top\n6a8c5ad5535d350144b5e91a",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a8c5ad5535d350144b5e91a"
+      },
+      {
+        "cart": "1",
+        "clicks": "4",
+        "impressions": "29",
+        "name": "3D Printing Men's T-Shirts Women's Sexy Clothes Beautiful Butt Endless Cartoon T-Shirts Men's Summer Tops T-Shirts… More\n6a8c60edb1e18101d921d8a1",
+        "purchases": "1",
+        "url": "https://merchant.joom.com/panel/products/6a8c60edb1e18101d921d8a1"
+      },
+      {
+        "cart": "0",
+        "clicks": "4",
+        "impressions": "52",
+        "name": "Powell Peralta Winged Ripper T-Shirt… More\n6a8e7094f788ec01b9b8ad51",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a8e7094f788ec01b9b8ad51"
+      },
+      {
+        "cart": "0",
+        "clicks": "4",
+        "impressions": "33",
+        "name": "Kids' Architectural Graphic Cotton T-Shirt, Short Sleeve, Round Neck\n6a8e79f917a6590152d2b248",
+        "purchases": "3",
+        "url": "https://merchant.joom.com/panel/products/6a8e79f917a6590152d2b248"
+      },
+      {
+        "cart": "0",
+        "clicks": "4",
+        "impressions": "41",
+        "name": "Short Sleeved Round Neck Y2k Tshirt Men Clothing New in Top & Tees Mens Clothes Tee Shirt T-Shirts Tshirt for Men Ropa Hombre\n6a980518ca0387012ba6e097",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a980518ca0387012ba6e097"
+      },
+      {
+        "cart": "0",
+        "clicks": "4",
+        "impressions": "99",
+        "name": "Children Hoodie Zip Up cardigan Game Hollow Knight Kid 3-12 Year Tops Print Pattern Girl Pink Boy Black Coat Autumn Hoodies\n6a9c2bc3c9f18801464027ff",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a9c2bc3c9f18801464027ff"
+      },
+      {
+        "cart": "0",
+        "clicks": "4",
+        "impressions": "95",
+        "name": "Spring Autumn Children Hoodies Set Football Idol CR7 Print Pants Suits 2pcs Set Casual Sports Tracksuit Boy Girl Clothes 3-13Y\n6aba28a7ef000101c326a63c",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6aba28a7ef000101c326a63c"
+      },
+      {
+        "cart": "1",
+        "clicks": "4",
+        "impressions": "118",
+        "name": "Streetwear Fashionable Zipper Hoodie Casual HIP HOP Hoodies Jackets Boys Girls Y2k Zip Up Sweatshirt Spring Autumn\n6aba59cdf8dad801a1e28955",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6aba59cdf8dad801a1e28955"
+      },
+      {
+        "cart": "0",
+        "clicks": "4",
+        "impressions": "117",
+        "name": "Hit Me Hard and Soft Tour 2024 Zipper Hoodie Men Women Hip Hop Fashion Zip Up Jacket Male Casual Loose Oversized Zip Up Hoodies\n6abdb8f27c40b301572e02c4",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6abdb8f27c40b301572e02c4"
+      },
+      {
+        "cart": "1",
+        "clicks": "4",
+        "impressions": "18",
+        "name": "90s Singer Britney Spears Beautiful Photo Graphic Print T-shirt Fashion Hip Hop Oversized T Shirt Harajuku Short Sleeve T Shirts\n6ac88644450f1c01f9b9c84f",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6ac88644450f1c01f9b9c84f"
+      },
+      {
+        "cart": "1",
+        "clicks": "4",
+        "impressions": "16",
+        "name": "Anime Jojo Bizarre Adventure Steel Ball Run Johnny Joestar Vintage Washed T Shirts Men's Women Oversized Short Sleeves T-shirts\n6aeaa1e422bfd3013112e428",
+        "purchases": "1",
+        "url": "https://merchant.joom.com/panel/products/6aeaa1e422bfd3013112e428"
+      },
+      {
+        "cart": "1",
+        "clicks": "3",
+        "impressions": "136",
+        "name": "Twenty One Pilots Band World Tour Back T-shirt Women Men Short Sleeve Oversized Rapper Hip Hop Punk Street Harajuku Unisex Tees\n6a8431490fa41b01326557f7",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a8431490fa41b01326557f7"
+      },
+      {
+        "cart": "1",
+        "clicks": "3",
+        "impressions": "87",
+        "name": "Unisex Heated Rivalry T Shirt 100% Cotton Short Sleeve Crew neck Graphic Tee, Casual Vintage T Shirts for Men Women Summer Tops\n6a8688ee8809ae01f99f30b6",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a8688ee8809ae01f99f30b6"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "19",
+        "name": "230 Gsm 100% Cotton Bob The Builder Can We Fix It No Its F Cked Repair Man Best Seller T Shirt Cult Movie Retro Vintage Top Tee 1969… More\n6a87c683fa1f4801e8bb3401",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a87c683fa1f4801e8bb3401"
+      },
+      {
+        "cart": "1",
+        "clicks": "3",
+        "impressions": "75",
+        "name": "230 Gsm 100% Cotton Lorna Shore T Shirt Deathcore Whitechapel Suicide Silence Carnifex Angelmaker Chelsea Grin Unisex Heavy Cotton T Shirt… More\n6a87c6ae237ea601558dc7c5",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a87c6ae237ea601558dc7c5"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "50",
+        "name": "Summer Quick Drying Short Sleeved Ice Silk T-shirt Ice Silk Short Sleeved Summer Short Sleeved Round Neck Sports Short Sleeved T-shirt 50-100KG… More\n6a87c88c93749b019b381e23",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a87c88c93749b019b381e23"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "87",
+        "name": "Gabby's Dollhouse 6th Birthday Girl Kids T-Shirt Pink Short Sleeve Cotton Top for Girls Summer Wear\n6a8b8e60f0fb4e010899959e",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a8b8e60f0fb4e010899959e"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "168",
+        "name": "2026 New Men's T-shirt Jiraiya Summer Anime Men and Women Wear Short-sleeved Retro Harajuku Style Men Women Ins\n6a8c47488f3b2901f2108806",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a8c47488f3b2901f2108806"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "175",
+        "name": "Classic Yellow Legendary Rap Group Wu Tang Band T-Shirt Cotton Graphic Tee Men Women Summer Streetwear\n6a8c480d8f3b2901f2109174",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a8c480d8f3b2901f2109174"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "24",
+        "name": "Summer Fashion Trend Letter Graphic Print Cotton Crew Neck Oversized Unisex Casual Short Sleeve Tee Tops For Men Women\n6a98053dee82bc015073fe63",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a98053dee82bc015073fe63"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "60",
+        "name": "Cristiano Ronaldo Neymar Lionel Messi Football Superstar Portrait Printed Tee Men Women Cotton Loose Casual Short Sleeve Tshirt\n6a980b79862ef10196b71ccd",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a980b79862ef10196b71ccd"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "48",
+        "name": "The British Guitar Amps Orange T Shirts Unisex Casual Short Sleeve Mans Cool Cotton Orange AMP Tshirt Tops Tees LH-105\n6a9aaf693c41d0014915934a",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a9aaf693c41d0014915934a"
+      },
+      {
+        "cart": "2",
+        "clicks": "3",
+        "impressions": "100",
+        "name": "One Piece Gear 5 Nika Luffy Manga Panel Full Print T-Shirt, Anime Casual Sport Tee For Men Women Kids, Quick Dry Streetwear Top\n6a9ac915018d89019e3c90ce",
+        "purchases": "2",
+        "url": "https://merchant.joom.com/panel/products/6a9ac915018d89019e3c90ce"
+      },
+      {
+        "cart": "1",
+        "clicks": "3",
+        "impressions": "47",
+        "name": "Chemise drôle pour hommes T-shirts imprimés en 3D pour hommes femmes Streetwear T-shirts décontractés à manches courtes… Voir plus\n6a9adcba018d89019e3d2761",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a9adcba018d89019e3d2761"
+      },
+      {
+        "cart": "1",
+        "clicks": "3",
+        "impressions": "117",
+        "name": "Neverness to Everness NTE Character Graphic Cotton T-Shirt, Unisex\n6a9bfc08ad688a01ff54f16d",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6a9bfc08ad688a01ff54f16d"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "155",
+        "name": "Funny Stylish Kawaii Zip Up Hoodie Cat Print Boys Girls Zipper Winter Autumn Jacket Trendy Cartoon Sweatshirts Unisex\n6aa1163c365a0701ec26bd46",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6aa1163c365a0701ec26bd46"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "34",
+        "name": "Halloween Theme Kids Zipper Hoodie Haunted Castle Moon Bat Front Back Print Boys Girls Long Sleeve Daily Hooded Jacket\n6aa1163e365a0701ec26bdd4",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6aa1163e365a0701ec26bdd4"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "81",
+        "name": "Tree Frog 3D Print Polyester T-Shirt, Unisex Short Sleeve\n6aa1265e2da70501751a27e9",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6aa1265e2da70501751a27e9"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "45",
+        "name": "Funny Galaxy Sloth T Shirt For Men Kids Casual Animal Pizza 3d Print T-shirt Streetwear Tops Plus Size Short Sleeve Tee Shirts\n6aa27a6433883401e8442178",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6aa27a6433883401e8442178"
+      },
+      {
+        "cart": "1",
+        "clicks": "3",
+        "impressions": "8",
+        "name": "Fun Cartoon Penguin Hoodie for Kids Warm Fleece-lined Stylish Casual Versatile and Comfortable Sweatshirt for Autumn and Winter\n6aba48d42611ba0106b21b88",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6aba48d42611ba0106b21b88"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "57",
+        "name": "Latest hip-hop children's hooded casual sports shirt - Boys and girls' niche fruit beverage printed pullover hoodie\n6aba4901772f9801e29c5a45",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6aba4901772f9801e29c5a45"
+      },
+      {
+        "cart": "0",
+        "clicks": "3",
+        "impressions": "61",
+        "name": "Children Zipper cardigan Hoodies Racing driver Number 23 Tops boy black Girls red Sweatshirt coat Long Sleeve fashion Hooded\n6aba58a92611ba0106b339bd",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6aba58a92611ba0106b339bd"
+      },
+      {
+        "cart": "1",
+        "clicks": "3",
+        "impressions": "30",
+        "name": "2026 Summer Korean Boy Band Graphics T-shirt Comfortable Men and Women Cotton Short Sleeves Loose Y2K Quality Shirt\n6abdb8e11bfb960155e44e36",
+        "purchases": "0",
+        "url": "https://merchant.joom.com/panel/products/6abdb8e11bfb960155e44e36"
+      }
+    ],
+    "url": "https://merchant.joom.com/panel/analytics/orders/store/6a817b93f5d3934528e70df7?limit=50&orderBy=openCount&order=desc&page=3"
+  }
+}

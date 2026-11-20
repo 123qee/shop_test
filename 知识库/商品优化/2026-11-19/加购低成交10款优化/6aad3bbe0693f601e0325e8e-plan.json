@@ -1,0 +1,14 @@
+{
+  "product_id": "6aad3bbe0693f601e0325e8e",
+  "name_cn": "蜘蛛网拉链童装卫衣",
+  "title": "Kids' Spider Web Graphic Cotton Zip-Up Hoodie, Long Sleeve",
+  "intro": "Children's cotton hoodie with spider web graphics, a full front zip and long sleeves. Check the selected color/design in the product images.\n\nFIT: Sizes 100–160. Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting hoodie before selecting a size; age and height are guides only. Select the color/design first and check the available sizes. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.",
+  "replacements": {
+    "Collar Type: Round Neck": "Collar Type: Hooded",
+    "Top Closure Type: Pullover": "Top Closure Type: Zip-Up"
+  },
+  "attribute_targets": {
+    "Neck Style": "Hooded Neck"
+  },
+  "tags": []
+}

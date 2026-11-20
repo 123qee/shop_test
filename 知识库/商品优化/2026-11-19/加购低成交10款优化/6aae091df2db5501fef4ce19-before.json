@@ -1,0 +1,78 @@
+{
+  "recorded_on": "2026-11-19",
+  "inspection": {
+    "product_id": "6aae091df2db5501fef4ce19",
+    "shop": "jwh second",
+    "shop_id": "6a9d4221018d89bb9e5c22ef",
+    "detail": {
+      "image": "https://img.joomcdn.net/68b0948e3e969d69b934dc68898d68b597825a05_original.jpeg",
+      "imageLoaded": false,
+      "links": [
+        {
+          "href": "https://merchant.joom.com/panel/products/6aae091df2db5501fef4ce19/edit",
+          "text": "编辑产品"
+        },
+        {
+          "href": "https://merchant.joom.com/panel/orders?productId=%226aae091df2db5501fef4ce19%22",
+          "text": "订单"
+        }
+      ],
+      "text": "4290441338\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n产品需要您的注意\n限售\n1\n需注意\n1\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n是\nKids Hooded Sweatshirt Boys Girls Long Sleeve Hoodie Casual Tops\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6aae091df2db5501fef4ce19\n等级\n缺失内容\n产品SKU\n4290441338\n类目ID\n1605614754933037318-196-2-62735-1604558435\n类目\nBaby & Kids\nKids Clothing\nUnisex Clothing\nUnisex (over 4 y.o.)\nTop\nHoodies & Sweatshirts (kids unisex)\n推荐类目ID\n1474913408999209670-73-2-118-1571556385\n推荐类目\nT-Shirts (kids unisex)\n店铺名称\njwh second\n创建日期\n2026年9月19日\n敏感货\n普通货\n描述\nProduct Type: Kids’ T-Shirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Summer\nNeckline: Round Neck\nClosure Type: Pullover\nClothing Decoration: No Decoration\nLeather Label: No\nSleeve Length: Short Sleeve\nGender: Unisex\nAge Group: Kids\nPattern: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Do Not Tumble Dry\nSize Chart:\nSize 100: Length 42 cm, Bust 60 cm, Shoulder 28 cm, Sleeve 39 cm.\nSize 110: Length 45 cm, Bust 66 cm, Shoulder 30 cm, Sleeve 41 cm.\nSize 120: Length 48 cm, Bust 72 cm, Shoulder 32 cm, Sleeve 43 cm.\nSize 130: Length 51 cm, Bust 78 cm, Shoulder 34 cm, Sleeve 45 cm.\nSize 140: Length 54 cm, Bust 84 cm, Shoulder 36 cm, Sleeve 47 cm.\nSize 150: Length 57 cm, Bust 90 cm, Shoulder 38 cm, Sleeve 49 cm.\nSize 160: Length 60 cm, Bust 96 cm, Shoulder 40 cm, Sleeve 51 cm.\nPlease carefully measure your child and compare the measurements with the size chart before purchasing.\nDue to manual measurement, please allow a 2–3 cm deviation.\nThe actual color may vary slightly due to lighting and different screen settings.\nPlease choose the size according to your child’s actual measurements.\n产品属性\nMaterial: cotton\nCountry of Manufacture: China\nStyle: casual\nSleeve Length: short sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry\nFabric Type: cotton\nNeck Style: Round Neck\nPattern: print\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n100\n\t\n60 cm\n\t\n42 cm\n\t\n28 cm\n\t\n39 cm\n\n\n110\n\t\n66 cm\n\t\n45 cm\n\t\n30 cm\n\t\n41 cm\n\n\n120\n\t\n72 cm\n\t\n48 cm\n\t\n32 cm\n\t\n43 cm\n\n\n130\n\t\n78 cm\n\t\n51 cm\n\t\n34 cm\n\t\n45 cm\n\n\n140\n\t\n84 cm\n\t\n54 cm\n\t\n36 cm\n\t\n47 cm\n\n\n150\n\t\n90 cm\n\t\n57 cm\n\t\n38 cm\n\t\n49 cm\n\n\n160\n\t\n96 cm\n\t\n60 cm\n\t\n40 cm\n\t\n51 cm\n",
+      "title": "Kids Hooded Sweatshirt Boys Girls Long Sleeve Hoodie Casual Tops",
+      "url": "https://merchant.joom.com/panel/products/6aae091df2db5501fef4ce19",
+      "variantCount": 21,
+      "variantDetailSha256": "9af694a0ef54ef7bb7a0051aa8fd1e290eb7cf9e7dfb9c1929493a4d20230035"
+    },
+    "orders": {
+      "count": 2,
+      "empty": false,
+      "filters": "\n店铺：所有\n订单ID\n产品ID 是6aae091df2db5501fef4ce19\n产品SKU\n状态\n批准日期\n假期批准日期\n添加筛选器\n订单\n2\n",
+      "rows": 2,
+      "url": "https://merchant.joom.com/panel/orders?productId=%226aae091df2db5501fef4ce19%22"
+    },
+    "baseline": {
+      "period": "2026/10/21 — 2026/11/17",
+      "impressions": 535,
+      "clicks": 32,
+      "cart": 13,
+      "purchases": 1
+    }
+  },
+  "form_before": {
+    "category": "Hoodies & Sweatshirts (kids unisex)",
+    "description": "Product Type: Kids’ T-Shirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Summer\nNeckline: Round Neck\nClosure Type: Pullover\nClothing Decoration: No Decoration\nLeather Label: No\nSleeve Length: Short Sleeve\nGender: Unisex\nAge Group: Kids\nPattern: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Do Not Tumble Dry  \nSize Chart:\nSize 100: Length 42 cm, Bust 60 cm, Shoulder 28 cm, Sleeve 39 cm.\nSize 110: Length 45 cm, Bust 66 cm, Shoulder 30 cm, Sleeve 41 cm.\nSize 120: Length 48 cm, Bust 72 cm, Shoulder 32 cm, Sleeve 43 cm.\nSize 130: Length 51 cm, Bust 78 cm, Shoulder 34 cm, Sleeve 45 cm.\nSize 140: Length 54 cm, Bust 84 cm, Shoulder 36 cm, Sleeve 47 cm.\nSize 150: Length 57 cm, Bust 90 cm, Shoulder 38 cm, Sleeve 49 cm.\nSize 160: Length 60 cm, Bust 96 cm, Shoulder 40 cm, Sleeve 51 cm.\nPlease carefully measure your child and compare the measurements with the size chart before purchasing.\nDue to manual measurement, please allow a 2–3 cm deviation.\nThe actual color may vary slightly due to lighting and different screen settings.\nPlease choose the size according to your child’s actual measurements.",
+    "descriptionName": "description",
+    "fieldCount": 422,
+    "images": [
+      "https://wsrv.nl/?url=https%3A%2F%2Fhttp2.mlstatic.com%2FD_NQ_NP_752623-CBT114234555662_082026-O-sudadera-con-capucha-infantil-para-ninos-mayores.webp&w=550&h=550&fit=cover&output=jpg&q=90",
+      "https://http2.mlstatic.com/D_Q_NP_917047-CBT115569874133_082026-F-sudadera-con-capucha-infantil-para-ninos-mayores.webp",
+      "https://http2.mlstatic.com/D_Q_NP_644464-CBT114233795668_082026-F-sudadera-con-capucha-infantil-para-ninos-mayores.webp"
+    ],
+    "tags": "",
+    "tagsName": "tags",
+    "title": "Kids Hooded Sweatshirt Boys Girls Long Sleeve Hoodie Casual Tops",
+    "titleName": "name",
+    "url": "https://merchant.joom.com/panel/products/6aae091df2db5501fef4ce19/edit",
+    "variantFieldsSha256": "bc115b55e50a233edce9aabf933ea0385fab848ac99e26e9468888d95c2bc8a4",
+    "variantStart": 23
+  },
+  "plan": {
+    "product_id": "6aae091df2db5501fef4ce19",
+    "name_cn": "野兽图案长袖童装卫衣",
+    "title": "Kids' Beast Graphic Cotton Hoodie, Long Sleeve Pullover",
+    "intro": "Children's cotton pullover hoodie with a colorful beast-head graphic and sleeve prints. Hooded neckline and long sleeves; check the selected color/design in the product images.\n\nFIT: Sizes 100–160. Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting hoodie before selecting a size; age and height are guides only. Select the color/design first and check the available sizes. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.",
+    "replacements": {
+      "Product Type: Kids’ T-Shirt": "Product Type: Kids' Hooded Sweatshirt",
+      "Applicable Season: Summer": "Applicable Season: See garment features and local weather",
+      "Neckline: Round Neck": "Neckline: Hooded",
+      "Clothing Decoration: No Decoration": "Clothing Decoration: Print",
+      "Sleeve Length: Short Sleeve": "Sleeve Length: Long Sleeve"
+    },
+    "attribute_targets": {
+      "Sleeve Length": "long sleeve",
+      "Neck Style": "Hooded Neck"
+    },
+    "tags": []
+  },
+  "description_after": "Children's cotton pullover hoodie with a colorful beast-head graphic and sleeve prints. Hooded neckline and long sleeves; check the selected color/design in the product images.\n\nFIT: Sizes 100–160. Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting hoodie before selecting a size; age and height are guides only. Select the color/design first and check the available sizes. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.\n\nProduct Type: Kids' Hooded Sweatshirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: See garment features and local weather\nNeckline: Hooded\nClosure Type: Pullover\nClothing Decoration: Print\nLeather Label: No\nSleeve Length: Long Sleeve\nGender: Unisex\nAge Group: Kids\nPattern: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Do Not Tumble Dry  \nSize Chart:\nSize 100: Length 42 cm, Bust 60 cm, Shoulder 28 cm, Sleeve 39 cm.\nSize 110: Length 45 cm, Bust 66 cm, Shoulder 30 cm, Sleeve 41 cm.\nSize 120: Length 48 cm, Bust 72 cm, Shoulder 32 cm, Sleeve 43 cm.\nSize 130: Length 51 cm, Bust 78 cm, Shoulder 34 cm, Sleeve 45 cm.\nSize 140: Length 54 cm, Bust 84 cm, Shoulder 36 cm, Sleeve 47 cm.\nSize 150: Length 57 cm, Bust 90 cm, Shoulder 38 cm, Sleeve 49 cm.\nSize 160: Length 60 cm, Bust 96 cm, Shoulder 40 cm, Sleeve 51 cm.\nPlease carefully measure your child and compare the measurements with the size chart before purchasing.\nDue to manual measurement, please allow a 2–3 cm deviation.\nThe actual color may vary slightly due to lighting and different screen settings.\nPlease choose the size according to your child’s actual measurements."
+}

@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-11-19T12:22:16.441080+08:00",
+  "automation_id": "joom",
+  "event_type": "每日复查/设置观察",
+  "suggestion_id": "daily-20261118-second-shop-maintain",
+  "previous_event_recorded_at": "2026-11-18T11:57:40.880548+08:00",
+  "status": "建议维持",
+  "actual_setting_changed": false,
+  "execution_verified": false,
+  "observation": {
+    "suggestion_id": "daily-20261118-second-shop-maintain",
+    "priority": 2,
+    "scope": "活动及其商品竞价",
+    "campaign_id": "6aac7aa210e2ac00077587fd",
+    "status": "建议维持",
+    "current": {
+      "daily_budget_usd": 5,
+      "most_sku_cpa_bid": 0.2
+    },
+    "suggested": {
+      "daily_budget_usd": 5,
+      "most_sku_cpa_bid": 0.2
+    },
+    "reason": "近7天14次购买、花费23.986、POGS123.91、ACOS19.36%；昨日日预算使用79.96%，未验证预算限制。500个SKU的竞价有不同值，不全表统一改20%。",
+    "review": "观察3个完整日；先按SKU核折扣、库存和售后，不同时提预算与竞价。",
+    "source": "https://merchant.joom.com/panel/ads/campaigns/6aac7aa210e2ac00077587fd",
+    "actual_setting_changed": false
+  },
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-19/122216.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-19/122216.json"
+}

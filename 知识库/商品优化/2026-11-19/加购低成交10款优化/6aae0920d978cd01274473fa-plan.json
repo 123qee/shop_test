@@ -1,0 +1,17 @@
+{
+  "product_id": "6aae0920d978cd01274473fa",
+  "name_cn": "彩虹朋友长袖童装卫衣",
+  "title": "Kids' Rainbow Friends Graphic Cotton Hoodie, Long Sleeve Pullover",
+  "intro": "Children's cotton pullover hoodie with a Rainbow Friends cartoon graphic and sleeve prints. Hooded neckline and long sleeves; check the selected color/design in the product images.\n\nFIT: Sizes 100–160. Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting hoodie before selecting a size; age and height are guides only. Select the color/design first and check the available sizes. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.",
+  "replacements": {
+    "Product Type: Kids’ T-Shirt": "Product Type: Kids' Hooded Sweatshirt",
+    "Applicable Season: Summer": "Applicable Season: See garment features and local weather",
+    "Neckline: Round Neck": "Neckline: Hooded",
+    "Clothing Decoration: No Decoration": "Clothing Decoration: Print",
+    "Sleeve Length: Short Sleeve": "Sleeve Length: Long Sleeve"
+  },
+  "attribute_targets": {
+    "Sleeve Length": "long sleeve"
+  },
+  "tags": []
+}

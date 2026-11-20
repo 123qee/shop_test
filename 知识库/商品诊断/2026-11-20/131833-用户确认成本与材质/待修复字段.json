@@ -1,0 +1,19 @@
+[
+  {
+    "product_id": "6a842f66e32015012461bc44",
+    "confirmed_material": "polyester",
+    "proposed_description_change": "Material: polyester；不保留未经确认的100%比例",
+    "proposed_attribute_change": "将实际服装Material中的cotton改为polyester；删除不适用且矛盾的Material for fur棉字段；提交前须在原生编辑器核对",
+    "execution_status": "pending_backend_unavailable",
+    "actual_setting_changed": false
+  },
+  {
+    "product_id": "6aad547abaf5a401f56aeddf",
+    "confirmed_type": "short-sleeve T-shirt",
+    "proposed_title": "Kids Printed Short-Sleeve T-Shirt, Unisex Crew Neck",
+    "proposed_category": "T-Shirts (kids unisex)，以原生可选分类核对为准",
+    "size_chart_issue": "在售100—160码袖长39/41/43/45/47/49/51cm；正确袖长待用户确认，不猜测改值",
+    "execution_status": "pending_backend_unavailable",
+    "actual_setting_changed": false
+  }
+]

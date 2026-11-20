@@ -1,0 +1,23 @@
+[
+  {
+    "label": "Material",
+    "kept": "cotton",
+    "old_parse": [
+      "AI在产品信息中找到了“cotton 100%”。请选择要使用的值。"
+    ]
+  },
+  {
+    "label": "Material",
+    "kept": "cotton",
+    "old_parse": [
+      "AI在产品信息中找到了“cotton 100%”。请选择要使用的值。"
+    ]
+  },
+  {
+    "label": "Decoration",
+    "before": "Decoration\n\t\nappliques\n0/1",
+    "after": "Decoration\n\t\nprint\n1/1",
+    "target": "print",
+    "original_detail_value": "no decoration"
+  }
+]

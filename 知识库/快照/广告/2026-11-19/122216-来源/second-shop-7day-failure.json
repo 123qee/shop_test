@@ -1,0 +1,7 @@
+{
+  "error": "商品统计响应的日期范围未核实",
+  "campaign_id": "6aac7aa210e2ac00077587fd",
+  "window": "7day",
+  "resolved_by": "second-shop-7day-api.json",
+  "status": "日期控件已核实，重采成功"
+}

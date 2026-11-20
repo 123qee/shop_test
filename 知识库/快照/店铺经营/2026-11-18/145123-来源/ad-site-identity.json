@@ -1,0 +1,57 @@
+{
+  "BR": {
+    "expected_advertiser": "1282818",
+    "observed": {
+      "campaign_links": [
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358359345/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358298577/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358256414/dashboard?navigate_to=seller_central"
+      ],
+      "country": "巴西",
+      "sample": "所有者\nCNQISHIJIECLOTHINGBRR\n我需要帮助\n活动\n广告\n报告\n我的预算\n总平均每日预算\n该数值为你所有活跃营销活动日均预算的总和\nUS$ 5\n\n共享\n\n状态\n在广告系列之间共享预算\n您已开始共享预算以获得更多销售。很快您就可以在此处跟踪结果。\n指标\n实时指标\n检查\n最近30天\n与...比较\n无\n归因销售额\n\n0\n\n▼100%\n\n其他销售额",
+      "title": "广告投放",
+      "url": "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns?advertiser_id=1282817&account_id=1320548&navigate_to=seller_central&from=ads-manager&status=A%2CD"
+    }
+  },
+  "CL": {
+    "expected_advertiser": "1282819",
+    "observed": {
+      "campaign_links": [
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358359345/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358298577/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358256414/dashboard?navigate_to=seller_central"
+      ],
+      "country": "智利",
+      "sample": "所有者\nCNQISHIJIECLOTHINGCLR\n我需要帮助\n活动\n广告\n报告\n今日待处理项\n\n加载中\n\n我的预算\n总平均每日预算\n该数值为你所有活跃营销活动日均预算的总和\nUS$ 8\n\n共享\n\n状态\n在广告系列之间共享预算\n您已开始共享预算以获得更多销售。很快您就可以在此处跟踪结果。\n指标\n实时指标\n检查\n最近30天\n与...比较\n无\n标准视图\n筛选\n1",
+      "title": "广告投放",
+      "url": "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns?advertiser_id=1282817&account_id=1320548&navigate_to=seller_central&from=ads-manager&status=A%2CD"
+    }
+  },
+  "CO": {
+    "expected_advertiser": "1282820",
+    "observed": {
+      "campaign_links": [
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358359345/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358298577/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358256414/dashboard?navigate_to=seller_central"
+      ],
+      "captured_at": "2026-11-18T06:49:50.831Z",
+      "country": "哥伦比亚",
+      "url": "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns?advertiser_id=1282817&account_id=1320548&navigate_to=seller_central&from=ads-manager&status=A%2CD"
+    }
+  },
+  "AR": {
+    "expected_advertiser": "2246873",
+    "observed": {
+      "campaign_links": [
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358359345/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358298577/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358256414/dashboard?navigate_to=seller_central"
+      ],
+      "country": "阿根廷",
+      "sample": "所有者\nCNQISHIJIECLOTHINGARR\n我需要帮助\n活动\n广告\n报告\n我的预算\n总平均每日预算\n该数值为你所有活跃营销活动日均预算的总和\nUS$ 2\n\n未共享\n\n状态\n在广告系列之间共享预算\n通过跨广告系列共享预算，30天内可获高达15%额外销量\n指标\n实时指标\n检查\n最近30天\n与...比较\n无\n归因销售额\n\n0\n\n▼100%\n\n其他销售额\n\n",
+      "title": "广告投放",
+      "url": "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns?advertiser_id=1282817&account_id=1320548&navigate_to=seller_central&from=ads-manager&status=A%2CD"
+    }
+  }
+}

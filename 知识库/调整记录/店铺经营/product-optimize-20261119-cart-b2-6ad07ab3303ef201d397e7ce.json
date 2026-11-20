@@ -1,0 +1,33 @@
+{
+  "suggestion_id": "product-optimize-20261119-cart-b2-6ad07ab3303ef201d397e7ce",
+  "product_id": "6ad07ab3303ef201d397e7ce",
+  "shop": "jwh second",
+  "shop_id": "6a9d4221018d89bb9e5c22ef",
+  "scope": "joom_store",
+  "recorded_at": "2026-11-19T11:07:07.056600+08:00",
+  "status": "已保存、刷新且重开编辑器核验",
+  "actual_setting_changed": true,
+  "historical_orders_before": 1,
+  "baseline": {
+    "period": "2026/10/21 — 2026/11/17",
+    "impressions": 63,
+    "clicks": 15,
+    "cart": 13,
+    "purchases": 1
+  },
+  "changed_fields": [
+    "标题",
+    "描述",
+    "搜索标签",
+    "图案/领型属性"
+  ],
+  "attributes_persisted": {
+    "Decoration": "Decorationprint1/1"
+  },
+  "existing_variants_stock_prices_shipping_images_category_unchanged": true,
+  "observed_review_pending_at_save": true,
+  "source_before": "商品优化/2026-11-19/第二批加购低成交10款优化/6ad07ab3303ef201d397e7ce-before.json",
+  "source_after": "商品优化/2026-11-19/第二批加购低成交10款优化/6ad07ab3303ef201d397e7ce-after.json",
+  "source_finalcheck": "商品优化/2026-11-19/第二批加购低成交10款优化/6ad07ab3303ef201d397e7ce-finalcheck.json",
+  "followup": "先核对审核及买家端在售版本，再观察完整7天；按相同窗口比较曝光、点击、加购、购买及售后。低样本不判定效果提升，不据此加预算。"
+}

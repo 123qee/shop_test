@@ -1,0 +1,635 @@
+{
+  "source": "https://api-merchant.joom.com/api/v3/analytics/countries?from=2026-10-20&to=2026-11-16&storeId=%40total&country=%40itemize",
+  "groups": [
+    {
+      "code": "GB",
+      "previewCount": 10975.0,
+      "openCount": 611.0,
+      "purchaseCount": 47.0,
+      "gmv": 218.23000000000002,
+      "ctr": 0.05567198177676538,
+      "cr": 0.07692307692307693
+    },
+    {
+      "code": "DE",
+      "previewCount": 18988.0,
+      "openCount": 806.0,
+      "purchaseCount": 34.0,
+      "gmv": 193.37,
+      "ctr": 0.04244786180745734,
+      "cr": 0.04218362282878412
+    },
+    {
+      "code": "SE",
+      "previewCount": 6052.0,
+      "openCount": 290.0,
+      "purchaseCount": 17.0,
+      "gmv": 114.86,
+      "ctr": 0.04791804362194316,
+      "cr": 0.05862068965517241
+    },
+    {
+      "code": "FR",
+      "previewCount": 11811.0,
+      "openCount": 501.0,
+      "purchaseCount": 12.0,
+      "gmv": 70.58,
+      "ctr": 0.04241808483616967,
+      "cr": 0.023952095808383235
+    },
+    {
+      "code": "PL",
+      "previewCount": 7468.0,
+      "openCount": 391.0,
+      "purchaseCount": 10.0,
+      "gmv": 81.91,
+      "ctr": 0.052356722013926084,
+      "cr": 0.02557544757033248
+    },
+    {
+      "code": "NL",
+      "previewCount": 7023.0,
+      "openCount": 370.0,
+      "purchaseCount": 10.0,
+      "gmv": 51.900000000000006,
+      "ctr": 0.05268403816033034,
+      "cr": 0.02702702702702703
+    },
+    {
+      "code": "AU",
+      "previewCount": 2826.0,
+      "openCount": 103.0,
+      "purchaseCount": 9.0,
+      "gmv": 39.96000000000001,
+      "ctr": 0.03644727530077849,
+      "cr": 0.08737864077669903
+    },
+    {
+      "code": "CH",
+      "previewCount": 4967.0,
+      "openCount": 150.0,
+      "purchaseCount": 9.0,
+      "gmv": 49.93000000000001,
+      "ctr": 0.030199315482182403,
+      "cr": 0.06
+    },
+    {
+      "code": "HU",
+      "previewCount": 4124.0,
+      "openCount": 260.0,
+      "purchaseCount": 8.0,
+      "gmv": 73.01,
+      "ctr": 0.06304558680892337,
+      "cr": 0.03076923076923077
+    },
+    {
+      "code": "IE",
+      "previewCount": 2286.0,
+      "openCount": 99.0,
+      "purchaseCount": 8.0,
+      "gmv": 38.93000000000001,
+      "ctr": 0.04330708661417323,
+      "cr": 0.08080808080808081
+    },
+    {
+      "code": "CZ",
+      "previewCount": 7423.0,
+      "openCount": 289.0,
+      "purchaseCount": 8.0,
+      "gmv": 41.44,
+      "ctr": 0.03893304593829988,
+      "cr": 0.02768166089965398
+    },
+    {
+      "code": "IT",
+      "previewCount": 3518.0,
+      "openCount": 363.0,
+      "purchaseCount": 7.0,
+      "gmv": 67.98,
+      "ctr": 0.10318362706083002,
+      "cr": 0.01928374655647383
+    },
+    {
+      "code": "ES",
+      "previewCount": 7098.0,
+      "openCount": 308.0,
+      "purchaseCount": 6.0,
+      "gmv": 34.49,
+      "ctr": 0.04339250493096647,
+      "cr": 0.01948051948051948
+    },
+    {
+      "code": "NO",
+      "previewCount": 2037.0,
+      "openCount": 90.0,
+      "purchaseCount": 6.0,
+      "gmv": 37.45,
+      "ctr": 0.044182621502209134,
+      "cr": 0.06666666666666667
+    },
+    {
+      "code": "DK",
+      "previewCount": 1198.0,
+      "openCount": 49.0,
+      "purchaseCount": 5.0,
+      "gmv": 20.96,
+      "ctr": 0.040901502504173626,
+      "cr": 0.10204081632653061
+    },
+    {
+      "code": "GR",
+      "previewCount": 2400.0,
+      "openCount": 94.0,
+      "purchaseCount": 4.0,
+      "gmv": 34.47,
+      "ctr": 0.03916666666666667,
+      "cr": 0.0425531914893617
+    },
+    {
+      "code": "BE",
+      "previewCount": 3601.0,
+      "openCount": 159.0,
+      "purchaseCount": 3.0,
+      "gmv": 11.950000000000001,
+      "ctr": 0.044154401555123575,
+      "cr": 0.018867924528301886
+    },
+    {
+      "code": "RU",
+      "previewCount": 17752.0,
+      "openCount": 553.0,
+      "purchaseCount": 3.0,
+      "gmv": 23.97,
+      "ctr": 0.031151419558359622,
+      "cr": 0.0054249547920434
+    },
+    {
+      "code": "IL",
+      "previewCount": 1162.0,
+      "openCount": 36.0,
+      "purchaseCount": 2.0,
+      "gmv": 13.97,
+      "ctr": 0.03098106712564544,
+      "cr": 0.05555555555555555
+    },
+    {
+      "code": "PT",
+      "previewCount": 2194.0,
+      "openCount": 80.0,
+      "purchaseCount": 2.0,
+      "gmv": 13.99,
+      "ctr": 0.03646308113035551,
+      "cr": 0.025
+    },
+    {
+      "code": "FI",
+      "previewCount": 537.0,
+      "openCount": 25.0,
+      "purchaseCount": 2.0,
+      "gmv": 19.98,
+      "ctr": 0.04655493482309125,
+      "cr": 0.08
+    },
+    {
+      "code": "AE",
+      "previewCount": 108.0,
+      "openCount": 6.0,
+      "purchaseCount": 2.0,
+      "gmv": 9.0,
+      "ctr": 0.05555555555555555,
+      "cr": 0.3333333333333333
+    },
+    {
+      "code": "RO",
+      "previewCount": 1830.0,
+      "openCount": 137.0,
+      "purchaseCount": 2.0,
+      "gmv": 14.5,
+      "ctr": 0.07486338797814207,
+      "cr": 0.014598540145985401
+    },
+    {
+      "code": "AT",
+      "previewCount": 1546.0,
+      "openCount": 75.0,
+      "purchaseCount": 2.0,
+      "gmv": 8.49,
+      "ctr": 0.04851228978007762,
+      "cr": 0.02666666666666667
+    },
+    {
+      "code": "LV",
+      "previewCount": 252.0,
+      "openCount": 3.0,
+      "purchaseCount": 1.0,
+      "gmv": 3.98,
+      "ctr": 0.011904761904761904,
+      "cr": 0.3333333333333333
+    },
+    {
+      "code": "CA",
+      "previewCount": 1664.0,
+      "openCount": 72.0,
+      "purchaseCount": 1.0,
+      "gmv": 4.5,
+      "ctr": 0.04326923076923077,
+      "cr": 0.013888888888888888
+    },
+    {
+      "code": "UZ",
+      "previewCount": 23294.0,
+      "openCount": 754.0,
+      "purchaseCount": 1.0,
+      "gmv": 4.5,
+      "ctr": 0.03236885034772903,
+      "cr": 0.001326259946949602
+    },
+    {
+      "code": "SK",
+      "previewCount": 2227.0,
+      "openCount": 94.0,
+      "purchaseCount": 1.0,
+      "gmv": 3.98,
+      "ctr": 0.042209250112258644,
+      "cr": 0.010638297872340425
+    },
+    {
+      "code": "UA",
+      "previewCount": 5404.0,
+      "openCount": 144.0,
+      "purchaseCount": 1.0,
+      "gmv": 9.99,
+      "ctr": 0.026646928201332347,
+      "cr": 0.006944444444444444
+    },
+    {
+      "code": "MT",
+      "previewCount": 89.0,
+      "openCount": 7.0,
+      "purchaseCount": 1.0,
+      "gmv": 5.0,
+      "ctr": 0.07865168539325842,
+      "cr": 0.14285714285714285
+    },
+    {
+      "code": "KR",
+      "previewCount": 15.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "EE",
+      "previewCount": 298.0,
+      "openCount": 5.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.016778523489932886,
+      "cr": 0.0
+    },
+    {
+      "code": "KZ",
+      "previewCount": 697.0,
+      "openCount": 30.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.043041606886657105,
+      "cr": 0.0
+    },
+    {
+      "code": "GE",
+      "previewCount": 173.0,
+      "openCount": 4.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.023121387283236993,
+      "cr": 0.0
+    },
+    {
+      "code": "CY",
+      "previewCount": 172.0,
+      "openCount": 5.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.029069767441860465,
+      "cr": 0.0
+    },
+    {
+      "code": "LT",
+      "previewCount": 419.0,
+      "openCount": 3.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.007159904534606206,
+      "cr": 0.0
+    },
+    {
+      "code": "CO",
+      "previewCount": 70.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "BG",
+      "previewCount": 44.0,
+      "openCount": 1.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.022727272727272728,
+      "cr": 0.0
+    },
+    {
+      "code": "BY",
+      "previewCount": 431.0,
+      "openCount": 13.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.030162412993039442,
+      "cr": 0.0
+    },
+    {
+      "code": "MD",
+      "previewCount": 1142.0,
+      "openCount": 63.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.05516637478108581,
+      "cr": 0.0
+    },
+    {
+      "code": "PK",
+      "previewCount": 4.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "PE",
+      "previewCount": 26.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "SA",
+      "previewCount": 172.0,
+      "openCount": 3.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.01744186046511628,
+      "cr": 0.0
+    },
+    {
+      "code": "US",
+      "previewCount": 12.0,
+      "openCount": 2.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.16666666666666666,
+      "cr": 0.0
+    },
+    {
+      "code": "AL",
+      "previewCount": 11.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "AZ",
+      "previewCount": 25.0,
+      "openCount": 2.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.08,
+      "cr": 0.0
+    },
+    {
+      "code": "AM",
+      "previewCount": 54.0,
+      "openCount": 2.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.037037037037037035,
+      "cr": 0.0
+    },
+    {
+      "code": "HR",
+      "previewCount": 30.0,
+      "openCount": 1.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.03333333333333333,
+      "cr": 0.0
+    },
+    {
+      "code": "LU",
+      "previewCount": 26.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "ZA",
+      "previewCount": 18.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "MX",
+      "previewCount": 42.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "EG",
+      "previewCount": 16.0,
+      "openCount": 1.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0625,
+      "cr": 0.0
+    },
+    {
+      "code": "NG",
+      "previewCount": 2.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "KG",
+      "previewCount": 8.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "RS",
+      "previewCount": 19.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "BR",
+      "previewCount": 54.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "TN",
+      "previewCount": 3.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "SI",
+      "previewCount": 26.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "MK",
+      "previewCount": 12.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "CL",
+      "previewCount": 8.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "SN",
+      "previewCount": 3.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "PF",
+      "previewCount": 1.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "LY",
+      "previewCount": 1.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "MZ",
+      "previewCount": 2.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "JP",
+      "previewCount": 1.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "JM",
+      "previewCount": 1.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "IS",
+      "previewCount": 1.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "TR",
+      "previewCount": 1.0,
+      "openCount": 1.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 1.0,
+      "cr": 0.0
+    },
+    {
+      "code": "ID",
+      "previewCount": 2.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "ME",
+      "previewCount": 1.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    }
+  ]
+}

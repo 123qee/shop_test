@@ -944,18 +944,13 @@
           "label": "待确认"
         },
         "columns": [
-          "platform",
+          "imageUrl",
+          "quantity",
+          "size",
           "shop",
-          "orderId",
-          "orderedAt",
-          "status",
           "material",
           "productSku",
-          "variantSku",
-          "title",
-          "color",
-          "size",
-          "quantity"
+          "variantSku"
         ],
         "defaults": {
           "shops": [
@@ -977,7 +972,7 @@
           ],
           "onlyNew": true
         },
-        "updatedAt": "2026-11-17T03:16:29.142Z"
+        "updatedAt": "2026-11-17T11:22:25.666Z"
       }
     ]
   }

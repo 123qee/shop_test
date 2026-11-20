@@ -1,0 +1,58 @@
+{
+  "site": "BR",
+  "country": "巴西",
+  "expected_advertiser_id": "1282818",
+  "status": "account_mismatch",
+  "summary": {
+    "adlink": "https://global-selling.mercadolibre.com/advertising/hub/accounts?validate-user=true&from=summary_ads&utm_source=sc_summary_v2&utm_medium=card&utm_campaign=active&advertiserId=1282818",
+    "campaign_links": [],
+    "captured_at": "2026-11-19T03:43:30.318Z",
+    "card": "广告指标\n1\n未变更\n\n-%\n\n广告销售额\n\n121\n下降 44%\n\n44%\n\n收到的点击量\n\n前往广告",
+    "country": "巴西",
+    "notices": [],
+    "owner": "摘要",
+    "reputation": [
+      "您的信誉度\n您将是 黄色\n买家看到的是浅绿色\n\n您的信誉权益已生效。",
+      "信誉\n\n生效中的权益\n\n您将是 黄色\n\n0%\n\n投诉\n\n3.84%\n\n由你取消\n\n0%\n\n不合规的货件\n\n您的买家看到您是绿色状态\n\n利用您的信誉权益完成首笔销售，独立获得绿色信誉标识。\n\n前往声誉页面"
+    ],
+    "url": "https://sellers.mercadolibre.com/sales-summary"
+  },
+  "attempts": [
+    {
+      "adlink": null,
+      "campaign_links": [
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358359345/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358298577/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358256414/dashboard?navigate_to=seller_central"
+      ],
+      "captured_at": "2026-11-19T03:43:40.482Z",
+      "card": null,
+      "country": "巴西",
+      "notices": [],
+      "owner": "CNQISHIJIECLOTHINGBRR",
+      "reputation": [],
+      "url": "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns?advertiser_id=1282817&account_id=1320548&navigate_to=seller_central&from=ads-manager&status=A%2CD",
+      "observed_advertiser_id": "1282817"
+    },
+    {
+      "adlink": null,
+      "campaign_links": [
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358359345/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358298577/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358256414/dashboard?navigate_to=seller_central"
+      ],
+      "captured_at": "2026-11-19T03:43:54.293Z",
+      "card": null,
+      "country": "巴西",
+      "notices": [],
+      "owner": "CNQISHIJIECLOTHINGBRR",
+      "reputation": [],
+      "url": "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns?advertiser_id=1282817&account_id=1320548&navigate_to=seller_central&from=ads-manager&status=A%2CD",
+      "observed_advertiser_id": "1282817"
+    }
+  ],
+  "metrics": null,
+  "currency": null,
+  "platform_timezone": null,
+  "data_updated_at": null
+}

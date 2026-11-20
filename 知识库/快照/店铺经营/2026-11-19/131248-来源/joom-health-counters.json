@@ -1,0 +1,40 @@
+{
+  "source": "https://api-merchant.joom.com/api/v3/stores/counters",
+  "captured_at": "2026-11-19T04:49:06.152793+00:00",
+  "body": {
+    "code": 0,
+    "data": {
+      "items": [
+        {
+          "id": "6a817b93f5d3934528e70df7",
+          "counters": {
+            "publicProducts": 1630,
+            "totalProducts": 2896,
+            "followers": 4,
+            "ordersInLast30Days": 157,
+            "rating": 3.5
+          }
+        },
+        {
+          "id": "6a8c4690b1e1819ed91f9baa",
+          "counters": {
+            "publicProducts": 410,
+            "totalProducts": 629,
+            "followers": 0,
+            "ordersInLast30Days": 14,
+            "rating": 4
+          }
+        },
+        {
+          "id": "6a9d4221018d89bb9e5c22ef",
+          "counters": {
+            "publicProducts": 1255,
+            "totalProducts": 2403,
+            "followers": 0,
+            "ordersInLast30Days": 75
+          }
+        }
+      ]
+    }
+  }
+}

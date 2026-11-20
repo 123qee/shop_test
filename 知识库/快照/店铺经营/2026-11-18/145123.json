@@ -1,0 +1,1817 @@
+{
+  "generated_at": "2026-11-18T14:51:23.160226+08:00",
+  "currency": "USD",
+  "mercadolibre_scope": [
+    "MX",
+    "BR",
+    "AR",
+    "CL",
+    "CO"
+  ],
+  "excluded_mercadolibre_sites": [
+    "UY"
+  ],
+  "joom": {
+    "source": "https://api-merchant.joom.com/api/v3/analytics/baseMetricsWithProduct?from=2026-09-22&to=2026-11-16&storeId=%40itemize",
+    "window_definitions": {
+      "latest_day": [
+        "2026-11-16",
+        "2026-11-16"
+      ],
+      "previous_day": [
+        "2026-11-15",
+        "2026-11-15"
+      ],
+      "prior7": [
+        "2026-11-09",
+        "2026-11-15"
+      ],
+      "7day": [
+        "2026-11-10",
+        "2026-11-16"
+      ],
+      "previous7": [
+        "2026-11-03",
+        "2026-11-09"
+      ],
+      "28day": [
+        "2026-10-20",
+        "2026-11-16"
+      ],
+      "previous28": [
+        "2026-09-22",
+        "2026-10-19"
+      ]
+    },
+    "stores": {
+      "账户合计": {
+        "store_id": null,
+        "windows": {
+          "latest_day": {
+            "openCount": 350.0,
+            "previewCount": 9081.0,
+            "purchaseCount": 10.0,
+            "saleCount": 11.0,
+            "toCartCount": 61.0,
+            "gmv": 75.94999999999999,
+            "revenue": 59.0654,
+            "ctr": 0.038542010791763025,
+            "cr": 0.02857142857142857
+          },
+          "previous_day": {
+            "openCount": 416.0,
+            "previewCount": 10149.0,
+            "purchaseCount": 17.0,
+            "saleCount": 17.0,
+            "toCartCount": 78.0,
+            "gmv": 94.85,
+            "revenue": 74.661899,
+            "ctr": 0.040989260025618285,
+            "cr": 0.040865384615384616
+          },
+          "prior7": {
+            "openCount": 2065.0,
+            "previewCount": 50375.0,
+            "purchaseCount": 79.0,
+            "saleCount": 79.0,
+            "toCartCount": 417.0,
+            "gmv": 471.96000000000004,
+            "revenue": 369.889711,
+            "ctr": 0.04099255583126551,
+            "cr": 0.038256658595641646
+          },
+          "7day": {
+            "openCount": 2114.0,
+            "previewCount": 52851.0,
+            "purchaseCount": 81.0,
+            "saleCount": 82.0,
+            "toCartCount": 429.0,
+            "gmv": 496.4200000000001,
+            "revenue": 388.35269000000005,
+            "ctr": 0.039999243155285615,
+            "cr": 0.038315988647114475
+          },
+          "previous7": {
+            "openCount": 1916.0,
+            "previewCount": 43116.0,
+            "purchaseCount": 54.0,
+            "saleCount": 54.0,
+            "toCartCount": 381.0,
+            "gmv": 324.26,
+            "revenue": 255.74601199999998,
+            "ctr": 0.04443825957881065,
+            "cr": 0.028183716075156576
+          },
+          "28day": {
+            "openCount": 7055.0,
+            "previewCount": 165897.0,
+            "purchaseCount": 224.0,
+            "saleCount": 226.0,
+            "toCartCount": 1506.0,
+            "gmv": 1317.2700000000007,
+            "revenue": 1047.796089,
+            "ctr": 0.04252638685449405,
+            "cr": 0.03175053153791637
+          },
+          "previous28": {
+            "openCount": 5780.0,
+            "previewCount": 112319.0,
+            "purchaseCount": 247.0,
+            "saleCount": 257.0,
+            "toCartCount": 1400.0,
+            "gmv": 1222.5200000000002,
+            "revenue": 1018.0726249999998,
+            "ctr": 0.05146057212047828,
+            "cr": 0.04273356401384083
+          }
+        }
+      },
+      "jh": {
+        "store_id": "6a8c4690b1e1819ed91f9baa",
+        "windows": {
+          "latest_day": {
+            "openCount": 40.0,
+            "previewCount": 1006.0,
+            "purchaseCount": 1.0,
+            "saleCount": 1.0,
+            "toCartCount": 11.0,
+            "gmv": 20.0,
+            "revenue": 15.3,
+            "ctr": 0.039761431411530816,
+            "cr": 0.025
+          },
+          "previous_day": {
+            "openCount": 50.0,
+            "previewCount": 1047.0,
+            "purchaseCount": 0.0,
+            "saleCount": 0.0,
+            "toCartCount": 3.0,
+            "gmv": 0.0,
+            "revenue": 0.0,
+            "ctr": 0.04775549188156638,
+            "cr": 0.0
+          },
+          "prior7": {
+            "openCount": 245.0,
+            "previewCount": 4886.0,
+            "purchaseCount": 2.0,
+            "saleCount": 2.0,
+            "toCartCount": 23.0,
+            "gmv": 14.0,
+            "revenue": 11.56,
+            "ctr": 0.050143266475644696,
+            "cr": 0.00816326530612245
+          },
+          "7day": {
+            "openCount": 258.0,
+            "previewCount": 5335.0,
+            "purchaseCount": 3.0,
+            "saleCount": 3.0,
+            "toCartCount": 32.0,
+            "gmv": 34.0,
+            "revenue": 26.86,
+            "ctr": 0.048359887535145266,
+            "cr": 0.011627906976744186
+          },
+          "previous7": {
+            "openCount": 280.0,
+            "previewCount": 4652.0,
+            "purchaseCount": 4.0,
+            "saleCount": 4.0,
+            "toCartCount": 44.0,
+            "gmv": 50.0,
+            "revenue": 40.8,
+            "ctr": 0.06018916595012898,
+            "cr": 0.014285714285714285
+          },
+          "28day": {
+            "openCount": 906.0,
+            "previewCount": 16318.0,
+            "purchaseCount": 14.0,
+            "saleCount": 14.0,
+            "toCartCount": 132.0,
+            "gmv": 157.0,
+            "revenue": 126.82,
+            "ctr": 0.055521509988969237,
+            "cr": 0.01545253863134658
+          },
+          "previous28": {
+            "openCount": 190.0,
+            "previewCount": 6318.0,
+            "purchaseCount": 3.0,
+            "saleCount": 3.0,
+            "toCartCount": 36.0,
+            "gmv": 18.0,
+            "revenue": 15.3,
+            "ctr": 0.03007280785058563,
+            "cr": 0.015789473684210527
+          }
+        }
+      },
+      "Nineteen Wear": {
+        "store_id": "6a817b93f5d3934528e70df7",
+        "windows": {
+          "latest_day": {
+            "openCount": 194.0,
+            "previewCount": 6504.0,
+            "purchaseCount": 5.0,
+            "saleCount": 5.0,
+            "toCartCount": 28.0,
+            "gmv": 20.97,
+            "revenue": 16.1557,
+            "ctr": 0.02982779827798278,
+            "cr": 0.02577319587628866
+          },
+          "previous_day": {
+            "openCount": 236.0,
+            "previewCount": 7225.0,
+            "purchaseCount": 11.0,
+            "saleCount": 11.0,
+            "toCartCount": 49.0,
+            "gmv": 50.88,
+            "revenue": 38.985699,
+            "ctr": 0.0326643598615917,
+            "cr": 0.046610169491525424
+          },
+          "prior7": {
+            "openCount": 1177.0,
+            "previewCount": 35134.0,
+            "purchaseCount": 49.0,
+            "saleCount": 49.0,
+            "toCartCount": 280.0,
+            "gmv": 239.11999999999998,
+            "revenue": 183.56928599999998,
+            "ctr": 0.0335003130870382,
+            "cr": 0.041631265930331354
+          },
+          "7day": {
+            "openCount": 1220.0,
+            "previewCount": 36985.0,
+            "purchaseCount": 49.0,
+            "saleCount": 49.0,
+            "toCartCount": 273.0,
+            "gmv": 233.57999999999998,
+            "revenue": 179.293915,
+            "ctr": 0.0329863458158713,
+            "cr": 0.04016393442622951
+          },
+          "previous7": {
+            "openCount": 1132.0,
+            "previewCount": 30742.0,
+            "purchaseCount": 34.0,
+            "saleCount": 34.0,
+            "toCartCount": 256.0,
+            "gmv": 174.29999999999998,
+            "revenue": 134.01496199999997,
+            "ctr": 0.036822587990371476,
+            "cr": 0.030035335689045935
+          },
+          "28day": {
+            "openCount": 4400.0,
+            "previewCount": 121755.0,
+            "purchaseCount": 149.0,
+            "saleCount": 150.0,
+            "toCartCount": 1062.0,
+            "gmv": 721.53,
+            "revenue": 567.5826389999999,
+            "ctr": 0.03613814627736027,
+            "cr": 0.03386363636363637
+          },
+          "previous28": {
+            "openCount": 5196.0,
+            "previewCount": 98620.0,
+            "purchaseCount": 239.0,
+            "saleCount": 249.0,
+            "toCartCount": 1323.0,
+            "gmv": 1151.55,
+            "revenue": 958.9376999999997,
+            "ctr": 0.052687081727844254,
+            "cr": 0.045996920708237105
+          }
+        }
+      },
+      "jwh second": {
+        "store_id": "6a9d4221018d89bb9e5c22ef",
+        "windows": {
+          "latest_day": {
+            "openCount": 116.0,
+            "previewCount": 1571.0,
+            "purchaseCount": 4.0,
+            "saleCount": 5.0,
+            "toCartCount": 22.0,
+            "gmv": 34.98,
+            "revenue": 27.6097,
+            "ctr": 0.07383831954169319,
+            "cr": 0.034482758620689655
+          },
+          "previous_day": {
+            "openCount": 130.0,
+            "previewCount": 1877.0,
+            "purchaseCount": 6.0,
+            "saleCount": 6.0,
+            "toCartCount": 26.0,
+            "gmv": 43.97,
+            "revenue": 35.6762,
+            "ctr": 0.06925945657964838,
+            "cr": 0.046153846153846156
+          },
+          "prior7": {
+            "openCount": 643.0,
+            "previewCount": 10355.0,
+            "purchaseCount": 28.0,
+            "saleCount": 28.0,
+            "toCartCount": 114.0,
+            "gmv": 218.84,
+            "revenue": 174.760425,
+            "ctr": 0.06209560598744568,
+            "cr": 0.04354587869362364
+          },
+          "7day": {
+            "openCount": 636.0,
+            "previewCount": 10531.0,
+            "purchaseCount": 29.0,
+            "saleCount": 30.0,
+            "toCartCount": 124.0,
+            "gmv": 228.83999999999997,
+            "revenue": 182.198775,
+            "ctr": 0.06039312505934859,
+            "cr": 0.04559748427672956
+          },
+          "previous7": {
+            "openCount": 504.0,
+            "previewCount": 7722.0,
+            "purchaseCount": 16.0,
+            "saleCount": 16.0,
+            "toCartCount": 81.0,
+            "gmv": 99.96,
+            "revenue": 80.93105,
+            "ctr": 0.06526806526806526,
+            "cr": 0.031746031746031744
+          },
+          "28day": {
+            "openCount": 1749.0,
+            "previewCount": 27824.0,
+            "purchaseCount": 61.0,
+            "saleCount": 62.0,
+            "toCartCount": 312.0,
+            "gmv": 438.7400000000001,
+            "revenue": 353.3934499999999,
+            "ctr": 0.06285940195514664,
+            "cr": 0.03487707261292167
+          },
+          "previous28": {
+            "openCount": 394.0,
+            "previewCount": 7381.0,
+            "purchaseCount": 5.0,
+            "saleCount": 5.0,
+            "toCartCount": 41.0,
+            "gmv": 52.970000000000006,
+            "revenue": 43.834925,
+            "ctr": 0.05338030077225308,
+            "cr": 0.012690355329949238
+          }
+        }
+      }
+    }
+  },
+  "joom_country_account_wide": [
+    {
+      "code": "GB",
+      "previewCount": 10975.0,
+      "openCount": 611.0,
+      "purchaseCount": 47.0,
+      "gmv": 218.23000000000002,
+      "ctr": 0.05567198177676538,
+      "cr": 0.07692307692307693
+    },
+    {
+      "code": "DE",
+      "previewCount": 18988.0,
+      "openCount": 806.0,
+      "purchaseCount": 34.0,
+      "gmv": 193.37,
+      "ctr": 0.04244786180745734,
+      "cr": 0.04218362282878412
+    },
+    {
+      "code": "SE",
+      "previewCount": 6052.0,
+      "openCount": 290.0,
+      "purchaseCount": 17.0,
+      "gmv": 114.86,
+      "ctr": 0.04791804362194316,
+      "cr": 0.05862068965517241
+    },
+    {
+      "code": "FR",
+      "previewCount": 11811.0,
+      "openCount": 501.0,
+      "purchaseCount": 12.0,
+      "gmv": 70.58,
+      "ctr": 0.04241808483616967,
+      "cr": 0.023952095808383235
+    },
+    {
+      "code": "PL",
+      "previewCount": 7468.0,
+      "openCount": 391.0,
+      "purchaseCount": 10.0,
+      "gmv": 81.91,
+      "ctr": 0.052356722013926084,
+      "cr": 0.02557544757033248
+    },
+    {
+      "code": "NL",
+      "previewCount": 7023.0,
+      "openCount": 370.0,
+      "purchaseCount": 10.0,
+      "gmv": 51.900000000000006,
+      "ctr": 0.05268403816033034,
+      "cr": 0.02702702702702703
+    },
+    {
+      "code": "AU",
+      "previewCount": 2826.0,
+      "openCount": 103.0,
+      "purchaseCount": 9.0,
+      "gmv": 39.96000000000001,
+      "ctr": 0.03644727530077849,
+      "cr": 0.08737864077669903
+    },
+    {
+      "code": "CH",
+      "previewCount": 4967.0,
+      "openCount": 150.0,
+      "purchaseCount": 9.0,
+      "gmv": 49.93000000000001,
+      "ctr": 0.030199315482182403,
+      "cr": 0.06
+    },
+    {
+      "code": "HU",
+      "previewCount": 4124.0,
+      "openCount": 260.0,
+      "purchaseCount": 8.0,
+      "gmv": 73.01,
+      "ctr": 0.06304558680892337,
+      "cr": 0.03076923076923077
+    },
+    {
+      "code": "IE",
+      "previewCount": 2286.0,
+      "openCount": 99.0,
+      "purchaseCount": 8.0,
+      "gmv": 38.93000000000001,
+      "ctr": 0.04330708661417323,
+      "cr": 0.08080808080808081
+    },
+    {
+      "code": "CZ",
+      "previewCount": 7423.0,
+      "openCount": 289.0,
+      "purchaseCount": 8.0,
+      "gmv": 41.44,
+      "ctr": 0.03893304593829988,
+      "cr": 0.02768166089965398
+    },
+    {
+      "code": "IT",
+      "previewCount": 3518.0,
+      "openCount": 363.0,
+      "purchaseCount": 7.0,
+      "gmv": 67.98,
+      "ctr": 0.10318362706083002,
+      "cr": 0.01928374655647383
+    },
+    {
+      "code": "ES",
+      "previewCount": 7098.0,
+      "openCount": 308.0,
+      "purchaseCount": 6.0,
+      "gmv": 34.49,
+      "ctr": 0.04339250493096647,
+      "cr": 0.01948051948051948
+    },
+    {
+      "code": "NO",
+      "previewCount": 2037.0,
+      "openCount": 90.0,
+      "purchaseCount": 6.0,
+      "gmv": 37.45,
+      "ctr": 0.044182621502209134,
+      "cr": 0.06666666666666667
+    },
+    {
+      "code": "DK",
+      "previewCount": 1198.0,
+      "openCount": 49.0,
+      "purchaseCount": 5.0,
+      "gmv": 20.96,
+      "ctr": 0.040901502504173626,
+      "cr": 0.10204081632653061
+    },
+    {
+      "code": "GR",
+      "previewCount": 2400.0,
+      "openCount": 94.0,
+      "purchaseCount": 4.0,
+      "gmv": 34.47,
+      "ctr": 0.03916666666666667,
+      "cr": 0.0425531914893617
+    },
+    {
+      "code": "BE",
+      "previewCount": 3601.0,
+      "openCount": 159.0,
+      "purchaseCount": 3.0,
+      "gmv": 11.950000000000001,
+      "ctr": 0.044154401555123575,
+      "cr": 0.018867924528301886
+    },
+    {
+      "code": "RU",
+      "previewCount": 17752.0,
+      "openCount": 553.0,
+      "purchaseCount": 3.0,
+      "gmv": 23.97,
+      "ctr": 0.031151419558359622,
+      "cr": 0.0054249547920434
+    },
+    {
+      "code": "IL",
+      "previewCount": 1162.0,
+      "openCount": 36.0,
+      "purchaseCount": 2.0,
+      "gmv": 13.97,
+      "ctr": 0.03098106712564544,
+      "cr": 0.05555555555555555
+    },
+    {
+      "code": "PT",
+      "previewCount": 2194.0,
+      "openCount": 80.0,
+      "purchaseCount": 2.0,
+      "gmv": 13.99,
+      "ctr": 0.03646308113035551,
+      "cr": 0.025
+    },
+    {
+      "code": "FI",
+      "previewCount": 537.0,
+      "openCount": 25.0,
+      "purchaseCount": 2.0,
+      "gmv": 19.98,
+      "ctr": 0.04655493482309125,
+      "cr": 0.08
+    },
+    {
+      "code": "AE",
+      "previewCount": 108.0,
+      "openCount": 6.0,
+      "purchaseCount": 2.0,
+      "gmv": 9.0,
+      "ctr": 0.05555555555555555,
+      "cr": 0.3333333333333333
+    },
+    {
+      "code": "RO",
+      "previewCount": 1830.0,
+      "openCount": 137.0,
+      "purchaseCount": 2.0,
+      "gmv": 14.5,
+      "ctr": 0.07486338797814207,
+      "cr": 0.014598540145985401
+    },
+    {
+      "code": "AT",
+      "previewCount": 1546.0,
+      "openCount": 75.0,
+      "purchaseCount": 2.0,
+      "gmv": 8.49,
+      "ctr": 0.04851228978007762,
+      "cr": 0.02666666666666667
+    },
+    {
+      "code": "LV",
+      "previewCount": 252.0,
+      "openCount": 3.0,
+      "purchaseCount": 1.0,
+      "gmv": 3.98,
+      "ctr": 0.011904761904761904,
+      "cr": 0.3333333333333333
+    },
+    {
+      "code": "CA",
+      "previewCount": 1664.0,
+      "openCount": 72.0,
+      "purchaseCount": 1.0,
+      "gmv": 4.5,
+      "ctr": 0.04326923076923077,
+      "cr": 0.013888888888888888
+    },
+    {
+      "code": "UZ",
+      "previewCount": 23294.0,
+      "openCount": 754.0,
+      "purchaseCount": 1.0,
+      "gmv": 4.5,
+      "ctr": 0.03236885034772903,
+      "cr": 0.001326259946949602
+    },
+    {
+      "code": "SK",
+      "previewCount": 2227.0,
+      "openCount": 94.0,
+      "purchaseCount": 1.0,
+      "gmv": 3.98,
+      "ctr": 0.042209250112258644,
+      "cr": 0.010638297872340425
+    },
+    {
+      "code": "UA",
+      "previewCount": 5404.0,
+      "openCount": 144.0,
+      "purchaseCount": 1.0,
+      "gmv": 9.99,
+      "ctr": 0.026646928201332347,
+      "cr": 0.006944444444444444
+    },
+    {
+      "code": "MT",
+      "previewCount": 89.0,
+      "openCount": 7.0,
+      "purchaseCount": 1.0,
+      "gmv": 5.0,
+      "ctr": 0.07865168539325842,
+      "cr": 0.14285714285714285
+    },
+    {
+      "code": "KR",
+      "previewCount": 15.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "EE",
+      "previewCount": 298.0,
+      "openCount": 5.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.016778523489932886,
+      "cr": 0.0
+    },
+    {
+      "code": "KZ",
+      "previewCount": 697.0,
+      "openCount": 30.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.043041606886657105,
+      "cr": 0.0
+    },
+    {
+      "code": "GE",
+      "previewCount": 173.0,
+      "openCount": 4.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.023121387283236993,
+      "cr": 0.0
+    },
+    {
+      "code": "CY",
+      "previewCount": 172.0,
+      "openCount": 5.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.029069767441860465,
+      "cr": 0.0
+    },
+    {
+      "code": "LT",
+      "previewCount": 419.0,
+      "openCount": 3.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.007159904534606206,
+      "cr": 0.0
+    },
+    {
+      "code": "CO",
+      "previewCount": 70.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "BG",
+      "previewCount": 44.0,
+      "openCount": 1.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.022727272727272728,
+      "cr": 0.0
+    },
+    {
+      "code": "BY",
+      "previewCount": 431.0,
+      "openCount": 13.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.030162412993039442,
+      "cr": 0.0
+    },
+    {
+      "code": "MD",
+      "previewCount": 1142.0,
+      "openCount": 63.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.05516637478108581,
+      "cr": 0.0
+    },
+    {
+      "code": "PK",
+      "previewCount": 4.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "PE",
+      "previewCount": 26.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "SA",
+      "previewCount": 172.0,
+      "openCount": 3.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.01744186046511628,
+      "cr": 0.0
+    },
+    {
+      "code": "US",
+      "previewCount": 12.0,
+      "openCount": 2.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.16666666666666666,
+      "cr": 0.0
+    },
+    {
+      "code": "AL",
+      "previewCount": 11.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "AZ",
+      "previewCount": 25.0,
+      "openCount": 2.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.08,
+      "cr": 0.0
+    },
+    {
+      "code": "AM",
+      "previewCount": 54.0,
+      "openCount": 2.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.037037037037037035,
+      "cr": 0.0
+    },
+    {
+      "code": "HR",
+      "previewCount": 30.0,
+      "openCount": 1.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.03333333333333333,
+      "cr": 0.0
+    },
+    {
+      "code": "LU",
+      "previewCount": 26.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "ZA",
+      "previewCount": 18.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "MX",
+      "previewCount": 42.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "EG",
+      "previewCount": 16.0,
+      "openCount": 1.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0625,
+      "cr": 0.0
+    },
+    {
+      "code": "NG",
+      "previewCount": 2.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "KG",
+      "previewCount": 8.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "RS",
+      "previewCount": 19.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "BR",
+      "previewCount": 54.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "TN",
+      "previewCount": 3.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "SI",
+      "previewCount": 26.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "MK",
+      "previewCount": 12.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "CL",
+      "previewCount": 8.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "SN",
+      "previewCount": 3.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "PF",
+      "previewCount": 1.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "LY",
+      "previewCount": 1.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "MZ",
+      "previewCount": 2.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "JP",
+      "previewCount": 1.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "JM",
+      "previewCount": 1.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "IS",
+      "previewCount": 1.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "TR",
+      "previewCount": 1.0,
+      "openCount": 1.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 1.0,
+      "cr": 0.0
+    },
+    {
+      "code": "ID",
+      "previewCount": 2.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    },
+    {
+      "code": "ME",
+      "previewCount": 1.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    }
+  ],
+  "joom_traffic_sources_account_wide": [
+    {
+      "code": "link",
+      "previewCount": 0.0,
+      "openCount": 2396.0,
+      "purchaseCount": 122.0,
+      "gmv": 780.7500000000001,
+      "ctr": null,
+      "cr": 0.05091819699499165
+    },
+    {
+      "code": "search",
+      "previewCount": 66094.0,
+      "openCount": 1879.0,
+      "purchaseCount": 49.0,
+      "gmv": 252.13999999999996,
+      "ctr": 0.02842920688716071,
+      "cr": 0.026077700904736562
+    },
+    {
+      "code": "similar",
+      "previewCount": 27174.0,
+      "openCount": 1067.0,
+      "purchaseCount": 33.0,
+      "gmv": 175.38,
+      "ctr": 0.039265474350482076,
+      "cr": 0.030927835051546393
+    },
+    {
+      "code": "unknown",
+      "previewCount": 29626.0,
+      "openCount": 978.0,
+      "purchaseCount": 13.0,
+      "gmv": 73.49,
+      "ctr": 0.03301154391412948,
+      "cr": 0.013292433537832311
+    },
+    {
+      "code": "store",
+      "previewCount": 3992.0,
+      "openCount": 27.0,
+      "purchaseCount": 3.0,
+      "gmv": 17.97,
+      "ctr": 0.006763527054108216,
+      "cr": 0.1111111111111111
+    },
+    {
+      "code": "catalog",
+      "previewCount": 19752.0,
+      "openCount": 219.0,
+      "purchaseCount": 3.0,
+      "gmv": 12.99,
+      "ctr": 0.011087484811664642,
+      "cr": 0.0136986301369863
+    },
+    {
+      "code": "best",
+      "previewCount": 16186.0,
+      "openCount": 459.0,
+      "purchaseCount": 1.0,
+      "gmv": 4.55,
+      "ctr": 0.028357840108735946,
+      "cr": 0.002178649237472767
+    },
+    {
+      "code": "pgOffer",
+      "previewCount": 2941.0,
+      "openCount": 30.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.010200612036722203,
+      "cr": 0.0
+    },
+    {
+      "code": "relatedComplement",
+      "previewCount": 132.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    }
+  ],
+  "mercadolibre": {
+    "MX": {
+      "country": "墨西哥",
+      "platform_timezone": "GMT-06:00",
+      "source": "https://sellers.mercadolibre.com/api/sc-business-metrics/performance-data?start_period=custom&from_current=2026-09-22T00%3A00%3A00.000-06%3A00&to_current=2026-11-16T00%3A00%3A00.000-06%3A00",
+      "captured_at": "2026-11-18T04:16:01.113519+00:00",
+      "data_updated_at": null,
+      "canonical_period": {
+        "from_current": "2026-09-22T00:00:00.000-06:00",
+        "to_current": "2026-11-16T23:59:59.000-06:00",
+        "from_previous": "2026-07-28T00:00:00.000-06:00",
+        "to_previous": "2026-09-21T23:59:59.000-06:00"
+      },
+      "currency": "USD",
+      "windows": {
+        "latest_day": {
+          "visits": 23,
+          "sell_quantity": 2,
+          "sold_units": 2,
+          "gross_sales": 16.9,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-16",
+          "end": "2026-11-16",
+          "cr": 0.08695652173913043
+        },
+        "previous_day": {
+          "visits": 29,
+          "sell_quantity": 0,
+          "sold_units": 0,
+          "gross_sales": 0,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-15",
+          "end": "2026-11-15",
+          "cr": 0.0
+        },
+        "prior7": {
+          "visits": 245,
+          "sell_quantity": 8,
+          "sold_units": 8,
+          "gross_sales": 72.9,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-09",
+          "end": "2026-11-15",
+          "cr": 0.0326530612244898
+        },
+        "7day": {
+          "visits": 238,
+          "sell_quantity": 9,
+          "sold_units": 9,
+          "gross_sales": 81.6,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-10",
+          "end": "2026-11-16",
+          "cr": 0.037815126050420166
+        },
+        "previous7": {
+          "visits": 221,
+          "sell_quantity": 1,
+          "sold_units": 1,
+          "gross_sales": 8.2,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-03",
+          "end": "2026-11-09",
+          "cr": 0.004524886877828055
+        },
+        "28day": {
+          "visits": 998,
+          "sell_quantity": 15,
+          "sold_units": 15,
+          "gross_sales": 132.0,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 1,
+          "start": "2026-10-20",
+          "end": "2026-11-16",
+          "cr": 0.01503006012024048
+        },
+        "previous28": {
+          "visits": 1259,
+          "sell_quantity": 19,
+          "sold_units": 20,
+          "gross_sales": 168.6,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 1,
+          "start": "2026-09-22",
+          "end": "2026-10-19",
+          "cr": 0.015091342335186657
+        }
+      }
+    },
+    "BR": {
+      "country": "巴西",
+      "platform_timezone": "GMT-03:00",
+      "source": "https://sellers.mercadolibre.com/api/sc-business-metrics/performance-data?start_period=custom&from_current=2026-09-23T00%3A00%3A00.000-03%3A00&to_current=2026-11-17T00%3A00%3A00.000-03%3A00",
+      "captured_at": "2026-11-18T04:19:03.152702+00:00",
+      "data_updated_at": null,
+      "canonical_period": {
+        "from_current": "2026-09-23T00:00:00.000-03:00",
+        "to_current": "2026-11-17T23:59:59.000-03:00",
+        "from_previous": "2026-07-29T00:00:00.000-03:00",
+        "to_previous": "2026-09-22T23:59:59.000-03:00"
+      },
+      "currency": "USD",
+      "windows": {
+        "latest_day": {
+          "visits": 13,
+          "sell_quantity": 0,
+          "sold_units": 0,
+          "gross_sales": 0,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-17",
+          "end": "2026-11-17",
+          "cr": 0.0
+        },
+        "previous_day": {
+          "visits": 17,
+          "sell_quantity": 0,
+          "sold_units": 0,
+          "gross_sales": 0,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-16",
+          "end": "2026-11-16",
+          "cr": 0.0
+        },
+        "prior7": {
+          "visits": 108,
+          "sell_quantity": 0,
+          "sold_units": 0,
+          "gross_sales": 0,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-10",
+          "end": "2026-11-16",
+          "cr": 0.0
+        },
+        "7day": {
+          "visits": 114,
+          "sell_quantity": 0,
+          "sold_units": 0,
+          "gross_sales": 0,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-11",
+          "end": "2026-11-17",
+          "cr": 0.0
+        },
+        "previous7": {
+          "visits": 99,
+          "sell_quantity": 0,
+          "sold_units": 0,
+          "gross_sales": 0,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-04",
+          "end": "2026-11-10",
+          "cr": 0.0
+        },
+        "28day": {
+          "visits": 478,
+          "sell_quantity": 4,
+          "sold_units": 4,
+          "gross_sales": 36.5,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-10-21",
+          "end": "2026-11-17",
+          "cr": 0.008368200836820083
+        },
+        "previous28": {
+          "visits": 932,
+          "sell_quantity": 9,
+          "sold_units": 9,
+          "gross_sales": 80.0,
+          "cancelled_sales_quantity": 1,
+          "returns_sales_quantity": 0,
+          "start": "2026-09-23",
+          "end": "2026-10-20",
+          "cr": 0.009656652360515022
+        }
+      }
+    },
+    "AR": {
+      "country": "阿根廷",
+      "platform_timezone": "GMT-03:00",
+      "source": "https://sellers.mercadolibre.com/api/sc-business-metrics/performance-data?start_period=custom&from_current=2026-09-23T00%3A00%3A00.000-03%3A00&to_current=2026-11-17T00%3A00%3A00.000-03%3A00",
+      "captured_at": "2026-11-18T04:22:49.259978+00:00",
+      "data_updated_at": null,
+      "canonical_period": {
+        "from_current": "2026-09-23T00:00:00.000-03:00",
+        "to_current": "2026-11-17T23:59:59.000-03:00",
+        "from_previous": "2026-07-29T00:00:00.000-03:00",
+        "to_previous": "2026-09-22T23:59:59.000-03:00"
+      },
+      "currency": "USD",
+      "windows": {
+        "latest_day": {
+          "visits": 89,
+          "sell_quantity": 2,
+          "sold_units": 2,
+          "gross_sales": 25.4,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-17",
+          "end": "2026-11-17",
+          "cr": 0.02247191011235955
+        },
+        "previous_day": {
+          "visits": 115,
+          "sell_quantity": 0,
+          "sold_units": 0,
+          "gross_sales": 0,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-16",
+          "end": "2026-11-16",
+          "cr": 0.0
+        },
+        "prior7": {
+          "visits": 496,
+          "sell_quantity": 2,
+          "sold_units": 2,
+          "gross_sales": 25.4,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-10",
+          "end": "2026-11-16",
+          "cr": 0.004032258064516129
+        },
+        "7day": {
+          "visits": 537,
+          "sell_quantity": 4,
+          "sold_units": 4,
+          "gross_sales": 50.8,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-11",
+          "end": "2026-11-17",
+          "cr": 0.0074487895716946
+        },
+        "previous7": {
+          "visits": 340,
+          "sell_quantity": 0,
+          "sold_units": 0,
+          "gross_sales": 0,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-04",
+          "end": "2026-11-10",
+          "cr": 0.0
+        },
+        "28day": {
+          "visits": 1563,
+          "sell_quantity": 8,
+          "sold_units": 8,
+          "gross_sales": 100.7,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-10-21",
+          "end": "2026-11-17",
+          "cr": 0.005118362124120281
+        },
+        "previous28": {
+          "visits": 1379,
+          "sell_quantity": 15,
+          "sold_units": 16,
+          "gross_sales": 178.0,
+          "cancelled_sales_quantity": 3,
+          "returns_sales_quantity": 0,
+          "start": "2026-09-23",
+          "end": "2026-10-20",
+          "cr": 0.010877447425670777
+        }
+      }
+    },
+    "CL": {
+      "country": "智利",
+      "platform_timezone": "GMT-03:00",
+      "source": "https://sellers.mercadolibre.com/api/sc-business-metrics/performance-data?start_period=custom&from_current=2026-09-23T00%3A00%3A00.000-03%3A00&to_current=2026-11-17T00%3A00%3A00.000-03%3A00",
+      "captured_at": "2026-11-18T04:19:48.378329+00:00",
+      "data_updated_at": null,
+      "canonical_period": {
+        "from_current": "2026-09-23T00:00:00.000-03:00",
+        "to_current": "2026-11-17T23:59:59.000-03:00",
+        "from_previous": "2026-07-29T00:00:00.000-03:00",
+        "to_previous": "2026-09-22T23:59:59.000-03:00"
+      },
+      "currency": "USD",
+      "windows": {
+        "latest_day": {
+          "visits": 96,
+          "sell_quantity": 1,
+          "sold_units": 1,
+          "gross_sales": 8.7,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-17",
+          "end": "2026-11-17",
+          "cr": 0.010416666666666666
+        },
+        "previous_day": {
+          "visits": 109,
+          "sell_quantity": 2,
+          "sold_units": 2,
+          "gross_sales": 17,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-16",
+          "end": "2026-11-16",
+          "cr": 0.01834862385321101
+        },
+        "prior7": {
+          "visits": 614,
+          "sell_quantity": 7,
+          "sold_units": 8,
+          "gross_sales": 61.4,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-10",
+          "end": "2026-11-16",
+          "cr": 0.011400651465798045
+        },
+        "7day": {
+          "visits": 613,
+          "sell_quantity": 7,
+          "sold_units": 8,
+          "gross_sales": 62.1,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-11",
+          "end": "2026-11-17",
+          "cr": 0.011419249592169658
+        },
+        "previous7": {
+          "visits": 634,
+          "sell_quantity": 11,
+          "sold_units": 11,
+          "gross_sales": 89.7,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-04",
+          "end": "2026-11-10",
+          "cr": 0.017350157728706624
+        },
+        "28day": {
+          "visits": 2155,
+          "sell_quantity": 28,
+          "sold_units": 31,
+          "gross_sales": 247.5,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 1,
+          "start": "2026-10-21",
+          "end": "2026-11-17",
+          "cr": 0.012993039443155453
+        },
+        "previous28": {
+          "visits": 1664,
+          "sell_quantity": 20,
+          "sold_units": 21,
+          "gross_sales": 164.5,
+          "cancelled_sales_quantity": 2,
+          "returns_sales_quantity": 0,
+          "start": "2026-09-23",
+          "end": "2026-10-20",
+          "cr": 0.01201923076923077
+        }
+      }
+    },
+    "CO": {
+      "country": "哥伦比亚",
+      "platform_timezone": "GMT-05:00",
+      "source": "https://sellers.mercadolibre.com/api/sc-business-metrics/performance-data?start_period=custom&from_current=2026-09-22T00%3A00%3A00.000-05%3A00&to_current=2026-11-16T00%3A00%3A00.000-05%3A00",
+      "captured_at": "2026-11-18T04:20:19.328860+00:00",
+      "data_updated_at": null,
+      "canonical_period": {
+        "from_current": "2026-09-22T00:00:00.000-05:00",
+        "to_current": "2026-11-16T23:59:59.000-05:00",
+        "from_previous": "2026-07-28T00:00:00.000-05:00",
+        "to_previous": "2026-09-21T23:59:59.000-05:00"
+      },
+      "currency": "USD",
+      "windows": {
+        "latest_day": {
+          "visits": 19,
+          "sell_quantity": 0,
+          "sold_units": 0,
+          "gross_sales": 0,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-16",
+          "end": "2026-11-16",
+          "cr": 0.0
+        },
+        "previous_day": {
+          "visits": 22,
+          "sell_quantity": 1,
+          "sold_units": 1,
+          "gross_sales": 12.3,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-15",
+          "end": "2026-11-15",
+          "cr": 0.045454545454545456
+        },
+        "prior7": {
+          "visits": 124,
+          "sell_quantity": 1,
+          "sold_units": 1,
+          "gross_sales": 12.3,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-09",
+          "end": "2026-11-15",
+          "cr": 0.008064516129032258
+        },
+        "7day": {
+          "visits": 124,
+          "sell_quantity": 1,
+          "sold_units": 1,
+          "gross_sales": 12.3,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-10",
+          "end": "2026-11-16",
+          "cr": 0.008064516129032258
+        },
+        "previous7": {
+          "visits": 130,
+          "sell_quantity": 3,
+          "sold_units": 3,
+          "gross_sales": 30.8,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-11-03",
+          "end": "2026-11-09",
+          "cr": 0.023076923076923078
+        },
+        "28day": {
+          "visits": 570,
+          "sell_quantity": 6,
+          "sold_units": 6,
+          "gross_sales": 62.4,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 0,
+          "start": "2026-10-20",
+          "end": "2026-11-16",
+          "cr": 0.010526315789473684
+        },
+        "previous28": {
+          "visits": 455,
+          "sell_quantity": 10,
+          "sold_units": 10,
+          "gross_sales": 95.6,
+          "cancelled_sales_quantity": 0,
+          "returns_sales_quantity": 1,
+          "start": "2026-09-22",
+          "end": "2026-10-19",
+          "cr": 0.02197802197802198
+        }
+      }
+    }
+  },
+  "mercadolibre_health": {
+    "MX": {
+      "country": "墨西哥",
+      "captured_at": "2026-11-18T04:29:52.211Z",
+      "text": "摘要\n您的信誉度\n橙色\n买家眼中的您\n\n总销售额\nUS$\n82\n已上涨 382%\n\n382%\n\n最近7天\n\n主要摘要\n建议\n创建视图\n商品待处理任务\n问题\n\n0\n\n商品\n317\n项需改进\n因违反政策而失效\n\n4\n\n有待实现的质量目标\n\n214\n\n存在购物体验问题\n\n1\n\n需核对产品特性参数\n\n98\n\n查看更多\n价格\n10\n管理\n价格过高\n\n5\n\n存在自动化优化机会\n\n5\n\n查看更多\n业务指标\nUS$\n82\n已上涨 382%\n\n382%\n\n最近7天的总销售额\n\n转到商业指标\n您销售中的待处理任务\n今日发货\n\n0\n\n售后\n\n0\n\n广告指标\n0\n下降 100%\n\n100%\n\n广告销售额\n\n0\n下降 100%\n\n100%\n\n收到的点击量\n\n前往广告\n信誉\n橙色\n\n5.55%\n\n投诉\n\n0%\n\n由你取消\n\n0%\n\n不合规的货件\n\n前往声誉页面\n我的主页\n0\n下降 100%\n\n100%\n\n访问量\n\n0\n未变更\n\n—%\n\n新增粉丝\n\n最近30天\n\n转到我的主页\n动态\n\n暂无最新动态。相关信息发布后，你将能在此处查看。\n\n前往更新\n建议\n完善产品特性，提升商品质量\n\n不要留空数据，以便买家能找到你的商品。\n\n前往完善产品特性\nPlayera Infantil Algodón Rayo Mcqueen Estampada Niños\n调整您的高价商品发布信息\n\n查看竞争对手的价格，根据市场情况调整你自己的价格。\n\n前往价格管理\n+3\n多个商品页\nPágina 1\nPágina 2",
+      "url": "https://sellers.mercadolibre.com/sales-summary"
+    },
+    "BR": {
+      "country": "巴西",
+      "captured_at": "2026-11-18T04:19:07.739Z",
+      "text": "摘要\n您的信誉度\n您将是 黄色\n买家看到的是浅绿色\n\n您的信誉权益已生效。\n\n总销售额\nUS$\n0\n未变更\n\n—%\n\n最近7天\n\n主要摘要\n建议\n创建视图\n商品待处理任务\n问题\n\n0\n\n商品\n144\n项需改进\n因违反政策而失效\n\n14\n\n有待实现的质量目标\n\n105\n\n需核对产品特性参数\n\n25\n\n查看更多\n价格\n2\n管理\n价格过高\n\n1\n\n存在自动化优化机会\n\n1\n\n查看更多\n业务指标\nUS$\n0\n未变更\n\n—%\n\n最近7天的总销售额\n\n转到商业指标\n您销售中的待处理任务\n今日发货\n\n0\n\n售后\n\n0\n\n广告指标\n1\n未变更\n\n-%\n\n广告销售额\n\n121\n下降 44%\n\n44%\n\n收到的点击量\n\n前往广告\n信誉\n\n生效中的权益\n\n您将是 黄色\n\n0%\n\n投诉\n\n3.84%\n\n由你取消\n\n0%\n\n不合规的货件\n\n您的买家看到您是绿色状态\n\n利用您的信誉权益完成首笔销售，独立获得绿色信誉标识。\n\n前往声誉页面\n我的主页\n22\n已上涨 69%\n\n69%\n\n访问量\n\n0\n未变更\n\n—%\n\n新增粉丝\n\n最近30天\n\n转到我的主页\n动态\n\n暂无最新动态。相关信息发布后，你将能在此处查看。\n\n前往更新\n建议\n调整您的高价商品发布信息\n\n查看竞争对手的价格，根据市场情况调整你自己的价格。\n\n前往价格管理\nCamiseta Michael Jackson Rock N Roll Para Crianças, Verão\n完善产品特性，提升商品质量\n\n不要留空数据，以便买家能找到你的商品。\n\n前往完善产品特性\nCamiseta Roland Keyboards Musician Para Homens E Mulheres\n激活商品发布，重新开始销售\n\n查看你需要修正什么以使我们将它重新上架。\n\n重新激活商品\nCamiseta Infantil De Verão De Algodão De Manga Curta The Hed\nPágina 1\nPágina 2\nPágina 3",
+      "url": "https://sellers.mercadolibre.com/sales-summary"
+    },
+    "AR": {
+      "country": "阿根廷",
+      "captured_at": "2026-11-18T06:49:35.852Z",
+      "text": "摘要\n您的信誉度\n绿色\n买家眼中的您\n\n您的信誉福利仍处于活动状态。\n\n总销售额\nUS$\n51\n已上涨 —%\n\n—%\n\n最近7天\n\n主要摘要\n建议\n创建视图\n商品待处理任务\n问题\n1\n待回复\n待回复\n\n1\n\n商品\n254\n项需改进\n因违反政策而失效\n\n60\n\n有待实现的质量目标\n\n148\n\n需核对产品特性参数\n\n46\n\n查看更多\n价格\n\n0\n\n您销售中的待处理任务\n今日发货\n\n0\n\n售后\n\n0\n\n广告指标\n2\n下降 75%\n\n75%\n\n广告销售额\n\n540\n已上涨 46%\n\n46%\n\n收到的点击量\n\n前往广告\n业务指标\nUS$\n51\n已上涨 —%\n\n—%\n\n最近7天的总销售额\n\n11月10日\n11月17日\nUS$ 13\nUS$ 25\n转到商业指标\n信誉\n\n生效中的权益\n\n绿色\n\n0%\n\n投诉\n\n0%\n\n由你取消\n\n4%\n\n不合规的货件\n\n前往声誉页面\n我的主页\n26\n下降 10%\n\n10%\n\n访问量\n\n1\n下降 67%\n\n67%\n\n新增粉丝\n\n最近30天\n\n转到我的主页\n动态\n\n暂无最新动态。相关信息发布后，你将能在此处查看。\n\n前往更新\n建议\n完善产品特性，提升商品质量\n\n不要留空数据，以便买家能找到你的商品。\n\n前往完善产品特性\nPlayera Niños Toy Story Buzz Woody Jessie Algodón\n激活商品发布，重新开始销售\n\n查看你需要修正什么以使我们将它重新上架。\n\n重新激活商品\nCamisetas Manga Corta Niños Estampado Cuello Redondo Ver\nPágina 1\nPágina 2",
+      "url": "https://sellers.mercadolibre.com/sales-summary"
+    },
+    "CL": {
+      "country": "智利",
+      "captured_at": "2026-11-18T04:19:53.314Z",
+      "text": "摘要\n您的信誉度\n绿色\n买家眼中的您\n\n您的信誉福利仍处于活动状态。\n\n总销售额\nUS$\n69\n下降 23.3%\n\n23.3%\n\n最近7天\n\n主要摘要\n建议\n创建视图\n商品待处理任务\n问题\n\n0\n\n商品\n282\n项需改进\n因违反政策而失效\n\n10\n\n有待实现的质量目标\n\n191\n\n需核对产品特性参数\n\n81\n\n查看更多\n价格\n2\n管理\n价格过高\n\n1\n\n存在自动化优化机会\n\n1\n\n查看更多\n业务指标\nUS$\n69\n下降 23.3%\n\n23.3%\n\n最近7天的总销售额\n\n转到商业指标\n您销售中的待处理任务\n今日发货\n\n0\n\n售后\n\n0\n\n广告指标\n10\n已上涨 150%\n\n150%\n\n广告销售额\n\n1.078\n已上涨 172%\n\n172%\n\n收到的点击量\n\n前往广告\n信誉\n\n生效中的权益\n\n绿色\n\n2.08%\n\n投诉\n\n2.08%\n\n由你取消\n\n0%\n\n调解案件\n\n0%\n\n不合规的货件\n\n前往声誉页面\n我的主页\n24\n下降 33%\n\n33%\n\n访问量\n\n1\n已上涨 100%\n\n100%\n\n新增粉丝\n\n最近30天\n\n转到我的主页\n动态\n\n暂无最新动态。相关信息发布后，你将能在此处查看。\n\n前往更新\n建议\n调整您的高价商品发布信息\n\n查看竞争对手的价格，根据市场情况调整你自己的价格。\n\n前往价格管理\nCamiseta Michael Jackson Rock N Roll Para Niños, Verano\n完善产品特性，提升商品质量\n\n不要留空数据，以便买家能找到你的商品。\n\n前往完善产品特性\nPlayera Infantil Potdemiel Rayo Mcqueen Algodón Niños\nPágina 1\nPágina 2",
+      "url": "https://sellers.mercadolibre.com/sales-summary"
+    },
+    "CO": {
+      "country": "哥伦比亚",
+      "captured_at": "2026-11-18T04:20:23.971Z",
+      "text": "摘要\n您的信誉度\n您将是 黄色\n买家看到的是浅绿色\n\n您的信誉权益已生效。\n\n总销售额\nUS$\n13\n下降 74.5%\n\n74.5%\n\n最近7天\n\n主要摘要\n建议\n创建视图\n商品待处理任务\n问题\n\n0\n\n商品\n137\n项需改进\n因违反政策而失效\n\n18\n\n有待实现的质量目标\n\n95\n\n需核对产品特性参数\n\n24\n\n查看更多\n价格\n\n0\n\n业务指标\nUS$\n13\n下降 74.5%\n\n74.5%\n\n最近7天的总销售额\n\n转到商业指标\n您销售中的待处理任务\n今日发货\n\n0\n\n售后\n\n0\n\n广告指标\n0\n未变更\n\n-%\n\n广告销售额\n\n0\n未变更\n\n-%\n\n收到的点击量\n\n前往广告\n信誉\n\n生效中的权益\n\n您将是 黄色\n\n4.16%\n\n投诉\n\n4.16%\n\n由你取消\n\n0%\n\n不合规的货件\n\n您的买家看到您是绿色状态\n\n利用您的信誉权益完成首笔销售，独立获得绿色信誉标识。\n\n前往声誉页面\n我的主页\n5\n下降 44%\n\n44%\n\n访问量\n\n0\n未变更\n\n—%\n\n新增粉丝\n\n最近30天\n\n转到我的主页\n动态\n\n暂无最新动态。相关信息发布后，你将能在此处查看。\n\n前往更新\n建议\n完善产品特性，提升商品质量\n\n不要留空数据，以便买家能找到你的商品。\n\n前往完善产品特性\nPlayeras Hombre Básica Cuello Redondo Algodón Paquete 2 Pzs",
+      "url": "https://sellers.mercadolibre.com/sales-summary"
+    }
+  },
+  "mercadolibre_ads": {
+    "MX": {
+      "campaigns": 16,
+      "display": "blocked_reputation",
+      "budget_usd": 27,
+      "window": [
+        "2026-10-20",
+        "2026-11-18"
+      ],
+      "complete_days_only": false,
+      "attributed_revenue": 0,
+      "spend": 0,
+      "acos": null,
+      "timezone": null
+    },
+    "BR": {
+      "expected_advertiser": "1282818",
+      "observed_advertiser": "1282817",
+      "status": "account_mismatch",
+      "spend": null,
+      "attributed_revenue": null,
+      "acos": null
+    },
+    "AR": {
+      "expected_advertiser": "2246873",
+      "observed_advertiser": "1282817",
+      "status": "account_mismatch",
+      "spend": null,
+      "attributed_revenue": null,
+      "acos": null
+    },
+    "CL": {
+      "expected_advertiser": "1282819",
+      "observed_advertiser": "1282817",
+      "status": "account_mismatch",
+      "spend": null,
+      "attributed_revenue": null,
+      "acos": null
+    },
+    "CO": {
+      "expected_advertiser": "1282820",
+      "observed_advertiser": "1282817",
+      "status": "account_mismatch",
+      "spend": null,
+      "attributed_revenue": null,
+      "acos": null
+    }
+  },
+  "product_followup": [
+    {
+      "suggestion_id": "product-optimize-20261117-abstract-hoodie",
+      "product_id": "6a9c2ac53f8ce801f4d022c1",
+      "observed_at": "2026-11-18T04:39:26.202Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6a9c2ac53f8ce801f4d022c1/active"
+    },
+    {
+      "suggestion_id": "product-optimize-20261117-circuit-tee",
+      "product_id": "6aa279c96e5bd0017fdb037c",
+      "observed_at": "2026-11-18T04:39:30.327Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6aa279c96e5bd0017fdb037c/active"
+    },
+    {
+      "suggestion_id": "product-optimize-20261118-6a87c88c93749b019b381e23",
+      "product_id": "6a87c88c93749b019b381e23",
+      "observed_at": "2026-11-18T04:39:34.340Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6a87c88c93749b019b381e23/active"
+    },
+    {
+      "suggestion_id": "product-optimize-20261118-6a9d36e83f8ce801f4d97508",
+      "product_id": "6a9d36e83f8ce801f4d97508",
+      "observed_at": "2026-11-18T04:39:38.331Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6a9d36e83f8ce801f4d97508/active"
+    },
+    {
+      "suggestion_id": "product-optimize-20261118-6aa1163e365a0701ec26bdd4",
+      "product_id": "6aa1163e365a0701ec26bdd4",
+      "observed_at": "2026-11-18T04:39:42.610Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6aa1163e365a0701ec26bdd4/active"
+    },
+    {
+      "suggestion_id": "product-optimize-20261118-6aa1265e2da70501751a27e9",
+      "product_id": "6aa1265e2da70501751a27e9",
+      "observed_at": "2026-11-18T04:39:46.700Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6aa1265e2da70501751a27e9/active"
+    },
+    {
+      "suggestion_id": "product-optimize-20261118-6aa27a6433883401e8442178",
+      "product_id": "6aa27a6433883401e8442178",
+      "observed_at": "2026-11-18T04:39:50.823Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6aa27a6433883401e8442178/active"
+    },
+    {
+      "suggestion_id": "product-optimize-20261118-6aba48d42611ba0106b21b88",
+      "product_id": "6aba48d42611ba0106b21b88",
+      "observed_at": "2026-11-18T04:39:54.888Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6aba48d42611ba0106b21b88/active"
+    },
+    {
+      "suggestion_id": "product-optimize-20261118-6aba4901772f9801e29c5a45",
+      "product_id": "6aba4901772f9801e29c5a45",
+      "observed_at": "2026-11-18T04:39:59.617Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6aba4901772f9801e29c5a45/active"
+    },
+    {
+      "suggestion_id": "product-optimize-20261118-6aba59cdf8dad801a1e28955",
+      "product_id": "6aba59cdf8dad801a1e28955",
+      "observed_at": "2026-11-18T04:40:03.572Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6aba59cdf8dad801a1e28955/active"
+    },
+    {
+      "suggestion_id": "product-optimize-20261118-6ac7a3665c2438011cc81578",
+      "product_id": "6ac7a3665c2438011cc81578",
+      "observed_at": "2026-11-18T04:40:07.565Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6ac7a3665c2438011cc81578/active"
+    },
+    {
+      "suggestion_id": "product-optimize-20261118-6ac7a4095c2438011cc838fc",
+      "product_id": "6ac7a4095c2438011cc838fc",
+      "observed_at": "2026-11-18T04:40:11.523Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6ac7a4095c2438011cc838fc/active"
+    },
+    {
+      "suggestion_id": "product-optimize-r2-20261117-bikini",
+      "product_id": "6aa1264982f25701b417df7e",
+      "observed_at": "2026-11-18T04:40:15.573Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6aa1264982f25701b417df7e/active"
+    },
+    {
+      "suggestion_id": "product-optimize-r2-20261117-dolphin",
+      "product_id": "6aa12654365a0701ec2995ec",
+      "observed_at": "2026-11-18T04:40:19.529Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6aa12654365a0701ec2995ec/active"
+    },
+    {
+      "suggestion_id": "product-optimize-r2-20261117-hooded",
+      "product_id": "6a87c89a35e86a010857e3d2",
+      "observed_at": "2026-11-18T04:40:23.586Z",
+      "published_title_matches": true,
+      "activation_time": null,
+      "source": "https://merchant.joom.com/panel/products/6a87c89a35e86a010857e3d2/active"
+    },
+    {
+      "product_id": "6aa1168d2da705017517684d",
+      "observed_at": "2026-11-18T13:11:59.475804+08:00",
+      "status": "审核中"
+    },
+    {
+      "product_id": "6aba5a6e45408d0115f00d34",
+      "observed_at": "2026-11-18T13:11:59.475804+08:00",
+      "status": "审核中"
+    },
+    {
+      "product_id": "6aba58305ef7d90176396d41",
+      "observed_at": "2026-11-18T13:11:59.475804+08:00",
+      "status": "审核中"
+    },
+    {
+      "product_id": "6a9c2a3a3f8ce801f4d01f8e",
+      "observed_at": "2026-11-18T13:11:59.475804+08:00",
+      "status": "审核中"
+    },
+    {
+      "product_id": "6a980c1bd39fbe01c00051c8",
+      "observed_at": "2026-11-18T13:11:59.475804+08:00",
+      "status": "审核中"
+    },
+    {
+      "product_id": "6a8cd88e8f3b2901f216fe60",
+      "observed_at": "2026-11-18T13:11:59.475804+08:00",
+      "status": "审核中"
+    },
+    {
+      "product_id": "6a9d41b7ad688a01ff60ef65",
+      "observed_at": "2026-11-18T13:11:59.475804+08:00",
+      "status": "审核中"
+    },
+    {
+      "product_id": "6abdb3ae1bfb960155e400ad",
+      "observed_at": "2026-11-18T13:11:59.475804+08:00",
+      "status": "审核中"
+    },
+    {
+      "product_id": "6ad0b7d1303ef201d3a3f24b",
+      "observed_at": "2026-11-18T13:11:59.475804+08:00",
+      "status": "审核中"
+    },
+    {
+      "product_id": "6a9d36ac3f8ce801f4d96f4d",
+      "observed_at": "2026-11-18T13:11:59.475804+08:00",
+      "status": "审核中"
+    }
+  ],
+  "source_directory": "快照/店铺经营/2026-11-18/145123-来源",
+  "data_notes": [
+    "经营数据按当地完整日；广告归因窗口独立。",
+    "美客多金额为后台每日图表读数之和，展示精度有限。",
+    "两平台销量定义不同，未合算跨平台转化率。"
+  ]
+}

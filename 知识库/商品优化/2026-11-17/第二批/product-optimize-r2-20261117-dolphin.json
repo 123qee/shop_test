@@ -1,0 +1,30 @@
+{
+  "suggestion_id": "product-optimize-r2-20261117-dolphin",
+  "recorded_on": "2026-11-17",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "product_id": "6aa12654365a0701ec2995ec",
+  "name": "海豚海洋图案T恤",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status_at_verification": "平台审核中，编辑版本与在售版本不同",
+  "all_time_orders_before": 0,
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-16"
+  },
+  "period_clicks": 8,
+  "changes": [
+    "精简堆砌标题，明确聚酯材质和海豚海洋图案",
+    "增加准确搜索标签",
+    "新增简介，保留原属性、尺码和洗护全文"
+  ],
+  "unresolved": [
+    "原有“尺寸表中的图片”提示保留，需核对图片与文字尺码后再处理"
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/第二批/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/第二批/6aa12654365a0701ec2995ec-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/第二批/6aa12654365a0701ec2995ec-after.json",
+  "follow_up": "每天11点核对审核及在售版本；审核生效后观察3天流量、7天转化、14天归因及售后。低样本不判断效果，不自动再次改商品或投放。",
+  "outcome": "尚无优化后销量证据，不声称销量提升"
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://merchant.joom.com/panel/ads/campaigns/6af7c37f0f93510007f57abc",
+  "title": "cpm5 — Joom",
+  "tree_text": "- status\n- button \"Open Intercom Messenger\" [ref=e7002564, expanded=false]\n  - image\n  - image\n- textbox [ref=e7002568, focused]\n- dialog \"确认对话\"\n  - heading \"删除产品\" [level=2]\n  - text: 您确定要从活动中删除 1 products 吗？\n  - group\n    - button \"取消\" [ref=e7002569]\n    - button \"删除\" [ref=e7002570]",
+  "ref_policy": "stable-node",
+  "workId": "3c1af1f5-b3d5-4e0c-a87c-b54a76e05b32"
+}

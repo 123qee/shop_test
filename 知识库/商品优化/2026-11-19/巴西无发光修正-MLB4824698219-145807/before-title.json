@@ -1,0 +1,12 @@
+{
+  "country": "巴西",
+  "inputs": [
+    {
+      "id": "title_input",
+      "label": "例如：三星Galaxy S9双卡双待32GB内存蓝色",
+      "maxLength": 60,
+      "type": "text",
+      "value": "Camiseta De Cubo Fluorescente De Efeito Neon Com Luz Preta"
+    }
+  ]
+}

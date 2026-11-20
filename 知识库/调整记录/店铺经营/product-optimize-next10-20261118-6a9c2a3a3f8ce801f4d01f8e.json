@@ -1,0 +1,75 @@
+{
+  "suggestion_id": "product-optimize-next10-20261118-6a9c2a3a3f8ce801f4d01f8e",
+  "event_type": "user_authorized_product_content_optimization",
+  "recorded_at": "2026-11-18T13:08:09.383685+08:00",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "product_id": "6a9c2a3a3f8ce801f4d01f8e",
+  "name": "纽约字母儿童套头卫衣",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status_at_verification": "编辑版本已保存，平台审核中",
+  "effective_at": null,
+  "all_time_orders_before": 0,
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-16"
+  },
+  "period_metrics": {
+    "impressions": 1288,
+    "clicks": 8,
+    "cart": 1,
+    "purchases": 0
+  },
+  "changes": {
+    "title_before": "New York Boys and Girls Hoodies Autumn/Winter Hoodies Long Sleeves Classic Casual Minimalist Jackets Children's Letter Hoodies",
+    "title_after": "Kids' New York Letter Print Hoodie, Cotton Long Sleeve Pullover",
+    "description_intro": "Children's cotton pullover hoodie with New York and USA lettering, a hood and long sleeves. Select your preferred color and compare your child's measurements with the garment size chart below before ordering.",
+    "description_replacements": {
+      "Product Type: Kids’ T-Shirt": "Product Type: Kids' Hooded Sweatshirt",
+      "Applicable Season: Summer\n": "",
+      "Neckline: Round Neck": "Neckline: Hooded",
+      "Sleeve Length: Short Sleeve": "Sleeve Length: Long Sleeve",
+      "Clothing Decoration: No Decoration": "Clothing Decoration: Print"
+    },
+    "search_tags_before": "",
+    "search_tags_after": [
+      "kids hoodie",
+      "New York hoodie",
+      "letter print",
+      "cotton hoodie",
+      "pullover hoodie",
+      "long sleeve",
+      "boys hoodie",
+      "girls hoodie"
+    ]
+  },
+  "protected_fields_verified": [
+    "变型价格",
+    "库存",
+    "SKU",
+    "尺寸颜色",
+    "物流相关输入",
+    "图片URL列表",
+    "类目"
+  ],
+  "verification": {
+    "persisted_after_reload": true,
+    "variant_count": 287,
+    "variant_detail_unchanged": true,
+    "form_variants_unchanged_before_save": true,
+    "images_unchanged_before_save": true,
+    "category_unchanged_before_save": true,
+    "full_description_read_back": true,
+    "search_tags_read_back": true,
+    "category_id_unchanged": true
+  },
+  "unresolved": [
+    "丹麦当地法规限售提示仍需另行核对"
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/6a9c2a3a3f8ce801f4d01f8e-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/6a9c2a3a3f8ce801f4d01f8e-after.json",
+  "follow_up": "每日11点经营监控先核实审核和实际在售版本；以实际生效日观察3天点击曝光、7天转化、14天归因售后。样本不足继续观察，不自动重复改商品或投放。",
+  "outcome": "暂无生效后销售证据，不声称提升销量"
+}

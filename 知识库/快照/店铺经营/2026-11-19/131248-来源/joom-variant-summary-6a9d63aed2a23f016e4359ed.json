@@ -1,0 +1,74 @@
+{
+  "source": "https://merchant.joom.com/panel/products/6a9d63aed2a23f016e4359ed",
+  "captured_at": "2026-11-19T05:05:36.677Z",
+  "product_id": "6a9d63aed2a23f016e4359ed",
+  "name": "Y2K Graphic Print Oversized Cotton T-Shirt, Unisex Short Sleeve Crew Neck",
+  "variant_rows": [
+    {
+      "size_color": "颜色：white\n尺寸：2XS",
+      "sku": "54370375994",
+      "variant_id": "6a9d63aed2a23ffc6e4359ef",
+      "price": "US$4.50\n竞争性\n销售价格：US$4.19\n平均价格：US$4.28",
+      "inventory": "990\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：white\n尺寸：XS",
+      "sku": "17243881042",
+      "variant_id": "6a9d63aed2a23ffc6e4359f0",
+      "price": "US$4.50\n竞争性\n销售价格：US$4.19\n平均价格：US$4.34",
+      "inventory": "988\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：white\n尺寸：S",
+      "sku": "60336446843",
+      "variant_id": "6a9d63aed2a23ffc6e4359f1",
+      "price": "US$4.50\n竞争性\n销售价格：US$4.19\n平均价格：US$4.28",
+      "inventory": "990\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：white\n尺寸：M",
+      "sku": "46492730231",
+      "variant_id": "6a9d63aed2a23ffc6e4359f2",
+      "price": "US$4.50\n竞争性\n销售价格：US$4.19\n平均价格：US$4.19",
+      "inventory": "989\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：white\n尺寸：L",
+      "sku": "95559593409",
+      "variant_id": "6a9d63aed2a23ffc6e4359f3",
+      "price": "US$4.50\n竞争性\n销售价格：US$4.12\n平均价格：US$4.44",
+      "inventory": "986\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：white\n尺寸：XL",
+      "sku": "92434083773",
+      "variant_id": "6a9d63aed2a23ffc6e4359f4",
+      "price": "US$4.50\n竞争性\n销售价格：US$3.98\n平均价格：US$4.28",
+      "inventory": "989\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：white\n尺寸：2XL",
+      "sku": "40641934566",
+      "variant_id": "6a9d63aed2a23ffc6e4359f5",
+      "price": "US$4.50\n竞争性\n销售价格：US$4.19\n平均价格：US$4.50",
+      "inventory": "989\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：white\n尺寸：3XL",
+      "sku": "79517948927",
+      "variant_id": "6a9d63aed2a23ffc6e4359f6",
+      "price": "US$4.50\n竞争性\n销售价格：US$3.98\n平均价格：US$4.28",
+      "inventory": "989\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    }
+  ],
+  "stock_scope": "商家后台配置库存，不等于实盘；默认运费不是买家国际运费。",
+  "warnings": "943295116\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n"
+}

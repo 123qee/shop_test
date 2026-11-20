@@ -1,0 +1,522 @@
+{
+  "platform": "Joom",
+  "scope": "全部历史退款状态，非广告28日成熟队列",
+  "captured_at": "2026-11-20T03:38:26.717699+00:00",
+  "currency": "USD",
+  "refund_state_order_count": 25,
+  "rows_returned": 25,
+  "orders_with_amount": 24,
+  "orders_missing_amount": 1,
+  "refund_amount_field_sum": 231.790239,
+  "net_loss": null,
+  "net_loss_reason": "退款金额字段未完成费用责任逐笔对账；不与不同周期广告POGS直接相减",
+  "sources": [
+    {
+      "source": "https://api-merchant.joom.com/api/v3/orders/multi?offset=0&limit=100&statuses=refunded&statuses=paidByJoomRefund&orderBy=approvedTimestamp&order=desc",
+      "captured_at": "2026-11-20T03:38:26.717338+00:00",
+      "items": [
+        {
+          "id": "38Q2GWQJ",
+          "status": "refunded",
+          "storeId": "6a8c4690b1e1819ed91f9baa",
+          "quantity": 1,
+          "refundedTimestamp": "2026-11-18T19:42:39Z",
+          "currency": "USD",
+          "product_id": "6ac0ce4318081201574fa3df",
+          "priceInfo": {
+            "unitPrice": "10",
+            "origAmount": "10",
+            "orderPrice": "10",
+            "merchantRevenue": "8.5",
+            "commissionAmount": "1.5",
+            "refundAmount": "14.647174",
+            "merchantRevenueAsInInvoice": "8.5",
+            "pspCommissionCharge": "0.362525",
+            "pspCommissionAmount": "0.340233"
+          }
+        },
+        {
+          "id": "VL8QPYM8",
+          "status": "refunded",
+          "storeId": "6a9d4221018d89bb9e5c22ef",
+          "quantity": 1,
+          "refundedTimestamp": "2026-11-19T09:45:52Z",
+          "currency": "USD",
+          "product_id": "6aaa9d48117009011e83bd72",
+          "priceInfo": {
+            "unitPrice": "9.99",
+            "origAmount": "9.99",
+            "orderPrice": "8.991",
+            "merchantRevenue": "7.64235",
+            "commissionAmount": "1.34865",
+            "refundAmount": "23.05384",
+            "merchantRevenueAsInInvoice": "7.64235",
+            "pspCommissionCharge": "0.458",
+            "pspCommissionAmount": "0.43554"
+          }
+        },
+        {
+          "id": "VL6LX2J7",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-11-09T23:44:04Z",
+          "currency": "USD",
+          "product_id": "6a8c47d48f3b2901f2108df6",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.99",
+            "merchantRevenue": "3.3915",
+            "commissionAmount": "0.5985",
+            "refundAmount": "10.217237",
+            "merchantRevenueAsInInvoice": "3.3915",
+            "pspCommissionCharge": null,
+            "pspCommissionAmount": "0.487993"
+          }
+        },
+        {
+          "id": "GJL6GXQG",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-11-04T18:07:57Z",
+          "currency": "USD",
+          "product_id": "6a8c47d48f3b2901f2108df6",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.99",
+            "merchantRevenue": "3.3915",
+            "commissionAmount": "0.5985",
+            "refundAmount": "8.849275",
+            "merchantRevenueAsInInvoice": "3.3915",
+            "pspCommissionCharge": null,
+            "pspCommissionAmount": "0.204385"
+          }
+        },
+        {
+          "id": "JVEGY576",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-11-19T20:42:01Z",
+          "currency": "USD",
+          "product_id": "6a868a318809ae01f99f4373",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.99",
+            "merchantRevenue": "3.3915",
+            "commissionAmount": "0.5985",
+            "refundAmount": "8.09499",
+            "merchantRevenueAsInInvoice": "3.3915",
+            "pspCommissionCharge": "0.232278",
+            "pspCommissionAmount": "0.209852"
+          }
+        },
+        {
+          "id": "VLD88MLJ",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-10-26T20:26:04Z",
+          "currency": "USD",
+          "product_id": "6a9d63aed2a23f016e4359ed",
+          "priceInfo": {
+            "unitPrice": "4.5",
+            "origAmount": "4.5",
+            "orderPrice": "4.275",
+            "merchantRevenue": "3.63375",
+            "commissionAmount": "0.64125",
+            "refundAmount": "6.96849",
+            "merchantRevenueAsInInvoice": "3.63375",
+            "pspCommissionCharge": null,
+            "pspCommissionAmount": "0.427753"
+          }
+        },
+        {
+          "id": "LMJYLL4P",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-10-15T15:00:15Z",
+          "currency": "USD",
+          "product_id": "6a844e24312d3d019e785eed",
+          "priceInfo": {
+            "unitPrice": "4.5",
+            "origAmount": "4.5",
+            "orderPrice": "4.275",
+            "merchantRevenue": "3.63375",
+            "commissionAmount": "0.64125",
+            "refundAmount": null,
+            "merchantRevenueAsInInvoice": null,
+            "pspCommissionCharge": null,
+            "pspCommissionAmount": "0.262023"
+          }
+        },
+        {
+          "id": "8LJNMN8G",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-10-27T13:40:37Z",
+          "currency": "USD",
+          "product_id": "6aa1167fed97a90165b91a51",
+          "priceInfo": {
+            "unitPrice": "9.99",
+            "origAmount": "9.99",
+            "orderPrice": "9.4905",
+            "merchantRevenue": "8.066925",
+            "commissionAmount": "1.423575",
+            "refundAmount": "14.219553",
+            "merchantRevenueAsInInvoice": "8.066925",
+            "pspCommissionCharge": null,
+            "pspCommissionAmount": "1.52456"
+          }
+        },
+        {
+          "id": "JVWV3LN6",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-10-23T14:26:18Z",
+          "currency": "USD",
+          "product_id": "6a8b0ca532e0d1010fa6c8ad",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.7905",
+            "merchantRevenue": "3.221925",
+            "commissionAmount": "0.568575",
+            "refundAmount": "7.312741",
+            "merchantRevenueAsInInvoice": "3.221925",
+            "pspCommissionCharge": "0.30367",
+            "pspCommissionAmount": "0.217532"
+          }
+        },
+        {
+          "id": "P686XVMN",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-10-23T14:25:09Z",
+          "currency": "USD",
+          "product_id": "6a8b0ca532e0d1010fa6c8ad",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.7905",
+            "merchantRevenue": "3.221925",
+            "commissionAmount": "0.568575",
+            "refundAmount": "7.334747",
+            "merchantRevenueAsInInvoice": "3.221925",
+            "pspCommissionCharge": "0.30367",
+            "pspCommissionAmount": "0.217532"
+          }
+        },
+        {
+          "id": "8LJ3X939",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 2,
+          "refundedTimestamp": "2026-10-18T18:30:38Z",
+          "currency": "USD",
+          "product_id": "6a8e23aef788ec01b9b32142",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "7.98",
+            "orderPrice": "7.98",
+            "merchantRevenue": "6.783",
+            "commissionAmount": "1.197",
+            "refundAmount": "13.45183",
+            "merchantRevenueAsInInvoice": "6.783",
+            "pspCommissionCharge": "0.022514",
+            "pspCommissionAmount": "0.376633"
+          }
+        },
+        {
+          "id": "P689G3EN",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-10-19T22:10:37Z",
+          "currency": "USD",
+          "product_id": "6a8697678809ae01f9a07de2",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.7905",
+            "merchantRevenue": "3.221925",
+            "commissionAmount": "0.568575",
+            "refundAmount": "10.194271",
+            "merchantRevenueAsInInvoice": "3.221925",
+            "pspCommissionCharge": null,
+            "pspCommissionAmount": "1.199602"
+          }
+        },
+        {
+          "id": "JVW42D46",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-11-17T17:09:03Z",
+          "currency": "USD",
+          "product_id": "6a844e24312d3d019e785eed",
+          "priceInfo": {
+            "unitPrice": "4.5",
+            "origAmount": "4.5",
+            "orderPrice": "4.275",
+            "merchantRevenue": "3.63375",
+            "commissionAmount": "0.64125",
+            "refundAmount": "10.627805",
+            "merchantRevenueAsInInvoice": "3.63375",
+            "pspCommissionCharge": "0.606218",
+            "pspCommissionAmount": "0.606218"
+          }
+        },
+        {
+          "id": "7XMVM3L5",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-10-24T23:14:28Z",
+          "currency": "USD",
+          "product_id": "6a8c481ac9ba4101fc37672f",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.7905",
+            "merchantRevenue": "3.221925",
+            "commissionAmount": "0.568575",
+            "refundAmount": "9.757663",
+            "merchantRevenueAsInInvoice": "3.221925",
+            "pspCommissionCharge": "0.229631",
+            "pspCommissionAmount": "0.205364"
+          }
+        },
+        {
+          "id": "EVQ5XD2Y",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-10-21T15:43:31Z",
+          "currency": "USD",
+          "product_id": "6a8866ac19cb59010d7809e2",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.99",
+            "merchantRevenue": "3.3915",
+            "commissionAmount": "0.5985",
+            "refundAmount": "7.421947",
+            "merchantRevenueAsInInvoice": "3.3915",
+            "pspCommissionCharge": "0.177484",
+            "pspCommissionAmount": "0.15743"
+          }
+        },
+        {
+          "id": "VL9669QV",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-10-05T19:47:19Z",
+          "currency": "USD",
+          "product_id": "6a980514f3bf72019f23b034",
+          "priceInfo": {
+            "unitPrice": "4.5",
+            "origAmount": "4.5",
+            "orderPrice": "4.275",
+            "merchantRevenue": "3.63375",
+            "commissionAmount": "0.64125",
+            "refundAmount": "8.484551",
+            "merchantRevenueAsInInvoice": "3.63375",
+            "pspCommissionCharge": "0.210298",
+            "pspCommissionAmount": "0.187539"
+          }
+        },
+        {
+          "id": "WDEPGJ73",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-10-08T13:47:46Z",
+          "currency": "USD",
+          "product_id": "6a87c65a35e86a010857bb2f",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.99",
+            "merchantRevenue": "3.2718",
+            "commissionAmount": "0.7182",
+            "refundAmount": "6.905409",
+            "merchantRevenueAsInInvoice": "3.2718",
+            "pspCommissionCharge": null,
+            "pspCommissionAmount": "1.039492"
+          }
+        },
+        {
+          "id": "67M9XVEP",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-09-23T08:15:58Z",
+          "currency": "USD",
+          "product_id": "6a844e24312d3d019e785eed",
+          "priceInfo": {
+            "unitPrice": "4.5",
+            "origAmount": "4.5",
+            "orderPrice": "4.5",
+            "merchantRevenue": "3.825",
+            "commissionAmount": "0.675",
+            "refundAmount": "10.357048",
+            "merchantRevenueAsInInvoice": "3.825",
+            "pspCommissionCharge": "0.023182",
+            "pspCommissionAmount": "0.324442"
+          }
+        },
+        {
+          "id": "Q8JGP9NN",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-09-20T16:07:50Z",
+          "currency": "USD",
+          "product_id": "6a8e23b5f381b601c5ac94b5",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.7905",
+            "merchantRevenue": "3.221925",
+            "commissionAmount": "0.568575",
+            "refundAmount": "5.824804",
+            "merchantRevenueAsInInvoice": "3.221925",
+            "pspCommissionCharge": "0.023275",
+            "pspCommissionAmount": "0.920104"
+          }
+        },
+        {
+          "id": "WDJJ6DE8",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-09-26T10:05:38Z",
+          "currency": "USD",
+          "product_id": "6a87c6a7237ea601558dc594",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.8703",
+            "merchantRevenue": "3.289755",
+            "commissionAmount": "0.580545",
+            "refundAmount": "12.884417",
+            "merchantRevenueAsInInvoice": "3.289755",
+            "pspCommissionCharge": "0.424843",
+            "pspCommissionAmount": "0.40159"
+          }
+        },
+        {
+          "id": "M2J557M3",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-09-19T07:49:19Z",
+          "currency": "USD",
+          "product_id": "6a8c47fab1e18101d91fad3a",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.99",
+            "merchantRevenue": "3.3915",
+            "commissionAmount": "0.5985",
+            "refundAmount": "6.378784",
+            "merchantRevenueAsInInvoice": "3.3915",
+            "pspCommissionCharge": "0.162365",
+            "pspCommissionAmount": "0.162365"
+          }
+        },
+        {
+          "id": "269VV8E3",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-09-19T07:47:30Z",
+          "currency": "USD",
+          "product_id": "6a8c47fab1e18101d91fad3a",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.99",
+            "merchantRevenue": "3.3915",
+            "commissionAmount": "0.5985",
+            "refundAmount": "6.226386",
+            "merchantRevenueAsInInvoice": "3.3915",
+            "pspCommissionCharge": "0.162132",
+            "pspCommissionAmount": "0.162132"
+          }
+        },
+        {
+          "id": "XMJYY35L",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-09-19T07:37:18Z",
+          "currency": "USD",
+          "product_id": "6a8c47fab1e18101d91fad3a",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.99",
+            "merchantRevenue": "3.3915",
+            "commissionAmount": "0.5985",
+            "refundAmount": "6.236247",
+            "merchantRevenueAsInInvoice": "3.3915",
+            "pspCommissionCharge": "0.162483",
+            "pspCommissionAmount": "0.162483"
+          }
+        },
+        {
+          "id": "P6M553JM",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-09-19T07:51:03Z",
+          "currency": "USD",
+          "product_id": "6a8c47fab1e18101d91fad3a",
+          "priceInfo": {
+            "unitPrice": "3.99",
+            "origAmount": "3.99",
+            "orderPrice": "3.99",
+            "merchantRevenue": "3.3915",
+            "commissionAmount": "0.5985",
+            "refundAmount": "6.47389",
+            "merchantRevenueAsInInvoice": "3.3915",
+            "pspCommissionCharge": "0.162365",
+            "pspCommissionAmount": "0.162365"
+          }
+        },
+        {
+          "id": "8LN3E759",
+          "status": "refunded",
+          "storeId": "6a817b93f5d3934528e70df7",
+          "quantity": 1,
+          "refundedTimestamp": "2026-09-10T08:07:29Z",
+          "currency": "USD",
+          "product_id": "6a844e24312d3d019e785eed",
+          "priceInfo": {
+            "unitPrice": "3.98",
+            "origAmount": "3.98",
+            "orderPrice": "3.98",
+            "merchantRevenue": "3.383",
+            "commissionAmount": "0.597",
+            "refundAmount": "9.86714",
+            "merchantRevenueAsInInvoice": "3.383",
+            "pspCommissionCharge": "0.023184",
+            "pspCommissionAmount": "0.316778"
+          }
+        }
+      ]
+    }
+  ],
+  "privacy": "仅保留订单ID、商品ID、状态和财务字段；未保存买家资料"
+}

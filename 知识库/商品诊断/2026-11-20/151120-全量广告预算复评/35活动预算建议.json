@@ -1,0 +1,761 @@
+{
+  "recorded_at": "2026-11-20T15:11:20.008108+08:00",
+  "window": "2026-11-13..2026-11-19 UTC+3",
+  "current_daily_budget_sum": 425,
+  "main_plan_daily_budget_sum": 425,
+  "main_plus_optional_daily_budget_sum": 297,
+  "new_CR7_campaign": {
+    "product_id": "6aaa83a2fb5605019bbfb9c9",
+    "daily_budget": 2,
+    "CPA_bid": 0.2,
+    "remove_from_original_CPA": "6aac7aa210e2ac00077587fd",
+    "status": "draft_not_created"
+  },
+  "actual_setting_changed": false,
+  "campaigns": [
+    {
+      "campaign_id": "6afaf5c7977c400007671131",
+      "name": "CPM_50商品_02",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 0,
+        "previewCount": 0,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6afaf12b580914000721c763",
+      "name": "CPM_50商品_01",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.0069734141931224475,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 1,
+        "previewCount": 11,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0.003782021686897323,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6afb0ede18ef9e0007cf39d9",
+      "name": "CPM_50商品_03",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.010143201946324013,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 1,
+        "previewCount": 18,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0.005849999999999999,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6afb1850b4eaf70007a68d4f",
+      "name": "CPM_50商品_05",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.09809005888846177,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 4,
+        "previewCount": 167,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0.03769868594183896,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6afb18794e94f5000716e046",
+      "name": "CPM_50商品_07",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.09063633730089381,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 14,
+        "previewCount": 152,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0.03349247659977314,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6afb1891822a8100076cb0a8",
+      "name": "CPM_50商品_08",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.1316462932023934,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 9,
+        "previewCount": 224,
+        "toCartCount": 1,
+        "acos": null
+      },
+      "peak_day_spent": 0.04857066678061076,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6afb18a234ee6b000745598b",
+      "name": "CPM_50商品_09",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.05372399723317314,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 0,
+        "previewCount": 85,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0.019115311521228258,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c8699197610007483bdc",
+      "name": "大额度尝试3",
+      "type": "CPM",
+      "current_daily_budget": 50,
+      "main_plan_daily_budget": 50,
+      "optional_lower_cap": 1,
+      "seven_day": {
+        "spent": 0.5883961007631532,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 11,
+        "previewCount": 1030,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0.13879587850036584,
+      "days_at_99pct_or_more": [],
+      "decision": "可选：缩减远高于实际日耗的配置额度，不作为已证明的现金节省",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c2e09197610007483bd1",
+      "name": "cpm3",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.05724977822643415,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 0,
+        "previewCount": 103,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0.02032697671311097,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c31f9a0dcc0007280b39",
+      "name": "cpm4",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.40954825312490056,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 21,
+        "previewCount": 689,
+        "toCartCount": 4,
+        "acos": null
+      },
+      "peak_day_spent": 0.08487073353315941,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c3b9843fbe000793c400",
+      "name": "cpm6",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.1629682714069041,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 10,
+        "previewCount": 274,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0.03853721913128774,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c47f822a8100076caff7",
+      "name": "cpm8",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.13273888054653324,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 2,
+        "previewCount": 233,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0.062195845193890424,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c4dc843fbe000793c402",
+      "name": "cpm9",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.0821712284124794,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 3,
+        "previewCount": 141,
+        "toCartCount": 2,
+        "acos": null
+      },
+      "peak_day_spent": 0.03615697720438842,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c525843fbe000793c404",
+      "name": "cpm10",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.12244895089098203,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 0,
+        "previewCount": 219,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0.02980249326662237,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c56c07bc8b0007c7fcec",
+      "name": "成人11月cpm1",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.04327556154565915,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 1,
+        "previewCount": 69,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0.01616938065277994,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c5b407bc8b0007c7fced",
+      "name": "成人11月cpm2",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.008344362230496952,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 0,
+        "previewCount": 20,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0.002989490462851426,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c6079197610007483bd7",
+      "name": "成人11月cpm3",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.04848053672243676,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 1,
+        "previewCount": 83,
+        "toCartCount": 1,
+        "acos": null
+      },
+      "peak_day_spent": 0.0126894357196727,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c706822a8100076caffa",
+      "name": "成人11月cpm4",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.025905341821702878,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 1,
+        "previewCount": 42,
+        "toCartCount": 1,
+        "acos": null
+      },
+      "peak_day_spent": 0.006414841585869002,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c7969197610007483bda",
+      "name": "10月成人儿童50cpm1",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.4398594029898382,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 24,
+        "previewCount": 701,
+        "toCartCount": 5,
+        "acos": null
+      },
+      "peak_day_spent": 0.08556830182183035,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6a9a9db5a7e89c0007872164",
+      "name": "热销产品",
+      "type": "CPA",
+      "current_daily_budget": 5,
+      "main_plan_daily_budget": 5,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 0,
+        "previewCount": 1,
+        "toCartCount": 0,
+        "acos": null
+      },
+      "peak_day_spent": 0,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6a936f3b622671000778ea8e",
+      "name": "有销量产品",
+      "type": "CPM",
+      "current_daily_budget": 5,
+      "main_plan_daily_budget": 5,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.009797459286353647,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 0,
+        "previewCount": 14,
+        "toCartCount": 1,
+        "acos": null
+      },
+      "peak_day_spent": 0.00328162821207669,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c823822a8100076caffd",
+      "name": "大额度尝试2",
+      "type": "CPM",
+      "current_daily_budget": 50,
+      "main_plan_daily_budget": 50,
+      "optional_lower_cap": 3,
+      "seven_day": {
+        "spent": 1.083759535723352,
+        "gmv": 34.980000000000004,
+        "purchaseCount": 5,
+        "openCount": 49,
+        "previewCount": 1787,
+        "toCartCount": 9,
+        "acos": 0.030982262313417722
+      },
+      "peak_day_spent": 0.2183185532980127,
+      "days_at_99pct_or_more": [],
+      "decision": "可选：缩减远高于实际日耗的配置额度，不作为已证明的现金节省",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c40c07bc8b0007c7fce9",
+      "name": "cpm7",
+      "type": "CPM",
+      "current_daily_budget": 20,
+      "main_plan_daily_budget": 20,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.35381500115761017,
+        "gmv": 3.99,
+        "purchaseCount": 1,
+        "openCount": 17,
+        "previewCount": 691,
+        "toCartCount": 3,
+        "acos": 0.08867543888661908
+      },
+      "peak_day_spent": 0.09441333758649767,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c7da843fbe000793c40a",
+      "name": "大额度尝试",
+      "type": "CPM",
+      "current_daily_budget": 35,
+      "main_plan_daily_budget": 35,
+      "optional_lower_cap": 3,
+      "seven_day": {
+        "spent": 1.9980398956369905,
+        "gmv": 20,
+        "purchaseCount": 1,
+        "openCount": 77,
+        "previewCount": 3196,
+        "toCartCount": 15,
+        "acos": 0.09990199478184952
+      },
+      "peak_day_spent": 0.41321191654708833,
+      "days_at_99pct_or_more": [],
+      "decision": "可选：缩减远高于实际日耗的配置额度，不作为已证明的现金节省",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6aa266b1ffbca40007fc76a7",
+      "name": "高价产生",
+      "type": "CPM",
+      "current_daily_budget": 5,
+      "main_plan_daily_budget": 5,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.7663928456671341,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 25,
+        "previewCount": 1610,
+        "toCartCount": 2,
+        "acos": null
+      },
+      "peak_day_spent": 0.14145179717518105,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6afb168119acb0000753ec7d",
+      "name": "CPM_50商品_04",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.4706816449074799,
+        "gmv": 3.99,
+        "purchaseCount": 1,
+        "openCount": 14,
+        "previewCount": 779,
+        "toCartCount": 4,
+        "acos": 0.1179653245382155
+      },
+      "peak_day_spent": 0.15827034172534757,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6a8cd24de84d9f0007cae4cb",
+      "name": "1",
+      "type": "CPA",
+      "current_daily_budget": 5,
+      "main_plan_daily_budget": 5,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 1.197,
+        "gmv": 7.98,
+        "purchaseCount": 2,
+        "openCount": 34,
+        "previewCount": 1125,
+        "toCartCount": 8,
+        "acos": 0.15
+      },
+      "peak_day_spent": 0.5985,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6abdada863e0d400072905cf",
+      "name": "童装卫衣竞价15%",
+      "type": "CPA",
+      "current_daily_budget": 5,
+      "main_plan_daily_budget": 5,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 4.4955,
+        "gmv": 29.97,
+        "purchaseCount": 3,
+        "openCount": 28,
+        "previewCount": 743,
+        "toCartCount": 4,
+        "acos": 0.15
+      },
+      "peak_day_spent": 1.4985,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6afb186418ef9e0007cf39da",
+      "name": "CPM_50商品_06",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.7135487053634272,
+        "gmv": 4.5,
+        "purchaseCount": 1,
+        "openCount": 32,
+        "previewCount": 1261,
+        "toCartCount": 7,
+        "acos": 0.15856637896965048
+      },
+      "peak_day_spent": 0.23855859420006387,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6a88653b1c9ca4000752a6cf",
+      "name": "折扣活动",
+      "type": "CPA",
+      "current_daily_budget": 5,
+      "main_plan_daily_budget": 5,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 2.082484,
+        "gmv": 11.95,
+        "purchaseCount": 3,
+        "openCount": 36,
+        "previewCount": 1130,
+        "toCartCount": 9,
+        "acos": 0.17426644351464438
+      },
+      "peak_day_spent": 1.388224,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c2a5822a8100076caff6",
+      "name": "cpm2",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 3.053517049873957,
+        "gmv": 15.96,
+        "purchaseCount": 4,
+        "openCount": 133,
+        "previewCount": 5833,
+        "toCartCount": 23,
+        "acos": 0.1913231234256865
+      },
+      "peak_day_spent": 0.6149025084717527,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6aac7aa210e2ac00077587fd",
+      "name": "蒋卫华二店的广告",
+      "type": "CPA",
+      "current_daily_budget": 5,
+      "main_plan_daily_budget": 5,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 25.984,
+        "gmv": 133.89999999999998,
+        "purchaseCount": 15,
+        "openCount": 160,
+        "previewCount": 4194,
+        "toCartCount": 28,
+        "acos": 0.19405526512322632
+      },
+      "peak_day_spent": 5,
+      "days_at_99pct_or_more": [
+        {
+          "date": "2026-11-14",
+          "spent": 4.998
+        },
+        {
+          "date": "2026-11-15",
+          "spent": 5
+        }
+      ],
+      "decision": "主方案保持5，CR7从本CPA移出后转独立组；其余499款维持，不给全部500款同时提高竞价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6a9d3599b5cfff0007d9fca1",
+      "name": "童装卫衣",
+      "type": "CPA",
+      "current_daily_budget": 5,
+      "main_plan_daily_budget": 5,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 4.7475000000000005,
+        "gmv": 18.990000000000002,
+        "purchaseCount": 3,
+        "openCount": 10,
+        "previewCount": 401,
+        "toCartCount": 1,
+        "acos": 0.25
+      },
+      "peak_day_spent": 3.6225,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c2269a0dcc0007280b38",
+      "name": "1",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 10,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 1.4324424120947354,
+        "gmv": 3.98,
+        "purchaseCount": 1,
+        "openCount": 41,
+        "previewCount": 2584,
+        "toCartCount": 12,
+        "acos": 0.35991015379264707
+      },
+      "peak_day_spent": 0.2840275953201736,
+      "days_at_99pct_or_more": [],
+      "decision": "维持预算，不全体加价",
+      "actual_setting_changed": false
+    },
+    {
+      "campaign_id": "6af7c37f0f93510007f57abc",
+      "name": "cpm5",
+      "type": "CPM",
+      "current_daily_budget": 10,
+      "main_plan_daily_budget": 8,
+      "optional_lower_cap": null,
+      "seven_day": {
+        "spent": 0.4680639592472277,
+        "gmv": 0,
+        "purchaseCount": 0,
+        "openCount": 23,
+        "previewCount": 878,
+        "toCartCount": 6,
+        "acos": null
+      },
+      "peak_day_spent": 1.312036244587429,
+      "days_at_99pct_or_more": [],
+      "decision": "主方案10→8，腾出2美元给CR7独立CPA；剩余49款不因零成交全体暂停",
+      "actual_setting_changed": false
+    }
+  ]
+}

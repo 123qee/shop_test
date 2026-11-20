@@ -1,0 +1,42 @@
+{
+  "suggestion_id": "joom-material-6a84510122176501953bc165",
+  "priority": 2,
+  "product_id": "6a84510122176501953bc165",
+  "short_name": "Ted Lasso BELIEVE短袖",
+  "issue": "标题/正文100%棉，后台未解析属性另有100%涤纶；平台提示产品内容不一致。",
+  "action": "核实实际成分后统一标题、描述和属性，清理误套材质字段；不按模板或AI猜材质。",
+  "evidence_strength": "强：字段冲突；实物材质尚未确认",
+  "needs": "该款真实面料组成；名称涉及品牌/作品时另核实适用平台要求",
+  "review": "先消除内容不一致提示，生效后看完整7日转化",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "source": "https://merchant.joom.com/panel/products/6a84510122176501953bc165",
+  "baseline": {
+    "shop": "Nineteen Wear",
+    "product_id": "6a84510122176501953bc165",
+    "source": "https://merchant.joom.com/panel/analytics/orders/store/6a817b93f5d3934528e70df7?limit=100&orderBy=openCount&order=desc",
+    "product_link": "https://merchant.joom.com/panel/products/6a84510122176501953bc165",
+    "window": "2026-10-22 to 2026-11-18 UTC+3",
+    "impressions": 145,
+    "clicks": 14,
+    "purchases": 0,
+    "cart": 6
+  },
+  "current_sizes": [
+    "2XL",
+    "3XL",
+    "L",
+    "M",
+    "S",
+    "XL",
+    "XS"
+  ],
+  "status": "建议，尚未执行",
+  "actual_setting_changed": false,
+  "event_type": "read_only_opportunity_review",
+  "recorded_at": "2026-11-19T15:21:13.607991+08:00",
+  "report": "商品诊断/2026-11-19/Joom优化机会-152113/优化建议.md",
+  "snapshot": "商品诊断/2026-11-19/Joom优化机会-152113/诊断快照.json",
+  "user_request": "看看我的joom还有什么可以优化的吗",
+  "execution_authorized_this_turn": false
+}

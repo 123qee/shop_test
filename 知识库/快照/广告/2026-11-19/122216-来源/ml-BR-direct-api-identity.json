@@ -1,0 +1,17 @@
+{
+  "source": "https://global-selling.mercadolibre.com/pa/api/admin-pads/ajax/campaigns/search?dateFrom=2026-10-21&dateTo=2026-11-19&limit=10&offset=0",
+  "captured_at": "2026-11-19T03:47:51.181054+00:00",
+  "advertiser_ids": [
+    1282818
+  ],
+  "paging": {
+    "offset": 0,
+    "total": 3,
+    "limit": 10
+  },
+  "campaign_ids": [
+    358114129,
+    358095168,
+    358588915
+  ]
+}

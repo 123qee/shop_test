@@ -1,0 +1,23 @@
+{
+  "suggestion_id": "ml-br-conversion",
+  "event_type": "confirmed_product_fact_and_description_correction",
+  "recorded_at": "2026-11-19T14:58:07.476683+08:00",
+  "platform": "mercadolibre",
+  "country": "BR",
+  "product_id": "MLB4824698219",
+  "user_confirmation": "我们的服装没有发光效果",
+  "changed_fields": [
+    "description"
+  ],
+  "actual_setting_changed": true,
+  "status": "描述明确不发光已保存刷新核验；标题受平台限制未改成功",
+  "title_edit_status": "blocked_by_platform_not_submitted",
+  "requested_title": "Camiseta Unissex Estampa Cubo Colorido Manga Curta",
+  "remaining_unknown": [
+    "实际面料精确配比",
+    "XL供应情况"
+  ],
+  "report": "商品优化/2026-11-19/巴西无发光修正-MLB4824698219-145807/修正记录.md",
+  "source": "https://global-selling.mercadolibre.com/publicaciones/MLB4824698219/modificar/omni",
+  "followup": "平台解除标题限制/处理目录匹配后再改本地标题；未授权自动向客服发送消息，不重上架、不覆盖其他国家。"
+}

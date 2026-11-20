@@ -1,0 +1,53 @@
+{
+  "new_refunds": [
+    {
+      "id": "VL8QPYM8",
+      "status": "refunded",
+      "storeId": "6a9d4221018d89bb9e5c22ef",
+      "quantity": 1,
+      "refundedTimestamp": "2026-11-19T09:45:52Z",
+      "currency": "USD",
+      "product_id": "6aaa9d48117009011e83bd72",
+      "priceInfo": {
+        "unitPrice": "9.99",
+        "origAmount": "9.99",
+        "orderPrice": "8.991",
+        "merchantRevenue": "7.64235",
+        "commissionAmount": "1.34865",
+        "refundAmount": "23.05384",
+        "merchantRevenueAsInInvoice": "7.64235",
+        "pspCommissionCharge": "0.458",
+        "pspCommissionAmount": "0.43554"
+      }
+    },
+    {
+      "id": "JVEGY576",
+      "status": "refunded",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "refundedTimestamp": "2026-11-19T20:42:01Z",
+      "currency": "USD",
+      "product_id": "6a868a318809ae01f99f4373",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "origAmount": "3.99",
+        "orderPrice": "3.99",
+        "merchantRevenue": "3.3915",
+        "commissionAmount": "0.5985",
+        "refundAmount": "8.09499",
+        "merchantRevenueAsInInvoice": "3.3915",
+        "pspCommissionCharge": "0.232278",
+        "pspCommissionAmount": "0.209852"
+      }
+    }
+  ],
+  "prior_field_updates": [
+    {
+      "id": "38Q2GWQJ",
+      "old": "14.624882",
+      "new": "14.647174",
+      "delta": 0.0222920000000002
+    }
+  ],
+  "prior_source": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-19/122216-来源/current-refund-financial-summary.json"
+}

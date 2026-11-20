@@ -1,0 +1,30 @@
+{
+  "suggestion_id": "product-optimize-r2-20261117-hooded",
+  "recorded_on": "2026-11-17",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "product_id": "6a87c89a35e86a010857e3d2",
+  "name": "纯色短袖连帽上衣",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status_at_verification": "平台审核中，编辑版本与在售版本不同",
+  "all_time_orders_before": 0,
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-16"
+  },
+  "period_clicks": 6,
+  "changes": [
+    "去除Sweater及未核实的Quick Dry表述",
+    "按原图将描述中的圆领改为连帽、印花改为纯色",
+    "补充抽绳、短袖连帽等搜索标签"
+  ],
+  "unresolved": [
+    "原有类目层级错误未更改，审核后需继续复核；不声称仅靠改文案已解决"
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/第二批/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/第二批/6a87c89a35e86a010857e3d2-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/第二批/6a87c89a35e86a010857e3d2-after.json",
+  "follow_up": "每天11点核对审核及在售版本；审核生效后观察3天流量、7天转化、14天归因及售后。低样本不判断效果，不自动再次改商品或投放。",
+  "outcome": "尚无优化后销量证据，不声称销量提升"
+}

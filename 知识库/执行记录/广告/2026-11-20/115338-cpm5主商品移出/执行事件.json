@@ -1,0 +1,47 @@
+{
+  "suggestion_id": "baseline-20261117-cpm5",
+  "event_type": "user_authorized_remove_single_product_from_cpm_campaign",
+  "recorded_at": "2026-11-20T11:53:38.231556+08:00",
+  "verified_at": "2026-11-20T03:52:25.032898+00:00",
+  "user_authorization": "用户明确：那你帮我处理一下；指此前建议移出cpm5主商品，保留商品及CPA",
+  "campaign_id": "6af7c37f0f93510007f57abc",
+  "product_id": "6a8c47d48f3b2901f2108df6",
+  "status": "已执行移出cpm5，CPA保留，观察中",
+  "actual_setting_changed": true,
+  "changed_fields": [
+    "仅移除目标商品在指定CPM活动中的挂接"
+  ],
+  "before_count": 50,
+  "after_count": 49,
+  "other_49_bid_changes": {},
+  "campaign_budget_before_after": [
+    10,
+    10
+  ],
+  "cpa_verification": {
+    "campaign_id": "6a8cd24de84d9f0007cae4cb",
+    "included": true,
+    "bid": 0.15,
+    "stats_28day": {
+      "previewCount": 10920,
+      "openCount": 247,
+      "purchaseCount": 8,
+      "toCartCount": 75,
+      "gmv": 31.92,
+      "spent": 4.788,
+      "discountedsUsd": 0,
+      "acos": 0.15,
+      "acosBid": 0.15,
+      "cpmBid": 0,
+      "cpp": 0.598,
+      "ctr": 0.02261904761904762,
+      "cr": 0.032388663967611336,
+      "cpm": 0.43846153846153846,
+      "cpc": 0.019384615384615386
+    },
+    "source": "https://api-merchant.joom.com/api/v3/ja/campaigns/products/with-stats/?id=6a8cd24de84d9f0007cae4cb&withCharts=true&statsFrom=1792702800000&statsTo=1795121999999"
+  },
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-20/115338-cpm5主商品移出/执行记录.md",
+  "review": "真实执行后24–72小时看增量CPM花费是否停止；7天看CPA及整体成交；14天看归因回补。历史花费不会因移出归零。",
+  "other_business_changes": false
+}

@@ -1,0 +1,269 @@
+{
+  "product_id": "6a842f66e32015012461bc44",
+  "orders": [
+    {
+      "id": "VL8D6Y9N",
+      "status": "shipped",
+      "quantity": 1,
+      "currency": "USD",
+      "orderTimestamp": "2026-11-15T10:07:21Z",
+      "approvedTimestamp": "2026-11-15T12:10:18Z",
+      "refundedTimestamp": null,
+      "isFinalCommission": true,
+      "priceInfo": {
+        "unitPrice": "3.98",
+        "origAmount": "3.98",
+        "orderPrice": "3.4029",
+        "merchantRevenue": "2.892465",
+        "commissionAmount": "0.510435",
+        "refundAmount": null,
+        "merchantRevenueAsInInvoice": "2.892465",
+        "pspCommissionCharge": null,
+        "pspCommissionAmount": "0.784125",
+        "discounts_sum": "0.577099"
+      }
+    },
+    {
+      "id": "GJ984EDE",
+      "status": "shipped",
+      "quantity": 1,
+      "currency": "USD",
+      "orderTimestamp": "2026-11-11T19:03:13Z",
+      "approvedTimestamp": "2026-11-11T21:04:26Z",
+      "refundedTimestamp": null,
+      "isFinalCommission": true,
+      "priceInfo": {
+        "unitPrice": "3.98",
+        "origAmount": "3.98",
+        "orderPrice": "3.555607",
+        "merchantRevenue": "3.022265",
+        "commissionAmount": "0.533342",
+        "refundAmount": null,
+        "merchantRevenueAsInInvoice": "3.022265",
+        "pspCommissionCharge": null,
+        "pspCommissionAmount": "1.102336",
+        "discounts_sum": "0.424392"
+      }
+    },
+    {
+      "id": "LM53MMLJ",
+      "status": "shipped",
+      "quantity": 1,
+      "currency": "USD",
+      "orderTimestamp": "2026-11-11T10:00:25Z",
+      "approvedTimestamp": "2026-11-11T12:01:23Z",
+      "refundedTimestamp": null,
+      "isFinalCommission": true,
+      "priceInfo": {
+        "unitPrice": "3.98",
+        "origAmount": "3.98",
+        "orderPrice": "3.4029",
+        "merchantRevenue": "2.892465",
+        "commissionAmount": "0.510435",
+        "refundAmount": null,
+        "merchantRevenueAsInInvoice": "2.892465",
+        "pspCommissionCharge": null,
+        "pspCommissionAmount": "0.993239",
+        "discounts_sum": "0.577099"
+      }
+    },
+    {
+      "id": "VL8LP537",
+      "status": "shipped",
+      "quantity": 1,
+      "currency": "USD",
+      "orderTimestamp": "2026-11-09T19:44:59Z",
+      "approvedTimestamp": "2026-11-09T21:47:35Z",
+      "refundedTimestamp": null,
+      "isFinalCommission": true,
+      "priceInfo": {
+        "unitPrice": "3.98",
+        "origAmount": "3.98",
+        "orderPrice": "3.555607",
+        "merchantRevenue": "3.022265",
+        "commissionAmount": "0.533342",
+        "refundAmount": null,
+        "merchantRevenueAsInInvoice": "3.022265",
+        "pspCommissionCharge": null,
+        "pspCommissionAmount": "2.411926",
+        "discounts_sum": "0.424392"
+      }
+    },
+    {
+      "id": "5GM2895D",
+      "status": "shipped",
+      "quantity": 1,
+      "currency": "USD",
+      "orderTimestamp": "2026-11-05T16:21:06Z",
+      "approvedTimestamp": "2026-11-05T18:21:59Z",
+      "refundedTimestamp": null,
+      "isFinalCommission": true,
+      "priceInfo": {
+        "unitPrice": "3.98",
+        "origAmount": "3.98",
+        "orderPrice": "3.4029",
+        "merchantRevenue": "2.892465",
+        "commissionAmount": "0.510435",
+        "refundAmount": null,
+        "merchantRevenueAsInInvoice": "2.892465",
+        "pspCommissionCharge": null,
+        "pspCommissionAmount": "2.510974",
+        "discounts_sum": "0.577099"
+      }
+    },
+    {
+      "id": "JVEMQ7L4",
+      "status": "shipped",
+      "quantity": 1,
+      "currency": "USD",
+      "orderTimestamp": "2026-10-25T14:03:02Z",
+      "approvedTimestamp": "2026-10-25T16:03:32Z",
+      "refundedTimestamp": null,
+      "isFinalCommission": true,
+      "priceInfo": {
+        "unitPrice": "3.98",
+        "origAmount": "3.98",
+        "orderPrice": "3.781",
+        "merchantRevenue": "3.21385",
+        "commissionAmount": "0.56715",
+        "refundAmount": null,
+        "merchantRevenueAsInInvoice": "3.21385",
+        "pspCommissionCharge": null,
+        "pspCommissionAmount": "0.225054",
+        "discounts_sum": "0.199"
+      }
+    },
+    {
+      "id": "26MVW43N",
+      "status": "shipped",
+      "quantity": 1,
+      "currency": "USD",
+      "orderTimestamp": "2026-10-25T14:03:02Z",
+      "approvedTimestamp": "2026-10-25T16:03:32Z",
+      "refundedTimestamp": null,
+      "isFinalCommission": true,
+      "priceInfo": {
+        "unitPrice": "3.98",
+        "origAmount": "3.98",
+        "orderPrice": "3.781",
+        "merchantRevenue": "3.21385",
+        "commissionAmount": "0.56715",
+        "refundAmount": null,
+        "merchantRevenueAsInInvoice": "3.21385",
+        "pspCommissionCharge": null,
+        "pspCommissionAmount": "0.225054",
+        "discounts_sum": "0.199"
+      }
+    },
+    {
+      "id": "5GNY75WD",
+      "status": "shipped",
+      "quantity": 1,
+      "currency": "USD",
+      "orderTimestamp": "2026-10-11T18:25:37Z",
+      "approvedTimestamp": "2026-10-11T20:27:53Z",
+      "refundedTimestamp": null,
+      "isFinalCommission": true,
+      "priceInfo": {
+        "unitPrice": "3.98",
+        "origAmount": "3.98",
+        "orderPrice": "3.98",
+        "merchantRevenue": "3.383",
+        "commissionAmount": "0.597",
+        "refundAmount": null,
+        "merchantRevenueAsInInvoice": "3.383",
+        "pspCommissionCharge": null,
+        "pspCommissionAmount": "0.378626",
+        "discounts_sum": "0"
+      }
+    },
+    {
+      "id": "VLDJX9MV",
+      "status": "shipped",
+      "quantity": 1,
+      "currency": "USD",
+      "orderTimestamp": "2026-10-11T18:25:37Z",
+      "approvedTimestamp": "2026-10-11T20:26:13Z",
+      "refundedTimestamp": null,
+      "isFinalCommission": true,
+      "priceInfo": {
+        "unitPrice": "3.98",
+        "origAmount": "3.98",
+        "orderPrice": "3.98",
+        "merchantRevenue": "3.383",
+        "commissionAmount": "0.597",
+        "refundAmount": null,
+        "merchantRevenueAsInInvoice": "3.383",
+        "pspCommissionCharge": null,
+        "pspCommissionAmount": "0.46799",
+        "discounts_sum": "0"
+      }
+    },
+    {
+      "id": "8LJDE53G",
+      "status": "shipped",
+      "quantity": 1,
+      "currency": "USD",
+      "orderTimestamp": "2026-10-03T19:08:05Z",
+      "approvedTimestamp": "2026-10-03T21:08:26Z",
+      "refundedTimestamp": null,
+      "isFinalCommission": true,
+      "priceInfo": {
+        "unitPrice": "3.98",
+        "origAmount": "3.98",
+        "orderPrice": "3.98",
+        "merchantRevenue": "3.2636",
+        "commissionAmount": "0.7164",
+        "refundAmount": null,
+        "merchantRevenueAsInInvoice": "3.2636",
+        "pspCommissionCharge": null,
+        "pspCommissionAmount": "0.330261",
+        "discounts_sum": "0"
+      }
+    },
+    {
+      "id": "67MWGV2V",
+      "status": "shipped",
+      "quantity": 1,
+      "currency": "USD",
+      "orderTimestamp": "2026-09-26T13:04:02Z",
+      "approvedTimestamp": "2026-09-26T15:06:15Z",
+      "refundedTimestamp": null,
+      "isFinalCommission": true,
+      "priceInfo": {
+        "unitPrice": "3.98",
+        "origAmount": "3.98",
+        "orderPrice": "3.781",
+        "merchantRevenue": "3.21385",
+        "commissionAmount": "0.56715",
+        "refundAmount": null,
+        "merchantRevenueAsInInvoice": "3.21385",
+        "pspCommissionCharge": null,
+        "pspCommissionAmount": "0.187355",
+        "discounts_sum": "0.199"
+      }
+    },
+    {
+      "id": "26QPXXVW",
+      "status": "shipped",
+      "quantity": 1,
+      "currency": "USD",
+      "orderTimestamp": "2026-09-16T08:07:15Z",
+      "approvedTimestamp": "2026-09-16T10:07:37Z",
+      "refundedTimestamp": null,
+      "isFinalCommission": true,
+      "priceInfo": {
+        "unitPrice": "3.98",
+        "origAmount": "3.98",
+        "orderPrice": "3.781",
+        "merchantRevenue": "3.21385",
+        "commissionAmount": "0.56715",
+        "refundAmount": null,
+        "merchantRevenueAsInInvoice": "3.21385",
+        "pspCommissionCharge": null,
+        "pspCommissionAmount": "0.115374",
+        "discounts_sum": "0.199"
+      }
+    }
+  ]
+}

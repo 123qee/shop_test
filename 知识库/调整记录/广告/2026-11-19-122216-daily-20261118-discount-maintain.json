@@ -1,0 +1,32 @@
+{
+  "recorded_at": "2026-11-19T12:22:16.441080+08:00",
+  "automation_id": "joom",
+  "event_type": "每日复查/设置观察",
+  "suggestion_id": "daily-20261118-discount-maintain",
+  "previous_event_recorded_at": "2026-11-18T11:57:40.880548+08:00",
+  "status": "建议维持",
+  "actual_setting_changed": false,
+  "execution_verified": false,
+  "observation": {
+    "suggestion_id": "daily-20261118-discount-maintain",
+    "priority": 3,
+    "scope": "折扣活动及示例SKU",
+    "campaign_id": "6a88653b1c9ca4000752a6cf",
+    "product_id": "6a868a318809ae01f99f4373",
+    "status": "建议维持",
+    "current": {
+      "daily_budget_usd": 5,
+      "example_cpa_percent": 17.4
+    },
+    "suggested": {
+      "daily_budget_usd": 5,
+      "example_cpa_percent": 17.4
+    },
+    "reason": "近7天6次购买，ACOS17.43%；平台竞争参考19.04%不是利润保证，原先17.4→18.3试验未授权执行，本次不叠加。",
+    "review": "先核折扣后贡献额、实盘库存及目的国配送，样本成熟后再决定单SKU测试。",
+    "source": "https://merchant.joom.com/panel/ads/campaigns/6a88653b1c9ca4000752a6cf",
+    "actual_setting_changed": false
+  },
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-19/122216.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-19/122216.json"
+}

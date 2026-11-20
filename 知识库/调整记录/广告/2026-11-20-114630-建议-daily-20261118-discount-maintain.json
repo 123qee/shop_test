@@ -1,0 +1,27 @@
+{
+  "id": "daily-20261118-discount-maintain",
+  "priority": 2,
+  "platform": "Joom",
+  "campaign_id": "6a88653b1c9ca4000752a6cf",
+  "product_id": "6a868a318809ae01f99f4373",
+  "current": {
+    "budget_usd": 5,
+    "example_cpa": 0.174
+  },
+  "suggested": {
+    "budget_usd": 5,
+    "example_cpa": 0.174
+  },
+  "status": "维持；先核质量退款",
+  "evidence": "7天花费2.082484、POGS11.95、3购买，ACOS17.43%；昨日活动0花费0归因。例款7天0花费0购买，参考18.95%只是竞争提示，不能直接上调。",
+  "confidence": "当前设置高；单SKU样本不足",
+  "effect": "控制获客成本，先解决质量与商品准确性",
+  "review": "核退款和真实质量，完整7日看转化；未解决前不提价加投",
+  "suggestion_id": "daily-20261118-discount-maintain",
+  "actual_setting_changed": false,
+  "recorded_at": "2026-11-20T11:46:30.093398+08:00",
+  "automation_id": "joom",
+  "event_type": "recommendation_not_executed",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-20/114630.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-20/114630.json"
+}

@@ -1,0 +1,204 @@
+{
+  "source": "https://api-merchant.joom.com/api/v3/ja/campaigns/products/with-stats/?id=6a936f3b622671000778ea8e&withCharts=true&statsFrom=1794517200000&statsTo=1795121999999",
+  "captured_at": "2026-11-20T03:56:29.305296+00:00",
+  "body": {
+    "data": {
+      "statsUpdateTs": 1795136120000,
+      "items": [
+        {
+          "id": "6a8c48f88f3b2901f210a32b",
+          "stats": {
+            "previewCount": 14,
+            "openCount": 0,
+            "purchaseCount": 0,
+            "toCartCount": 1,
+            "gmv": 0,
+            "spent": 0.009797459286353647,
+            "discountedsUsd": 0,
+            "acos": 0,
+            "acosBid": 0,
+            "cpmBid": 0,
+            "cpp": 0,
+            "ctr": 0,
+            "cr": 0,
+            "cpm": 0.6998185204538319,
+            "cpc": 0
+          },
+          "salePrice": 3.99,
+          "cpmBid": 1,
+          "notifications": []
+        },
+        {
+          "id": "6a8e23a417a6590152ccbda7",
+          "salePrice": 5,
+          "errorMessage": "Product is not public",
+          "errors": [
+            {
+              "code": "ProductNotPublic",
+              "fieldName": "productId",
+              "message": "Product is not public",
+              "params": {
+                "productId": "6a8e23a417a6590152ccbda7"
+              }
+            }
+          ],
+          "notifications": [
+            {
+              "severity": "critical",
+              "code": "ProductNotPublic",
+              "message": "Product is not public",
+              "fieldName": "productId",
+              "params": {
+                "productId": "6a8e23a417a6590152ccbda7"
+              },
+              "suggestions": []
+            }
+          ]
+        }
+      ],
+      "statsByDay": [
+        {
+          "t": 1794517200000,
+          "previewCount": 6,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0.001751001714460202,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "acosBid": 0,
+          "cpmBid": 0,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0.2918336190767003,
+          "cpc": 0
+        },
+        {
+          "t": 1794603600000,
+          "previewCount": 3,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0.002521946279535574,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "acosBid": 0,
+          "cpmBid": 0,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0.8406487598451914,
+          "cpc": 0
+        },
+        {
+          "t": 1794690000000,
+          "previewCount": 2,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0.00328162821207669,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "acosBid": 0,
+          "cpmBid": 0,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 1.640814106038345,
+          "cpc": 0
+        },
+        {
+          "t": 1794776400000,
+          "previewCount": 3,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0.002242883080281181,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "acosBid": 0,
+          "cpmBid": 0,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0.7476276934270604,
+          "cpc": 0
+        },
+        {
+          "t": 1794862800000,
+          "previewCount": 0,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0,
+          "cpc": 0
+        },
+        {
+          "t": 1794949200000,
+          "previewCount": 0,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0,
+          "cpc": 0
+        },
+        {
+          "t": 1795035600000,
+          "previewCount": 0,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 1,
+          "gmv": 0,
+          "spent": 0,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "acosBid": 0,
+          "cpmBid": 0,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0,
+          "cpc": 0
+        }
+      ]
+    }
+  },
+  "campaign_id": "6a936f3b622671000778ea8e",
+  "campaign_name": "有销量产品",
+  "bid_type": "CPM",
+  "daily_budget": 5,
+  "window": "7day",
+  "ui": {
+    "heading": "有销量产品",
+    "next_buttons": [
+      {
+        "disabled": true
+      }
+    ],
+    "row_count": 2,
+    "summary": "有销量产品\n分析数据时区\n重复\n编辑\n删除\n基本信息\n活动名称\n有销量产品\n每日预算\nUS$5\n开始日期\n2026年8月30日\n结束日期\n无\n产品\n2\n竞价方式\nCPM\n活动状态\n活性\n自动竞价策略\n目标ACOS\n目标ACOS\n20%\n筛选：\n产品ID\n最近7 天 (2026/11/13 – 2026/11/19)\n曝光量\n添加指标\n产品\n2\n产品\n问题\nCPM\nACOS\n价格\n曝光量\n点击率\n转化率\n单次购买成本\nPOGS\n花费\n\t\n6a8e23a417a6590152ccbda7\n\t\n 1\n",
+    "url": "https://merchant.joom.com/panel/ads/campaigns/6a936f3b622671000778ea8e?statsRange=%5B%222026-11-12T16%3A00%3A00.000Z%22%2C%222026-11-19T15%3A59%3A59.999Z%22%5D"
+  },
+  "advertiser_timezone": "UTC+03:00",
+  "currency": "USD",
+  "scope": "current included products; removed histories retained separately"
+}

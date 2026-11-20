@@ -1,0 +1,2868 @@
+[
+  {
+    "source": "https://api-merchant.joom.com/api/v3/analytics/contexts?from=2026-10-21&to=2026-11-17&storeId=%40total&contextName=%40itemize",
+    "captured_at": "2026-11-19T04:35:02.082983+00:00",
+    "body": {
+      "code": 0,
+      "data": {
+        "items": [
+          {
+            "date": "2026-10-21",
+            "contextName": "relatedComplement",
+            "openCount": 0,
+            "previewCount": 3,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-21",
+            "contextName": "link",
+            "openCount": 97,
+            "previewCount": 0,
+            "purchaseCount": 3,
+            "gmv": "33.97",
+            "revenue": "28.8745"
+          },
+          {
+            "date": "2026-10-21",
+            "contextName": "catalog",
+            "openCount": 4,
+            "previewCount": 350,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-21",
+            "contextName": "unknown",
+            "openCount": 25,
+            "previewCount": 1033,
+            "purchaseCount": 1,
+            "gmv": "9.99",
+            "revenue": "8.066925"
+          },
+          {
+            "date": "2026-10-21",
+            "contextName": "search",
+            "openCount": 51,
+            "previewCount": 1597,
+            "purchaseCount": 5,
+            "gmv": "21.46",
+            "revenue": "17.880175"
+          },
+          {
+            "date": "2026-10-21",
+            "contextName": "similar",
+            "openCount": 34,
+            "previewCount": 782,
+            "purchaseCount": 2,
+            "gmv": "14.49",
+            "revenue": "12.3165"
+          },
+          {
+            "date": "2026-10-21",
+            "contextName": "best",
+            "openCount": 21,
+            "previewCount": 806,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-22",
+            "contextName": "unknown",
+            "openCount": 34,
+            "previewCount": 1162,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-22",
+            "contextName": "search",
+            "openCount": 48,
+            "previewCount": 1694,
+            "purchaseCount": 3,
+            "gmv": "11.97",
+            "revenue": "9.665775"
+          },
+          {
+            "date": "2026-10-22",
+            "contextName": "store",
+            "openCount": 5,
+            "previewCount": 714,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-22",
+            "contextName": "similar",
+            "openCount": 24,
+            "previewCount": 726,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-22",
+            "contextName": "pgOffer",
+            "openCount": 0,
+            "previewCount": 7,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-22",
+            "contextName": "best",
+            "openCount": 32,
+            "previewCount": 866,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-22",
+            "contextName": "link",
+            "openCount": 88,
+            "previewCount": 0,
+            "purchaseCount": 4,
+            "gmv": "16.47",
+            "revenue": "13.490775"
+          },
+          {
+            "date": "2026-10-22",
+            "contextName": "relatedComplement",
+            "openCount": 0,
+            "previewCount": 12,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-22",
+            "contextName": "catalog",
+            "openCount": 2,
+            "previewCount": 471,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-23",
+            "contextName": "best",
+            "openCount": 19,
+            "previewCount": 937,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-23",
+            "contextName": "pgOffer",
+            "openCount": 1,
+            "previewCount": 13,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-23",
+            "contextName": "relatedComplement",
+            "openCount": 0,
+            "previewCount": 10,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-23",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 16,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-23",
+            "contextName": "search",
+            "openCount": 52,
+            "previewCount": 1842,
+            "purchaseCount": 1,
+            "gmv": "5",
+            "revenue": "4.25"
+          },
+          {
+            "date": "2026-10-23",
+            "contextName": "unknown",
+            "openCount": 37,
+            "previewCount": 978,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-23",
+            "contextName": "similar",
+            "openCount": 41,
+            "previewCount": 715,
+            "purchaseCount": 1,
+            "gmv": "3.99",
+            "revenue": "3.3915"
+          },
+          {
+            "date": "2026-10-23",
+            "contextName": "catalog",
+            "openCount": 1,
+            "previewCount": 395,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-23",
+            "contextName": "link",
+            "openCount": 85,
+            "previewCount": 0,
+            "purchaseCount": 2,
+            "gmv": "19.98",
+            "revenue": "16.558425"
+          },
+          {
+            "date": "2026-10-24",
+            "contextName": "pgOffer",
+            "openCount": 0,
+            "previewCount": 5,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-24",
+            "contextName": "catalog",
+            "openCount": 6,
+            "previewCount": 507,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-24",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 84,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-24",
+            "contextName": "best",
+            "openCount": 15,
+            "previewCount": 750,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-24",
+            "contextName": "similar",
+            "openCount": 47,
+            "previewCount": 882,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-24",
+            "contextName": "relatedComplement",
+            "openCount": 0,
+            "previewCount": 3,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-24",
+            "contextName": "link",
+            "openCount": 47,
+            "previewCount": 0,
+            "purchaseCount": 1,
+            "gmv": "4.5",
+            "revenue": "3.825"
+          },
+          {
+            "date": "2026-10-24",
+            "contextName": "search",
+            "openCount": 64,
+            "previewCount": 1892,
+            "purchaseCount": 1,
+            "gmv": "3.99",
+            "revenue": "3.3915"
+          },
+          {
+            "date": "2026-10-24",
+            "contextName": "unknown",
+            "openCount": 30,
+            "previewCount": 947,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-25",
+            "contextName": "store",
+            "openCount": 3,
+            "previewCount": 1138,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-25",
+            "contextName": "pgOffer",
+            "openCount": 0,
+            "previewCount": 6,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-25",
+            "contextName": "catalog",
+            "openCount": 7,
+            "previewCount": 648,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-25",
+            "contextName": "link",
+            "openCount": 72,
+            "previewCount": 0,
+            "purchaseCount": 4,
+            "gmv": "22.95",
+            "revenue": "18.744625"
+          },
+          {
+            "date": "2026-10-25",
+            "contextName": "unknown",
+            "openCount": 66,
+            "previewCount": 1348,
+            "purchaseCount": 1,
+            "gmv": "4.5",
+            "revenue": "3.63375"
+          },
+          {
+            "date": "2026-10-25",
+            "contextName": "similar",
+            "openCount": 43,
+            "previewCount": 946,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-25",
+            "contextName": "search",
+            "openCount": 65,
+            "previewCount": 2395,
+            "purchaseCount": 2,
+            "gmv": "7.98",
+            "revenue": "6.613425"
+          },
+          {
+            "date": "2026-10-25",
+            "contextName": "best",
+            "openCount": 25,
+            "previewCount": 869,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-25",
+            "contextName": "relatedComplement",
+            "openCount": 0,
+            "previewCount": 2,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-26",
+            "contextName": "best",
+            "openCount": 13,
+            "previewCount": 530,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-26",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 132,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-26",
+            "contextName": "pgOffer",
+            "openCount": 2,
+            "previewCount": 13,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-26",
+            "contextName": "unknown",
+            "openCount": 25,
+            "previewCount": 960,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-26",
+            "contextName": "catalog",
+            "openCount": 10,
+            "previewCount": 295,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-26",
+            "contextName": "similar",
+            "openCount": 38,
+            "previewCount": 876,
+            "purchaseCount": 1,
+            "gmv": "4.5",
+            "revenue": "3.63375"
+          },
+          {
+            "date": "2026-10-26",
+            "contextName": "link",
+            "openCount": 76,
+            "previewCount": 0,
+            "purchaseCount": 1,
+            "gmv": "9.99",
+            "revenue": "8.066925"
+          },
+          {
+            "date": "2026-10-26",
+            "contextName": "search",
+            "openCount": 43,
+            "previewCount": 1932,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-27",
+            "contextName": "search",
+            "openCount": 71,
+            "previewCount": 1844,
+            "purchaseCount": 2,
+            "gmv": "8.99",
+            "revenue": "7.259425"
+          },
+          {
+            "date": "2026-10-27",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 26,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-27",
+            "contextName": "best",
+            "openCount": 26,
+            "previewCount": 570,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-27",
+            "contextName": "catalog",
+            "openCount": 6,
+            "previewCount": 323,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-27",
+            "contextName": "link",
+            "openCount": 55,
+            "previewCount": 0,
+            "purchaseCount": 2,
+            "gmv": "8.99",
+            "revenue": "7.259425"
+          },
+          {
+            "date": "2026-10-27",
+            "contextName": "pgOffer",
+            "openCount": 0,
+            "previewCount": 13,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-27",
+            "contextName": "unknown",
+            "openCount": 23,
+            "previewCount": 1026,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-27",
+            "contextName": "relatedComplement",
+            "openCount": 0,
+            "previewCount": 45,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-27",
+            "contextName": "similar",
+            "openCount": 19,
+            "previewCount": 759,
+            "purchaseCount": 1,
+            "gmv": "4.5",
+            "revenue": "3.63375"
+          },
+          {
+            "date": "2026-10-28",
+            "contextName": "unknown",
+            "openCount": 15,
+            "previewCount": 1188,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-28",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 12,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-28",
+            "contextName": "best",
+            "openCount": 5,
+            "previewCount": 494,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-28",
+            "contextName": "pgOffer",
+            "openCount": 0,
+            "previewCount": 17,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-28",
+            "contextName": "link",
+            "openCount": 83,
+            "previewCount": 0,
+            "purchaseCount": 6,
+            "gmv": "28.99",
+            "revenue": "23.621925"
+          },
+          {
+            "date": "2026-10-28",
+            "contextName": "catalog",
+            "openCount": 3,
+            "previewCount": 482,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-28",
+            "contextName": "relatedComplement",
+            "openCount": 0,
+            "previewCount": 8,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-28",
+            "contextName": "search",
+            "openCount": 47,
+            "previewCount": 1893,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-28",
+            "contextName": "similar",
+            "openCount": 29,
+            "previewCount": 815,
+            "purchaseCount": 1,
+            "gmv": "3.99",
+            "revenue": "3.3915"
+          },
+          {
+            "date": "2026-10-29",
+            "contextName": "catalog",
+            "openCount": 1,
+            "previewCount": 642,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-29",
+            "contextName": "search",
+            "openCount": 40,
+            "previewCount": 1782,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-29",
+            "contextName": "unknown",
+            "openCount": 23,
+            "previewCount": 940,
+            "purchaseCount": 4,
+            "gmv": "18.05",
+            "revenue": "15.3425"
+          },
+          {
+            "date": "2026-10-29",
+            "contextName": "pgOffer",
+            "openCount": 1,
+            "previewCount": 18,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-29",
+            "contextName": "relatedComplement",
+            "openCount": 0,
+            "previewCount": 13,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-29",
+            "contextName": "similar",
+            "openCount": 27,
+            "previewCount": 688,
+            "purchaseCount": 2,
+            "gmv": "8.54",
+            "revenue": "7.259"
+          },
+          {
+            "date": "2026-10-29",
+            "contextName": "best",
+            "openCount": 16,
+            "previewCount": 465,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-29",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 4,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-29",
+            "contextName": "link",
+            "openCount": 87,
+            "previewCount": 0,
+            "purchaseCount": 3,
+            "gmv": "11.97",
+            "revenue": "10.1745"
+          },
+          {
+            "date": "2026-10-30",
+            "contextName": "similar",
+            "openCount": 9,
+            "previewCount": 714,
+            "purchaseCount": 1,
+            "gmv": "9.99",
+            "revenue": "8.066925"
+          },
+          {
+            "date": "2026-10-30",
+            "contextName": "search",
+            "openCount": 57,
+            "previewCount": 1587,
+            "purchaseCount": 2,
+            "gmv": "13.99",
+            "revenue": "11.4665"
+          },
+          {
+            "date": "2026-10-30",
+            "contextName": "pgOffer",
+            "openCount": 0,
+            "previewCount": 89,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-30",
+            "contextName": "unknown",
+            "openCount": 18,
+            "previewCount": 913,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-30",
+            "contextName": "link",
+            "openCount": 70,
+            "previewCount": 0,
+            "purchaseCount": 4,
+            "gmv": "23.98",
+            "revenue": "19.533"
+          },
+          {
+            "date": "2026-10-30",
+            "contextName": "catalog",
+            "openCount": 8,
+            "previewCount": 529,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-30",
+            "contextName": "relatedComplement",
+            "openCount": 0,
+            "previewCount": 16,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-30",
+            "contextName": "best",
+            "openCount": 18,
+            "previewCount": 387,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-30",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 6,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-31",
+            "contextName": "link",
+            "openCount": 75,
+            "previewCount": 0,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-31",
+            "contextName": "pgOffer",
+            "openCount": 2,
+            "previewCount": 408,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-31",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 8,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-31",
+            "contextName": "unknown",
+            "openCount": 22,
+            "previewCount": 755,
+            "purchaseCount": 1,
+            "gmv": "3.98",
+            "revenue": "3.383"
+          },
+          {
+            "date": "2026-10-31",
+            "contextName": "search",
+            "openCount": 52,
+            "previewCount": 1775,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-31",
+            "contextName": "best",
+            "openCount": 11,
+            "previewCount": 415,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-31",
+            "contextName": "similar",
+            "openCount": 24,
+            "previewCount": 712,
+            "purchaseCount": 1,
+            "gmv": "3.98",
+            "revenue": "3.383"
+          },
+          {
+            "date": "2026-10-31",
+            "contextName": "relatedComplement",
+            "openCount": 0,
+            "previewCount": 3,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-31",
+            "contextName": "catalog",
+            "openCount": 5,
+            "previewCount": 434,
+            "purchaseCount": 1,
+            "gmv": "3.99",
+            "revenue": "3.3915"
+          },
+          {
+            "date": "2026-11-01",
+            "contextName": "search",
+            "openCount": 68,
+            "previewCount": 2163,
+            "purchaseCount": 3,
+            "gmv": "11.97",
+            "revenue": "9.081636"
+          },
+          {
+            "date": "2026-11-01",
+            "contextName": "unknown",
+            "openCount": 23,
+            "previewCount": 879,
+            "purchaseCount": 1,
+            "gmv": "4.5",
+            "revenue": "3.4425"
+          },
+          {
+            "date": "2026-11-01",
+            "contextName": "store",
+            "openCount": 1,
+            "previewCount": 170,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-01",
+            "contextName": "relatedComplement",
+            "openCount": 0,
+            "previewCount": 1,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-01",
+            "contextName": "pgOffer",
+            "openCount": 5,
+            "previewCount": 420,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-01",
+            "contextName": "similar",
+            "openCount": 42,
+            "previewCount": 821,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-01",
+            "contextName": "catalog",
+            "openCount": 3,
+            "previewCount": 484,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-01",
+            "contextName": "link",
+            "openCount": 73,
+            "previewCount": 0,
+            "purchaseCount": 3,
+            "gmv": "20",
+            "revenue": "14.452082"
+          },
+          {
+            "date": "2026-11-01",
+            "contextName": "best",
+            "openCount": 14,
+            "previewCount": 468,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-02",
+            "contextName": "unknown",
+            "openCount": 65,
+            "previewCount": 890,
+            "purchaseCount": 1,
+            "gmv": "9.99",
+            "revenue": "7.64235"
+          },
+          {
+            "date": "2026-11-02",
+            "contextName": "pgOffer",
+            "openCount": 0,
+            "previewCount": 140,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-02",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 34,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-02",
+            "contextName": "search",
+            "openCount": 33,
+            "previewCount": 1805,
+            "purchaseCount": 2,
+            "gmv": "8.98",
+            "revenue": "6.847265"
+          },
+          {
+            "date": "2026-11-02",
+            "contextName": "similar",
+            "openCount": 50,
+            "previewCount": 749,
+            "purchaseCount": 1,
+            "gmv": "3.99",
+            "revenue": "3.028609"
+          },
+          {
+            "date": "2026-11-02",
+            "contextName": "best",
+            "openCount": 7,
+            "previewCount": 451,
+            "purchaseCount": 1,
+            "gmv": "4.55",
+            "revenue": "3.48075"
+          },
+          {
+            "date": "2026-11-02",
+            "contextName": "link",
+            "openCount": 73,
+            "previewCount": 0,
+            "purchaseCount": 5,
+            "gmv": "43.49",
+            "revenue": "33.524595"
+          },
+          {
+            "date": "2026-11-02",
+            "contextName": "relatedComplement",
+            "openCount": 0,
+            "previewCount": 3,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-02",
+            "contextName": "catalog",
+            "openCount": 3,
+            "previewCount": 342,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-03",
+            "contextName": "unknown",
+            "openCount": 38,
+            "previewCount": 754,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-03",
+            "contextName": "best",
+            "openCount": 17,
+            "previewCount": 482,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-03",
+            "contextName": "catalog",
+            "openCount": 4,
+            "previewCount": 444,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-03",
+            "contextName": "search",
+            "openCount": 47,
+            "previewCount": 1939,
+            "purchaseCount": 1,
+            "gmv": "9.99",
+            "revenue": "7.50224"
+          },
+          {
+            "date": "2026-11-03",
+            "contextName": "similar",
+            "openCount": 43,
+            "previewCount": 979,
+            "purchaseCount": 1,
+            "gmv": "3.98",
+            "revenue": "3.021864"
+          },
+          {
+            "date": "2026-11-03",
+            "contextName": "link",
+            "openCount": 62,
+            "previewCount": 0,
+            "purchaseCount": 1,
+            "gmv": "3.98",
+            "revenue": "2.94321"
+          },
+          {
+            "date": "2026-11-03",
+            "contextName": "pgOffer",
+            "openCount": 0,
+            "previewCount": 107,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-04",
+            "contextName": "catalog",
+            "openCount": 3,
+            "previewCount": 593,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-04",
+            "contextName": "best",
+            "openCount": 23,
+            "previewCount": 489,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-04",
+            "contextName": "unknown",
+            "openCount": 56,
+            "previewCount": 962,
+            "purchaseCount": 2,
+            "gmv": "7.98",
+            "revenue": "6.054424"
+          },
+          {
+            "date": "2026-11-04",
+            "contextName": "link",
+            "openCount": 85,
+            "previewCount": 0,
+            "purchaseCount": 6,
+            "gmv": "42.98",
+            "revenue": "33.860849"
+          },
+          {
+            "date": "2026-11-04",
+            "contextName": "similar",
+            "openCount": 36,
+            "previewCount": 1015,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-04",
+            "contextName": "pgOffer",
+            "openCount": 2,
+            "previewCount": 119,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-04",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 74,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-04",
+            "contextName": "search",
+            "openCount": 81,
+            "previewCount": 2471,
+            "purchaseCount": 1,
+            "gmv": "9.99",
+            "revenue": "7.64235"
+          },
+          {
+            "date": "2026-11-05",
+            "contextName": "relatedComplement",
+            "openCount": 0,
+            "previewCount": 3,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-05",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 38,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-05",
+            "contextName": "unknown",
+            "openCount": 31,
+            "previewCount": 848,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-05",
+            "contextName": "link",
+            "openCount": 60,
+            "previewCount": 0,
+            "purchaseCount": 3,
+            "gmv": "12.98",
+            "revenue": "10.006965"
+          },
+          {
+            "date": "2026-11-05",
+            "contextName": "catalog",
+            "openCount": 2,
+            "previewCount": 683,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-05",
+            "contextName": "search",
+            "openCount": 70,
+            "previewCount": 2292,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-05",
+            "contextName": "pgOffer",
+            "openCount": 1,
+            "previewCount": 243,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-05",
+            "contextName": "similar",
+            "openCount": 32,
+            "previewCount": 801,
+            "purchaseCount": 1,
+            "gmv": "5",
+            "revenue": "3.825"
+          },
+          {
+            "date": "2026-11-05",
+            "contextName": "best",
+            "openCount": 3,
+            "previewCount": 456,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-06",
+            "contextName": "unknown",
+            "openCount": 30,
+            "previewCount": 1136,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-06",
+            "contextName": "search",
+            "openCount": 87,
+            "previewCount": 2604,
+            "purchaseCount": 2,
+            "gmv": "13.97",
+            "revenue": "10.664615"
+          },
+          {
+            "date": "2026-11-06",
+            "contextName": "pgOffer",
+            "openCount": 2,
+            "previewCount": 120,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-06",
+            "contextName": "best",
+            "openCount": 13,
+            "previewCount": 470,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-06",
+            "contextName": "store",
+            "openCount": 1,
+            "previewCount": 98,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-06",
+            "contextName": "link",
+            "openCount": 77,
+            "previewCount": 0,
+            "purchaseCount": 6,
+            "gmv": "27.47",
+            "revenue": "21.73136"
+          },
+          {
+            "date": "2026-11-06",
+            "contextName": "similar",
+            "openCount": 40,
+            "previewCount": 884,
+            "purchaseCount": 1,
+            "gmv": "3.99",
+            "revenue": "3.027212"
+          },
+          {
+            "date": "2026-11-06",
+            "contextName": "catalog",
+            "openCount": 16,
+            "previewCount": 967,
+            "purchaseCount": 2,
+            "gmv": "9",
+            "revenue": "6.885"
+          },
+          {
+            "date": "2026-11-07",
+            "contextName": "catalog",
+            "openCount": 28,
+            "previewCount": 1099,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-07",
+            "contextName": "pgOffer",
+            "openCount": 0,
+            "previewCount": 93,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-07",
+            "contextName": "similar",
+            "openCount": 46,
+            "previewCount": 1056,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-07",
+            "contextName": "search",
+            "openCount": 87,
+            "previewCount": 2724,
+            "purchaseCount": 3,
+            "gmv": "18.99",
+            "revenue": "14.52735"
+          },
+          {
+            "date": "2026-11-07",
+            "contextName": "link",
+            "openCount": 88,
+            "previewCount": 0,
+            "purchaseCount": 5,
+            "gmv": "24.5",
+            "revenue": "20.4425"
+          },
+          {
+            "date": "2026-11-07",
+            "contextName": "best",
+            "openCount": 9,
+            "previewCount": 467,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-07",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 0,
+            "purchaseCount": 1,
+            "gmv": "9.99",
+            "revenue": "7.897095"
+          },
+          {
+            "date": "2026-11-07",
+            "contextName": "unknown",
+            "openCount": 34,
+            "previewCount": 1126,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-08",
+            "contextName": "pgOffer",
+            "openCount": 2,
+            "previewCount": 176,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-08",
+            "contextName": "best",
+            "openCount": 20,
+            "previewCount": 522,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-08",
+            "contextName": "catalog",
+            "openCount": 10,
+            "previewCount": 1250,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-08",
+            "contextName": "unknown",
+            "openCount": 51,
+            "previewCount": 1394,
+            "purchaseCount": 1,
+            "gmv": "10",
+            "revenue": "8.5"
+          },
+          {
+            "date": "2026-11-08",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 4,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-08",
+            "contextName": "search",
+            "openCount": 105,
+            "previewCount": 3362,
+            "purchaseCount": 1,
+            "gmv": "4.5",
+            "revenue": "3.55725"
+          },
+          {
+            "date": "2026-11-08",
+            "contextName": "link",
+            "openCount": 125,
+            "previewCount": 0,
+            "purchaseCount": 6,
+            "gmv": "44.99",
+            "revenue": "36.584595"
+          },
+          {
+            "date": "2026-11-08",
+            "contextName": "similar",
+            "openCount": 48,
+            "previewCount": 1167,
+            "purchaseCount": 2,
+            "gmv": "8.49",
+            "revenue": "6.469712"
+          },
+          {
+            "date": "2026-11-09",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 34,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-09",
+            "contextName": "unknown",
+            "openCount": 54,
+            "previewCount": 1138,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-09",
+            "contextName": "pgOffer",
+            "openCount": 0,
+            "previewCount": 75,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-09",
+            "contextName": "search",
+            "openCount": 70,
+            "previewCount": 2771,
+            "purchaseCount": 2,
+            "gmv": "13.98",
+            "revenue": "11.119275"
+          },
+          {
+            "date": "2026-11-09",
+            "contextName": "similar",
+            "openCount": 77,
+            "previewCount": 1172,
+            "purchaseCount": 4,
+            "gmv": "22.52",
+            "revenue": "17.803296"
+          },
+          {
+            "date": "2026-11-09",
+            "contextName": "best",
+            "openCount": 12,
+            "previewCount": 343,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-09",
+            "contextName": "link",
+            "openCount": 69,
+            "previewCount": 0,
+            "purchaseCount": 2,
+            "gmv": "14.99",
+            "revenue": "11.67985"
+          },
+          {
+            "date": "2026-11-09",
+            "contextName": "catalog",
+            "openCount": 19,
+            "previewCount": 1072,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-10",
+            "contextName": "catalog",
+            "openCount": 24,
+            "previewCount": 967,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-10",
+            "contextName": "pgOffer",
+            "openCount": 1,
+            "previewCount": 88,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-10",
+            "contextName": "similar",
+            "openCount": 47,
+            "previewCount": 1146,
+            "purchaseCount": 2,
+            "gmv": "14.49",
+            "revenue": "11.08485"
+          },
+          {
+            "date": "2026-11-10",
+            "contextName": "link",
+            "openCount": 91,
+            "previewCount": 0,
+            "purchaseCount": 6,
+            "gmv": "38.46",
+            "revenue": "29.611965"
+          },
+          {
+            "date": "2026-11-10",
+            "contextName": "best",
+            "openCount": 11,
+            "previewCount": 339,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-10",
+            "contextName": "unknown",
+            "openCount": 48,
+            "previewCount": 955,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-10",
+            "contextName": "search",
+            "openCount": 83,
+            "previewCount": 2820,
+            "purchaseCount": 3,
+            "gmv": "18.98",
+            "revenue": "14.707062"
+          },
+          {
+            "date": "2026-11-11",
+            "contextName": "best",
+            "openCount": 10,
+            "previewCount": 340,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-11",
+            "contextName": "pgOffer",
+            "openCount": 0,
+            "previewCount": 160,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-11",
+            "contextName": "similar",
+            "openCount": 45,
+            "previewCount": 1228,
+            "purchaseCount": 3,
+            "gmv": "17.97",
+            "revenue": "14.549477"
+          },
+          {
+            "date": "2026-11-11",
+            "contextName": "unknown",
+            "openCount": 47,
+            "previewCount": 1031,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-11",
+            "contextName": "store",
+            "openCount": 1,
+            "previewCount": 652,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-11",
+            "contextName": "catalog",
+            "openCount": 12,
+            "previewCount": 2046,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-11",
+            "contextName": "link",
+            "openCount": 105,
+            "previewCount": 0,
+            "purchaseCount": 8,
+            "gmv": "51.92",
+            "revenue": "41.367498"
+          },
+          {
+            "date": "2026-11-11",
+            "contextName": "search",
+            "openCount": 68,
+            "previewCount": 3131,
+            "purchaseCount": 1,
+            "gmv": "3.99",
+            "revenue": "3.027212"
+          },
+          {
+            "date": "2026-11-12",
+            "contextName": "best",
+            "openCount": 19,
+            "previewCount": 382,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-12",
+            "contextName": "similar",
+            "openCount": 38,
+            "previewCount": 1055,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-12",
+            "contextName": "unknown",
+            "openCount": 21,
+            "previewCount": 786,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-12",
+            "contextName": "catalog",
+            "openCount": 7,
+            "previewCount": 1076,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-12",
+            "contextName": "pgOffer",
+            "openCount": 2,
+            "previewCount": 140,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-12",
+            "contextName": "link",
+            "openCount": 116,
+            "previewCount": 0,
+            "purchaseCount": 3,
+            "gmv": "23.96",
+            "revenue": "19.156115"
+          },
+          {
+            "date": "2026-11-12",
+            "contextName": "search",
+            "openCount": 66,
+            "previewCount": 2513,
+            "purchaseCount": 3,
+            "gmv": "12.51",
+            "revenue": "9.523648"
+          },
+          {
+            "date": "2026-11-12",
+            "contextName": "store",
+            "openCount": 8,
+            "previewCount": 60,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-13",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 10,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-13",
+            "contextName": "unknown",
+            "openCount": 21,
+            "previewCount": 666,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-13",
+            "contextName": "pgOffer",
+            "openCount": 1,
+            "previewCount": 63,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-13",
+            "contextName": "search",
+            "openCount": 51,
+            "previewCount": 2272,
+            "purchaseCount": 2,
+            "gmv": "7.98",
+            "revenue": "6.082265"
+          },
+          {
+            "date": "2026-11-13",
+            "contextName": "link",
+            "openCount": 71,
+            "previewCount": 0,
+            "purchaseCount": 8,
+            "gmv": "50.94",
+            "revenue": "39.366648"
+          },
+          {
+            "date": "2026-11-13",
+            "contextName": "best",
+            "openCount": 14,
+            "previewCount": 390,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-13",
+            "contextName": "catalog",
+            "openCount": 3,
+            "previewCount": 360,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-13",
+            "contextName": "similar",
+            "openCount": 18,
+            "previewCount": 1185,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-14",
+            "contextName": "best",
+            "openCount": 35,
+            "previewCount": 987,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-14",
+            "contextName": "store",
+            "openCount": 3,
+            "previewCount": 152,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-14",
+            "contextName": "pgOffer",
+            "openCount": 1,
+            "previewCount": 48,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-14",
+            "contextName": "similar",
+            "openCount": 34,
+            "previewCount": 1360,
+            "purchaseCount": 2,
+            "gmv": "7.98",
+            "revenue": "6.079562"
+          },
+          {
+            "date": "2026-11-14",
+            "contextName": "catalog",
+            "openCount": 3,
+            "previewCount": 568,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-14",
+            "contextName": "link",
+            "openCount": 117,
+            "previewCount": 0,
+            "purchaseCount": 10,
+            "gmv": "63.96",
+            "revenue": "50.572165"
+          },
+          {
+            "date": "2026-11-14",
+            "contextName": "search",
+            "openCount": 85,
+            "previewCount": 3245,
+            "purchaseCount": 2,
+            "gmv": "7.98",
+            "revenue": "6.054424"
+          },
+          {
+            "date": "2026-11-14",
+            "contextName": "unknown",
+            "openCount": 21,
+            "previewCount": 1400,
+            "purchaseCount": 1,
+            "gmv": "4.5",
+            "revenue": "3.4425"
+          },
+          {
+            "date": "2026-11-15",
+            "contextName": "unknown",
+            "openCount": 38,
+            "previewCount": 1745,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-15",
+            "contextName": "pgOffer",
+            "openCount": 4,
+            "previewCount": 206,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-15",
+            "contextName": "search",
+            "openCount": 112,
+            "previewCount": 4214,
+            "purchaseCount": 4,
+            "gmv": "22.46",
+            "revenue": "17.134327"
+          },
+          {
+            "date": "2026-11-15",
+            "contextName": "similar",
+            "openCount": 72,
+            "previewCount": 1829,
+            "purchaseCount": 2,
+            "gmv": "14.99",
+            "revenue": "11.89235"
+          },
+          {
+            "date": "2026-11-15",
+            "contextName": "store",
+            "openCount": 1,
+            "previewCount": 66,
+            "purchaseCount": 2,
+            "gmv": "7.98",
+            "revenue": "6.057218"
+          },
+          {
+            "date": "2026-11-15",
+            "contextName": "catalog",
+            "openCount": 13,
+            "previewCount": 1038,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-15",
+            "contextName": "best",
+            "openCount": 20,
+            "previewCount": 1051,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-15",
+            "contextName": "link",
+            "openCount": 156,
+            "previewCount": 0,
+            "purchaseCount": 9,
+            "gmv": "49.42",
+            "revenue": "39.578004"
+          },
+          {
+            "date": "2026-11-16",
+            "contextName": "search",
+            "openCount": 104,
+            "previewCount": 3596,
+            "purchaseCount": 1,
+            "gmv": "4.5",
+            "revenue": "3.55725"
+          },
+          {
+            "date": "2026-11-16",
+            "contextName": "link",
+            "openCount": 131,
+            "previewCount": 0,
+            "purchaseCount": 8,
+            "gmv": "66.95",
+            "revenue": "52.06565"
+          },
+          {
+            "date": "2026-11-16",
+            "contextName": "catalog",
+            "openCount": 13,
+            "previewCount": 1397,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-16",
+            "contextName": "similar",
+            "openCount": 43,
+            "previewCount": 1436,
+            "purchaseCount": 1,
+            "gmv": "4.5",
+            "revenue": "3.4425"
+          },
+          {
+            "date": "2026-11-16",
+            "contextName": "pgOffer",
+            "openCount": 2,
+            "previewCount": 144,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-16",
+            "contextName": "unknown",
+            "openCount": 41,
+            "previewCount": 1623,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-16",
+            "contextName": "best",
+            "openCount": 16,
+            "previewCount": 885,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-17",
+            "contextName": "catalog",
+            "openCount": 12,
+            "previewCount": 1097,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-17",
+            "contextName": "pgOffer",
+            "openCount": 2,
+            "previewCount": 106,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-17",
+            "contextName": "best",
+            "openCount": 22,
+            "previewCount": 1017,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-17",
+            "contextName": "similar",
+            "openCount": 51,
+            "previewCount": 1555,
+            "purchaseCount": 1,
+            "gmv": "9.99",
+            "revenue": "7.64235"
+          },
+          {
+            "date": "2026-11-17",
+            "contextName": "search",
+            "openCount": 76,
+            "previewCount": 3715,
+            "purchaseCount": 3,
+            "gmv": "13.99",
+            "revenue": "11.316109"
+          },
+          {
+            "date": "2026-11-17",
+            "contextName": "store",
+            "openCount": 0,
+            "previewCount": 66,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-17",
+            "contextName": "unknown",
+            "openCount": 46,
+            "previewCount": 1791,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-17",
+            "contextName": "link",
+            "openCount": 111,
+            "previewCount": 0,
+            "purchaseCount": 7,
+            "gmv": "43.47",
+            "revenue": "34.344976"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "source": "https://api-merchant.joom.com/api/v3/analytics/contexts?from=2026-10-21&to=2026-11-17&storeId=%40itemize&contextName=%40total",
+    "captured_at": "2026-11-19T04:35:02.090294+00:00",
+    "body": {
+      "code": 0,
+      "data": {
+        "items": [
+          {
+            "date": "2026-10-21",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 161,
+            "previewCount": 3571,
+            "purchaseCount": 8,
+            "gmv": "44.92",
+            "revenue": "37.821175"
+          },
+          {
+            "date": "2026-10-21",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 28,
+            "previewCount": 396,
+            "purchaseCount": 1,
+            "gmv": "20",
+            "revenue": "17"
+          },
+          {
+            "date": "2026-10-21",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 43,
+            "previewCount": 604,
+            "purchaseCount": 2,
+            "gmv": "14.99",
+            "revenue": "12.316925"
+          },
+          {
+            "date": "2026-10-22",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 177,
+            "previewCount": 4669,
+            "purchaseCount": 7,
+            "gmv": "28.44",
+            "revenue": "23.15655"
+          },
+          {
+            "date": "2026-10-22",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 13,
+            "previewCount": 357,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-22",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 43,
+            "previewCount": 626,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-23",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 56,
+            "previewCount": 674,
+            "purchaseCount": 2,
+            "gmv": "19.98",
+            "revenue": "16.558425"
+          },
+          {
+            "date": "2026-10-23",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 11,
+            "previewCount": 361,
+            "purchaseCount": 1,
+            "gmv": "5",
+            "revenue": "4.25"
+          },
+          {
+            "date": "2026-10-23",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 169,
+            "previewCount": 3871,
+            "purchaseCount": 1,
+            "gmv": "3.99",
+            "revenue": "3.3915"
+          },
+          {
+            "date": "2026-10-24",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 40,
+            "previewCount": 687,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-24",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 21,
+            "previewCount": 395,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-24",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 148,
+            "previewCount": 3988,
+            "purchaseCount": 2,
+            "gmv": "8.49",
+            "revenue": "7.2165"
+          },
+          {
+            "date": "2026-10-25",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 21,
+            "previewCount": 540,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-25",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 51,
+            "previewCount": 805,
+            "purchaseCount": 2,
+            "gmv": "14.99",
+            "revenue": "12.316925"
+          },
+          {
+            "date": "2026-10-25",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 209,
+            "previewCount": 6007,
+            "purchaseCount": 5,
+            "gmv": "20.44",
+            "revenue": "16.674875"
+          },
+          {
+            "date": "2026-10-26",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 16,
+            "previewCount": 496,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-26",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 37,
+            "previewCount": 651,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-26",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 154,
+            "previewCount": 3591,
+            "purchaseCount": 2,
+            "gmv": "14.49",
+            "revenue": "11.700675"
+          },
+          {
+            "date": "2026-10-27",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 35,
+            "previewCount": 436,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-27",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 37,
+            "previewCount": 672,
+            "purchaseCount": 2,
+            "gmv": "10",
+            "revenue": "8.075"
+          },
+          {
+            "date": "2026-10-27",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 128,
+            "previewCount": 3498,
+            "purchaseCount": 3,
+            "gmv": "12.48",
+            "revenue": "10.0776"
+          },
+          {
+            "date": "2026-10-28",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 109,
+            "previewCount": 3750,
+            "purchaseCount": 5,
+            "gmv": "22.98",
+            "revenue": "18.725925"
+          },
+          {
+            "date": "2026-10-28",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 51,
+            "previewCount": 703,
+            "purchaseCount": 2,
+            "gmv": "10",
+            "revenue": "8.2875"
+          },
+          {
+            "date": "2026-10-28",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 22,
+            "previewCount": 456,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-29",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 30,
+            "previewCount": 441,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-29",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 31,
+            "previewCount": 656,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-29",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 134,
+            "previewCount": 3455,
+            "purchaseCount": 9,
+            "gmv": "38.56",
+            "revenue": "32.776"
+          },
+          {
+            "date": "2026-10-30",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 42,
+            "previewCount": 409,
+            "purchaseCount": 2,
+            "gmv": "20",
+            "revenue": "16.15"
+          },
+          {
+            "date": "2026-10-30",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 115,
+            "previewCount": 3231,
+            "purchaseCount": 3,
+            "gmv": "17.96",
+            "revenue": "14.841425"
+          },
+          {
+            "date": "2026-10-30",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 23,
+            "previewCount": 601,
+            "purchaseCount": 2,
+            "gmv": "10",
+            "revenue": "8.075"
+          },
+          {
+            "date": "2026-10-31",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 60,
+            "previewCount": 654,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-10-31",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 94,
+            "previewCount": 3437,
+            "purchaseCount": 3,
+            "gmv": "11.95",
+            "revenue": "10.1575"
+          },
+          {
+            "date": "2026-10-31",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 37,
+            "previewCount": 419,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-01",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 152,
+            "previewCount": 3855,
+            "purchaseCount": 5,
+            "gmv": "26.47",
+            "revenue": "18.476218"
+          },
+          {
+            "date": "2026-11-01",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 45,
+            "previewCount": 792,
+            "purchaseCount": 2,
+            "gmv": "10",
+            "revenue": "8.5"
+          },
+          {
+            "date": "2026-11-01",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 32,
+            "previewCount": 759,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-02",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 144,
+            "previewCount": 3091,
+            "purchaseCount": 7,
+            "gmv": "37.01",
+            "revenue": "28.521219"
+          },
+          {
+            "date": "2026-11-02",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 34,
+            "previewCount": 434,
+            "purchaseCount": 2,
+            "gmv": "24",
+            "revenue": "18.36"
+          },
+          {
+            "date": "2026-11-02",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 53,
+            "previewCount": 889,
+            "purchaseCount": 1,
+            "gmv": "9.99",
+            "revenue": "7.64235"
+          },
+          {
+            "date": "2026-11-03",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 41,
+            "previewCount": 559,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-03",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 125,
+            "previewCount": 3261,
+            "purchaseCount": 3,
+            "gmv": "17.95",
+            "revenue": "13.467314"
+          },
+          {
+            "date": "2026-11-03",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 45,
+            "previewCount": 885,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-04",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 43,
+            "previewCount": 688,
+            "purchaseCount": 1,
+            "gmv": "20",
+            "revenue": "15.3"
+          },
+          {
+            "date": "2026-11-04",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 84,
+            "previewCount": 1054,
+            "purchaseCount": 2,
+            "gmv": "10",
+            "revenue": "8.5"
+          },
+          {
+            "date": "2026-11-04",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 159,
+            "previewCount": 3981,
+            "purchaseCount": 6,
+            "gmv": "30.95",
+            "revenue": "23.757623"
+          },
+          {
+            "date": "2026-11-05",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 121,
+            "previewCount": 3834,
+            "purchaseCount": 3,
+            "gmv": "12.98",
+            "revenue": "10.006965"
+          },
+          {
+            "date": "2026-11-05",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 39,
+            "previewCount": 876,
+            "purchaseCount": 1,
+            "gmv": "5",
+            "revenue": "3.825"
+          },
+          {
+            "date": "2026-11-05",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 39,
+            "previewCount": 654,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-06",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 193,
+            "previewCount": 4535,
+            "purchaseCount": 7,
+            "gmv": "29.44",
+            "revenue": "22.553337"
+          },
+          {
+            "date": "2026-11-06",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 27,
+            "previewCount": 770,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-06",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 46,
+            "previewCount": 974,
+            "purchaseCount": 4,
+            "gmv": "24.99",
+            "revenue": "19.75485"
+          },
+          {
+            "date": "2026-11-07",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 36,
+            "previewCount": 631,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-07",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 175,
+            "previewCount": 4816,
+            "purchaseCount": 4,
+            "gmv": "23.49",
+            "revenue": "18.224595"
+          },
+          {
+            "date": "2026-11-07",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 81,
+            "previewCount": 1118,
+            "purchaseCount": 5,
+            "gmv": "29.99",
+            "revenue": "24.64235"
+          },
+          {
+            "date": "2026-11-08",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 67,
+            "previewCount": 793,
+            "purchaseCount": 3,
+            "gmv": "30",
+            "revenue": "25.5"
+          },
+          {
+            "date": "2026-11-08",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 208,
+            "previewCount": 5662,
+            "purchaseCount": 6,
+            "gmv": "32.98",
+            "revenue": "25.574057"
+          },
+          {
+            "date": "2026-11-08",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 86,
+            "previewCount": 1420,
+            "purchaseCount": 1,
+            "gmv": "5",
+            "revenue": "4.0375"
+          },
+          {
+            "date": "2026-11-09",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 27,
+            "previewCount": 557,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-09",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 151,
+            "previewCount": 4653,
+            "purchaseCount": 5,
+            "gmv": "26.51",
+            "revenue": "20.431071"
+          },
+          {
+            "date": "2026-11-09",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 123,
+            "previewCount": 1395,
+            "purchaseCount": 3,
+            "gmv": "24.98",
+            "revenue": "20.17135"
+          },
+          {
+            "date": "2026-11-10",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 32,
+            "previewCount": 620,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-10",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 188,
+            "previewCount": 4463,
+            "purchaseCount": 7,
+            "gmv": "36.96",
+            "revenue": "28.439327"
+          },
+          {
+            "date": "2026-11-10",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 85,
+            "previewCount": 1232,
+            "purchaseCount": 4,
+            "gmv": "34.97",
+            "revenue": "26.96455"
+          },
+          {
+            "date": "2026-11-11",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 33,
+            "previewCount": 644,
+            "purchaseCount": 1,
+            "gmv": "10",
+            "revenue": "8.5"
+          },
+          {
+            "date": "2026-11-11",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 160,
+            "previewCount": 6144,
+            "purchaseCount": 7,
+            "gmv": "33.9",
+            "revenue": "26.022837"
+          },
+          {
+            "date": "2026-11-11",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 95,
+            "previewCount": 1800,
+            "purchaseCount": 4,
+            "gmv": "29.98",
+            "revenue": "24.42135"
+          },
+          {
+            "date": "2026-11-12",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 46,
+            "previewCount": 626,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-12",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 66,
+            "previewCount": 1369,
+            "purchaseCount": 2,
+            "gmv": "19.98",
+            "revenue": "16.13385"
+          },
+          {
+            "date": "2026-11-12",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 165,
+            "previewCount": 4017,
+            "purchaseCount": 4,
+            "gmv": "16.49",
+            "revenue": "12.545913"
+          },
+          {
+            "date": "2026-11-13",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 92,
+            "previewCount": 3023,
+            "purchaseCount": 8,
+            "gmv": "44.93",
+            "revenue": "34.746563"
+          },
+          {
+            "date": "2026-11-13",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 61,
+            "previewCount": 1405,
+            "purchaseCount": 1,
+            "gmv": "9.99",
+            "revenue": "7.64235"
+          },
+          {
+            "date": "2026-11-13",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 26,
+            "previewCount": 518,
+            "purchaseCount": 1,
+            "gmv": "4",
+            "revenue": "3.06"
+          },
+          {
+            "date": "2026-11-14",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 31,
+            "previewCount": 874,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-14",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 185,
+            "previewCount": 5609,
+            "purchaseCount": 7,
+            "gmv": "29.45",
+            "revenue": "22.397876"
+          },
+          {
+            "date": "2026-11-14",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 83,
+            "previewCount": 1277,
+            "purchaseCount": 8,
+            "gmv": "54.97",
+            "revenue": "43.750775"
+          },
+          {
+            "date": "2026-11-15",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 130,
+            "previewCount": 1877,
+            "purchaseCount": 6,
+            "gmv": "43.97",
+            "revenue": "35.6762"
+          },
+          {
+            "date": "2026-11-15",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 236,
+            "previewCount": 7225,
+            "purchaseCount": 11,
+            "gmv": "50.88",
+            "revenue": "38.985699"
+          },
+          {
+            "date": "2026-11-15",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 50,
+            "previewCount": 1047,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-16",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 40,
+            "previewCount": 1006,
+            "purchaseCount": 1,
+            "gmv": "20",
+            "revenue": "15.3"
+          },
+          {
+            "date": "2026-11-16",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 116,
+            "previewCount": 1571,
+            "purchaseCount": 4,
+            "gmv": "34.98",
+            "revenue": "27.6097"
+          },
+          {
+            "date": "2026-11-16",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 194,
+            "previewCount": 6504,
+            "purchaseCount": 5,
+            "gmv": "20.97",
+            "revenue": "16.1557"
+          },
+          {
+            "date": "2026-11-17",
+            "storeId": "6a817b93f5d3934528e70df7",
+            "openCount": 151,
+            "previewCount": 6606,
+            "purchaseCount": 3,
+            "gmv": "12.98",
+            "revenue": "10.167635"
+          },
+          {
+            "date": "2026-11-17",
+            "storeId": "6a8c4690b1e1819ed91f9baa",
+            "openCount": 43,
+            "previewCount": 992,
+            "purchaseCount": 0,
+            "gmv": "0",
+            "revenue": "0"
+          },
+          {
+            "date": "2026-11-17",
+            "storeId": "6a9d4221018d89bb9e5c22ef",
+            "openCount": 126,
+            "previewCount": 1749,
+            "purchaseCount": 8,
+            "gmv": "54.47",
+            "revenue": "43.1358"
+          }
+        ]
+      }
+    }
+  }
+]

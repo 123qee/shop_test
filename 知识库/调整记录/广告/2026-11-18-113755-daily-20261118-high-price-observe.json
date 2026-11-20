@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-11-18T11:57:40.880548+08:00",
+  "event_type": "定时复查/建议更新",
+  "automation_id": "joom",
+  "suggestion_id": "daily-20261118-high-price-observe",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-18/113755.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-18/113755.json",
+  "actual_setting_changed": false,
+  "execution_verified": false,
+  "observation": {
+    "suggestion_id": "daily-20261118-high-price-observe",
+    "priority": 5,
+    "scope": "活动",
+    "campaign_id": "6aa266b1ffbca40007fc76a7",
+    "status": "观察中",
+    "current": {
+      "daily_budget_usd": 5,
+      "cpm_bid_usd": 0.5
+    },
+    "suggested": {
+      "daily_budget_usd": 5,
+      "cpm_bid_usd": 0.5
+    },
+    "reason": "28天ACOS8.63%但近7天40次点击、花费0.96美元而无成交；不沿用旧低ACOS直接放量，也不把无销售ACOS显示0%视为优秀。",
+    "review": "继续观察72小时并等待归因；若新增花费达到同SKU一单可承受广告额仍无成交，再按商品评估降价或暂停，先不全停。",
+    "source": "https://merchant.joom.com/panel/ads/campaigns/6aa266b1ffbca40007fc76a7",
+    "executed": false
+  }
+}

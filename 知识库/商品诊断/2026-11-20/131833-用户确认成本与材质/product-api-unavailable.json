@@ -1,0 +1,33 @@
+{
+  "network": {
+    "count": 3,
+    "requests": [
+      {
+        "requestId": "6EAB1D65D08EB22FE89472D8AF82DCE6",
+        "url": "https://api-merchant.joom.com/api/v3/ja/campaigns/merchantNotifications",
+        "method": "OPTIONS",
+        "completed": false
+      },
+      {
+        "requestId": "4AD3B63DB89B533E053F2EEE0A46AD13",
+        "url": "https://api-merchant.joom.com/api/v3/products/edlp/multi/count",
+        "method": "OPTIONS",
+        "completed": false
+      },
+      {
+        "requestId": "49819EBB122304F932B6DF8FCEFCA3CB",
+        "url": "https://api-merchant.joom.com/api/v3/products?id=6a842f66e32015012461bc44&locale=zh-CN",
+        "method": "OPTIONS",
+        "completed": false
+      }
+    ],
+    "workId": "a7c5d20d-8f08-43c5-b4cd-e78fedba6dca"
+  },
+  "ui": {
+    "url": "https://merchant.joom.com/panel/products/6a842f66e32015012461bc44",
+    "title": "Joom for Merchants",
+    "tree_text": "",
+    "ref_policy": "stable-node",
+    "workId": "a7c5d20d-8f08-43c5-b4cd-e78fedba6dca"
+  }
+}

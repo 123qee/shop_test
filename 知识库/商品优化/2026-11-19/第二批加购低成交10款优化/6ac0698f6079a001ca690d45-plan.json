@@ -1,0 +1,28 @@
+{
+  "product_id": "6ac0698f6079a001ca690d45",
+  "name_cn": "纯色儿童拉链卫衣",
+  "kind": "儿童拉链卫衣",
+  "title": "Kids' Solid Color Cotton Zip-Up Hoodie, Long Sleeve",
+  "intro": "Children's solid-color cotton hoodie with a full front zip, a hood and long sleeves. Check the selected color in the product images.\n\nFIT: Sizes 100–160. Compare the garment bust, length, shoulder and sleeve measurements with a well-fitting hoodie; age and height are guides only. All measurements are in cm; allow the stated 2–3 cm manual measurement difference. Select a color/design and check the available sizes.",
+  "replacements": {
+    "Collar Type: Round Neck": "Collar Type: Hooded",
+    "Pattern Type: Printed": "Pattern Type: Solid Color"
+  },
+  "tags": [
+    "kids hoodie",
+    "zip up hoodie",
+    "cotton hoodie",
+    "long sleeve",
+    "solid color",
+    "boys hoodie",
+    "girls hoodie",
+    "hooded top",
+    "kids jacket",
+    "casual hoodie"
+  ],
+  "attribute_targets": {
+    "Neck Style": "Hooded Neck",
+    "Pattern": "solid"
+  },
+  "verified_size_range": "100–160"
+}

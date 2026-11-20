@@ -1,0 +1,86 @@
+{
+  "source": "https://api-merchant.joom.com/api/v3/analytics/contexts?from=2026-10-20&to=2026-11-16&storeId=%40total&contextName=%40itemize",
+  "groups": [
+    {
+      "code": "link",
+      "previewCount": 0.0,
+      "openCount": 2396.0,
+      "purchaseCount": 122.0,
+      "gmv": 780.7500000000001,
+      "ctr": null,
+      "cr": 0.05091819699499165
+    },
+    {
+      "code": "search",
+      "previewCount": 66094.0,
+      "openCount": 1879.0,
+      "purchaseCount": 49.0,
+      "gmv": 252.13999999999996,
+      "ctr": 0.02842920688716071,
+      "cr": 0.026077700904736562
+    },
+    {
+      "code": "similar",
+      "previewCount": 27174.0,
+      "openCount": 1067.0,
+      "purchaseCount": 33.0,
+      "gmv": 175.38,
+      "ctr": 0.039265474350482076,
+      "cr": 0.030927835051546393
+    },
+    {
+      "code": "unknown",
+      "previewCount": 29626.0,
+      "openCount": 978.0,
+      "purchaseCount": 13.0,
+      "gmv": 73.49,
+      "ctr": 0.03301154391412948,
+      "cr": 0.013292433537832311
+    },
+    {
+      "code": "store",
+      "previewCount": 3992.0,
+      "openCount": 27.0,
+      "purchaseCount": 3.0,
+      "gmv": 17.97,
+      "ctr": 0.006763527054108216,
+      "cr": 0.1111111111111111
+    },
+    {
+      "code": "catalog",
+      "previewCount": 19752.0,
+      "openCount": 219.0,
+      "purchaseCount": 3.0,
+      "gmv": 12.99,
+      "ctr": 0.011087484811664642,
+      "cr": 0.0136986301369863
+    },
+    {
+      "code": "best",
+      "previewCount": 16186.0,
+      "openCount": 459.0,
+      "purchaseCount": 1.0,
+      "gmv": 4.55,
+      "ctr": 0.028357840108735946,
+      "cr": 0.002178649237472767
+    },
+    {
+      "code": "pgOffer",
+      "previewCount": 2941.0,
+      "openCount": 30.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.010200612036722203,
+      "cr": 0.0
+    },
+    {
+      "code": "relatedComplement",
+      "previewCount": 132.0,
+      "openCount": 0.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.0,
+      "cr": null
+    }
+  ]
+}

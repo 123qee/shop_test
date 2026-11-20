@@ -1,0 +1,6 @@
+{
+  "captured_at": "2026-11-18T03:53:24.734Z",
+  "count": "22",
+  "filters": "\n店铺：所有\n订单ID\n产品ID\n产品SKU\n状态: 已退款、被Joom退款\n2\n批准日期\n假期批准日期\n添加筛选器\n订单\n22\n",
+  "url": "https://merchant.joom.com/panel/orders?limit=100&statuses=%5B%22refunded%22%2C%22paidByJoomRefund%22%5D"
+}

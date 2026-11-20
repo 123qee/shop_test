@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-11-18T14:51:23.160226+08:00",
+  "mercadolibre_ads": {
+    "MX": {
+      "campaigns": 16,
+      "display": "blocked_reputation",
+      "budget_usd": 27,
+      "window": [
+        "2026-10-20",
+        "2026-11-18"
+      ],
+      "complete_days_only": false,
+      "attributed_revenue": 0,
+      "spend": 0,
+      "acos": null,
+      "timezone": null
+    },
+    "BR": {
+      "expected_advertiser": "1282818",
+      "observed_advertiser": "1282817",
+      "status": "account_mismatch",
+      "spend": null,
+      "attributed_revenue": null,
+      "acos": null
+    },
+    "AR": {
+      "expected_advertiser": "2246873",
+      "observed_advertiser": "1282817",
+      "status": "account_mismatch",
+      "spend": null,
+      "attributed_revenue": null,
+      "acos": null
+    },
+    "CL": {
+      "expected_advertiser": "1282819",
+      "observed_advertiser": "1282817",
+      "status": "account_mismatch",
+      "spend": null,
+      "attributed_revenue": null,
+      "acos": null
+    },
+    "CO": {
+      "expected_advertiser": "1282820",
+      "observed_advertiser": "1282817",
+      "status": "account_mismatch",
+      "spend": null,
+      "attributed_revenue": null,
+      "acos": null
+    }
+  },
+  "summary_card_clicks": {
+    "MX": 0,
+    "BR": 121,
+    "AR": 540,
+    "CL": 1078,
+    "CO": 0
+  },
+  "summary_card_window_verified": false,
+  "sources": "快照/店铺经营/2026-11-18/145123-来源",
+  "joom_report": "日报/广告/2026-11-18/113755.md"
+}

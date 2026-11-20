@@ -1,0 +1,1155 @@
+{
+  "source": "https://api-merchant.joom.com/api/v3/ja/with/stats/campaigns/?start=1795035600000&end=1795121999999&limit=100&offset=0&sortBy=acos&sortDirection=asc",
+  "captured_at": "2026-11-19T03:19:22.501633+00:00",
+  "window_start": "2026-11-19",
+  "window_end": "2026-11-19",
+  "body": {
+    "data": {
+      "campaigns": [
+        {
+          "id": "6afaf12b580914000721c763",
+          "name": "CPM_50商品_01",
+          "dailyBudget": 10,
+          "startDate": 1794758400000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-15T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912125
+          }
+        },
+        {
+          "id": "6afaf5c7977c400007671131",
+          "name": "CPM_50商品_02",
+          "dailyBudget": 10,
+          "startDate": 1794758400000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-15T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912125
+          }
+        },
+        {
+          "id": "6afb0ede18ef9e0007cf39d9",
+          "name": "CPM_50商品_03",
+          "dailyBudget": 10,
+          "startDate": 1794758400000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-15T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912125
+          }
+        },
+        {
+          "id": "6afb168119acb0000753ec7d",
+          "name": "CPM_50商品_04",
+          "dailyBudget": 10,
+          "startDate": 1794758400000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-15T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912125
+          }
+        },
+        {
+          "id": "6afb1850b4eaf70007a68d4f",
+          "name": "CPM_50商品_05",
+          "dailyBudget": 10,
+          "startDate": 1794758400000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-15T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912125
+          }
+        },
+        {
+          "id": "6afb186418ef9e0007cf39da",
+          "name": "CPM_50商品_06",
+          "dailyBudget": 10,
+          "startDate": 1794758400000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-15T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912125
+          }
+        },
+        {
+          "id": "6afb18794e94f5000716e046",
+          "name": "CPM_50商品_07",
+          "dailyBudget": 10,
+          "startDate": 1794758400000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-15T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912125
+          }
+        },
+        {
+          "id": "6afb1891822a8100076cb0a8",
+          "name": "CPM_50商品_08",
+          "dailyBudget": 10,
+          "startDate": 1794758400000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-15T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912125
+          }
+        },
+        {
+          "id": "6afb18a234ee6b000745598b",
+          "name": "CPM_50商品_09",
+          "dailyBudget": 10,
+          "startDate": 1794758400000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-15T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912125
+          }
+        },
+        {
+          "id": "6af7c823822a8100076caffd",
+          "name": "大额度尝试2",
+          "dailyBudget": 50,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 500,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c8699197610007483bdc",
+          "name": "大额度尝试3",
+          "dailyBudget": 50,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 404,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c7da843fbe000793c40a",
+          "name": "大额度尝试",
+          "dailyBudget": 35,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 500,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c40c07bc8b0007c7fce9",
+          "name": "cpm7",
+          "dailyBudget": 20,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 100,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c2269a0dcc0007280b38",
+          "name": "1",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c2a5822a8100076caff6",
+          "name": "cpm2",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c2e09197610007483bd1",
+          "name": "cpm3",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c31f9a0dcc0007280b39",
+          "name": "cpm4",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c37f0f93510007f57abc",
+          "name": "cpm5",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c3b9843fbe000793c400",
+          "name": "cpm6",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c47f822a8100076caff7",
+          "name": "cpm8",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 100,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c4dc843fbe000793c402",
+          "name": "cpm9",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 100,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c525843fbe000793c404",
+          "name": "cpm10",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 93,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c56c07bc8b0007c7fcec",
+          "name": "成人11月cpm1",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c5b407bc8b0007c7fced",
+          "name": "成人11月cpm2",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c6079197610007483bd7",
+          "name": "成人11月cpm3",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c706822a8100076caffa",
+          "name": "成人11月cpm4",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 32,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6af7c7969197610007483bda",
+          "name": "10月成人儿童50cpm1",
+          "dailyBudget": 10,
+          "startDate": 1794585600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 50,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-11-13T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912127
+          }
+        },
+        {
+          "id": "6abdada863e0d400072905cf",
+          "name": "童装卫衣竞价15%",
+          "dailyBudget": 5,
+          "startDate": 1790784000000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 209,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": false,
+          "bidType": "CPA",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-09-30T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912171
+          }
+        },
+        {
+          "id": "6aac7aa210e2ac00077587fd",
+          "name": "蒋卫华二店的广告",
+          "dailyBudget": 5,
+          "startDate": 1789660800000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 500,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": false,
+          "bidType": "CPA",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-09-17T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912184
+          }
+        },
+        {
+          "id": "6aa266b1ffbca40007fc76a7",
+          "name": "高价产生",
+          "dailyBudget": 5,
+          "startDate": 1788969600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 194,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-09-09T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912192
+          }
+        },
+        {
+          "id": "6a9d3599b5cfff0007d9fca1",
+          "name": "童装卫衣",
+          "dailyBudget": 5,
+          "startDate": 1788624000000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 192,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": false,
+          "bidType": "CPA",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-09-05T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912196
+          }
+        },
+        {
+          "id": "6a9a9db5a7e89c0007872164",
+          "name": "热销产品",
+          "dailyBudget": 5,
+          "startDate": 1788451200000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 1,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": false,
+          "bidType": "CPA",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-09-03T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912198
+          }
+        },
+        {
+          "id": "6a936f3b622671000778ea8e",
+          "name": "有销量产品",
+          "dailyBudget": 5,
+          "startDate": 1788019200000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 2,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": true,
+          "bidType": "CPM",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": true,
+          "autoBiddingParams": {
+            "type": "TARGET_ACOS",
+            "targetACOS": 0.20000000298023224
+          },
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-08-29T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912203
+          }
+        },
+        {
+          "id": "6a8cd24de84d9f0007cae4cb",
+          "name": "1",
+          "dailyBudget": 5,
+          "startDate": 1787587200000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 440,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": false,
+          "bidType": "CPA",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-08-24T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912208
+          }
+        },
+        {
+          "id": "6a88653b1c9ca4000752a6cf",
+          "name": "折扣活动",
+          "dailyBudget": 5,
+          "startDate": 1787241600000,
+          "state": "active",
+          "stats": {
+            "maxNumProducts": 500,
+            "numProducts": 182,
+            "currency": "USD"
+          },
+          "currency": "USD",
+          "auction": "EXTERNAL",
+          "discountsAllowed": true,
+          "promotionAllowed": true,
+          "cpmBidding": false,
+          "bidType": "CPA",
+          "placement": {
+            "best": true,
+            "catalog": true,
+            "search": true,
+            "similar": true
+          },
+          "autoBidding": false,
+          "groupPromotion": false,
+          "notifications": [],
+          "dateRange": {
+            "start": "2026-08-20T16:00:00.000+0000",
+            "end": "9999-12-31T23:59:59.000+0000",
+            "durationInDays": 2912212
+          }
+        }
+      ],
+      "statsByDay": [
+        {
+          "t": 1795035600000,
+          "previewCount": 0,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0,
+          "cpc": 0
+        }
+      ],
+      "statsUpdateTs": 1795048395000
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "suggestion_id": "product-optimize-next10-20261118-6aba58305ef7d90176396d41",
+  "event_type": "user_authorized_product_content_optimization",
+  "recorded_at": "2026-11-18T13:11:29.188031+08:00",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "product_id": "6aba58305ef7d90176396d41",
+  "name": "排球女孩图案儿童拉链卫衣",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status_at_verification": "编辑版本已保存，平台审核中",
+  "effective_at": null,
+  "all_time_orders_before": 0,
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-16"
+  },
+  "period_metrics": {
+    "impressions": 325,
+    "clicks": 29,
+    "cart": 3,
+    "purchases": 0
+  },
+  "changes": {
+    "title_before": "Girls' Volleyball Graphic Zip-Up Hoodie, 100% Cotton, Long Sleeve",
+    "title_after": "Girls' Volleyball Girl Print Zip-Up Hoodie, Cotton Long Sleeve Sweatshirt",
+    "description_intro": "Girls' cotton zip-up hoodie with a volleyball player and Volleyball Girl lettering printed on the front and back. The hooded style has long sleeves. Choose your preferred color and compare your child's measurements with the garment size chart below before ordering.",
+    "description_replacements": {
+      "Children's zip-up hoodie with a volleyball player graphic, long sleeves and a 100% cotton construction. The product details list ages 3–12 and an autumn/winter style.\n\n": ""
+    },
+    "search_tags_before": "volleyball hoodie,girls zip up hoodie,cotton kids sweatshirt,youth volleyball hoodie,kids graphic hoodie",
+    "search_tags_after": [
+      "girls hoodie",
+      "volleyball hoodie",
+      "volleyball girl",
+      "player print",
+      "zip up hoodie",
+      "cotton hoodie",
+      "long sleeve",
+      "graphic sweatshirt"
+    ]
+  },
+  "protected_fields_verified": [
+    "变型价格",
+    "库存",
+    "SKU",
+    "尺寸颜色",
+    "物流相关输入",
+    "图片URL列表",
+    "类目"
+  ],
+  "verification": {
+    "persisted_after_reload": true,
+    "variant_count": 21,
+    "variant_detail_unchanged": true,
+    "form_variants_unchanged_before_save": true,
+    "images_unchanged_before_save": true,
+    "category_unchanged_before_save": true,
+    "full_description_read_back": true,
+    "search_tags_read_back": true,
+    "category_id_unchanged": true
+  },
+  "unresolved": [
+    "丹麦当地法规限售提示仍需另行核对"
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/6aba58305ef7d90176396d41-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/6aba58305ef7d90176396d41-after.json",
+  "follow_up": "每日11点经营监控先核实审核和实际在售版本；以实际生效日观察3天点击曝光、7天转化、14天归因售后。样本不足继续观察，不自动重复改商品或投放。",
+  "outcome": "暂无生效后销售证据，不声称提升销量"
+}

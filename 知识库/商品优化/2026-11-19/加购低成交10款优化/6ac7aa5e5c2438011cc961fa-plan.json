@@ -1,0 +1,16 @@
+{
+  "product_id": "6ac7aa5e5c2438011cc961fa",
+  "name_cn": "MANOWAR图案短袖",
+  "title": "MANOWAR Graphic Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+  "intro": "Polyester crew-neck T-shirt with a MANOWAR graphic and short sleeves. Sizes 2XS–6XL; check the selected color/design in the product images.\n\nFIT: Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting T-shirt before selecting a size. The bust value is the full garment circumference, not the flat width. Check the size and color combination before ordering. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.",
+  "replacements": {
+    "Clothing Decoration: No Decoration": "Clothing Decoration: Print",
+    "Material: polyster": "Material: Polyester",
+    "Critical Notice: Asian sizes run small. Please order 1–2 sizes larger for standard US/EU fitting.": "Size selection: Use the garment measurements below to choose your size; do not rely on a fixed US/EU size conversion.",
+    "For a loose fit, please order one additional size.": "For a loose fit, compare garment measurements and allow room according to your preference."
+  },
+  "attribute_targets": {
+    "Decoration": "print"
+  },
+  "tags": []
+}

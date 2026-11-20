@@ -1,0 +1,10 @@
+{
+  "suggestion_id": "joom-login-20261120",
+  "event_type": "access_restored_by_user",
+  "recorded_at": "2026-11-20T11:22:48.107321+08:00",
+  "source": "用户本聊天确认已登录；随后原生店铺报表成功返回",
+  "status": "已恢复登录，访问阻塞关闭",
+  "business_settings_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/112248.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/112248.json"
+}

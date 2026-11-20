@@ -1,0 +1,8 @@
+[
+  {
+    "label": "Decoration",
+    "before": "Decorationappliques0/1",
+    "after": "Decoration\n\t\nprint\n1/1",
+    "target": "print"
+  }
+]

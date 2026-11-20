@@ -1,0 +1,30 @@
+{
+  "id": "baseline-20261117-cpm5",
+  "priority": 1,
+  "platform": "Joom",
+  "campaign_id": "6af7c37f0f93510007f57abc",
+  "product_id": "6a8c47d48f3b2901f2108df6",
+  "current": {
+    "cpm_bid_usd": 0.6,
+    "daily_budget_usd": 10,
+    "membership": "included"
+  },
+  "suggested": {
+    "membership": "remove_from_this_CPM_campaign_only",
+    "daily_budget_usd": 10,
+    "preserve_product_listing": true,
+    "other_channels": "保持原有CPA等渠道；挂接未全量重验，不新增投放"
+  },
+  "status": "此前止损条件已满足；建议待执行",
+  "evidence": "当前竞价0.60；11/19完整日花费1.059416、19点击、0购买，全部晚于11/18北京14:14调价。28天主商品ACOS79.63%，活动85.50%。",
+  "confidence": "当前花费和设置高；仅2笔归因、近期可能回补",
+  "effect": "减少该SKU的CPM无成交消耗；昨天量级约USD1.06/日，仅作参考",
+  "review": "另行执行后24–72小时看费用，7日看其他渠道成交，14日看归因回补；不永久判定商品无效",
+  "suggestion_id": "baseline-20261117-cpm5",
+  "actual_setting_changed": false,
+  "recorded_at": "2026-11-20T11:46:30.093398+08:00",
+  "automation_id": "joom",
+  "event_type": "recommendation_not_executed",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-20/114630.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-20/114630.json"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Number of Pieces",
+    "before": "1 (without unit)",
+    "after": null,
+    "reason": "删除旧模板无单位的无效可选数量标签，保持单件商品与变型不变"
+  },
+  {
+    "label": "Quantity",
+    "before": "1 (without unit)",
+    "after": null,
+    "reason": "删除旧模板无单位的无效可选数量标签，保持单件商品与变型不变"
+  }
+]

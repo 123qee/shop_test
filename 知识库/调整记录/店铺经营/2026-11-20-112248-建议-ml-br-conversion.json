@@ -1,0 +1,23 @@
+{
+  "suggestion_id": "ml-br-conversion",
+  "priority": 2,
+  "platform": "mercadolibre",
+  "country": "BR",
+  "product_id": "MLB4824698219",
+  "source": "https://sellers.mercadolibre.com/sales-summary",
+  "status": "昨日描述已执行；标题与真实材质仍待处理，今天未重验编辑页",
+  "facts": [
+    "当前连续14个完整日209访问0单；28天472访问4单",
+    "11/19用户确认服装不发光；已有描述保存回读证据，但标题受平台锁定未改成功"
+  ],
+  "suggested_action": "保留准确的不发光描述；通过平台允许的本地标题/目录处理入口解决错误发光标题，不重上架绕过限制。补真实面料及XL供应后，再核买家含税运费总价，不直接降价/加投。",
+  "evidence_strength": "强：本次店铺漏斗与昨日执行记录；单品今天实时漏斗/买家报价未取得",
+  "expected_improvement": "商品准确性与点击后转化",
+  "review_condition": "标题/描述实际生效后完整7日，不能用修改前0单评价本次修正",
+  "actual_setting_changed": false,
+  "event_type": "scheduled_recommendation_after_completion",
+  "recorded_at": "2026-11-20T11:22:48.107321+08:00",
+  "automation_id": "joom-2",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/112248.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/112248.json"
+}

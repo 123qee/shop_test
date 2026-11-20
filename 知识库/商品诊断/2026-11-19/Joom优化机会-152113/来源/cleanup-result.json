@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "closed": 4,
+  "closedTabIds": [
+    270664460,
+    270664467,
+    270664470,
+    270664471
+  ],
+  "releasedTabIds": [],
+  "handoffTabIds": [],
+  "missingTabIds": [],
+  "failedTabs": [],
+  "remainingTabIds": []
+}

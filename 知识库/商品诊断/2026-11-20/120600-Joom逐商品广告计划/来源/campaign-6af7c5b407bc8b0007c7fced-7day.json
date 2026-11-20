@@ -1,0 +1,592 @@
+{
+  "source": "https://api-merchant.joom.com/api/v3/ja/campaigns/products/with-stats/?id=6af7c5b407bc8b0007c7fced&withCharts=true&statsFrom=1794517200000&statsTo=1795121999999",
+  "captured_at": "2026-11-20T03:57:22.194584+00:00",
+  "body": {
+    "data": {
+      "statsUpdateTs": 1795136120000,
+      "items": [
+        {
+          "id": "6aeed0b8210e2301bdded32c",
+          "stats": {
+            "previewCount": 2,
+            "openCount": 0,
+            "purchaseCount": 0,
+            "toCartCount": 0,
+            "gmv": 0,
+            "spent": 0.0011146086228838261,
+            "discountedsUsd": 0,
+            "acos": 0,
+            "acosBid": 0,
+            "cpmBid": 0.65,
+            "cpp": 0,
+            "ctr": 0,
+            "cr": 0,
+            "cpm": 0.5573043114419131,
+            "cpc": 0
+          },
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed37859e0e401b0750738",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed35a1b779d01d3bee88e",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed35559e0e401b074ffd5",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed486a08afd01b7b925ec",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefd99c1b779d01d3cfe4f9",
+          "stats": {
+            "previewCount": 3,
+            "openCount": 0,
+            "purchaseCount": 0,
+            "toCartCount": 0,
+            "gmv": 0,
+            "spent": 0.001905391303122615,
+            "discountedsUsd": 0,
+            "acos": 0,
+            "acosBid": 0,
+            "cpmBid": 0.65,
+            "cpp": 0,
+            "ctr": 0,
+            "cr": 0,
+            "cpm": 0.635130434374205,
+            "cpc": 0
+          },
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed3521b779d01d3bee797",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefdb6e59e0e401b0850750",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed3c51b779d01d3befb9b",
+          "stats": {
+            "previewCount": 1,
+            "openCount": 0,
+            "purchaseCount": 0,
+            "toCartCount": 0,
+            "gmv": 0,
+            "spent": 0.000587434009487421,
+            "discountedsUsd": 0,
+            "acos": 0,
+            "acosBid": 0,
+            "cpmBid": 0.65,
+            "cpp": 0,
+            "ctr": 0,
+            "cr": 0,
+            "cpm": 0.587434009487421,
+            "cpc": 0
+          },
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefd98d1b779d01d3cfe499",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed2bb59e0e401b074e25b",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed3b91b779d01d3bef800",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefdc267da39a01738aa4c5",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed3351b779d01d3bee002",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed30f59e0e401b074f21a",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed31959e0e401b074f3d7",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed340210e2301bddf326a",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed3d8a08afd01b7b90124",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed37f210e2301bddf3ff4",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed33b59e0e401b074f912",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed32b210e2301bddf2e1a",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed3a1a08afd01b7b8f831",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefdb8959e0e401b0850862",
+          "stats": {
+            "previewCount": 2,
+            "openCount": 0,
+            "purchaseCount": 0,
+            "toCartCount": 0,
+            "gmv": 0,
+            "spent": 0.000554603499426,
+            "discountedsUsd": 0,
+            "acos": 0,
+            "acosBid": 0,
+            "cpmBid": 0.65,
+            "cpp": 0,
+            "ctr": 0,
+            "cr": 0,
+            "cpm": 0.277301749713,
+            "cpc": 0
+          },
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefd9911b779d01d3cfe4c8",
+          "stats": {
+            "previewCount": 3,
+            "openCount": 0,
+            "purchaseCount": 0,
+            "toCartCount": 0,
+            "gmv": 0,
+            "spent": 0.001385125739950388,
+            "discountedsUsd": 0,
+            "acos": 0,
+            "acosBid": 0,
+            "cpmBid": 0.65,
+            "cpp": 0,
+            "ctr": 0,
+            "cr": 0,
+            "cpm": 0.46170857998346265,
+            "cpc": 0
+          },
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed3aaa08afd01b7b8f9d5",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed303a08afd01b7b8d811",
+          "stats": {
+            "previewCount": 2,
+            "openCount": 0,
+            "purchaseCount": 0,
+            "toCartCount": 0,
+            "gmv": 0,
+            "spent": 0.000811356407807978,
+            "discountedsUsd": 0,
+            "acos": 0,
+            "acosBid": 0,
+            "cpmBid": 0.65,
+            "cpp": 0,
+            "ctr": 0,
+            "cr": 0,
+            "cpm": 0.405678203903989,
+            "cpc": 0
+          },
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefdb8059e0e401b085081e",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefd993210e2301bdf0376a",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed3881b779d01d3bef054",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aed9d6b2bbbbe0152e3b035",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefdb74210e2301bdf0447f",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefd9537da39a01738a9338",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefd99b59e0e401b084fc55",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefd9997da39a01738a9460",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed48a210e2301bddf7689",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed3bfa08afd01b7b8fd26",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed345a08afd01b7b8e620",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed0be210e2301bdded42b",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed0c51b779d01d3be82b0",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed37359e0e401b0750603",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefdbda7da39a01738aa289",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed3681b779d01d3beebae",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefdc147da39a01738aa42c",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefdb7e7da39a01738a9fc6",
+          "stats": {
+            "previewCount": 4,
+            "openCount": 0,
+            "purchaseCount": 0,
+            "toCartCount": 0,
+            "gmv": 0,
+            "spent": 0.000600716907868338,
+            "discountedsUsd": 0,
+            "acos": 0,
+            "acosBid": 0,
+            "cpmBid": 0.65,
+            "cpp": 0,
+            "ctr": 0,
+            "cr": 0,
+            "cpm": 0.1501792269670845,
+            "cpc": 0
+          },
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed39a1b779d01d3bef352",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefd9551b779d01d3cfe32f",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefdbcf210e2301bdf04617",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefdbeb7da39a01738aa339",
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aefd9961b779d01d3cfe4e7",
+          "stats": {
+            "previewCount": 3,
+            "openCount": 0,
+            "purchaseCount": 0,
+            "toCartCount": 0,
+            "gmv": 0,
+            "spent": 0.001385125739950388,
+            "discountedsUsd": 0,
+            "acos": 0,
+            "acosBid": 0,
+            "cpmBid": 0.65,
+            "cpp": 0,
+            "ctr": 0,
+            "cr": 0,
+            "cpm": 0.46170857998346265,
+            "cpc": 0
+          },
+          "salePrice": 5,
+          "cpmBid": 0.65,
+          "notifications": []
+        },
+        {
+          "id": "6aeed2fe1b779d01d3bed772",
+          "salePrice": 4.5,
+          "cpmBid": 0.65,
+          "notifications": []
+        }
+      ],
+      "statsByDay": [
+        {
+          "t": 1794517200000,
+          "previewCount": 0,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0,
+          "cpc": 0
+        },
+        {
+          "t": 1794603600000,
+          "previewCount": 4,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0.001470251479900776,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "acosBid": 0,
+          "cpmBid": 0.65,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0.367562869975194,
+          "cpc": 0
+        },
+        {
+          "t": 1794690000000,
+          "previewCount": 4,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0.00249140368256617,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "acosBid": 0,
+          "cpmBid": 0.65,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0.6228509206415425,
+          "cpc": 0
+        },
+        {
+          "t": 1794776400000,
+          "previewCount": 2,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0.000554603499426,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "acosBid": 0,
+          "cpmBid": 0.65,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0.277301749713,
+          "cpc": 0
+        },
+        {
+          "t": 1794862800000,
+          "previewCount": 1,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0.000310016862312311,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "acosBid": 0,
+          "cpmBid": 0.65,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0.310016862312311,
+          "cpc": 0
+        },
+        {
+          "t": 1794949200000,
+          "previewCount": 8,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0.002989490462851426,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "acosBid": 0,
+          "cpmBid": 0.65,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0.37368630785642826,
+          "cpc": 0
+        },
+        {
+          "t": 1795035600000,
+          "previewCount": 1,
+          "openCount": 0,
+          "purchaseCount": 0,
+          "toCartCount": 0,
+          "gmv": 0,
+          "spent": 0.000528596243440271,
+          "discountedsUsd": 0,
+          "acos": 0,
+          "acosBid": 0,
+          "cpmBid": 0.65,
+          "cpp": 0,
+          "ctr": 0,
+          "cr": 0,
+          "cpm": 0.528596243440271,
+          "cpc": 0
+        }
+      ]
+    }
+  },
+  "campaign_id": "6af7c5b407bc8b0007c7fced",
+  "campaign_name": "成人11月cpm2",
+  "bid_type": "CPM",
+  "daily_budget": 10,
+  "window": "7day",
+  "ui": {
+    "heading": "成人11月cpm2",
+    "next_buttons": [
+      {
+        "disabled": true
+      }
+    ],
+    "row_count": 50,
+    "summary": "成人11月cpm2\n分析数据时区\n重复\n编辑\n删除\n基本信息\n活动名称\n成人11月cpm2\n每日预算\nUS$10\n开始日期\n2026年11月14日\n结束日期\n无\n产品\n50\n竞价方式\nCPM\n活动状态\n活性\n筛选：\n产品ID\n最近7 天 (2026/11/13 – 2026/11/19)\n曝光量\n添加指标\n产品\n50\n产品\n千次印象费用竞价\n问题\nCPM\nACOS\n价格\n曝光量\n点击率\n转化率\n单次购买成本\nPOGS\n花费\n\t\n6aefdb7e7da39a01738a9fc6\n\t\nUS$0.65",
+    "url": "https://merchant.joom.com/panel/ads/campaigns/6af7c5b407bc8b0007c7fced?statsRange=%5B%222026-11-12T16%3A00%3A00.000Z%22%2C%222026-11-19T15%3A59%3A59.999Z%22%5D"
+  },
+  "advertiser_timezone": "UTC+03:00",
+  "currency": "USD",
+  "scope": "current included products; removed histories retained separately"
+}

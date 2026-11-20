@@ -1,0 +1,16 @@
+{
+  "suggestion_id": "joom-material-6a84510122176501953bc165",
+  "source_record": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-19-152113-joom-material-6a84510122176501953bc165.json",
+  "previous_status": "建议，尚未执行",
+  "status": "登录失效，本次无法复查；保留历史执行事实/未关闭状态",
+  "historical_actual_setting_changed": false,
+  "actual_setting_changed": false,
+  "product_id": "6a84510122176501953bc165",
+  "review_condition": "先消除内容不一致提示，生效后看完整7日转化",
+  "event_type": "scheduled_read_only_followup",
+  "recorded_at": "2026-11-20T11:11:49.119184+08:00",
+  "automation_id": "joom-2",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/111149.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/111149.json",
+  "new_business_action_executed": false
+}

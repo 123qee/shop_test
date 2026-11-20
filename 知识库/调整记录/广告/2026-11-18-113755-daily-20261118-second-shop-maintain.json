@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-11-18T11:57:40.880548+08:00",
+  "event_type": "定时复查/建议更新",
+  "automation_id": "joom",
+  "suggestion_id": "daily-20261118-second-shop-maintain",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-18/113755.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-18/113755.json",
+  "actual_setting_changed": false,
+  "execution_verified": false,
+  "observation": {
+    "suggestion_id": "daily-20261118-second-shop-maintain",
+    "priority": 3,
+    "scope": "活动",
+    "campaign_id": "6aac7aa210e2ac00077587fd",
+    "status": "建议维持",
+    "current": {
+      "daily_budget_usd": 5,
+      "sku_cpa_bid_percent": 20
+    },
+    "suggested": {
+      "daily_budget_usd": 5,
+      "sku_cpa_bid_percent": 20
+    },
+    "reason": "近7天14次购买，POGS118.91美元、花费22.986美元，ACOS19.33%；昨天1次购买，尚无预算限制证据。500款明细已读取，不用活动均值证明每款都盈利。",
+    "review": "维持观察3个完整日，若预算实际提前耗尽且售后后有余量再评估5→5.50美元；本轮不同时提竞价。",
+    "source": "https://merchant.joom.com/panel/ads/campaigns/6aac7aa210e2ac00077587fd",
+    "executed": false
+  }
+}

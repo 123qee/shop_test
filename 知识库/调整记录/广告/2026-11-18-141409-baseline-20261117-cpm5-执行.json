@@ -1,0 +1,49 @@
+{
+  "suggestion_id": "baseline-20261117-cpm5",
+  "event_type": "用户授权执行/保存后核验",
+  "recorded_at": "2026-11-18T14:14:09.535905+08:00",
+  "executed_at_utc_observed_no_later_than": "2026-11-18T06:11:01.795Z",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "campaign_id": "6af7c37f0f93510007f57abc",
+  "campaign_name": "cpm5",
+  "product_id": "6a8c47d48f3b2901f2108df6",
+  "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c37f0f93510007f57abc",
+  "status": "观察中",
+  "actual_setting_changed": true,
+  "execution_verified": true,
+  "authorization": "用户明确要求不加预算，将cpm5主商品竞价改为0.6",
+  "scope": "仅指定活动内主商品的CPM竞价，美元/千次曝光",
+  "before": {
+    "sku_cpm_bid_usd": 0.65,
+    "campaign_daily_budget_usd": 10
+  },
+  "after": {
+    "sku_cpm_bid_usd": 0.6,
+    "campaign_daily_budget_usd": 10
+  },
+  "relative_bid_change": -0.07692307692307698,
+  "verification": {
+    "captured_at": "2026-11-18T06:11:01.795Z",
+    "changed": [
+      {
+        "product_id": "6a8c47d48f3b2901f2108df6",
+        "before": "US$0.65",
+        "after": "US$0.60"
+      }
+    ],
+    "daily_budget_usd": 10,
+    "daily_budget_unchanged": true,
+    "other_49_product_bids_unchanged": true,
+    "campaign_active_unchanged": true,
+    "product_membership_unchanged": true,
+    "persisted_after_reload": true
+  },
+  "platform_notice": "近期产品竞价被下调：这可能导致促销曝光下降",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-18/141409-cpm5-竞价调整/verification.json",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-18/141409-cpm5-竞价调整/before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-18/141409-cpm5-竞价调整/after-reload.json",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-18/141409-cpm5-竞价调整.md",
+  "follow_up": "从本次实际保存后开始计算增量花费和成交；24—72小时或该SKU新增花费US$0.80先到即复查曝光、点击、花费及归因成交。无新增归因成交时建议暂停该SKU在cpm5的投放，需另行取得授权后执行。满14天复核归因回补。未授权自动追加调整、暂停或增加预算。",
+  "outcome": "竞价已保存，暂无调整后效果证据"
+}

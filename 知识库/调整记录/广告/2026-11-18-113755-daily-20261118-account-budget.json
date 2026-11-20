@@ -1,0 +1,21 @@
+{
+  "recorded_at": "2026-11-18T11:57:40.880548+08:00",
+  "event_type": "定时复查/建议更新",
+  "automation_id": "joom",
+  "suggestion_id": "daily-20261118-account-budget",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-18/113755.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-18/113755.json",
+  "actual_setting_changed": false,
+  "execution_verified": false,
+  "observation": {
+    "suggestion_id": "daily-20261118-account-budget",
+    "priority": 2,
+    "scope": "账户整体预算",
+    "status": "建议维持",
+    "current": null,
+    "suggested_increment_usd": 0,
+    "reason": "没有多数优质活动同时受整体资金上限约束的证据。昨天广告花费5.28美元；主要CPA二店昨天1.998美元仅为5美元日预算的39.96%。不应为提高曝光统一加钱。",
+    "review": "出现连续完整日预算消耗≥90%、提前耗尽日志且利润/库存/售后支持，再对单个活动提出10%–20%增额，不每日叠加。",
+    "executed": false
+  }
+}

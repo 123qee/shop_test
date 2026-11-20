@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-11-19T12:22:16.441080+08:00",
+  "automation_id": "joom",
+  "event_type": "每日复查/设置观察",
+  "suggestion_id": "baseline-20261117-acos-target",
+  "previous_event_recorded_at": "2026-11-18T11:57:40.880548+08:00",
+  "status": "维持管理参考，非统一保本线",
+  "actual_setting_changed": false,
+  "execution_verified": false,
+  "observation": {
+    "status": "维持管理参考，非统一保本线",
+    "observation": "20%是留售后余量的初始管理目标，未作为全店设置执行。"
+  },
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-19/122216.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-19/122216.json"
+}

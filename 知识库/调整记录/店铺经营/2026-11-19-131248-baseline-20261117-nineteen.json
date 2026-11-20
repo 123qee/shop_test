@@ -1,0 +1,36 @@
+{
+  "suggestion_id": "baseline-20261117-nineteen",
+  "event_type": "follow_up",
+  "recorded_at": "2026-11-19T13:12:48.002744+08:00",
+  "automation_id": "joom-2",
+  "report": "日报/店铺经营/2026-11-19/131248.md",
+  "snapshot": "快照/店铺经营/2026-11-19/131248.json",
+  "actual_setting_changed": false,
+  "previous_status": "待复查",
+  "product_id": "6a9d63aed2a23f016e4359ed",
+  "object": "Nineteen Wear",
+  "new_business_action_executed": false,
+  "status": "观察中，不重复编辑",
+  "recommendation": {
+    "suggestion_id": "baseline-20261117-nineteen",
+    "priority": 4,
+    "platform": "joom",
+    "shop": "Nineteen Wear",
+    "product_id": "6a9d63aed2a23f016e4359ed",
+    "product_name": "Y2K Graphic Print Oversized Cotton T-Shirt, Unisex Short Sleeve Crew Neck",
+    "source": "https://merchant.joom.com/panel/products/6a9d63aed2a23f016e4359ed",
+    "facts": [
+      "店铺28天曝光+23.89%，点击5236→4397，购买237→146；近7天购买38→45已有回升",
+      "德国28天GMV210.70→124.91美元；本店英国100.33→113.23，不能把全账号英国增长都归给本店",
+      "Y2K款318点击22加购5购买，8规格配置库存最低986；已有11/18优化记录，不能用截至11/17数据评价效果",
+      "75款累计优化商品均核对实际在售标题及简介；Michael Jackson款XXS/XS库存各999、8行尺码表已读取"
+    ],
+    "suggested_action": "保护高销量款；对Y2K款先核对德国配送/到手价和买家可选尺码。已提交优化先跟踪真实生效后的完整窗口，不重复改文案；cpm5仍按0.60美元既定观察，不加预算。",
+    "expected_improvement": "点击后转化与商品信息准确性",
+    "evidence_strength": "强：漏斗与在售版本；中：具体转化阻力待买家端验证",
+    "status": "观察中，不重复编辑",
+    "actual_setting_changed": false,
+    "review": "按各款实际发布日次日起观察3个完整日流量、7个完整日转化、14天归因/售后；报表追上后评估"
+  },
+  "review_condition": "按各款实际发布日次日起观察3个完整日流量、7个完整日转化、14天归因/售后；报表追上后评估"
+}

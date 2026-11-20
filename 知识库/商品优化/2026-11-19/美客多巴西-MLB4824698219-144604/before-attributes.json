@@ -1,0 +1,205 @@
+[
+  {
+    "checked": false,
+    "label": "例如：三星Galaxy S9双卡双待32GB内存蓝色",
+    "name": "",
+    "type": "text",
+    "value": "Camiseta De Cubo Fluorescente De Efeito Neon Com Luz Preta"
+  },
+  {
+    "checked": false,
+    "label": "模型 (必填)",
+    "name": "",
+    "type": "text",
+    "value": "Neon"
+  },
+  {
+    "checked": false,
+    "label": "主要材料 (必填)",
+    "name": "",
+    "type": "text",
+    "value": "Cotton"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "secondary_tech_specs_task-IS_SPORTIVE",
+    "type": "radio",
+    "value": "true"
+  },
+  {
+    "checked": true,
+    "label": null,
+    "name": "secondary_tech_specs_task-IS_SPORTIVE",
+    "type": "radio",
+    "value": "false"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "label": "推荐用途",
+    "name": "",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "label": "面料类型",
+    "name": "",
+    "type": "text",
+    "value": "Algodón"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "label": "成分",
+    "name": "",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "secondary_tech_specs_task-IS_SUITABLE_FOR_PREGNACY",
+    "type": "radio",
+    "value": "true"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "secondary_tech_specs_task-IS_SUITABLE_FOR_PREGNACY",
+    "type": "radio",
+    "value": "false"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "secondary_tech_specs_task-WITH_RECYCLED_MATERIALS",
+    "type": "radio",
+    "value": "true"
+  },
+  {
+    "checked": true,
+    "label": null,
+    "name": "secondary_tech_specs_task-WITH_RECYCLED_MATERIALS",
+    "type": "radio",
+    "value": "false"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "secondary_tech_specs_task-WITH_EMBROIDERY",
+    "type": "radio",
+    "value": "true"
+  },
+  {
+    "checked": true,
+    "label": null,
+    "name": "secondary_tech_specs_task-WITH_EMBROIDERY",
+    "type": "radio",
+    "value": "false"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "label": "T恤数量 (必填)",
+    "name": "",
+    "type": "text",
+    "value": "1"
+  },
+  {
+    "checked": true,
+    "label": null,
+    "name": "",
+    "type": "radio",
+    "value": "2230280"
+  },
+  {
+    "checked": false,
+    "label": "warranty-warranty-input",
+    "name": "",
+    "type": "text",
+    "value": "15"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "",
+    "type": "radio",
+    "value": "2230279"
+  },
+  {
+    "checked": false,
+    "label": null,
+    "name": "",
+    "type": "radio",
+    "value": "6150835"
+  }
+]

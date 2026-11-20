@@ -1,0 +1,27 @@
+{
+  "id": "daily-20261118-second-shop-maintain",
+  "priority": 2,
+  "platform": "Joom",
+  "campaign_id": "6aac7aa210e2ac00077587fd",
+  "product_id": "6aaa83a2fb5605019bbfb9c9",
+  "current": {
+    "budget_usd": 5,
+    "example_cpa": 0.2
+  },
+  "suggested": {
+    "budget_usd": 5,
+    "example_cpa": 0.2
+  },
+  "status": "维持",
+  "evidence": "7天花费25.984、POGS133.90、15购买，ACOS19.41%；昨日日耗3.996/5=79.92%，未见提前耗尽。例款4次归因，套装成本未知。500款竞价不统一。",
+  "confidence": "设置与漏斗高；利润证据不足",
+  "effect": "保留已有转化，不盲目放量",
+  "review": "观察3完整日，先核套装成本、实盘库存与售后",
+  "suggestion_id": "daily-20261118-second-shop-maintain",
+  "actual_setting_changed": false,
+  "recorded_at": "2026-11-20T11:46:30.093398+08:00",
+  "automation_id": "joom",
+  "event_type": "recommendation_not_executed",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-20/114630.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-20/114630.json"
+}

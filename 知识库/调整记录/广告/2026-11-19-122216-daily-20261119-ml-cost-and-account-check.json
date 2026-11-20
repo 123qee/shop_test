@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-11-19T12:22:16.441080+08:00",
+  "automation_id": "joom",
+  "event_type": "新增建议/风险观察",
+  "suggestion_id": "daily-20261119-ml-cost-and-account-check",
+  "status": "不加预算；先处理资格、归属和费用口径",
+  "actual_setting_changed": false,
+  "observation": {
+    "suggestion_id": "daily-20261119-ml-cost-and-account-check",
+    "priority": 5,
+    "scope": "美客多五国广告",
+    "status": "不加预算；先处理资格、归属和费用口径",
+    "current": {
+      "MX_displayed_budget_usd_rounded": 27,
+      "BR_displayed_budget_usd_rounded": 5,
+      "CO_active_budget_sum_usd": 0,
+      "AR": null,
+      "CL": null
+    },
+    "suggested_increment": 0,
+    "reason": "MX橙色、投诉5.55%，有信誉展示限制；BR近7天21点击有费用1却无归因，近28天仅1归因件，不能把返回ACOS0视为好；CO两活动暂停，AR/CL明细未核实。",
+    "review": "MX先修投诉并核查广告挂接及定期预算调整；BR先对齐费用/收入币种、历史删除活动与SKU，再在现有预算内优化，不据1件放量；AR/CL手动核对账户。",
+    "actual_setting_changed": false
+  },
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-19/122216.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-19/122216.json"
+}

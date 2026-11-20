@@ -1,0 +1,72 @@
+{
+  "suggestion_id": "product-optimize-next10-20261118-6a9d36ac3f8ce801f4d96f4d",
+  "event_type": "user_authorized_product_content_optimization",
+  "recorded_at": "2026-11-18T13:11:06.747543+08:00",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "product_id": "6a9d36ac3f8ce801f4d96f4d",
+  "name": "水豚字母儿童卫衣",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status_at_verification": "编辑版本已保存，平台审核中",
+  "effective_at": null,
+  "all_time_orders_before": 0,
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-16"
+  },
+  "period_metrics": {
+    "impressions": 89,
+    "clicks": 2,
+    "cart": 0,
+    "purchases": 0
+  },
+  "changes": {
+    "title_before": "A-Z Kapibara cartoon printed children's hoodie, suitable for autumn outdoor casual tops for boys and girls, with hooded pullover",
+    "title_after": "Kids' Capybara Letter Print Hoodie, Cotton Long Sleeve Pullover",
+    "description_intro": "Children's cotton pullover hoodie with a cartoon capybara and letter graphic. The hooded style has long sleeves. Select the available letter and color you prefer, then compare your child's measurements with the garment size chart below before ordering.",
+    "description_replacements": {
+      "Collar Type: Round Neck": "Collar Type: Hooded",
+      "Material: 100% Cotton": "Material: Cotton"
+    },
+    "search_tags_before": "",
+    "search_tags_after": [
+      "kids hoodie",
+      "capybara hoodie",
+      "capybara print",
+      "letter print",
+      "animal sweatshirt",
+      "cotton hoodie",
+      "pullover hoodie",
+      "long sleeve"
+    ]
+  },
+  "protected_fields_verified": [
+    "变型价格",
+    "库存",
+    "SKU",
+    "尺寸颜色",
+    "物流相关输入",
+    "图片URL列表",
+    "类目"
+  ],
+  "verification": {
+    "persisted_after_reload": true,
+    "variant_count": 147,
+    "variant_detail_unchanged": true,
+    "form_variants_unchanged_before_save": true,
+    "images_unchanged_before_save": true,
+    "category_unchanged_before_save": true,
+    "full_description_read_back": true,
+    "search_tags_read_back": true,
+    "category_id_unchanged": true
+  },
+  "unresolved": [
+    "丹麦当地法规限售提示仍需另行核对"
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/6a9d36ac3f8ce801f4d96f4d-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/6a9d36ac3f8ce801f4d96f4d-after.json",
+  "follow_up": "每日11点经营监控先核实审核和实际在售版本；以实际生效日观察3天点击曝光、7天转化、14天归因售后。样本不足继续观察，不自动重复改商品或投放。",
+  "outcome": "暂无生效后销售证据，不声称提升销量"
+}

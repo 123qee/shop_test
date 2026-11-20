@@ -1,0 +1,42 @@
+{
+  "suggestion_id": "joom-size-6acacbe8c936e8010a00028b",
+  "priority": 2,
+  "product_id": "6acacbe8c936e8010a00028b",
+  "short_name": "KPOP #97 V领印花短袖",
+  "issue": "商品称儿童短袖，但袖长写39–51cm；标题与主图为V领，正文写圆领；主图为成人模特效果图，规格只有100–160。",
+  "action": "先确认实售童装/成人版型和领型，统一对应实物图、标题、属性；按实物或供应商尺码表补正确短袖测量，不猜数字。",
+  "evidence_strength": "强：文案/图片/规格不一致；具体正确尺码未实测",
+  "needs": "真实短袖尺码表和对应SKU实物图",
+  "review": "真实修正生效后3日看点击，7日看加购/购买及尺码售后",
+  "platform": "joom",
+  "shop": "jwh second",
+  "source": "https://merchant.joom.com/panel/products/6acacbe8c936e8010a00028b",
+  "baseline": {
+    "shop": "jwh second",
+    "product_id": "6acacbe8c936e8010a00028b",
+    "source": "https://merchant.joom.com/panel/analytics/orders/store/6a9d4221018d89bb9e5c22ef?limit=100&orderBy=openCount&order=desc",
+    "product_link": "https://merchant.joom.com/panel/products/6acacbe8c936e8010a00028b",
+    "window": "2026-10-22 to 2026-11-18 UTC+3",
+    "impressions": 441,
+    "clicks": 69,
+    "purchases": 0,
+    "cart": 12
+  },
+  "current_sizes": [
+    "100",
+    "110",
+    "120",
+    "130",
+    "140",
+    "150",
+    "160"
+  ],
+  "status": "建议，尚未执行",
+  "actual_setting_changed": false,
+  "event_type": "read_only_opportunity_review",
+  "recorded_at": "2026-11-19T15:21:13.607991+08:00",
+  "report": "商品诊断/2026-11-19/Joom优化机会-152113/优化建议.md",
+  "snapshot": "商品诊断/2026-11-19/Joom优化机会-152113/诊断快照.json",
+  "user_request": "看看我的joom还有什么可以优化的吗",
+  "execution_authorized_this_turn": false
+}

@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-11-20T13:20:44.723805+08:00",
+  "status": "事实已更新；商品修复和广告测试未提交",
+  "actual_setting_changed": false,
+  "product_facts_record": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-20/131833-用户确认成本与材质/用户确认.json",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-20/131833-用户确认成本与材质/确认后处理记录.md",
+  "pending_changes": [
+    {
+      "product_id": "6a842f66e32015012461bc44",
+      "confirmed_material": "polyester",
+      "proposed_description_change": "Material: polyester；不保留未经确认的100%比例",
+      "proposed_attribute_change": "将实际服装Material中的cotton改为polyester；删除不适用且矛盾的Material for fur棉字段；提交前须在原生编辑器核对",
+      "execution_status": "pending_backend_unavailable",
+      "actual_setting_changed": false
+    },
+    {
+      "product_id": "6aad547abaf5a401f56aeddf",
+      "confirmed_type": "short-sleeve T-shirt",
+      "proposed_title": "Kids Printed Short-Sleeve T-Shirt, Unisex Crew Neck",
+      "proposed_category": "T-Shirts (kids unisex)，以原生可选分类核对为准",
+      "size_chart_issue": "在售100—160码袖长39/41/43/45/47/49/51cm；正确袖长待用户确认，不猜测改值",
+      "execution_status": "pending_backend_unavailable",
+      "actual_setting_changed": false
+    }
+  ],
+  "cr7_ad_suggestion_id": "joom-sku-ad-6aaa83a2fb5605019bbfb9c9",
+  "cr7_cost_gap_resolved": true,
+  "cr7_current_bid_change_executed": false
+}

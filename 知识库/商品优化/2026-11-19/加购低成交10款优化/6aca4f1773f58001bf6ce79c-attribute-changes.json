@@ -1,0 +1,8 @@
+[
+  {
+    "label": "Neck Style",
+    "before": "Neck Style\n\t\nAsymmetric Neck\n0/1",
+    "after": "Neck Style\n\t\nHooded Neck\n1/1",
+    "target": "Hooded Neck"
+  }
+]

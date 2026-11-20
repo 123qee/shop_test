@@ -1,0 +1,69 @@
+{
+  "suggestion_id": "product-optimize-20261118-6aa1265e2da70501751a27e9",
+  "recorded_at": "2026-11-18T11:29:33.245512+08:00",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "product_id": "6aa1265e2da70501751a27e9",
+  "name": "红眼树蛙印花T恤",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status_at_verification": "平台审核中，编辑版本尚未上线",
+  "all_time_orders_before": 0,
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-16"
+  },
+  "period_metrics": {
+    "impressions": 81,
+    "clicks": 3,
+    "cart": 0,
+    "purchases": 0
+  },
+  "changes": {
+    "title_before": "Tree Frog 3D Print Polyester T-Shirt, Unisex Short Sleeve",
+    "title_after": "Red-Eyed Tree Frog Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+    "description_intro": "Unisex polyester T-shirt featuring a red-eyed tree frog among green leaves. The printed top has short sleeves, a round neckline and pullover styling. Compare the measurements below with a T-shirt you own to choose your size.",
+    "description_replacements": {
+      "Unisex polyester T-shirt with a 3D-printed tree frog graphic. It has a round neckline, short sleeves and pullover closure.\n\n": ""
+    },
+    "search_tags_before": "tree frog,frog graphic tee,polyester t shirt,3d print tshirt,animal print shirt,unisex tee",
+    "search_tags_after": [
+      "tree frog shirt",
+      "frog print",
+      "red eyed frog",
+      "animal T-shirt",
+      "nature print",
+      "polyester T-shirt",
+      "unisex T-shirt",
+      "short sleeve",
+      "crew neck"
+    ]
+  },
+  "protected_fields_verified": [
+    "变型价格",
+    "库存",
+    "SKU",
+    "尺寸颜色",
+    "物流相关输入",
+    "图片URL列表",
+    "类目"
+  ],
+  "verification": {
+    "persisted_after_reload": true,
+    "variant_count": 77,
+    "variant_detail_unchanged": true,
+    "form_variants_unchanged_before_save": true,
+    "images_unchanged_before_save": true,
+    "category_unchanged_before_save": true,
+    "search_tags_read_back": true,
+    "category_id_read_back_unchanged": true
+  },
+  "unresolved": [
+    "原有产品内容不一致提示需在审核后复核；本轮不宣称已修复所有结构化属性"
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/10款优化/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/10款优化/6aa1265e2da70501751a27e9-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/10款优化/6aa1265e2da70501751a27e9-after.json",
+  "follow_up": "每天11点核对审核及在售版本；以实际生效日为起点观察3天曝光点击、7天转化、14天归因售后。样本不足继续观察，不自动再次改商品或投放。",
+  "outcome": "尚无优化后效果证据，不声称销量提升"
+}

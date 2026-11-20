@@ -1,0 +1,26 @@
+{
+  "expected_advertiser_id": "1282818",
+  "summary": {
+    "adlink": "https://global-selling.mercadolibre.com/advertising/hub/accounts?validate-user=true&from=summary_ads&utm_source=sc_summary_v2&utm_medium=card&utm_campaign=active&advertiserId=1282818",
+    "captured_at": "2026-11-19T03:47:41.074Z",
+    "card": "广告指标\n1\n未变更\n\n-%\n\n广告销售额\n\n121\n下降 44%\n\n44%\n\n收到的点击量\n\n前往广告",
+    "country": "巴西",
+    "reputation": [
+      "您的信誉度\n您将是 黄色\n买家看到的是浅绿色\n\n您的信誉权益已生效。",
+      "信誉\n\n生效中的权益\n\n您将是 黄色\n\n0%\n\n投诉\n\n3.84%\n\n由你取消\n\n0%\n\n不合规的货件\n\n您的买家看到您是绿色状态\n\n利用您的信誉权益完成首笔销售，独立获得绿色信誉标识。\n\n前往声誉页面"
+    ],
+    "url": "https://sellers.mercadolibre.com/sales-summary"
+  },
+  "observed": {
+    "captured_at": "2026-11-19T03:47:46.331Z",
+    "country": "巴西",
+    "first_campaign_links": [
+      "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358114129/dashboard?navigate_to=seller_central",
+      "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358095168/dashboard?navigate_to=seller_central",
+      "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/358588915/dashboard?navigate_to=seller_central"
+    ],
+    "head": "所有者\nCNQISHIJIECLOTHINGBRR\n我需要帮助\n活动\n广告\n报告\n今日待处理项\n\n加载中\n\n我的预算\n总平均每日预算\n该数值为你所有活跃营销活动日均预算的总和\nUS$ 5\n\n共享\n\n状态\n在广告系列之间共享预算\n您已开始共享预算以获得更多销售。很快您就可以在此处跟踪结果。\n指标\n实时指标\n检查\n最近30天\n与...比较\n无\n标准视图\n筛选\n3 个广告活动中的 3 个\n更多操作\n创建广告活动\nSeleccionar todas las campañas\n\t广告活动名称\t\n诊断\n检查您的广告系列是否有根据其配置提高表现的机会。\n了解更多\n\t每日预算\t\n目标 ROAS\n预期回报\n这是您期望每投入一元所获得的收入。\n\n例如：如果您的目标ROAS是2倍，我们将力求每投入1元产生2元收入。\n了解更多\n\t\n归因销售额\n这是由您的广告产生的销售额。购物车中每件不同产品均计为一次销售\n\n\n直接归因销售: 当某人点击您的广告并购买了该产品时。\n\n\n间接归因销售: 当某人点击您的广告，但购买了您的其他产品时。\n\t\nROAS\n广告投资回报率\n这是您的收入与投资之间的关系。即，您每投入一比索所获得的收益。\n\nEjemplo: si tu ROAS es 2x, quiere decir que generás $ 2 por cada $ 1 invertido.\n了解更多\n\t\nACOS\n即",
+    "owner": "CNQISHIJIECLOTHINGBRR",
+    "url": "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns?advertiser_id=1282818&navigate_to=seller_central&from=ads-manager&status=A%2CD"
+  }
+}

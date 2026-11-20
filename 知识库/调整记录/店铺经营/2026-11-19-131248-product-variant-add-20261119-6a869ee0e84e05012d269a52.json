@@ -1,0 +1,34 @@
+{
+  "suggestion_id": "product-variant-add-20261119-6a869ee0e84e05012d269a52",
+  "event_type": "follow_up",
+  "recorded_at": "2026-11-19T13:12:48.002744+08:00",
+  "automation_id": "joom-2",
+  "report": "日报/店铺经营/2026-11-19/131248.md",
+  "snapshot": "快照/店铺经营/2026-11-19/131248.json",
+  "actual_setting_changed": false,
+  "previous_status": "已保存并刷新核验",
+  "product_id": "6a869ee0e84e05012d269a52",
+  "object": "Nineteen Wear",
+  "new_business_action_executed": false,
+  "status": "在售简介/8行尺码表及后台XXS/XS各999已核实；买家结算端未测试",
+  "source": "https://merchant.joom.com/panel/products/6a869ee0e84e05012d269a52",
+  "confirmed_variants": [
+    {
+      "size_color": "颜色：as the picture\n尺寸：XXS",
+      "sku": "TXYL0283-XXS-as the picture1",
+      "variant_id": "6afe61eca32f8097ef173c3e",
+      "price": "US$3.98\n销售价格：US$3.58",
+      "inventory": "999\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：as the picture\n尺寸：XS",
+      "sku": "TXYL0283-XS-as the picture1",
+      "variant_id": "6afe61eca32f8097ef173c3f",
+      "price": "US$3.98\n销售价格：US$3.58",
+      "inventory": "999\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    }
+  ],
+  "review_condition": "继续核对买家目的国可选性；不扩展999授权"
+}

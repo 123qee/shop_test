@@ -1,0 +1,37 @@
+{
+  "suggestion_id": "product-optimize-20261117-circuit-tee",
+  "product_id": "6aa279c96e5bd0017fdb037c",
+  "name": "Circuit Board Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+  "period_clicks": 19,
+  "before_title": "Men Electric Circuit Wire 3D All Over Print T-Shirt Electronic Engineer Graphic Tee Short Sleeve Casual Tshirt Electrician Gift",
+  "after_title": "Circuit Board Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+  "recorded_on": "2026-11-17",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status": "保存成功；编辑版本待平台审核",
+  "authorization": "用户本次要求优化低销量商品并保护高销量商品；不扩展定时任务自动修改权限",
+  "all_time_order_count_before_edit": 0,
+  "changed_fields": [
+    "标题",
+    "描述",
+    "搜索标签"
+  ],
+  "protected_fields": [
+    "价格",
+    "库存",
+    "变型",
+    "SKU",
+    "图片",
+    "类目",
+    "原有尺码数值",
+    "物流设置",
+    "地区限制"
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/6aa279c96e5bd0017fdb037c-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/6aa279c96e5bd0017fdb037c-after.json",
+  "follow_up": "每天11点核对审核/在售版本是否更新；审核通过后观察3天流量与点击、7天转化，14天复查归因及售后。样本不足继续观察，不自动再次改商品或广告。",
+  "outcome": "尚无优化后销量证据，不宣称效果提升"
+}

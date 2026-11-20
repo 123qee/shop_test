@@ -1,0 +1,32 @@
+{
+  "id": "daily-20261119-ml-cost-and-account-check",
+  "priority": 1,
+  "platform": "Mercado Libre",
+  "current": {
+    "MX": null,
+    "BR": null,
+    "AR": null,
+    "CL": null,
+    "CO": "2 paused; active budget USD0"
+  },
+  "suggested": {
+    "new_budget": 0,
+    "CO_status": "remain paused",
+    "CO_roas_targets": [
+      3.45,
+      2.38
+    ]
+  },
+  "status": "四国归属未核实，CO暂停维持",
+  "evidence": "五国实际摘要入口已读取。MX/BR/AR/CL页面各异，接口均返回CO的358579749和358579791，金额成交留空。CO入口/规范页/接口1282820一致，两项暂停。",
+  "confidence": "账户冲突与CO状态高；四国投放/费用未知",
+  "effect": "避免向错配或不可售投放追加资金",
+  "review": "先修复站点广告账户一致性，核是否仍扣费；24小时复查，不借CO的0当其他国家0",
+  "suggestion_id": "daily-20261119-ml-cost-and-account-check",
+  "actual_setting_changed": false,
+  "recorded_at": "2026-11-20T11:46:30.093398+08:00",
+  "automation_id": "joom",
+  "event_type": "recommendation_not_executed",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-20/114630.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-20/114630.json"
+}

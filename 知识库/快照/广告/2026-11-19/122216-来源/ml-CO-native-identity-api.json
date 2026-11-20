@@ -1,0 +1,103 @@
+{
+  "source": "https://global-selling.mercadolibre.com/pa/api/admin-pads/ajax/campaigns/search?dateFrom=2026-10-20&dateTo=2026-11-18&limit=10&offset=0",
+  "identity": {
+    "captured_at": "2026-11-19T04:08:36.579Z",
+    "country": "哥伦比亚",
+    "owner": "CNQISHIJIECLOTHINGCOR",
+    "url": "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns?advertiser_id=1282820&navigate_to=seller_central&from=ads-manager&status=A%2CD"
+  },
+  "expected_advertiser_id": "1282820",
+  "body": {
+    "paging": {
+      "offset": 0,
+      "total": 2,
+      "limit": 10
+    },
+    "results": [
+      {
+        "id": 358579749,
+        "name": "Campaign",
+        "status": "paused",
+        "lastUpdated": "2026-11-18T15:15:26.000Z",
+        "dateCreated": "2026-07-31T01:28:27.000Z",
+        "strategy": "PROFITABILITY",
+        "acosTarget": 28.99,
+        "acosTopSearchTarget": 0,
+        "roasTarget": 3.45,
+        "channel": "marketplace",
+        "advertiserId": 1282820,
+        "salesforceEventId": 14,
+        "budget": 1.96,
+        "automaticBudget": false,
+        "dailyBudget": 1.96,
+        "metrics": {
+          "clicks": 0,
+          "prints": 0,
+          "cost": 0,
+          "cpc": 0,
+          "ctr": 0,
+          "directAmount": 0,
+          "indirectAmount": 0,
+          "totalAmount": 0,
+          "directUnitsQuantity": 0,
+          "indirectUnitsQuantity": 0,
+          "unitsQuantity": 0,
+          "directItemsQuantity": 0,
+          "indirectItemsQuantity": 0,
+          "advertisingItemsQuantity": 0,
+          "organicUnitsQuantity": 2,
+          "organicUnitsAmount": 24.42,
+          "organicItemsQuantity": 2,
+          "tacos": 0,
+          "acos": 0,
+          "cvr": 0,
+          "roas": 0,
+          "sov": 0
+        },
+        "visibleAdGroupCount": 20
+      },
+      {
+        "id": 358579791,
+        "name": "Campaign Mercado Libre",
+        "status": "paused",
+        "lastUpdated": "2026-11-18T15:15:26.000Z",
+        "dateCreated": "2026-07-31T01:26:45.000Z",
+        "strategy": "PROFITABILITY",
+        "acosTarget": 42.02,
+        "acosTopSearchTarget": 0,
+        "roasTarget": 2.38,
+        "channel": "marketplace",
+        "advertiserId": 1282820,
+        "salesforceEventId": 14,
+        "budget": 1,
+        "automaticBudget": false,
+        "dailyBudget": 1,
+        "metrics": {
+          "clicks": 0,
+          "prints": 0,
+          "cost": 0,
+          "cpc": 0,
+          "ctr": 0,
+          "directAmount": 0,
+          "indirectAmount": 0,
+          "totalAmount": 0,
+          "directUnitsQuantity": 0,
+          "indirectUnitsQuantity": 0,
+          "unitsQuantity": 0,
+          "directItemsQuantity": 0,
+          "indirectItemsQuantity": 0,
+          "advertisingItemsQuantity": 0,
+          "organicUnitsQuantity": 1,
+          "organicUnitsAmount": 9.34,
+          "organicItemsQuantity": 1,
+          "tacos": 0,
+          "acos": 0,
+          "cvr": 0,
+          "roas": 0,
+          "sov": 0
+        },
+        "visibleAdGroupCount": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "source": "https://merchant.joom.com/panel/products/6a869ee0e84e05012d269a52",
+  "captured_at": "2026-11-19T05:05:28.570Z",
+  "product_id": "6a869ee0e84e05012d269a52",
+  "name": "Women's Michael Jackson Portrait Cotton T-Shirt, Short Sleeve Crew Neck",
+  "variant_rows": [
+    {
+      "size_color": "颜色：as the picture\n尺寸：S",
+      "sku": "TXYL0283-S-as the picture1",
+      "variant_id": "6a869ee0e84e05bc2d269a55",
+      "price": "US$3.98\n竞争性\n销售价格：US$3.46\n平均价格：US$3.67",
+      "inventory": "995\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：as the picture\n尺寸：M",
+      "sku": "TXYL0283-M-as the picture1",
+      "variant_id": "6a869ee0e84e05bc2d269a56",
+      "price": "US$3.98\n竞争性\n销售价格：US$3.55\n平均价格：US$3.98",
+      "inventory": "998\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：as the picture\n尺寸：L",
+      "sku": "TXYL0283-L-as the picture1",
+      "variant_id": "6a869ee0e84e05bc2d269a57",
+      "price": "US$3.98\n竞争性\n销售价格：US$3.55\n平均价格：US$3.77",
+      "inventory": "999\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：as the picture\n尺寸：XL",
+      "sku": "TXYL0283-XL-as the picture1",
+      "variant_id": "6a869ee0e84e05bc2d269a58",
+      "price": "US$3.98\n竞争性\n销售价格：US$3.55\n平均价格：US$3.77",
+      "inventory": "999\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：as the picture\n尺寸：2XL",
+      "sku": "TXYL0283-2XL-as the picture1",
+      "variant_id": "6a869ee0e84e05bc2d269a59",
+      "price": "US$3.98\n竞争性\n销售价格：US$3.55\n平均价格：US$3.77",
+      "inventory": "999\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：as the picture\n尺寸：3XL",
+      "sku": "TXYL0283-3XL-as the picture1",
+      "variant_id": "6a869ee0e84e05bc2d269a5a",
+      "price": "US$3.98\n竞争性\n销售价格：US$3.55\n平均价格：US$3.77",
+      "inventory": "999\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：as the picture\n尺寸：XXS",
+      "sku": "TXYL0283-XXS-as the picture1",
+      "variant_id": "6afe61eca32f8097ef173c3e",
+      "price": "US$3.98\n销售价格：US$3.58",
+      "inventory": "999\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：as the picture\n尺寸：XS",
+      "sku": "TXYL0283-XS-as the picture1",
+      "variant_id": "6afe61eca32f8097ef173c3f",
+      "price": "US$3.98\n销售价格：US$3.58",
+      "inventory": "999\n显示所有仓库（1）",
+      "default_shipping": "US$0"
+    }
+  ],
+  "stock_scope": "商家后台配置库存，不等于实盘；默认运费不是买家国际运费。",
+  "warnings": "TXYL0283\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n产品需要您的注意\n需注意\n2\n产品有重复图片\n请从产品中删除重复图片。\n图片： 1\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n"
+}

@@ -1,0 +1,10 @@
+{
+  "source": "https://api-merchant.joom.com/api/v3/orders/multi/count?statuses=approved",
+  "captured_at": "2026-11-19T15:14:02.801923+08:00",
+  "body": {
+    "code": 0,
+    "data": {
+      "count": 14
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "VL8J4JQV",
+  "storeId": "6a817b93f5d3934528e70df7",
+  "quantity": 1,
+  "status": "shipped",
+  "currency": "USD",
+  "priceInfo": {
+    "unitPrice": "3.99",
+    "shippingPrice": "0",
+    "origAmount": "3.99",
+    "orderPrice": "3.561427",
+    "merchantRevenue": "3.027212",
+    "commissionAmount": "0.534215",
+    "discounts": {
+      "sum": "0.428573",
+      "details": [
+        {
+          "amount": "0.428573",
+          "type": "specialPromotion",
+          "specialPromotionId": "6a96a3b0e048b8a44070dbc4"
+        }
+      ]
+    },
+    "merchantRevenueAsInInvoice": "3.027212",
+    "joomShippingPriceUsed": true,
+    "specialLogisticsPriceConditions": "notApplicable",
+    "joomShippingPrice": "9.553064",
+    "joomShippingPriceUsd": "9.553064",
+    "actualJoomShippingPrice": "5.188867",
+    "shippingInsurance": "3.027212",
+    "pspCommissionAmount": "0.221073"
+  },
+  "orderTimestamp": "2026-11-14T08:29:33Z",
+  "approvedTimestamp": "2026-11-14T10:30:49Z",
+  "isFinalCommission": true,
+  "potentialCommissions": null,
+  "source": "https://api-merchant.joom.com/api/v3/orders?id=VL8J4JQV",
+  "ad_attribution": {
+    "orderId": "VL8J4JQV",
+    "campaignId": "6af7c37f0f93510007f57abc",
+    "adCost": "0"
+  }
+}

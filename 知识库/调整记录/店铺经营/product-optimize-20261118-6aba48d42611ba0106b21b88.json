@@ -1,0 +1,72 @@
+{
+  "suggestion_id": "product-optimize-20261118-6aba48d42611ba0106b21b88",
+  "recorded_at": "2026-11-18T11:29:33.245512+08:00",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "product_id": "6aba48d42611ba0106b21b88",
+  "name": "企鹅图案童装卫衣",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status_at_verification": "平台审核中，编辑版本尚未上线",
+  "all_time_orders_before": 0,
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-16"
+  },
+  "period_metrics": {
+    "impressions": 8,
+    "clicks": 3,
+    "cart": 1,
+    "purchases": 0
+  },
+  "changes": {
+    "title_before": "Fun Cartoon Penguin Hoodie for Kids Warm Fleece-lined Stylish Casual Versatile and Comfortable Sweatshirt for Autumn and Winter",
+    "title_after": "Kids' Penguin Print Hoodie, Cotton Long Sleeve Pullover Sweatshirt",
+    "description_intro": "Children's cotton pullover hoodie with a cartoon penguin print, a hood and long sleeves. Select your preferred design and use the size chart below to compare your child's measurements before ordering.",
+    "description_replacements": {
+      "Product Type: Kids’ T-Shirt": "Product Type: Kids' Hooded Sweatshirt",
+      "Applicable Season: Summer\n": "",
+      "Neckline: Round Neck": "Neckline: Hooded",
+      "Sleeve Length: Short Sleeve": "Sleeve Length: Long Sleeve"
+    },
+    "search_tags_before": "",
+    "search_tags_after": [
+      "kids hoodie",
+      "penguin hoodie",
+      "penguin print",
+      "animal sweatshirt",
+      "cotton hoodie",
+      "pullover hoodie",
+      "long sleeve",
+      "boys hoodie",
+      "girls hoodie"
+    ]
+  },
+  "protected_fields_verified": [
+    "变型价格",
+    "库存",
+    "SKU",
+    "尺寸颜色",
+    "物流相关输入",
+    "图片URL列表",
+    "类目"
+  ],
+  "verification": {
+    "persisted_after_reload": true,
+    "variant_count": 35,
+    "variant_detail_unchanged": true,
+    "form_variants_unchanged_before_save": true,
+    "images_unchanged_before_save": true,
+    "category_unchanged_before_save": true,
+    "search_tags_read_back": true,
+    "category_id_read_back_unchanged": true
+  },
+  "unresolved": [
+    "原有丹麦地区法规限制仍需另行核对，本轮未更改限制"
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/10款优化/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/10款优化/6aba48d42611ba0106b21b88-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/10款优化/6aba48d42611ba0106b21b88-after.json",
+  "follow_up": "每天11点核对审核及在售版本；以实际生效日为起点观察3天曝光点击、7天转化、14天归因售后。样本不足继续观察，不自动再次改商品或投放。",
+  "outcome": "尚无优化后效果证据，不声称销量提升"
+}

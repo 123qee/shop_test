@@ -1,0 +1,35 @@
+{
+  "product_id": "6a869ee0e84e05012d269a52",
+  "saved_and_reloaded": true,
+  "variant_count": 8,
+  "added": [
+    {
+      "size_color": "颜色：as the picture\n尺寸：XXS",
+      "sku": "TXYL0283-XXS-as the picture1",
+      "id": "6afe61eca32f8097ef173c3e",
+      "shipping_dimensions": "长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g",
+      "price": "US$3.98",
+      "handling": "未设置\n默认为2天",
+      "inventory": 999,
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：as the picture\n尺寸：XS",
+      "sku": "TXYL0283-XS-as the picture1",
+      "id": "6afe61eca32f8097ef173c3f",
+      "shipping_dimensions": "长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g",
+      "price": "US$3.98",
+      "handling": "未设置\n默认为2天",
+      "inventory": 999,
+      "default_shipping": "US$0"
+    }
+  ],
+  "price_usd": 3.98,
+  "default_shipping_usd": 0,
+  "original_six_variants_unchanged_before_submit": true,
+  "original_six_price_stock_shipping_unchanged_after_reload": true,
+  "description_xxs_xs_restored": true,
+  "size_table_text": "尺码\tBust\tLength\tShoulders\tSleeve\n\nXXS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n",
+  "review_pending": true,
+  "recorded_at": "2026-11-19T10:45:03.280971"
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "label": "Neck Style",
+    "before": "Neck StyleAsymmetric Neck0/1",
+    "after": "Neck Style\n\t\nHooded Neck\n1/1",
+    "target": "Hooded Neck"
+  },
+  {
+    "label": "Number of Pieces",
+    "before": "1 (without unit)",
+    "after": null,
+    "reason": "清理旧模板无单位的可选数量标签；单件商品和库存规格不变"
+  },
+  {
+    "label": "Quantity",
+    "before": "1 (without unit)",
+    "after": null,
+    "reason": "清理旧模板无单位的可选数量标签；单件商品和库存规格不变"
+  }
+]

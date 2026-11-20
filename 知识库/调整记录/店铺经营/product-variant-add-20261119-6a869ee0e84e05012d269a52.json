@@ -1,0 +1,50 @@
+{
+  "suggestion_id": "product-variant-add-20261119-6a869ee0e84e05012d269a52",
+  "parent_event_id": "product-optimize-20261119-cart-6a869ee0e84e05012d269a52",
+  "recorded_at": "2026-11-19T10:44:41.384958+08:00",
+  "platform": "Joom",
+  "shop": "Nineteen Wear",
+  "product_id": "6a869ee0e84e05012d269a52",
+  "scope": "本次用户明确要求补齐本款XXS、XS",
+  "user_confirmed": "本款正常供应XXS、XS；两个新增尺码的后台库存各999",
+  "status": "已保存并刷新核验",
+  "actual_setting_changed": true,
+  "changed_fields": [
+    "新增XXS变型",
+    "新增XS变型",
+    "描述恢复XXS、XS尺寸行及XXS–3XL范围"
+  ],
+  "before_variant_count": 6,
+  "after_variant_count": 8,
+  "added": [
+    {
+      "size_color": "颜色：as the picture\n尺寸：XXS",
+      "sku": "TXYL0283-XXS-as the picture1",
+      "id": "6afe61eca32f8097ef173c3e",
+      "shipping_dimensions": "长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g",
+      "price": "US$3.98",
+      "handling": "未设置\n默认为2天",
+      "inventory": 999,
+      "default_shipping": "US$0"
+    },
+    {
+      "size_color": "颜色：as the picture\n尺寸：XS",
+      "sku": "TXYL0283-XS-as the picture1",
+      "id": "6afe61eca32f8097ef173c3f",
+      "shipping_dimensions": "长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g",
+      "price": "US$3.98",
+      "handling": "未设置\n默认为2天",
+      "inventory": 999,
+      "default_shipping": "US$0"
+    }
+  ],
+  "original_six_variants_price_stock_shipping_unchanged": true,
+  "existing_title_tags_category_images_unchanged": true,
+  "note": "先前把未建可选规格当作不能供应并删描述，现按用户确认纠正。不是此前误删了SKU：此前本来只有6个规格，本次新建2个。",
+  "review_pending_observed": true,
+  "size_table_status": "最终刷新复核：独立尺码表已同步XXS、XS，8个规格与8行尺寸说明一致；仍显示审核中，买家端生效另待确认",
+  "source": "商品优化/2026-11-19/XXS-XS规格补齐/final-result.json",
+  "followup": "确认新增规格审核/在售生效和买家端能选择XXS、XS；核对独立尺码表完成解析。本次继承原表尺寸，未进行实物测量。",
+  "source_initial": "商品优化/2026-11-19/XXS-XS规格补齐/result.json",
+  "final_verified_at": "2026-11-19T10:45:03.280971"
+}

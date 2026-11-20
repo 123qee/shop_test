@@ -1,0 +1,21 @@
+{
+  "suggestion_id": "cart-20261118-chem-4xl",
+  "product_id": "6a85abb71fe9fe0103bd458d",
+  "recorded_at": "2026-11-18T20:25:34.875377+08:00",
+  "status": "待补充实测资料",
+  "actual_setting_changed": false,
+  "problem": "可售4XL缺少对应可靠尺码测量",
+  "required_measurements": [
+    "胸围",
+    "衣长",
+    "肩宽",
+    "袖长"
+  ],
+  "baseline": {
+    "period": "2026/10/21 — 2026/11/17",
+    "impressions": 2363,
+    "clicks": 76,
+    "purchases": 2,
+    "cart": 10
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "suggestion_id": "ml-br-conversion",
+  "event_type": "follow_up",
+  "recorded_at": "2026-11-19T13:12:48.002744+08:00",
+  "automation_id": "joom-2",
+  "report": "日报/店铺经营/2026-11-19/131248.md",
+  "snapshot": "快照/店铺经营/2026-11-19/131248.json",
+  "actual_setting_changed": false,
+  "previous_status": "待复查",
+  "product_id": "MLB4824698219",
+  "object": "BR",
+  "new_business_action_executed": false,
+  "status": "持续待核实，本次仅建议",
+  "recommendation": {
+    "suggestion_id": "ml-br-conversion",
+    "priority": 3,
+    "platform": "mercadolibre",
+    "country": "BR",
+    "product_id": "MLB4824698219",
+    "product_name": "Playera Cubo Fluorescente Efecto Neon Con Luz Negra",
+    "source": "https://produto.mercadolivre.com.br/MLB-4824698219-camiseta-de-cubo-fluorescente-de-efeito-neon-com-luz-preta-_JM",
+    "facts": [
+      "整店连续14个完整日209次访问、0订单；28天472访问4单",
+      "该商品28天98访问1单；8种规格总配置库存7,977，S/M/L/2XL/3XL/4XL/5XL/6XL，未列XL",
+      "描述同时出现Código Cotton与Esquizo品牌、80%棉20%弹性纤维、UV发光、墨西哥发票说明及他店链接；真实性未核实",
+      "国家价格面板BR商品标价US$9.57（R$55.73）、未含进口费用；净收入输入5美元不是采购后净利润，列表US$4.50不能当到手总价"
+    ],
+    "suggested_action": "优先核对真实面料、品牌、UV效果和图片；确认后准备准确的巴西描述。核实XL是否实际供应，可供应则补真实规格，不能仅删描述。先核算买家含税运费到手价和真实费用，不盲目降价或加广告。",
+    "expected_improvement": "商品可信度、尺码可选性与下单转化；利润保护",
+    "evidence_strength": "强：页面模板内容与价格字段；中：这些问题对转化的因果仍待验证",
+    "status": "持续待核实，本次仅建议",
+    "actual_setting_changed": false,
+    "review": "今天核对实物及费用；若后续获授权修正，以实际生效后完整7天访问/订单/售后复查；同系列阿根廷主销款先保护，不跨国批量改"
+  },
+  "review_condition": "今天核对实物及费用；若后续获授权修正，以实际生效后完整7天访问/订单/售后复查；同系列阿根廷主销款先保护，不跨国批量改"
+}

@@ -1,0 +1,14 @@
+{
+  "suggestion_id": "daily-20261118-high-price-observe",
+  "previous_source": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/广告/2026-11-19-122216-daily-20261118-high-price-observe.json",
+  "previous_recorded_at": "2026-11-19T12:22:16.441080+08:00",
+  "status": "保留既有建议，本次未自动执行新动作",
+  "actual_setting_changed": false,
+  "execution_verified": false,
+  "execution_scope": null,
+  "recorded_at": "2026-11-20T11:46:30.093398+08:00",
+  "automation_id": "joom",
+  "event_type": "daily_read_only_followup",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-20/114630.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-20/114630.json"
+}

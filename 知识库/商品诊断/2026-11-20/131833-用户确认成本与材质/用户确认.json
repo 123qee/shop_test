@@ -1,0 +1,35 @@
+{
+  "confirmed_at": "2026-11-20T13:18:33.866281+08:00",
+  "cost": {
+    "category": "CR7童装上衣+裤子两件套，仅此商品",
+    "product_id": "6aaa83a2fb5605019bbfb9c9",
+    "platform_scope": "joom",
+    "currency": "CNY",
+    "per_unit": 15,
+    "unit": "set",
+    "approximate": true,
+    "confirmed_on": "2026-11-20",
+    "source": "用户回答：全成本15；原问题已限定整套含印花、包装、国内送仓",
+    "scope_note": "不推广到其他套装；平台佣金、广告、卖家额外国际物流及售后仍需另核"
+  },
+  "product_facts": [
+    {
+      "product_id": "6a842f66e32015012461bc44",
+      "material": "polyester",
+      "material_zh": "聚酯纤维",
+      "percentage_confirmed": false,
+      "confirmed_on": "2026-11-20",
+      "source": "用户明确回答：1.聚酯纤维",
+      "scope_note": "确认材质类型，未确认100%比例，不改其他商品材质"
+    },
+    {
+      "product_id": "6aad547abaf5a401f56aeddf",
+      "product_type": "short-sleeve T-shirt",
+      "product_type_zh": "短袖T恤",
+      "confirmed_on": "2026-11-20",
+      "source": "用户明确回答：2.短袖",
+      "scope_note": "不据此重新编造材质或尺码实测"
+    }
+  ],
+  "permissions_changed": false
+}

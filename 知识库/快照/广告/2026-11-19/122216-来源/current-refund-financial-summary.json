@@ -1,0 +1,833 @@
+{
+  "source": "https://api-merchant.joom.com/api/v3/orders/multi?offset=0&limit=100&statuses=refunded&statuses=paidByJoomRefund&orderBy=approvedTimestamp&order=desc",
+  "captured_at": "2026-11-19T03:32:00.989362+00:00",
+  "scope": "全部历史已退款/被Joom退款23笔，不是广告28天归属订单",
+  "orders": [
+    {
+      "id": "38Q2GWQJ",
+      "storeId": "6a8c4690b1e1819ed91f9baa",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "10",
+        "shippingPrice": "0",
+        "origAmount": "10",
+        "orderPrice": "10",
+        "merchantRevenue": "8.5",
+        "commissionAmount": "1.5",
+        "discounts": {
+          "sum": "0"
+        },
+        "refundAmount": "14.624882",
+        "merchantRevenueAsInInvoice": "8.5",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "10.098174",
+        "joomShippingPriceUsd": "10.098174",
+        "actualJoomShippingPrice": "4.284649",
+        "shippingInsurance": "8.5",
+        "pspCommissionAmount": "0.340233",
+        "pspCommissionCharge": "0.340233"
+      },
+      "orderTimestamp": "2026-11-08T08:10:38Z",
+      "approvedTimestamp": "2026-11-08T10:12:15Z",
+      "refundedTimestamp": "2026-11-18T19:42:39Z",
+      "isFinalCommission": true,
+      "product_id": "6ac0ce4318081201574fa3df"
+    },
+    {
+      "id": "VL6LX2J7",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.99",
+        "merchantRevenue": "3.3915",
+        "commissionAmount": "0.5985",
+        "discounts": {
+          "sum": "0"
+        },
+        "refundAmount": "10.217237",
+        "merchantRevenueAsInInvoice": "3.3915",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "10.63782",
+        "joomShippingPriceUsd": "10.63782",
+        "actualJoomShippingPrice": "7.922987",
+        "shippingInsurance": "3.3915",
+        "pspCommissionAmount": "0.487993"
+      },
+      "orderTimestamp": "2026-10-23T16:25:33Z",
+      "approvedTimestamp": "2026-10-23T18:26:35Z",
+      "refundedTimestamp": "2026-11-09T23:44:04Z",
+      "isFinalCommission": true,
+      "product_id": "6a8c47d48f3b2901f2108df6"
+    },
+    {
+      "id": "GJL6GXQG",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.99",
+        "merchantRevenue": "3.3915",
+        "commissionAmount": "0.5985",
+        "discounts": {
+          "sum": "0"
+        },
+        "refundAmount": "8.849275",
+        "merchantRevenueAsInInvoice": "3.3915",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "9.326489",
+        "joomShippingPriceUsd": "9.326489",
+        "actualJoomShippingPrice": "6.555025",
+        "shippingInsurance": "3.3915",
+        "pspCommissionAmount": "0.204385"
+      },
+      "orderTimestamp": "2026-10-19T19:29:08Z",
+      "approvedTimestamp": "2026-10-19T21:29:48Z",
+      "refundedTimestamp": "2026-11-04T18:07:57Z",
+      "isFinalCommission": true,
+      "product_id": "6a8c47d48f3b2901f2108df6"
+    },
+    {
+      "id": "VLD88MLJ",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "4.5",
+        "shippingPrice": "0",
+        "origAmount": "4.5",
+        "orderPrice": "4.275",
+        "merchantRevenue": "3.63375",
+        "commissionAmount": "0.64125",
+        "discounts": {
+          "sum": "0.225",
+          "details": [
+            {
+              "amount": "0.225",
+              "type": "limitedTimeOffer"
+            }
+          ]
+        },
+        "refundAmount": "6.96849",
+        "merchantRevenueAsInInvoice": "3.63375",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "8.534384",
+        "joomShippingPriceUsd": "8.534384",
+        "actualJoomShippingPrice": "4.510365",
+        "shippingInsurance": "3.63375",
+        "pspCommissionAmount": "0.427753"
+      },
+      "orderTimestamp": "2026-10-14T20:22:02Z",
+      "approvedTimestamp": "2026-10-14T22:23:36Z",
+      "refundedTimestamp": "2026-10-26T20:26:04Z",
+      "isFinalCommission": true,
+      "product_id": "6a9d63aed2a23f016e4359ed"
+    },
+    {
+      "id": "LMJYLL4P",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "4.5",
+        "shippingPrice": "0",
+        "origAmount": "4.5",
+        "orderPrice": "4.275",
+        "merchantRevenue": "3.63375",
+        "commissionAmount": "0.64125",
+        "discounts": {
+          "sum": "0.225",
+          "details": [
+            {
+              "amount": "0.225",
+              "type": "limitedTimeOffer"
+            }
+          ]
+        },
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "willBeDeterminedAfterFulfill",
+        "joomShippingPrice": "8.077316",
+        "joomShippingPriceUsd": "8.077316",
+        "pspCommissionAmount": "0.262023",
+        "refundPspCommissionAmount": "0.022318"
+      },
+      "orderTimestamp": "2026-10-13T22:11:59Z",
+      "approvedTimestamp": "2026-10-14T00:12:12Z",
+      "refundedTimestamp": "2026-10-15T15:00:15Z",
+      "isFinalCommission": true,
+      "product_id": "6a844e24312d3d019e785eed"
+    },
+    {
+      "id": "8LJNMN8G",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "9.99",
+        "shippingPrice": "0",
+        "origAmount": "9.99",
+        "orderPrice": "9.4905",
+        "merchantRevenue": "8.066925",
+        "commissionAmount": "1.423575",
+        "discounts": {
+          "sum": "0.499499",
+          "details": [
+            {
+              "amount": "0.499499",
+              "type": "limitedTimeOffer"
+            }
+          ]
+        },
+        "refundAmount": "14.219553",
+        "merchantRevenueAsInInvoice": "8.066925",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "8.643733",
+        "joomShippingPriceUsd": "8.643733",
+        "actualJoomShippingPrice": "8.762515",
+        "shippingInsurance": "8.066925",
+        "pspCommissionAmount": "1.52456"
+      },
+      "orderTimestamp": "2026-10-11T18:46:24Z",
+      "approvedTimestamp": "2026-10-11T20:48:37Z",
+      "refundedTimestamp": "2026-10-27T13:40:37Z",
+      "isFinalCommission": true,
+      "product_id": "6aa1167fed97a90165b91a51"
+    },
+    {
+      "id": "JVWV3LN6",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.7905",
+        "merchantRevenue": "3.221925",
+        "commissionAmount": "0.568575",
+        "discounts": {
+          "sum": "0.199499",
+          "details": [
+            {
+              "amount": "0.199499",
+              "type": "limitedTimeOffer"
+            }
+          ]
+        },
+        "refundAmount": "7.312741",
+        "merchantRevenueAsInInvoice": "3.221925",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "7.807968",
+        "joomShippingPriceUsd": "7.807968",
+        "actualJoomShippingPrice": "3.218571",
+        "shippingInsurance": "3.221925",
+        "pspCommissionAmount": "0.217532",
+        "refundPspCommissionAmount": "0.086138",
+        "pspCommissionCharge": "0.30367"
+      },
+      "orderTimestamp": "2026-10-06T05:31:50Z",
+      "approvedTimestamp": "2026-10-06T07:35:53Z",
+      "refundedTimestamp": "2026-10-23T14:26:18Z",
+      "isFinalCommission": true,
+      "product_id": "6a8b0ca532e0d1010fa6c8ad"
+    },
+    {
+      "id": "P686XVMN",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.7905",
+        "merchantRevenue": "3.221925",
+        "commissionAmount": "0.568575",
+        "discounts": {
+          "sum": "0.199499",
+          "details": [
+            {
+              "amount": "0.199499",
+              "type": "limitedTimeOffer"
+            }
+          ]
+        },
+        "refundAmount": "7.334747",
+        "merchantRevenueAsInInvoice": "3.221925",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "7.807968",
+        "joomShippingPriceUsd": "7.807968",
+        "actualJoomShippingPrice": "3.240577",
+        "shippingInsurance": "3.221925",
+        "pspCommissionAmount": "0.217532",
+        "refundPspCommissionAmount": "0.086138",
+        "pspCommissionCharge": "0.30367"
+      },
+      "orderTimestamp": "2026-10-06T05:31:50Z",
+      "approvedTimestamp": "2026-10-06T07:34:53Z",
+      "refundedTimestamp": "2026-10-23T14:25:09Z",
+      "isFinalCommission": true,
+      "product_id": "6a8b0ca532e0d1010fa6c8ad"
+    },
+    {
+      "id": "8LJ3X939",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 2,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "7.98",
+        "orderPrice": "7.98",
+        "merchantRevenue": "6.783",
+        "commissionAmount": "1.197",
+        "discounts": {
+          "sum": "0"
+        },
+        "refundAmount": "13.45183",
+        "merchantRevenueAsInInvoice": "6.783",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "8.602504",
+        "joomShippingPriceUsd": "8.602504",
+        "actualJoomShippingPrice": "8.840816",
+        "shippingInsurance": "6.783",
+        "pspCommissionAmount": "0.376633",
+        "refundPspCommissionAmount": "0.022514",
+        "pspCommissionCharge": "0.022514"
+      },
+      "orderTimestamp": "2026-10-04T20:21:16Z",
+      "approvedTimestamp": "2026-10-04T22:24:36Z",
+      "refundedTimestamp": "2026-10-18T18:30:38Z",
+      "isFinalCommission": true,
+      "product_id": "6a8e23aef788ec01b9b32142"
+    },
+    {
+      "id": "P689G3EN",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.7905",
+        "merchantRevenue": "3.221925",
+        "commissionAmount": "0.568575",
+        "discounts": {
+          "sum": "0.199499",
+          "details": [
+            {
+              "amount": "0.199499",
+              "type": "limitedTimeOffer"
+            }
+          ]
+        },
+        "refundAmount": "10.194271",
+        "merchantRevenueAsInInvoice": "3.221925",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "8.023277",
+        "joomShippingPriceUsd": "8.023277",
+        "actualJoomShippingPrice": "8.014733",
+        "shippingInsurance": "3.221925",
+        "pspCommissionAmount": "1.199602"
+      },
+      "orderTimestamp": "2026-10-04T07:58:43Z",
+      "approvedTimestamp": "2026-10-04T10:01:00Z",
+      "refundedTimestamp": "2026-10-19T22:10:37Z",
+      "isFinalCommission": true,
+      "product_id": "6a8697678809ae01f9a07de2"
+    },
+    {
+      "id": "JVW42D46",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "4.5",
+        "shippingPrice": "0",
+        "origAmount": "4.5",
+        "orderPrice": "4.275",
+        "merchantRevenue": "3.63375",
+        "commissionAmount": "0.64125",
+        "discounts": {
+          "sum": "0.225",
+          "details": [
+            {
+              "amount": "0.225",
+              "type": "limitedTimeOffer"
+            }
+          ]
+        },
+        "refundAmount": "10.627805",
+        "merchantRevenueAsInInvoice": "3.63375",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "8.170141",
+        "joomShippingPriceUsd": "8.170141",
+        "actualJoomShippingPrice": "5.746587",
+        "shippingInsurance": "3.63375",
+        "pspCommissionAmount": "0.606218",
+        "pspCommissionCharge": "0.606218"
+      },
+      "orderTimestamp": "2026-10-03T19:50:00Z",
+      "approvedTimestamp": "2026-10-03T21:52:26Z",
+      "refundedTimestamp": "2026-11-17T17:09:03Z",
+      "isFinalCommission": true,
+      "product_id": "6a844e24312d3d019e785eed"
+    },
+    {
+      "id": "7XMVM3L5",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.7905",
+        "merchantRevenue": "3.221925",
+        "commissionAmount": "0.568575",
+        "discounts": {
+          "sum": "0.199499",
+          "details": [
+            {
+              "amount": "0.199499",
+              "type": "limitedTimeOffer"
+            }
+          ]
+        },
+        "refundAmount": "9.757663",
+        "merchantRevenueAsInInvoice": "3.221925",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "9.184515",
+        "joomShippingPriceUsd": "9.184515",
+        "actualJoomShippingPrice": "5.737532",
+        "shippingInsurance": "3.221925",
+        "pspCommissionAmount": "0.205364",
+        "refundPspCommissionAmount": "0.024267",
+        "pspCommissionCharge": "0.229631"
+      },
+      "orderTimestamp": "2026-10-02T19:27:28Z",
+      "approvedTimestamp": "2026-10-02T21:28:00Z",
+      "refundedTimestamp": "2026-10-24T23:14:28Z",
+      "isFinalCommission": true,
+      "product_id": "6a8c481ac9ba4101fc37672f"
+    },
+    {
+      "id": "EVQ5XD2Y",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.99",
+        "merchantRevenue": "3.3915",
+        "commissionAmount": "0.5985",
+        "discounts": {
+          "sum": "0"
+        },
+        "refundAmount": "7.421947",
+        "merchantRevenueAsInInvoice": "3.3915",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "7.845409",
+        "joomShippingPriceUsd": "7.845409",
+        "actualJoomShippingPrice": "3.254463",
+        "shippingInsurance": "3.3915",
+        "pspCommissionAmount": "0.15743",
+        "refundPspCommissionAmount": "0.020054",
+        "pspCommissionCharge": "0.177484"
+      },
+      "orderTimestamp": "2026-10-01T20:11:24Z",
+      "approvedTimestamp": "2026-10-01T22:11:34Z",
+      "refundedTimestamp": "2026-10-21T15:43:31Z",
+      "isFinalCommission": true,
+      "product_id": "6a8866ac19cb59010d7809e2"
+    },
+    {
+      "id": "VL9669QV",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "4.5",
+        "shippingPrice": "0",
+        "origAmount": "4.5",
+        "orderPrice": "4.275",
+        "merchantRevenue": "3.63375",
+        "commissionAmount": "0.64125",
+        "discounts": {
+          "sum": "0.225",
+          "details": [
+            {
+              "amount": "0.225",
+              "type": "limitedTimeOffer"
+            }
+          ]
+        },
+        "refundAmount": "8.484551",
+        "merchantRevenueAsInInvoice": "3.63375",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "8.194451",
+        "joomShippingPriceUsd": "8.194451",
+        "actualJoomShippingPrice": "3.999253",
+        "shippingInsurance": "3.63375",
+        "pspCommissionAmount": "0.187539",
+        "refundPspCommissionAmount": "0.022759",
+        "pspCommissionCharge": "0.210298"
+      },
+      "orderTimestamp": "2026-09-27T08:46:02Z",
+      "approvedTimestamp": "2026-09-27T10:47:28Z",
+      "refundedTimestamp": "2026-10-05T19:47:19Z",
+      "isFinalCommission": true,
+      "product_id": "6a980514f3bf72019f23b034"
+    },
+    {
+      "id": "WDEPGJ73",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.99",
+        "merchantRevenue": "3.2718",
+        "commissionAmount": "0.7182",
+        "discounts": {
+          "sum": "0"
+        },
+        "refundAmount": "6.905409",
+        "merchantRevenueAsInInvoice": "3.2718",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "8.255613",
+        "joomShippingPriceUsd": "8.255613",
+        "actualJoomShippingPrice": "4.551309",
+        "shippingInsurance": "3.3915",
+        "pspCommissionAmount": "1.039492"
+      },
+      "orderTimestamp": "2026-09-24T13:47:49Z",
+      "approvedTimestamp": "2026-09-24T15:49:50Z",
+      "refundedTimestamp": "2026-10-08T13:47:46Z",
+      "isFinalCommission": true,
+      "product_id": "6a87c65a35e86a010857bb2f"
+    },
+    {
+      "id": "67M9XVEP",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "4.5",
+        "shippingPrice": "0",
+        "origAmount": "4.5",
+        "orderPrice": "4.5",
+        "merchantRevenue": "3.825",
+        "commissionAmount": "0.675",
+        "discounts": {
+          "sum": "0"
+        },
+        "refundAmount": "10.357048",
+        "merchantRevenueAsInInvoice": "3.825",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "7.832456",
+        "joomShippingPriceUsd": "7.832456",
+        "actualJoomShippingPrice": "7.746366",
+        "shippingInsurance": "3.825",
+        "pspCommissionAmount": "0.324442",
+        "refundPspCommissionAmount": "0.023182",
+        "pspCommissionCharge": "0.023182"
+      },
+      "orderTimestamp": "2026-09-14T14:47:12Z",
+      "approvedTimestamp": "2026-09-14T16:47:57Z",
+      "refundedTimestamp": "2026-09-23T08:15:58Z",
+      "isFinalCommission": true,
+      "product_id": "6a844e24312d3d019e785eed"
+    },
+    {
+      "id": "Q8JGP9NN",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.7905",
+        "merchantRevenue": "3.221925",
+        "commissionAmount": "0.568575",
+        "discounts": {
+          "sum": "0.199499",
+          "details": [
+            {
+              "amount": "0.199499",
+              "type": "limitedTimeOffer"
+            }
+          ]
+        },
+        "refundAmount": "5.824804",
+        "merchantRevenueAsInInvoice": "3.221925",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "3.707216",
+        "joomShippingPriceUsd": "3.707216",
+        "actualJoomShippingPrice": "3.621991",
+        "shippingInsurance": "3.221925",
+        "pspCommissionAmount": "0.920104",
+        "refundPspCommissionAmount": "0.023275",
+        "pspCommissionCharge": "0.023275"
+      },
+      "orderTimestamp": "2026-09-10T18:25:27Z",
+      "approvedTimestamp": "2026-09-10T20:25:45Z",
+      "refundedTimestamp": "2026-09-20T16:07:50Z",
+      "isFinalCommission": true,
+      "product_id": "6a8e23b5f381b601c5ac94b5"
+    },
+    {
+      "id": "WDJJ6DE8",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.8703",
+        "merchantRevenue": "3.289755",
+        "commissionAmount": "0.580545",
+        "discounts": {
+          "sum": "0.119699",
+          "details": [
+            {
+              "amount": "0.119699",
+              "type": "specialPromotion",
+              "specialPromotionId": "6a4df970f44e1d786b390117"
+            }
+          ]
+        },
+        "refundAmount": "12.884417",
+        "merchantRevenueAsInInvoice": "3.289755",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "8.503135",
+        "joomShippingPriceUsd": "8.503135",
+        "actualJoomShippingPrice": "8.589274",
+        "shippingInsurance": "3.289755",
+        "pspCommissionAmount": "0.40159",
+        "refundPspCommissionAmount": "0.023253",
+        "pspCommissionCharge": "0.424843"
+      },
+      "orderTimestamp": "2026-09-09T21:12:16Z",
+      "approvedTimestamp": "2026-09-09T23:12:48Z",
+      "refundedTimestamp": "2026-09-26T10:05:38Z",
+      "isFinalCommission": true,
+      "product_id": "6a87c6a7237ea601558dc594"
+    },
+    {
+      "id": "M2J557M3",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.99",
+        "merchantRevenue": "3.3915",
+        "commissionAmount": "0.5985",
+        "discounts": {
+          "sum": "0"
+        },
+        "refundAmount": "6.378784",
+        "merchantRevenueAsInInvoice": "3.3915",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "7.34068",
+        "joomShippingPriceUsd": "7.34068",
+        "actualJoomShippingPrice": "2.226419",
+        "shippingInsurance": "3.3915",
+        "pspCommissionAmount": "0.162365",
+        "pspCommissionCharge": "0.162365"
+      },
+      "orderTimestamp": "2026-09-05T10:56:46Z",
+      "approvedTimestamp": "2026-09-05T13:00:08Z",
+      "refundedTimestamp": "2026-09-19T07:49:19Z",
+      "isFinalCommission": true,
+      "product_id": "6a8c47fab1e18101d91fad3a"
+    },
+    {
+      "id": "269VV8E3",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.99",
+        "merchantRevenue": "3.3915",
+        "commissionAmount": "0.5985",
+        "discounts": {
+          "sum": "0"
+        },
+        "refundAmount": "6.226386",
+        "merchantRevenueAsInInvoice": "3.3915",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "7.34068",
+        "joomShippingPriceUsd": "7.34068",
+        "actualJoomShippingPrice": "2.074254",
+        "shippingInsurance": "3.3915",
+        "pspCommissionAmount": "0.162132",
+        "pspCommissionCharge": "0.162132"
+      },
+      "orderTimestamp": "2026-09-05T10:56:46Z",
+      "approvedTimestamp": "2026-09-05T12:59:08Z",
+      "refundedTimestamp": "2026-09-19T07:47:30Z",
+      "isFinalCommission": true,
+      "product_id": "6a8c47fab1e18101d91fad3a"
+    },
+    {
+      "id": "XMJYY35L",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.99",
+        "merchantRevenue": "3.3915",
+        "commissionAmount": "0.5985",
+        "discounts": {
+          "sum": "0"
+        },
+        "refundAmount": "6.236247",
+        "merchantRevenueAsInInvoice": "3.3915",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "7.34068",
+        "joomShippingPriceUsd": "7.34068",
+        "actualJoomShippingPrice": "2.083764",
+        "shippingInsurance": "3.3915",
+        "pspCommissionAmount": "0.162483",
+        "pspCommissionCharge": "0.162483"
+      },
+      "orderTimestamp": "2026-09-05T10:56:46Z",
+      "approvedTimestamp": "2026-09-05T12:58:08Z",
+      "refundedTimestamp": "2026-09-19T07:37:18Z",
+      "isFinalCommission": true,
+      "product_id": "6a8c47fab1e18101d91fad3a"
+    },
+    {
+      "id": "P6M553JM",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.99",
+        "shippingPrice": "0",
+        "origAmount": "3.99",
+        "orderPrice": "3.99",
+        "merchantRevenue": "3.3915",
+        "commissionAmount": "0.5985",
+        "discounts": {
+          "sum": "0"
+        },
+        "refundAmount": "6.47389",
+        "merchantRevenueAsInInvoice": "3.3915",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "7.34068",
+        "joomShippingPriceUsd": "7.34068",
+        "actualJoomShippingPrice": "2.321525",
+        "shippingInsurance": "3.3915",
+        "pspCommissionAmount": "0.162365",
+        "pspCommissionCharge": "0.162365"
+      },
+      "orderTimestamp": "2026-09-05T10:56:46Z",
+      "approvedTimestamp": "2026-09-05T12:58:08Z",
+      "refundedTimestamp": "2026-09-19T07:51:03Z",
+      "isFinalCommission": true,
+      "product_id": "6a8c47fab1e18101d91fad3a"
+    },
+    {
+      "id": "8LN3E759",
+      "storeId": "6a817b93f5d3934528e70df7",
+      "quantity": 1,
+      "status": "refunded",
+      "currency": "USD",
+      "priceInfo": {
+        "unitPrice": "3.98",
+        "shippingPrice": "0",
+        "origAmount": "3.98",
+        "orderPrice": "3.98",
+        "merchantRevenue": "3.383",
+        "commissionAmount": "0.597",
+        "discounts": {
+          "sum": "0"
+        },
+        "refundAmount": "9.86714",
+        "merchantRevenueAsInInvoice": "3.383",
+        "joomShippingPriceUsed": true,
+        "specialLogisticsPriceConditions": "notApplicable",
+        "joomShippingPrice": "8.008389",
+        "joomShippingPriceUsd": "8.008389",
+        "actualJoomShippingPrice": "7.555456",
+        "shippingInsurance": "3.383",
+        "pspCommissionAmount": "0.316778",
+        "refundPspCommissionAmount": "0.023184",
+        "pspCommissionCharge": "0.023184"
+      },
+      "orderTimestamp": "2026-09-02T06:35:19Z",
+      "approvedTimestamp": "2026-09-02T08:35:30Z",
+      "refundedTimestamp": "2026-09-10T08:07:29Z",
+      "isFinalCommission": true,
+      "product_id": "6a844e24312d3d019e785eed"
+    }
+  ]
+}

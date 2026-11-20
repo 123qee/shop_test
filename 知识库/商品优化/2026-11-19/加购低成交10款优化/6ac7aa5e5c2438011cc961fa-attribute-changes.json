@@ -1,0 +1,9 @@
+[
+  {
+    "label": "Decoration",
+    "before": "Decoration\n\t\nappliques\n0/1",
+    "after": "Decoration\n\t\nprint\n1/1",
+    "target": "print",
+    "original_detail_value": "no decoration"
+  }
+]

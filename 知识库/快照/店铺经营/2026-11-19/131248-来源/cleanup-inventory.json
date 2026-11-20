@@ -1,0 +1,46 @@
+{
+  "success": true,
+  "tabs": [
+    {
+      "tabId": 270664393,
+      "url": "https://merchant.joom.com/panel/stores",
+      "title": "店铺 — Joom",
+      "active": false,
+      "groupTitle": "两平台店铺经营日报",
+      "borrowed": false
+    },
+    {
+      "tabId": 270664395,
+      "url": "https://sellers.mercadolibre.com/publicaciones/MLB4824698219/modificar/omni?callback_url=https%253A%252F%252Fglobal-selling.mercadolibre.com",
+      "title": "修改商品",
+      "active": false,
+      "groupTitle": "两平台店铺经营日报",
+      "borrowed": false
+    },
+    {
+      "tabId": 270664394,
+      "url": "https://sellers.mercadolibre.com/sales-summary",
+      "title": "摘要",
+      "active": false,
+      "groupTitle": "两平台店铺经营日报",
+      "borrowed": false
+    },
+    {
+      "tabId": 270664396,
+      "url": "https://merchant.joom.com/panel/products/6a9d63aed2a23f016e4359ed",
+      "title": "943295116 — Joom",
+      "active": false,
+      "groupTitle": "两平台店铺经营日报",
+      "borrowed": false
+    },
+    {
+      "tabId": 270664392,
+      "url": "https://merchant.joom.com/panel/analytics/orders",
+      "title": "销售和流量 — Joom",
+      "active": false,
+      "groupTitle": "两平台店铺经营日报",
+      "borrowed": false
+    }
+  ],
+  "workId": "7a4417c6-ec4e-4f39-a7e7-acb8db3b2355"
+}

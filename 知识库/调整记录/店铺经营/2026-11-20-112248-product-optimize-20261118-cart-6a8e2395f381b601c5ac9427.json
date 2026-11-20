@@ -1,0 +1,16 @@
+{
+  "suggestion_id": "product-optimize-20261118-cart-6a8e2395f381b601c5ac9427",
+  "source_record": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-19-131344-product-optimize-20261118-cart-6a8e2395f381b601c5ac9427.json",
+  "previous_status": "在售版本已核实，效果观察中",
+  "status": "登录已恢复；本次经营报表已补采，75款在售版本未全量重验，保留历史执行事实与未关闭状态",
+  "historical_actual_setting_changed": false,
+  "actual_setting_changed": false,
+  "product_id": "6a8e2395f381b601c5ac9427",
+  "review_condition": "发布日次日起累计3/7个完整日；经营统计目前截止11/17，不宣称优化改善成交",
+  "event_type": "follow_up_after_login_restored",
+  "recorded_at": "2026-11-20T11:22:48.107321+08:00",
+  "automation_id": "joom-2",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/112248.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/112248.json",
+  "new_business_action_executed": false
+}

@@ -1,0 +1,1022 @@
+{
+  "site": "AR",
+  "country": "阿根廷",
+  "source": "https://sellers.mercadolibre.com/api/sc-business-metrics/performance-data?start_period=custom&from_current=2026-09-24T00%3A00%3A00.000-03%3A00&to_current=2026-11-18T00%3A00%3A00.000-03%3A00",
+  "captured_at": "2026-11-20T11:04:45.280127+08:00",
+  "platform_timezone": "GMT-03:00",
+  "window_start": "2026-09-24",
+  "window_end": "2026-11-18",
+  "data_updated_at": null,
+  "currency": "USD",
+  "context": {
+    "country": "阿根廷",
+    "main": "指标\n生成报告\n实时销售监控\n\n数据按阿根廷标准时间(GMT-03:00)显示\n\n企业\n促销和优惠券\n竞品分析\n对买家的支持\n我的主页\n概览\n商品\n主要周期\n最近7天\n对比\n上一周期\n筛选\n我需要帮助\n绩效概览\n下载报告\n下载报告\nExpande el texto para usuarios videntes, pero el texto completo ya está disponible p",
+    "url": "https://sellers.mercadolibre.com/metrics#summary"
+  },
+  "completeness": "56 complete calendar dates at scheduled cutoff; later adjustments possible",
+  "cards": [
+    {
+      "id": "gross_sales",
+      "pill": {
+        "hierarchy": "transparent",
+        "state": "up",
+        "tooltip": {
+          "content": "与前一阶段相比",
+          "number": "US$32",
+          "side": "right",
+          "size": "small"
+        },
+        "type": "green",
+        "value": "772%"
+      },
+      "role_type": "button",
+      "selected_color": "andes-secondary-palette-a-500",
+      "size": "medium",
+      "title": "总销售额",
+      "tooltip": {
+        "content": "这是选定周期内您所有订单产生的总金额（未计算手续费、取消订单或退货）。",
+        "side": "right",
+        "size": "big"
+      },
+      "type": "double_line",
+      "value": "US$279",
+      "wrap": false
+    },
+    {
+      "id": "sold_units",
+      "pill": {
+        "hierarchy": "transparent",
+        "state": "up",
+        "tooltip": {
+          "content": "与前一阶段相比",
+          "number": "3",
+          "side": "right",
+          "size": "small"
+        },
+        "type": "green",
+        "value": "700%"
+      },
+      "role_type": "button",
+      "selected_color": "andes-secondary-palette-h-500",
+      "size": "medium",
+      "title": "已售件数",
+      "tooltip": {
+        "content": "这是在选定期间内所有售出单位的合计",
+        "side": "right",
+        "size": "big"
+      },
+      "type": "double_line",
+      "value": "24",
+      "wrap": false
+    },
+    {
+      "id": "average_price_by_unit",
+      "pill": {
+        "hierarchy": "transparent",
+        "state": "up",
+        "tooltip": {
+          "content": "与前一阶段相比",
+          "number": "US$10.67",
+          "side": "right",
+          "size": "small"
+        },
+        "type": "green",
+        "value": "9%"
+      },
+      "role_type": "button",
+      "selected_color": "andes-secondary-palette-c-500",
+      "size": "medium",
+      "title": "平均单价",
+      "tooltip": {
+        "content": "该值是通过计算选定期间内所有售出单元价格的平均值得出",
+        "side": "right",
+        "size": "big"
+      },
+      "type": "double_line",
+      "value": "US$11.63",
+      "wrap": false
+    },
+    {
+      "id": "visits",
+      "pill": {
+        "hierarchy": "transparent",
+        "state": "up",
+        "tooltip": {
+          "content": "与前一阶段相比",
+          "number": "993",
+          "side": "right",
+          "size": "small"
+        },
+        "type": "green",
+        "value": "200%"
+      },
+      "role_type": "button",
+      "selected_color": "andes-secondary-palette-l-500",
+      "size": "medium",
+      "title": "访问量",
+      "tooltip": {
+        "content": "这是选定时段内您商品页面的总访问量。",
+        "side": "right",
+        "size": "big"
+      },
+      "type": "double_line",
+      "value": "2,976",
+      "wrap": false
+    },
+    {
+      "id": "sell_quantity",
+      "pill": {
+        "hierarchy": "transparent",
+        "state": "up",
+        "tooltip": {
+          "content": "与前一阶段相比",
+          "number": "3",
+          "side": "right",
+          "size": "small"
+        },
+        "type": "green",
+        "value": "667%"
+      },
+      "role_type": "button",
+      "selected_color": "andes-secondary-palette-b-500",
+      "size": "medium",
+      "title": "订单数量",
+      "tooltip": {
+        "content": "所选期间内您商品收到的所有订单。套装订单计为单次销售",
+        "side": "right",
+        "size": "big"
+      },
+      "type": "double_line",
+      "value": "23",
+      "wrap": false
+    },
+    {
+      "id": "conversion",
+      "pill": {
+        "hierarchy": "transparent",
+        "state": "up",
+        "tooltip": {
+          "content": "与前一阶段相比",
+          "number": "0.3%",
+          "side": "right",
+          "size": "small"
+        },
+        "type": "green",
+        "value": "0.5积分"
+      },
+      "role_type": "button",
+      "selected_color": "andes-secondary-palette-j-500",
+      "size": "medium",
+      "title": "转化率",
+      "tooltip": {
+        "content": "这是用销售额除以访问量得出的绩效指标，可让您了解在选定时间段内有多少访问最终转化为了销售。",
+        "side": "right",
+        "size": "big"
+      },
+      "type": "double_line",
+      "value": "0.8%",
+      "wrap": false
+    },
+    {
+      "id": "average_price_by_sell",
+      "pill": {
+        "hierarchy": "transparent",
+        "state": "up",
+        "tooltip": {
+          "content": "与前一阶段相比",
+          "number": "US$10.67",
+          "side": "right",
+          "size": "small"
+        },
+        "type": "green",
+        "value": "13.7%"
+      },
+      "role_type": "button",
+      "selected_color": "andes-secondary-palette-g-500",
+      "size": "medium",
+      "title": "平均售价",
+      "tooltip": {
+        "content": "每笔销售的平均价格。通过将您的总销售额除以销售数量计算得出。",
+        "side": "right",
+        "size": "big"
+      },
+      "type": "double_line",
+      "value": "US$12.13",
+      "wrap": false
+    },
+    {
+      "id": "cancelled_sales_quantity",
+      "pill": {
+        "hierarchy": "transparent",
+        "state": "down",
+        "tooltip": {
+          "content": "与前一阶段相比",
+          "number": "0",
+          "side": "right",
+          "size": "small"
+        },
+        "type": "red",
+        "value": "—%"
+      },
+      "role_type": "button",
+      "selected_color": "andes-secondary-palette-d-500",
+      "size": "medium",
+      "title": "已取消的销售数量",
+      "tooltip": {
+        "content": "选定期间内后续被取消的订单数量。",
+        "side": "right",
+        "size": "big"
+      },
+      "type": "double_line",
+      "value": "3",
+      "wrap": false
+    },
+    {
+      "id": "returns_sales_quantity",
+      "pill": {
+        "hierarchy": "transparent",
+        "state": "up",
+        "tooltip": {
+          "content": "与前一阶段相比",
+          "number": "1",
+          "side": "right",
+          "size": "small"
+        },
+        "type": "green",
+        "value": "100%"
+      },
+      "role_type": "button",
+      "selected_color": "andes-secondary-palette-k-500",
+      "size": "medium",
+      "title": "退货数量",
+      "tooltip": {
+        "content": "选定期间内买家后来要求退货的订单数量。",
+        "side": "right",
+        "size": "big"
+      },
+      "type": "double_line",
+      "value": "0",
+      "wrap": false
+    }
+  ],
+  "series": [
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-09-24T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 28
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-09-25T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 32
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-09-26T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 30
+    },
+    {
+      "average_price_by_sell": 10.9,
+      "average_price_by_unit": 10.9,
+      "cancelled_sales_quantity": 0,
+      "conversion": 1.8,
+      "date": "2026-09-27T00:00:00",
+      "gross_sales": 10.9,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 1,
+      "sold_units": 1,
+      "visits": 57
+    },
+    {
+      "average_price_by_sell": 10.9,
+      "average_price_by_unit": 10.9,
+      "cancelled_sales_quantity": 0,
+      "conversion": 2.3,
+      "date": "2026-09-28T00:00:00",
+      "gross_sales": 10.9,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 1,
+      "sold_units": 1,
+      "visits": 44
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-09-29T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 57
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-09-30T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 54
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-01T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 41
+    },
+    {
+      "average_price_by_sell": 10.9,
+      "average_price_by_unit": 10.9,
+      "cancelled_sales_quantity": 0,
+      "conversion": 3.2,
+      "date": "2026-10-02T00:00:00",
+      "gross_sales": 21.8,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 2,
+      "sold_units": 2,
+      "visits": 62
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-03T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 43
+    },
+    {
+      "average_price_by_sell": 12.1,
+      "average_price_by_unit": 12.1,
+      "cancelled_sales_quantity": 0,
+      "conversion": 5,
+      "date": "2026-10-04T00:00:00",
+      "gross_sales": 24.2,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 2,
+      "sold_units": 2,
+      "visits": 40
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-05T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 56
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-06T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 48
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-07T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 50
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-08T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 53
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-09T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 48
+    },
+    {
+      "average_price_by_sell": 10.9,
+      "average_price_by_unit": 10.9,
+      "cancelled_sales_quantity": 1,
+      "conversion": 3.7,
+      "date": "2026-10-10T00:00:00",
+      "gross_sales": 21.8,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 2,
+      "sold_units": 2,
+      "visits": 54
+    },
+    {
+      "average_price_by_sell": 10.9,
+      "average_price_by_unit": 10.9,
+      "cancelled_sales_quantity": 1,
+      "conversion": 3.6,
+      "date": "2026-10-11T00:00:00",
+      "gross_sales": 21.8,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 2,
+      "sold_units": 2,
+      "visits": 56
+    },
+    {
+      "average_price_by_sell": 11.5,
+      "average_price_by_unit": 11.5,
+      "cancelled_sales_quantity": 0,
+      "conversion": 3.1,
+      "date": "2026-10-12T00:00:00",
+      "gross_sales": 23,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 2,
+      "sold_units": 2,
+      "visits": 65
+    },
+    {
+      "average_price_by_sell": 10.9,
+      "average_price_by_unit": 10.9,
+      "cancelled_sales_quantity": 1,
+      "conversion": 3.6,
+      "date": "2026-10-13T00:00:00",
+      "gross_sales": 21.8,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 2,
+      "sold_units": 2,
+      "visits": 55
+    },
+    {
+      "average_price_by_sell": 21.8,
+      "average_price_by_unit": 10.9,
+      "cancelled_sales_quantity": 0,
+      "conversion": 1.8,
+      "date": "2026-10-14T00:00:00",
+      "gross_sales": 21.8,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 1,
+      "sold_units": 2,
+      "visits": 56
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-15T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 57
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-16T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 54
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-17T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 37
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-18T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 51
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-19T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 57
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-20T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 60
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-21T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 66
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-22T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 51
+    },
+    {
+      "average_price_by_sell": 11.2,
+      "average_price_by_unit": 11.2,
+      "cancelled_sales_quantity": 0,
+      "conversion": 1.8,
+      "date": "2026-10-23T00:00:00",
+      "gross_sales": 11.2,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 1,
+      "sold_units": 1,
+      "visits": 57
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-24T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 50
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-25T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 33
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-26T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 46
+    },
+    {
+      "average_price_by_sell": 13.6,
+      "average_price_by_unit": 13.6,
+      "cancelled_sales_quantity": 0,
+      "conversion": 1.8,
+      "date": "2026-10-27T00:00:00",
+      "gross_sales": 13.6,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 1,
+      "sold_units": 1,
+      "visits": 56
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-28T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 57
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-29T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 32
+    },
+    {
+      "average_price_by_sell": 12.7,
+      "average_price_by_unit": 12.7,
+      "cancelled_sales_quantity": 0,
+      "conversion": 2,
+      "date": "2026-10-30T00:00:00",
+      "gross_sales": 12.7,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 1,
+      "sold_units": 1,
+      "visits": 49
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-10-31T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 30
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-01T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 45
+    },
+    {
+      "average_price_by_sell": 12.4,
+      "average_price_by_unit": 12.4,
+      "cancelled_sales_quantity": 0,
+      "conversion": 1.8,
+      "date": "2026-11-02T00:00:00",
+      "gross_sales": 12.4,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 1,
+      "sold_units": 1,
+      "visits": 57
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-03T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 57
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-04T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 67
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-05T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 55
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-06T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 60
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-07T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 41
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-08T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 34
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-09T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 35
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-10T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 48
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-11T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 44
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-12T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 42
+    },
+    {
+      "average_price_by_sell": 12.7,
+      "average_price_by_unit": 12.7,
+      "cancelled_sales_quantity": 0,
+      "conversion": 2,
+      "date": "2026-11-13T00:00:00",
+      "gross_sales": 12.7,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 1,
+      "sold_units": 1,
+      "visits": 50
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-14T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 75
+    },
+    {
+      "average_price_by_sell": 12.7,
+      "average_price_by_unit": 12.7,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0.8,
+      "date": "2026-11-15T00:00:00",
+      "gross_sales": 12.7,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 1,
+      "sold_units": 1,
+      "visits": 122
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-16T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 115
+    },
+    {
+      "average_price_by_sell": 12.7,
+      "average_price_by_unit": 12.7,
+      "cancelled_sales_quantity": 0,
+      "conversion": 2.2,
+      "date": "2026-11-17T00:00:00",
+      "gross_sales": 25.4,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 2,
+      "sold_units": 2,
+      "visits": 90
+    },
+    {
+      "average_price_by_sell": 0,
+      "average_price_by_unit": 0,
+      "cancelled_sales_quantity": 0,
+      "conversion": 0,
+      "date": "2026-11-18T00:00:00",
+      "gross_sales": 0,
+      "returns_sales_quantity": 0,
+      "sell_quantity": 0,
+      "sold_units": 0,
+      "visits": 67
+    }
+  ],
+  "currency_config": [
+    {
+      "color": "andes-secondary-palette-a-500",
+      "data_key": "gross_sales",
+      "format": {
+        "locale": "zh-CN",
+        "symbol": "US$",
+        "type": "price_cbt"
+      },
+      "name": "总销售额"
+    },
+    {
+      "color": "andes-secondary-palette-h-500",
+      "data_key": "sold_units",
+      "format": {
+        "locale": "zh-CN",
+        "type": "number"
+      },
+      "name": "已售件数"
+    },
+    {
+      "color": "andes-secondary-palette-c-500",
+      "data_key": "average_price_by_unit",
+      "format": {
+        "locale": "zh-CN",
+        "symbol": "US$",
+        "type": "price_cbt"
+      },
+      "name": "平均单价"
+    },
+    {
+      "color": "andes-secondary-palette-l-500",
+      "data_key": "visits",
+      "format": {
+        "locale": "zh-CN",
+        "type": "number"
+      },
+      "name": "访问量"
+    },
+    {
+      "color": "andes-secondary-palette-b-500",
+      "data_key": "sell_quantity",
+      "format": {
+        "locale": "zh-CN",
+        "type": "number"
+      },
+      "name": "订单数量"
+    },
+    {
+      "color": "andes-secondary-palette-j-500",
+      "data_key": "conversion",
+      "format": {
+        "locale": "zh-CN",
+        "type": "percentage"
+      },
+      "name": "转化率"
+    },
+    {
+      "color": "andes-secondary-palette-g-500",
+      "data_key": "average_price_by_sell",
+      "format": {
+        "locale": "zh-CN",
+        "symbol": "US$",
+        "type": "price_cbt"
+      },
+      "name": "平均售价"
+    },
+    {
+      "color": "andes-secondary-palette-d-500",
+      "data_key": "cancelled_sales_quantity",
+      "format": {
+        "locale": "zh-CN",
+        "type": "number"
+      },
+      "name": "已取消的销售数量"
+    },
+    {
+      "color": "andes-secondary-palette-k-500",
+      "data_key": "returns_sales_quantity",
+      "format": {
+        "locale": "zh-CN",
+        "type": "number"
+      },
+      "name": "退货数量"
+    }
+  ]
+}

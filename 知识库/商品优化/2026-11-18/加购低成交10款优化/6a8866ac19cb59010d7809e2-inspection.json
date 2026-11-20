@@ -1,0 +1,43 @@
+{
+  "product_id": "6a8866ac19cb59010d7809e2",
+  "detail": {
+    "image": "https://img.joomcdn.net/de55b6f71b49e0d9402717768000188b0377c56b_1024_1024.jpeg",
+    "imageLoaded": false,
+    "links": [
+      {
+        "href": "https://merchant.joom.com/panel/products/6a8866ac19cb59010d7809e2/edit",
+        "text": "编辑产品"
+      },
+      {
+        "href": "https://merchant.joom.com/panel/orders?productId=%226a8866ac19cb59010d7809e2%22",
+        "text": "订单"
+      }
+    ],
+    "text": "6a0e67981390ef0168964a55\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n错误(1)\n需注意\n1\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n产品信息\n启用\n统计\n评分\n1\n评价数量\n1\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n是\nGallery Dept. Letter Print Cotton T-Shirt, Unisex Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a8866ac19cb59010d7809e2\n等级\n缺失内容\n产品SKU\n6a0e67981390ef0168964a55\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月21日\n敏感货\n普通货\n描述\nUnisex cotton graphic-print T-shirt with a round neckline, short sleeves and pullover closure. The listing shows a Gallery Dept. letter-print design.\n\nSIZE CHART (cm)\nSize: 2XS, Length: 60 cm, Bust: 88 cm, Shoulder: 41 cm, Sleeve: 18 cm\nSize: XS, Length: 66 cm, Bust: 96 cm, Shoulder: 45 cm, Sleeve: 19 cm\nSize: S, Length: 68 cm, Bust: 100 cm, Shoulder: 47 cm, Sleeve: 19 cm\nSize: M, Length: 70 cm, Bust: 104 cm, Shoulder: 49 cm, Sleeve: 20 cm\nSize: L, Length: 72 cm, Bust: 108 cm, Shoulder: 51 cm, Sleeve: 20 cm\nSize: XL, Length: 74 cm, Bust: 112 cm, Shoulder: 53 cm, Sleeve: 21 cm\nSize: 2XL, Length: 76 cm, Bust: 116 cm, Shoulder: 55 cm, Sleeve: 21 cm\nSize: 3XL, Length: 78 cm, Bust: 120 cm, Shoulder: 57 cm, Sleeve: 22 cm\n\nFIT: Compare these garment measurements with a similar T-shirt before ordering. Allow 2–3 cm variation due to manual measurement.\nCARE: Do not tumble dry.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Machine wash at temperatures below 30°C、Do not tumble dry\nGender: unisex\nClothing Decoration: text\nPattern: print\nSleeve Length: short sleeve\nNeckline: round\nWashing Care: Machine wash is allowed\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n搜索标签\ngallery dept\nletter print t shirt\ncotton tee\ngraphic t shirt\ncrew neck tee\nshort sleeve shirt\n",
+    "title": "Gallery Dept. Letter Print Cotton T-Shirt, Unisex Short Sleeve Crew Neck",
+    "url": "https://merchant.joom.com/panel/products/6a8866ac19cb59010d7809e2",
+    "variantCount": 8,
+    "variantDetailSha256": "95b860b9c0100c14447823135eba5accc0d1b43d9fafd09e401dcce304964610"
+  },
+  "orders": {
+    "count": 7,
+    "empty": false,
+    "filters": "\n店铺：所有\n订单ID\n产品ID 是6a8866ac19cb59010d7809e2\n产品SKU\n状态\n批准日期\n假期批准日期\n添加筛选器\n订单\n7\n",
+    "rows": 7,
+    "url": "https://merchant.joom.com/panel/orders?productId=%226a8866ac19cb59010d7809e2%22",
+    "captured_at": "2026-11-18T17:17:52.948949+08:00"
+  },
+  "screenshot": {
+    "format": "png",
+    "path": "/private/tmp/joom-cart-conversion-20261118/6a8866ac19cb59010d7809e2.png",
+    "sizeBytes": 100387,
+    "mimeType": "image/png"
+  },
+  "baseline": {
+    "period": "2026/10/21 — 2026/11/17",
+    "impressions": 2958,
+    "clicks": 142,
+    "purchases": 3,
+    "cart": 29
+  }
+}

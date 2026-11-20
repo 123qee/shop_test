@@ -1,0 +1,31 @@
+{
+  "source": "https://merchant.joom.com/panel/orders?limit=100&statuses=%5B%22refunded%22%2C%22paidByJoomRefund%22%5D",
+  "captured_at": "2026-11-19T03:30:12.579393+00:00",
+  "count": "23",
+  "filters": "\n店铺：所有\n订单ID\n产品ID\n产品SKU\n状态: 已退款、被Joom退款\n2\n批准日期\n假期批准日期\n添加筛选器\n订单\n23\n",
+  "ids": [
+    "38Q2GWQJ",
+    "VL6LX2J7",
+    "GJL6GXQG",
+    "VLD88MLJ",
+    "LMJYLL4P",
+    "8LJNMN8G",
+    "JVWV3LN6",
+    "P686XVMN",
+    "8LJ3X939",
+    "P689G3EN",
+    "JVW42D46",
+    "7XMVM3L5",
+    "EVQ5XD2Y",
+    "VL9669QV",
+    "WDEPGJ73",
+    "67M9XVEP",
+    "Q8JGP9NN",
+    "WDJJ6DE8",
+    "M2J557M3",
+    "269VV8E3",
+    "XMJYY35L",
+    "P6M553JM",
+    "8LN3E759"
+  ]
+}

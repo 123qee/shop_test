@@ -1,0 +1,212 @@
+{
+  "source": "https://api-merchant.joom.com/api/v3/stores/metrics",
+  "captured_at": "2026-11-18T04:32:02.793886+00:00",
+  "body": {
+    "code": 0,
+    "data": {
+      "items": [
+        {
+          "id": "6a817b93f5d3934528e70df7",
+          "status": "unknown",
+          "metrics": {
+            "cancelRate": {
+              "value": 0,
+              "thresholds": [
+                0.01,
+                0.02,
+                0.08
+              ],
+              "greaterIsBetter": false,
+              "status": "perfect",
+              "measurementStart": 1792875600000,
+              "measurementEnd": 1794085200000,
+              "applicableCount": 65,
+              "metricCount": 0
+            },
+            "refundByQualityRate": {
+              "value": 0,
+              "thresholds": [
+                0.015,
+                0.04,
+                0.07
+              ],
+              "greaterIsBetter": false,
+              "status": "unknown",
+              "measurementStart": 1785963600000,
+              "measurementEnd": 1787173200000,
+              "applicableCount": 0,
+              "metricCount": 0
+            },
+            "expensiveCancelRate": {
+              "value": 0,
+              "thresholds": [
+                0.01,
+                0.02,
+                0.08
+              ],
+              "greaterIsBetter": false,
+              "status": "unknown",
+              "measurementStart": 1792875600000,
+              "measurementEnd": 1794085200000,
+              "applicableCount": 0,
+              "metricCount": 0
+            },
+            "expensiveRefundByQualityRate": {
+              "value": 0,
+              "thresholds": [
+                0.015,
+                0.04,
+                0.07
+              ],
+              "greaterIsBetter": false,
+              "status": "unknown",
+              "measurementStart": 1785963600000,
+              "measurementEnd": 1787173200000,
+              "applicableCount": 0,
+              "metricCount": 0
+            }
+          },
+          "negativeFeedbackRate": {
+            "status": "unknown",
+            "measurementStart": 1786741200000,
+            "measurementEnd": 1787950800000
+          }
+        },
+        {
+          "id": "6a8c4690b1e1819ed91f9baa",
+          "status": "unknown",
+          "metrics": {
+            "cancelRate": {
+              "value": 0.2,
+              "thresholds": [
+                0.01,
+                0.02,
+                0.08
+              ],
+              "greaterIsBetter": false,
+              "status": "unknown",
+              "measurementStart": 1792875600000,
+              "measurementEnd": 1794085200000,
+              "applicableCount": 5,
+              "metricCount": 1
+            },
+            "refundByQualityRate": {
+              "value": 0,
+              "thresholds": [
+                0.015,
+                0.04,
+                0.07
+              ],
+              "greaterIsBetter": false,
+              "status": "unknown",
+              "measurementStart": 1785963600000,
+              "measurementEnd": 1787173200000,
+              "applicableCount": 0,
+              "metricCount": 0
+            },
+            "expensiveCancelRate": {
+              "value": 0,
+              "thresholds": [
+                0.01,
+                0.02,
+                0.08
+              ],
+              "greaterIsBetter": false,
+              "status": "unknown",
+              "measurementStart": 1792875600000,
+              "measurementEnd": 1794085200000,
+              "applicableCount": 2,
+              "metricCount": 0
+            },
+            "expensiveRefundByQualityRate": {
+              "value": 0,
+              "thresholds": [
+                0.015,
+                0.04,
+                0.07
+              ],
+              "greaterIsBetter": false,
+              "status": "unknown",
+              "measurementStart": 1785963600000,
+              "measurementEnd": 1787173200000,
+              "applicableCount": 0,
+              "metricCount": 0
+            }
+          },
+          "negativeFeedbackRate": {
+            "status": "unknown",
+            "measurementStart": 1786741200000,
+            "measurementEnd": 1787950800000
+          }
+        },
+        {
+          "id": "6a9d4221018d89bb9e5c22ef",
+          "status": "unknown",
+          "metrics": {
+            "cancelRate": {
+              "value": 0,
+              "thresholds": [
+                0.01,
+                0.02,
+                0.08
+              ],
+              "greaterIsBetter": false,
+              "status": "perfect",
+              "measurementStart": 1792875600000,
+              "measurementEnd": 1794085200000,
+              "applicableCount": 23,
+              "metricCount": 0
+            },
+            "refundByQualityRate": {
+              "value": 0,
+              "thresholds": [
+                0.015,
+                0.04,
+                0.07
+              ],
+              "greaterIsBetter": false,
+              "status": "unknown",
+              "measurementStart": 1785963600000,
+              "measurementEnd": 1787173200000,
+              "applicableCount": 0,
+              "metricCount": 0
+            },
+            "expensiveCancelRate": {
+              "value": 0,
+              "thresholds": [
+                0.01,
+                0.02,
+                0.08
+              ],
+              "greaterIsBetter": false,
+              "status": "unknown",
+              "measurementStart": 1792875600000,
+              "measurementEnd": 1794085200000,
+              "applicableCount": 0,
+              "metricCount": 0
+            },
+            "expensiveRefundByQualityRate": {
+              "value": 0,
+              "thresholds": [
+                0.015,
+                0.04,
+                0.07
+              ],
+              "greaterIsBetter": false,
+              "status": "unknown",
+              "measurementStart": 1785963600000,
+              "measurementEnd": 1787173200000,
+              "applicableCount": 0,
+              "metricCount": 0
+            }
+          },
+          "negativeFeedbackRate": {
+            "status": "unknown",
+            "measurementStart": 1786741200000,
+            "measurementEnd": 1787950800000
+          }
+        }
+      ]
+    }
+  }
+}

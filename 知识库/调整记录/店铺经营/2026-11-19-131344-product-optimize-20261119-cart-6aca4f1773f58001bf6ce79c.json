@@ -1,0 +1,20 @@
+{
+  "suggestion_id": "product-optimize-20261119-cart-6aca4f1773f58001bf6ce79c",
+  "event_type": "follow_up",
+  "recorded_at": "2026-11-19T13:13:44.227925+08:00",
+  "automation_id": "joom-2",
+  "report": "日报/店铺经营/2026-11-19/131344.md",
+  "snapshot": "快照/店铺经营/2026-11-19/131344.json",
+  "actual_setting_changed": false,
+  "previous_status": "已保存并刷新核验",
+  "product_id": "6aca4f1773f58001bf6ce79c",
+  "object": "jwh second",
+  "new_business_action_executed": false,
+  "status": "在售版本已核实，效果观察中",
+  "observed_live": true,
+  "title_matches": true,
+  "intro_matches": true,
+  "published_date_display": "2026/11/19",
+  "source": "https://merchant.joom.com/panel/products/6aca4f1773f58001bf6ce79c/active",
+  "review_condition": "发布日次日起累计3/7个完整日；经营统计目前截止11/17，不宣称优化改善成交"
+}

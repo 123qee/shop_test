@@ -1,0 +1,25 @@
+{
+  "suggestion_id": "product-optimize-20261118-cart-6a8866ac19cb59010d7809e2",
+  "product_id": "6a8866ac19cb59010d7809e2",
+  "shop": "Nineteen Wear",
+  "scope": "joom_store",
+  "recorded_at": "2026-11-18T20:25:34.875377+08:00",
+  "status": "已保存并刷新核验",
+  "actual_setting_changed": true,
+  "historical_orders_before": 7,
+  "baseline": {
+    "period": "2026/10/21 — 2026/11/17",
+    "impressions": 2958,
+    "clicks": 142,
+    "purchases": 3,
+    "cart": 29
+  },
+  "changed_fields": [
+    "描述"
+  ],
+  "observed_review_pending": true,
+  "stock_min_observed": 986,
+  "source_before": "商品优化/2026-11-18/加购低成交10款优化/6a8866ac19cb59010d7809e2-before.json",
+  "source_after": "商品优化/2026-11-18/加购低成交10款优化/6a8866ac19cb59010d7809e2-after.json",
+  "followup": "核对实际在售版本生效时间；修改生效后按完整7天比较点击、加购及购买，关注售后。国际运费和目的国可售仍待核实。"
+}

@@ -1,0 +1,26 @@
+{
+  "suggestion_id": "baseline-20261117-ml-policy",
+  "priority": 2,
+  "platform": "mercadolibre",
+  "countries": [
+    "AR",
+    "CO"
+  ],
+  "source": "https://sellers.mercadolibre.com/sales-summary",
+  "status": "持续复查，不自动补库存或重上架",
+  "facts": [
+    "AR当前3项缺货、4%不合规货件；CO1项缺货、投诉与取消各3.84%",
+    "AR近28天1565访问8单，CO544访问7单，均不外推单日小样本"
+  ],
+  "suggested_action": "先从缺货入口找具体SKU、确认真实可供数量及发货能力；按订单时限和售后证据检查尺码、印花与交付承诺。保持已有成交主款，不机械清空失效或批量补999。",
+  "evidence_strength": "强：当前摘要/指标；缺货SKU和售后根因尚未逐项核实",
+  "expected_improvement": "恢复可选规格、减少取消与不合规发货",
+  "review_condition": "24–72小时看缺货和履约状态；7完整日看转化",
+  "event_type": "scheduled_recommendation",
+  "recorded_at": "2026-11-20T11:11:49.119184+08:00",
+  "automation_id": "joom-2",
+  "actual_setting_changed": false,
+  "new_business_action_executed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/111149.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/111149.json"
+}

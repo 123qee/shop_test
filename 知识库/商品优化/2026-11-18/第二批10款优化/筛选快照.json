@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "platform": "joom",
+    "shop": "Nineteen Wear",
+    "shop_id": "6a817b93f5d3934528e70df7",
+    "report_timezone": "Asia/Shanghai",
+    "platform_timezone": null,
+    "platform_timezone_note": "本轮商品筛选页未展示统计时区；不根据本机时区推定",
+    "window_start": "2026-10-20",
+    "window_end": "2026-11-16",
+    "data_updated_at_display": "2026-11-17 19:42:36",
+    "data_updated_at_timezone": null,
+    "currency": "USD",
+    "captured_at": "2026-11-18T13:11:59.475804+08:00",
+    "completeness": "点击降序前4页，每页50款，共200款候选筛选；不是全店全量审计。对选中10款逐一核对无日期、无状态筛选的全部历史订单。"
+  },
+  "selected_products": {
+    "6a980c1bd39fbe01c00051c8": {
+      "cart": "1",
+      "clicks": "9",
+      "impressions": "18",
+      "name": "Men's 100% Cotton Casual Comfortable Short-Sleeve T-Shirt Trendy Street Style Summer Printed Pattern T-Shirt Couple Top\n6a980c1bd39fbe01c00051c8",
+      "purchases": "0",
+      "url": "https://merchant.joom.com/panel/products/6a980c1bd39fbe01c00051c8"
+    },
+    "6abdb3ae1bfb960155e400ad": {
+      "cart": "0",
+      "clicks": "6",
+      "impressions": "116",
+      "name": "2026 Mens Hoodie Urban Streetwear Fashion Hip Hop Hooded Sweatshirt Autumn Winter Male Trendy Casual Streetwear Hoody\n6abdb3ae1bfb960155e400ad",
+      "purchases": "0",
+      "url": "https://merchant.joom.com/panel/products/6abdb3ae1bfb960155e400ad"
+    },
+    "6aa1168d2da705017517684d": {
+      "cart": "0",
+      "clicks": "2",
+      "impressions": "50",
+      "name": "Girl Unicorn Balloon Star Print Hoodies Kids Rainbow Striped Navy Blue Warm Cozy Daily Street Casual Cotton Sweatshirt Outerwear\n6aa1168d2da705017517684d",
+      "purchases": "0",
+      "url": "https://merchant.joom.com/panel/products/6aa1168d2da705017517684d"
+    },
+    "6a9c2a3a3f8ce801f4d01f8e": {
+      "cart": "1",
+      "clicks": "8",
+      "impressions": "1,288",
+      "name": "New York Boys and Girls Hoodies Autumn/Winter Hoodies Long Sleeves Classic Casual Minimalist Jackets Children's Letter Hoodies\n6a9c2a3a3f8ce801f4d01f8e",
+      "purchases": "0",
+      "url": "https://merchant.joom.com/panel/products/6a9c2a3a3f8ce801f4d01f8e"
+    },
+    "6a9d36ac3f8ce801f4d96f4d": {
+      "cart": "0",
+      "clicks": "2",
+      "impressions": "89",
+      "name": "A-Z Kapibara cartoon printed children's hoodie, suitable for autumn outdoor casual tops for boys and girls, with hooded pullover\n6a9d36ac3f8ce801f4d96f4d",
+      "purchases": "0",
+      "url": "https://merchant.joom.com/panel/products/6a9d36ac3f8ce801f4d96f4d"
+    },
+    "6a9d41b7ad688a01ff60ef65": {
+      "cart": "0",
+      "clicks": "6",
+      "impressions": "173",
+      "name": "Smiley Face 3D Graphic Polyester T-Shirt, Unisex Short Sleeve\n6a9d41b7ad688a01ff60ef65",
+      "purchases": "0",
+      "url": "https://merchant.joom.com/panel/products/6a9d41b7ad688a01ff60ef65"
+    },
+    "6ad0b7d1303ef201d3a3f24b": {
+      "cart": "1",
+      "clicks": "6",
+      "impressions": "15",
+      "name": "1pc Y2K Cool Hip Hop Lips Print Kids Hoodie Unisex, For Kids Daily Wear,Pullover Hooded Sweatshirt, Casual Streetwear Top\n6ad0b7d1303ef201d3a3f24b",
+      "purchases": "0",
+      "url": "https://merchant.joom.com/panel/products/6ad0b7d1303ef201d3a3f24b"
+    },
+    "6aba5a6e45408d0115f00d34": {
+      "cart": "0",
+      "clicks": "9",
+      "impressions": "259",
+      "name": "Boys Hooded Sweatshirt Jacket Zipper Casual Cardigan Sportswear Top for Kids Teenager Spring Autumn Clothing Baby\n6aba5a6e45408d0115f00d34",
+      "purchases": "0",
+      "url": "https://merchant.joom.com/panel/products/6aba5a6e45408d0115f00d34"
+    },
+    "6a8cd88e8f3b2901f216fe60": {
+      "cart": "0",
+      "clicks": "9",
+      "impressions": "65",
+      "name": "Fashion Unisex 3D Printed Sketch Indian Chief T-Shirt… More\n6a8cd88e8f3b2901f216fe60",
+      "purchases": "0",
+      "url": "https://merchant.joom.com/panel/products/6a8cd88e8f3b2901f216fe60"
+    },
+    "6aba58305ef7d90176396d41": {
+      "cart": "3",
+      "clicks": "29",
+      "impressions": "325",
+      "name": "6aba58305ef7d90176396d41\n6aba58305ef7d90176396d41",
+      "purchases": "0",
+      "url": "https://merchant.joom.com/panel/products/6aba58305ef7d90176396d41"
+    }
+  },
+  "catalog_files": [
+    "catalog-1.json",
+    "catalog-2.json",
+    "catalog-3.json",
+    "catalog-4.json"
+  ]
+}

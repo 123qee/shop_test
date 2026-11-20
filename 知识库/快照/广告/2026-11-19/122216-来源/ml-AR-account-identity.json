@@ -1,0 +1,56 @@
+{
+  "site": "AR",
+  "country": "阿根廷",
+  "expected_advertiser_id": "2246873",
+  "status": "account_mismatch",
+  "summary": {
+    "adlink": "https://global-selling.mercadolibre.com/advertising/hub/accounts?validate-user=true&from=summary_ads&utm_source=sc_summary_v2&utm_medium=card&utm_campaign=active&advertiserId=2246873",
+    "campaign_links": [],
+    "captured_at": "2026-11-19T03:44:08.900Z",
+    "card": "广告指标\n2\n下降 75%\n\n75%\n\n广告销售额\n\n540\n已上涨 46%\n\n46%\n\n收到的点击量\n\n前往广告",
+    "country": "阿根廷",
+    "notices": [],
+    "owner": "摘要",
+    "reputation": [
+      "您的信誉度\n绿色\n买家眼中的您\n\n您的信誉福利仍处于活动状态。",
+      "信誉\n\n生效中的权益\n\n绿色\n\n0%\n\n投诉\n\n0%\n\n由你取消\n\n4%\n\n不合规的货件\n\n前往声誉页面"
+    ],
+    "url": "https://sellers.mercadolibre.com/sales-summary"
+  },
+  "attempts": [
+    {
+      "adlink": null,
+      "campaign_links": [
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/359315249/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/359330056/dashboard?navigate_to=seller_central"
+      ],
+      "captured_at": "2026-11-19T03:44:18.281Z",
+      "card": null,
+      "country": "阿根廷",
+      "notices": [],
+      "owner": "CNQISHIJIECLOTHINGARR",
+      "reputation": [],
+      "url": "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns?advertiser_id=1282817&account_id=1320548&navigate_to=seller_central&from=ads-manager&status=A%2CD",
+      "observed_advertiser_id": "1282817"
+    },
+    {
+      "adlink": null,
+      "campaign_links": [
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/359315249/dashboard?navigate_to=seller_central",
+        "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns/359330056/dashboard?navigate_to=seller_central"
+      ],
+      "captured_at": "2026-11-19T03:44:27.639Z",
+      "card": null,
+      "country": "阿根廷",
+      "notices": [],
+      "owner": "CNQISHIJIECLOTHINGARR",
+      "reputation": [],
+      "url": "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns?advertiser_id=1282817&account_id=1320548&navigate_to=seller_central&from=ads-manager&status=A%2CD",
+      "observed_advertiser_id": "1282817"
+    }
+  ],
+  "metrics": null,
+  "currency": null,
+  "platform_timezone": null,
+  "data_updated_at": null
+}

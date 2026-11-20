@@ -1,0 +1,38 @@
+{
+  "suggestion_id": "baseline-20261117-ml-policy",
+  "event_type": "follow_up",
+  "recorded_at": "2026-11-19T13:12:48.002744+08:00",
+  "automation_id": "joom-2",
+  "report": "日报/店铺经营/2026-11-19/131248.md",
+  "snapshot": "快照/店铺经营/2026-11-19/131248.json",
+  "actual_setting_changed": false,
+  "previous_status": "待复查",
+  "product_id": null,
+  "object": "智利",
+  "new_business_action_executed": false,
+  "status": "持续待核实，摘要不能直接认定侵权",
+  "recommendation": {
+    "suggestion_id": "baseline-20261117-ml-policy",
+    "priority": 5,
+    "platform": "mercadolibre",
+    "countries": [
+      "AR",
+      "CO",
+      "CL"
+    ],
+    "source": "https://sellers.mercadolibre.com/sales-summary",
+    "facts": [
+      "AR28天1565访问8单，前期1411访问15单；不合规货件4%、失效入口60；待回复问题当前0",
+      "AR同系列荧光方块款MLA1861959883为782访问6单，占本站8单中的6单，保护主销款；同商品跨规格访问不能相加",
+      "CO28天549访问6单，前期473访问10单；投诉与卖家取消均4%，失效入口19",
+      "CL28天2223访问30单，前期1640访问16单；近7天8单vs11单，短期波动不外推；失效入口10"
+    ],
+    "suggested_action": "AR先核对4%不合规货件及真正影响成交的失效原因；CO先对投诉/取消涉及的尺码及配送承诺查因。CL保持主要成交款，逐项核对失效原因，不批量重新上架或降价。",
+    "expected_improvement": "可售覆盖与履约/售后质量",
+    "evidence_strength": "强：总体指标和入口数量；个案原因、失效性质仍待核实",
+    "status": "持续待核实，摘要不能直接认定侵权",
+    "actual_setting_changed": false,
+    "review": "24–72小时看信誉与个案状态；7个完整日复查转化，不依据1–2单变化叠加调整"
+  },
+  "review_condition": "24–72小时看信誉与个案状态；7个完整日复查转化，不依据1–2单变化叠加调整"
+}

@@ -1,0 +1,54 @@
+{
+  "suggestion_id": "product-optimize-r2-20261117-dolphin",
+  "recorded_on": "2026-11-17",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "product_id": "6aa12654365a0701ec2995ec",
+  "name": "海豚海洋图案T恤",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status_at_verification": "平台审核中，编辑版本与在售版本不同",
+  "all_time_orders_before": 0,
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-16"
+  },
+  "period_clicks": 8,
+  "changes": [
+    "精简堆砌标题，明确聚酯材质和海豚海洋图案",
+    "增加准确搜索标签",
+    "新增简介，保留原属性、尺码和洗护全文"
+  ],
+  "unresolved": [
+    "原有“尺寸表中的图片”提示保留，需核对图片与文字尺码后再处理"
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/第二批/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/第二批/6aa12654365a0701ec2995ec-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/第二批/6aa12654365a0701ec2995ec-after.json",
+  "follow_up": "每天11点核对审核及在售版本；审核生效后观察3天流量、7天转化、14天归因及售后。低样本不判断效果，不自动再次改商品或投放。",
+  "outcome": "尚无优化后销量证据，不声称销量提升",
+  "proposed": {
+    "title": "Dolphin Ocean Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck",
+    "description": "Unisex polyester T-shirt with a colorful all-over dolphin and ocean print, a round neckline and short sleeves.\n\nProduct Type: T-Shirt\nMaterial: Polyester\nManufacture Country: China\nApplicable Scene: Daily\nStyle: Casual\nApplicable Season: Summer\nNeckline: Round Neck\nClosure Type: Pullover\nClothing Decoration: No Decoration\nLeather Label: No\nSleeve Length: Short Sleeve\nSex: Unisex\nAge: 18–45 Years Old\nPattern: Print\nLabel: Yes\nWashing Care: Do Not Tumble Dry  \nSize Chart (cm):\n2XS: Shoulder 40 cm, Bust 88 cm, Sleeve 18 cm, Length 62 cm.\nXS: Shoulder 42 cm, Bust 92 cm, Sleeve 18 cm, Length 64 cm.\nS: Shoulder 44 cm, Bust 96 cm, Sleeve 19 cm, Length 66 cm.\nM: Shoulder 46 cm, Bust 100 cm, Sleeve 19 cm, Length 68 cm.\nL: Shoulder 50 cm, Bust 104 cm, Sleeve 20 cm, Length 70 cm.\nXL: Shoulder 52 cm, Bust 108 cm, Sleeve 20 cm, Length 72 cm.\n2XL: Shoulder 54 cm, Bust 114 cm, Sleeve 21 cm, Length 74 cm.\n3XL: Shoulder 57 cm, Bust 120 cm, Sleeve 22 cm, Length 76 cm.\n4XL: Shoulder 60 cm, Bust 126 cm, Sleeve 23 cm, Length 78 cm.\n5XL: Shoulder 62 cm, Bust 132 cm, Sleeve 24 cm, Length 80 cm.\n6XL: Shoulder 64 cm, Bust 138 cm, Sleeve 25 cm, Length 82 cm.  \nNotes: Please carefully check the size chart before purchasing. Due to manual measurement, please allow a 2–3 cm difference. The actual color may vary slightly due to lighting and screen settings.",
+    "tags": "dolphin t shirt,ocean graphic tee,marine animal shirt,polyester t shirt,unisex short sleeve,round neck tshirt,all over print tee"
+  },
+  "verified_after_reload": {
+    "text": "1005007457975615\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n1\n尺寸表中的图片\n请将尺码表从图片中移除——请改用尺码表功能。\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\n绑定的文件\n欧代协议\nManufacturer Information: Qianshan County Nineteen Trade Co., Ltd\nDolphin Ocean Print Polyester T-Shirt, Unisex Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6aa12654365a0701ec2995ec\n等级\n部分内容\n产品SKU\n1005007457975615\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月9日\n敏感货\n普通货\n描述\nUnisex polyester T-shirt with a colorful all-over dolphin and ocean print, a round neckline and short sleeves.\n\nProduct Type: T-Shirt\nMaterial: Polyester\nManufacture Country: China\nApplicable Scene: Daily\nStyle: Casual\nApplicable Season: Summer\nNeckline: Round Neck\nClosure Type: Pullover\nClothing Decoration: No Decoration\nLeather Label: No\nSleeve Length: Short Sleeve\nSex: Unisex\nAge: 18–45 Years Old\nPattern: Print\nLabel: Yes\nWashing Care: Do Not Tumble Dry\nSize Chart (cm):\n2XS: Shoulder 40 cm, Bust 88 cm, Sleeve 18 cm, Length 62 cm.\nXS: Shoulder 42 cm, Bust 92 cm, Sleeve 18 cm, Length 64 cm.\nS: Shoulder 44 cm, Bust 96 cm, Sleeve 19 cm, Length 66 cm.\nM: Shoulder 46 cm, Bust 100 cm, Sleeve 19 cm, Length 68 cm.\nL: Shoulder 50 cm, Bust 104 cm, Sleeve 20 cm, Length 70 cm.\nXL: Shoulder 52 cm, Bust 108 cm, Sleeve 20 cm, Length 72 cm.\n2XL: Shoulder 54 cm, Bust 114 cm, Sleeve 21 cm, Length 74 cm.\n3XL: Shoulder 57 cm, Bust 120 cm, Sleeve 22 cm, Length 76 cm.\n4XL: Shoulder 60 cm, Bust 126 cm, Sleeve 23 cm, Length 78 cm.\n5XL: Shoulder 62 cm, Bust 132 cm, Sleeve 24 cm, Length 80 cm.\n6XL: Shoulder 64 cm, Bust 138 cm, Sleeve 25 cm, Length 82 cm.\nNotes: Please carefully check the size chart before purchasing. Due to manual measurement, please allow a 2–3 cm difference. The actual color may vary slightly due to lighting and screen settings.\n产品属性\nMaterial for fur: polyster\nMaterial: polyester\nMaterial: polyester\nManufacture Country: China\nSeason: summer\nNeckline: round\nClothing Decoration: no decoration\nLeather Label: no\nSleeve Length: short sleeve\nPattern: print\nLabel: yes\nWashing Care: Do not tumble dry\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n62 cm\n\t\n40 cm\n\t\n18 cm\n\n\nXS\n\t\n92 cm\n\t\n64 cm\n\t\n42 cm\n\t\n18 cm\n\n\nS\n\t\n96 cm\n\t\n66 cm\n\t\n44 cm\n\t\n19 cm\n\n\nM\n\t\n100 cm\n\t\n68 cm\n\t\n46 cm\n\t\n19 cm\n\n\nL\n\t\n104 cm\n\t\n70 cm\n\t\n50 cm\n\t\n20 cm\n\n\nXL\n\t\n108 cm\n\t\n72 cm\n\t\n52 cm\n\t\n20 cm\n\n\n2XL\n\t\n114 cm\n\t\n74 cm\n\t\n54 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n76 cm\n\t\n57 cm\n\t\n22 cm\n\n\n4XL\n\t\n126 cm\n\t\n78 cm\n\t\n60 cm\n\t\n23 cm\n\n\n5XL\n\t\n132 cm\n\t\n80 cm\n\t\n62 cm\n\t\n24 cm\n\n\n6XL\n\t\n138 cm\n\t\n82 cm\n\t\n64 cm\n\t\n25 cm\n搜索标签\ndolphin t shirt\nocean graphic tee\nmarine animal shirt\npolyester t shirt\nunisex short sleeve\nround neck tshirt\nall over print tee\n",
+    "url": "https://merchant.joom.com/panel/products/6aa12654365a0701ec2995ec",
+    "variantCount": 88
+  },
+  "persisted_after_reload": true,
+  "protected_fields": [
+    "价格",
+    "库存",
+    "SKU",
+    "变型",
+    "物流设置",
+    "原有尺码数值",
+    "图片"
+  ],
+  "verification": {
+    "protected_form_fields_unchanged_before_save": true
+  },
+  "variant_count_after": 88
+}

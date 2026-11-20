@@ -1,0 +1,19 @@
+{
+  "suggestion_id": "product-optimize-20261118-b3-6ad0bbb3303ef201d3a460b2",
+  "product_id": "6ad0bbb3303ef201d3a460b2",
+  "scope": "joom_store",
+  "shop": "Nineteen Wear",
+  "recorded_at": "2026-11-18T16:30:46.773751+08:00",
+  "status": "已保存并刷新核验",
+  "all_time_orders_before": 0,
+  "current_review_pending": true,
+  "actual_setting_changed": true,
+  "changed_fields": [
+    "标题",
+    "描述",
+    "搜索标签"
+  ],
+  "before_record": "商品优化/2026-11-18/第三批10款优化/6ad0bbb3303ef201d3a460b2-before.json",
+  "after_record": "商品优化/2026-11-18/第三批10款优化/6ad0bbb3303ef201d3a460b2-after.json",
+  "followup": "核对在售版本与改后标题一致，从实际生效后跟踪7天点击、加购、购买与售后；销售统计截至11/16，当前无法评价效果。"
+}

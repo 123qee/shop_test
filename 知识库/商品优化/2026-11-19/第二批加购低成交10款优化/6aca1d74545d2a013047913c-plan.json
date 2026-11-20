@@ -1,0 +1,26 @@
+{
+  "product_id": "6aca1d74545d2a013047913c",
+  "name_cn": "蓝金刚鹦鹉图案短袖",
+  "kind": "短袖",
+  "title": "Blue Macaw Graphic Polyester T-Shirt, Short Sleeve Crew Neck",
+  "intro": "Polyester crew-neck T-shirt with a blue macaw and nature-inspired graphic and short sleeves. Sizes 2XS–6XL. Check the selected color/design in the product images.\n\nFIT: Compare garment bust, length, shoulder and sleeve measurements with a well-fitting T-shirt before selecting a size. Bust is the full garment circumference, not the flat width. Keep room for your preferred fit. All measurements are in cm; allow the stated 2–3 cm manual measurement difference. Select a color/design and then check its available size options.",
+  "replacements": {
+    "Clothing Decoration: No Decoration": "Clothing Decoration: Print"
+  },
+  "tags": [
+    "macaw tshirt",
+    "parrot graphic",
+    "nature print",
+    "unisex tee",
+    "polyester tshirt",
+    "graphic tee",
+    "short sleeve",
+    "crew neck",
+    "casual top",
+    "printed shirt"
+  ],
+  "attribute_targets": {
+    "Decoration": "print"
+  },
+  "verified_size_range": "2XS–6XL"
+}

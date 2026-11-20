@@ -1,0 +1,71 @@
+{
+  "suggestion_id": "product-optimize-next10-20261118-6a9d41b7ad688a01ff60ef65",
+  "event_type": "user_authorized_product_content_optimization",
+  "recorded_at": "2026-11-18T13:08:56.855628+08:00",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "product_id": "6a9d41b7ad688a01ff60ef65",
+  "name": "破墙笑脸印花T恤",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status_at_verification": "编辑版本已保存，平台审核中",
+  "effective_at": null,
+  "all_time_orders_before": 0,
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-16"
+  },
+  "period_metrics": {
+    "impressions": 173,
+    "clicks": 6,
+    "cart": 0,
+    "purchases": 0
+  },
+  "changes": {
+    "title_before": "Smiley Face 3D Graphic Polyester T-Shirt, Unisex Short Sleeve",
+    "title_after": "Smiley Face Cracked Wall Print Polyester T-Shirt, Unisex Short Sleeve",
+    "description_intro": "Unisex polyester T-shirt featuring a yellow cartoon smiley face emerging through a printed cracked-wall design. The visual effect is part of the print. This pullover top has short sleeves and a round neckline; compare the garment measurements below before ordering.",
+    "description_replacements": {
+      "Unisex short-sleeve polyester T-shirt with a 3D-style smiley face graphic. Round neckline and pullover closure; suitable for casual summer wear. Compare garment measurements with a similar shirt before ordering. Manual measurement may vary by 2–3 cm. Do not tumble dry. Colors may vary slightly due to lighting and screen settings.\n\n": "FIT: Allow 2–3 cm variation due to manual measurement.\nCARE: Do not tumble dry. Actual colors may vary slightly due to lighting and screen settings.\n\n"
+    },
+    "search_tags_before": "smiley face t shirt,3d graphic tee,polyester printed shirt,unisex short sleeve tee,funny face t-shirt,casual graphic shirt",
+    "search_tags_after": [
+      "smiley face shirt",
+      "cracked wall print",
+      "funny T-shirt",
+      "cartoon print",
+      "polyester T-shirt",
+      "unisex T-shirt",
+      "short sleeve",
+      "crew neck"
+    ]
+  },
+  "protected_fields_verified": [
+    "变型价格",
+    "库存",
+    "SKU",
+    "尺寸颜色",
+    "物流相关输入",
+    "图片URL列表",
+    "类目"
+  ],
+  "verification": {
+    "persisted_after_reload": true,
+    "variant_count": 22,
+    "variant_detail_unchanged": true,
+    "form_variants_unchanged_before_save": true,
+    "images_unchanged_before_save": true,
+    "category_unchanged_before_save": true,
+    "full_description_read_back": true,
+    "search_tags_read_back": true,
+    "category_id_unchanged": true
+  },
+  "unresolved": [
+    "原有属性一致性错误需在审核后复核，不宣称已全部消除"
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/6a9d41b7ad688a01ff60ef65-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/6a9d41b7ad688a01ff60ef65-after.json",
+  "follow_up": "每日11点经营监控先核实审核和实际在售版本；以实际生效日观察3天点击曝光、7天转化、14天归因售后。样本不足继续观察，不自动重复改商品或投放。",
+  "outcome": "暂无生效后销售证据，不声称提升销量"
+}

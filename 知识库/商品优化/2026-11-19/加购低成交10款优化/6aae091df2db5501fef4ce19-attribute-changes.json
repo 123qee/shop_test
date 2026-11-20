@@ -1,0 +1,12 @@
+[
+  {
+    "label": "Sleeve Length",
+    "before": "short sleeve",
+    "after": "long sleeve",
+    "method": "description parsed, confirmed keep current"
+  },
+  {
+    "label": "Neck Style",
+    "target": "Hooded Neck"
+  }
+]

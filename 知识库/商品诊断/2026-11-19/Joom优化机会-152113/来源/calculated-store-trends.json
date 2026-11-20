@@ -1,0 +1,96 @@
+{
+  "28day": {
+    "start": "2026-10-22",
+    "end": "2026-11-18",
+    "source": "https://api-merchant.joom.com/api/v3/analytics/baseMetricsWithProduct?from=2026-10-22&to=2026-11-18&storeId=%40itemize",
+    "shops": {
+      "账户合计": {
+        "previewCount": 175544.0,
+        "openCount": 7297.0,
+        "purchaseCount": 225.0,
+        "toCartCount": 1553.0,
+        "saleCount": 227.0,
+        "gmv": 1349.3100000000002,
+        "ctr": 0.04156792599006517,
+        "cr": 0.030834589557352337
+      },
+      "Nineteen Wear": {
+        "previewCount": 127665.0,
+        "openCount": 4427.0,
+        "purchaseCount": 141.0,
+        "toCartCount": 1058.0,
+        "saleCount": 142.0,
+        "gmv": 683.11,
+        "ctr": 0.03467669290721811,
+        "cr": 0.031850011294330245
+      },
+      "jh": {
+        "previewCount": 17449.0,
+        "openCount": 925.0,
+        "purchaseCount": 13.0,
+        "toCartCount": 138.0,
+        "saleCount": 13.0,
+        "gmv": 153.0,
+        "ctr": 0.05301163390452175,
+        "cr": 0.014054054054054054
+      },
+      "jwh second": {
+        "previewCount": 30430.0,
+        "openCount": 1945.0,
+        "purchaseCount": 71.0,
+        "toCartCount": 357.0,
+        "saleCount": 72.0,
+        "gmv": 513.2,
+        "ctr": 0.06391718698652646,
+        "cr": 0.03650385604113111
+      }
+    }
+  },
+  "previous28": {
+    "start": "2026-09-24",
+    "end": "2026-10-21",
+    "source": "https://api-merchant.joom.com/api/v3/analytics/baseMetricsWithProduct?from=2026-09-24&to=2026-10-21&storeId=%40itemize",
+    "shops": {
+      "账户合计": {
+        "previewCount": 117010.0,
+        "openCount": 5988.0,
+        "purchaseCount": 254.0,
+        "toCartCount": 1442.0,
+        "saleCount": 264.0,
+        "gmv": 1279.9900000000002,
+        "ctr": 0.05117511323818477,
+        "cr": 0.04241816967267869
+      },
+      "Nineteen Wear": {
+        "previewCount": 101650.0,
+        "openCount": 5284.0,
+        "purchaseCount": 241.0,
+        "toCartCount": 1352.0,
+        "saleCount": 251.0,
+        "gmv": 1160.0400000000002,
+        "ctr": 0.05198229217904574,
+        "cr": 0.045609386828160486
+      },
+      "jh": {
+        "previewCount": 6953.0,
+        "openCount": 232.0,
+        "purchaseCount": 5.0,
+        "toCartCount": 34.0,
+        "saleCount": 5.0,
+        "gmv": 42.0,
+        "ctr": 0.03336689198906947,
+        "cr": 0.021551724137931036
+      },
+      "jwh second": {
+        "previewCount": 8407.0,
+        "openCount": 472.0,
+        "purchaseCount": 8.0,
+        "toCartCount": 56.0,
+        "saleCount": 8.0,
+        "gmv": 77.95,
+        "ctr": 0.05614368978232425,
+        "cr": 0.01694915254237288
+      }
+    }
+  }
+}

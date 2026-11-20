@@ -1,0 +1,71 @@
+{
+  "suggestion_id": "product-optimize-next10-20261118-6a8cd88e8f3b2901f216fe60",
+  "event_type": "user_authorized_product_content_optimization",
+  "recorded_at": "2026-11-18T12:56:42.751927+08:00",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "product_id": "6a8cd88e8f3b2901f216fe60",
+  "name": "羽饰人物印花T恤",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status_at_verification": "编辑版本已保存，平台审核中",
+  "effective_at": null,
+  "all_time_orders_before": 0,
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-16"
+  },
+  "period_metrics": {
+    "impressions": 65,
+    "clicks": 9,
+    "cart": 0,
+    "purchases": 0
+  },
+  "changes": {
+    "title_before": "Fashion Unisex 3D Printed Sketch Indian Chief T-Shirt… More",
+    "title_after": "Feather Headdress Portrait Print Polyester T-Shirt, Unisex Short Sleeve",
+    "description_intro": "Unisex polyester T-shirt with a feather-headdress portrait print, short sleeves and a round neckline. Select your preferred artwork and compare the garment measurements in the size chart below with a T-shirt you own before ordering.",
+    "description_replacements": {
+      "Clothing Decoration: No Decoration": "Clothing Decoration: Print"
+    },
+    "search_tags_before": "",
+    "search_tags_after": [
+      "portrait T-shirt",
+      "feather print",
+      "headdress print",
+      "graphic T-shirt",
+      "polyester T-shirt",
+      "unisex T-shirt",
+      "short sleeve",
+      "crew neck"
+    ]
+  },
+  "protected_fields_verified": [
+    "变型价格",
+    "库存",
+    "SKU",
+    "尺寸颜色",
+    "物流相关输入",
+    "图片URL列表",
+    "类目"
+  ],
+  "verification": {
+    "persisted_after_reload": true,
+    "variant_count": 88,
+    "variant_detail_unchanged": true,
+    "form_variants_unchanged_before_save": true,
+    "images_unchanged_before_save": true,
+    "category_unchanged_before_save": true,
+    "full_description_read_back": true,
+    "search_tags_read_back": true,
+    "category_id_unchanged": true
+  },
+  "unresolved": [
+    "原有类目层级错误未处理，需单独复核"
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/6a8cd88e8f3b2901f216fe60-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/6a8cd88e8f3b2901f216fe60-after.json",
+  "follow_up": "每日11点经营监控先核实审核和实际在售版本；以实际生效日观察3天点击曝光、7天转化、14天归因售后。样本不足继续观察，不自动重复改商品或投放。",
+  "outcome": "暂无生效后销售证据，不声称提升销量"
+}

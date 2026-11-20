@@ -1,0 +1,16 @@
+{
+  "captured_at": "2026-11-18T06:11:01.795Z",
+  "changed": [
+    {
+      "product_id": "6a8c47d48f3b2901f2108df6",
+      "before": "US$0.65",
+      "after": "US$0.60"
+    }
+  ],
+  "daily_budget_usd": 10,
+  "daily_budget_unchanged": true,
+  "other_49_product_bids_unchanged": true,
+  "campaign_active_unchanged": true,
+  "product_membership_unchanged": true,
+  "persisted_after_reload": true
+}

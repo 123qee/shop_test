@@ -1,0 +1,22 @@
+{
+  "suggestion_id": "joom-login-20261120",
+  "priority": 1,
+  "platform": "joom",
+  "source": "https://merchant.joom.com/panel/analytics/orders",
+  "status": "待用户恢复登录",
+  "facts": [
+    "本次自动跳转auth/signin，认证请求401",
+    "三家历史店铺及国家、商品、履约今天均无法实时核验"
+  ],
+  "suggested_action": "用户在保留的Joom登录页恢复登录；登录后重新读取店铺列表、各店各国指标与订单时限。75款历史优化和昨天尺码/材质问题保持未关闭，不凭历史数据宣称改善。",
+  "evidence_strength": "强：登录跳转与401；经营指标缺失",
+  "expected_improvement": "恢复监测和准确经营决策",
+  "review_condition": "登录恢复后重采；真实生效后3/7完整日观察",
+  "event_type": "scheduled_recommendation",
+  "recorded_at": "2026-11-20T11:11:49.119184+08:00",
+  "automation_id": "joom-2",
+  "actual_setting_changed": false,
+  "new_business_action_executed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/111149.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/111149.json"
+}

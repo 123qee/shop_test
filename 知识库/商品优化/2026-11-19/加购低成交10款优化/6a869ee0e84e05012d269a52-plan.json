@@ -1,0 +1,27 @@
+{
+  "product_id": "6a869ee0e84e05012d269a52",
+  "name_cn": "人物肖像印花短袖",
+  "title": "Women's Michael Jackson Portrait Cotton T-Shirt, Short Sleeve Crew Neck",
+  "intro": "Women's cotton crew-neck T-shirt with a Michael Jackson portrait and lettering graphic. Short sleeves; sizes S–3XL. Check the selected color/design in the product images.\n\nFIT: Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting T-shirt before selecting a size. The bust value is the full garment circumference, not the flat width. Check the size and color combination before ordering. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.",
+  "replacements": {
+    "Clothing decoration: no decoration": "Clothing decoration: Print",
+    "sizes:XXS XS S M L XL 2XL 3XL": "Sizes available: S M L XL 2XL 3XL",
+    "XXS：bust 88 cm，length 60 cm,shoulder 41 cm,Sleeve Length 18 cm\n": "",
+    "XS：bust 96 cm，length 66 cm,shoulder 45 cm,Sleeve Length 19 cm\n": ""
+  },
+  "attribute_targets": {
+    "Decoration": "print"
+  },
+  "tags": [
+    "Clothing",
+    "Casual",
+    "Jackson",
+    "Sleeve",
+    "Pop",
+    "Shirts",
+    "King",
+    "Era",
+    "Michael",
+    "of"
+  ]
+}

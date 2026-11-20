@@ -1,0 +1,16 @@
+{
+  "suggestion_id": "joom-size-6acacbe8c936e8010a00028b",
+  "source_record": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-19-152113-joom-size-6acacbe8c936e8010a00028b.json",
+  "previous_status": "建议，尚未执行",
+  "status": "今日编辑版本复查：信息矛盾仍在，待用户实物资料，未修改",
+  "historical_actual_setting_changed": false,
+  "actual_setting_changed": false,
+  "product_id": "6acacbe8c936e8010a00028b",
+  "review_condition": "真实修正生效后3日看点击，7日看加购/购买及尺码售后",
+  "event_type": "follow_up_after_login_restored",
+  "recorded_at": "2026-11-20T11:22:48.107321+08:00",
+  "automation_id": "joom-2",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/112248.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/112248.json",
+  "new_business_action_executed": false
+}

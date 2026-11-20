@@ -1,0 +1,837 @@
+{
+  "source": "https://sellers.mercadolibre.com/api/sc-business-metrics/gross-sales-data?start_period=custom&from_current=2026-10-22T00%3A00%3A00.000-03%3A00&to_current=2026-11-18T00%3A00%3A00.000-03%3A00",
+  "captured_at": "2026-11-19T04:38:25.940532+00:00",
+  "site": "BR",
+  "country": "巴西",
+  "scope": "gross-sales table: may include only sold products, NOT all traffic",
+  "table": {
+    "data": {
+      "content_rows": [
+        {
+          "columns": [
+            {
+              "data": {
+                "aligned": "flex-start",
+                "attributes": {
+                  "text": "Negro | 3XL"
+                },
+                "column_fixed": "left",
+                "empty_stock": false,
+                "family": {
+                  "list": [
+                    "US$6",
+                    "经典",
+                    "运费由买家支付/承担"
+                  ],
+                  "show_tooltip": true
+                },
+                "item": [
+                  {
+                    "color": "rgba(0, 0, 0, 0.55)",
+                    "copy": true,
+                    "label": "#7138899878",
+                    "message": "消息已复制"
+                  }
+                ],
+                "label": {
+                  "text": "Playera Roland Keyboards Músico Hombre Mujer",
+                  "weight": "semibold"
+                },
+                "pictures": "https://http2.mlstatic.com/D_644264-MLM54961756033_042023-O.jpg",
+                "show_image": true,
+                "title_link": {
+                  "target": "_blank",
+                  "url": "https://global-selling.mercadolibre.com/publicaciones/MLB7138899878/modificar/omni?callback_url=https%253A%252F%252Fglobal-selling.mercadolibre.com"
+                },
+                "width": "500px"
+              },
+              "type": "product"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "content": "—%",
+                "empty": false,
+                "fallback": false,
+                "icon": "ArrowFullUp",
+                "label": "US$10",
+                "tooltip": {
+                  "content": "与前一阶段相比",
+                  "number": "US$0",
+                  "type": "custom"
+                }
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "fallback": false,
+                "label": "1",
+                "width": "120px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "right",
+                "fallback": false,
+                "label": "26.9%",
+                "width": "187px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "fallback": false,
+                "label": "18",
+                "width": "100px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "fallback": false,
+                "label": "1",
+                "width": "132px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "right",
+                "fallback": false,
+                "label": "5.6%",
+                "width": "120px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "top-right",
+              "data": {
+                "children": [
+                  {
+                    "data": {
+                      "link": {
+                        "target": "_blank",
+                        "text": "查看详情",
+                        "url": "https://global-selling.mercadolibre.com/metrics/MLB7138899878/item-performance?variation.id=197481088852&start_period_evolutionary=custom|2026-10-21T23:00:00.000-04:00to2026-11-18T22:59:59.000-04:00&finish_period_evolutionary=lastPeriod#source=metrics",
+                        "weight": "semibold"
+                      }
+                    },
+                    "type": "unit"
+                  },
+                  {
+                    "data": {
+                      "options": [
+                        {
+                          "action": {
+                            "data": {
+                              "target": "_blank",
+                              "url": "https://global-selling.mercadolibre.com/publicaciones/MLB7138899878/modificar/omni?callback_url=https%253A%252F%252Fglobal-selling.mercadolibre.com"
+                            },
+                            "product_action_id": "modify",
+                            "type": "dynamic_action_redirect"
+                          },
+                          "title": "修改"
+                        },
+                        {
+                          "action": {
+                            "data": {
+                              "target": "_blank",
+                              "url": "https://global-selling.mercadolibre.com/listings/list?search=%237138899878#metrics-item-actions"
+                            },
+                            "product_action_id": "view_publications",
+                            "type": "dynamic_action_redirect"
+                          },
+                          "title": "在商品中查看"
+                        },
+                        {
+                          "action": {
+                            "data": {
+                              "target": "_blank",
+                              "url": "https://produto.mercadolivre.com.br/MLB-7138899878"
+                            },
+                            "product_action_id": "product_page",
+                            "type": "dynamic_action_redirect"
+                          },
+                          "title": "前往产品页面"
+                        }
+                      ],
+                      "tooltip": "操作"
+                    },
+                    "type": "actions"
+                  }
+                ],
+                "column_fixed": "right"
+              },
+              "type": "layout_cell",
+              "vertical_align": "top"
+            }
+          ],
+          "disabled": false,
+          "pills_rows": [],
+          "type": "row"
+        },
+        {
+          "columns": [
+            {
+              "data": {
+                "aligned": "flex-start",
+                "attributes": {
+                  "text": "Negro | G"
+                },
+                "column_fixed": "left",
+                "empty_stock": false,
+                "family": {
+                  "list": [
+                    "US$4.50",
+                    "经典",
+                    "运费由买家支付/承担"
+                  ],
+                  "show_tooltip": true
+                },
+                "item": [
+                  {
+                    "color": "rgba(0, 0, 0, 0.55)",
+                    "copy": true,
+                    "label": "#4824698219",
+                    "message": "消息已复制"
+                  }
+                ],
+                "label": {
+                  "text": "Playera Cubo Fluorescente Efecto Neon Con Luz Negra",
+                  "weight": "semibold"
+                },
+                "pictures": "https://http2.mlstatic.com/D_712820-MLM77092475026_062024-O.jpg",
+                "show_image": true,
+                "title_link": {
+                  "target": "_blank",
+                  "url": "https://global-selling.mercadolibre.com/publicaciones/MLB4824698219/modificar/omni?callback_url=https%253A%252F%252Fglobal-selling.mercadolibre.com"
+                },
+                "width": "500px"
+              },
+              "type": "product"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "content": "—%",
+                "empty": false,
+                "fallback": false,
+                "icon": "ArrowFullUp",
+                "label": "US$9",
+                "tooltip": {
+                  "content": "与前一阶段相比",
+                  "number": "US$0",
+                  "type": "custom"
+                }
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "fallback": false,
+                "label": "1",
+                "width": "120px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "right",
+                "fallback": false,
+                "label": "25.5%",
+                "width": "187px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "fallback": false,
+                "label": "98",
+                "width": "100px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "fallback": false,
+                "label": "1",
+                "width": "132px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "right",
+                "fallback": false,
+                "label": "1%",
+                "width": "120px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "top-right",
+              "data": {
+                "children": [
+                  {
+                    "data": {
+                      "link": {
+                        "target": "_blank",
+                        "text": "查看详情",
+                        "url": "https://global-selling.mercadolibre.com/metrics/MLB4824698219/item-performance?variation.id=204627042167&start_period_evolutionary=custom|2026-10-21T23:00:00.000-04:00to2026-11-18T22:59:59.000-04:00&finish_period_evolutionary=lastPeriod#source=metrics",
+                        "weight": "semibold"
+                      }
+                    },
+                    "type": "unit"
+                  },
+                  {
+                    "data": {
+                      "options": [
+                        {
+                          "action": {
+                            "data": {
+                              "target": "_blank",
+                              "url": "https://global-selling.mercadolibre.com/publicaciones/MLB4824698219/modificar/omni?callback_url=https%253A%252F%252Fglobal-selling.mercadolibre.com"
+                            },
+                            "product_action_id": "modify",
+                            "type": "dynamic_action_redirect"
+                          },
+                          "title": "修改"
+                        },
+                        {
+                          "action": {
+                            "data": {
+                              "target": "_blank",
+                              "url": "https://global-selling.mercadolibre.com/listings/list?search=%234824698219#metrics-item-actions"
+                            },
+                            "product_action_id": "view_publications",
+                            "type": "dynamic_action_redirect"
+                          },
+                          "title": "在商品中查看"
+                        },
+                        {
+                          "action": {
+                            "data": {
+                              "target": "_blank",
+                              "url": "https://produto.mercadolivre.com.br/MLB-4824698219"
+                            },
+                            "product_action_id": "product_page",
+                            "type": "dynamic_action_redirect"
+                          },
+                          "title": "前往产品页面"
+                        }
+                      ],
+                      "tooltip": "操作"
+                    },
+                    "type": "actions"
+                  }
+                ],
+                "column_fixed": "right"
+              },
+              "type": "layout_cell",
+              "vertical_align": "top"
+            }
+          ],
+          "disabled": false,
+          "pills_rows": [],
+          "type": "row"
+        },
+        {
+          "columns": [
+            {
+              "data": {
+                "aligned": "flex-start",
+                "attributes": {
+                  "text": "Negro | 6XL"
+                },
+                "column_fixed": "left",
+                "empty_stock": false,
+                "family": {
+                  "list": [
+                    "US$4.50",
+                    "经典",
+                    "运费由买家支付/承担"
+                  ],
+                  "show_tooltip": true
+                },
+                "item": [
+                  {
+                    "color": "rgba(0, 0, 0, 0.55)",
+                    "copy": true,
+                    "label": "#7056326652",
+                    "message": "消息已复制"
+                  }
+                ],
+                "label": {
+                  "text": "Camiseta: The Dark Knight",
+                  "weight": "semibold"
+                },
+                "pictures": "https://http2.mlstatic.com/D_771274-MLM97339290783_112025-O.jpg",
+                "show_image": true,
+                "title_link": {
+                  "target": "_blank",
+                  "url": "https://global-selling.mercadolibre.com/publicaciones/MLB7056326652/modificar/omni?callback_url=https%253A%252F%252Fglobal-selling.mercadolibre.com"
+                },
+                "width": "500px"
+              },
+              "type": "product"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "content": "—%",
+                "empty": false,
+                "fallback": false,
+                "icon": "ArrowFullUp",
+                "label": "US$9",
+                "tooltip": {
+                  "content": "与前一阶段相比",
+                  "number": "US$0",
+                  "type": "custom"
+                }
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "fallback": false,
+                "label": "1",
+                "width": "120px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "right",
+                "fallback": false,
+                "label": "23.8%",
+                "width": "187px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "fallback": false,
+                "label": "10",
+                "width": "100px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "fallback": false,
+                "label": "1",
+                "width": "132px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "right",
+                "fallback": false,
+                "label": "10%",
+                "width": "120px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "top-right",
+              "data": {
+                "children": [
+                  {
+                    "data": {
+                      "link": {
+                        "target": "_blank",
+                        "text": "查看详情",
+                        "url": "https://global-selling.mercadolibre.com/metrics/MLB7056326652/item-performance?variation.id=204627066275&start_period_evolutionary=custom|2026-10-21T23:00:00.000-04:00to2026-11-18T22:59:59.000-04:00&finish_period_evolutionary=lastPeriod#source=metrics",
+                        "weight": "semibold"
+                      }
+                    },
+                    "type": "unit"
+                  },
+                  {
+                    "data": {
+                      "options": [
+                        {
+                          "action": {
+                            "data": {
+                              "target": "_blank",
+                              "url": "https://global-selling.mercadolibre.com/publicaciones/MLB7056326652/modificar/omni?callback_url=https%253A%252F%252Fglobal-selling.mercadolibre.com"
+                            },
+                            "product_action_id": "modify",
+                            "type": "dynamic_action_redirect"
+                          },
+                          "title": "修改"
+                        },
+                        {
+                          "action": {
+                            "data": {
+                              "target": "_blank",
+                              "url": "https://global-selling.mercadolibre.com/listings/list?search=%237056326652#metrics-item-actions"
+                            },
+                            "product_action_id": "view_publications",
+                            "type": "dynamic_action_redirect"
+                          },
+                          "title": "在商品中查看"
+                        },
+                        {
+                          "action": {
+                            "data": {
+                              "target": "_blank",
+                              "url": "https://produto.mercadolivre.com.br/MLB-7056326652"
+                            },
+                            "product_action_id": "product_page",
+                            "type": "dynamic_action_redirect"
+                          },
+                          "title": "前往产品页面"
+                        }
+                      ],
+                      "tooltip": "操作"
+                    },
+                    "type": "actions"
+                  }
+                ],
+                "column_fixed": "right"
+              },
+              "type": "layout_cell",
+              "vertical_align": "top"
+            }
+          ],
+          "disabled": false,
+          "pills_rows": [],
+          "type": "row"
+        },
+        {
+          "columns": [
+            {
+              "data": {
+                "aligned": "flex-start",
+                "attributes": {
+                  "text": "Cáqui | 160"
+                },
+                "column_fixed": "left",
+                "empty_stock": false,
+                "family": {
+                  "list": [
+                    "US$5",
+                    "经典",
+                    "运费由买家支付/承担"
+                  ],
+                  "show_tooltip": true
+                },
+                "item": [
+                  {
+                    "color": "rgba(0, 0, 0, 0.55)",
+                    "copy": true,
+                    "label": "#7397149386",
+                    "message": "消息已复制"
+                  }
+                ],
+                "label": {
+                  "text": "Camisetas Katseye Estampado Manga Corta Para Niños Verano",
+                  "weight": "semibold"
+                },
+                "pictures": "https://http2.mlstatic.com/D_745856-CBT116028303505_082026-O.jpg",
+                "show_image": true,
+                "title_link": {
+                  "target": "_blank",
+                  "url": "https://global-selling.mercadolibre.com/publicaciones/MLB7397149386/modificar/omni?callback_url=https%253A%252F%252Fglobal-selling.mercadolibre.com"
+                },
+                "width": "500px"
+              },
+              "type": "product"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "content": "—%",
+                "empty": false,
+                "fallback": false,
+                "icon": "ArrowFullUp",
+                "label": "US$9",
+                "tooltip": {
+                  "content": "与前一阶段相比",
+                  "number": "US$0",
+                  "type": "custom"
+                }
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "fallback": false,
+                "label": "1",
+                "width": "120px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "right",
+                "fallback": false,
+                "label": "23.8%",
+                "width": "187px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "fallback": false,
+                "label": "17",
+                "width": "100px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "top-right",
+                "fallback": false,
+                "label": "1",
+                "width": "132px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "right",
+              "data": {
+                "aligned": "right",
+                "fallback": false,
+                "label": "5.9%",
+                "width": "120px"
+              },
+              "type": "unit",
+              "vertical_align": "top"
+            },
+            {
+              "aligned": "top-right",
+              "data": {
+                "children": [
+                  {
+                    "data": {
+                      "link": {
+                        "target": "_blank",
+                        "text": "查看详情",
+                        "url": "https://global-selling.mercadolibre.com/metrics/MLB7397149386/item-performance?variation.id=198570415756&start_period_evolutionary=custom|2026-10-21T23:00:00.000-04:00to2026-11-18T22:59:59.000-04:00&finish_period_evolutionary=lastPeriod#source=metrics",
+                        "weight": "semibold"
+                      }
+                    },
+                    "type": "unit"
+                  },
+                  {
+                    "data": {
+                      "options": [
+                        {
+                          "action": {
+                            "data": {
+                              "target": "_blank",
+                              "url": "https://global-selling.mercadolibre.com/publicaciones/MLB7397149386/modificar/omni?callback_url=https%253A%252F%252Fglobal-selling.mercadolibre.com"
+                            },
+                            "product_action_id": "modify",
+                            "type": "dynamic_action_redirect"
+                          },
+                          "title": "修改"
+                        },
+                        {
+                          "action": {
+                            "data": {
+                              "target": "_blank",
+                              "url": "https://global-selling.mercadolibre.com/listings/list?search=%237397149386#metrics-item-actions"
+                            },
+                            "product_action_id": "view_publications",
+                            "type": "dynamic_action_redirect"
+                          },
+                          "title": "在商品中查看"
+                        },
+                        {
+                          "action": {
+                            "data": {
+                              "target": "_blank",
+                              "url": "https://produto.mercadolivre.com.br/MLB-7397149386"
+                            },
+                            "product_action_id": "product_page",
+                            "type": "dynamic_action_redirect"
+                          },
+                          "title": "前往产品页面"
+                        }
+                      ],
+                      "tooltip": "操作"
+                    },
+                    "type": "actions"
+                  }
+                ],
+                "column_fixed": "right"
+              },
+              "type": "layout_cell",
+              "vertical_align": "top"
+            }
+          ],
+          "disabled": false,
+          "pills_rows": [],
+          "type": "row"
+        }
+      ],
+      "header": {
+        "columns": [
+          {
+            "data": {
+              "aligned": "left",
+              "column_fixed": "left",
+              "label": "商品"
+            },
+            "type": "title"
+          },
+          {
+            "data": {
+              "aligned": "right",
+              "label": "总销售额",
+              "sort_id": "GMV"
+            },
+            "type": "title",
+            "width": "159x"
+          },
+          {
+            "data": {
+              "aligned": "right",
+              "label": "订单数量"
+            },
+            "type": "title",
+            "width": "120px"
+          },
+          {
+            "data": {
+              "aligned": "right",
+              "label": "占比(%)",
+              "tooltip": {
+                "content": "该指标=商品销售额÷选定时段内总销售额",
+                "title": "您产品的参与占比\t"
+              }
+            },
+            "type": "title",
+            "width": "187px"
+          },
+          {
+            "data": {
+              "aligned": "right",
+              "label": "访问量"
+            },
+            "type": "title",
+            "width": "100px"
+          },
+          {
+            "data": {
+              "aligned": "right",
+              "label": "已售件数"
+            },
+            "type": "title",
+            "width": "132px"
+          },
+          {
+            "data": {
+              "aligned": "right",
+              "label": "转化率"
+            },
+            "type": "title",
+            "width": "120px"
+          },
+          {
+            "data": {
+              "column_fixed": "right"
+            },
+            "type": "title",
+            "width": "146px"
+          }
+        ],
+        "type": "header"
+      },
+      "sort_id": "GMV",
+      "sort_order": "DESC",
+      "sticky": true,
+      "type": "item-performance"
+    },
+    "id": "table",
+    "ui_type": "table"
+  },
+  "toolbar": {
+    "data": {
+      "counter_total": {
+        "label": "4 商品列表"
+      },
+      "dropdown_disabled": false,
+      "dropdown_item": [
+        {
+          "label": "链接的表现",
+          "value": "performance_listing_report"
+        },
+        {
+          "label": "有待优化的商品信息",
+          "value": "product_diagnostic_report"
+        }
+      ],
+      "dropdown_label": "下载报告",
+      "search_box": {
+        "placeholder": "#",
+        "value": ""
+      }
+    },
+    "id": "action_header_table",
+    "ui_type": "action_header_table"
+  }
+}

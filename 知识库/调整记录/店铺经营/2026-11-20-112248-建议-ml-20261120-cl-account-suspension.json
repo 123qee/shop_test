@@ -1,0 +1,23 @@
+{
+  "suggestion_id": "ml-20261120-cl-account-suspension",
+  "priority": 1,
+  "platform": "mercadolibre",
+  "country": "CL",
+  "source": "https://sellers.mercadolibre.com/account-risk",
+  "status": "新风险，待用户核对平台违规记录",
+  "facts": [
+    "限制中心明确因多次违反知识产权政策暂停销售",
+    "页面停止时间原文22 of November, 00h03，时区未标明",
+    "商品入口178项；第一页混有长期无活动与账户暂停下架，不能一律解释为直接侵权"
+  ],
+  "suggested_action": "先在限制中心核对具体违规记录、受影响作品/品牌及平台要求，有合法授权的准备真实证明；无授权的按平台要求处理。不得仅改标题隐藏品牌后重发。若编辑功能暂停，使用平台给出的处理/申诉入口。",
+  "evidence_strength": "强：当前限制原文及商品行状态；直接触发违规商品清单仍未取得",
+  "expected_improvement": "恢复可售资格并降低再次停用风险",
+  "review_condition": "今天处理；平台标示停止时间后重新核验，未确认时区前不承诺北京时间自动恢复",
+  "actual_setting_changed": false,
+  "event_type": "scheduled_recommendation_after_completion",
+  "recorded_at": "2026-11-20T11:22:48.107321+08:00",
+  "automation_id": "joom-2",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/112248.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/112248.json"
+}

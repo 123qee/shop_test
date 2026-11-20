@@ -1,0 +1,12 @@
+[
+  {
+    "source": "https://api-merchant.joom.com/api/v3/analytics/meta?sourceId=baseMetricsWithProduct",
+    "captured_at": "2026-11-19T15:12:50.110930+08:00",
+    "body": {
+      "code": 0,
+      "data": {
+        "updatedAt": "2026-11-19T05:45:23Z"
+      }
+    }
+  }
+]

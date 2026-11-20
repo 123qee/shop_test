@@ -1,0 +1,69 @@
+{
+  "suggestion_id": "product-optimize-next10-20261118-6a980c1bd39fbe01c00051c8",
+  "event_type": "user_authorized_product_content_optimization",
+  "recorded_at": "2026-11-18T12:56:53.990040+08:00",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "product_id": "6a980c1bd39fbe01c00051c8",
+  "name": "漫画人物印花T恤",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status_at_verification": "编辑版本已保存，平台审核中",
+  "effective_at": null,
+  "all_time_orders_before": 0,
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-16"
+  },
+  "period_metrics": {
+    "impressions": 18,
+    "clicks": 9,
+    "cart": 1,
+    "purchases": 0
+  },
+  "changes": {
+    "title_before": "Men's 100% Cotton Casual Comfortable Short-Sleeve T-Shirt Trendy Street Style Summer Printed Pattern T-Shirt Couple Top",
+    "title_after": "Cartoon Comic Graphic Cotton T-Shirt, Unisex Short Sleeve Crew Neck",
+    "description_intro": "Unisex cotton T-shirt featuring a line-drawn cartoon figure and comic-panel graphic. This pullover top has short sleeves and a round neckline. Select your preferred design and compare the measurements below with a T-shirt you own to choose your size.",
+    "description_replacements": {
+      "Clothing decoration: no decoration": "Clothing decoration: print"
+    },
+    "search_tags_before": "",
+    "search_tags_after": [
+      "cartoon T-shirt",
+      "comic print",
+      "line art shirt",
+      "graphic T-shirt",
+      "cotton T-shirt",
+      "unisex T-shirt",
+      "short sleeve",
+      "crew neck"
+    ]
+  },
+  "protected_fields_verified": [
+    "变型价格",
+    "库存",
+    "SKU",
+    "尺寸颜色",
+    "物流相关输入",
+    "图片URL列表",
+    "类目"
+  ],
+  "verification": {
+    "persisted_after_reload": true,
+    "variant_count": 16,
+    "variant_detail_unchanged": true,
+    "form_variants_unchanged_before_save": true,
+    "images_unchanged_before_save": true,
+    "category_unchanged_before_save": true,
+    "full_description_read_back": true,
+    "search_tags_read_back": true,
+    "category_id_unchanged": true
+  },
+  "unresolved": [],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/6a980c1bd39fbe01c00051c8-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/第二批10款优化/6a980c1bd39fbe01c00051c8-after.json",
+  "follow_up": "每日11点经营监控先核实审核和实际在售版本；以实际生效日观察3天点击曝光、7天转化、14天归因售后。样本不足继续观察，不自动重复改商品或投放。",
+  "outcome": "暂无生效后销售证据，不声称提升销量"
+}

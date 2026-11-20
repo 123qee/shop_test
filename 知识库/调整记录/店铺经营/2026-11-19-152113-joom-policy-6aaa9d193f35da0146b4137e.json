@@ -1,0 +1,42 @@
+{
+  "suggestion_id": "joom-policy-6aaa9d193f35da0146b4137e",
+  "priority": 1,
+  "product_id": "6aaa9d193f35da0146b4137e",
+  "short_name": "童装两件套",
+  "issue": "英、德、法等主要销售目的国版权限售，另有丹麦当地法规限制。标题是套装，描述按单件卫衣介绍。",
+  "action": "先核对平台限售明细与要求，按后台流程处理；不能把受限商品仅当成普通低转化款继续改标题/加投。",
+  "evidence_strength": "强：后台当前限制明确；限售生效时间、与历史成交下滑的因果未取得",
+  "needs": "核实设计及平台要求；套装实际构成、裤子尺寸与完整成本",
+  "review": "处理后确认实际可售国家，再观察7个完整日",
+  "platform": "joom",
+  "shop": "jwh second",
+  "source": "https://merchant.joom.com/panel/products/6aaa9d193f35da0146b4137e",
+  "baseline": {
+    "shop": "jwh second",
+    "product_id": "6aaa9d193f35da0146b4137e",
+    "source": "https://merchant.joom.com/panel/analytics/orders/store/6a9d4221018d89bb9e5c22ef?limit=100&orderBy=openCount&order=desc",
+    "product_link": "https://merchant.joom.com/panel/products/6aaa9d193f35da0146b4137e",
+    "window": "2026-10-22 to 2026-11-18 UTC+3",
+    "impressions": 1220,
+    "clicks": 75,
+    "purchases": 1,
+    "cart": 8
+  },
+  "current_sizes": [
+    "100",
+    "110",
+    "120",
+    "130",
+    "140",
+    "150",
+    "160"
+  ],
+  "status": "建议，尚未执行",
+  "actual_setting_changed": false,
+  "event_type": "read_only_opportunity_review",
+  "recorded_at": "2026-11-19T15:21:13.607991+08:00",
+  "report": "商品诊断/2026-11-19/Joom优化机会-152113/优化建议.md",
+  "snapshot": "商品诊断/2026-11-19/Joom优化机会-152113/诊断快照.json",
+  "user_request": "看看我的joom还有什么可以优化的吗",
+  "execution_authorized_this_turn": false
+}

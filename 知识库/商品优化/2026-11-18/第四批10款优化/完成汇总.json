@@ -1,0 +1,512 @@
+{
+  "completed_at": "2026-11-18T16:54:11.516139+08:00",
+  "shop": "Nineteen Wear",
+  "shop_id": "6a817b93f5d3934528e70df7",
+  "count": 10,
+  "records": [
+    {
+      "product_id": "6a9c2a3043fae501818bc9d8",
+      "name": "Kids' Alvin and the Chipmunks Graphic Hoodie, Cotton Long Sleeve Pullover",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 84,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/ddd18aae670cd0096341b1e82f5c77571d74d74f_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a9c2a3043fae501818bc9d8/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a9c2a3043fae501818bc9d8%22",
+            "text": "订单"
+          }
+        ],
+        "text": "1005011546392540\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n限售\n1\n需注意\n1\n审核中\n1\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nKids' Alvin and the Chipmunks Graphic Hoodie, Cotton Long Sleeve Pullover\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a9c2a3043fae501818bc9d8\n等级\n部分内容\n产品SKU\n1005011546392540\n类目ID\n1605614754933037318-196-2-62735-1604558435\n类目\nBaby & Kids\nKids Clothing\nUnisex Clothing\nUnisex (over 4 y.o.)\nTop\nHoodies & Sweatshirts (kids unisex)\n推荐类目ID\n1605614754933037318-196-2-62735-1604558435\n推荐类目\nHoodies & Sweatshirts (kids unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月5日\n敏感货\n普通货\n描述\nChildren's cotton pullover hoodie with an Alvin and the Chipmunks character and letter graphic, a hood and long sleeves. Select your preferred design and color. Compare the garment measurements below with a similar item that fits well before ordering.\n\nProduct Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Hooded\nTop Closure Type: Pullover\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry\nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm\nNotes:\nPlease measure yourself carefully according to the size chart before purchasing, thank you!\nDue to manual measurement, please allow an error of 2–3 cm.\nDue to differences in lighting and screen settings, the actual product color may vary slightly.\nPlease carefully review the size chart before purchasing.\n未解析的属性\nsetsQuantity: 1\npiecesQuantity: 1\nmanufactureCountry: china\n产品属性\nMaterial: cotton\nManufacture Country: China\nStyle: casual\nSleeve Length: long sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Machine wash at temperatures below 30°C\n尺码表\n尺码\tBust\tJunk\tLength\tShoulders\tSleeve\n\n100\n\t\n60 cm\n\t\n90–100 cm\n\t\n42 cm\n\t\n28 cm\n\t\n39 cm\n\n\n110\n\t\n66 cm\n\t\n100–110 cm\n\t\n45 cm\n\t\n30 cm\n\t\n41 cm\n\n\n120\n\t\n72 cm\n\t\n110–120 cm\n\t\n48 cm\n\t\n32 cm\n\t\n43 cm\n\n\n130\n\t\n78 cm\n\t\n120–130 cm\n\t\n51 cm\n\t\n34 cm\n\t\n45 cm\n\n\n140\n\t\n84 cm\n\t\n130–140 cm\n\t\n54 cm\n\t\n36 cm\n\t\n47 cm\n\n\n150\n\t\n90 cm\n\t\n140–150 cm\n\t\n57 cm\n\t\n38 cm\n\t\n49 cm\n\n\n160\n\t\n96 cm\n\t\n150–160 cm\n\t\n60 cm\n\t\n40 cm\n\t\n51 cm\n搜索标签\nkids hoodie\nAlvin hoodie\nChipmunks print\ncartoon hoodie\nletter print\ncotton hoodie\npullover hoodie\nlong sleeve\n",
+        "title": "Kids' Alvin and the Chipmunks Graphic Hoodie, Cotton Long Sleeve Pullover",
+        "url": "https://merchant.joom.com/panel/products/6a9c2a3043fae501818bc9d8",
+        "variantCount": 84,
+        "variantDetailSha256": "879f0d133feda0c36727c0694ee920ecc784f4e8c7a1cc665e62df6b5f4c9627"
+      },
+      "plan": {
+        "label": "花栗鼠儿童卫衣",
+        "title": "Kids' Alvin and the Chipmunks Graphic Hoodie, Cotton Long Sleeve Pullover",
+        "intro": "Children's cotton pullover hoodie with an Alvin and the Chipmunks character and letter graphic, a hood and long sleeves. Select your preferred design and color. Compare the garment measurements below with a similar item that fits well before ordering.",
+        "tags": [
+          "kids hoodie",
+          "Alvin hoodie",
+          "Chipmunks print",
+          "cartoon hoodie",
+          "letter print",
+          "cotton hoodie",
+          "pullover hoodie",
+          "long sleeve"
+        ],
+        "replacements": {
+          "Collar Type: Round Neck": "Collar Type: Hooded"
+        }
+      }
+    },
+    {
+      "product_id": "6aa27a29c430af01a1af7d67",
+      "name": "Whitesnake Band Graphic Polyester T-Shirt, Short Sleeve Crew Neck",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 121,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/2b4682aa566cf69fe2580ccd3908ec89fbb92134_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6aa27a29c430af01a1af7d67/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226aa27a29c430af01a1af7d67%22",
+            "text": "订单"
+          }
+        ],
+        "text": "1005010263777031\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n审核中\n1\n产品待审核\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nWhitesnake Band Graphic Polyester T-Shirt, Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6aa27a29c430af01a1af7d67\n等级\n部分内容\n产品SKU\n1005010263777031\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月10日\n敏感货\n普通货\n描述\nPolyester T-shirt with Whitesnake lettering and a band portrait collage, short sleeves and a round neckline. The artwork is printed on the fabric. Compare the garment measurements below with a similar item that fits well before ordering.\n\nProduct Type: T-Shirt\nMaterial: Polyester\nManufacture Country: China\nApplicable Scene: Daily\nStyle: Casual\nApplicable Season: Summer\nNeckline: Round Neck\nClosure Type: Pullover\nClothing Decoration: Print\nLeather Label: No\nSleeve Length: Short Sleeve\nSex: Unisex\nAge: 18–45 Years Old\nPattern: Print\nLabel: Yes\nWashing Care: Do Not Tumble Dry\nSize Chart (cm):\n2XS: Shoulder 40 cm, Bust 88 cm, Sleeve 18 cm, Length 62 cm.\nXS: Shoulder 42 cm, Bust 92 cm, Sleeve 18 cm, Length 64 cm.\nS: Shoulder 44 cm, Bust 96 cm, Sleeve 19 cm, Length 66 cm.\nM: Shoulder 46 cm, Bust 100 cm, Sleeve 19 cm, Length 68 cm.\nL: Shoulder 50 cm, Bust 104 cm, Sleeve 20 cm, Length 70 cm.\nXL: Shoulder 52 cm, Bust 108 cm, Sleeve 20 cm, Length 72 cm.\n2XL: Shoulder 54 cm, Bust 114 cm, Sleeve 21 cm, Length 74 cm.\n3XL: Shoulder 57 cm, Bust 120 cm, Sleeve 22 cm, Length 76 cm.\n4XL: Shoulder 60 cm, Bust 126 cm, Sleeve 23 cm, Length 78 cm.\n5XL: Shoulder 62 cm, Bust 132 cm, Sleeve 24 cm, Length 80 cm.\n6XL: Shoulder 64 cm, Bust 138 cm, Sleeve 25 cm, Length 82 cm.\nNotes: Please carefully check the size chart before purchasing. Due to manual measurement, please allow a 2–3 cm difference. The actual color may vary slightly due to lighting and screen settings.\n产品属性\nMaterial for fur: polyster\nMaterial: polyester\nMaterial: polyester\nManufacture Country: China\nSeason: summer\nNeckline: round\nClothing Decoration: print\nLeather Label: no\nSleeve Length: short sleeve\nClothing Decoration: print\nPattern: print\nLabel: yes\nWashing Care: Do not tumble dry\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n62 cm\n\t\n40 cm\n\t\n18 cm\n\n\nXS\n\t\n92 cm\n\t\n64 cm\n\t\n42 cm\n\t\n18 cm\n\n\nS\n\t\n96 cm\n\t\n66 cm\n\t\n44 cm\n\t\n19 cm\n\n\nM\n\t\n100 cm\n\t\n68 cm\n\t\n46 cm\n\t\n19 cm\n\n\nL\n\t\n104 cm\n\t\n70 cm\n\t\n50 cm\n\t\n20 cm\n\n\nXL\n\t\n108 cm\n\t\n72 cm\n\t\n52 cm\n\t\n20 cm\n\n\n2XL\n\t\n114 cm\n\t\n74 cm\n\t\n54 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n76 cm\n\t\n57 cm\n\t\n22 cm\n\n\n4XL\n\t\n126 cm\n\t\n78 cm\n\t\n60 cm\n\t\n23 cm\n\n\n5XL\n\t\n132 cm\n\t\n80 cm\n\t\n62 cm\n\t\n24 cm\n\n\n6XL\n\t\n138 cm\n\t\n82 cm\n\t\n64 cm\n\t\n25 cm\n搜索标签\nWhitesnake T-shirt\nband print\nportrait graphic\npolyester T-shirt\nshort sleeve\ncrew neck\ngraphic tee\ncasual shirt\n",
+        "title": "Whitesnake Band Graphic Polyester T-Shirt, Short Sleeve Crew Neck",
+        "url": "https://merchant.joom.com/panel/products/6aa27a29c430af01a1af7d67",
+        "variantCount": 121,
+        "variantDetailSha256": "0b23b96661aca316f9ddbd210868fdd6d5564bec58ae2c7963957f490d1bb0c4"
+      },
+      "plan": {
+        "label": "Whitesnake聚酯T恤",
+        "title": "Whitesnake Band Graphic Polyester T-Shirt, Short Sleeve Crew Neck",
+        "intro": "Polyester T-shirt with Whitesnake lettering and a band portrait collage, short sleeves and a round neckline. The artwork is printed on the fabric. Compare the garment measurements below with a similar item that fits well before ordering.",
+        "tags": [
+          "Whitesnake T-shirt",
+          "band print",
+          "portrait graphic",
+          "polyester T-shirt",
+          "short sleeve",
+          "crew neck",
+          "graphic tee",
+          "casual shirt"
+        ],
+        "replacements": {
+          "Clothing Decoration: No Decoration": "Clothing Decoration: Print"
+        }
+      }
+    },
+    {
+      "product_id": "6aa27aa333883401e8442c95",
+      "name": "France Football Graphic Polyester T-Shirt, Short Sleeve Printed Top",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 220,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/50099a48893e389fe2088c37d37ae2fcca471bd3_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6aa27aa333883401e8442c95/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226aa27aa333883401e8442c95%22",
+            "text": "订单"
+          }
+        ],
+        "text": "1005012714099230\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n1\n尺寸表中的图片\n请将尺码表从图片中移除——请改用尺码表功能。\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nFrance Football Graphic Polyester T-Shirt, Short Sleeve Printed Top\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6aa27aa333883401e8442c95\n等级\n部分内容\n产品SKU\n1005012714099230\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月10日\n敏感货\n普通货\n描述\nPolyester short-sleeve T-shirt with France lettering, a rooster crest and a football-inspired printed design. The texture effect is part of the print. Select your preferred option and compare the garment measurements below before ordering.\n\nProduct Type: T-Shirt\nMaterial: Polyester\nManufacture Country: China\nApplicable Scene: Daily\nStyle: Casual\nApplicable Season: Summer\nNeckline: V-Neck\nClosure Type: Pullover\nClothing Decoration: Print\nLeather Label: No\nSleeve Length: Short Sleeve\nSex: Unisex\nAge: 18–45 Years Old\nPattern: Print\nLabel: Yes\nWashing Care: Do Not Tumble Dry\nSize Chart (cm):\n2XS: Shoulder 40 cm, Bust 88 cm, Sleeve 18 cm, Length 62 cm.\nXS: Shoulder 42 cm, Bust 92 cm, Sleeve 18 cm, Length 64 cm.\nS: Shoulder 44 cm, Bust 96 cm, Sleeve 19 cm, Length 66 cm.\nM: Shoulder 46 cm, Bust 100 cm, Sleeve 19 cm, Length 68 cm.\nL: Shoulder 50 cm, Bust 104 cm, Sleeve 20 cm, Length 70 cm.\nXL: Shoulder 52 cm, Bust 108 cm, Sleeve 20 cm, Length 72 cm.\n2XL: Shoulder 54 cm, Bust 114 cm, Sleeve 21 cm, Length 74 cm.\n3XL: Shoulder 57 cm, Bust 120 cm, Sleeve 22 cm, Length 76 cm.\n4XL: Shoulder 60 cm, Bust 126 cm, Sleeve 23 cm, Length 78 cm.\n5XL: Shoulder 62 cm, Bust 132 cm, Sleeve 24 cm, Length 80 cm.\n6XL: Shoulder 64 cm, Bust 138 cm, Sleeve 25 cm, Length 82 cm.\nNotes: Please carefully check the size chart before purchasing. Due to manual measurement, please allow a 2–3 cm difference. The actual color may vary slightly due to lighting and screen settings.\n产品属性\nMaterial for fur: polyster\nMaterial: polyester\nMaterial: polyester\nManufacture Country: China\nSeason: summer\nNeckline: V-neck\nClothing Decoration: print\nLeather Label: no\nSleeve Length: short sleeve\nClothing Decoration: print\nPattern: print\nLabel: yes\nWashing Care: Do not tumble dry\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n62 cm\n\t\n40 cm\n\t\n18 cm\n\n\nXS\n\t\n92 cm\n\t\n64 cm\n\t\n42 cm\n\t\n18 cm\n\n\nS\n\t\n96 cm\n\t\n66 cm\n\t\n44 cm\n\t\n19 cm\n\n\nM\n\t\n100 cm\n\t\n68 cm\n\t\n46 cm\n\t\n19 cm\n\n\nL\n\t\n104 cm\n\t\n70 cm\n\t\n50 cm\n\t\n20 cm\n\n\nXL\n\t\n108 cm\n\t\n72 cm\n\t\n52 cm\n\t\n20 cm\n\n\n2XL\n\t\n114 cm\n\t\n74 cm\n\t\n54 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n76 cm\n\t\n57 cm\n\t\n22 cm\n\n\n4XL\n\t\n126 cm\n\t\n78 cm\n\t\n60 cm\n\t\n23 cm\n\n\n5XL\n\t\n132 cm\n\t\n80 cm\n\t\n62 cm\n\t\n24 cm\n\n\n6XL\n\t\n138 cm\n\t\n82 cm\n\t\n64 cm\n\t\n25 cm\n搜索标签\nFrance T-shirt\nfootball print\nrooster graphic\npolyester T-shirt\nshort sleeve\nprinted top\ngraphic shirt\ncasual shirt\n",
+        "title": "France Football Graphic Polyester T-Shirt, Short Sleeve Printed Top",
+        "url": "https://merchant.joom.com/panel/products/6aa27aa333883401e8442c95",
+        "variantCount": 220,
+        "variantDetailSha256": "5700149f929683ac212f346f55b50be3a92aebb03709b9baa2e27333f1181869"
+      },
+      "plan": {
+        "label": "法国风格足球T恤",
+        "title": "France Football Graphic Polyester T-Shirt, Short Sleeve Printed Top",
+        "intro": "Polyester short-sleeve T-shirt with France lettering, a rooster crest and a football-inspired printed design. The texture effect is part of the print. Select your preferred option and compare the garment measurements below before ordering.",
+        "tags": [
+          "France T-shirt",
+          "football print",
+          "rooster graphic",
+          "polyester T-shirt",
+          "short sleeve",
+          "printed top",
+          "graphic shirt",
+          "casual shirt"
+        ],
+        "replacements": {
+          "Clothing Decoration: No Decoration": "Clothing Decoration: Print",
+          "Neckline: Round Neck": "Neckline: V-Neck"
+        }
+      }
+    },
+    {
+      "product_id": "6aba5a595ef7d9017639a1c6",
+      "name": "Kids' Sailor Moon Print Zip-Up Hoodie, Cotton Long Sleeve",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 35,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/ebbd34439fc3d2498928afdd418cea419f57e283_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6aba5a595ef7d9017639a1c6/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226aba5a595ef7d9017639a1c6%22",
+            "text": "订单"
+          }
+        ],
+        "text": "9918762214204456\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n限售\n1\n需注意\n1\n审核中\n1\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nKids' Sailor Moon Print Zip-Up Hoodie, Cotton Long Sleeve\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6aba5a595ef7d9017639a1c6\n等级\n部分内容\n产品SKU\n9918762214204456\n类目ID\n1605614754933037318-196-2-62735-1604558435\n类目\nBaby & Kids\nKids Clothing\nUnisex Clothing\nUnisex (over 4 y.o.)\nTop\nHoodies & Sweatshirts (kids unisex)\n推荐类目ID\n1473502947691956288-126-2-118-286289588\n推荐类目\nHoodies & Sweatshirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月28日\n敏感货\n普通货\n描述\nChildren's cotton hoodie with Sailor Moon graphics on the front and back, a full front zipper, a hood and long sleeves. Select your preferred color. Compare the garment measurements below with a similar item that fits well before ordering.\n\nProduct Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Hooded\nTop Closure Type: Zip-up\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry\nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm\nNotes:\nPlease measure yourself carefully according to the size chart before purchasing, thank you!\nDue to manual measurement, please allow an error of 2–3 cm.\nDue to differences in lighting and screen settings, the actual product color may vary slightly.\nPlease carefully review the size chart before purchasing.\n未解析的属性\nsetsQuantity: 1\npiecesQuantity: 1\nmanufactureCountry: china\n产品属性\nMaterial: cotton\nManufacture Country: China\nStyle: casual\nSleeve Length: long sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Machine wash at temperatures below 30°C\n尺码表\n尺码\tBust\tJunk\tLength\tShoulders\tSleeve\n\n100\n\t\n60 cm\n\t\n90–100 cm\n\t\n42 cm\n\t\n28 cm\n\t\n39 cm\n\n\n110\n\t\n66 cm\n\t\n100–110 cm\n\t\n45 cm\n\t\n30 cm\n\t\n41 cm\n\n\n120\n\t\n72 cm\n\t\n110–120 cm\n\t\n48 cm\n\t\n32 cm\n\t\n43 cm\n\n\n130\n\t\n78 cm\n\t\n120–130 cm\n\t\n51 cm\n\t\n34 cm\n\t\n45 cm\n\n\n140\n\t\n84 cm\n\t\n130–140 cm\n\t\n54 cm\n\t\n36 cm\n\t\n47 cm\n\n\n150\n\t\n90 cm\n\t\n140–150 cm\n\t\n57 cm\n\t\n38 cm\n\t\n49 cm\n\n\n160\n\t\n96 cm\n\t\n150–160 cm\n\t\n60 cm\n\t\n40 cm\n\t\n51 cm\n搜索标签\nkids hoodie\nSailor Moon hoodie\nzip up hoodie\ncotton hoodie\nmoon graphic\nlong sleeve\nfront back print\ngraphic sweatshirt\n",
+        "title": "Kids' Sailor Moon Print Zip-Up Hoodie, Cotton Long Sleeve",
+        "url": "https://merchant.joom.com/panel/products/6aba5a595ef7d9017639a1c6",
+        "variantCount": 35,
+        "variantDetailSha256": "0a733770bc93b105a379ed9320dc5cedabb0faa88e86656a19cad94f1cb788ac"
+      },
+      "plan": {
+        "label": "美少女战士儿童拉链卫衣",
+        "title": "Kids' Sailor Moon Print Zip-Up Hoodie, Cotton Long Sleeve",
+        "intro": "Children's cotton hoodie with Sailor Moon graphics on the front and back, a full front zipper, a hood and long sleeves. Select your preferred color. Compare the garment measurements below with a similar item that fits well before ordering.",
+        "tags": [
+          "kids hoodie",
+          "Sailor Moon hoodie",
+          "zip up hoodie",
+          "cotton hoodie",
+          "moon graphic",
+          "long sleeve",
+          "front back print",
+          "graphic sweatshirt"
+        ],
+        "replacements": {
+          "Collar Type: Round Neck": "Collar Type: Hooded"
+        }
+      }
+    },
+    {
+      "product_id": "6aba5b035ef7d9017639ae42",
+      "name": "Kids' Basketball Player Graphic Zip-Up Hoodie, Cotton Long Sleeve",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 133,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/d4ab10bfd3170dfeffe256ebcab48b731233cf28_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6aba5b035ef7d9017639ae42/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226aba5b035ef7d9017639ae42%22",
+            "text": "订单"
+          }
+        ],
+        "text": "2853540076313282\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n限售\n1\n需注意\n1\n审核中\n1\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\n绑定的文件\n欧代协议\nManufacturer Information: Qianshan County Nineteen Trade Co., Ltd\nKids' Basketball Player Graphic Zip-Up Hoodie, Cotton Long Sleeve\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6aba5b035ef7d9017639ae42\n等级\n部分内容\n产品SKU\n2853540076313282\n类目ID\n1605614754933037318-196-2-62735-1604558435\n类目\nBaby & Kids\nKids Clothing\nUnisex Clothing\nUnisex (over 4 y.o.)\nTop\nHoodies & Sweatshirts (kids unisex)\n推荐类目ID\n1473502947691956288-126-2-118-286289588\n推荐类目\nHoodies & Sweatshirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月28日\n敏感货\n普通货\n描述\nChildren's cotton hoodie with a basketball-player silhouette and lettering printed on the front and back. Features a full front zipper, a hood and long sleeves. Compare the garment measurements below with a similar item that fits well before ordering.\n\nProduct Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Hooded\nTop Closure Type: Zip-up\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry\nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm\nNotes:\nPlease measure yourself carefully according to the size chart before purchasing, thank you!\nDue to manual measurement, please allow an error of 2–3 cm.\nDue to differences in lighting and screen settings, the actual product color may vary slightly.\nPlease carefully review the size chart before purchasing.\n未解析的属性\nsetsQuantity: 1\npiecesQuantity: 1\nmanufactureCountry: china\n产品属性\nMaterial: cotton\nManufacture Country: China\nStyle: casual\nSleeve Length: long sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Machine wash at temperatures below 30°C\n尺码表\n尺码\tBust\tJunk\tLength\tShoulders\tSleeve\n\n100\n\t\n60 cm\n\t\n90–100 cm\n\t\n42 cm\n\t\n28 cm\n\t\n39 cm\n\n\n110\n\t\n66 cm\n\t\n100–110 cm\n\t\n45 cm\n\t\n30 cm\n\t\n41 cm\n\n\n120\n\t\n72 cm\n\t\n110–120 cm\n\t\n48 cm\n\t\n32 cm\n\t\n43 cm\n\n\n130\n\t\n78 cm\n\t\n120–130 cm\n\t\n51 cm\n\t\n34 cm\n\t\n45 cm\n\n\n140\n\t\n84 cm\n\t\n130–140 cm\n\t\n54 cm\n\t\n36 cm\n\t\n47 cm\n\n\n150\n\t\n90 cm\n\t\n140–150 cm\n\t\n57 cm\n\t\n38 cm\n\t\n49 cm\n\n\n160\n\t\n96 cm\n\t\n150–160 cm\n\t\n60 cm\n\t\n40 cm\n\t\n51 cm\n搜索标签\nkids hoodie\nbasketball hoodie\nplayer graphic\nzip up hoodie\ncotton hoodie\nlong sleeve\nfront back print\ngraphic sweatshirt\n",
+        "title": "Kids' Basketball Player Graphic Zip-Up Hoodie, Cotton Long Sleeve",
+        "url": "https://merchant.joom.com/panel/products/6aba5b035ef7d9017639ae42",
+        "variantCount": 133,
+        "variantDetailSha256": "44e45134b07913ecb353877c3867b0e2ccd556173b2650335023083d718335ee"
+      },
+      "plan": {
+        "label": "篮球儿童拉链卫衣",
+        "title": "Kids' Basketball Player Graphic Zip-Up Hoodie, Cotton Long Sleeve",
+        "intro": "Children's cotton hoodie with a basketball-player silhouette and lettering printed on the front and back. Features a full front zipper, a hood and long sleeves. Compare the garment measurements below with a similar item that fits well before ordering.",
+        "tags": [
+          "kids hoodie",
+          "basketball hoodie",
+          "player graphic",
+          "zip up hoodie",
+          "cotton hoodie",
+          "long sleeve",
+          "front back print",
+          "graphic sweatshirt"
+        ],
+        "replacements": {
+          "Collar Type: Round Neck": "Collar Type: Hooded"
+        }
+      }
+    },
+    {
+      "product_id": "6a864b821fe9fe0103c252eb",
+      "name": "Morat YEM Graphic Cotton T-Shirt, Front and Back Print, Short Sleeve",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 96,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/4fe866285c79c653e6b36c8436437be3be4459ff_1024_1024.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a864b821fe9fe0103c252eb/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a864b821fe9fe0103c252eb%22",
+            "text": "订单"
+          }
+        ],
+        "text": "1005012953635491\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n审核中\n1\n产品待审核\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nMorat YEM Graphic Cotton T-Shirt, Front and Back Print, Short Sleeve\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a864b821fe9fe0103c252eb\n等级\n部分内容\n产品SKU\n1005012953635491\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月20日\n敏感货\n普通货\n描述\nCotton T-shirt with YEM lettering on the front and a Morat band illustration and lettering on the back. Short sleeves, a round neckline and pullover construction. Compare the garment measurements below with a similar item that fits well before ordering.\n\nProduct Type: t shirt\nManufacture Country: China\nApplicable scene: daily\nstyle: Casual\nApplicable season: summer\nNeckline: round\nTops closure type: pullover\nClothing decoration: print\nLeather Label: no\nSleeve length (cm): Short Sleeve\nSex: Unisex\nAge: Ages 18-45 Years Old\nPattern: print\nMaterial: cotton\nLabel: Yes\nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry\n\nSize chart (cm):\nSize: XXS, Length: 60cm, Bust: 88cm, Shoulder: 41cm, Sleeve: 18cm\nSize: XS, Length: 66cm, Bust: 96cm, Shoulder: 45cm, Sleeve: 19cm\nSize: S, Length: 68cm, Bust: 100cm, Shoulder: 47cm, Sleeve: 19cm\nSize: M, Length: 70cm, Bust: 104cm, Shoulder: 49cm, Sleeve: 20cm\nSize: L, Length: 72cm, Bust: 108cm, Shoulder: 51cm, Sleeve: 20cm\nSize: XL, Length: 74cm, Bust: 112cm, Shoulder: 53cm, Sleeve: 21cm\nSize: 2XL, Length: 76cm, Bust: 116cm, Shoulder: 55cm, Sleeve: 21cm\nSize: 3XL, Length: 78cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm\nNote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4. All our products are advertised in size, study the size chart before buying.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nManufacture Country: China\nSeason: summer\nNeckline: round\nClothing Decoration: print\nLeather Label: no\nClothing Decoration: print\nPattern: print\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Machine wash at temperatures below 30°C\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n搜索标签\nMorat T-shirt\nYEM print\nband illustration\nfront back print\ncotton T-shirt\nshort sleeve\ncrew neck\ngraphic tee\n",
+        "title": "Morat YEM Graphic Cotton T-Shirt, Front and Back Print, Short Sleeve",
+        "url": "https://merchant.joom.com/panel/products/6a864b821fe9fe0103c252eb",
+        "variantCount": 96,
+        "variantDetailSha256": "79e0f03ae2e0b5ec76595d5bcb1716faced992533185399044f6b88f67b3918f"
+      },
+      "plan": {
+        "label": "Morat双面印花T恤",
+        "title": "Morat YEM Graphic Cotton T-Shirt, Front and Back Print, Short Sleeve",
+        "intro": "Cotton T-shirt with YEM lettering on the front and a Morat band illustration and lettering on the back. Short sleeves, a round neckline and pullover construction. Compare the garment measurements below with a similar item that fits well before ordering.",
+        "tags": [
+          "Morat T-shirt",
+          "YEM print",
+          "band illustration",
+          "front back print",
+          "cotton T-shirt",
+          "short sleeve",
+          "crew neck",
+          "graphic tee"
+        ],
+        "replacements": {
+          "Clothing decoration: no decoration": "Clothing decoration: print"
+        }
+      }
+    },
+    {
+      "product_id": "6ac859735c2438011cd4d229",
+      "name": "The Amazing Digital Circus Character Grid Cotton T-Shirt, Short Sleeve",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 88,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/d71ca6fda1849f16f64b0bf25023d740b3263781_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6ac859735c2438011cd4d229/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226ac859735c2438011cd4d229%22",
+            "text": "订单"
+          }
+        ],
+        "text": "8556267019134012\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n审核中\n1\n产品待审核\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\n绑定的文件\n欧代协议\nManufacturer Information: Qianshan County Nineteen Trade Co., Ltd\nThe Amazing Digital Circus Character Grid Cotton T-Shirt, Short Sleeve\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6ac859735c2438011cd4d229\n等级\n竞争\n部分内容\n等级分数\n25/100\n产品SKU\n8556267019134012\n相似组ID\n6a06e3316bdacec26916ef42\n1个产品\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年10月9日\n敏感货\n普通货\n描述\nCotton T-shirt with a colorful grid of The Amazing Digital Circus characters, short sleeves and a round neckline. The artwork is printed on the fabric. Compare the garment measurements below with a similar item that fits well before ordering.\n\nProduct Type: t shirt\nManufacture Country: China\nApplicable scene: daily\nstyle: Casual\nApplicable season: summer\nNeckline: round\nTops closure type: pullover\nClothing decoration: print\nLeather Label: no\nSleeve length (cm): Short Sleeve\nSex: Unisex\nAge: Ages 18-45 Years Old\nPattern: print\nMaterial: cotton\nLabel: Yes\nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry\n\nSize chart (cm):\nSize: XXS, Length: 60cm, Bust: 88cm, Shoulder: 41cm, Sleeve: 18cm\nSize: XS, Length: 66cm, Bust: 96cm, Shoulder: 45cm, Sleeve: 19cm\nSize: S, Length: 68cm, Bust: 100cm, Shoulder: 47cm, Sleeve: 19cm\nSize: M, Length: 70cm, Bust: 104cm, Shoulder: 49cm, Sleeve: 20cm\nSize: L, Length: 72cm, Bust: 108cm, Shoulder: 51cm, Sleeve: 20cm\nSize: XL, Length: 74cm, Bust: 112cm, Shoulder: 53cm, Sleeve: 21cm\nSize: 2XL, Length: 76cm, Bust: 116cm, Shoulder: 55cm, Sleeve: 21cm\nSize: 3XL, Length: 78cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm\nNote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4. All our products are advertised in size, study the size chart before buying.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nManufacture Country: China\nSeason: summer\nNeckline: round\nClothing Decoration: print\nLeather Label: no\nClothing Decoration: print\nPattern: print\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Machine wash at temperatures below 30°C\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n搜索标签\nDigital Circus shirt\ncharacter grid print\ncartoon T-shirt\ncotton T-shirt\nshort sleeve\ncrew neck\ngraphic tee\nunisex T-shirt\n",
+        "title": "The Amazing Digital Circus Character Grid Cotton T-Shirt, Short Sleeve",
+        "url": "https://merchant.joom.com/panel/products/6ac859735c2438011cd4d229",
+        "variantCount": 88,
+        "variantDetailSha256": "80fcc47f0e356cf2acbb5e7cfae9887d3e8bb95fbf9870dfadbc6d633c497e9f"
+      },
+      "plan": {
+        "label": "数字马戏团拼格T恤",
+        "title": "The Amazing Digital Circus Character Grid Cotton T-Shirt, Short Sleeve",
+        "intro": "Cotton T-shirt with a colorful grid of The Amazing Digital Circus characters, short sleeves and a round neckline. The artwork is printed on the fabric. Compare the garment measurements below with a similar item that fits well before ordering.",
+        "tags": [
+          "Digital Circus shirt",
+          "character grid print",
+          "cartoon T-shirt",
+          "cotton T-shirt",
+          "short sleeve",
+          "crew neck",
+          "graphic tee",
+          "unisex T-shirt"
+        ],
+        "replacements": {
+          "Clothing decoration: no decoration": "Clothing decoration: print"
+        }
+      }
+    },
+    {
+      "product_id": "6ac885fa450f1c01f9b9b59b",
+      "name": "Anita Baker Portrait Graphic Cotton T-Shirt, Short Sleeve Crew Neck",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 8,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/a260e283076aa82e546fd34563c352f2a504a8f8_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6ac885fa450f1c01f9b9b59b/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226ac885fa450f1c01f9b9b59b%22",
+            "text": "订单"
+          }
+        ],
+        "text": "1580376088427576\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n审核中\n1\n产品待审核\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nAnita Baker Portrait Graphic Cotton T-Shirt, Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6ac885fa450f1c01f9b9b59b\n等级\n部分内容\n产品SKU\n1580376088427576\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年10月9日\n敏感货\n普通货\n描述\nCotton T-shirt with an Anita Baker portrait and signature-style lettering, a round neckline and short sleeves. Compare the garment measurements below with a similar item that fits well before ordering.\n\nProduct Type: t shirt\nManufacture Country: China\nApplicable scene: daily\nstyle: Casual\nApplicable season: summer\nNeckline: round\nTops closure type: pullover\nClothing decoration: print\nLeather Label: no\nSleeve length (cm): Short Sleeve\nSex: Unisex\nAge: Ages 18-45 Years Old\nPattern: print\nMaterial: cotton\nLabel: Yes\nWashing care:do not tumble drying\n\nSize chart (cm):\nSize: XXS, Length: 60cm, Bust: 88cm, Shoulder: 41cm, Sleeve: 18cm\nSize: XS, Length: 66cm, Bust: 96cm, Shoulder: 45cm, Sleeve: 19cm\nSize: S, Length: 68cm, Bust: 100cm, Shoulder: 47cm, Sleeve: 19cm\nSize: M, Length: 70cm, Bust: 104cm, Shoulder: 49cm, Sleeve: 20cm\nSize: L, Length: 72cm, Bust: 108cm, Shoulder: 51cm, Sleeve: 20cm\nSize: XL, Length: 74cm, Bust: 112cm, Shoulder: 53cm, Sleeve: 21cm\nSize: 2XL, Length: 76cm, Bust: 116cm, Shoulder: 55cm, Sleeve: 21cm\nSize: 3XL, Length: 78cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm\nNote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4. All our products are advertised in size, study the size chart before buying.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nManufacture Country: China\nSeason: summer\nNeckline: round\nClothing Decoration: print\nLeather Label: no\nClothing Decoration: print\nPattern: print\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n搜索标签\nAnita Baker T-shirt\nportrait graphic\nsinger print\ncotton T-shirt\nshort sleeve\ncrew neck\ngraphic tee\nunisex T-shirt\n",
+        "title": "Anita Baker Portrait Graphic Cotton T-Shirt, Short Sleeve Crew Neck",
+        "url": "https://merchant.joom.com/panel/products/6ac885fa450f1c01f9b9b59b",
+        "variantCount": 8,
+        "variantDetailSha256": "c48476e8f2012098ea7b432f258267d90bcc7809c8f7312d86edf8dde27cf586"
+      },
+      "plan": {
+        "label": "Anita Baker肖像T恤",
+        "title": "Anita Baker Portrait Graphic Cotton T-Shirt, Short Sleeve Crew Neck",
+        "intro": "Cotton T-shirt with an Anita Baker portrait and signature-style lettering, a round neckline and short sleeves. Compare the garment measurements below with a similar item that fits well before ordering.",
+        "tags": [
+          "Anita Baker T-shirt",
+          "portrait graphic",
+          "singer print",
+          "cotton T-shirt",
+          "short sleeve",
+          "crew neck",
+          "graphic tee",
+          "unisex T-shirt"
+        ],
+        "replacements": {
+          "Clothing decoration: no decoration": "Clothing decoration: print"
+        }
+      }
+    },
+    {
+      "product_id": "6a8c47e4c9ba4101fc3762f0",
+      "name": "Sticker-Style Graffiti Graphic Cotton T-Shirt, Short Sleeve Crew Neck",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 64,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/12a8a28bf72f4393be777c7bce90325c25348469_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a8c47e4c9ba4101fc3762f0/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a8c47e4c9ba4101fc3762f0%22",
+            "text": "订单"
+          }
+        ],
+        "text": "1005012599014871\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n审核中\n1\n产品待审核\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\nSticker-Style Graffiti Graphic Cotton T-Shirt, Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a8c47e4c9ba4101fc3762f0\n等级\n部分内容\n产品SKU\n1005012599014871\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月24日\n敏感货\n普通货\n描述\nCotton T-shirt with a colorful sticker-style graffiti graphic, short sleeves and a round neckline. The layered visual effect is printed on the fabric. Compare the garment measurements below with a similar item that fits well before ordering.\n\nProduct Type: t shirt\nManufacture Country: China\nApplicable scene: daily\nstyle: Casual\nApplicable season: summer\nNeckline: round\nTops closure type: pullover\nClothing decoration: print\nLeather Label: no\nSleeve length (cm): Short Sleeve\nSex: Unisex\nAge: Ages 18-45 Years Old\nPattern: print\nMaterial: cotton\nLabel: Yes\nWashing care:do not tumble drying\n\nSize chart (cm):\nSize: XXS, Length: 60cm, Bust: 88cm, Shoulder: 41cm, Sleeve: 18cm\nSize: XS, Length: 66cm, Bust: 96cm, Shoulder: 45cm, Sleeve: 19cm\nSize: S, Length: 68cm, Bust: 100cm, Shoulder: 47cm, Sleeve: 19cm\nSize: M, Length: 70cm, Bust: 104cm, Shoulder: 49cm, Sleeve: 20cm\nSize: L, Length: 72cm, Bust: 108cm, Shoulder: 51cm, Sleeve: 20cm\nSize: XL, Length: 74cm, Bust: 112cm, Shoulder: 53cm, Sleeve: 21cm\nSize: 2XL, Length: 76cm, Bust: 116cm, Shoulder: 55cm, Sleeve: 21cm\nSize: 3XL, Length: 78cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm\nNote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4. All our products are advertised in size, study the size chart before buying.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nManufacture Country: China\nSeason: summer\nNeckline: round\nClothing Decoration: print\nLeather Label: no\nClothing Decoration: print\nPattern: print\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n搜索标签\ngraffiti T-shirt\nsticker style print\ncolorful graphic\ncotton T-shirt\nshort sleeve\ncrew neck\ngraphic tee\nunisex T-shirt\n",
+        "title": "Sticker-Style Graffiti Graphic Cotton T-Shirt, Short Sleeve Crew Neck",
+        "url": "https://merchant.joom.com/panel/products/6a8c47e4c9ba4101fc3762f0",
+        "variantCount": 64,
+        "variantDetailSha256": "fb78d76cd821ab92c8d75933c4625cab888b0f12c59e5d35f67f9e492cfb44a0"
+      },
+      "plan": {
+        "label": "涂鸦贴纸棉T恤",
+        "title": "Sticker-Style Graffiti Graphic Cotton T-Shirt, Short Sleeve Crew Neck",
+        "intro": "Cotton T-shirt with a colorful sticker-style graffiti graphic, short sleeves and a round neckline. The layered visual effect is printed on the fabric. Compare the garment measurements below with a similar item that fits well before ordering.",
+        "tags": [
+          "graffiti T-shirt",
+          "sticker style print",
+          "colorful graphic",
+          "cotton T-shirt",
+          "short sleeve",
+          "crew neck",
+          "graphic tee",
+          "unisex T-shirt"
+        ],
+        "replacements": {
+          "Clothing decoration: no decoration": "Clothing decoration: print"
+        }
+      }
+    },
+    {
+      "product_id": "6a8c47e7c9ba4101fc376356",
+      "name": "Canadian Wolf Bird Letter Print Cotton T-Shirt, Short Sleeve Crew Neck",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 0,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 72,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/d2e399ea4aa25c8e0b9cb70c7d343b7a357154e3_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a8c47e7c9ba4101fc376356/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a8c47e7c9ba4101fc376356%22",
+            "text": "订单"
+          }
+        ],
+        "text": "1005011863682839\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n审核中\n1\n尺码表正在处理中\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\n绑定的文件\n欧代协议\nManufacturer Information: Qianshan County Nineteen Trade Co., Ltd\nCanadian Wolf Bird Letter Print Cotton T-Shirt, Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a8c47e7c9ba4101fc376356\n等级\n部分内容\n产品SKU\n1005011863682839\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月24日\n敏感货\n普通货\n描述\nCotton T-shirt with Canadian Wolf Bird lettering, a loon on the water, trees and a cabin graphic. Short sleeves, a round neckline and pullover construction. Compare the garment measurements below with a similar item that fits well before ordering.\n\nProduct Type: t shirt\nManufacture Country: China\nApplicable scene: daily\nstyle: Casual\nApplicable season: summer\nNeckline: round\nTops closure type: pullover\nClothing decoration: print\nLeather Label: no\nSleeve length (cm): Short Sleeve\nSex: Unisex\nAge: Ages 18-45 Years Old\nPattern: print\nMaterial: cotton\nLabel: Yes\nWashing care:do not tumble drying\n\nSize chart (cm):\nSize: XXS, Length: 60cm, Bust: 88cm, Shoulder: 41cm, Sleeve: 18cm\nSize: XS, Length: 66cm, Bust: 96cm, Shoulder: 45cm, Sleeve: 19cm\nSize: S, Length: 68cm, Bust: 100cm, Shoulder: 47cm, Sleeve: 19cm\nSize: M, Length: 70cm, Bust: 104cm, Shoulder: 49cm, Sleeve: 20cm\nSize: L, Length: 72cm, Bust: 108cm, Shoulder: 51cm, Sleeve: 20cm\nSize: XL, Length: 74cm, Bust: 112cm, Shoulder: 53cm, Sleeve: 21cm\nSize: 2XL, Length: 76cm, Bust: 116cm, Shoulder: 55cm, Sleeve: 21cm\nSize: 3XL, Length: 78cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm\nNote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4. All our products are advertised in size, study the size chart before buying.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nManufacture Country: China\nSeason: summer\nNeckline: round\nClothing Decoration: print\nLeather Label: no\nClothing Decoration: print\nPattern: print\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry\n搜索标签\nWolf Bird T-shirt\nloon print\ncabin graphic\nforest print\ncotton T-shirt\nshort sleeve\ncrew neck\ngraphic tee\n",
+        "title": "Canadian Wolf Bird Letter Print Cotton T-Shirt, Short Sleeve Crew Neck",
+        "url": "https://merchant.joom.com/panel/products/6a8c47e7c9ba4101fc376356",
+        "variantCount": 72,
+        "variantDetailSha256": "9fc56f73fc7b3263167311b1751251fce2067c88e9e7a704279802556587c11b"
+      },
+      "plan": {
+        "label": "潜鸟森林字母T恤",
+        "title": "Canadian Wolf Bird Letter Print Cotton T-Shirt, Short Sleeve Crew Neck",
+        "intro": "Cotton T-shirt with Canadian Wolf Bird lettering, a loon on the water, trees and a cabin graphic. Short sleeves, a round neckline and pullover construction. Compare the garment measurements below with a similar item that fits well before ordering.",
+        "tags": [
+          "Wolf Bird T-shirt",
+          "loon print",
+          "cabin graphic",
+          "forest print",
+          "cotton T-shirt",
+          "short sleeve",
+          "crew neck",
+          "graphic tee"
+        ],
+        "replacements": {
+          "Clothing decoration: no decoration": "Clothing decoration: print"
+        }
+      }
+    }
+  ],
+  "source_window": "此前点击降序前200款候选，统计截至11/16；历史订单与商品详情在本次重新核对。",
+  "effect_assessment": null,
+  "followup": "逐款核对在售标题，从实际生效后观察7天点击、加购、购买及退款。"
+}

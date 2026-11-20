@@ -1,0 +1,432 @@
+{
+  "recorded_at": "2026-11-19T10:33:19.659835+08:00",
+  "platform": "Joom",
+  "selection_window": "2026-10-21–2026-11-17",
+  "source_data_updated_at_observed": "2026-11-18 16:45（后台显示，时区未标明）",
+  "catalog_scope": "三店各首100条、点击降序，共300条可见记录，不代表全量目录",
+  "count": 10,
+  "shops": {
+    "jwh second": 5,
+    "Nineteen Wear": 4,
+    "jh": 1
+  },
+  "baseline_total": {
+    "impressions": 5739,
+    "clicks": 376,
+    "cart": 68,
+    "purchases": 13
+  },
+  "items": [
+    {
+      "suggestion_id": "product-optimize-20261119-cart-6aad3bbe0693f601e0325e8e",
+      "product_id": "6aad3bbe0693f601e0325e8e",
+      "shop": "jwh second",
+      "shop_id": "6a9d4221018d89bb9e5c22ef",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T10:33:19.659835+08:00",
+      "status": "已保存并刷新核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 0,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 2612,
+        "clicks": 133,
+        "cart": 11,
+        "purchases": 0
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "属性纠正/核对"
+      ],
+      "observed_review_pending": false,
+      "observed_review_pending_at_save": true,
+      "latest_postcheck": {
+        "product_id": "6aad3bbe0693f601e0325e8e",
+        "checked_at": "2026-11-19T10:28:12.335385",
+        "persisted_title_and_intro": true,
+        "price_stock_variants_unchanged": true,
+        "review_pending": false,
+        "attributes_processing": false,
+        "attributes": "Material: cotton\nNeck Style: Hooded Neck\nCountry of Manufacture: China\nStyle: casual\nSleeve Length: long sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Machine wash at temperatures below 30°C\nNumber of Pieces: 1 pc.\nQuantity: 1 set\nMaterial: cotton 100%\nFabric Type: cotton\nFit Type: Loose\nPattern: print\n",
+        "variant_count": 56,
+        "description_text": "描述\nChildren's cotton hoodie with spider web graphics, a full front zip and long sleeves. Check the selected color/design in the product images.\n\nFIT: Sizes 100–160. Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting hoodie before selecting a size; age and height are guides only. Select the color/design first and check the available sizes. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.\n\nProduct Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Hooded\nTop Closure Type: Zip-Up\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry\nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm\nNotes:\nPlease measure yourself carefully according to the size chart before purchasing, thank you!\nDue to manual measurement, please allow an error of 2–3 cm.\nDue to differences in lighting and screen settings, the actual product color may vary slightly.\nPlease carefully review the size chart before purchasing.\n未解析的属性\nsetsQuantity: 1\npiecesQuantity: 1\nmanufactureCountry: china\n"
+      },
+      "stock_min_observed": 999,
+      "source_before": "商品优化/2026-11-19/加购低成交10款优化/6aad3bbe0693f601e0325e8e-before.json",
+      "source_after": "商品优化/2026-11-19/加购低成交10款优化/6aad3bbe0693f601e0325e8e-after.json",
+      "followup": "先确认实际在售版本生效时间，再观察完整7天的点击、加购、购买与售后；低样本不判定提升。目的国实际运费和可售状态待买家页核实。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-6aca4f1773f58001bf6ce79c",
+      "product_id": "6aca4f1773f58001bf6ce79c",
+      "shop": "jwh second",
+      "shop_id": "6a9d4221018d89bb9e5c22ef",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T10:33:19.659835+08:00",
+      "status": "已保存并刷新核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 2,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 338,
+        "clicks": 44,
+        "cart": 7,
+        "purchases": 2
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "属性纠正/核对"
+      ],
+      "observed_review_pending": false,
+      "observed_review_pending_at_save": true,
+      "latest_postcheck": {
+        "product_id": "6aca4f1773f58001bf6ce79c",
+        "checked_at": "2026-11-19T10:28:16.757630",
+        "persisted_title_and_intro": true,
+        "price_stock_variants_unchanged": true,
+        "review_pending": false,
+        "attributes_processing": false,
+        "attributes": "Material: cotton\nNeck Style: Hooded Neck\nCountry of Manufacture: China\nStyle: casual\nSleeve Length: long sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Machine wash at temperatures below 30°C\nNumber of Pieces: 1 pc.\nQuantity: 1 set\nFabric Type: cotton\nPattern: print\n",
+        "variant_count": 56,
+        "description_text": "描述\nChildren's cotton pullover hoodie with a letter graphic and long sleeves. Check the selected color/design in the product images.\n\nFIT: Sizes 100–160. Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting hoodie before selecting a size; age and height are guides only. Select the color/design first and check the available sizes. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.\n\nProduct Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Hooded\nTop Closure Type: Pullover\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry\nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm\nNotes:\nPlease measure yourself carefully according to the size chart before purchasing, thank you!\nDue to manual measurement, please allow an error of 2–3 cm.\nDue to differences in lighting and screen settings, the actual product color may vary slightly.\nPlease carefully review the size chart before purchasing.\n未解析的属性\nsetsQuantity: 1\npiecesQuantity: 1\nmanufactureCountry: china\n"
+      },
+      "stock_min_observed": 998,
+      "source_before": "商品优化/2026-11-19/加购低成交10款优化/6aca4f1773f58001bf6ce79c-before.json",
+      "source_after": "商品优化/2026-11-19/加购低成交10款优化/6aca4f1773f58001bf6ce79c-after.json",
+      "followup": "先确认实际在售版本生效时间，再观察完整7天的点击、加购、购买与售后；低样本不判定提升。目的国实际运费和可售状态待买家页核实。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-6a9aade3f5f51101463a1bf2",
+      "product_id": "6a9aade3f5f51101463a1bf2",
+      "shop": "Nineteen Wear",
+      "shop_id": "6a817b93f5d3934528e70df7",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T10:33:19.659835+08:00",
+      "status": "已保存并刷新核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 1,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 792,
+        "clicks": 32,
+        "cart": 6,
+        "purchases": 1
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "属性纠正/核对"
+      ],
+      "observed_review_pending": true,
+      "observed_review_pending_at_save": true,
+      "latest_postcheck": {
+        "product_id": "6a9aade3f5f51101463a1bf2",
+        "checked_at": "2026-11-19T10:32:05.954364",
+        "persisted_title_and_intro": true,
+        "price_stock_variants_unchanged": true,
+        "review_pending": true,
+        "attributes_processing": true,
+        "attributes": "属性正在解析中，很快就会出现\n",
+        "status_head": "1005012882329115\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n1\n尺寸表中的图片\n请将尺码表从图片中移除——请改用尺码表功能。\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nHeart and Eyes Graphic Cotton T-Shirt, Unisex Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a9aade3f5f51101463a1bf2\n等级\n缺失内容\n产品SKU\n1005012882329115\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月4日\n敏感货\n普通货\n描述\nCotton crew-neck T-shirt with heart-and-eyes graphics",
+        "variant_count": 16,
+        "description_text": "描述\nCotton crew-neck T-shirt with heart-and-eyes graphics and short sleeves. Sizes XXS–3XL; check the selected color/design in the product images.\n\nFIT: Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting T-shirt before selecting a size. The bust value is the full garment circumference, not the flat width. Check the size and color combination before ordering. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.\n\nProduct Type: t shirt\nManufacture Country: China\nApplicable scene: daily\nstyle: Casual\nApplicable season: summer\nNeckline: round\nTops closure type: pullover\nClothing decoration: Print\nLeather Label: no\nSleeve length (cm): Short Sleeve\nSex: Unisex\nAge: Ages 18-45 Years Old\nPattern: print\nMaterial: cotton\nLabel: Yes\nWashing care:do not tumble drying\n\nSize chart (cm):\nSize: XXS, Length: 60cm, Bust: 88cm, Shoulder: 41cm, Sleeve: 18cm\nSize: XS, Length: 66cm, Bust: 96cm, Shoulder: 45cm, Sleeve: 19cm\nSize: S, Length: 68cm, Bust: 100cm, Shoulder: 47cm, Sleeve: 19cm\nSize: M, Length: 70cm, Bust: 104cm, Shoulder: 49cm, Sleeve: 20cm\nSize: L, Length: 72cm, Bust: 108cm, Shoulder: 51cm, Sleeve: 20cm\nSize: XL, Length: 74cm, Bust: 112cm, Shoulder: 53cm, Sleeve: 21cm\nSize: 2XL, Length: 76cm, Bust: 116cm, Shoulder: 55cm, Sleeve: 21cm\nSize: 3XL, Length: 78cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm\nNote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4. All our products are advertised in size, study the size chart before buying.\n"
+      },
+      "stock_min_observed": 989,
+      "source_before": "商品优化/2026-11-19/加购低成交10款优化/6a9aade3f5f51101463a1bf2-before.json",
+      "source_after": "商品优化/2026-11-19/加购低成交10款优化/6a9aade3f5f51101463a1bf2-after.json",
+      "followup": "先确认实际在售版本生效时间，再观察完整7天的点击、加购、购买与售后；低样本不判定提升。目的国实际运费和可售状态待买家页核实。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-6aae091df2db5501fef4ce19",
+      "product_id": "6aae091df2db5501fef4ce19",
+      "shop": "jwh second",
+      "shop_id": "6a9d4221018d89bb9e5c22ef",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T10:33:19.659835+08:00",
+      "status": "已保存并刷新核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 2,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 535,
+        "clicks": 32,
+        "cart": 13,
+        "purchases": 1
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "属性纠正/核对"
+      ],
+      "observed_review_pending": false,
+      "observed_review_pending_at_save": true,
+      "latest_postcheck": {
+        "product_id": "6aae091df2db5501fef4ce19",
+        "checked_at": "2026-11-19T10:28:25.384999",
+        "persisted_title_and_intro": true,
+        "price_stock_variants_unchanged": true,
+        "review_pending": false,
+        "attributes_processing": false,
+        "attributes": "Material: cotton\nNeck Style: Hooded Neck\nCountry of Manufacture: China\nStyle: casual\nSleeve Length: long sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry\nFabric Type: cotton\nPattern: print\n",
+        "variant_count": 21,
+        "description_text": "描述\nChildren's cotton pullover hoodie with a colorful beast-head graphic and sleeve prints. Hooded neckline and long sleeves; check the selected color/design in the product images.\n\nFIT: Sizes 100–160. Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting hoodie before selecting a size; age and height are guides only. Select the color/design first and check the available sizes. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.\n\nProduct Type: Kids' Hooded Sweatshirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: See garment features and local weather\nNeckline: Hooded\nClosure Type: Pullover\nClothing Decoration: Print\nLeather Label: No\nSleeve Length: Long Sleeve\nGender: Unisex\nAge Group: Kids\nPattern: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Do Not Tumble Dry\nSize Chart:\nSize 100: Length 42 cm, Bust 60 cm, Shoulder 28 cm, Sleeve 39 cm.\nSize 110: Length 45 cm, Bust 66 cm, Shoulder 30 cm, Sleeve 41 cm.\nSize 120: Length 48 cm, Bust 72 cm, Shoulder 32 cm, Sleeve 43 cm.\nSize 130: Length 51 cm, Bust 78 cm, Shoulder 34 cm, Sleeve 45 cm.\nSize 140: Length 54 cm, Bust 84 cm, Shoulder 36 cm, Sleeve 47 cm.\nSize 150: Length 57 cm, Bust 90 cm, Shoulder 38 cm, Sleeve 49 cm.\nSize 160: Length 60 cm, Bust 96 cm, Shoulder 40 cm, Sleeve 51 cm.\nPlease carefully measure your child and compare the measurements with the size chart before purchasing.\nDue to manual measurement, please allow a 2–3 cm deviation.\nThe actual color may vary slightly due to lighting and different screen settings.\nPlease choose the size according to your child’s actual measurements.\n"
+      },
+      "stock_min_observed": 998,
+      "source_before": "商品优化/2026-11-19/加购低成交10款优化/6aae091df2db5501fef4ce19-before.json",
+      "source_after": "商品优化/2026-11-19/加购低成交10款优化/6aae091df2db5501fef4ce19-after.json",
+      "followup": "先确认实际在售版本生效时间，再观察完整7天的点击、加购、购买与售后；低样本不判定提升。目的国实际运费和可售状态待买家页核实。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-6abf0e24c84a3d01b95959a5",
+      "product_id": "6abf0e24c84a3d01b95959a5",
+      "shop": "jh",
+      "shop_id": "6a8c4690b1e1819ed91f9baa",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T10:33:19.659835+08:00",
+      "status": "已保存并刷新核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 1,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 175,
+        "clicks": 30,
+        "cart": 6,
+        "purchases": 1
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "属性纠正/核对"
+      ],
+      "observed_review_pending": true,
+      "observed_review_pending_at_save": true,
+      "latest_postcheck": {
+        "product_id": "6abf0e24c84a3d01b95959a5",
+        "checked_at": "2026-11-19T10:28:29.857915",
+        "persisted_title_and_intro": true,
+        "price_stock_variants_unchanged": true,
+        "review_pending": true,
+        "attributes_processing": true,
+        "attributes": "属性正在解析中，很快就会出现\n",
+        "variant_count": 49,
+        "description_text": "描述\nChildren's cotton pullover hoodie with One Piece Luffy graphics, a hood and long sleeves. Check the selected color/design in the product images.\n\nFIT: Sizes 100–160. Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting hoodie before selecting a size; age and height are guides only. Select the color/design first and check the available sizes. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.\n\nProduct Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Hooded\nTop Closure Type: Pullover\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry\nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm\nNotes:\nPlease measure yourself carefully according to the size chart before purchasing, thank you!\nDue to manual measurement, please allow an error of 2–3 cm.\nDue to differences in lighting and screen settings, the actual product color may vary slightly.\nPlease carefully review the size chart before purchasing.\n"
+      },
+      "stock_min_observed": 998,
+      "source_before": "商品优化/2026-11-19/加购低成交10款优化/6abf0e24c84a3d01b95959a5-before.json",
+      "source_after": "商品优化/2026-11-19/加购低成交10款优化/6abf0e24c84a3d01b95959a5-after.json",
+      "followup": "先确认实际在售版本生效时间，再观察完整7天的点击、加购、购买与售后；低样本不判定提升。目的国实际运费和可售状态待买家页核实。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-6aba48a845408d0115eecde3",
+      "product_id": "6aba48a845408d0115eecde3",
+      "shop": "Nineteen Wear",
+      "shop_id": "6a817b93f5d3934528e70df7",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T10:33:19.659835+08:00",
+      "status": "已保存并刷新核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 2,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 324,
+        "clicks": 26,
+        "cart": 5,
+        "purchases": 1
+      },
+      "changed_fields": [
+        "标题",
+        "描述"
+      ],
+      "observed_review_pending": true,
+      "observed_review_pending_at_save": true,
+      "latest_postcheck": {
+        "product_id": "6aba48a845408d0115eecde3",
+        "checked_at": "2026-11-19T10:28:34.038450",
+        "persisted_title_and_intro": true,
+        "price_stock_variants_unchanged": true,
+        "review_pending": true,
+        "attributes_processing": true,
+        "attributes": "属性正在解析中，很快就会出现\n",
+        "variant_count": 49,
+        "description_text": "描述\nChildren's cotton pullover hoodie with a Gojo anime graphic, a hood and long sleeves. Check the selected color/design in the product images.\n\nFIT: Sizes 100–160. Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting hoodie before selecting a size; age and height are guides only. Select the color/design first and check the available sizes. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.\n\nProduct Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Hooded\nTop Closure Type: Pullover\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry\nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm\nNotes:\nPlease measure yourself carefully according to the size chart before purchasing, thank you!\nDue to manual measurement, please allow an error of 2–3 cm.\nDue to differences in lighting and screen settings, the actual product color may vary slightly.\nPlease carefully review the size chart before purchasing.\n"
+      },
+      "stock_min_observed": 998,
+      "source_before": "商品优化/2026-11-19/加购低成交10款优化/6aba48a845408d0115eecde3-before.json",
+      "source_after": "商品优化/2026-11-19/加购低成交10款优化/6aba48a845408d0115eecde3-after.json",
+      "followup": "先确认实际在售版本生效时间，再观察完整7天的点击、加购、购买与售后；低样本不判定提升。目的国实际运费和可售状态待买家页核实。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-6aae0920d978cd01274473fa",
+      "product_id": "6aae0920d978cd01274473fa",
+      "shop": "jwh second",
+      "shop_id": "6a9d4221018d89bb9e5c22ef",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T10:33:19.659835+08:00",
+      "status": "已保存并刷新核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 3,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 301,
+        "clicks": 21,
+        "cart": 4,
+        "purchases": 3
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "属性纠正/核对"
+      ],
+      "observed_review_pending": true,
+      "observed_review_pending_at_save": true,
+      "latest_postcheck": {
+        "product_id": "6aae0920d978cd01274473fa",
+        "checked_at": "2026-11-19T10:28:38.352076",
+        "persisted_title_and_intro": true,
+        "price_stock_variants_unchanged": true,
+        "review_pending": true,
+        "attributes_processing": true,
+        "attributes": "属性正在解析中，很快就会出现\n",
+        "variant_count": 28,
+        "description_text": "描述\nChildren's cotton pullover hoodie with a Rainbow Friends cartoon graphic and sleeve prints. Hooded neckline and long sleeves; check the selected color/design in the product images.\n\nFIT: Sizes 100–160. Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting hoodie before selecting a size; age and height are guides only. Select the color/design first and check the available sizes. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.\n\nProduct Type: Kids' Hooded Sweatshirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: See garment features and local weather\nNeckline: Hooded\nClosure Type: Pullover\nClothing Decoration: Print\nLeather Label: No\nSleeve Length: Long Sleeve\nGender: Unisex\nAge Group: Kids\nPattern: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Do Not Tumble Dry\nSize Chart:\nSize 100: Length 42 cm, Bust 60 cm, Shoulder 28 cm, Sleeve 39 cm.\nSize 110: Length 45 cm, Bust 66 cm, Shoulder 30 cm, Sleeve 41 cm.\nSize 120: Length 48 cm, Bust 72 cm, Shoulder 32 cm, Sleeve 43 cm.\nSize 130: Length 51 cm, Bust 78 cm, Shoulder 34 cm, Sleeve 45 cm.\nSize 140: Length 54 cm, Bust 84 cm, Shoulder 36 cm, Sleeve 47 cm.\nSize 150: Length 57 cm, Bust 90 cm, Shoulder 38 cm, Sleeve 49 cm.\nSize 160: Length 60 cm, Bust 96 cm, Shoulder 40 cm, Sleeve 51 cm.\nPlease carefully measure your child and compare the measurements with the size chart before purchasing.\nDue to manual measurement, please allow a 2–3 cm deviation.\nThe actual color may vary slightly due to lighting and different screen settings.\nPlease choose the size according to your child’s actual measurements.\n"
+      },
+      "stock_min_observed": 998,
+      "source_before": "商品优化/2026-11-19/加购低成交10款优化/6aae0920d978cd01274473fa-before.json",
+      "source_after": "商品优化/2026-11-19/加购低成交10款优化/6aae0920d978cd01274473fa-after.json",
+      "followup": "先确认实际在售版本生效时间，再观察完整7天的点击、加购、购买与售后；低样本不判定提升。目的国实际运费和可售状态待买家页核实。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-6acb8592c936e8010a0b7433",
+      "product_id": "6acb8592c936e8010a0b7433",
+      "shop": "jwh second",
+      "shop_id": "6a9d4221018d89bb9e5c22ef",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T10:33:19.659835+08:00",
+      "status": "已保存并刷新核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 3,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 140,
+        "clicks": 21,
+        "cart": 4,
+        "purchases": 1
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "属性纠正/核对"
+      ],
+      "observed_review_pending": true,
+      "observed_review_pending_at_save": true,
+      "latest_postcheck": {
+        "product_id": "6acb8592c936e8010a0b7433",
+        "checked_at": "2026-11-19T10:28:42.530440",
+        "persisted_title_and_intro": true,
+        "price_stock_variants_unchanged": true,
+        "review_pending": true,
+        "attributes_processing": true,
+        "attributes": "属性正在解析中，很快就会出现\n",
+        "variant_count": 35,
+        "description_text": "描述\nChildren's cotton pullover hoodie with One Piece Zoro graphics, a hood and long sleeves. Check the selected color/design in the product images.\n\nFIT: Sizes 100–160. Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting hoodie before selecting a size; age and height are guides only. Select the color/design first and check the available sizes. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.\n\nProduct Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Hooded\nTop Closure Type: Pullover\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry\nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm\nNotes:\nPlease measure yourself carefully according to the size chart before purchasing, thank you!\nDue to manual measurement, please allow an error of 2–3 cm.\nDue to differences in lighting and screen settings, the actual product color may vary slightly.\nPlease carefully review the size chart before purchasing.\n"
+      },
+      "stock_min_observed": 998,
+      "source_before": "商品优化/2026-11-19/加购低成交10款优化/6acb8592c936e8010a0b7433-before.json",
+      "source_after": "商品优化/2026-11-19/加购低成交10款优化/6acb8592c936e8010a0b7433-after.json",
+      "followup": "先确认实际在售版本生效时间，再观察完整7天的点击、加购、购买与售后；低样本不判定提升。目的国实际运费和可售状态待买家页核实。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-6a869ee0e84e05012d269a52",
+      "product_id": "6a869ee0e84e05012d269a52",
+      "shop": "Nineteen Wear",
+      "shop_id": "6a817b93f5d3934528e70df7",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T10:33:19.659835+08:00",
+      "status": "已保存并刷新核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 5,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 442,
+        "clicks": 19,
+        "cart": 4,
+        "purchases": 2
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "搜索标签",
+        "属性纠正/核对"
+      ],
+      "observed_review_pending": true,
+      "observed_review_pending_at_save": true,
+      "latest_postcheck": {
+        "product_id": "6a869ee0e84e05012d269a52",
+        "checked_at": "2026-11-19T10:32:09.641183",
+        "persisted_title_and_intro": true,
+        "price_stock_variants_unchanged": true,
+        "review_pending": true,
+        "attributes_processing": true,
+        "attributes": "属性正在解析中，很快就会出现\n",
+        "status_head": "TXYL0283\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n1\n产品有重复图片\n请从产品中删除重复图片。\n图片： 1\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nWomen's Michael Jackson Portrait Cotton T-Shirt, Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a869ee0e84e05012d269a52\n等级\n缺失内容\n产品SKU\nTXYL0283\n类目ID\n1473502940450448049-189-2-118-805240694\n类目\nT-Shirts (women’s)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月20日\n敏感货\n普通货\n描述\nWomen's cotton crew-neck T-shirt with a Michael Jackson portrait and ",
+        "variant_count": 6,
+        "description_text": "描述\nWomen's cotton crew-neck T-shirt with a Michael Jackson portrait and lettering graphic. Short sleeves; sizes S–3XL. Check the selected color/design in the product images.\n\nFIT: Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting T-shirt before selecting a size. The bust value is the full garment circumference, not the flat width. Check the size and color combination before ordering. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.\n\nProduct Type： t shirt\nManufacture Country：China\nApplicable scene: daily\nstyle: Casual\nApplicable season: summer\nNeckline：round\nTops closure type: pullover\nClothing decoration: Print\nLeather Label：no\nSleeve length (cm): Short Sleeve\nSex: Women\nAge: Ages 18-45 Years Old\nPattern：print\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry\nSizes available: S M L XL 2XL 3XL\nS: bust 100 cm, length 68 cm, shoulder 47 cm,Sleeve Length 19 cm\nM: bust 104 cm, length 70 cm, shoulder 49 cm,Sleeve Length 20 cm\nL: bust 108 cm, length 72 cm, shoulder 51 cm,Sleeve Length 20 cm\nXL: bust 112 cm, length 74 cm, shoulder 53 cm,Sleeve Length 21cm\n2XL: bust 116 cm, length 76 cm, shoulder 55 cm,Sleeve Length 21 cm\n3XL: bust 120 cm, length 78 cm, shoulder 57 cm,Sleeve Length 22 cm\nnote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4.All our products are advertised in size , study the size chart before buying.\n"
+      },
+      "stock_min_observed": 995,
+      "source_before": "商品优化/2026-11-19/加购低成交10款优化/6a869ee0e84e05012d269a52-before.json",
+      "source_after": "商品优化/2026-11-19/加购低成交10款优化/6a869ee0e84e05012d269a52-after.json",
+      "followup": "先确认实际在售版本生效时间，再观察完整7天的点击、加购、购买与售后；低样本不判定提升。目的国实际运费和可售状态待买家页核实。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-6ac7aa5e5c2438011cc961fa",
+      "product_id": "6ac7aa5e5c2438011cc961fa",
+      "shop": "Nineteen Wear",
+      "shop_id": "6a817b93f5d3934528e70df7",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T10:33:19.659835+08:00",
+      "status": "已保存并刷新核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 1,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 80,
+        "clicks": 18,
+        "cart": 8,
+        "purchases": 1
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "属性纠正/核对"
+      ],
+      "observed_review_pending": true,
+      "observed_review_pending_at_save": true,
+      "latest_postcheck": {
+        "product_id": "6ac7aa5e5c2438011cc961fa",
+        "checked_at": "2026-11-19T10:32:13.485360",
+        "persisted_title_and_intro": true,
+        "price_stock_variants_unchanged": true,
+        "review_pending": true,
+        "attributes_processing": true,
+        "attributes": "属性正在解析中，很快就会出现\n",
+        "status_head": "6970403725757954\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n1\n尺寸表中的图片\n请将尺码表从图片中移除——请改用尺码表功能。\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\n绑定的文件\n欧代协议\nManufacturer Information: Qianshan County Nineteen Trade Co., Ltd\nMANOWAR Graphic Polyester T-Shirt, Unisex Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6ac7aa5e5c2438011cc961fa\n等级\n缺失内容\n产品SKU\n6970403725757954\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nT-Shirts (unisex)\n推荐类目ID\n1473502943246387503-24-2-118-3777727211\n推荐类目\nT-Shirts (men’s)\n店铺名称\nNineteen Wear\n创建日期\n202",
+        "variant_count": 99,
+        "description_text": "描述\nPolyester crew-neck T-shirt with a MANOWAR graphic and short sleeves. Sizes 2XS–6XL; check the selected color/design in the product images.\n\nFIT: Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting T-shirt before selecting a size. The bust value is the full garment circumference, not the flat width. Check the size and color combination before ordering. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.\n\nProduct Type: T-Shirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Summer\nNeckline: Round Neck\nTops Closure Type: Pullover\nClothing Decoration: Print\nLeather Label: No\nSleeve Length: Short Sleeve\nSex: Unisex\nAge: Ages 8-45 Years Old\nPattern: Print\nMaterial: Polyester\nLabel: Yes\nWashing Care: Do Not Tumble Dry\n\nSize Chart (cm):\n\nSize: 2XS, Length: 62cm, Bust: 88cm, Shoulder: 40cm, Sleeve: 18cm\nSize: XS, Length: 64cm, Bust: 92cm, Shoulder: 42cm, Sleeve: 19cm\nSize: S, Length: 66cm, Bust: 96cm, Shoulder: 44cm, Sleeve: 19cm\nSize: M, Length: 68cm, Bust: 100cm, Shoulder: 46cm, Sleeve: 19cm\nSize: L, Length: 70cm, Bust: 104cm, Shoulder: 50cm, Sleeve: 20cm\nSize: XL, Length: 72cm, Bust: 108cm, Shoulder: 52cm, Sleeve: 20cm\nSize: 2XL, Length: 74cm, Bust: 114cm, Shoulder: 54cm, Sleeve: 21cm\nSize: 3XL, Length: 76cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm\nSize: 4XL, Length: 78cm, Bust: 126cm, Shoulder: 60cm, Sleeve: 23cm\nSize: 5XL, Length: 80cm, Bust: 132cm, Shoulder: 62cm, Sleeve: 24cm\nSize: 6XL, Length: 82cm, Bust: 138cm, Shoulder: 64cm, Sleeve: 25cm\n\nSize selection: Use the garment measurements below to choose your size; do not rely on a fixed US/EU size conversion.\n\nNotes:\n1. Please carefully measure yourself according to the size chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 1–3 cm.\n3. All measurements are taken flat and unstretched.\n4. For a loose fit, compare garment measurements and allow room according to your preference.\n5. Due to differences in lighting and screen settings, the actual product color may be slightly different from the picture.\n6. All our products are advertised in Asian sizes. Please study the size chart carefully before buying.\n"
+      },
+      "stock_min_observed": 998,
+      "source_before": "商品优化/2026-11-19/加购低成交10款优化/6ac7aa5e5c2438011cc961fa-before.json",
+      "source_after": "商品优化/2026-11-19/加购低成交10款优化/6ac7aa5e5c2438011cc961fa-after.json",
+      "followup": "先确认实际在售版本生效时间，再观察完整7天的点击、加购、购买与售后；低样本不判定提升。目的国实际运费和可售状态待买家页核实。"
+    }
+  ],
+  "subsequent_corrections": [
+    {
+      "event_id": "product-variant-add-20261119-6a869ee0e84e05012d269a52",
+      "product_id": "6a869ee0e84e05012d269a52",
+      "recorded_at": "2026-11-19T10:44:41.384958+08:00",
+      "source": "商品优化/2026-11-19/XXS-XS规格补齐/修正记录.md"
+    }
+  ]
+}

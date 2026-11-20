@@ -1,0 +1,996 @@
+[
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].isArchived",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "disabled": true,
+    "name": "variants[0].sku",
+    "type": "text",
+    "value": "TXYL0283-S-as the picture1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].colors",
+    "type": "text",
+    "value": "as the picture"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].size",
+    "type": "text",
+    "value": "S"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].mainImageUrl",
+    "type": "file",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].price",
+    "type": "text",
+    "value": "3.98"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].msrPrice",
+    "type": "text",
+    "value": "9"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].shippingPrice",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].declaredPrice",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].inventory",
+    "type": "text",
+    "value": "995"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].gtin",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].hsCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].tnvedCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].eprelId",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].shippingLength",
+    "type": "number",
+    "value": "30"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].shippingWidth",
+    "type": "number",
+    "value": "20"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].shippingHeight",
+    "type": "number",
+    "value": "1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[0].shippingWeight",
+    "type": "number",
+    "value": "0.2"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].isArchived",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "disabled": true,
+    "name": "variants[1].sku",
+    "type": "text",
+    "value": "TXYL0283-M-as the picture1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].colors",
+    "type": "text",
+    "value": "as the picture"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].size",
+    "type": "text",
+    "value": "M"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].mainImageUrl",
+    "type": "file",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].price",
+    "type": "text",
+    "value": "3.98"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].msrPrice",
+    "type": "text",
+    "value": "9"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].shippingPrice",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].declaredPrice",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].inventory",
+    "type": "text",
+    "value": "998"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].gtin",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].hsCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].tnvedCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].eprelId",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].shippingLength",
+    "type": "number",
+    "value": "30"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].shippingWidth",
+    "type": "number",
+    "value": "20"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].shippingHeight",
+    "type": "number",
+    "value": "1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[1].shippingWeight",
+    "type": "number",
+    "value": "0.2"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].isArchived",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "disabled": true,
+    "name": "variants[2].sku",
+    "type": "text",
+    "value": "TXYL0283-L-as the picture1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].colors",
+    "type": "text",
+    "value": "as the picture"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].size",
+    "type": "text",
+    "value": "L"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].mainImageUrl",
+    "type": "file",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].price",
+    "type": "text",
+    "value": "3.98"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].msrPrice",
+    "type": "text",
+    "value": "9"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].shippingPrice",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].declaredPrice",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].inventory",
+    "type": "text",
+    "value": "999"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].gtin",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].hsCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].tnvedCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].eprelId",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].shippingLength",
+    "type": "number",
+    "value": "30"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].shippingWidth",
+    "type": "number",
+    "value": "20"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].shippingHeight",
+    "type": "number",
+    "value": "1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[2].shippingWeight",
+    "type": "number",
+    "value": "0.2"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].isArchived",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "disabled": true,
+    "name": "variants[3].sku",
+    "type": "text",
+    "value": "TXYL0283-XL-as the picture1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].colors",
+    "type": "text",
+    "value": "as the picture"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].size",
+    "type": "text",
+    "value": "XL"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].mainImageUrl",
+    "type": "file",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].price",
+    "type": "text",
+    "value": "3.98"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].msrPrice",
+    "type": "text",
+    "value": "9"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].shippingPrice",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].declaredPrice",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].inventory",
+    "type": "text",
+    "value": "999"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].gtin",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].hsCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].tnvedCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].eprelId",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].shippingLength",
+    "type": "number",
+    "value": "30"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].shippingWidth",
+    "type": "number",
+    "value": "20"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].shippingHeight",
+    "type": "number",
+    "value": "1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[3].shippingWeight",
+    "type": "number",
+    "value": "0.2"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].isArchived",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "disabled": true,
+    "name": "variants[4].sku",
+    "type": "text",
+    "value": "TXYL0283-2XL-as the picture1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].colors",
+    "type": "text",
+    "value": "as the picture"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].size",
+    "type": "text",
+    "value": "2XL"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].mainImageUrl",
+    "type": "file",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].price",
+    "type": "text",
+    "value": "3.98"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].msrPrice",
+    "type": "text",
+    "value": "9"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].shippingPrice",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].declaredPrice",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].inventory",
+    "type": "text",
+    "value": "999"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].gtin",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].hsCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].tnvedCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].eprelId",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].shippingLength",
+    "type": "number",
+    "value": "30"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].shippingWidth",
+    "type": "number",
+    "value": "20"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].shippingHeight",
+    "type": "number",
+    "value": "1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[4].shippingWeight",
+    "type": "number",
+    "value": "0.2"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].isArchived",
+    "type": "checkbox",
+    "value": "on"
+  },
+  {
+    "checked": false,
+    "disabled": true,
+    "name": "variants[5].sku",
+    "type": "text",
+    "value": "TXYL0283-3XL-as the picture1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].colors",
+    "type": "text",
+    "value": "as the picture"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].size",
+    "type": "text",
+    "value": "3XL"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].mainImageUrl",
+    "type": "file",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].price",
+    "type": "text",
+    "value": "3.98"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].msrPrice",
+    "type": "text",
+    "value": "9"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].shippingPrice",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].declaredPrice",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].inventory",
+    "type": "text",
+    "value": "999"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].gtin",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].hsCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].tnvedCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].eprelId",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].shippingLength",
+    "type": "number",
+    "value": "30"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].shippingWidth",
+    "type": "number",
+    "value": "20"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].shippingHeight",
+    "type": "number",
+    "value": "1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[5].shippingWeight",
+    "type": "number",
+    "value": "0.2"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].sku",
+    "type": "text",
+    "value": "TXYL0283-XXS-as the picture1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].colors",
+    "type": "text",
+    "value": "as the picture"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].size",
+    "type": "text",
+    "value": "XXS"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].mainImageUrl",
+    "type": "file",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].price",
+    "type": "text",
+    "value": "3.98"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].msrPrice",
+    "type": "text",
+    "value": "9"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].shippingPrice",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].declaredPrice",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].inventory",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].gtin",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].hsCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].tnvedCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].eprelId",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].shippingLength",
+    "type": "number",
+    "value": "30"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].shippingWidth",
+    "type": "number",
+    "value": "20"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].shippingHeight",
+    "type": "number",
+    "value": "1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[6].shippingWeight",
+    "type": "number",
+    "value": "0.2"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].sku",
+    "type": "text",
+    "value": "TXYL0283-XS-as the picture1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].colors",
+    "type": "text",
+    "value": "as the picture"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].size",
+    "type": "text",
+    "value": "XS"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].mainImageUrl",
+    "type": "file",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].price",
+    "type": "text",
+    "value": "3.98"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].msrPrice",
+    "type": "text",
+    "value": "9"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].shippingPrice",
+    "type": "text",
+    "value": "0"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].declaredPrice",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].inventory",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].gtin",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].hsCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].tnvedCode",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].eprelId",
+    "type": "text",
+    "value": ""
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].shippingLength",
+    "type": "number",
+    "value": "30"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].shippingWidth",
+    "type": "number",
+    "value": "20"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].shippingHeight",
+    "type": "number",
+    "value": "1"
+  },
+  {
+    "checked": false,
+    "disabled": false,
+    "name": "variants[7].shippingWeight",
+    "type": "number",
+    "value": "0.2"
+  }
+]

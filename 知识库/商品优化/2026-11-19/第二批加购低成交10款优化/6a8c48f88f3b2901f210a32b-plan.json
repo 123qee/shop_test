@@ -1,0 +1,26 @@
+{
+  "product_id": "6a8c48f88f3b2901f210a32b",
+  "name_cn": "XO与After Hours图案短袖",
+  "kind": "短袖",
+  "title": "The Weeknd XO After Hours Til Dawn Graphic Cotton T-Shirt, Short Sleeve",
+  "intro": "Cotton crew-neck T-shirt with XO lettering and an After Hours Til Dawn back graphic, as shown in the images. Short sleeves; sizes XXS/2XS–3XL. XXS and 2XS refer to the same size in this chart. Check the selected color/design in the product images.\n\nFIT: Compare garment bust, length, shoulder and sleeve measurements with a well-fitting T-shirt before selecting a size. Bust is the full garment circumference, not the flat width. Keep room for your preferred fit. All measurements are in cm; allow the stated 2–3 cm manual measurement difference. Select a color/design and then check its available size options.",
+  "replacements": {
+    "Clothing decoration: no decoration": "Clothing decoration: Print"
+  },
+  "tags": [
+    "XO tshirt",
+    "After Hours",
+    "Til Dawn",
+    "unisex tee",
+    "cotton tshirt",
+    "graphic tee",
+    "short sleeve",
+    "crew neck",
+    "casual top",
+    "printed shirt"
+  ],
+  "attribute_targets": {
+    "Decoration": "print"
+  },
+  "verified_size_range": "XXS/2XS–3XL"
+}

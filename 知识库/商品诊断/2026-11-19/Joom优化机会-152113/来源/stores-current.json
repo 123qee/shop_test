@@ -1,0 +1,53 @@
+{
+  "source": "https://api-merchant.joom.com/api/v3/stores/all",
+  "captured_at": "2026-11-19T15:14:02.829084+08:00",
+  "body": {
+    "code": 0,
+    "data": {
+      "items": [
+        {
+          "id": "6a817b93f5d3934528e70df7",
+          "name": "Nineteen Wear",
+          "enabled": true,
+          "state": "active",
+          "updateTimestamp": "2026-08-16T08:57:55Z",
+          "createTimestamp": "2026-08-16T08:57:55Z",
+          "specializationId": "5e3c2518efa3711429d923fe",
+          "couponForStoreFollowingConfig": {
+            "enabled": false,
+            "discount": 10
+          },
+          "productLimit": 3000
+        },
+        {
+          "id": "6a8c4690b1e1819ed91f9baa",
+          "name": "jh",
+          "enabled": true,
+          "state": "active",
+          "updateTimestamp": "2026-08-24T13:26:40Z",
+          "createTimestamp": "2026-08-24T13:26:40Z",
+          "specializationId": "5e3c2518efa3711429d923fe",
+          "couponForStoreFollowingConfig": {
+            "enabled": false,
+            "discount": 10
+          },
+          "productLimit": 3000
+        },
+        {
+          "id": "6a9d4221018d89bb9e5c22ef",
+          "name": "jwh second",
+          "enabled": true,
+          "state": "active",
+          "updateTimestamp": "2026-09-06T10:36:17Z",
+          "createTimestamp": "2026-09-06T10:36:17Z",
+          "specializationId": "5e3c2518efa3711429d923fe",
+          "couponForStoreFollowingConfig": {
+            "enabled": false,
+            "discount": 10
+          },
+          "productLimit": 3000
+        }
+      ]
+    }
+  }
+}

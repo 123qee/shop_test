@@ -1,0 +1,42 @@
+{
+  "suggestion_id": "joom-kit-6aaa83d0fb5605019bbfbdb9",
+  "priority": 2,
+  "product_id": "6aaa83d0fb5605019bbfbdb9",
+  "short_name": "女童猫咪上衣+裤子套装",
+  "issue": "主图是圆领上衣和裤子，标题却写Hoodies；正文写单件Hooded Sweater，缺裤长/腰围数据，数量字段未正确解析。",
+  "action": "明确1件上衣+1条裤子，按实物改圆领/连帽说法并补裤长腰围尺码；不套用单件10/16元成本评估套装利润。",
+  "evidence_strength": "强：主图、标题、正文、尺码可对照；真实裤子尺寸/成本待核",
+  "needs": "裤长、腰围等真实尺码及两件套总成本",
+  "review": "完整7日对比点击到购买，并看买家尺码/内容误解反馈",
+  "platform": "joom",
+  "shop": "jwh second",
+  "source": "https://merchant.joom.com/panel/products/6aaa83d0fb5605019bbfbdb9",
+  "baseline": {
+    "shop": "jwh second",
+    "product_id": "6aaa83d0fb5605019bbfbdb9",
+    "source": "https://merchant.joom.com/panel/analytics/orders/store/6a9d4221018d89bb9e5c22ef?limit=100&orderBy=openCount&order=desc",
+    "product_link": "https://merchant.joom.com/panel/products/6aaa83d0fb5605019bbfbdb9",
+    "window": "2026-10-22 to 2026-11-18 UTC+3",
+    "impressions": 515,
+    "clicks": 30,
+    "purchases": 0,
+    "cart": 3
+  },
+  "current_sizes": [
+    "100",
+    "110",
+    "120",
+    "130",
+    "140",
+    "150",
+    "160"
+  ],
+  "status": "建议，尚未执行",
+  "actual_setting_changed": false,
+  "event_type": "read_only_opportunity_review",
+  "recorded_at": "2026-11-19T15:21:13.607991+08:00",
+  "report": "商品诊断/2026-11-19/Joom优化机会-152113/优化建议.md",
+  "snapshot": "商品诊断/2026-11-19/Joom优化机会-152113/诊断快照.json",
+  "user_request": "看看我的joom还有什么可以优化的吗",
+  "execution_authorized_this_turn": false
+}

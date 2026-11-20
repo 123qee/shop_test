@@ -1,0 +1,7 @@
+{
+  "url": "https://merchant.joom.com/panel/analytics/orders/countries?dateRange=%5B%222026-09-22T16%3A00%3A00.000Z%22%2C%222026-11-17T15%3A59%3A59.999Z%22%5D",
+  "title": "销售和流量 — Joom",
+  "tree_text": "- tooltip \"所有的分析数据都是根据固定的时区（UTC+3）计算的。因此，数据分析板块中所有数据的时间都是莫斯科时间UTC+3。\"",
+  "ref_policy": "stable-node",
+  "workId": "7a4417c6-ec4e-4f39-a7e7-acb8db3b2355"
+}

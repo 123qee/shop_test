@@ -1,0 +1,202 @@
+{
+  "campaigns": 35,
+  "current_memberships": 4498,
+  "unique_products": 3510,
+  "multi_campaign_products": 745,
+  "products_with_28day_purchase": 57,
+  "no_spend_no_click_products": 2281,
+  "recommendation_counts": {
+    "低交付，维持观察": 2277,
+    "低样本，维持观察": 1165,
+    "保留观察，样本有限": 42,
+    "售后优先，暂不加投": 13,
+    "优先控制重复CPM；保留CPA": 1,
+    "减CPM竞价候选；保留CPA": 3,
+    "条件性加价候选，当前维持": 1,
+    "转化排查优先": 2,
+    "先查口碑与流量，暂不加投": 1,
+    "已移出指定CPM；保留CPA": 1,
+    "条件性增长候选：缺整套成本": 1,
+    "先核对商品内容，暂不加投": 1,
+    "待核利润的增长备选": 2
+  },
+  "daily_budget_cap_sum": 425,
+  "actual_yesterday_spend": 13.35267,
+  "daily_budget_checks": [
+    {
+      "campaign_id": "6af7c2e09197610007483bd1",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6afb18794e94f5000716e046",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c706822a8100076caffa",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6a88653b1c9ca4000752a6cf",
+      "native_budget": 5.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6aa266b1ffbca40007fc76a7",
+      "native_budget": 5.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c40c07bc8b0007c7fce9",
+      "native_budget": 20.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c4dc843fbe000793c402",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6abdada863e0d400072905cf",
+      "native_budget": 5.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6afaf12b580914000721c763",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6afb0ede18ef9e0007cf39d9",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6afb168119acb0000753ec7d",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c47f822a8100076caff7",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6afb186418ef9e0007cf39da",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6a936f3b622671000778ea8e",
+      "native_budget": 5.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6a9a9db5a7e89c0007872164",
+      "native_budget": 5.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6afaf5c7977c400007671131",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6aac7aa210e2ac00077587fd",
+      "native_budget": 5.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6a9d3599b5cfff0007d9fca1",
+      "native_budget": 5.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6a8cd24de84d9f0007cae4cb",
+      "native_budget": 5.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c31f9a0dcc0007280b39",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6afb18a234ee6b000745598b",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c3b9843fbe000793c400",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c7969197610007483bda",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6afb1850b4eaf70007a68d4f",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c8699197610007483bdc",
+      "native_budget": 50.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6afb1891822a8100076cb0a8",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c2a5822a8100076caff6",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c823822a8100076caffd",
+      "native_budget": 50.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c56c07bc8b0007c7fcec",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c7da843fbe000793c40a",
+      "native_budget": 35.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c5b407bc8b0007c7fced",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c525843fbe000793c404",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c6079197610007483bd7",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c2269a0dcc0007280b38",
+      "native_budget": 10.0,
+      "matched": true
+    },
+    {
+      "campaign_id": "6af7c37f0f93510007f57abc",
+      "native_budget": 10.0,
+      "matched": true
+    }
+  ]
+}

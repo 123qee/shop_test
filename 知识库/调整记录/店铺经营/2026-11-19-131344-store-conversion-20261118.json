@@ -1,0 +1,16 @@
+{
+  "suggestion_id": "store-conversion-20261118",
+  "event_type": "follow_up",
+  "recorded_at": "2026-11-19T13:13:44.227925+08:00",
+  "automation_id": "joom-2",
+  "report": "日报/店铺经营/2026-11-19/131344.md",
+  "snapshot": "快照/店铺经营/2026-11-19/131344.json",
+  "actual_setting_changed": false,
+  "previous_status": "已执行并核验",
+  "product_id": null,
+  "object": null,
+  "new_business_action_executed": false,
+  "status": "历史执行已确认，后续效果仍观察中",
+  "reason": "涉及Joom和美客多3款旧修改，当前统计窗口含大量修改前数据，未重复执行",
+  "review_condition": "真实生效后完整7天对比访问/订单与售后；保护既有销量"
+}

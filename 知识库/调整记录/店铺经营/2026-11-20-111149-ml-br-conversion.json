@@ -1,0 +1,16 @@
+{
+  "suggestion_id": "ml-br-conversion",
+  "source_record": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-19-145807-ml-br-conversion-无发光确认.json",
+  "previous_status": "描述明确不发光已保存刷新核验；标题受平台限制未改成功",
+  "status": "本次未自动执行；按最新独立站点观察追踪，历史执行与待处理项分开",
+  "historical_actual_setting_changed": true,
+  "actual_setting_changed": false,
+  "product_id": "MLB4824698219",
+  "review_condition": "平台解除标题限制/处理目录匹配后再改本地标题；未授权自动向客服发送消息，不重上架、不覆盖其他国家。",
+  "event_type": "scheduled_read_only_followup",
+  "recorded_at": "2026-11-20T11:11:49.119184+08:00",
+  "automation_id": "joom-2",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/111149.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/111149.json",
+  "new_business_action_executed": false
+}

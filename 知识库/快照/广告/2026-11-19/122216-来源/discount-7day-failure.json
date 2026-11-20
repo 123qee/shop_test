@@ -1,0 +1,7 @@
+{
+  "error": "'NoneType' object has no attribute 'get'",
+  "campaign_id": "6a88653b1c9ca4000752a6cf",
+  "window": "7day",
+  "resolved_by": "discount-7day-api.json",
+  "status": "日期控件已核实，重采成功"
+}

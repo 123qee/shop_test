@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Neck Style",
+    "before": "Neck StyleAsymmetric Neck0/1",
+    "after": "Neck Style\n\t\nHooded Neck\n1/1",
+    "target": "Hooded Neck"
+  },
+  {
+    "label": "Pattern",
+    "before": "Pattern\n\t\nanimal pattern\n0/1",
+    "after": "Pattern\n\t\nsolid\n1/1",
+    "target": "solid"
+  }
+]

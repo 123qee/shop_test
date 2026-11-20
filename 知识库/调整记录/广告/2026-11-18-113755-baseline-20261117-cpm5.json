@@ -1,0 +1,32 @@
+{
+  "recorded_at": "2026-11-18T11:57:40.880548+08:00",
+  "event_type": "定时复查/建议更新",
+  "automation_id": "joom",
+  "suggestion_id": "baseline-20261117-cpm5",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-18/113755.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-18/113755.json",
+  "actual_setting_changed": false,
+  "execution_verified": false,
+  "observation": {
+    "suggestion_id": "baseline-20261117-cpm5",
+    "priority": 1,
+    "scope": "商品在指定活动内的CPM竞价",
+    "campaign_id": "6af7c37f0f93510007f57abc",
+    "product_id": "6a8c47d48f3b2901f2108df6",
+    "status": "待确认",
+    "current": {
+      "sku_cpm_bid_usd": 0.65,
+      "campaign_daily_budget_usd": 10
+    },
+    "suggested": {
+      "sku_cpm_bid_usd": 0.6,
+      "campaign_daily_budget_usd": 10
+    },
+    "relative_bid_change": -0.07692307692307698,
+    "reason": "活动ACOS57.12%，已匹配两笔成交按当前显示收入估算保本上限38.27%；该SKU约占94%的活动花费。先控制主SKU成本，不动高销量商品文案、不停原有CPA渠道、不调整其他49款低样本商品。",
+    "cash_effect": "出价上限下降7.69%；日预算额度不增加。实际花费和流量不会必然按相同比例下降，不能把降价当作盈利保证。",
+    "review": "24–72小时或该SKU新增花费US$0.80先到即复查；无新增归因成交则建议暂停该SKU在cpm5内的投放。满14天再复盘归因回补，不从2单认定永久低效。",
+    "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c37f0f93510007f57abc",
+    "executed": false
+  }
+}

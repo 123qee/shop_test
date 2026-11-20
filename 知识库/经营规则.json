@@ -32,6 +32,18 @@
       "currency": "CNY",
       "per_unit": 16,
       "approximate": true
+    },
+    {
+      "category": "CR7童装上衣+裤子两件套，仅此商品",
+      "product_id": "6aaa83a2fb5605019bbfb9c9",
+      "platform_scope": "joom",
+      "currency": "CNY",
+      "per_unit": 15,
+      "unit": "set",
+      "approximate": true,
+      "confirmed_on": "2026-11-20",
+      "source": "用户回答：全成本15；原问题已限定整套含印花、包装、国内送仓",
+      "scope_note": "不推广到其他套装；平台佣金、广告、卖家额外国际物流及售后仍需另核"
     }
   ],
   "cost_includes": [
@@ -71,5 +83,78 @@
     "analysis_only": true,
     "automatic_business_changes_authorized": false
   },
-  "data_hygiene": "不保存客户姓名、联系方式、地址、登录令牌、API密钥或带凭据的下载链接"
+  "data_hygiene": "不保存客户姓名、联系方式、地址、登录令牌、API密钥或带凭据的下载链接",
+  "mercadolibre_monitoring": {
+    "included_sites": [
+      "MX",
+      "BR",
+      "AR",
+      "CL",
+      "CO"
+    ],
+    "excluded_sites": [
+      "UY"
+    ],
+    "confirmed_on": "2026-11-18",
+    "scope": [
+      "整店及分国经营",
+      "流量与转化",
+      "商品、履约与信誉",
+      "广告账户、活动及商品"
+    ]
+  },
+  "advertising_budget_preference": {
+    "confirmed_on": "2026-11-18",
+    "preference": "当前不加预算，优先控制广告成本；cpm5主商品已按单次授权调至0.60美元。",
+    "latest_cpm5_state": {
+      "confirmed_on": "2026-11-20",
+      "product_id": "6a8c47d48f3b2901f2108df6",
+      "state": "已按本次明确授权从cpm5移出；保留CPA15%，不是仍在cpm5参与竞价0.60",
+      "source": "执行记录/广告/2026-11-20/115338-cpm5主商品移出/执行事件.json"
+    }
+  },
+  "variant_optimization_rules": {
+    "confirmed_on": "2026-11-19",
+    "rule": "后台缺失规格不等于实际不可供应；先核对实际供应与库存，有供应则补规格，不直接删可供应尺码的描述。",
+    "product_confirmations": [
+      {
+        "product_id": "6a869ee0e84e05012d269a52",
+        "available_sizes_confirmed": [
+          "XXS",
+          "XS"
+        ],
+        "new_variant_inventory_each": 999,
+        "source": "本聊天用户明确确认",
+        "scope": "仅本款此次新增的两个规格"
+      }
+    ]
+  },
+  "product_truth_confirmations": {
+    "apparel_has_luminescent_effect": false,
+    "confirmed_at": "2026-11-19T14:54:02.420744+08:00",
+    "source": "本聊天用户明确确认：我们的服装没有发光效果",
+    "application": "商品文案不得将普通彩色印花描述为夜光、发光、黑光或UV下发光；色彩风格不得写成性能承诺。",
+    "scope": "用户经营服装；与现有成本和分析任务权限分开",
+    "bulk_edit_authorization": false,
+    "fabric_composition_confirmed": false,
+    "product_confirmations": [
+      {
+        "product_id": "6a842f66e32015012461bc44",
+        "material": "polyester",
+        "material_zh": "聚酯纤维",
+        "percentage_confirmed": false,
+        "confirmed_on": "2026-11-20",
+        "source": "用户明确回答：1.聚酯纤维",
+        "scope_note": "确认材质类型，未确认100%比例，不改其他商品材质"
+      },
+      {
+        "product_id": "6aad547abaf5a401f56aeddf",
+        "product_type": "short-sleeve T-shirt",
+        "product_type_zh": "短袖T恤",
+        "confirmed_on": "2026-11-20",
+        "source": "用户明确回答：2.短袖",
+        "scope_note": "不据此重新编造材质或尺码实测"
+      }
+    ]
+  }
 }

@@ -1,0 +1,24 @@
+{
+  "recorded_at": "2026-11-19T12:22:16.441080+08:00",
+  "automation_id": "joom",
+  "event_type": "每日复查/设置观察",
+  "suggestion_id": "daily-20261118-account-budget",
+  "previous_event_recorded_at": "2026-11-18T11:57:40.880548+08:00",
+  "status": "建议维持",
+  "actual_setting_changed": false,
+  "execution_verified": false,
+  "observation": {
+    "suggestion_id": "daily-20261118-account-budget",
+    "priority": 2,
+    "scope": "两平台整体新增预算",
+    "status": "建议维持",
+    "current": null,
+    "suggested_increment": 0,
+    "suggested_increment_currency": "按各账户原币，不跨国汇总",
+    "reason": "不加预算偏好持续；Joom二店昨日日预算5美元仅消耗3.998美元、79.96%，无提前耗尽证据；其他平台无放量条件。",
+    "review": "若连续完整日实耗≥90%且有提前耗尽日志、单位利润与履约支持，另行评估；本轮不追加、不自动执行。",
+    "actual_setting_changed": false
+  },
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-19/122216.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-19/122216.json"
+}

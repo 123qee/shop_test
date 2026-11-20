@@ -1,0 +1,39 @@
+{
+  "recorded_at": "2026-11-19T12:22:16.441080+08:00",
+  "automation_id": "joom",
+  "event_type": "每日复查/设置观察",
+  "suggestion_id": "baseline-20261117-cpm5",
+  "previous_event_recorded_at": "2026-11-18T14:14:09.535905+08:00",
+  "status": "已执行设置核实，继续观察至完整24小时数据",
+  "actual_setting_changed": false,
+  "execution_verified": true,
+  "observation": {
+    "suggestion_id": "baseline-20261117-cpm5",
+    "priority": 1,
+    "scope": "cpm5活动内指定商品",
+    "campaign_id": "6af7c37f0f93510007f57abc",
+    "product_id": "6a8c47d48f3b2901f2108df6",
+    "status": "已执行设置核实，继续观察至完整24小时数据",
+    "current": {
+      "sku_cpm_bid_usd": 0.6,
+      "campaign_daily_budget_usd": 10
+    },
+    "suggested": {
+      "sku_cpm_bid_usd": 0.6,
+      "campaign_daily_budget_usd": 10
+    },
+    "next_conditional_action": "后台数据覆盖到11/19 14:14北京时间（调整后满24小时）后复查；若仍无新归因且确认保存后新花费≥USD0.80，建议暂移出cpm5，保留原CPA渠道。无单SKU预算，不虚构商品预算0或暂停开关。",
+    "evidence": {
+      "primary_acos": 0.6635840882127841,
+      "sample_break_even_upper_bound": 0.38534352482326056,
+      "yesterday_spend": 1.0093755139049527,
+      "yesterday_purchases": 0,
+      "campaign_acos": 0.7099793006059855
+    },
+    "risk": "样本2笔，14天归因未成熟；昨日全天花费含调价前后，不能当精确执行后增量，不每日叠加降价。",
+    "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c37f0f93510007f57abc",
+    "actual_setting_changed": false
+  },
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-19/122216.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-19/122216.json"
+}

@@ -1,0 +1,35 @@
+{
+  "site": "BR",
+  "expected_advertiser_id": "1282818",
+  "entry": {
+    "adlink": "https://global-selling.mercadolibre.com/advertising/hub/accounts?validate-user=true&from=summary_ads&utm_source=sc_summary_v2&utm_medium=card&utm_campaign=active&advertiserId=1282818",
+    "captured_at": "2026-11-20T03:33:59.659Z",
+    "country": "巴西",
+    "summary": "摘要\n您的信誉度\n您将是 黄色\n买家看到的是浅绿色\n总销售额\nUS$\n0\n未变更\n\n—%\n\n最近7天\n主要摘要\n建议\n创建视图\n商品待处理任务\n问题\n\n0\n\n商品\n201\n项需改进\n因违反政策而失效\n\n13\n\n可按变体提供价格\n\n84\n\n缺货\n\n1\n\n有待实现的质量目标\n\n103\n\n查看更多\n价格\n198\n管理\n价格过高\n\n99\n\n存在自动化优化机会\n\n99\n\n查看更多\n业务指标\nUS$\n0\n未变更\n\n—%\n\n最近7天的总销售额\n\n转到商业指标\n您销售中的待处理任务\n今日发货\n\n0\n\n售后\n\n0\n\n广告指标\n1\n未变更\n\n-%\n\n广告销售额\n\n116\n下降 47%\n\n47%\n\n收到的点击量\n\n前往广告\n信誉\n\n生效中的权益\n\n您将是 黄色\n\n0%\n\n投诉\n\n3.84%\n\n由你取消\n\n0%\n\n不合规的货件\n\n您的买家看到您是绿色状态\n\n利用您的信誉权益完成首笔销售，独立获得绿色信誉标识。\n\n前往声誉页面\n我的主页\n\n过去30天内\n\n0 位新关注者\n\n0 位关注者从你这里购买\n\n创建快拍来突出您的促销活动\n\n使用限时折扣的卖家能获得更多销量。加入这一策略吧。\n\n创建交易\n转到我的主页\n动态\n\n暂无最新动态。相关信息发布后，你将能在此处查看。\n\n前往更新\n建议\n激活商品发布，重新开始销售\n\n查看你需要修正什么以使我们将它重新上架。\n\n重新激活商品\nCamiseta Infantil De Verão De Algodão De Manga Curta The Hed\n完善产品特性，提升商品质量\n\n不要留空数据，以便买家能找到你的商品。\n\n前往完善产品特性\nCamiseta Masculina Arte Sacro Jesús 2026 - Harajuku Oversiz\n调整您的高价商品发布信息\n\n查看竞争对手的价格，根据市场情况调整你自己的价格。\n\n前往价格管理\n+3\n多个商品页\nPágina 1\nPágina 2\nPágina 3"
+  },
+  "page": {
+    "url": "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns?advertiser_id=1282818&navigate_to=seller_central&from=ads-manager&status=A%2CD",
+    "country": "巴西",
+    "owner": "CNQISHIJIECLOTHINGBRR",
+    "captured_at": "2026-11-20T03:34:19.867Z"
+  },
+  "observed_backend_advertiser_ids": [
+    "1282820"
+  ],
+  "identity_source": "https://global-selling.mercadolibre.com/pa/api/admin-pads/ajax/campaigns/search?dateFrom=2026-10-23&dateTo=2026-11-19&limit=100&offset=0",
+  "captured_at": "2026-11-20T03:34:21.876Z",
+  "currency": null,
+  "platform_timezone": null,
+  "data_updated_at": null,
+  "metrics": null,
+  "campaigns": null,
+  "status": "account_identity_unverified",
+  "observed_campaign_ids": [
+    358579749,
+    358579791
+  ],
+  "reason": "实际站点入口/最终页/原生返回活动账户不一致，金额与成交留空",
+  "platform": "Mercado Libre",
+  "country": "BR",
+  "country_name": "巴西"
+}

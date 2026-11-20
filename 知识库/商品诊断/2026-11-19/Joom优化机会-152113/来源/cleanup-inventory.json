@@ -1,0 +1,38 @@
+{
+  "success": true,
+  "tabs": [
+    {
+      "tabId": 270664467,
+      "url": "https://merchant.joom.com/panel/products/6a869ee0e84e05012d269a52",
+      "title": "TXYL0283 — Joom",
+      "active": false,
+      "groupTitle": "Joom优化机会检查",
+      "borrowed": false
+    },
+    {
+      "tabId": 270664470,
+      "url": "https://img.joomcdn.net/b7983ab2e610e65e229b616bc939e8ae0ff4eea6_original.jpeg",
+      "title": "b7983ab2e610e65e229b616bc939e8ae0ff4eea6_original.jpeg (550×550)",
+      "active": false,
+      "groupTitle": "Joom优化机会检查",
+      "borrowed": false
+    },
+    {
+      "tabId": 270664471,
+      "url": "https://img.joomcdn.net/5dbcbb0310faea9b2265163d2575f12d08c69ff8_original.jpeg",
+      "title": "5dbcbb0310faea9b2265163d2575f12d08c69ff8_original.jpeg (550×550)",
+      "active": false,
+      "groupTitle": "Joom优化机会检查",
+      "borrowed": false
+    },
+    {
+      "tabId": 270664460,
+      "url": "https://merchant.joom.com/panel/analytics/orders",
+      "title": "Joom for Merchants",
+      "active": false,
+      "groupTitle": "Joom优化机会检查",
+      "borrowed": false
+    }
+  ],
+  "workId": "fe691488-08ba-4def-9c7f-61afaa2eb178"
+}

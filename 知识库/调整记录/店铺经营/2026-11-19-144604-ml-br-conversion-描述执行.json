@@ -1,0 +1,36 @@
+{
+  "suggestion_id": "ml-br-conversion",
+  "event_type": "user_authorized_description_edit",
+  "recorded_at": "2026-11-19T14:46:04.517141+08:00",
+  "platform": "mercadolibre",
+  "country": "BR",
+  "product_id": "MLB4824698219",
+  "status": "巴西描述修正已保存并刷新核验，效果观察中；UV及成分待用户确认",
+  "actual_setting_changed": true,
+  "changed_fields": [
+    "description"
+  ],
+  "title_changed": false,
+  "protected_fields_verification": {
+    "variants_and_stock_summary_equal": true,
+    "product_image_list_equal": true,
+    "non_description_attribute_inputs_equal": true,
+    "country_price_panel_equal": true,
+    "comparison_note": "价格面板国家展示顺序变化，按国家独立对照数值均一致",
+    "captured_at": "2026-11-19T14:42:07.620885+08:00"
+  },
+  "argentina_title_description_unchanged": true,
+  "before_description_sha256": "e58d96c9646566d7bbc24fba48e3afac5e4a315fb9fe2c71fe6980d35237e36c",
+  "after_description_sha256": "1986a29b9b1a90cabc3641948812940b5996f9113073ae85bcced26809f91a42",
+  "before_source": "商品优化/2026-11-19/美客多巴西-MLB4824698219-144604/before-final.json",
+  "after_source": "商品优化/2026-11-19/美客多巴西-MLB4824698219-144604/after-reload.json",
+  "report": "商品优化/2026-11-19/美客多巴西-MLB4824698219-144604/执行报告.md",
+  "source": "https://global-selling.mercadolibre.com/publicaciones/MLB4824698219/modificar/omni",
+  "user_authorization": "本聊天用户：那你帮我处理一下吧",
+  "pending_confirmations": [
+    "实物UV发光能力",
+    "80%棉20%弹性纤维实际配比",
+    "XL实际供应情况"
+  ],
+  "followup": "买家端确认生效后完整7天比较访问/订单/转化/售后，不用修改前98访问1单宣称效果；保持预算。"
+}

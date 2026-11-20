@@ -1,0 +1,131 @@
+{
+  "recorded_at": "2026-11-20T12:06:00.362285+08:00",
+  "actual_setting_changed": false,
+  "scope": "新增逐商品诊断建议，非本次单项执行事件",
+  "execution_record": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-20/115338-cpm5主商品移出/执行事件.json",
+  "suggestions": [
+    {
+      "suggestion_id": "joom-sku-ad-6a844ff5f5f49401f2c57cb8",
+      "recorded_at": "2026-11-20T12:06:00.362285+08:00",
+      "status": "建议待核实/未执行",
+      "actual_setting_changed": false,
+      "product_id": "6a844ff5f5f49401f2c57cb8",
+      "decision": "优先控制重复CPM；保留CPA",
+      "reason": "CPA17.44%有3次28天购买；重复CPM0.65美元花费0.5169、11点击、0购买。建议CPM0.65→0.60观察，归因成熟仍无成交再移出该CPM；先不加CPA竞价。",
+      "source": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-20/120600-Joom逐商品广告计划/广告优化建议.md",
+      "windows": {
+        "28day": "2026-10-23..2026-11-19",
+        "7day": "2026-11-13..2026-11-19",
+        "platform_timezone": "UTC+03:00"
+      }
+    },
+    {
+      "suggestion_id": "joom-sku-ad-6a87c6a7237ea601558dc594",
+      "recorded_at": "2026-11-20T12:06:00.362285+08:00",
+      "status": "建议待核实/未执行",
+      "actual_setting_changed": false,
+      "product_id": "6a87c6a7237ea601558dc594",
+      "decision": "减CPM竞价候选；保留CPA",
+      "reason": "cpm2近7天12点击/花费0.7700/0购买；折扣CPA28天1次购买。建议CPM0.65→0.60观察；编辑页另有错误1/内容不一致，暂不加投。",
+      "source": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-20/120600-Joom逐商品广告计划/广告优化建议.md",
+      "windows": {
+        "28day": "2026-10-23..2026-11-19",
+        "7day": "2026-11-13..2026-11-19",
+        "platform_timezone": "UTC+03:00"
+      }
+    },
+    {
+      "suggestion_id": "joom-sku-ad-6a87c67efa1f4801e8bb33b3",
+      "recorded_at": "2026-11-20T12:06:00.362285+08:00",
+      "status": "建议待核实/未执行",
+      "actual_setting_changed": false,
+      "product_id": "6a87c67efa1f4801e8bb33b3",
+      "decision": "减CPM竞价候选；保留CPA",
+      "reason": "cpm2近7天23点击/4加购/花费0.3682/0购买；折扣CPA28天2次购买。建议CPM0.65→0.60观察，成熟归因后再决定移出。",
+      "source": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-20/120600-Joom逐商品广告计划/广告优化建议.md",
+      "windows": {
+        "28day": "2026-10-23..2026-11-19",
+        "7day": "2026-11-13..2026-11-19",
+        "platform_timezone": "UTC+03:00"
+      }
+    },
+    {
+      "suggestion_id": "joom-sku-ad-6a842f66e32015012461bc44",
+      "recorded_at": "2026-11-20T12:06:00.362285+08:00",
+      "status": "建议待核实/未执行",
+      "actual_setting_changed": false,
+      "product_id": "6a842f66e32015012461bc44",
+      "decision": "条件性加价候选，当前维持",
+      "reason": "CPA17.44%近28天6次、近7天1次；在售描述写100%涤纶，材质属性写棉；编辑版有内容不一致提示。先核对实物、修复一致性及核算净收益，再考虑17.44%→18%的小测试；日预算不增加。",
+      "source": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-20/120600-Joom逐商品广告计划/广告优化建议.md",
+      "windows": {
+        "28day": "2026-10-23..2026-11-19",
+        "7day": "2026-11-13..2026-11-19",
+        "platform_timezone": "UTC+03:00"
+      }
+    },
+    {
+      "suggestion_id": "joom-sku-ad-6a869941e92f3801c6c78d20",
+      "recorded_at": "2026-11-20T12:06:00.362285+08:00",
+      "status": "建议待核实/未执行",
+      "actual_setting_changed": false,
+      "product_id": "6a869941e92f3801c6c78d20",
+      "decision": "减CPM竞价候选；保留CPA",
+      "reason": "cpm2近7天29点击/花费0.4213/0购买；折扣CPA28天2次购买。建议CPM0.65→0.60观察，先核对落地页及归因；费用很低，尚不足证明必然无效。",
+      "source": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-20/120600-Joom逐商品广告计划/广告优化建议.md",
+      "windows": {
+        "28day": "2026-10-23..2026-11-19",
+        "7day": "2026-11-13..2026-11-19",
+        "platform_timezone": "UTC+03:00"
+      }
+    },
+    {
+      "suggestion_id": "joom-sku-ad-6a9d63aed2a23f016e4359ed",
+      "recorded_at": "2026-11-20T12:06:00.362285+08:00",
+      "status": "建议待核实/未执行",
+      "actual_setting_changed": false,
+      "product_id": "6a9d63aed2a23f016e4359ed",
+      "decision": "先查口碑与流量，暂不加投",
+      "reason": "CPM0.50美元；28天4次购买/ACOS10.19%，但7天仅2曝光、0点击；当前编辑页评分1分/3评价，有匹配历史退款。先查评价、售后与商品可售性，不能只因低ACOS放量。",
+      "source": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-20/120600-Joom逐商品广告计划/广告优化建议.md",
+      "windows": {
+        "28day": "2026-10-23..2026-11-19",
+        "7day": "2026-11-13..2026-11-19",
+        "platform_timezone": "UTC+03:00"
+      }
+    },
+    {
+      "suggestion_id": "joom-sku-ad-6aaa83a2fb5605019bbfb9c9",
+      "recorded_at": "2026-11-20T12:06:00.362285+08:00",
+      "status": "建议待核实/未执行",
+      "actual_setting_changed": false,
+      "product_id": "6aaa83a2fb5605019bbfb9c9",
+      "decision": "条件性增长候选：缺整套成本",
+      "reason": "CPA20%，近7天4次购买。不得套用单件10/16元；待完整两件套成本、在售信息及物流扣费确认后，再评估20%→21%测试。",
+      "source": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-20/120600-Joom逐商品广告计划/广告优化建议.md",
+      "windows": {
+        "28day": "2026-10-23..2026-11-19",
+        "7day": "2026-11-13..2026-11-19",
+        "platform_timezone": "UTC+03:00"
+      }
+    },
+    {
+      "suggestion_id": "joom-sku-ad-6aad547abaf5a401f56aeddf",
+      "recorded_at": "2026-11-20T12:06:00.362285+08:00",
+      "status": "建议待核实/未执行",
+      "actual_setting_changed": false,
+      "product_id": "6aad547abaf5a401f56aeddf",
+      "decision": "先核对商品内容，暂不加投",
+      "reason": "近7天4次购买，但在售版标题为冬季卫衣、描述及属性写短袖T恤；当前不根据4次购买直接提预算或竞价。实物品类待确认，丹麦限售提示也需遵守。",
+      "source": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-20/120600-Joom逐商品广告计划/广告优化建议.md",
+      "windows": {
+        "28day": "2026-10-23..2026-11-19",
+        "7day": "2026-11-13..2026-11-19",
+        "platform_timezone": "UTC+03:00"
+      }
+    }
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-20/120600-Joom逐商品广告计划/广告优化建议.md",
+  "product_count": 3510,
+  "pair_count": 4498
+}

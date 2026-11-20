@@ -1,0 +1,555 @@
+{
+  "completed_at": "2026-11-18T20:25:34.875377+08:00",
+  "shop": "Nineteen Wear",
+  "selection": "有点击和加购、近28天0–3次购买、存在可核实修正问题",
+  "period": [
+    "2026-10-21",
+    "2026-11-17"
+  ],
+  "platform_timezone": "UTC+3",
+  "currency": "USD",
+  "candidate_scope": "Nineteen Wear 点击降序前50款，17款进入核查；10款完成本轮优化。",
+  "records": [
+    {
+      "product_id": "6a8866ac19cb59010d7809e2",
+      "name": "Gallery Dept. Letter Print Cotton T-Shirt, Unisex Short Sleeve Crew Neck",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 7,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 8,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/de55b6f71b49e0d9402717768000188b0377c56b_1024_1024.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a8866ac19cb59010d7809e2/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a8866ac19cb59010d7809e2%22",
+            "text": "订单"
+          }
+        ],
+        "text": "6a0e67981390ef0168964a55\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n1\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n产品信息\n启用\n统计\n评分\n1\n评价数量\n1\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nGallery Dept. Letter Print Cotton T-Shirt, Unisex Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a8866ac19cb59010d7809e2\n等级\n缺失内容\n产品SKU\n6a0e67981390ef0168964a55\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月21日\n敏感货\n普通货\n描述\nCotton short-sleeve crew-neck T-shirt with Gallery Dept. lettering. Compare the garment measurements below before choosing a size.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.\n\nUnisex cotton graphic-print T-shirt with a round neckline, short sleeves and pullover closure. The listing shows a Gallery Dept. letter-print design.\n\nSIZE CHART (cm)\nSize: 2XS, Length: 60 cm, Bust: 88 cm, Shoulder: 41 cm, Sleeve: 18 cm\nSize: XS, Length: 66 cm, Bust: 96 cm, Shoulder: 45 cm, Sleeve: 19 cm\nSize: S, Length: 68 cm, Bust: 100 cm, Shoulder: 47 cm, Sleeve: 19 cm\nSize: M, Length: 70 cm, Bust: 104 cm, Shoulder: 49 cm, Sleeve: 20 cm\nSize: L, Length: 72 cm, Bust: 108 cm, Shoulder: 51 cm, Sleeve: 20 cm\nSize: XL, Length: 74 cm, Bust: 112 cm, Shoulder: 53 cm, Sleeve: 21 cm\nSize: 2XL, Length: 76 cm, Bust: 116 cm, Shoulder: 55 cm, Sleeve: 21 cm\nSize: 3XL, Length: 78 cm, Bust: 120 cm, Shoulder: 57 cm, Sleeve: 22 cm\n\nFIT: Compare these garment measurements with a similar T-shirt before ordering. Allow 2–3 cm variation due to manual measurement.\nCARE: Machine wash below 30°C. Do not tumble dry.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry、Machine wash at temperatures below 30°C\nGender: unisex\nClothing Decoration: text\nPattern: print\nSleeve Length: short sleeve\nNeckline: round\nWashing Care: Machine wash is allowed\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n搜索标签\ngallery dept\nletter print t shirt\ncotton tee\ngraphic t shirt\ncrew neck tee\nshort sleeve shirt\n",
+        "title": "Gallery Dept. Letter Print Cotton T-Shirt, Unisex Short Sleeve Crew Neck",
+        "url": "https://merchant.joom.com/panel/products/6a8866ac19cb59010d7809e2",
+        "variantCount": 8,
+        "variantDetailSha256": "95b860b9c0100c14447823135eba5accc0d1b43d9fafd09e401dcce304964610"
+      },
+      "plan": {
+        "label": "Gallery字母T恤",
+        "title": "Gallery Dept. Letter Print Cotton T-Shirt, Unisex Short Sleeve Crew Neck",
+        "intro": "Cotton short-sleeve crew-neck T-shirt with Gallery Dept. lettering. Compare the garment measurements below before choosing a size.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.",
+        "tags": [
+          "gallery dept",
+          "letter print t shirt",
+          "cotton tee",
+          "graphic t shirt",
+          "crew neck tee",
+          "short sleeve shirt"
+        ],
+        "replacements": {}
+      },
+      "selection_baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 2958,
+        "clicks": 142,
+        "purchases": 3,
+        "cart": 29
+      },
+      "optimization_scope": "加购低成交商品的图文、选码与洗护说明"
+    },
+    {
+      "product_id": "6a869941e92f3801c6c78d20",
+      "name": "Women's AMI Text Graphic Cotton T-Shirt, Short Sleeve",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 2,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 14,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/2b1507baa45544277e1e522de21d91291f43a0c4_768_1024.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a869941e92f3801c6c78d20/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a869941e92f3801c6c78d20%22",
+            "text": "订单"
+          }
+        ],
+        "text": "TXYL0290\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n2\n审核中\n1\n产品有重复图片\n请从产品中删除重复图片。\n图片： 1\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nWomen's AMI Text Graphic Cotton T-Shirt, Short Sleeve\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a869941e92f3801c6c78d20\n等级\n缺失内容\n产品SKU\nTXYL0290\n类目ID\n1473502940450448049-189-2-118-805240694\n类目\nWomen's Clothing & Accessories\nTops (women’s)\nT-Shirts (women’s)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月20日\n敏感货\n普通货\n描述\nCotton crew-neck T-shirt with a bird and letter graphic, short sleeves and a pullover design. Available sizes are XS, S, M, L, XL, 2XL and 3XL, subject to the selected option.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.\n\nCotton short-sleeve T-shirt with a bird and letter graphic, a round neckline and a pullover design.\n\nSIZE AND FIT: Compare garment measurements with a T-shirt that fits you well before ordering. Measurements are in cm; allow 2–3 cm variation due to manual measurement.\n\nSIZE CHART (cm)\nSize XXS: Length 60 cm, Bust 88 cm, Shoulder 41 cm, Sleeve 18 cm\nSize XS: Length 66 cm, Bust 96 cm, Shoulder 45 cm, Sleeve 19 cm\nSize S: Length 68 cm, Bust 100 cm, Shoulder 47 cm, Sleeve 19 cm\nSize M: Length 70 cm, Bust 104 cm, Shoulder 49 cm, Sleeve 20 cm\nSize L: Length 72 cm, Bust 108 cm, Shoulder 51 cm, Sleeve 20 cm\nSize XL: Length 74 cm, Bust 112 cm, Shoulder 53 cm, Sleeve 21 cm\nSize 2XL: Length 76 cm, Bust 116 cm, Shoulder 55 cm, Sleeve 21 cm\nSize 3XL: Length 78 cm, Bust 120 cm, Shoulder 57 cm, Sleeve 22 cm\n\nCARE: Machine wash below 30°C. Do not tumble dry. Actual color may vary slightly due to lighting and screen settings.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry、Machine wash at temperatures below 30°C\nMaterial for fur: cotton 100%\nClothing Decoration: print\nPattern: print\nSeason: summer\nSleeve Length: short sleeve\nNeckline: round\nWashing Care: Machine wash is allowed\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\nXXS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n搜索标签\nami text graphic tee\nwomens cotton t shirt\nwomens printed tee\ncotton graphic shirt\nshort sleeve t shirt\nround neck tee\ncasual womens top\nsummer cotton tee\npullover t shirt\nwomens casual tshirt\n",
+        "title": "Women's AMI Text Graphic Cotton T-Shirt, Short Sleeve",
+        "url": "https://merchant.joom.com/panel/products/6a869941e92f3801c6c78d20",
+        "variantCount": 14,
+        "variantDetailSha256": "d08149175ba27843ce8a91120ebb12384765ee8f29bad26d174fcfb931c59deb"
+      },
+      "plan": {
+        "label": "飞鸟字母T恤",
+        "title": "Women's AMI Text Graphic Cotton T-Shirt, Short Sleeve",
+        "intro": "Cotton crew-neck T-shirt with a bird and letter graphic, short sleeves and a pullover design. Available sizes are XS, S, M, L, XL, 2XL and 3XL, subject to the selected option.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.",
+        "tags": [
+          "ami text graphic tee",
+          "womens cotton t shirt",
+          "womens printed tee",
+          "cotton graphic shirt",
+          "short sleeve t shirt",
+          "round neck tee",
+          "casual womens top",
+          "summer cotton tee",
+          "pullover t shirt",
+          "womens casual tshirt"
+        ],
+        "replacements": {
+          "Women's 100% cotton short-sleeve T-shirt with an AMI text and bird graphic on the front. Round neckline and pullover style for casual summer wear.": "Cotton short-sleeve T-shirt with a bird and letter graphic, a round neckline and a pullover design."
+        }
+      },
+      "selection_baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 2004,
+        "clicks": 104,
+        "purchases": 2,
+        "cart": 16
+      },
+      "optimization_scope": "加购低成交商品的图文、选码与洗护说明"
+    },
+    {
+      "product_id": "6a8e23a397c06c01c9e13f08",
+      "name": "Neymar Football Portrait Cotton T-Shirt, Front and Back Print, Short Sleeve",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 11,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 8,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/16e626fa70260855df65bc3cdebd12bab9a5a76c_1024_1024.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a8e23a397c06c01c9e13f08/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a8e23a397c06c01c9e13f08%22",
+            "text": "订单"
+          }
+        ],
+        "text": "6a267ebbb6d0a701532a6088\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n2\n审核中\n1\n尺寸表中的图片\n请将尺码表从图片中移除——请改用尺码表功能。\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nNeymar Football Portrait Cotton T-Shirt, Front and Back Print, Short Sleeve\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a8e23a397c06c01c9e13f08\n等级\n缺失内容\n产品SKU\n6a267ebbb6d0a701532a6088\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月26日\n敏感货\n普通货\n描述\nCotton short-sleeve T-shirt with a Neymar football portrait on the front and a crest-style graphic on the back. Round neckline and pullover style.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.\n\nProduct Type: t shirt\nManufacture Country: China\nApplicable scene: daily\nstyle: Casual\nApplicable season: summer\nNeckline: round\nTops closure type: pullover\nClothing decoration: print\nLeather Label: no\nSleeve length (cm): Short Sleeve\nSex: Unisex\nAge: Ages 18-45 Years Old\nPattern: print\nMaterial: cotton\nLabel: Yes\nWashing care:do not tumble drying\n\nSize chart (cm):\nSize: XXS, Length: 60cm, Bust: 88cm, Shoulder: 41cm, Sleeve: 18cm\nSize: XS, Length: 66cm, Bust: 96cm, Shoulder: 45cm, Sleeve: 19cm\nSize: S, Length: 68cm, Bust: 100cm, Shoulder: 47cm, Sleeve: 19cm\nSize: M, Length: 70cm, Bust: 104cm, Shoulder: 49cm, Sleeve: 20cm\nSize: L, Length: 72cm, Bust: 108cm, Shoulder: 51cm, Sleeve: 20cm\nSize: XL, Length: 74cm, Bust: 112cm, Shoulder: 53cm, Sleeve: 21cm\nSize: 2XL, Length: 76cm, Bust: 116cm, Shoulder: 55cm, Sleeve: 21cm\nSize: 3XL, Length: 78cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm\nNote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4. All our products are advertised in size, study the size chart before buying.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nManufacture Country: China\nSeason: summer\nNeckline: round\nLeather Label: no\nClothing Decoration: print\nPattern: print\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry\nGender: unisex\nClothing Decoration: no decoration\nSleeve Length: short sleeve\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n",
+        "title": "Neymar Football Portrait Cotton T-Shirt, Front and Back Print, Short Sleeve",
+        "url": "https://merchant.joom.com/panel/products/6a8e23a397c06c01c9e13f08",
+        "variantCount": 8,
+        "variantDetailSha256": "72a47f354c9c1977ab527ec8982f84b8ef4f569e6a4d23d8aa498f82231ae040"
+      },
+      "plan": {
+        "label": "Neymar足球T恤",
+        "title": "Neymar Football Portrait Cotton T-Shirt, Front and Back Print, Short Sleeve",
+        "intro": "Cotton short-sleeve T-shirt with a Neymar football portrait on the front and a crest-style graphic on the back. Round neckline and pullover style.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.",
+        "tags": [],
+        "replacements": {
+          "Clothing decoration: no decoration": "Clothing decoration: print"
+        }
+      },
+      "selection_baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 1696,
+        "clicks": 97,
+        "purchases": 2,
+        "cart": 37
+      },
+      "optimization_scope": "加购低成交商品的图文、选码与洗护说明"
+    },
+    {
+      "product_id": "6a8ea4c5f788ec01b9bdd504",
+      "name": "Jude Bellingham Portrait Graphic Cotton T-Shirt, Unisex Short Sleeve",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 6,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 8,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/0e679d553163b473cfbd939c839105c6f8ef3e73_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a8ea4c5f788ec01b9bdd504/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a8ea4c5f788ec01b9bdd504%22",
+            "text": "订单"
+          }
+        ],
+        "text": "6a101a1afeb7f7019bc13a97\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n1\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n产品信息\n启用\n统计\n评分\n5\n评价数量\n1\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nJude Bellingham Portrait Graphic Cotton T-Shirt, Unisex Short Sleeve\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a8ea4c5f788ec01b9bdd504\n等级\n竞争\n缺失内容\n等级分数\n52/100\n产品SKU\n6a101a1afeb7f7019bc13a97\n相似组ID\n6a233804fe498a0e8f54d2f4\n1个产品\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月26日\n敏感货\n普通货\n描述\nCotton short-sleeve crew-neck T-shirt with a Jude Bellingham portrait and signature-style print. The portrait and lettering are part of the printed design.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.\n\nUnisex cotton T-shirt with a Jude Bellingham football portrait graphic, round neckline, short sleeves and pullover closure. Casual style for everyday wear.\n\nSIZE CHART (cm)\nSize: 2XS, Length: 60 cm, Bust: 88 cm, Shoulder: 41 cm, Sleeve: 18 cm\nSize: XS, Length: 66 cm, Bust: 96 cm, Shoulder: 45 cm, Sleeve: 19 cm\nSize: S, Length: 68 cm, Bust: 100 cm, Shoulder: 47 cm, Sleeve: 19 cm\nSize: M, Length: 70 cm, Bust: 104 cm, Shoulder: 49 cm, Sleeve: 20 cm\nSize: L, Length: 72 cm, Bust: 108 cm, Shoulder: 51 cm, Sleeve: 20 cm\nSize: XL, Length: 74 cm, Bust: 112 cm, Shoulder: 53 cm, Sleeve: 21 cm\nSize: 2XL, Length: 76 cm, Bust: 116 cm, Shoulder: 55 cm, Sleeve: 21 cm\nSize: 3XL, Length: 78 cm, Bust: 120 cm, Shoulder: 57 cm, Sleeve: 22 cm\n\nFIT: Compare these garment measurements with a similar T-shirt before ordering. Allow 2–3 cm variation due to manual measurement.\nCARE: Machine wash below 30°C. Do not tumble dry.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry、Machine wash at temperatures below 30°C\nGender: unisex\nClothing Decoration: print\nPattern: print\nSleeve Length: short sleeve\nNeckline: round\nWashing Care: Machine wash is allowed\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n搜索标签\njude bellingham\nfootball t shirt\nsoccer graphic tee\ncotton t shirt\nunisex shirt\n",
+        "title": "Jude Bellingham Portrait Graphic Cotton T-Shirt, Unisex Short Sleeve",
+        "url": "https://merchant.joom.com/panel/products/6a8ea4c5f788ec01b9bdd504",
+        "variantCount": 8,
+        "variantDetailSha256": "0ed1c107e8b211b2e7c2b068dc2ea874e91d6140e6b18ef6e12c18b0a5754a5b"
+      },
+      "plan": {
+        "label": "Bellingham肖像T恤",
+        "title": "Jude Bellingham Portrait Graphic Cotton T-Shirt, Unisex Short Sleeve",
+        "intro": "Cotton short-sleeve crew-neck T-shirt with a Jude Bellingham portrait and signature-style print. The portrait and lettering are part of the printed design.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.",
+        "tags": [
+          "jude bellingham",
+          "football t shirt",
+          "soccer graphic tee",
+          "cotton t shirt",
+          "unisex shirt"
+        ],
+        "replacements": {}
+      },
+      "selection_baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 2416,
+        "clicks": 93,
+        "purchases": 3,
+        "cart": 8
+      },
+      "optimization_scope": "加购低成交商品的图文、选码与洗护说明"
+    },
+    {
+      "product_id": "6a87c67efa1f4801e8bb33b3",
+      "name": "Deftones Diamond Eyes Owl Graphic Cotton T-Shirt, Short Sleeve Crew Neck",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 6,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 8,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/5c20ed6f25990e842870206192ad9b716ac14ecf_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a87c67efa1f4801e8bb33b3/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a87c67efa1f4801e8bb33b3%22",
+            "text": "订单"
+          }
+        ],
+        "text": "69ef44170f32ab01cb5a98d8\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n1\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nDeftones Diamond Eyes Owl Graphic Cotton T-Shirt, Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a87c67efa1f4801e8bb33b3\n等级\n优选\n缺失内容\n等级分数\n59/100\n产品SKU\n69ef44170f32ab01cb5a98d8\n相似组ID\n6a233cab09e838657d982614\n1个产品\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月21日\n敏感货\n普通货\n描述\nCotton short-sleeve T-shirt with Deftones Diamond Eyes lettering and an owl graphic. Round neckline and pullover style.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.\n\nUnisex cotton T-shirt with Deftones Diamond Eyes lettering and an owl graphic, a round neckline and short sleeves.\n\nSIZE CHART (cm)\nSize: 2XS, Length: 60 cm, Bust: 88 cm, Shoulder: 41 cm, Sleeve: 18 cm\nSize: XS, Length: 66 cm, Bust: 96 cm, Shoulder: 45 cm, Sleeve: 19 cm\nSize: S, Length: 68 cm, Bust: 100 cm, Shoulder: 47 cm, Sleeve: 19 cm\nSize: M, Length: 70 cm, Bust: 104 cm, Shoulder: 49 cm, Sleeve: 20 cm\nSize: L, Length: 72 cm, Bust: 108 cm, Shoulder: 51 cm, Sleeve: 20 cm\nSize: XL, Length: 74 cm, Bust: 112 cm, Shoulder: 53 cm, Sleeve: 21 cm\nSize: 2XL, Length: 76 cm, Bust: 116 cm, Shoulder: 55 cm, Sleeve: 21 cm\nSize: 3XL, Length: 78 cm, Bust: 120 cm, Shoulder: 57 cm, Sleeve: 22 cm\n\nFIT: Compare these garment measurements with a similar T-shirt before ordering. Allow 2–3 cm variation due to manual measurement.\nCARE: Machine wash below 30°C. Do not tumble dry.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry、Machine wash at temperatures below 30°C\nGender: unisex\nClothing Decoration: text\nPattern: print\nSleeve Length: short sleeve\nNeckline: round\nWashing Care: Machine wash is allowed\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n搜索标签\ndeftones\ndiamond eyes\nrock band t shirt\ncotton graphic tee\nunisex t shirt\nshort sleeve tee\n",
+        "title": "Deftones Diamond Eyes Owl Graphic Cotton T-Shirt, Short Sleeve Crew Neck",
+        "url": "https://merchant.joom.com/panel/products/6a87c67efa1f4801e8bb33b3",
+        "variantCount": 8,
+        "variantDetailSha256": "1b4457823452de31f9c5d6c04cbfeee86e2192c034a68998f27bc0c4a70bae4b"
+      },
+      "plan": {
+        "label": "Deftones猫头鹰T恤",
+        "title": "Deftones Diamond Eyes Owl Graphic Cotton T-Shirt, Short Sleeve Crew Neck",
+        "intro": "Cotton short-sleeve T-shirt with Deftones Diamond Eyes lettering and an owl graphic. Round neckline and pullover style.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.",
+        "tags": [
+          "deftones",
+          "diamond eyes",
+          "rock band t shirt",
+          "cotton graphic tee",
+          "unisex t shirt",
+          "short sleeve tee"
+        ],
+        "replacements": {
+          "Unisex cotton graphic-print T-shirt with a round neckline, short sleeves and pullover closure. The listing shows a Gallery Dept. letter-print design.": "Unisex cotton T-shirt with Deftones Diamond Eyes lettering and an owl graphic, a round neckline and short sleeves."
+        }
+      },
+      "selection_baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 3187,
+        "clicks": 84,
+        "purchases": 2,
+        "cart": 21
+      },
+      "optimization_scope": "加购低成交商品的图文、选码与洗护说明"
+    },
+    {
+      "product_id": "6a980514f3bf72019f23b034",
+      "name": "DEUS Letter Graphic Cotton T-Shirt, Front and Back Print, Short Sleeve",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 13,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 96,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/89f8871ea6687a73335f00916b1148b37701df5e_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a980514f3bf72019f23b034/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a980514f3bf72019f23b034%22",
+            "text": "订单"
+          }
+        ],
+        "text": "1005007181226342\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n1\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\n绑定的文件\n欧代协议\nManufacturer Information: Qianshan County Nineteen Trade Co., Ltd\nDEUS Letter Graphic Cotton T-Shirt, Front and Back Print, Short Sleeve\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a980514f3bf72019f23b034\n等级\n缺失内容\n产品SKU\n1005007181226342\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月2日\n敏感货\n普通货\n描述\nCotton short-sleeve crew-neck T-shirt with DEUS lettering on the chest and a larger lettering graphic on the back. The graphic is printed on the fabric.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.\n\nProduct Type: t shirt\nManufacture Country: China\nApplicable scene: daily\nstyle: Casual\nApplicable season: summer\nNeckline: round\nTops closure type: pullover\nClothing decoration: print\nLeather Label: no\nSleeve length (cm): Short Sleeve\nSex: Unisex\nAge: Ages 18-45 Years Old\nPattern: print\nMaterial: cotton\nLabel: Yes\nWashing care:do not tumble drying\n\nSize chart (cm):\nSize: XXS, Length: 60cm, Bust: 88cm, Shoulder: 41cm, Sleeve: 18cm\nSize: XS, Length: 66cm, Bust: 96cm, Shoulder: 45cm, Sleeve: 19cm\nSize: S, Length: 68cm, Bust: 100cm, Shoulder: 47cm, Sleeve: 19cm\nSize: M, Length: 70cm, Bust: 104cm, Shoulder: 49cm, Sleeve: 20cm\nSize: L, Length: 72cm, Bust: 108cm, Shoulder: 51cm, Sleeve: 20cm\nSize: XL, Length: 74cm, Bust: 112cm, Shoulder: 53cm, Sleeve: 21cm\nSize: 2XL, Length: 76cm, Bust: 116cm, Shoulder: 55cm, Sleeve: 21cm\nSize: 3XL, Length: 78cm, Bust: 120cm, Shoulder: 57cm, Sleeve: 22cm\nNote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4. All our products are advertised in size, study the size chart before buying.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nManufacture Country: China\nSeason: summer\nNeckline: round\nClothing Decoration: print\nLeather Label: no\nClothing Decoration: print\nPattern: print\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry\nGender: unisex\nClothing Decoration: no decoration\nSleeve Length: short sleeve\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n",
+        "title": "DEUS Letter Graphic Cotton T-Shirt, Front and Back Print, Short Sleeve",
+        "url": "https://merchant.joom.com/panel/products/6a980514f3bf72019f23b034",
+        "variantCount": 96,
+        "variantDetailSha256": "e5d28ab32c31cf4f9324d0d62a98f88017df86bf406fc1c378f8a3633529647b"
+      },
+      "plan": {
+        "label": "DEUS字母T恤",
+        "title": "DEUS Letter Graphic Cotton T-Shirt, Front and Back Print, Short Sleeve",
+        "intro": "Cotton short-sleeve crew-neck T-shirt with DEUS lettering on the chest and a larger lettering graphic on the back. The graphic is printed on the fabric.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.",
+        "tags": [],
+        "replacements": {
+          "Clothing decoration: no decoration": "Clothing decoration: print"
+        }
+      },
+      "selection_baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 409,
+        "clicks": 39,
+        "purchases": 3,
+        "cart": 23
+      },
+      "optimization_scope": "加购低成交商品的图文、选码与洗护说明"
+    },
+    {
+      "product_id": "6aa1166ced97a90165b916c2",
+      "name": "Kids' Michael Jackson BAD Print Zip-Up Hoodie, Cotton Long Sleeve",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 2,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 238,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/80eee76f1012c7d38ab527d018abcdb819baacb7_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6aa1166ced97a90165b916c2/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226aa1166ced97a90165b916c2%22",
+            "text": "订单"
+          }
+        ],
+        "text": "1005012997964171\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n限售\n1\n需注意\n2\n审核中\n1\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\n绑定的文件\n欧代协议\nManufacturer Information: Qianshan County Nineteen Trade Co., Ltd\nKids' Michael Jackson BAD Print Zip-Up Hoodie, Cotton Long Sleeve\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6aa1166ced97a90165b916c2\n等级\n缺失内容\n产品SKU\n1005012997964171\n类目ID\n1605614754933037318-196-2-62735-1604558435\n类目\nBaby & Kids\nKids Clothing\nUnisex Clothing\nUnisex (over 4 y.o.)\nTop\nHoodies & Sweatshirts (kids unisex)\n推荐类目ID\n1473502947691956288-126-2-118-286289588\n推荐类目\nHoodies & Sweatshirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年9月9日\n敏感货\n普通货\n描述\nChildren's cotton zip-up hoodie with Michael Jackson BAD graphics on the front and back, long sleeves and a hood. Select a color, then a size from 100 to 160.\n\nCHOOSING YOUR CHILD'S SIZE\nCompare the measurements below with a hoodie that fits your child. Lay it flat, measure from armpit to armpit and double that width to compare with Bust. Also check length, shoulders and sleeves. Choose by garment measurements and preferred room for layering.\n\nProduct Type: Hooded Children's Sweater\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Autumn and Winter\nCollar Type: Hooded\nTop Closure Type: Zip-up\nSleeve Length: Long Sleeve\nGender: Children\nAge: Ages 3–12 Years Old\nPattern Type: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry\nSize:\n100: Bust 60 cm, Length 42 cm, Shoulder 28 cm, Recommended Height 90–100 cm, Sleeve 39 cm\n110: Bust 66 cm, Length 45 cm, Shoulder 30 cm, Recommended Height 100–110 cm, Sleeve 41 cm\n120: Bust 72 cm, Length 48 cm, Shoulder 32 cm, Recommended Height 110–120 cm, Sleeve 43 cm\n130: Bust 78 cm, Length 51 cm, Shoulder 34 cm, Recommended Height 120–130 cm, Sleeve 45 cm\n140: Bust 84 cm, Length 54 cm, Shoulder 36 cm, Recommended Height 130–140 cm, Sleeve 47 cm\n150: Bust 90 cm, Length 57 cm, Shoulder 38 cm, Recommended Height 140–150 cm, Sleeve 49 cm\n160: Bust 96 cm, Length 60 cm, Shoulder 40 cm, Recommended Height 150–160 cm, Sleeve 51 cm\nNotes:\nPlease measure yourself carefully according to the size chart before purchasing, thank you!\nDue to manual measurement, please allow an error of 2–3 cm.\nDue to differences in lighting and screen settings, the actual product color may vary slightly.\nPlease carefully review the size chart before purchasing.\n未解析的属性\nsetsQuantity: 1\npiecesQuantity: 1\nmanufactureCountry: china\n产品属性\nMaterial: cotton\nCountry of Manufacture: China\nStyle: casual\nSleeve Length: long sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Machine wash at temperatures below 30°C\nNumber of Pieces: 1 pc.\nQuantity: 1 set\nMaterial: cotton 100%\nFabric Type: cotton\nNeck Style: Round Neck\nPattern: print\n尺码表\n尺码\tBust\tJunk\tLength\tShoulders\tSleeve\n\n100\n\t\n60 cm\n\t\n90–100 cm\n\t\n42 cm\n\t\n28 cm\n\t\n39 cm\n\n\n110\n\t\n66 cm\n\t\n100–110 cm\n\t\n45 cm\n\t\n30 cm\n\t\n41 cm\n\n\n120\n\t\n72 cm\n\t\n110–120 cm\n\t\n48 cm\n\t\n32 cm\n\t\n43 cm\n\n\n130\n\t\n78 cm\n\t\n120–130 cm\n\t\n51 cm\n\t\n34 cm\n\t\n45 cm\n\n\n140\n\t\n84 cm\n\t\n130–140 cm\n\t\n54 cm\n\t\n36 cm\n\t\n47 cm\n\n\n150\n\t\n90 cm\n\t\n140–150 cm\n\t\n57 cm\n\t\n38 cm\n\t\n49 cm\n\n\n160\n\t\n96 cm\n\t\n150–160 cm\n\t\n60 cm\n\t\n40 cm\n\t\n51 cm\n",
+        "title": "Kids' Michael Jackson BAD Print Zip-Up Hoodie, Cotton Long Sleeve",
+        "url": "https://merchant.joom.com/panel/products/6aa1166ced97a90165b916c2",
+        "variantCount": 238,
+        "variantDetailSha256": "4ff37f3f55db331c32587146dd08a2cddceb3d5ff6bbbb65293d6d7f80021d3f"
+      },
+      "plan": {
+        "label": "MJ儿童拉链卫衣",
+        "title": "Kids' Michael Jackson BAD Print Zip-Up Hoodie, Cotton Long Sleeve",
+        "intro": "Children's cotton zip-up hoodie with Michael Jackson BAD graphics on the front and back, long sleeves and a hood. Select a color, then a size from 100 to 160.\n\nCHOOSING YOUR CHILD'S SIZE\nCompare the measurements below with a hoodie that fits your child. Lay it flat, measure from armpit to armpit and double that width to compare with Bust. Also check length, shoulders and sleeves. Choose by garment measurements and preferred room for layering.",
+        "tags": [],
+        "replacements": {
+          "Collar Type: Round Neck": "Collar Type: Hooded"
+        }
+      },
+      "selection_baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 723,
+        "clicks": 41,
+        "purchases": 0,
+        "cart": 13
+      },
+      "optimization_scope": "加购低成交商品的图文、选码与洗护说明"
+    },
+    {
+      "product_id": "6a85180213cc3a011ed38089",
+      "name": "Olodum Peace Symbol Graphic Cotton T-Shirt, Short Sleeve Crew Neck",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 5,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 28,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/35e636548140568120c0b9656fe9dd9f5bbce1f1_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a85180213cc3a011ed38089/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a85180213cc3a011ed38089%22",
+            "text": "订单"
+          }
+        ],
+        "text": "TXYL0320\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n2\n审核中\n1\n产品有重复图片\n请从产品中删除重复图片。\n图片： 1\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nOlodum Peace Symbol Graphic Cotton T-Shirt, Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a85180213cc3a011ed38089\n等级\nJoom精选\n缺失内容\n等级分数\n71/100\n产品SKU\nTXYL0320\n相似组ID\n6a06e2e66bdacec26913adb3\n1个产品\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月19日\n敏感货\n普通货\n描述\nCotton short-sleeve crew-neck T-shirt with Olodum lettering and a multicolored peace-symbol graphic. Available sizes are XS, S, M, L, XL, 2XL and 3XL, subject to the selected option.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.\n\nProduct Type： t shirt\nManufacture Country：China\nApplicable scene: daily\nstyle: Casual\nApplicable season: summer\nNeckline：round\nTops closure type: pullover\nClothing decoration: print\nLeather Label：no\nSleeve length (cm): Short Sleeve\nSex: Women\nAge: Ages 18-45 Years Old\nPattern：print\nMaterial: Cotton\nLabel: Yes\nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry\nsizes:XXS XS S M L XL 2XL 3XL\nXXS：bust 88 cm，length 60 cm,shoulder 41 cm,Sleeve Length 18 cm\nXS：bust 96 cm，length 66 cm,shoulder 45 cm,Sleeve Length 19 cm\nS: bust 100 cm, length 68 cm, shoulder 47 cm,Sleeve Length 19 cm\nM: bust 104 cm, length 70 cm, shoulder 49 cm,Sleeve Length 20 cm\nL: bust 108 cm, length 72 cm, shoulder 51 cm,Sleeve Length 20 cm\nXL: bust 112 cm, length 74 cm, shoulder 53 cm,Sleeve Length 21cm\n2XL: bust 116 cm, length 76 cm, shoulder 55 cm,Sleeve Length 21 cm\n3XL: bust 120 cm, length 78 cm, shoulder 57 cm,Sleeve Length 22 cm\nnote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4.All our products are advertised in size , study the size chart before buying.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nCountry of Manufacture: China\nSeason: summer\nNeckline: round\nLeather Label: no\nDecoration: print\nPattern: print\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Machine wash at temperatures below 30°C\nGender: for women\nMaterial for fur: cotton 100%\nDecoration: no decoration\nSleeve Length: short sleeve\nMaterial: cotton 100%\nWashing Care: Do not tumble dry、Machine wash at temperatures below 30°C\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\nXXS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n搜索标签\nWomen\nNew\nTshirts\nHombre\nGraphic\nOLODUM\nRopa\nSummer\nJackson\nRetro\n",
+        "title": "Olodum Peace Symbol Graphic Cotton T-Shirt, Short Sleeve Crew Neck",
+        "url": "https://merchant.joom.com/panel/products/6a85180213cc3a011ed38089",
+        "variantCount": 28,
+        "variantDetailSha256": "6dd0c7fad173bc262cf74b8a9b65f1c5464c74e90c441d54dbfdb704b1f1ded4"
+      },
+      "plan": {
+        "label": "Olodum和平图案T恤",
+        "title": "Olodum Peace Symbol Graphic Cotton T-Shirt, Short Sleeve Crew Neck",
+        "intro": "Cotton short-sleeve crew-neck T-shirt with Olodum lettering and a multicolored peace-symbol graphic. Available sizes are XS, S, M, L, XL, 2XL and 3XL, subject to the selected option.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.",
+        "tags": [
+          "Women",
+          "New",
+          "Tshirts",
+          "Hombre",
+          "Graphic",
+          "OLODUM",
+          "Ropa",
+          "Summer",
+          "Jackson",
+          "Retro"
+        ],
+        "replacements": {
+          "Clothing decoration: no decoration": "Clothing decoration: print"
+        }
+      },
+      "selection_baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 1182,
+        "clicks": 29,
+        "purchases": 1,
+        "cart": 13
+      },
+      "optimization_scope": "加购低成交商品的图文、选码与洗护说明"
+    },
+    {
+      "product_id": "6a87c65a35e86a010857bb2f",
+      "name": "Madonna Retro Graphic Cotton T-Shirt, Unisex Short Sleeve Crew Neck",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 5,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 8,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/5082fe78c92b226a3e14574283880d208757d8f1_original.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a87c65a35e86a010857bb2f/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a87c65a35e86a010857bb2f%22",
+            "text": "订单"
+          }
+        ],
+        "text": "6a05aafd16456b01b218e4c5\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n2\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n产品信息\n启用\n统计\n评分\n5\n评价数量\n1\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\n绑定的文件\n欧代协议\nManufacturer Information: Qianshan County Nineteen Trade Co., Ltd\nMadonna Retro Graphic Cotton T-Shirt, Unisex Short Sleeve Crew Neck\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a87c65a35e86a010857bb2f\n等级\nJoom精选\n缺失内容\n等级分数\n55/100\n产品SKU\n6a05aafd16456b01b218e4c5\n相似组ID\n6a233706fe498a0e8f50964b\n1个产品\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月21日\n敏感货\n普通货\n描述\nCotton short-sleeve crew-neck T-shirt with Madonna lettering and a monochrome portrait graphic.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.\n\nUnisex cotton T-shirt with a Madonna retro graphic print. It has a round neckline, short sleeves and pullover closure.\n\nSIZE CHART (cm)\nSize: 2XS, Length: 60 cm, Bust: 88 cm, Shoulder: 41 cm, Sleeve: 18 cm\nSize: XS, Length: 66 cm, Bust: 96 cm, Shoulder: 45 cm, Sleeve: 19 cm\nSize: S, Length: 68 cm, Bust: 100 cm, Shoulder: 47 cm, Sleeve: 19 cm\nSize: M, Length: 70 cm, Bust: 104 cm, Shoulder: 49 cm, Sleeve: 20 cm\nSize: L, Length: 72 cm, Bust: 108 cm, Shoulder: 51 cm, Sleeve: 20 cm\nSize: XL, Length: 74 cm, Bust: 112 cm, Shoulder: 53 cm, Sleeve: 21 cm\nSize: 2XL, Length: 76 cm, Bust: 116 cm, Shoulder: 55 cm, Sleeve: 21 cm\nSize: 3XL, Length: 78 cm, Bust: 120 cm, Shoulder: 57 cm, Sleeve: 22 cm\n\nFIT: Compare these garment measurements with a similar T-shirt before ordering. Allow 2–3 cm variation due to manual measurement.\nCARE: Machine wash below 30°C. Do not tumble dry.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry、Machine wash at temperatures below 30°C\nGender: unisex\nDecoration: print\nPattern: print\nSleeve Length: short sleeve\nNeckline: round\nWashing Care: Machine wash is allowed\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n搜索标签\nmadonna t shirt\nretro graphic tee\ncotton t shirt\nunisex shirt\ncrew neck tee\nshort sleeve t shirt\n",
+        "title": "Madonna Retro Graphic Cotton T-Shirt, Unisex Short Sleeve Crew Neck",
+        "url": "https://merchant.joom.com/panel/products/6a87c65a35e86a010857bb2f",
+        "variantCount": 8,
+        "variantDetailSha256": "4a9bb8f29014fb8881e0e17bfcf927cb43e9fcf1def6bf74292c98bde067ce5a"
+      },
+      "plan": {
+        "label": "Madonna复古肖像T恤",
+        "title": "Madonna Retro Graphic Cotton T-Shirt, Unisex Short Sleeve Crew Neck",
+        "intro": "Cotton short-sleeve crew-neck T-shirt with Madonna lettering and a monochrome portrait graphic.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.",
+        "tags": [
+          "madonna t shirt",
+          "retro graphic tee",
+          "cotton t shirt",
+          "unisex shirt",
+          "crew neck tee",
+          "short sleeve t shirt"
+        ],
+        "replacements": {}
+      },
+      "selection_baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 1589,
+        "clicks": 29,
+        "purchases": 0,
+        "cart": 8
+      },
+      "optimization_scope": "加购低成交商品的图文、选码与洗护说明"
+    },
+    {
+      "product_id": "6a8e2395f381b601c5ac9427",
+      "name": "Acid Bath When the Kite String Pops Album Graphic Cotton T-Shirt, Unisex",
+      "recorded_on": "2026-11-18",
+      "all_time_orders_before": 3,
+      "persisted_after_reload": true,
+      "review_pending": true,
+      "variant_count": 8,
+      "variant_detail_unchanged": true,
+      "form_variants_unchanged_before_save": true,
+      "images_unchanged_before_save": true,
+      "category_unchanged_before_save": true,
+      "after": {
+        "image": "https://img.joomcdn.net/b3bc190356607b24452442d2ac61c24c1c8bce90_1024_1024.jpeg",
+        "imageLoaded": true,
+        "links": [
+          {
+            "href": "https://merchant.joom.com/panel/products/6a8e2395f381b601c5ac9427/edit",
+            "text": "编辑产品"
+          },
+          {
+            "href": "https://merchant.joom.com/panel/orders?productId=%226a8e2395f381b601c5ac9427%22",
+            "text": "订单"
+          }
+        ],
+        "text": "69b8b645ed6ece018c18024d\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n编辑版本还未被发布。当前活性版本与最近编辑的不同。\n产品正在审核中\n需注意\n1\n审核中\n1\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n产品信息\n启用\n统计\n评分\n0\n评价数量\n0\n平台佣金\n默认佣金\n15%\n长上网时效佣金\n18%\nFBJ\n12%\n可以参加促销\n否\nAcid Bath When the Kite String Pops Album Graphic Cotton T-Shirt, Unisex\n产品页URL订单评价数量数据\nAI属性解析\n对产品内容的AI优化\n使用自动TN VED编码\n产品ID\n6a8e2395f381b601c5ac9427\n等级\n竞争\n缺失内容\n等级分数\n44/100\n产品SKU\n69b8b645ed6ece018c18024d\n相似组ID\n6a2338d2127d45764db61da9\n1个产品\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n推荐类目ID\n1473502947697243574-128-2-118-2775194205\n推荐类目\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n创建日期\n2026年8月26日\n敏感货\n普通货\n描述\nCotton short-sleeve crew-neck T-shirt with Acid Bath When the Kite String Pops lettering and album artwork. Choose the printed option shown in the corresponding product photos.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.\n\nUnisex cotton T-shirt featuring a When the Kite String Pops album graphic by Acid Bath. It has a round neckline, short sleeves and pullover closure.\n\nSIZE CHART (cm)\nSize: 2XS, Length: 60 cm, Bust: 88 cm, Shoulder: 41 cm, Sleeve: 18 cm\nSize: XS, Length: 66 cm, Bust: 96 cm, Shoulder: 45 cm, Sleeve: 19 cm\nSize: S, Length: 68 cm, Bust: 100 cm, Shoulder: 47 cm, Sleeve: 19 cm\nSize: M, Length: 70 cm, Bust: 104 cm, Shoulder: 49 cm, Sleeve: 20 cm\nSize: L, Length: 72 cm, Bust: 108 cm, Shoulder: 51 cm, Sleeve: 20 cm\nSize: XL, Length: 74 cm, Bust: 112 cm, Shoulder: 53 cm, Sleeve: 21 cm\nSize: 2XL, Length: 76 cm, Bust: 116 cm, Shoulder: 55 cm, Sleeve: 21 cm\nSize: 3XL, Length: 78 cm, Bust: 120 cm, Shoulder: 57 cm, Sleeve: 22 cm\n\nFIT: Compare these garment measurements with a similar T-shirt before ordering. Allow 2–3 cm variation due to manual measurement.\nCARE: Machine wash below 30°C. Do not tumble dry.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry、Machine wash at temperatures below 30°C\nGender: unisex\nDecoration: print\nPattern: print\nSleeve Length: short sleeve\nNeckline: round\nWashing Care: Machine wash is allowed\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n2XS\n\t\n88 cm\n\t\n60 cm\n\t\n41 cm\n\t\n18 cm\n\n\nXS\n\t\n96 cm\n\t\n66 cm\n\t\n45 cm\n\t\n19 cm\n\n\nS\n\t\n100 cm\n\t\n68 cm\n\t\n47 cm\n\t\n19 cm\n\n\nM\n\t\n104 cm\n\t\n70 cm\n\t\n49 cm\n\t\n20 cm\n\n\nL\n\t\n108 cm\n\t\n72 cm\n\t\n51 cm\n\t\n20 cm\n\n\nXL\n\t\n112 cm\n\t\n74 cm\n\t\n53 cm\n\t\n21 cm\n\n\n2XL\n\t\n116 cm\n\t\n76 cm\n\t\n55 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n78 cm\n\t\n57 cm\n\t\n22 cm\n搜索标签\nacid bath\nwhen the kite string pops\nrock band tee\nalbum t shirt\ncotton graphic tee\nunisex t shirt\n",
+        "title": "Acid Bath When the Kite String Pops Album Graphic Cotton T-Shirt, Unisex",
+        "url": "https://merchant.joom.com/panel/products/6a8e2395f381b601c5ac9427",
+        "variantCount": 8,
+        "variantDetailSha256": "0e15d9654bf82f1359383a4c193af901a92b030837f0d74c466500ed2a1abd21"
+      },
+      "plan": {
+        "label": "Acid Bath专辑T恤",
+        "title": "Acid Bath When the Kite String Pops Album Graphic Cotton T-Shirt, Unisex",
+        "intro": "Cotton short-sleeve crew-neck T-shirt with Acid Bath When the Kite String Pops lettering and album artwork. Choose the printed option shown in the corresponding product photos.\n\nCHOOSING YOUR SIZE\nMeasure a T-shirt that fits you comfortably. Lay it flat, measure from armpit to armpit and double that width to compare with Bust in the chart below. Also compare garment length and shoulder width. Select your preferred design or color first, then choose an available size. Measurements refer to the garment.",
+        "tags": [
+          "acid bath",
+          "when the kite string pops",
+          "rock band tee",
+          "album t shirt",
+          "cotton graphic tee",
+          "unisex t shirt"
+        ],
+        "replacements": {}
+      },
+      "selection_baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 625,
+        "clicks": 26,
+        "purchases": 1,
+        "cart": 6
+      },
+      "optimization_scope": "加购低成交商品的图文、选码与洗护说明"
+    }
+  ],
+  "global_buyer_shipping_verified": false,
+  "buyer_note": "当前公开页访问环境有5款显示 Item is not available，其余页面未完整加载。无法确认目标国含税运费、真实结账可售或全球下架状态。",
+  "conversion_effect": null
+}

@@ -1,0 +1,33 @@
+{
+  "suggestion_id": "ml-mx-ad-reputation",
+  "event_type": "follow_up",
+  "recorded_at": "2026-11-19T13:12:48.002744+08:00",
+  "automation_id": "joom-2",
+  "report": "日报/店铺经营/2026-11-19/131248.md",
+  "snapshot": "快照/店铺经营/2026-11-19/131248.json",
+  "actual_setting_changed": false,
+  "previous_status": "待复查",
+  "product_id": null,
+  "object": "MX",
+  "new_business_action_executed": false,
+  "status": "持续待复查，未证明问题已解决",
+  "recommendation": {
+    "suggestion_id": "ml-mx-ad-reputation",
+    "priority": 2,
+    "platform": "mercadolibre",
+    "country": "MX",
+    "source": "https://sellers.mercadolibre.com/sales-summary",
+    "facts": [
+      "信誉橙色，投诉5.55%；同日广告日报确认不满足黄色及以上展示条件",
+      "完整7天235访问8单，前7天232访问2单；不是全店没有销售",
+      "97项特性待核对、1项购物体验问题、5项价格过高；失效入口5条，原因未逐条取得"
+    ],
+    "suggested_action": "先核对造成投诉/购物体验问题的商品与履约原因；有事实依据再修正。保持预算，不通过加竞价尝试绕过展示限制。",
+    "expected_improvement": "恢复信誉与广告展示资格，减少售后损耗",
+    "evidence_strength": "强：信誉与展示限制已核实；投诉个案原因待查",
+    "status": "持续待复查，未证明问题已解决",
+    "actual_setting_changed": false,
+    "review": "明天复查信誉和实际曝光；恢复后累计3个完整日再判断流量"
+  },
+  "review_condition": "明天复查信誉和实际曝光；恢复后累计3个完整日再判断流量"
+}

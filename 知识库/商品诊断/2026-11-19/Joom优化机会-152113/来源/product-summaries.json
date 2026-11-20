@@ -1,0 +1,4394 @@
+[
+  {
+    "product_id": "6a8e23a417a6590152ccbda7",
+    "title": "Paper Beats Rock Meme Graphic T-Shirt, Unisex Cotton Short Sleeve",
+    "captured_at": "2026-11-19T07:14:51.435Z",
+    "source": "https://merchant.joom.com/panel/products/6a8e23a417a6590152ccbda7",
+    "baseline": {
+      "shop": "Nineteen Wear",
+      "product_id": "6a8e23a417a6590152ccbda7",
+      "source": "https://merchant.joom.com/panel/analytics/orders/store/6a817b93f5d3934528e70df7?limit=100&orderBy=openCount&order=desc",
+      "product_link": "https://merchant.joom.com/panel/products/6a8e23a417a6590152ccbda7",
+      "window": "2026-10-22 to 2026-11-18 UTC+3",
+      "impressions": 218,
+      "clicks": 25,
+      "purchases": 1,
+      "cart": 9
+    },
+    "warnings": "6a17c486fe259f01a6428c92\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n无\n产品已禁用\n限售\n1\n需注意\n2\n侮辱性的内容\n请从产品中删除辱骂性内容。如果您认为这是一个错误，请联系支持。\n国家： 所有国家\n投诉来自： 根据《数字服务法案》第16条规定提交的通知\n",
+    "variants": [
+      {
+        "size_color": "颜色：black\n尺寸：2XS",
+        "sku": "6a17c486fe259f01a6428c92-1-2XS",
+        "variant_id": "6a8e23a417a659c052ccbda9",
+        "price": "US$5\n销售价格：US$3.72",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：XS",
+        "sku": "6a17c486fe259f01a6428c92-1-XS",
+        "variant_id": "6a8e23a417a659c052ccbdaa",
+        "price": "US$5\n销售价格：US$3.72",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：S",
+        "sku": "6a17c486fe259f01a6428c92-1-S",
+        "variant_id": "6a8e23a417a659c052ccbdab",
+        "price": "US$5\n竞争性\n销售价格：US$3.59",
+        "inventory": "989\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：M",
+        "sku": "6a17c486fe259f01a6428c92-1",
+        "variant_id": "6a8e23a417a659c052ccbdac",
+        "price": "US$5\n竞争性\n销售价格：US$3.50",
+        "inventory": "985\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：L",
+        "sku": "6a17c486fe259f01a6428c92-2",
+        "variant_id": "6a8e23a417a659c052ccbdad",
+        "price": "US$5\n竞争性\n销售价格：US$3.56",
+        "inventory": "979\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：XL",
+        "sku": "6a17c486fe259f01a6428c92-1-XL",
+        "variant_id": "6a8e23a417a659c052ccbdae",
+        "price": "US$5\n竞争性\n销售价格：US$3.65",
+        "inventory": "982\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：2XL",
+        "sku": "6a17c486fe259f01a6428c92-1-2XL",
+        "variant_id": "6a8e23a417a659c052ccbdaf",
+        "price": "US$5\n销售价格：US$3.50",
+        "inventory": "988\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：3XL",
+        "sku": "6a17c486fe259f01a6428c92-1-3XL",
+        "variant_id": "6a8e23a417a659c052ccbdb0",
+        "price": "US$5\n销售价格：US$3.59",
+        "inventory": "986\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：multicolor\n尺寸：L",
+        "sku": "54325912866",
+        "variant_id": "6abe2e08a250295135b1f0c2",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid blue\n尺寸：M",
+        "sku": "6a17c486fe259f01a6428c92-ACID-BLUE-M",
+        "variant_id": "6abe2e08a250295135b1f0c3",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid green\n尺寸：2XS",
+        "sku": "6a17c486fe259f01a6428c92-ACID-GREEN-2XS",
+        "variant_id": "6abe2e08a250295135b1f0c4",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：multicolor\n尺寸：M",
+        "sku": "42338746260",
+        "variant_id": "6abe2e08a250295135b1f0c5",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid green\n尺寸：XS",
+        "sku": "6a17c486fe259f01a6428c92-ACID-GREEN-XS",
+        "variant_id": "6abe2e08a250295135b1f0c6",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid green\n尺寸：XL",
+        "sku": "6a17c486fe259f01a6428c92-ACID-GREEN-XL",
+        "variant_id": "6abe2e08a250295135b1f0c7",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：barn red\n尺寸：XS",
+        "sku": "6a17c486fe259f01a6428c92-BARN-RED-XS",
+        "variant_id": "6abe2e08a250295135b1f0c8",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：multicolor\n尺寸：S",
+        "sku": "68712688609",
+        "variant_id": "6abe2e08a250295135b1f0c9",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：multicolor\n尺寸：3XL",
+        "sku": "35693321066",
+        "variant_id": "6abe2e08a250295135b1f0ca",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid green\n尺寸：L",
+        "sku": "6a17c486fe259f01a6428c92-ACID-GREEN-L",
+        "variant_id": "6abe2e08a250295135b1f0cb",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid green\n尺寸：2XL",
+        "sku": "6a17c486fe259f01a6428c92-ACID-GREEN-2XL",
+        "variant_id": "6abe2e08a250295135b1f0cc",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid blue\n尺寸：L",
+        "sku": "6a17c486fe259f01a6428c92-ACID-BLUE-L",
+        "variant_id": "6abe2e08a250295135b1f0cd",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid blue\n尺寸：XL",
+        "sku": "6a17c486fe259f01a6428c92-ACID-BLUE-XL",
+        "variant_id": "6abe2e08a250295135b1f0ce",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid green\n尺寸：M",
+        "sku": "6a17c486fe259f01a6428c92-ACID-GREEN-M",
+        "variant_id": "6abe2e08a250295135b1f0cf",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：barn red\n尺寸：2XS",
+        "sku": "6a17c486fe259f01a6428c92-BARN-RED-2XS",
+        "variant_id": "6abe2e08a250295135b1f0d0",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：barn red\n尺寸：XL",
+        "sku": "6a17c486fe259f01a6428c92-BARN-RED-XL",
+        "variant_id": "6abe2e08a250295135b1f0d1",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：barn red\n尺寸：2XL",
+        "sku": "6a17c486fe259f01a6428c92-BARN-RED-2XL",
+        "variant_id": "6abe2e08a250295135b1f0d2",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：multicolor\n尺寸：XL",
+        "sku": "88202648304",
+        "variant_id": "6abe2e08a250295135b1f0d3",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：multicolor\n尺寸：2XL",
+        "sku": "60606009562",
+        "variant_id": "6abe2e08a250295135b1f0d4",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid blue\n尺寸：3XL",
+        "sku": "6a17c486fe259f01a6428c92-ACID-BLUE-3XL",
+        "variant_id": "6abe2e08a250295135b1f0d5",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：barn red\n尺寸：L",
+        "sku": "6a17c486fe259f01a6428c92-BARN-RED-L",
+        "variant_id": "6abe2e08a250295135b1f0d6",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：multicolor\n尺寸：XS",
+        "sku": "46084411584",
+        "variant_id": "6abe2e08a250295135b1f0d7",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid blue\n尺寸：2XL",
+        "sku": "6a17c486fe259f01a6428c92-ACID-BLUE-2XL",
+        "variant_id": "6abe2e08a250295135b1f0d8",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid green\n尺寸：3XL",
+        "sku": "6a17c486fe259f01a6428c92-ACID-GREEN-3XL",
+        "variant_id": "6abe2e08a250295135b1f0d9",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid blue\n尺寸：S",
+        "sku": "6a17c486fe259f01a6428c92-ACID-BLUE-S",
+        "variant_id": "6abe2e08a250295135b1f0da",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid green\n尺寸：S",
+        "sku": "6a17c486fe259f01a6428c92-ACID-GREEN-S",
+        "variant_id": "6abe2e08a250295135b1f0db",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：barn red\n尺寸：S",
+        "sku": "6a17c486fe259f01a6428c92-BARN-RED-S",
+        "variant_id": "6abe2e08a250295135b1f0dc",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：barn red\n尺寸：M",
+        "sku": "6a17c486fe259f01a6428c92-BARN-RED-M",
+        "variant_id": "6abe2e08a250295135b1f0dd",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：barn red\n尺寸：3XL",
+        "sku": "6a17c486fe259f01a6428c92-BARN-RED-3XL",
+        "variant_id": "6abe2e08a250295135b1f0de",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：multicolor\n尺寸：2XS",
+        "sku": "96741714989",
+        "variant_id": "6abe2e08a250295135b1f0df",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid blue\n尺寸：2XS",
+        "sku": "6a17c486fe259f01a6428c92-ACID-BLUE-2XS",
+        "variant_id": "6abe2e08a250295135b1f0e0",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：acid blue\n尺寸：XS",
+        "sku": "6a17c486fe259f01a6428c92-ACID-BLUE-XS",
+        "variant_id": "6abe2e08a250295135b1f0e1",
+        "price": "US$5\n销售价格：US$4.50",
+        "inventory": "990\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      }
+    ],
+    "sizes": [
+      "2XL",
+      "2XS",
+      "3XL",
+      "L",
+      "M",
+      "S",
+      "XL",
+      "XS"
+    ],
+    "glow_keyword_hit": false,
+    "glow_excerpt": null
+  },
+  {
+    "product_id": "6abf0d117d861e01f7d82d56",
+    "title": "Totoro Hooded Hoodie for Children Anime Cartoon printed Fashion Sweatshirt Boys Girls Autumn Hip Hop Hoodies Kids Clothes gifts",
+    "captured_at": "2026-11-19T07:15:10.076Z",
+    "source": "https://merchant.joom.com/panel/products/6abf0d117d861e01f7d82d56",
+    "baseline": {
+      "shop": "jh",
+      "product_id": "6abf0d117d861e01f7d82d56",
+      "source": "https://merchant.joom.com/panel/analytics/orders/store/6a8c4690b1e1819ed91f9baa?limit=100&orderBy=openCount&order=desc",
+      "product_link": "https://merchant.joom.com/panel/products/6abf0d117d861e01f7d82d56",
+      "window": "2026-10-22 to 2026-11-18 UTC+3",
+      "impressions": 263,
+      "clicks": 17,
+      "purchases": 0,
+      "cart": 3
+    },
+    "warnings": "1005013166976923\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n产品需要您的注意\n限售\n1\n需注意\n1\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n",
+    "variants": [
+      {
+        "size_color": "颜色：black\n尺寸：100",
+        "sku": "1005013166976923-t-shirt-100",
+        "variant_id": "6abf0d117d861eb2f7d82d58",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：110",
+        "sku": "1005013166976923-t-shirt-110",
+        "variant_id": "6abf0d117d861eb2f7d82d59",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：120",
+        "sku": "1005013166976923-t-shirt-120",
+        "variant_id": "6abf0d117d861eb2f7d82d5a",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：130",
+        "sku": "1005013166976923-t-shirt-130",
+        "variant_id": "6abf0d117d861eb2f7d82d5b",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：140",
+        "sku": "1005013166976923-t-shirt-140",
+        "variant_id": "6abf0d117d861eb2f7d82d5c",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：150",
+        "sku": "1005013166976923-t-shirt-150",
+        "variant_id": "6abf0d117d861eb2f7d82d5d",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：160",
+        "sku": "1005013166976923-t-shirt-160",
+        "variant_id": "6abf0d117d861eb2f7d82d5e",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：100",
+        "sku": "1005013166976923-LM-192-100",
+        "variant_id": "6abf0d117d861eb2f7d82d5f",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：110",
+        "sku": "1005013166976923-LM-192-110",
+        "variant_id": "6abf0d117d861eb2f7d82d60",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：120",
+        "sku": "1005013166976923-LM-192-120",
+        "variant_id": "6abf0d117d861eb2f7d82d61",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：130",
+        "sku": "1005013166976923-LM-192-130",
+        "variant_id": "6abf0d117d861eb2f7d82d62",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：140",
+        "sku": "1005013166976923-LM-192-140",
+        "variant_id": "6abf0d117d861eb2f7d82d63",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：150",
+        "sku": "1005013166976923-LM-192-150",
+        "variant_id": "6abf0d117d861eb2f7d82d64",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：160",
+        "sku": "1005013166976923-LM-192-160",
+        "variant_id": "6abf0d117d861eb2f7d82d65",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：100",
+        "sku": "1005013166976923-LM-6-100",
+        "variant_id": "6abf0d117d861eb2f7d82d66",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：110",
+        "sku": "1005013166976923-LM-6-110",
+        "variant_id": "6abf0d117d861eb2f7d82d67",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：120",
+        "sku": "1005013166976923-LM-6-120",
+        "variant_id": "6abf0d117d861eb2f7d82d68",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：130",
+        "sku": "1005013166976923-LM-6-130",
+        "variant_id": "6abf0d117d861eb2f7d82d69",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：140",
+        "sku": "1005013166976923-LM-6-140",
+        "variant_id": "6abf0d117d861eb2f7d82d6a",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：150",
+        "sku": "1005013166976923-LM-6-150",
+        "variant_id": "6abf0d117d861eb2f7d82d6b",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：160",
+        "sku": "1005013166976923-LM-6-160",
+        "variant_id": "6abf0d117d861eb2f7d82d6c",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：100",
+        "sku": "1005013166976923-LM-259-100",
+        "variant_id": "6abf0d117d861eb2f7d82d6d",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：110",
+        "sku": "1005013166976923-LM-259-110",
+        "variant_id": "6abf0d117d861eb2f7d82d6e",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：120",
+        "sku": "1005013166976923-LM-259-120",
+        "variant_id": "6abf0d117d861eb2f7d82d6f",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：130",
+        "sku": "1005013166976923-LM-259-130",
+        "variant_id": "6abf0d117d861eb2f7d82d70",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：140",
+        "sku": "1005013166976923-LM-259-140",
+        "variant_id": "6abf0d117d861eb2f7d82d71",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：150",
+        "sku": "1005013166976923-LM-259-150",
+        "variant_id": "6abf0d117d861eb2f7d82d72",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：160",
+        "sku": "1005013166976923-LM-259-160",
+        "variant_id": "6abf0d117d861eb2f7d82d73",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：100",
+        "sku": "1005013166976923-LM-20-100",
+        "variant_id": "6abf0d117d861eb2f7d82d74",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：110",
+        "sku": "1005013166976923-LM-20-110",
+        "variant_id": "6abf0d117d861eb2f7d82d75",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：120",
+        "sku": "1005013166976923-LM-20-120",
+        "variant_id": "6abf0d117d861eb2f7d82d76",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：130",
+        "sku": "1005013166976923-LM-20-130",
+        "variant_id": "6abf0d117d861eb2f7d82d77",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：140",
+        "sku": "1005013166976923-LM-20-140",
+        "variant_id": "6abf0d117d861eb2f7d82d78",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：150",
+        "sku": "1005013166976923-LM-20-150",
+        "variant_id": "6abf0d117d861eb2f7d82d79",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：160",
+        "sku": "1005013166976923-LM-20-160",
+        "variant_id": "6abf0d117d861eb2f7d82d7a",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：100",
+        "sku": "1005013166976923-LM-245-100",
+        "variant_id": "6abf0d117d861eb2f7d82d7b",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：110",
+        "sku": "1005013166976923-LM-245-110",
+        "variant_id": "6abf0d117d861eb2f7d82d7c",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：120",
+        "sku": "1005013166976923-LM-245-120",
+        "variant_id": "6abf0d117d861eb2f7d82d7d",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：130",
+        "sku": "1005013166976923-LM-245-130",
+        "variant_id": "6abf0d117d861eb2f7d82d7e",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：140",
+        "sku": "1005013166976923-LM-245-140",
+        "variant_id": "6abf0d117d861eb2f7d82d7f",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：150",
+        "sku": "1005013166976923-LM-245-150",
+        "variant_id": "6abf0d117d861eb2f7d82d80",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：160",
+        "sku": "1005013166976923-LM-245-160",
+        "variant_id": "6abf0d117d861eb2f7d82d81",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：100",
+        "sku": "1005013166976923-LM-266-100",
+        "variant_id": "6abf0d117d861eb2f7d82d82",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：110",
+        "sku": "1005013166976923-LM-266-110",
+        "variant_id": "6abf0d117d861eb2f7d82d83",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：120",
+        "sku": "1005013166976923-LM-266-120",
+        "variant_id": "6abf0d117d861eb2f7d82d84",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：130",
+        "sku": "1005013166976923-LM-266-130",
+        "variant_id": "6abf0d117d861eb2f7d82d85",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：140",
+        "sku": "1005013166976923-LM-266-140",
+        "variant_id": "6abf0d117d861eb2f7d82d86",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：150",
+        "sku": "1005013166976923-LM-266-150",
+        "variant_id": "6abf0d117d861eb2f7d82d87",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：160",
+        "sku": "1005013166976923-LM-266-160",
+        "variant_id": "6abf0d117d861eb2f7d82d88",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：100",
+        "sku": "1005013166976923-LM-258-100",
+        "variant_id": "6abf0d117d861eb2f7d82d89",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：110",
+        "sku": "1005013166976923-LM-258-110",
+        "variant_id": "6abf0d117d861eb2f7d82d8a",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：120",
+        "sku": "1005013166976923-LM-258-120",
+        "variant_id": "6abf0d117d861eb2f7d82d8b",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：130",
+        "sku": "1005013166976923-LM-258-130",
+        "variant_id": "6abf0d117d861eb2f7d82d8c",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：140",
+        "sku": "1005013166976923-LM-258-140",
+        "variant_id": "6abf0d117d861eb2f7d82d8d",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：150",
+        "sku": "1005013166976923-LM-258-150",
+        "variant_id": "6abf0d117d861eb2f7d82d8e",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：160",
+        "sku": "1005013166976923-LM-258-160",
+        "variant_id": "6abf0d117d861eb2f7d82d8f",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：orange\n尺寸：100",
+        "sku": "1005013166976923-LM-246-100",
+        "variant_id": "6abf0d117d861eb2f7d82d90",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：orange\n尺寸：110",
+        "sku": "1005013166976923-LM-246-110",
+        "variant_id": "6abf0d117d861eb2f7d82d91",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：orange\n尺寸：120",
+        "sku": "1005013166976923-LM-246-120",
+        "variant_id": "6abf0d117d861eb2f7d82d92",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：orange\n尺寸：130",
+        "sku": "1005013166976923-LM-246-130",
+        "variant_id": "6abf0d117d861eb2f7d82d93",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：orange\n尺寸：140",
+        "sku": "1005013166976923-LM-246-140",
+        "variant_id": "6abf0d117d861eb2f7d82d94",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：orange\n尺寸：150",
+        "sku": "1005013166976923-LM-246-150",
+        "variant_id": "6abf0d117d861eb2f7d82d95",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：orange\n尺寸：160",
+        "sku": "1005013166976923-LM-246-160",
+        "variant_id": "6abf0d117d861eb2f7d82d96",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gray\n尺寸：100",
+        "sku": "1005013166976923-LM-178-100",
+        "variant_id": "6abf0d117d861eb2f7d82d97",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gray\n尺寸：110",
+        "sku": "1005013166976923-LM-178-110",
+        "variant_id": "6abf0d117d861eb2f7d82d98",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gray\n尺寸：120",
+        "sku": "1005013166976923-LM-178-120",
+        "variant_id": "6abf0d117d861eb2f7d82d99",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gray\n尺寸：130",
+        "sku": "1005013166976923-LM-178-130",
+        "variant_id": "6abf0d117d861eb2f7d82d9a",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gray\n尺寸：140",
+        "sku": "1005013166976923-LM-178-140",
+        "variant_id": "6abf0d117d861eb2f7d82d9b",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gray\n尺寸：150",
+        "sku": "1005013166976923-LM-178-150",
+        "variant_id": "6abf0d117d861eb2f7d82d9c",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gray\n尺寸：160",
+        "sku": "1005013166976923-LM-178-160",
+        "variant_id": "6abf0d117d861eb2f7d82d9d",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：100",
+        "sku": "1005013166976923-LM-261-100",
+        "variant_id": "6abf0d117d861eb2f7d82d9e",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：110",
+        "sku": "1005013166976923-LM-261-110",
+        "variant_id": "6abf0d117d861eb2f7d82d9f",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：120",
+        "sku": "1005013166976923-LM-261-120",
+        "variant_id": "6abf0d117d861eb2f7d82da0",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：130",
+        "sku": "1005013166976923-LM-261-130",
+        "variant_id": "6abf0d117d861eb2f7d82da1",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：140",
+        "sku": "1005013166976923-LM-261-140",
+        "variant_id": "6abf0d117d861eb2f7d82da2",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：150",
+        "sku": "1005013166976923-LM-261-150",
+        "variant_id": "6abf0d117d861eb2f7d82da3",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：160",
+        "sku": "1005013166976923-LM-261-160",
+        "variant_id": "6abf0d117d861eb2f7d82da4",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：100",
+        "sku": "1005013166976923-LM-250-100",
+        "variant_id": "6abf0d117d861eb2f7d82da5",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：110",
+        "sku": "1005013166976923-LM-250-110",
+        "variant_id": "6abf0d117d861eb2f7d82da6",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：120",
+        "sku": "1005013166976923-LM-250-120",
+        "variant_id": "6abf0d117d861eb2f7d82da7",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：130",
+        "sku": "1005013166976923-LM-250-130",
+        "variant_id": "6abf0d117d861eb2f7d82da8",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：140",
+        "sku": "1005013166976923-LM-250-140",
+        "variant_id": "6abf0d117d861eb2f7d82da9",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：150",
+        "sku": "1005013166976923-LM-250-150",
+        "variant_id": "6abf0d117d861eb2f7d82daa",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：160",
+        "sku": "1005013166976923-LM-250-160",
+        "variant_id": "6abf0d117d861eb2f7d82dab",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：navy blue\n尺寸：100",
+        "sku": "1005013166976923-LM-28-100",
+        "variant_id": "6abf0d117d861eb2f7d82dac",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：navy blue\n尺寸：110",
+        "sku": "1005013166976923-LM-28-110",
+        "variant_id": "6abf0d117d861eb2f7d82dad",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：navy blue\n尺寸：120",
+        "sku": "1005013166976923-LM-28-120",
+        "variant_id": "6abf0d117d861eb2f7d82dae",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：navy blue\n尺寸：130",
+        "sku": "1005013166976923-LM-28-130",
+        "variant_id": "6abf0d117d861eb2f7d82daf",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：navy blue\n尺寸：140",
+        "sku": "1005013166976923-LM-28-140",
+        "variant_id": "6abf0d117d861eb2f7d82db0",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：navy blue\n尺寸：150",
+        "sku": "1005013166976923-LM-28-150",
+        "variant_id": "6abf0d117d861eb2f7d82db1",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：navy blue\n尺寸：160",
+        "sku": "1005013166976923-LM-28-160",
+        "variant_id": "6abf0d117d861eb2f7d82db2",
+        "price": "US$10\n竞争性\n销售价格：US$10\n平均价格：US$10.45",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      }
+    ],
+    "sizes": [
+      "100",
+      "110",
+      "120",
+      "130",
+      "140",
+      "150",
+      "160"
+    ],
+    "glow_keyword_hit": false,
+    "glow_excerpt": null
+  },
+  {
+    "product_id": "6aaa9d193f35da0146b4137e",
+    "title": "Spring Autumn New Style Children's Clothing Sets Baby Girls O Neck Sweatshirt Pants Two Piece Set Kids Breathable Thin Tracksuit",
+    "captured_at": "2026-11-19T07:14:37.183Z",
+    "source": "https://merchant.joom.com/panel/products/6aaa9d193f35da0146b4137e",
+    "baseline": {
+      "shop": "jwh second",
+      "product_id": "6aaa9d193f35da0146b4137e",
+      "source": "https://merchant.joom.com/panel/analytics/orders/store/6a9d4221018d89bb9e5c22ef?limit=100&orderBy=openCount&order=desc",
+      "product_link": "https://merchant.joom.com/panel/products/6aaa9d193f35da0146b4137e",
+      "window": "2026-10-22 to 2026-11-18 UTC+3",
+      "impressions": 1220,
+      "clicks": 75,
+      "purchases": 1,
+      "cart": 8
+    },
+    "warnings": "1005010134825720\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n产品需要您的注意\n限售\n2\n需注意\n5\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\nRegional restrictions: copyright violation.\n该产品侵犯版权，无法在特定地区销售。如果您认为这是一个错误，请联系支持。\n国家： 阿尔巴尼亚、阿拉伯联合酋长国、阿塞拜疆、埃及、爱尔兰、爱沙尼亚、奥地利、澳大利亚、巴西、白俄罗斯、保加利亚、北马其顿、比利时、波兰、丹麦、德国、法国、芬兰、哥伦比亚、格鲁吉亚、哈萨克斯坦、韩国、荷兰、黑山、吉尔吉斯斯坦、加拿大、捷克、克罗地亚、拉脱维亚、立陶宛、卢森堡、罗马尼亚、马耳他、毛里塔尼亚、秘鲁、摩尔多瓦、墨西哥、南非、挪威、葡萄牙、瑞典、瑞士、塞尔维亚、塞浦路斯、沙特阿拉伯、斯洛伐克、斯洛文尼亚、乌克兰、乌兹别克斯坦、西班牙、希腊、新西兰、匈牙利、亚美尼亚、以色列、意大利、英国、智利\n",
+    "variants": [
+      {
+        "size_color": "颜色：sky blue\n尺寸：100",
+        "sku": "17377654550",
+        "variant_id": "6aaa9d193f35daf946b41380",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：sky blue\n尺寸：110",
+        "sku": "15490391326",
+        "variant_id": "6aaa9d193f35daf946b41381",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：sky blue\n尺寸：120",
+        "sku": "26483056403",
+        "variant_id": "6aaa9d193f35daf946b41382",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：sky blue\n尺寸：130",
+        "sku": "81095993842",
+        "variant_id": "6aaa9d193f35daf946b41383",
+        "price": "US$9.99\n定价偏高\n销售价格：US$8.99\n平均价格：US$8.99",
+        "inventory": "998\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：sky blue\n尺寸：140",
+        "sku": "52505595079",
+        "variant_id": "6aaa9d193f35daf946b41384",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：sky blue\n尺寸：150",
+        "sku": "79791115630",
+        "variant_id": "6aaa9d193f35daf946b41385",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：sky blue\n尺寸：160",
+        "sku": "52681131359",
+        "variant_id": "6aaa9d193f35daf946b41386",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：100",
+        "sku": "98763043137",
+        "variant_id": "6aaa9d193f35daf946b41387",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：110",
+        "sku": "64347081314",
+        "variant_id": "6aaa9d193f35daf946b41388",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：120",
+        "sku": "29573252030",
+        "variant_id": "6aaa9d193f35daf946b41389",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：130",
+        "sku": "56459938818",
+        "variant_id": "6aaa9d193f35daf946b4138a",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：140",
+        "sku": "74881917700",
+        "variant_id": "6aaa9d193f35daf946b4138b",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：150",
+        "sku": "34990650833",
+        "variant_id": "6aaa9d193f35daf946b4138c",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：160",
+        "sku": "30256898357",
+        "variant_id": "6aaa9d193f35daf946b4138d",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：100",
+        "sku": "72207312892",
+        "variant_id": "6aaa9d193f35daf946b4138e",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：110",
+        "sku": "61319306927",
+        "variant_id": "6aaa9d193f35daf946b4138f",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：120",
+        "sku": "87681257640",
+        "variant_id": "6aaa9d193f35daf946b41390",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：130",
+        "sku": "61740282546",
+        "variant_id": "6aaa9d193f35daf946b41391",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：140",
+        "sku": "64337400794",
+        "variant_id": "6aaa9d193f35daf946b41392",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：150",
+        "sku": "71260963561",
+        "variant_id": "6aaa9d193f35daf946b41393",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：160",
+        "sku": "51723684470",
+        "variant_id": "6aaa9d193f35daf946b41394",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：100",
+        "sku": "87121373569",
+        "variant_id": "6aaa9d193f35daf946b41395",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：110",
+        "sku": "77597132750",
+        "variant_id": "6aaa9d193f35daf946b41396",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：120",
+        "sku": "63145617161",
+        "variant_id": "6aaa9d193f35daf946b41397",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：130",
+        "sku": "43638688693",
+        "variant_id": "6aaa9d193f35daf946b41398",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：140",
+        "sku": "79034889282",
+        "variant_id": "6aaa9d193f35daf946b41399",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：150",
+        "sku": "25914465694",
+        "variant_id": "6aaa9d193f35daf946b4139a",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：160",
+        "sku": "51732475297",
+        "variant_id": "6aaa9d193f35daf946b4139b",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：100",
+        "sku": "83325248837",
+        "variant_id": "6aaa9d193f35daf946b4139c",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：110",
+        "sku": "89972521589",
+        "variant_id": "6aaa9d193f35daf946b4139d",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：120",
+        "sku": "81036803466",
+        "variant_id": "6aaa9d193f35daf946b4139e",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：130",
+        "sku": "40727134266",
+        "variant_id": "6aaa9d193f35daf946b4139f",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：140",
+        "sku": "81569451162",
+        "variant_id": "6aaa9d193f35daf946b413a0",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：150",
+        "sku": "23470769598",
+        "variant_id": "6aaa9d193f35daf946b413a1",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：160",
+        "sku": "61496326315",
+        "variant_id": "6aaa9d193f35daf946b413a2",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：100",
+        "sku": "94554292457",
+        "variant_id": "6aaa9d193f35daf946b413a3",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：110",
+        "sku": "67636270268",
+        "variant_id": "6aaa9d193f35daf946b413a4",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：120",
+        "sku": "71774545772",
+        "variant_id": "6aaa9d193f35daf946b413a5",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：130",
+        "sku": "28816921747",
+        "variant_id": "6aaa9d193f35daf946b413a6",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：140",
+        "sku": "50913756657",
+        "variant_id": "6aaa9d193f35daf946b413a7",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：150",
+        "sku": "87854065419",
+        "variant_id": "6aaa9d193f35daf946b413a8",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：160",
+        "sku": "15674135101",
+        "variant_id": "6aaa9d193f35daf946b413a9",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：100",
+        "sku": "21815119176",
+        "variant_id": "6aaa9d193f35daf946b413aa",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：110",
+        "sku": "55802685410",
+        "variant_id": "6aaa9d193f35daf946b413ab",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：120",
+        "sku": "43593648519",
+        "variant_id": "6aaa9d193f35daf946b413ac",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：130",
+        "sku": "12870530510",
+        "variant_id": "6aaa9d193f35daf946b413ad",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：140",
+        "sku": "33404441768",
+        "variant_id": "6aaa9d193f35daf946b413ae",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：150",
+        "sku": "29673761612",
+        "variant_id": "6aaa9d193f35daf946b413af",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：160",
+        "sku": "74132247993",
+        "variant_id": "6aaa9d193f35daf946b413b0",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      }
+    ],
+    "sizes": [
+      "100",
+      "110",
+      "120",
+      "130",
+      "140",
+      "150",
+      "160"
+    ],
+    "glow_keyword_hit": false,
+    "glow_excerpt": null
+  },
+  {
+    "product_id": "6ac2453ee6eb45016fa3507f",
+    "title": "Kids Solid Color Hoodie and Sweatpants Set, Unisex 2-Piece Tracksuit",
+    "captured_at": "2026-11-19T07:14:56.241Z",
+    "source": "https://merchant.joom.com/panel/products/6ac2453ee6eb45016fa3507f",
+    "baseline": {
+      "shop": "jh",
+      "product_id": "6ac2453ee6eb45016fa3507f",
+      "source": "https://merchant.joom.com/panel/analytics/orders/store/6a8c4690b1e1819ed91f9baa?limit=100&orderBy=openCount&order=desc",
+      "product_link": "https://merchant.joom.com/panel/products/6ac2453ee6eb45016fa3507f",
+      "window": "2026-10-22 to 2026-11-18 UTC+3",
+      "impressions": 273,
+      "clicks": 21,
+      "purchases": 0,
+      "cart": 4
+    },
+    "warnings": "1005013087344724\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n产品需要您的注意\n限售\n1\n需注意\n3\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n",
+    "variants": [
+      {
+        "size_color": "颜色：black\n尺寸：100",
+        "sku": "1005013087344724-black-100",
+        "variant_id": "6ac2453ee6eb45456fa35081",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：110",
+        "sku": "1005013087344724-black-110",
+        "variant_id": "6ac2453ee6eb45456fa35082",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：120",
+        "sku": "1005013087344724-black-120",
+        "variant_id": "6ac2453ee6eb45456fa35083",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：130",
+        "sku": "1005013087344724-black-130",
+        "variant_id": "6ac2453ee6eb45456fa35084",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：140",
+        "sku": "1005013087344724-black-140",
+        "variant_id": "6ac2453ee6eb45456fa35085",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：150",
+        "sku": "1005013087344724-black-150",
+        "variant_id": "6ac2453ee6eb45456fa35086",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：160",
+        "sku": "1005013087344724-black-160",
+        "variant_id": "6ac2453ee6eb45456fa35087",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：100",
+        "sku": "1005013087344724-white-100",
+        "variant_id": "6ac2453ee6eb45456fa35088",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：110",
+        "sku": "1005013087344724-white-110",
+        "variant_id": "6ac2453ee6eb45456fa35089",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：120",
+        "sku": "1005013087344724-white-120",
+        "variant_id": "6ac2453ee6eb45456fa3508a",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：130",
+        "sku": "1005013087344724-white-130",
+        "variant_id": "6ac2453ee6eb45456fa3508b",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：140",
+        "sku": "1005013087344724-white-140",
+        "variant_id": "6ac2453ee6eb45456fa3508c",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：150",
+        "sku": "1005013087344724-white-150",
+        "variant_id": "6ac2453ee6eb45456fa3508d",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：white\n尺寸：160",
+        "sku": "1005013087344724-white-160",
+        "variant_id": "6ac2453ee6eb45456fa3508e",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：100",
+        "sku": "1005013087344724-red-100",
+        "variant_id": "6ac2453ee6eb45456fa3508f",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：110",
+        "sku": "1005013087344724-red-110",
+        "variant_id": "6ac2453ee6eb45456fa35090",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：120",
+        "sku": "1005013087344724-red-120",
+        "variant_id": "6ac2453ee6eb45456fa35091",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：130",
+        "sku": "1005013087344724-red-130",
+        "variant_id": "6ac2453ee6eb45456fa35092",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：140",
+        "sku": "1005013087344724-red-140",
+        "variant_id": "6ac2453ee6eb45456fa35093",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：150",
+        "sku": "1005013087344724-red-150",
+        "variant_id": "6ac2453ee6eb45456fa35094",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：red\n尺寸：160",
+        "sku": "1005013087344724-red-160",
+        "variant_id": "6ac2453ee6eb45456fa35095",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：100",
+        "sku": "1005013087344724-blue-100",
+        "variant_id": "6ac2453ee6eb45456fa35096",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：110",
+        "sku": "1005013087344724-blue-110",
+        "variant_id": "6ac2453ee6eb45456fa35097",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：120",
+        "sku": "1005013087344724-blue-120",
+        "variant_id": "6ac2453ee6eb45456fa35098",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：130",
+        "sku": "1005013087344724-blue-130",
+        "variant_id": "6ac2453ee6eb45456fa35099",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：140",
+        "sku": "1005013087344724-blue-140",
+        "variant_id": "6ac2453ee6eb45456fa3509a",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：150",
+        "sku": "1005013087344724-blue-150",
+        "variant_id": "6ac2453ee6eb45456fa3509b",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：160",
+        "sku": "1005013087344724-blue-160",
+        "variant_id": "6ac2453ee6eb45456fa3509c",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：100",
+        "sku": "1005013087344724-green-100",
+        "variant_id": "6ac2453ee6eb45456fa3509d",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：110",
+        "sku": "1005013087344724-green-110",
+        "variant_id": "6ac2453ee6eb45456fa3509e",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：120",
+        "sku": "1005013087344724-green-120",
+        "variant_id": "6ac2453ee6eb45456fa3509f",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：130",
+        "sku": "1005013087344724-green-130",
+        "variant_id": "6ac2453ee6eb45456fa350a0",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：140",
+        "sku": "1005013087344724-green-140",
+        "variant_id": "6ac2453ee6eb45456fa350a1",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：150",
+        "sku": "1005013087344724-green-150",
+        "variant_id": "6ac2453ee6eb45456fa350a2",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：160",
+        "sku": "1005013087344724-green-160",
+        "variant_id": "6ac2453ee6eb45456fa350a3",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：100",
+        "sku": "1005013087344724-yellow-100",
+        "variant_id": "6ac2453ee6eb45456fa350a4",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：110",
+        "sku": "1005013087344724-yellow-110",
+        "variant_id": "6ac2453ee6eb45456fa350a5",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：120",
+        "sku": "1005013087344724-yellow-120",
+        "variant_id": "6ac2453ee6eb45456fa350a6",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：130",
+        "sku": "1005013087344724-yellow-130",
+        "variant_id": "6ac2453ee6eb45456fa350a7",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：140",
+        "sku": "1005013087344724-yellow-140",
+        "variant_id": "6ac2453ee6eb45456fa350a8",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：150",
+        "sku": "1005013087344724-yellow-150",
+        "variant_id": "6ac2453ee6eb45456fa350a9",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：yellow\n尺寸：160",
+        "sku": "1005013087344724-yellow-160",
+        "variant_id": "6ac2453ee6eb45456fa350aa",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：100",
+        "sku": "1005013087344724-pink-100",
+        "variant_id": "6ac2453ee6eb45456fa350ab",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：110",
+        "sku": "1005013087344724-pink-110",
+        "variant_id": "6ac2453ee6eb45456fa350ac",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：120",
+        "sku": "1005013087344724-pink-120",
+        "variant_id": "6ac2453ee6eb45456fa350ad",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：130",
+        "sku": "1005013087344724-pink-130",
+        "variant_id": "6ac2453ee6eb45456fa350ae",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：140",
+        "sku": "1005013087344724-pink-140",
+        "variant_id": "6ac2453ee6eb45456fa350af",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：150",
+        "sku": "1005013087344724-pink-150",
+        "variant_id": "6ac2453ee6eb45456fa350b0",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：pink\n尺寸：160",
+        "sku": "1005013087344724-pink-160",
+        "variant_id": "6ac2453ee6eb45456fa350b1",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：100",
+        "sku": "1005013087344724-purple-100",
+        "variant_id": "6ac2453ee6eb45456fa350b2",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：110",
+        "sku": "1005013087344724-purple-110",
+        "variant_id": "6ac2453ee6eb45456fa350b3",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：120",
+        "sku": "1005013087344724-purple-120",
+        "variant_id": "6ac2453ee6eb45456fa350b4",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：130",
+        "sku": "1005013087344724-purple-130",
+        "variant_id": "6ac2453ee6eb45456fa350b5",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：140",
+        "sku": "1005013087344724-purple-140",
+        "variant_id": "6ac2453ee6eb45456fa350b6",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：150",
+        "sku": "1005013087344724-purple-150",
+        "variant_id": "6ac2453ee6eb45456fa350b7",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：purple\n尺寸：160",
+        "sku": "1005013087344724-purple-160",
+        "variant_id": "6ac2453ee6eb45456fa350b8",
+        "price": "US$20\n竞争性\n销售价格：US$18\n平均价格：US$18.94",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      }
+    ],
+    "sizes": [
+      "100",
+      "110",
+      "120",
+      "130",
+      "140",
+      "150",
+      "160"
+    ],
+    "glow_keyword_hit": false,
+    "glow_excerpt": null
+  },
+  {
+    "product_id": "6a8b0ca532e0d1010fa6c8ad",
+    "title": "Alvin and the Chipmunks Printed T-Shirt for Kids, Cotton Short Sleeve",
+    "captured_at": "2026-11-19T07:15:05.210Z",
+    "source": "https://merchant.joom.com/panel/products/6a8b0ca532e0d1010fa6c8ad",
+    "baseline": {
+      "shop": "Nineteen Wear",
+      "product_id": "6a8b0ca532e0d1010fa6c8ad",
+      "source": "https://merchant.joom.com/panel/analytics/orders/store/6a817b93f5d3934528e70df7?limit=100&orderBy=openCount&order=desc",
+      "product_link": "https://merchant.joom.com/panel/products/6a8b0ca532e0d1010fa6c8ad",
+      "window": "2026-10-22 to 2026-11-18 UTC+3",
+      "impressions": 653,
+      "clicks": 11,
+      "purchases": 0,
+      "cart": 5
+    },
+    "warnings": "1005010397517138\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n产品需要您的注意\n限售\n1\n需注意\n1\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n",
+    "variants": [
+      {
+        "size_color": "颜色：Khaki\n尺寸：100",
+        "sku": "1005010397517138-1-100",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8af",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Khaki\n尺寸：110",
+        "sku": "1005010397517138-1-110",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8b0",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Khaki\n尺寸：120",
+        "sku": "1005010397517138-1-120",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8b1",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Khaki\n尺寸：130",
+        "sku": "1005010397517138-1-130",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8b2",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Khaki\n尺寸：140",
+        "sku": "1005010397517138-1-140",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8b3",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Khaki\n尺寸：150",
+        "sku": "1005010397517138-1-150",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8b4",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Khaki\n尺寸：160",
+        "sku": "1005010397517138-1-160",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8b5",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：army green\n尺寸：100",
+        "sku": "1005010397517138-2-100",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8b6",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：army green\n尺寸：110",
+        "sku": "1005010397517138-2-110",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8b7",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：army green\n尺寸：120",
+        "sku": "1005010397517138-2-120",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8b8",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：army green\n尺寸：130",
+        "sku": "1005010397517138-2-130",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8b9",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：army green\n尺寸：140",
+        "sku": "1005010397517138-2-140",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8ba",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：army green\n尺寸：150",
+        "sku": "1005010397517138-2-150",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8bb",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：army green\n尺寸：160",
+        "sku": "1005010397517138-2-160",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8bc",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：100",
+        "sku": "1005010397517138-3-100",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8bd",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：110",
+        "sku": "1005010397517138-3-110",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8be",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：120",
+        "sku": "1005010397517138-3-120",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8bf",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：130",
+        "sku": "1005010397517138-3-130",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8c0",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：140",
+        "sku": "1005010397517138-3-140",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8c1",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：150",
+        "sku": "1005010397517138-3-150",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8c2",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：160",
+        "sku": "1005010397517138-3-160",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8c3",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：100",
+        "sku": "1005010397517138-4-100",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8c4",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：110",
+        "sku": "1005010397517138-4-110",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8c5",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：120",
+        "sku": "1005010397517138-4-120",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8c6",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：130",
+        "sku": "1005010397517138-4-130",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8c7",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：140",
+        "sku": "1005010397517138-4-140",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8c8",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：150",
+        "sku": "1005010397517138-4-150",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8c9",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：green\n尺寸：160",
+        "sku": "1005010397517138-4-160",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8ca",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：GRAY\n尺寸：100",
+        "sku": "1005010397517138-5-100",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8cb",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：GRAY\n尺寸：110",
+        "sku": "1005010397517138-5-110",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8cc",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：GRAY\n尺寸：120",
+        "sku": "1005010397517138-5-120",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8cd",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：GRAY\n尺寸：130",
+        "sku": "1005010397517138-5-130",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8ce",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：GRAY\n尺寸：140",
+        "sku": "1005010397517138-5-140",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8cf",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：GRAY\n尺寸：150",
+        "sku": "1005010397517138-5-150",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8d0",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：GRAY\n尺寸：160",
+        "sku": "1005010397517138-5-160",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8d1",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：100",
+        "sku": "1005010397517138-6-100",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8d2",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：110",
+        "sku": "1005010397517138-6-110",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8d3",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：120",
+        "sku": "1005010397517138-6-120",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8d4",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：130",
+        "sku": "1005010397517138-6-130",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8d5",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：140",
+        "sku": "1005010397517138-6-140",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8d6",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：150",
+        "sku": "1005010397517138-6-150",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8d7",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：160",
+        "sku": "1005010397517138-6-160",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8d8",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：100",
+        "sku": "1005010397517138-7-100",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8d9",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：110",
+        "sku": "1005010397517138-7-110",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8da",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：120",
+        "sku": "1005010397517138-7-120",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8db",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：130",
+        "sku": "1005010397517138-7-130",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8dc",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：140",
+        "sku": "1005010397517138-7-140",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8dd",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：150",
+        "sku": "1005010397517138-7-150",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8de",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：160",
+        "sku": "1005010397517138-7-160",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8df",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：100",
+        "sku": "1005010397517138-8-100",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8e0",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：110",
+        "sku": "1005010397517138-8-110",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8e1",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：120",
+        "sku": "1005010397517138-8-120",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8e2",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：130",
+        "sku": "1005010397517138-8-130",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8e3",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：140",
+        "sku": "1005010397517138-8-140",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8e4",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.41\n平均价格：US$3.79",
+        "inventory": "998\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：150",
+        "sku": "1005010397517138-8-150",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8e5",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：160",
+        "sku": "1005010397517138-8-160",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8e6",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：100",
+        "sku": "1005010397517138-9-100",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8e7",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：110",
+        "sku": "1005010397517138-9-110",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8e8",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：120",
+        "sku": "1005010397517138-9-120",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8e9",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：130",
+        "sku": "1005010397517138-9-130",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8ea",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：140",
+        "sku": "1005010397517138-9-140",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8eb",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：150",
+        "sku": "1005010397517138-9-150",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8ec",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：160",
+        "sku": "1005010397517138-9-160",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8ed",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：100",
+        "sku": "1005010397517138-10-100",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8ee",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：110",
+        "sku": "1005010397517138-10-110",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8ef",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：120",
+        "sku": "1005010397517138-10-120",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8f0",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：130",
+        "sku": "1005010397517138-10-130",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8f1",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：140",
+        "sku": "1005010397517138-10-140",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8f2",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：150",
+        "sku": "1005010397517138-10-150",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8f3",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：160",
+        "sku": "1005010397517138-10-160",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8f4",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：100",
+        "sku": "1005010397517138-11-100",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8f5",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：110",
+        "sku": "1005010397517138-11-110",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8f6",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：120",
+        "sku": "1005010397517138-11-120",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8f7",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：130",
+        "sku": "1005010397517138-11-130",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8f8",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：140",
+        "sku": "1005010397517138-11-140",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8f9",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.41\n平均价格：US$3.79",
+        "inventory": "998\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：150",
+        "sku": "1005010397517138-11-150",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8fa",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：160",
+        "sku": "1005010397517138-11-160",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8fb",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：100",
+        "sku": "1005010397517138-12-100",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8fc",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：110",
+        "sku": "1005010397517138-12-110",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8fd",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：120",
+        "sku": "1005010397517138-12-120",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8fe",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：130",
+        "sku": "1005010397517138-12-130",
+        "variant_id": "6a8b0ca532e0d17d0fa6c8ff",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：140",
+        "sku": "1005010397517138-12-140",
+        "variant_id": "6a8b0ca532e0d17d0fa6c900",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.41\n平均价格：US$3.79",
+        "inventory": "998\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：150",
+        "sku": "1005010397517138-12-150",
+        "variant_id": "6a8b0ca532e0d17d0fa6c901",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.79",
+        "inventory": "998\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：160",
+        "sku": "1005010397517138-12-160",
+        "variant_id": "6a8b0ca532e0d17d0fa6c902",
+        "price": "US$3.99\n竞争性\n销售价格：US$3.56\n平均价格：US$3.77",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      }
+    ],
+    "sizes": [
+      "100",
+      "110",
+      "120",
+      "130",
+      "140",
+      "150",
+      "160"
+    ],
+    "glow_keyword_hit": false,
+    "glow_excerpt": null
+  },
+  {
+    "product_id": "6a847121c0b112015bfa29b5",
+    "title": "Camiseta Digital Circus Jax 100% Algodón – T-Shirt Manga Corta de Verano Hombre y Mujer Streetwear 2026",
+    "captured_at": "2026-11-19T07:15:14.583Z",
+    "source": "https://merchant.joom.com/panel/products/6a847121c0b112015bfa29b5",
+    "baseline": {
+      "shop": "Nineteen Wear",
+      "product_id": "6a847121c0b112015bfa29b5",
+      "source": "https://merchant.joom.com/panel/analytics/orders/store/6a817b93f5d3934528e70df7?limit=100&orderBy=openCount&order=desc",
+      "product_link": "https://merchant.joom.com/panel/products/6a847121c0b112015bfa29b5",
+      "window": "2026-10-22 to 2026-11-18 UTC+3",
+      "impressions": 255,
+      "clicks": 18,
+      "purchases": 2,
+      "cart": 5
+    },
+    "warnings": "TXYL0193\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n产品需要您的注意\n需注意\n1\n产品有重复图片\n请从产品中删除重复图片。\n图片： 1\n",
+    "variants": [
+      {
+        "size_color": "颜色：as the picture\n尺寸：S",
+        "sku": "TXYL0193-S-as the picture1",
+        "variant_id": "6a847121c0b1124f5bfa29b7",
+        "price": "US$3.98\n定价偏高\n销售价格：US$3.56\n平均价格：US$3.56",
+        "inventory": "998\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：M",
+        "sku": "TXYL0193-M-as the picture1",
+        "variant_id": "6a847121c0b1124f5bfa29b8",
+        "price": "US$3.98\n定价偏高\n销售价格：US$3.56\n平均价格：US$3.56",
+        "inventory": "998\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：L",
+        "sku": "TXYL0193-L-as the picture1",
+        "variant_id": "6a847121c0b1124f5bfa29b9",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XL",
+        "sku": "TXYL0193-XL-as the picture1",
+        "variant_id": "6a847121c0b1124f5bfa29ba",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：2XL",
+        "sku": "TXYL0193-2XL-as the picture1",
+        "variant_id": "6a847121c0b1124f5bfa29bb",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：3XL",
+        "sku": "TXYL0193-3XL-as the picture1",
+        "variant_id": "6a847121c0b1124f5bfa29bc",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XS",
+        "sku": "TXYL0193-XS-as the picture1",
+        "variant_id": "6a847121c0b1124f5bfa29bd",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：S",
+        "sku": "TXYL0193-S-as the picture2",
+        "variant_id": "6a847121c0b1124f5bfa29be",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：M",
+        "sku": "TXYL0193-M-as the picture2",
+        "variant_id": "6a847121c0b1124f5bfa29bf",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：L",
+        "sku": "TXYL0193-L-as the picture2",
+        "variant_id": "6a847121c0b1124f5bfa29c0",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XL",
+        "sku": "TXYL0193-XL-as the picture2",
+        "variant_id": "6a847121c0b1124f5bfa29c1",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：2XL",
+        "sku": "TXYL0193-2XL-as the picture2",
+        "variant_id": "6a847121c0b1124f5bfa29c2",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：3XL",
+        "sku": "TXYL0193-3XL-as the picture2",
+        "variant_id": "6a847121c0b1124f5bfa29c3",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XS",
+        "sku": "TXYL0193-XS-as the picture2",
+        "variant_id": "6a847121c0b1124f5bfa29c4",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：S",
+        "sku": "TXYL0193-S-as the picture3",
+        "variant_id": "6a847121c0b1124f5bfa29c5",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：M",
+        "sku": "TXYL0193-M-as the picture3",
+        "variant_id": "6a847121c0b1124f5bfa29c6",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：L",
+        "sku": "TXYL0193-L-as the picture3",
+        "variant_id": "6a847121c0b1124f5bfa29c7",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XL",
+        "sku": "TXYL0193-XL-as the picture3",
+        "variant_id": "6a847121c0b1124f5bfa29c8",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：2XL",
+        "sku": "TXYL0193-2XL-as the picture3",
+        "variant_id": "6a847121c0b1124f5bfa29c9",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：3XL",
+        "sku": "TXYL0193-3XL-as the picture3",
+        "variant_id": "6a847121c0b1124f5bfa29ca",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XS",
+        "sku": "TXYL0193-XS-as the picture3",
+        "variant_id": "6a847121c0b1124f5bfa29cb",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：S",
+        "sku": "TXYL0193-S-as the picture4",
+        "variant_id": "6a847121c0b1124f5bfa29cc",
+        "price": "US$3.98",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：M",
+        "sku": "TXYL0193-M-as the picture4",
+        "variant_id": "6a847121c0b1124f5bfa29cd",
+        "price": "US$3.98",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：L",
+        "sku": "TXYL0193-L-as the picture4",
+        "variant_id": "6a847121c0b1124f5bfa29ce",
+        "price": "US$3.98",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XL",
+        "sku": "TXYL0193-XL-as the picture4",
+        "variant_id": "6a847121c0b1124f5bfa29cf",
+        "price": "US$3.98",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：2XL",
+        "sku": "TXYL0193-2XL-as the picture4",
+        "variant_id": "6a847121c0b1124f5bfa29d0",
+        "price": "US$3.98",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：3XL",
+        "sku": "TXYL0193-3XL-as the picture4",
+        "variant_id": "6a847121c0b1124f5bfa29d1",
+        "price": "US$3.98",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XS",
+        "sku": "TXYL0193-XS-as the picture4",
+        "variant_id": "6a847121c0b1124f5bfa29d2",
+        "price": "US$3.98",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：S",
+        "sku": "TXYL0193-S-as the picture5",
+        "variant_id": "6a847121c0b1124f5bfa29d3",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：M",
+        "sku": "TXYL0193-M-as the picture5",
+        "variant_id": "6a847121c0b1124f5bfa29d4",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：L",
+        "sku": "TXYL0193-L-as the picture5",
+        "variant_id": "6a847121c0b1124f5bfa29d5",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XL",
+        "sku": "TXYL0193-XL-as the picture5",
+        "variant_id": "6a847121c0b1124f5bfa29d6",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：2XL",
+        "sku": "TXYL0193-2XL-as the picture5",
+        "variant_id": "6a847121c0b1124f5bfa29d7",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：3XL",
+        "sku": "TXYL0193-3XL-as the picture5",
+        "variant_id": "6a847121c0b1124f5bfa29d8",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XS",
+        "sku": "TXYL0193-XS-as the picture5",
+        "variant_id": "6a847121c0b1124f5bfa29d9",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      }
+    ],
+    "sizes": [
+      "2XL",
+      "3XL",
+      "L",
+      "M",
+      "S",
+      "XL",
+      "XS"
+    ],
+    "glow_keyword_hit": false,
+    "glow_excerpt": null
+  },
+  {
+    "product_id": "6acacbe8c936e8010a00028b",
+    "title": "2026 Men Women KPOP #97 V-neck T-shirt Personalize Print Teen Daily Sports Jersey Suitable for Street Dance Family Matching Kids",
+    "captured_at": "2026-11-19T07:14:41.651Z",
+    "source": "https://merchant.joom.com/panel/products/6acacbe8c936e8010a00028b",
+    "baseline": {
+      "shop": "jwh second",
+      "product_id": "6acacbe8c936e8010a00028b",
+      "source": "https://merchant.joom.com/panel/analytics/orders/store/6a9d4221018d89bb9e5c22ef?limit=100&orderBy=openCount&order=desc",
+      "product_link": "https://merchant.joom.com/panel/products/6acacbe8c936e8010a00028b",
+      "window": "2026-10-22 to 2026-11-18 UTC+3",
+      "impressions": 441,
+      "clicks": 69,
+      "purchases": 0,
+      "cart": 12
+    },
+    "warnings": "1005012433296951\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n产品需要您的注意\n限售\n1\n需注意\n1\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n",
+    "variants": [
+      {
+        "size_color": "颜色：blue\n尺寸：100",
+        "sku": "24379752268",
+        "variant_id": "6acacbe8c936e8130a000292",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：110",
+        "sku": "21592006544",
+        "variant_id": "6acacbe8c936e8130a000293",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：120",
+        "sku": "56500455062",
+        "variant_id": "6acacbe8c936e8130a000294",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：130",
+        "sku": "13909852712",
+        "variant_id": "6acacbe8c936e8130a000295",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：140",
+        "sku": "92589489906",
+        "variant_id": "6acacbe8c936e8130a000296",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：150",
+        "sku": "32590729815",
+        "variant_id": "6acacbe8c936e8130a000297",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：blue\n尺寸：160",
+        "sku": "86039289282",
+        "variant_id": "6acacbe8c936e8130a000298",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：100",
+        "sku": "27015844489",
+        "variant_id": "6acacbe8c936e8130a000299",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：110",
+        "sku": "38845792464",
+        "variant_id": "6acacbe8c936e8130a00029a",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：120",
+        "sku": "65515021065",
+        "variant_id": "6acacbe8c936e8130a00029b",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：130",
+        "sku": "49042230435",
+        "variant_id": "6acacbe8c936e8130a00029c",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：140",
+        "sku": "48242277573",
+        "variant_id": "6acacbe8c936e8130a00029d",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：150",
+        "sku": "18089242852",
+        "variant_id": "6acacbe8c936e8130a00029e",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：black\n尺寸：160",
+        "sku": "51471779941",
+        "variant_id": "6acacbe8c936e8130a00029f",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：sky blue\n尺寸：100",
+        "sku": "49982360218",
+        "variant_id": "6acacbe8c936e8130a0002a0",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：sky blue\n尺寸：110",
+        "sku": "60866351406",
+        "variant_id": "6acacbe8c936e8130a0002a1",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：sky blue\n尺寸：120",
+        "sku": "87091667714",
+        "variant_id": "6acacbe8c936e8130a0002a2",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：sky blue\n尺寸：130",
+        "sku": "51424060090",
+        "variant_id": "6acacbe8c936e8130a0002a3",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：sky blue\n尺寸：140",
+        "sku": "69787436915",
+        "variant_id": "6acacbe8c936e8130a0002a4",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：sky blue\n尺寸：150",
+        "sku": "76429727657",
+        "variant_id": "6acacbe8c936e8130a0002a5",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：sky blue\n尺寸：160",
+        "sku": "19639570089",
+        "variant_id": "6acacbe8c936e8130a0002a6",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：100",
+        "sku": "98500938700",
+        "variant_id": "6acacbe8c936e8130a0002a7",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：110",
+        "sku": "88976120967",
+        "variant_id": "6acacbe8c936e8130a0002a8",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：120",
+        "sku": "26088042173",
+        "variant_id": "6acacbe8c936e8130a0002a9",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：130",
+        "sku": "59623240541",
+        "variant_id": "6acacbe8c936e8130a0002aa",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：140",
+        "sku": "33145939012",
+        "variant_id": "6acacbe8c936e8130a0002ab",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：150",
+        "sku": "24450045922",
+        "variant_id": "6acacbe8c936e8130a0002ac",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：brown\n尺寸：160",
+        "sku": "16414572384",
+        "variant_id": "6acacbe8c936e8130a0002ad",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：100",
+        "sku": "44701018510",
+        "variant_id": "6acacbe8c936e8130a0002ae",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：110",
+        "sku": "53024081449",
+        "variant_id": "6acacbe8c936e8130a0002af",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：120",
+        "sku": "82301077253",
+        "variant_id": "6acacbe8c936e8130a0002b0",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：130",
+        "sku": "76534104788",
+        "variant_id": "6acacbe8c936e8130a0002b1",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：140",
+        "sku": "21096582316",
+        "variant_id": "6acacbe8c936e8130a0002b2",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：150",
+        "sku": "84968412180",
+        "variant_id": "6acacbe8c936e8130a0002b3",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：gold\n尺寸：160",
+        "sku": "54590520078",
+        "variant_id": "6acacbe8c936e8130a0002b4",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：100",
+        "sku": "47399713098",
+        "variant_id": "6acacbe8c936e8130a0002b5",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：110",
+        "sku": "22712822477",
+        "variant_id": "6acacbe8c936e8130a0002b6",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：120",
+        "sku": "99220385921",
+        "variant_id": "6acacbe8c936e8130a0002b7",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：130",
+        "sku": "82664487147",
+        "variant_id": "6acacbe8c936e8130a0002b8",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：140",
+        "sku": "26945853371",
+        "variant_id": "6acacbe8c936e8130a0002b9",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：150",
+        "sku": "28066649720",
+        "variant_id": "6acacbe8c936e8130a0002ba",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：grey\n尺寸：160",
+        "sku": "58742964089",
+        "variant_id": "6acacbe8c936e8130a0002bb",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：100",
+        "sku": "94562886449",
+        "variant_id": "6acacbe8c936e8130a0002bc",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：110",
+        "sku": "67195873994",
+        "variant_id": "6acacbe8c936e8130a0002bd",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：120",
+        "sku": "44007483453",
+        "variant_id": "6acacbe8c936e8130a0002be",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：130",
+        "sku": "81516704953",
+        "variant_id": "6acacbe8c936e8130a0002bf",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：140",
+        "sku": "97125040573",
+        "variant_id": "6acacbe8c936e8130a0002c0",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：150",
+        "sku": "95951428482",
+        "variant_id": "6acacbe8c936e8130a0002c1",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：beige\n尺寸：160",
+        "sku": "97226627885",
+        "variant_id": "6acacbe8c936e8130a0002c2",
+        "price": "US$5\n竞争性\n销售价格：US$5\n平均价格：US$5",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      }
+    ],
+    "sizes": [
+      "100",
+      "110",
+      "120",
+      "130",
+      "140",
+      "150",
+      "160"
+    ],
+    "glow_keyword_hit": false,
+    "glow_excerpt": null
+  },
+  {
+    "product_id": "6aaa83d0fb5605019bbfbdb9",
+    "title": "Long Sleeved Hoodies Sets for Girls Spring New Style Pullover Long Pant Two Piece Suit Children's Casual Outfits Kids Tracksuit",
+    "captured_at": "2026-11-19T07:14:46.739Z",
+    "source": "https://merchant.joom.com/panel/products/6aaa83d0fb5605019bbfbdb9",
+    "baseline": {
+      "shop": "jwh second",
+      "product_id": "6aaa83d0fb5605019bbfbdb9",
+      "source": "https://merchant.joom.com/panel/analytics/orders/store/6a9d4221018d89bb9e5c22ef?limit=100&orderBy=openCount&order=desc",
+      "product_link": "https://merchant.joom.com/panel/products/6aaa83d0fb5605019bbfbdb9",
+      "window": "2026-10-22 to 2026-11-18 UTC+3",
+      "impressions": 515,
+      "clicks": 30,
+      "purchases": 0,
+      "cart": 3
+    },
+    "warnings": "1005008575682765\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n产品需要您的注意\n限售\n1\n需注意\n3\nRegional restrictions: local regulation.\n由于当地法规，该产品在特定地区的销售受到限制。如果您认为这是一个错误，请联系支持。\n国家： 丹麦\n",
+    "variants": [
+      {
+        "size_color": "颜色：Grey\n尺寸：100",
+        "sku": "55049895029",
+        "variant_id": "6aaa83d0fb5605779bbfbdbb",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Grey\n尺寸：110",
+        "sku": "36403343082",
+        "variant_id": "6aaa83d0fb5605779bbfbdbc",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Grey\n尺寸：120",
+        "sku": "98164487561",
+        "variant_id": "6aaa83d0fb5605779bbfbdbd",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Grey\n尺寸：130",
+        "sku": "11859542488",
+        "variant_id": "6aaa83d0fb5605779bbfbdbe",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Grey\n尺寸：140",
+        "sku": "47083670267",
+        "variant_id": "6aaa83d0fb5605779bbfbdbf",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Grey\n尺寸：150",
+        "sku": "81793483049",
+        "variant_id": "6aaa83d0fb5605779bbfbdc0",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Grey\n尺寸：160",
+        "sku": "99534468925",
+        "variant_id": "6aaa83d0fb5605779bbfbdc1",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：100",
+        "sku": "20167183438",
+        "variant_id": "6aaa83d0fb5605779bbfbdc2",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：110",
+        "sku": "91359907605",
+        "variant_id": "6aaa83d0fb5605779bbfbdc3",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：120",
+        "sku": "62985509441",
+        "variant_id": "6aaa83d0fb5605779bbfbdc4",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：130",
+        "sku": "84325005674",
+        "variant_id": "6aaa83d0fb5605779bbfbdc5",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：140",
+        "sku": "49041066772",
+        "variant_id": "6aaa83d0fb5605779bbfbdc6",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：150",
+        "sku": "40275894693",
+        "variant_id": "6aaa83d0fb5605779bbfbdc7",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Dark Grey\n尺寸：160",
+        "sku": "32883711122",
+        "variant_id": "6aaa83d0fb5605779bbfbdc8",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：100",
+        "sku": "33538050678",
+        "variant_id": "6aaa83d0fb5605779bbfbdc9",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：110",
+        "sku": "26202400464",
+        "variant_id": "6aaa83d0fb5605779bbfbdca",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：120",
+        "sku": "42762262525",
+        "variant_id": "6aaa83d0fb5605779bbfbdcb",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：130",
+        "sku": "67439847376",
+        "variant_id": "6aaa83d0fb5605779bbfbdcc",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：140",
+        "sku": "14303807643",
+        "variant_id": "6aaa83d0fb5605779bbfbdcd",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：150",
+        "sku": "26234740675",
+        "variant_id": "6aaa83d0fb5605779bbfbdce",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Gold\n尺寸：160",
+        "sku": "95558903644",
+        "variant_id": "6aaa83d0fb5605779bbfbdcf",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：100",
+        "sku": "37175107087",
+        "variant_id": "6aaa83d0fb5605779bbfbdd0",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：110",
+        "sku": "29422750261",
+        "variant_id": "6aaa83d0fb5605779bbfbdd1",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：120",
+        "sku": "57318308224",
+        "variant_id": "6aaa83d0fb5605779bbfbdd2",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：130",
+        "sku": "58453614693",
+        "variant_id": "6aaa83d0fb5605779bbfbdd3",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：140",
+        "sku": "10979961723",
+        "variant_id": "6aaa83d0fb5605779bbfbdd4",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：150",
+        "sku": "98813814174",
+        "variant_id": "6aaa83d0fb5605779bbfbdd5",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Brown\n尺寸：160",
+        "sku": "63218035331",
+        "variant_id": "6aaa83d0fb5605779bbfbdd6",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Khaki\n尺寸：100",
+        "sku": "65104428173",
+        "variant_id": "6aaa83d0fb5605779bbfbdd7",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Khaki\n尺寸：110",
+        "sku": "39871733600",
+        "variant_id": "6aaa83d0fb5605779bbfbdd8",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Khaki\n尺寸：120",
+        "sku": "69981053441",
+        "variant_id": "6aaa83d0fb5605779bbfbdd9",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Khaki\n尺寸：130",
+        "sku": "80411046629",
+        "variant_id": "6aaa83d0fb5605779bbfbdda",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Khaki\n尺寸：140",
+        "sku": "23927062076",
+        "variant_id": "6aaa83d0fb5605779bbfbddb",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Khaki\n尺寸：150",
+        "sku": "18254476476",
+        "variant_id": "6aaa83d0fb5605779bbfbddc",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Khaki\n尺寸：160",
+        "sku": "38372475369",
+        "variant_id": "6aaa83d0fb5605779bbfbddd",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Green\n尺寸：100",
+        "sku": "68368997499",
+        "variant_id": "6aaa83d0fb5605779bbfbdde",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Green\n尺寸：110",
+        "sku": "85727602469",
+        "variant_id": "6aaa83d0fb5605779bbfbddf",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Green\n尺寸：120",
+        "sku": "38892649699",
+        "variant_id": "6aaa83d0fb5605779bbfbde0",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Green\n尺寸：130",
+        "sku": "14485420984",
+        "variant_id": "6aaa83d0fb5605779bbfbde1",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Green\n尺寸：140",
+        "sku": "85128830551",
+        "variant_id": "6aaa83d0fb5605779bbfbde2",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Green\n尺寸：150",
+        "sku": "58784793547",
+        "variant_id": "6aaa83d0fb5605779bbfbde3",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Green\n尺寸：160",
+        "sku": "83805460945",
+        "variant_id": "6aaa83d0fb5605779bbfbde4",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：100",
+        "sku": "42086472529",
+        "variant_id": "6aaa83d0fb5605779bbfbde5",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：110",
+        "sku": "48141611952",
+        "variant_id": "6aaa83d0fb5605779bbfbde6",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：120",
+        "sku": "50011448257",
+        "variant_id": "6aaa83d0fb5605779bbfbde7",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：130",
+        "sku": "94986113666",
+        "variant_id": "6aaa83d0fb5605779bbfbde8",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：140",
+        "sku": "63361648123",
+        "variant_id": "6aaa83d0fb5605779bbfbde9",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：150",
+        "sku": "83971630730",
+        "variant_id": "6aaa83d0fb5605779bbfbdea",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Ivory\n尺寸：160",
+        "sku": "48755304256",
+        "variant_id": "6aaa83d0fb5605779bbfbdeb",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Black\n尺寸：100",
+        "sku": "87222325390",
+        "variant_id": "6aaa83d0fb5605779bbfbdec",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Black\n尺寸：110",
+        "sku": "67810445582",
+        "variant_id": "6aaa83d0fb5605779bbfbded",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Black\n尺寸：120",
+        "sku": "49912740592",
+        "variant_id": "6aaa83d0fb5605779bbfbdee",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Black\n尺寸：130",
+        "sku": "29922353440",
+        "variant_id": "6aaa83d0fb5605779bbfbdef",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Black\n尺寸：140",
+        "sku": "15113108776",
+        "variant_id": "6aaa83d0fb5605779bbfbdf0",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Black\n尺寸：150",
+        "sku": "75850887265",
+        "variant_id": "6aaa83d0fb5605779bbfbdf1",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Black\n尺寸：160",
+        "sku": "11946668861",
+        "variant_id": "6aaa83d0fb5605779bbfbdf2",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：100",
+        "sku": "87870132334",
+        "variant_id": "6aaa83d0fb5605779bbfbdf3",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：110",
+        "sku": "48896061671",
+        "variant_id": "6aaa83d0fb5605779bbfbdf4",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：120",
+        "sku": "13736303473",
+        "variant_id": "6aaa83d0fb5605779bbfbdf5",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：130",
+        "sku": "14509098154",
+        "variant_id": "6aaa83d0fb5605779bbfbdf6",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：140",
+        "sku": "35231296193",
+        "variant_id": "6aaa83d0fb5605779bbfbdf7",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：150",
+        "sku": "27844452003",
+        "variant_id": "6aaa83d0fb5605779bbfbdf8",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Blue\n尺寸：160",
+        "sku": "70249976895",
+        "variant_id": "6aaa83d0fb5605779bbfbdf9",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：100",
+        "sku": "78393211609",
+        "variant_id": "6aaa83d0fb5605779bbfbdfa",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：110",
+        "sku": "93181368936",
+        "variant_id": "6aaa83d0fb5605779bbfbdfb",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：120",
+        "sku": "33497110395",
+        "variant_id": "6aaa83d0fb5605779bbfbdfc",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：130",
+        "sku": "48342275445",
+        "variant_id": "6aaa83d0fb5605779bbfbdfd",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：140",
+        "sku": "78388076229",
+        "variant_id": "6aaa83d0fb5605779bbfbdfe",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：150",
+        "sku": "58816506042",
+        "variant_id": "6aaa83d0fb5605779bbfbdff",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：SKY BLUE\n尺寸：160",
+        "sku": "70673669628",
+        "variant_id": "6aaa83d0fb5605779bbfbe00",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：100",
+        "sku": "98660374500",
+        "variant_id": "6aaa83d0fb5605779bbfbe01",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：110",
+        "sku": "63481196232",
+        "variant_id": "6aaa83d0fb5605779bbfbe02",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：120",
+        "sku": "71150833484",
+        "variant_id": "6aaa83d0fb5605779bbfbe03",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：130",
+        "sku": "32658641499",
+        "variant_id": "6aaa83d0fb5605779bbfbe04",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：140",
+        "sku": "57934952474",
+        "variant_id": "6aaa83d0fb5605779bbfbe05",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：150",
+        "sku": "30914524263",
+        "variant_id": "6aaa83d0fb5605779bbfbe06",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：Beige\n尺寸：160",
+        "sku": "33981866462",
+        "variant_id": "6aaa83d0fb5605779bbfbe07",
+        "price": "US$9.99\n竞争性\n销售价格：US$8.99\n平均价格：US$9.49",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      }
+    ],
+    "sizes": [
+      "100",
+      "110",
+      "120",
+      "130",
+      "140",
+      "150",
+      "160"
+    ],
+    "glow_keyword_hit": false,
+    "glow_excerpt": null
+  },
+  {
+    "product_id": "6a84510122176501953bc165",
+    "title": "Ted Lasso AFC Richmond BELIEVE Graphics Unisex 100%cotton Tshirt, Men Women High Quality Football Fashion Breathable Shirt",
+    "captured_at": "2026-11-19T07:15:00.552Z",
+    "source": "https://merchant.joom.com/panel/products/6a84510122176501953bc165",
+    "baseline": {
+      "shop": "Nineteen Wear",
+      "product_id": "6a84510122176501953bc165",
+      "source": "https://merchant.joom.com/panel/analytics/orders/store/6a817b93f5d3934528e70df7?limit=100&orderBy=openCount&order=desc",
+      "product_link": "https://merchant.joom.com/panel/products/6a84510122176501953bc165",
+      "window": "2026-10-22 to 2026-11-18 UTC+3",
+      "impressions": 145,
+      "clicks": 14,
+      "purchases": 0,
+      "cart": 6
+    },
+    "warnings": "TXYL0006\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n错误(1)\n需注意\n1\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n",
+    "variants": [
+      {
+        "size_color": "颜色：as the picture\n尺寸：M",
+        "sku": "TXYL0006-M-as the picture2",
+        "variant_id": "6a84510122176533953bc167",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：S",
+        "sku": "TXYL0006-S-as the picture2",
+        "variant_id": "6a84510122176533953bc168",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：L",
+        "sku": "TXYL0006-L-as the picture2",
+        "variant_id": "6a84510122176533953bc169",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XL",
+        "sku": "TXYL0006-XL-as the picture2",
+        "variant_id": "6a84510122176533953bc16a",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：2XL",
+        "sku": "TXYL0006-2XL-as the picture2",
+        "variant_id": "6a84510122176533953bc16b",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：3XL",
+        "sku": "TXYL0006-3XL-as the picture2",
+        "variant_id": "6a84510122176533953bc16c",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XS",
+        "sku": "TXYL0006-XS-as the picture2",
+        "variant_id": "6a84510122176533953bc16d",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：M",
+        "sku": "TXYL0006-M-as the picture3",
+        "variant_id": "6a84510122176533953bc16e",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：S",
+        "sku": "TXYL0006-S-as the picture3",
+        "variant_id": "6a84510122176533953bc16f",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：L",
+        "sku": "TXYL0006-L-as the picture3",
+        "variant_id": "6a84510122176533953bc170",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XL",
+        "sku": "TXYL0006-XL-as the picture3",
+        "variant_id": "6a84510122176533953bc171",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：2XL",
+        "sku": "TXYL0006-2XL-as the picture3",
+        "variant_id": "6a84510122176533953bc172",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：3XL",
+        "sku": "TXYL0006-3XL-as the picture3",
+        "variant_id": "6a84510122176533953bc173",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XS",
+        "sku": "TXYL0006-XS-as the picture3",
+        "variant_id": "6a84510122176533953bc174",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：M",
+        "sku": "TXYL0006-M-as the picture4",
+        "variant_id": "6a84510122176533953bc175",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.40\n平均价格：US$3.78",
+        "inventory": "998\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：S",
+        "sku": "TXYL0006-S-as the picture4",
+        "variant_id": "6a84510122176533953bc176",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：L",
+        "sku": "TXYL0006-L-as the picture4",
+        "variant_id": "6a84510122176533953bc177",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XL",
+        "sku": "TXYL0006-XL-as the picture4",
+        "variant_id": "6a84510122176533953bc178",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：2XL",
+        "sku": "TXYL0006-2XL-as the picture4",
+        "variant_id": "6a84510122176533953bc179",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：3XL",
+        "sku": "TXYL0006-3XL-as the picture4",
+        "variant_id": "6a84510122176533953bc17a",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XS",
+        "sku": "TXYL0006-XS-as the picture4",
+        "variant_id": "6a84510122176533953bc17b",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      }
+    ],
+    "sizes": [
+      "2XL",
+      "3XL",
+      "L",
+      "M",
+      "S",
+      "XL",
+      "XS"
+    ],
+    "glow_keyword_hit": false,
+    "glow_excerpt": null
+  },
+  {
+    "product_id": "6a869ee0e84e05012d269a52",
+    "title": "Women's Michael Jackson Portrait Cotton T-Shirt, Short Sleeve Crew Neck",
+    "captured_at": "2026-11-19T07:15:18.321Z",
+    "source": "https://merchant.joom.com/panel/products/6a869ee0e84e05012d269a52",
+    "baseline": {
+      "shop": "Nineteen Wear",
+      "product_id": "6a869ee0e84e05012d269a52",
+      "source": "https://merchant.joom.com/panel/analytics/orders/store/6a817b93f5d3934528e70df7?limit=100&orderBy=openCount&order=desc",
+      "product_link": "https://merchant.joom.com/panel/products/6a869ee0e84e05012d269a52",
+      "window": "2026-10-22 to 2026-11-18 UTC+3",
+      "impressions": 457,
+      "clicks": 22,
+      "purchases": 2,
+      "cart": 4
+    },
+    "warnings": "TXYL0283\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n产品需要您的注意\n需注意\n2\n产品有重复图片\n请从产品中删除重复图片。\n图片： 1\n产品内容不一致\nCheck the highlighted attributes and disable the wrong value or edit the product card.\n",
+    "variants": [
+      {
+        "size_color": "颜色：as the picture\n尺寸：S",
+        "sku": "TXYL0283-S-as the picture1",
+        "variant_id": "6a869ee0e84e05bc2d269a55",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.46\n平均价格：US$3.67",
+        "inventory": "995\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：M",
+        "sku": "TXYL0283-M-as the picture1",
+        "variant_id": "6a869ee0e84e05bc2d269a56",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.55\n平均价格：US$3.98",
+        "inventory": "998\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：L",
+        "sku": "TXYL0283-L-as the picture1",
+        "variant_id": "6a869ee0e84e05bc2d269a57",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.55\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XL",
+        "sku": "TXYL0283-XL-as the picture1",
+        "variant_id": "6a869ee0e84e05bc2d269a58",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.55\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：2XL",
+        "sku": "TXYL0283-2XL-as the picture1",
+        "variant_id": "6a869ee0e84e05bc2d269a59",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.55\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：3XL",
+        "sku": "TXYL0283-3XL-as the picture1",
+        "variant_id": "6a869ee0e84e05bc2d269a5a",
+        "price": "US$3.98\n竞争性\n销售价格：US$3.55\n平均价格：US$3.76",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XXS",
+        "sku": "TXYL0283-XXS-as the picture1",
+        "variant_id": "6afe61eca32f8097ef173c3e",
+        "price": "US$3.98\n销售价格：US$3.58",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      },
+      {
+        "size_color": "颜色：as the picture\n尺寸：XS",
+        "sku": "TXYL0283-XS-as the picture1",
+        "variant_id": "6afe61eca32f8097ef173c3f",
+        "price": "US$3.98\n销售价格：US$3.58",
+        "inventory": "999\n显示所有仓库（1）",
+        "default_shipping": "US$0"
+      }
+    ],
+    "sizes": [
+      "2XL",
+      "3XL",
+      "L",
+      "M",
+      "S",
+      "XL",
+      "XS",
+      "XXS"
+    ],
+    "glow_keyword_hit": false,
+    "glow_excerpt": null
+  }
+]

@@ -1,0 +1,356 @@
+{
+  "recorded_at": "2026-11-19T11:13:02.195381+08:00",
+  "count": 10,
+  "shops": {
+    "Nineteen Wear": 4,
+    "jwh second": 5,
+    "jh": 1
+  },
+  "kinds": {
+    "短袖": 8,
+    "儿童拉链卫衣": 2
+  },
+  "selection_window": "2026-10-21–2026-11-17",
+  "source_updated_at_observed": "2026-11-18 16:45:46（后台显示，时区未注明）",
+  "catalog_scope": "三店各点击降序首100条，共300条可见记录",
+  "baseline_total": {
+    "impressions": 1604,
+    "clicks": 141,
+    "cart": 53,
+    "purchases": 10
+  },
+  "image_warnings": [],
+  "items": [
+    {
+      "suggestion_id": "product-optimize-20261119-cart-b2-6a8c4744b1e18101d91fa55b",
+      "product_id": "6a8c4744b1e18101d91fa55b",
+      "shop": "Nineteen Wear",
+      "shop_id": "6a817b93f5d3934528e70df7",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T11:06:09.060576+08:00",
+      "status": "已保存、刷新且重开编辑器核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 1,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 94,
+        "clicks": 16,
+        "cart": 5,
+        "purchases": 1
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "搜索标签",
+        "图案/领型属性"
+      ],
+      "attributes_persisted": {
+        "Decoration": "Decorationprint1/1"
+      },
+      "existing_variants_stock_prices_shipping_images_category_unchanged": true,
+      "observed_review_pending_at_save": true,
+      "source_before": "商品优化/2026-11-19/第二批加购低成交10款优化/6a8c4744b1e18101d91fa55b-before.json",
+      "source_after": "商品优化/2026-11-19/第二批加购低成交10款优化/6a8c4744b1e18101d91fa55b-after.json",
+      "source_finalcheck": "商品优化/2026-11-19/第二批加购低成交10款优化/6a8c4744b1e18101d91fa55b-finalcheck.json",
+      "followup": "先核对审核及买家端在售版本，再观察完整7天；按相同窗口比较曝光、点击、加购、购买及售后。低样本不判定效果提升，不据此加预算。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-b2-6aca1d74545d2a013047913c",
+      "product_id": "6aca1d74545d2a013047913c",
+      "shop": "jwh second",
+      "shop_id": "6a9d4221018d89bb9e5c22ef",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T11:06:23.745081+08:00",
+      "status": "已保存、刷新且重开编辑器核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 1,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 89,
+        "clicks": 16,
+        "cart": 5,
+        "purchases": 1
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "搜索标签",
+        "图案/领型属性"
+      ],
+      "attributes_persisted": {
+        "Decoration": "Decorationprint1/1"
+      },
+      "existing_variants_stock_prices_shipping_images_category_unchanged": true,
+      "observed_review_pending_at_save": true,
+      "source_before": "商品优化/2026-11-19/第二批加购低成交10款优化/6aca1d74545d2a013047913c-before.json",
+      "source_after": "商品优化/2026-11-19/第二批加购低成交10款优化/6aca1d74545d2a013047913c-after.json",
+      "source_finalcheck": "商品优化/2026-11-19/第二批加购低成交10款优化/6aca1d74545d2a013047913c-finalcheck.json",
+      "followup": "先核对审核及买家端在售版本，再观察完整7天；按相同窗口比较曝光、点击、加购、购买及售后。低样本不判定效果提升，不据此加预算。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-b2-6ad07974212bfd01ab429537",
+      "product_id": "6ad07974212bfd01ab429537",
+      "shop": "jwh second",
+      "shop_id": "6a9d4221018d89bb9e5c22ef",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T11:06:38.087721+08:00",
+      "status": "已保存、刷新且重开编辑器核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 1,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 31,
+        "clicks": 15,
+        "cart": 7,
+        "purchases": 1
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "搜索标签",
+        "图案/领型属性"
+      ],
+      "attributes_persisted": {
+        "Decoration": "Decorationprint1/1"
+      },
+      "existing_variants_stock_prices_shipping_images_category_unchanged": true,
+      "observed_review_pending_at_save": true,
+      "source_before": "商品优化/2026-11-19/第二批加购低成交10款优化/6ad07974212bfd01ab429537-before.json",
+      "source_after": "商品优化/2026-11-19/第二批加购低成交10款优化/6ad07974212bfd01ab429537-after.json",
+      "source_finalcheck": "商品优化/2026-11-19/第二批加购低成交10款优化/6ad07974212bfd01ab429537-finalcheck.json",
+      "followup": "先核对审核及买家端在售版本，再观察完整7天；按相同窗口比较曝光、点击、加购、购买及售后。低样本不判定效果提升，不据此加预算。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-b2-6ad07a17212bfd01ab42b072",
+      "product_id": "6ad07a17212bfd01ab42b072",
+      "shop": "jwh second",
+      "shop_id": "6a9d4221018d89bb9e5c22ef",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T11:06:53.591156+08:00",
+      "status": "已保存、刷新且重开编辑器核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 1,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 18,
+        "clicks": 15,
+        "cart": 5,
+        "purchases": 1
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "搜索标签",
+        "图案/领型属性"
+      ],
+      "attributes_persisted": {
+        "Decoration": "Decorationprint1/1"
+      },
+      "existing_variants_stock_prices_shipping_images_category_unchanged": true,
+      "observed_review_pending_at_save": true,
+      "source_before": "商品优化/2026-11-19/第二批加购低成交10款优化/6ad07a17212bfd01ab42b072-before.json",
+      "source_after": "商品优化/2026-11-19/第二批加购低成交10款优化/6ad07a17212bfd01ab42b072-after.json",
+      "source_finalcheck": "商品优化/2026-11-19/第二批加购低成交10款优化/6ad07a17212bfd01ab42b072-finalcheck.json",
+      "followup": "先核对审核及买家端在售版本，再观察完整7天；按相同窗口比较曝光、点击、加购、购买及售后。低样本不判定效果提升，不据此加预算。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-b2-6ad07ab3303ef201d397e7ce",
+      "product_id": "6ad07ab3303ef201d397e7ce",
+      "shop": "jwh second",
+      "shop_id": "6a9d4221018d89bb9e5c22ef",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T11:07:07.056600+08:00",
+      "status": "已保存、刷新且重开编辑器核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 1,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 63,
+        "clicks": 15,
+        "cart": 13,
+        "purchases": 1
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "搜索标签",
+        "图案/领型属性"
+      ],
+      "attributes_persisted": {
+        "Decoration": "Decorationprint1/1"
+      },
+      "existing_variants_stock_prices_shipping_images_category_unchanged": true,
+      "observed_review_pending_at_save": true,
+      "source_before": "商品优化/2026-11-19/第二批加购低成交10款优化/6ad07ab3303ef201d397e7ce-before.json",
+      "source_after": "商品优化/2026-11-19/第二批加购低成交10款优化/6ad07ab3303ef201d397e7ce-after.json",
+      "source_finalcheck": "商品优化/2026-11-19/第二批加购低成交10款优化/6ad07ab3303ef201d397e7ce-finalcheck.json",
+      "followup": "先核对审核及买家端在售版本，再观察完整7天；按相同窗口比较曝光、点击、加购、购买及售后。低样本不判定效果提升，不据此加预算。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-b2-6a8c48f88f3b2901f210a32b",
+      "product_id": "6a8c48f88f3b2901f210a32b",
+      "shop": "Nineteen Wear",
+      "shop_id": "6a817b93f5d3934528e70df7",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T11:07:21.889874+08:00",
+      "status": "已保存、刷新且重开编辑器核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 1,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 403,
+        "clicks": 13,
+        "cart": 3,
+        "purchases": 0
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "搜索标签",
+        "图案/领型属性"
+      ],
+      "attributes_persisted": {
+        "Decoration": "Decorationprint1/1"
+      },
+      "existing_variants_stock_prices_shipping_images_category_unchanged": true,
+      "observed_review_pending_at_save": true,
+      "source_before": "商品优化/2026-11-19/第二批加购低成交10款优化/6a8c48f88f3b2901f210a32b-before.json",
+      "source_after": "商品优化/2026-11-19/第二批加购低成交10款优化/6a8c48f88f3b2901f210a32b-after.json",
+      "source_finalcheck": "商品优化/2026-11-19/第二批加购低成交10款优化/6a8c48f88f3b2901f210a32b-finalcheck.json",
+      "followup": "先核对审核及买家端在售版本，再观察完整7天；按相同窗口比较曝光、点击、加购、购买及售后。低样本不判定效果提升，不据此加预算。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-b2-6aefdeef1b779d01d3d01325",
+      "product_id": "6aefdeef1b779d01d3d01325",
+      "shop": "jwh second",
+      "shop_id": "6a9d4221018d89bb9e5c22ef",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T11:07:36.119094+08:00",
+      "status": "已保存、刷新且重开编辑器核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 2,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 32,
+        "clicks": 13,
+        "cart": 4,
+        "purchases": 2
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "搜索标签",
+        "图案/领型属性"
+      ],
+      "attributes_persisted": {
+        "Decoration": "Decorationprint1/1"
+      },
+      "existing_variants_stock_prices_shipping_images_category_unchanged": true,
+      "observed_review_pending_at_save": true,
+      "source_before": "商品优化/2026-11-19/第二批加购低成交10款优化/6aefdeef1b779d01d3d01325-before.json",
+      "source_after": "商品优化/2026-11-19/第二批加购低成交10款优化/6aefdeef1b779d01d3d01325-after.json",
+      "source_finalcheck": "商品优化/2026-11-19/第二批加购低成交10款优化/6aefdeef1b779d01d3d01325-finalcheck.json",
+      "followup": "先核对审核及买家端在售版本，再观察完整7天；按相同窗口比较曝光、点击、加购、购买及售后。低样本不判定效果提升，不据此加预算。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-b2-6a87c67afa1f4801e8bb3334",
+      "product_id": "6a87c67afa1f4801e8bb3334",
+      "shop": "Nineteen Wear",
+      "shop_id": "6a817b93f5d3934528e70df7",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T11:07:51.536158+08:00",
+      "status": "已保存、刷新且重开编辑器核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 2,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 197,
+        "clicks": 12,
+        "cart": 3,
+        "purchases": 2
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "搜索标签",
+        "图案/领型属性"
+      ],
+      "attributes_persisted": {
+        "Decoration": "Decorationprint1/1"
+      },
+      "existing_variants_stock_prices_shipping_images_category_unchanged": true,
+      "observed_review_pending_at_save": true,
+      "source_before": "商品优化/2026-11-19/第二批加购低成交10款优化/6a87c67afa1f4801e8bb3334-before.json",
+      "source_after": "商品优化/2026-11-19/第二批加购低成交10款优化/6a87c67afa1f4801e8bb3334-after.json",
+      "source_finalcheck": "商品优化/2026-11-19/第二批加购低成交10款优化/6a87c67afa1f4801e8bb3334-finalcheck.json",
+      "followup": "先核对审核及买家端在售版本，再观察完整7天；按相同窗口比较曝光、点击、加购、购买及售后。低样本不判定效果提升，不据此加预算。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-b2-6ac0698f6079a001ca690d45",
+      "product_id": "6ac0698f6079a001ca690d45",
+      "shop": "jh",
+      "shop_id": "6a8c4690b1e1819ed91f9baa",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T11:08:28.961226+08:00",
+      "status": "已保存、刷新且重开编辑器核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 0,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 224,
+        "clicks": 14,
+        "cart": 4,
+        "purchases": 0
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "搜索标签",
+        "图案/领型属性"
+      ],
+      "attributes_persisted": {
+        "Neck Style": "Neck StyleHooded Neck1/1",
+        "Pattern": "Patternsolid1/1"
+      },
+      "existing_variants_stock_prices_shipping_images_category_unchanged": true,
+      "observed_review_pending_at_save": true,
+      "source_before": "商品优化/2026-11-19/第二批加购低成交10款优化/6ac0698f6079a001ca690d45-before.json",
+      "source_after": "商品优化/2026-11-19/第二批加购低成交10款优化/6ac0698f6079a001ca690d45-after.json",
+      "source_finalcheck": "商品优化/2026-11-19/第二批加购低成交10款优化/6ac0698f6079a001ca690d45-finalcheck.json",
+      "followup": "先核对审核及买家端在售版本，再观察完整7天；按相同窗口比较曝光、点击、加购、购买及售后。低样本不判定效果提升，不据此加预算。"
+    },
+    {
+      "suggestion_id": "product-optimize-20261119-cart-b2-6aba573ef8dad801a1e24fee",
+      "product_id": "6aba573ef8dad801a1e24fee",
+      "shop": "Nineteen Wear",
+      "shop_id": "6a817b93f5d3934528e70df7",
+      "scope": "joom_store",
+      "recorded_at": "2026-11-19T11:10:38.756178+08:00",
+      "status": "已保存、刷新且重开编辑器核验",
+      "actual_setting_changed": true,
+      "historical_orders_before": 1,
+      "baseline": {
+        "period": "2026/10/21 — 2026/11/17",
+        "impressions": 453,
+        "clicks": 12,
+        "cart": 4,
+        "purchases": 1
+      },
+      "changed_fields": [
+        "标题",
+        "描述",
+        "搜索标签",
+        "图案/领型属性"
+      ],
+      "attributes_persisted": {
+        "Neck Style": "Neck StyleHooded Neck1/1"
+      },
+      "existing_variants_stock_prices_shipping_images_category_unchanged": true,
+      "observed_review_pending_at_save": true,
+      "source_before": "商品优化/2026-11-19/第二批加购低成交10款优化/6aba573ef8dad801a1e24fee-before.json",
+      "source_after": "商品优化/2026-11-19/第二批加购低成交10款优化/6aba573ef8dad801a1e24fee-after.json",
+      "source_finalcheck": "商品优化/2026-11-19/第二批加购低成交10款优化/6aba573ef8dad801a1e24fee-finalcheck.json",
+      "followup": "先核对审核及买家端在售版本，再观察完整7天；按相同窗口比较曝光、点击、加购、购买及售后。低样本不判定效果提升，不据此加预算。"
+    }
+  ]
+}

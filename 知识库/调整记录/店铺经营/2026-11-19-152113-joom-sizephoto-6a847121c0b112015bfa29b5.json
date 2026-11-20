@@ -1,0 +1,42 @@
+{
+  "suggestion_id": "joom-sizephoto-6a847121c0b112015bfa29b5",
+  "priority": 3,
+  "product_id": "6a847121c0b112015bfa29b5",
+  "short_name": "Jax印花短袖",
+  "issue": "描述列XXS，后台35个变型只含XS–3XL；平台还提示重复图片。",
+  "action": "先核对XXS供应，能供则按颜色补真实可选规格与库存，保留尺码描述；核对后清理重复图。",
+  "evidence_strength": "强：描述与规格缺口明确；供应/库存待确认",
+  "needs": "各颜色XXS可供应与库存值；不能把Michael款各999授权套用到本款",
+  "review": "检查买家端可选性，随后观察完整7日；原有销量保留",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "source": "https://merchant.joom.com/panel/products/6a847121c0b112015bfa29b5",
+  "baseline": {
+    "shop": "Nineteen Wear",
+    "product_id": "6a847121c0b112015bfa29b5",
+    "source": "https://merchant.joom.com/panel/analytics/orders/store/6a817b93f5d3934528e70df7?limit=100&orderBy=openCount&order=desc",
+    "product_link": "https://merchant.joom.com/panel/products/6a847121c0b112015bfa29b5",
+    "window": "2026-10-22 to 2026-11-18 UTC+3",
+    "impressions": 255,
+    "clicks": 18,
+    "purchases": 2,
+    "cart": 5
+  },
+  "current_sizes": [
+    "2XL",
+    "3XL",
+    "L",
+    "M",
+    "S",
+    "XL",
+    "XS"
+  ],
+  "status": "建议，尚未执行",
+  "actual_setting_changed": false,
+  "event_type": "read_only_opportunity_review",
+  "recorded_at": "2026-11-19T15:21:13.607991+08:00",
+  "report": "商品诊断/2026-11-19/Joom优化机会-152113/优化建议.md",
+  "snapshot": "商品诊断/2026-11-19/Joom优化机会-152113/诊断快照.json",
+  "user_request": "看看我的joom还有什么可以优化的吗",
+  "execution_authorized_this_turn": false
+}

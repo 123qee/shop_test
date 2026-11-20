@@ -1,0 +1,16 @@
+{
+  "suggestion_id": "store-joom-fulfillment-refund",
+  "source_record": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-19-131344-store-joom-fulfillment-refund.json",
+  "previous_status": "待核实；未自动执行",
+  "status": "登录失效，本次无法复查；保留历史执行事实/未关闭状态",
+  "historical_actual_setting_changed": false,
+  "actual_setting_changed": false,
+  "product_id": "6ac0ce4318081201574fa3df",
+  "review_condition": "今天核对发货时限与错货证据；24小时复查待处理量；原因查明后另行评估商品恢复，不能机械重新上架",
+  "event_type": "scheduled_read_only_followup",
+  "recorded_at": "2026-11-20T11:11:49.119184+08:00",
+  "automation_id": "joom-2",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/111149.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/111149.json",
+  "new_business_action_executed": false
+}

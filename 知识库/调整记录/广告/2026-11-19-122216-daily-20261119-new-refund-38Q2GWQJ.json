@@ -1,0 +1,26 @@
+{
+  "recorded_at": "2026-11-19T12:22:16.441080+08:00",
+  "automation_id": "joom",
+  "event_type": "新增建议/风险观察",
+  "suggestion_id": "daily-20261119-new-refund-38Q2GWQJ",
+  "status": "待核对发货及账务责任",
+  "actual_setting_changed": false,
+  "observation": {
+    "suggestion_id": "daily-20261119-new-refund-38Q2GWQJ",
+    "priority": 4,
+    "scope": "jh店退款商品核查",
+    "product_id": "6ac0ce4318081201574fa3df",
+    "status": "待核对发货及账务责任",
+    "current": {
+      "refund_amount_field_usd": 14.624882,
+      "order_original_price_usd": 10,
+      "reason": "产品错误"
+    },
+    "suggested": "先核对订单选款/尺码、印花及发货SKU与仓内标签；核对退款账单责任，不直接归因今天文案优化、不据此机械停全店。",
+    "source": "https://merchant.joom.com/panel/orders/38Q2GWQJ",
+    "review": "核对出库与包裹证据、同款后续退款；账单未完整入账前不把字段金额当最终净损失。",
+    "actual_setting_changed": false
+  },
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-19/122216.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-19/122216.json"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "daily-20261120-quality-refunds",
+  "priority": 1,
+  "platform": "Joom",
+  "product_ids": [
+    "6a868a318809ae01f99f4373",
+    "6aaa9d48117009011e83bd72"
+  ],
+  "current": null,
+  "suggested": {
+    "new_budget": 0,
+    "automatic_pause": false
+  },
+  "status": "新增质量差退款，待核实根因和责任金额",
+  "evidence": "订单JVEGY576、VL8QPYM8原因均为质量差；退款字段8.09499和23.05384。前者短袖，后者两件套成本未知。",
+  "confidence": "后台原因与金额高；质量具体根因、卖家实扣未核",
+  "effect": "降低售后损耗；不只看低ACOS而忽略质量",
+  "review": "今天核对布料/印花/做工及买家证据，24–72小时核责任账单；不自动停整店、不改高销量内容",
+  "suggestion_id": "daily-20261120-quality-refunds",
+  "actual_setting_changed": false,
+  "recorded_at": "2026-11-20T11:46:30.093398+08:00",
+  "automation_id": "joom",
+  "event_type": "recommendation_not_executed",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-20/114630.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-20/114630.json"
+}

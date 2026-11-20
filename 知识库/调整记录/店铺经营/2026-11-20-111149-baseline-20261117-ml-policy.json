@@ -1,0 +1,16 @@
+{
+  "suggestion_id": "baseline-20261117-ml-policy",
+  "source_record": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-19-131344-baseline-20261117-ml-policy.json",
+  "previous_status": "持续待核实，摘要不能直接认定侵权",
+  "status": "本次未自动执行；按最新独立站点观察追踪，历史执行与待处理项分开",
+  "historical_actual_setting_changed": false,
+  "actual_setting_changed": false,
+  "product_id": null,
+  "review_condition": "24–72小时看信誉与个案状态；7个完整日复查转化，不依据1–2单变化叠加调整",
+  "event_type": "scheduled_read_only_followup",
+  "recorded_at": "2026-11-20T11:11:49.119184+08:00",
+  "automation_id": "joom-2",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/111149.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/111149.json",
+  "new_business_action_executed": false
+}

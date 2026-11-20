@@ -1,0 +1,82 @@
+[
+  {
+    "size_color": "颜色：as the picture\n尺寸：S",
+    "sku": "TXYL0283-S-as the picture1",
+    "id": "6a869ee0e84e05bc2d269a55",
+    "shipping_dimensions": "长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g",
+    "price": "US$3.98",
+    "handling": "2天",
+    "inventory": 995,
+    "default_shipping": "US$0"
+  },
+  {
+    "size_color": "颜色：as the picture\n尺寸：M",
+    "sku": "TXYL0283-M-as the picture1",
+    "id": "6a869ee0e84e05bc2d269a56",
+    "shipping_dimensions": "长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g",
+    "price": "US$3.98",
+    "handling": "2天",
+    "inventory": 998,
+    "default_shipping": "US$0"
+  },
+  {
+    "size_color": "颜色：as the picture\n尺寸：L",
+    "sku": "TXYL0283-L-as the picture1",
+    "id": "6a869ee0e84e05bc2d269a57",
+    "shipping_dimensions": "长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g",
+    "price": "US$3.98",
+    "handling": "2天",
+    "inventory": 999,
+    "default_shipping": "US$0"
+  },
+  {
+    "size_color": "颜色：as the picture\n尺寸：XL",
+    "sku": "TXYL0283-XL-as the picture1",
+    "id": "6a869ee0e84e05bc2d269a58",
+    "shipping_dimensions": "长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g",
+    "price": "US$3.98",
+    "handling": "2天",
+    "inventory": 999,
+    "default_shipping": "US$0"
+  },
+  {
+    "size_color": "颜色：as the picture\n尺寸：2XL",
+    "sku": "TXYL0283-2XL-as the picture1",
+    "id": "6a869ee0e84e05bc2d269a59",
+    "shipping_dimensions": "长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g",
+    "price": "US$3.98",
+    "handling": "2天",
+    "inventory": 999,
+    "default_shipping": "US$0"
+  },
+  {
+    "size_color": "颜色：as the picture\n尺寸：3XL",
+    "sku": "TXYL0283-3XL-as the picture1",
+    "id": "6a869ee0e84e05bc2d269a5a",
+    "shipping_dimensions": "长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g",
+    "price": "US$3.98",
+    "handling": "2天",
+    "inventory": 999,
+    "default_shipping": "US$0"
+  },
+  {
+    "size_color": "颜色：as the picture\n尺寸：XXS",
+    "sku": "TXYL0283-XXS-as the picture1",
+    "id": "6afe61eca32f8097ef173c3e",
+    "shipping_dimensions": "长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g",
+    "price": "US$3.98",
+    "handling": "未设置\n默认为2天",
+    "inventory": 999,
+    "default_shipping": "US$0"
+  },
+  {
+    "size_color": "颜色：as the picture\n尺寸：XS",
+    "sku": "TXYL0283-XS-as the picture1",
+    "id": "6afe61eca32f8097ef173c3f",
+    "shipping_dimensions": "长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g",
+    "price": "US$3.98",
+    "handling": "未设置\n默认为2天",
+    "inventory": 999,
+    "default_shipping": "US$0"
+  }
+]

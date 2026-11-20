@@ -1,0 +1,22 @@
+{
+  "suggestion_id": "ml-mx-ad-reputation",
+  "priority": 1,
+  "platform": "mercadolibre",
+  "country": "MX",
+  "source": "https://sellers.mercadolibre.com/sales-summary",
+  "status": "新增账户限制提示；原信誉问题未关闭",
+  "facts": [
+    "当前墨西哥摘要1项限制、信誉橙色、投诉5.55%",
+    "8项失效入口、5项缺货；本次未取得墨西哥限制明细，不套用智利停止时间"
+  ],
+  "suggested_action": "从墨西哥限制入口核对本国具体原因及停止时间，再核5项缺货和投诉关联SKU；不加预算，不用加竞价解决资格问题。",
+  "evidence_strength": "强：当前摘要；限制个案原因待核",
+  "expected_improvement": "可售资格、投诉与履约质量",
+  "review_condition": "今天核对限制；24小时复查库存与信誉，恢复后看完整7日成交",
+  "actual_setting_changed": false,
+  "event_type": "scheduled_recommendation_after_completion",
+  "recorded_at": "2026-11-20T11:22:48.107321+08:00",
+  "automation_id": "joom-2",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/112248.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/112248.json"
+}

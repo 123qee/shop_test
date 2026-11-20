@@ -1,0 +1,14 @@
+{
+  "ui": {
+    "url": "https://merchant.joom.com/panel/orders?limit=100&productId=6aaa83a2fb5605019bbfb9c9",
+    "title": "Joom for Merchants",
+    "tree_text": "",
+    "ref_policy": "stable-node",
+    "workId": "a7c5d20d-8f08-43c5-b4cd-e78fedba6dca"
+  },
+  "network": {
+    "count": 0,
+    "requests": [],
+    "workId": "a7c5d20d-8f08-43c5-b4cd-e78fedba6dca"
+  }
+}

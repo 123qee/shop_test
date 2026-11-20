@@ -1,0 +1,27 @@
+{
+  "captured_at": "2026-11-19T04:57:53.922Z",
+  "links": [
+    {
+      "href": "https://merchant.joom.com/panel/analytics/orders",
+      "text": "销售和流量"
+    },
+    {
+      "href": "https://merchant.joom.com/panel/analytics/orders/contexts",
+      "text": "情景"
+    },
+    {
+      "href": "https://merchant.joom.com/panel/stores/6a9d4221018d89bb9e5c22ef",
+      "text": "jwh second"
+    },
+    {
+      "href": "https://merchant.joom.com/panel/stores/6a8c4690b1e1819ed91f9baa",
+      "text": "jh"
+    },
+    {
+      "href": "https://merchant.joom.com/panel/stores/6a817b93f5d3934528e70df7",
+      "text": "Nineteen Wear"
+    }
+  ],
+  "text": "销售和流量\n分析数据时区\n销售和流量\n情景\n国家\n筛选：\n店铺：所有\n类目\n最近56 天 (2026/9/23 – 2026/11/17)\n按国家展示销量和流量\n购买次数\n曝光量\n点开次数\nGMV\n2026/9/23\n2026/9/29\n2026/10/5\n2026/10/11\n2026/10/17\n2026/10/23\n2026/10/29\n2026/11/4\n2026/11/10\n2026/11/16\n0\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n德国\n英国\n瑞典\n法国\n瑞士\n匈牙利\n澳大利亚\n荷兰\n爱尔兰\n波兰\n店铺\n按国家细分\n导出XLSX\n店铺\n日期范围\n购买次数\n曝光量\n点开次数\nGMV\n\t\njwh second\n\t\n2026/9/23 — 2026/11/17\n\t\n74\n\t\n36,912\n\t\n2,268\n\t\nUS$546.18\n\t\n\n\n\n\t\njh\n\t\n2026/9/23 — 2026/11/17\n\t\n17\n\t\n23,542\n\t\n1,136\n\t\nUS$175\n\t\n\n\n\n\t\nNineteen Wear\n\t\n2026/9/23 — 2026/11/17\n\t\n383\n\t\n224,715\n\t\n9,633\n\t\nUS$1,846.12\n\t\n\n\n\n每页显示项： \n10\n25\n50\n100\n←1→\n更新日期 2026年11月18日 16:30:19",
+  "url": "https://merchant.joom.com/panel/analytics/orders/countries?dateRange=%5B%222026-09-22T16%3A00%3A00.000Z%22%2C%222026-11-17T15%3A59%3A59.999Z%22%5D"
+}

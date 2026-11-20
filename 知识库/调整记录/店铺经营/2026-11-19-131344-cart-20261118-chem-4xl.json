@@ -1,0 +1,16 @@
+{
+  "suggestion_id": "cart-20261118-chem-4xl",
+  "event_type": "follow_up",
+  "recorded_at": "2026-11-19T13:13:44.227925+08:00",
+  "automation_id": "joom-2",
+  "report": "日报/店铺经营/2026-11-19/131344.md",
+  "snapshot": "快照/店铺经营/2026-11-19/131344.json",
+  "actual_setting_changed": false,
+  "previous_status": "待补充实测资料",
+  "product_id": "6a85abb71fe9fe0103bd458d",
+  "object": null,
+  "new_business_action_executed": false,
+  "status": "待补充实测资料，未关闭",
+  "reason": "本次没有新的4XL实测/供应证据，未删除或新增规格",
+  "review_condition": "取得该款实际4XL尺寸资料再处理"
+}

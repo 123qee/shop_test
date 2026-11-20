@@ -1,0 +1,4 @@
+{
+  "aria": "  - heading \"标题\" [level=3]\n  - heading \"Camiseta De Cubo Fluorescente De Efeito Neon Com Luz Preta 巴西标题（葡萄牙语）\" [level=3]\n    - text: Camiseta De Cubo Fluorescente De Efeito Neon Com Luz Preta\n    - LineBreak\n    - text: 巴西标题（葡萄牙语）\n  - button \"关闭部分\" [ref=e6089923, expanded=true]\n    - emphasis\n  - text: 由于该商品已有销售记录，您只能通过建议修改标题。\n  - textbox \"例如：三星Galaxy S9双卡双待32GB内存蓝色\" [ref=e6089957, disabled]: Camiseta Masculina Código Cotton Neon Cubo UV\n    - text: Camiseta Masculina Código Cotton Neon Cubo UV\n  - button \"撤销建议\" [ref=e6089962]\n  - button \"取消\" [ref=e6089959]\n  - button \"确认\" [ref=e6089960]\n",
+  "input_value": "Camiseta Masculina Código Cotton Neon Cubo UV"
+}

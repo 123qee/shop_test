@@ -1,0 +1,35 @@
+{
+  "suggestion_id": "store-joom-fulfillment-refund",
+  "event_type": "new_recommendation",
+  "recorded_at": "2026-11-19T13:12:48.002744+08:00",
+  "automation_id": "joom-2",
+  "report": "日报/店铺经营/2026-11-19/131248.md",
+  "snapshot": "快照/店铺经营/2026-11-19/131248.json",
+  "actual_setting_changed": false,
+  "previous_status": null,
+  "product_id": "6ac0ce4318081201574fa3df",
+  "object": "jh；待处理订单为全账户",
+  "new_business_action_executed": false,
+  "status": "待核实；未自动执行",
+  "recommendation": {
+    "suggestion_id": "store-joom-fulfillment-refund",
+    "priority": 1,
+    "platform": "joom",
+    "shop": "jh；待处理订单为全账户",
+    "product_id": "6ac0ce4318081201574fa3df",
+    "product_name": "Kids Double-Hood Zip-Up Hoodie, Long Sleeve Winter Jacket, Sizes 100-160",
+    "source": "https://merchant.joom.com/panel/products/6ac0ce4318081201574fa3df",
+    "facts": [
+      "新增退款订单38Q2GWQJ，原因产品错误，退款字段14.624882美元，最终责任额未核实",
+      "当前在售版本为无，编辑版本明确产品被您禁用、所有国家；禁用时间/操作者未取得，不归因于本次退款",
+      "当前approved待处理14笔；jh取消考核1/8，另两店0/66、0/22，考核期不同于广告窗口"
+    ],
+    "suggested_action": "保持该款当前禁用状态；对照订单SKU/尺码/印花及拣货记录核实错货与实际扣款。全店14笔按真实发货截止时间排序处理。",
+    "expected_improvement": "减少错货退款与卖家取消，保护利润和信誉",
+    "evidence_strength": "强：实时后台状态及订单原因；根因与责任额待核实",
+    "status": "待核实；未自动执行",
+    "actual_setting_changed": false,
+    "review": "今天核对发货时限与错货证据；24小时复查待处理量；原因查明后另行评估商品恢复，不能机械重新上架"
+  },
+  "review_condition": "今天核对发货时限与错货证据；24小时复查待处理量；原因查明后另行评估商品恢复，不能机械重新上架"
+}

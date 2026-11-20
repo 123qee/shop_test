@@ -1,0 +1,23 @@
+{
+  "suggestion_id": "baseline-20261117-nineteen",
+  "priority": 2,
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "source": "https://merchant.joom.com/panel/analytics/orders",
+  "status": "资料待确认，观察中，不重复改高销量款",
+  "facts": [
+    "28天曝光101650→127665，点击5284→4427，购买241→141",
+    "德国GMV224.68→110.93；英国104.32→109.24，不把全账号英国增长归给本店",
+    "今日编辑页复核#97短袖袖长、猫咪套装缺裤子表、Ted材质冲突仍在；近28天漏斗分别69/12/0、30/3/0、14/6/0"
+  ],
+  "suggested_action": "先取得真实尺码表、套装构成及裤长腰围、Ted准确面料比例，再统一图片/文案/属性；Y2K款317点击22加购5购买，先核德国可选规格与含税运费到手价。保留高销量款，预算不增加。",
+  "evidence_strength": "强：当前漏斗和编辑页冲突；实物数据/转化因果待核",
+  "expected_improvement": "CTR与点击后转化，减少买错",
+  "review_condition": "收到实物资料并实际生效后3完整日看点击，7完整日看成交；当前报表未覆盖11/19修改",
+  "actual_setting_changed": false,
+  "event_type": "scheduled_recommendation_after_completion",
+  "recorded_at": "2026-11-20T11:22:48.107321+08:00",
+  "automation_id": "joom-2",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-20/112248.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-20/112248.json"
+}

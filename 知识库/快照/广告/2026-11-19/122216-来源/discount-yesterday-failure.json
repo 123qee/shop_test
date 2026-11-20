@@ -1,0 +1,7 @@
+{
+  "error": "商品统计响应的日期范围未核实",
+  "campaign_id": "6a88653b1c9ca4000752a6cf",
+  "window": "yesterday",
+  "resolved_by": "discount-yesterday-api.json",
+  "status": "日期控件已核实，重采成功"
+}

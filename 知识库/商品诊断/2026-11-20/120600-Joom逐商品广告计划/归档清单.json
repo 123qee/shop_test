@@ -1,0 +1,472 @@
+[
+  {
+    "file": "核验结果.json",
+    "bytes": 4807,
+    "sha256": "85d8621f69ec307ceee482255d190c9f97cb14364ca1d5e8a841d26cf3d1779f"
+  },
+  {
+    "file": "建议事件.json",
+    "bytes": 7063,
+    "sha256": "5ecd8f56eb2d4ed8bcd5520752f641bc8677dcf9ce889ff4122e5ff2648e8bb8"
+  },
+  {
+    "file": "广告优化建议.md",
+    "bytes": 12046,
+    "sha256": "b77e650c030f25dab70b9145d55290949f402b8fd50214f648787fe951b8bb47"
+  },
+  {
+    "file": "逐商品建议.json",
+    "bytes": 5631753,
+    "sha256": "2050c03f6a4a8db6835fdd0b1cd8e0aa707a6bad4b5119a9657a25d33ef11a93"
+  },
+  {
+    "file": "逐商品清单.md",
+    "bytes": 1006743,
+    "sha256": "62e0ee81979639236bd7cf0b67f94d91073017958e6c7b217d72181d6e44d2dd"
+  },
+  {
+    "file": "来源/candidate-6aad547abaf5a401f56aeddf.json",
+    "bytes": 8499,
+    "sha256": "6e44bfd38d8ff4dfe44aa630bf0eee475083831ce75a0b020011efb8cffd84e3"
+  },
+  {
+    "file": "来源/live-candidate-6a842f66e32015012461bc44.json",
+    "bytes": 3457,
+    "sha256": "7cb1f584e774665eadfb5e90c3c4f4e2e1ef0d1cca6238c9f598886f0314a01c"
+  },
+  {
+    "file": "来源/campaign-6abdada863e0d400072905cf-7day.json",
+    "bytes": 117221,
+    "sha256": "f54cca2ce6235fb444ee36c4510659b00034d02a06490bc9f58dfdc469946a6c"
+  },
+  {
+    "file": "来源/campaign-6af7c2e09197610007483bd1-28day.json",
+    "bytes": 30917,
+    "sha256": "c412e351d51e7e4d9b1e173c070c1c400a947510480ef4454aa0e5141137d1e8"
+  },
+  {
+    "file": "来源/live-candidate-6aad547abaf5a401f56aeddf.json",
+    "bytes": 2514,
+    "sha256": "11417fad3a979c7e2d41fab2cf4e435310afe9e99fede162f0c42a4f811a7b30"
+  },
+  {
+    "file": "来源/candidate-6a842f66e32015012461bc44.json",
+    "bytes": 46606,
+    "sha256": "f50677ab75aebb1292e9d2019da737bd3d9c60151622bbcd40f8f1b6a34a5d67"
+  },
+  {
+    "file": "来源/campaign-6af7c7da843fbe000793c40a-7day.json",
+    "bytes": 148545,
+    "sha256": "d3f29d795560a386210b2a28c0dc7c5925f778c95bc2d5a997ef074926b4be90"
+  },
+  {
+    "file": "来源/execution-verified.json",
+    "bytes": 300,
+    "sha256": "732d55c79df64278a00e9899391215fbe95d07e90ce3b011ed2f9e29694126dc"
+  },
+  {
+    "file": "来源/live-candidate-6aaa83a2fb5605019bbfb9c9.json",
+    "bytes": 3141,
+    "sha256": "537ca83e6851f8b24580a61a685cc16d9c287be79e6285074b1c662327ca65f3"
+  },
+  {
+    "file": "来源/candidate-6aaa83a2fb5605019bbfb9c9.json",
+    "bytes": 72035,
+    "sha256": "30fa98ebfb18ce98291b204ec4b13825401dca77b03b24aa37fc1c4ec4add601"
+  },
+  {
+    "file": "来源/campaign-6af7c6079197610007483bd7-7day.json",
+    "bytes": 18112,
+    "sha256": "5089b9f69506d6402e2502ea35b6cb0bde622834ddcd55b25504e6a8fcd1dcd8"
+  },
+  {
+    "file": "来源/campaign-6af7c823822a8100076caffd-7day.json",
+    "bytes": 156243,
+    "sha256": "e50945cc6598902110f25c633ffcad5fa0913ce3e5938c9aadbe95a7c24c277f"
+  },
+  {
+    "file": "来源/campaign-6af7c8699197610007483bdc-7day.json",
+    "bytes": 118942,
+    "sha256": "6c1175377d3f1ff3f5e3e8b0c15dece5367322423c032a1801d345f6aff3e736"
+  },
+  {
+    "file": "来源/campaign-6afb168119acb0000753ec7d-7day.json",
+    "bytes": 17041,
+    "sha256": "dfdfcbb8ab01ae6a768af916293b1aa093458b15540ce446493923b05f5a82dd"
+  },
+  {
+    "file": "来源/campaign-6afb18794e94f5000716e046-28day.json",
+    "bytes": 28760,
+    "sha256": "e3a2f69ce7a7d340852c752a9068cd3bdde3f8e46996cd4316c1aa675f035277"
+  },
+  {
+    "file": "来源/campaign-6af7c706822a8100076caffa-28day.json",
+    "bytes": 21423,
+    "sha256": "e59b74c60d5dd776c3db39c8e4e0eeaffe4f33d2912c4c2399e78e5d71feeb0e"
+  },
+  {
+    "file": "来源/campaign-6afaf12b580914000721c763-7day.json",
+    "bytes": 13091,
+    "sha256": "fbcb006d1654ec0fe35efa016e288608b34ecb6d3684b9beb84542c445a51e14"
+  },
+  {
+    "file": "来源/campaign-6a88653b1c9ca4000752a6cf-28day.json",
+    "bytes": 227829,
+    "sha256": "c448c1ac4208e23a6f1cf2195c5f66e6b3cc4e3e9f06720c85b10c729f12d116"
+  },
+  {
+    "file": "来源/campaign-6aa266b1ffbca40007fc76a7-28day.json",
+    "bytes": 134535,
+    "sha256": "3f8951b97cd9374862c6de899536166d665ab065b6d024eb39aba54909384ef6"
+  },
+  {
+    "file": "来源/campaign-6af7c4dc843fbe000793c402-7day.json",
+    "bytes": 35908,
+    "sha256": "9ab923c332ece93cb2f74aa9d0b46887711b288da8d8540aeb1b0de7b143c498"
+  },
+  {
+    "file": "来源/campaign-6af7c40c07bc8b0007c7fce9-28day.json",
+    "bytes": 50659,
+    "sha256": "786a8d2e51d5201303aa44f56471c90ef9fd598bb35808aea3bea0103624dbce"
+  },
+  {
+    "file": "来源/campaign-6af7c4dc843fbe000793c402-28day.json",
+    "bytes": 43294,
+    "sha256": "ebb5cf5a801307f3c8c85558565158e2ca66193b4d07da3c5df5868c75fd60a5"
+  },
+  {
+    "file": "来源/campaign-6afb18a234ee6b000745598b-7day.json",
+    "bytes": 20335,
+    "sha256": "7941f3aefd5de08988a1e80b2f083f375a477f1e302a35c746fa8c2418b38f75"
+  },
+  {
+    "file": "来源/refund-product-mapping.json",
+    "bytes": 1325,
+    "sha256": "01025eddb54a18bd48b6967567ed12417a6eef9445c0322946d2c5d6bafcec4c"
+  },
+  {
+    "file": "来源/campaign-6af7c7969197610007483bda-7day.json",
+    "bytes": 29935,
+    "sha256": "5256c959b150e388cadce9bbcdf2f88b9208e67478e2666721c2d6dec5e42637"
+  },
+  {
+    "file": "来源/campaign-6abdada863e0d400072905cf-28day.json",
+    "bytes": 137999,
+    "sha256": "326220c96ed5b0d36ff7df3d118b1dc545b1516455161917e7cf226711cafb80"
+  },
+  {
+    "file": "来源/campaign-6afaf5c7977c400007671131-7day.json",
+    "bytes": 11464,
+    "sha256": "0e934c94a5e6b94bd9b2cbae217cd14fe0cc43afdda56c7f5cba6f6efc3d1876"
+  },
+  {
+    "file": "来源/campaign-6afaf12b580914000721c763-28day.json",
+    "bytes": 20479,
+    "sha256": "69890b24aa685f103b12bcee39c32e32a12db67f86d4aad97ee670b1c27b2c46"
+  },
+  {
+    "file": "来源/campaign-6a88653b1c9ca4000752a6cf-7day.json",
+    "bytes": 188982,
+    "sha256": "5bb564465bb0c3b430b958584ba8f827e819032f72bdab3415745b9e494d7b8a"
+  },
+  {
+    "file": "来源/campaign-6afb0ede18ef9e0007cf39d9-28day.json",
+    "bytes": 21307,
+    "sha256": "b6ca1fd95d8f3f8462e94a946225f7834a14ffbd26f3f131c3f1993779034523"
+  },
+  {
+    "file": "来源/campaign-6afb1891822a8100076cb0a8-7day.json",
+    "bytes": 24038,
+    "sha256": "0a8ba77c6ddf3be2649a89e8768a95f7a2f6fc732c8d0037e935a60cc3086aeb"
+  },
+  {
+    "file": "来源/campaign-6afb1850b4eaf70007a68d4f-7day.json",
+    "bytes": 14548,
+    "sha256": "d115f20a81b2ca603b8149678e8afbc8271c39dfd282d5fc33772e4797bd607f"
+  },
+  {
+    "file": "来源/campaign-6af7c47f822a8100076caff7-7day.json",
+    "bytes": 38545,
+    "sha256": "2b5c7ef899fc985b42c5a0a88bc933f5dd58b8cc6856be0458e02d29373397ee"
+  },
+  {
+    "file": "来源/campaign-6afb168119acb0000753ec7d-28day.json",
+    "bytes": 24428,
+    "sha256": "0e671d3254644a129448a8963078e42d3a6a7c7d203069f65b7d1bccf126855a"
+  },
+  {
+    "file": "来源/candidate-6a9d63aed2a23f016e4359ed.json",
+    "bytes": 6490,
+    "sha256": "bf7acc23f5d81b7085d3357a0596ab5684795cd8e0fd8001e40e9f481bd35bcb"
+  },
+  {
+    "file": "来源/campaign-6af7c40c07bc8b0007c7fce9-7day.json",
+    "bytes": 43271,
+    "sha256": "a594b1cd6b386d97e6f23d1a90c31badac9dc41cabd7daee69efb207ebe2fb78"
+  },
+  {
+    "file": "来源/live-candidate-6a9d63aed2a23f016e4359ed.json",
+    "bytes": 2773,
+    "sha256": "d076d13abd117561f35414297df2ffd8a9bb137bdb583d56df924c575d37e665"
+  },
+  {
+    "file": "来源/campaign-6af7c2269a0dcc0007280b38-7day.json",
+    "bytes": 29825,
+    "sha256": "794a7e54644de6e81631ad73de820208501690ff51eb094686b501962d57c2b6"
+  },
+  {
+    "file": "来源/campaign-6af7c47f822a8100076caff7-28day.json",
+    "bytes": 45879,
+    "sha256": "9fce6fe49b50ff95f094b46c41977fe03ff4df0ba3eb3a6c36bcc0ba81be7a5e"
+  },
+  {
+    "file": "来源/orders-financial-6a842f66e32015012461bc44.json",
+    "bytes": 8028,
+    "sha256": "eaf124560c8680a01d533d644a856bcba8052737134f43137babd4e6a1d4566a"
+  },
+  {
+    "file": "来源/campaign-6afb186418ef9e0007cf39da-28day.json",
+    "bytes": 31220,
+    "sha256": "38c01e0b8e6faef045d2320fe50830a250c882dce130ea73aa935485d6f0853a"
+  },
+  {
+    "file": "来源/campaign-6af7c2a5822a8100076caff6-7day.json",
+    "bytes": 29336,
+    "sha256": "14a253dea2722760b6efa0a2180e8cf7dfad7820a709bcdb1138275f751329a5"
+  },
+  {
+    "file": "来源/campaign-6a8cd24de84d9f0007cae4cb-7day.json",
+    "bytes": 353666,
+    "sha256": "b9a4d063ca820cafd2f101672559ade40dd17db76d652264adc273bfddcb1968"
+  },
+  {
+    "file": "来源/campaign-6a936f3b622671000778ea8e-28day.json",
+    "bytes": 15542,
+    "sha256": "099f0b80db61b7bbc9991d3874f9c265ad96f7603eab8d774d62a42d30ac2238"
+  },
+  {
+    "file": "来源/campaign-6af7c56c07bc8b0007c7fcec-7day.json",
+    "bytes": 14602,
+    "sha256": "b8634b01b876d385fe469c397df293c26f0afe13baec14d60d740e8bc1f6d89e"
+  },
+  {
+    "file": "来源/campaign-6af7c31f9a0dcc0007280b39-7day.json",
+    "bytes": 23980,
+    "sha256": "0939e4dbe5bfedffea4c3e3df1827de06db4a5a1c7eed21aad355b8ce09a7791"
+  },
+  {
+    "file": "来源/campaign-6a936f3b622671000778ea8e-7day.json",
+    "bytes": 5765,
+    "sha256": "c4274102b1d39d76cdbf97136991d2bf2592626f5e3f6df7af317601c4d97235"
+  },
+  {
+    "file": "来源/campaign-6a9a9db5a7e89c0007872164-28day.json",
+    "bytes": 13184,
+    "sha256": "69b53705be56c3faa7ffb47ec41bdd037c25592635c12653a899ea004a488679"
+  },
+  {
+    "file": "来源/campaign-6af7c2e09197610007483bd1-7day.json",
+    "bytes": 23529,
+    "sha256": "80928b038ab1ab1c9fb1f06c440217ec84dcf0e077e6ff014f316902f729c8ad"
+  },
+  {
+    "file": "来源/campaigns-baseline.json",
+    "bytes": 39115,
+    "sha256": "1c5c56c88b3bba7af8c4ad17909e8c0a7b5266bb221e6c8a370b994e27742ef8"
+  },
+  {
+    "file": "来源/campaign-6af7c706822a8100076caffa-7day.json",
+    "bytes": 14037,
+    "sha256": "d09a95765aaaa38dbdf57ec678c81f90839d74a68b17b62fa6a2da1db03d8704"
+  },
+  {
+    "file": "来源/cpm5-after-api.json",
+    "bytes": 39627,
+    "sha256": "a0923d7257be7d8784feaedefb6dedf9a333c6174a05d24b56e73ab9cba15e38"
+  },
+  {
+    "file": "来源/campaign-6afaf5c7977c400007671131-28day.json",
+    "bytes": 18852,
+    "sha256": "35f7874475bef4e69d1cce1a0627f390e6bc4532fdbc1f3955bd58b5cc9d10cb"
+  },
+  {
+    "file": "来源/campaign-6aac7aa210e2ac00077587fd-28day.json",
+    "bytes": 258442,
+    "sha256": "0548668b409b499cdb0a157d075a1eefd3e015f5dfd5ea1f082eeb957ff9090b"
+  },
+  {
+    "file": "来源/campaign-6a9d3599b5cfff0007d9fca1-28day.json",
+    "bytes": 117253,
+    "sha256": "a005a9e715f2d97ac673ac13b4f322e5afa5058b78d1fe1869f333918d21d6ce"
+  },
+  {
+    "file": "来源/cleanup.json",
+    "bytes": 190,
+    "sha256": "1a3902aa344bc054be6bc4fc4f154e989e291d8c09e16c6da9501d127a1b62a2"
+  },
+  {
+    "file": "来源/campaign-6a9a9db5a7e89c0007872164-7day.json",
+    "bytes": 4664,
+    "sha256": "7026257172b37ba04e965193e42d6b74e7daa258dc766d4d5254f85b85f6a987"
+  },
+  {
+    "file": "来源/campaign-6a8cd24de84d9f0007cae4cb-28day.json",
+    "bytes": 381956,
+    "sha256": "3ac89aed3d8af9c0f9148da47954128e17b0418d0b32b6111728f71ca6b28bc7"
+  },
+  {
+    "file": "来源/campaign-6af7c31f9a0dcc0007280b39-28day.json",
+    "bytes": 31369,
+    "sha256": "3e9ce0c60107919a1f1eea0917ea2d9470c6acf1458a2b9dcd574fc81aaff199"
+  },
+  {
+    "file": "来源/campaign-6afb18a234ee6b000745598b-28day.json",
+    "bytes": 27723,
+    "sha256": "16fcddc5f8c0452de52ad5746d789ef30e1ae2a4dd8bf3883ceb27a313594c87"
+  },
+  {
+    "file": "来源/campaign-6aa266b1ffbca40007fc76a7-7day.json",
+    "bytes": 109515,
+    "sha256": "d754751b6bebe7d5f8d26485e32ad8aa16da6b4dae4581b0816c1c6a16c56d10"
+  },
+  {
+    "file": "来源/campaign-6af7c3b9843fbe000793c400-28day.json",
+    "bytes": 34188,
+    "sha256": "d8e52956a5f51638407e54f934f45887cb4c59a74e0e13f6045a7ed497869fb1"
+  },
+  {
+    "file": "来源/campaign-6af7c3b9843fbe000793c400-7day.json",
+    "bytes": 26799,
+    "sha256": "2814c532fddc67148f288c1aaa167bee09f797fdca0d098c7c96a8495107df9d"
+  },
+  {
+    "file": "来源/campaign-6af7c7969197610007483bda-28day.json",
+    "bytes": 37321,
+    "sha256": "663279f339ad5313702ec4510d24a664b674555048ada1d88510149acfdc8442"
+  },
+  {
+    "file": "来源/campaign-6af7c525843fbe000793c404-7day.json",
+    "bytes": 32177,
+    "sha256": "d5698f54d01d3a0f7df5a078c1ae07e32f9749b1c7be737eec2a4ce37ee5546c"
+  },
+  {
+    "file": "来源/campaign-6aac7aa210e2ac00077587fd-7day.json",
+    "bytes": 199097,
+    "sha256": "036768154f43f51515b873dc96193dcb9471e981cec6409cc2400375fabe4aa0"
+  },
+  {
+    "file": "来源/campaign-6afb1850b4eaf70007a68d4f-28day.json",
+    "bytes": 21938,
+    "sha256": "5d62aeca7666c8654ca2f8a3f33ae24e444fe25a4eeff023bdda0088c9f41d39"
+  },
+  {
+    "file": "来源/campaign-6afb0ede18ef9e0007cf39d9-7day.json",
+    "bytes": 13919,
+    "sha256": "914ecb68c457dfd922e30b64b7b6c0a360f67df15c7e31ab3a2074db1c52b369"
+  },
+  {
+    "file": "来源/campaign-6af7c8699197610007483bdc-28day.json",
+    "bytes": 126310,
+    "sha256": "d590641e6aceb3bb9028f6696a051e27d538500f40b8edfa33b4c109bbea9ab7"
+  },
+  {
+    "file": "来源/campaign-6afb18794e94f5000716e046-7day.json",
+    "bytes": 21373,
+    "sha256": "6db1e263fb6fa0228e4eda5eb7d9a3f72e747a0f8803c46964e7530b8b960bc6"
+  },
+  {
+    "file": "来源/campaign-6afb1891822a8100076cb0a8-28day.json",
+    "bytes": 31426,
+    "sha256": "13284215652c843dd5e3c2d249a6c8fd93c52af3a163908b36121337efb49693"
+  },
+  {
+    "file": "来源/campaign-6a9d3599b5cfff0007d9fca1-7day.json",
+    "bytes": 93205,
+    "sha256": "5aaa462bb779e116448c2934cc5f597dc8e7050d1dc4bca4b77e6103c2996400"
+  },
+  {
+    "file": "来源/campaign-6af7c2a5822a8100076caff6-28day.json",
+    "bytes": 36726,
+    "sha256": "09eeb357f26780adf6ef71527cb9b5d2d18d5528a20b33dd2db89838e59fd5db"
+  },
+  {
+    "file": "来源/campaign-6af7c823822a8100076caffd-28day.json",
+    "bytes": 163711,
+    "sha256": "23b40d41ff37af472d46963fa7cc65b42e1006da125dccc868ce14f3c7e20b6b"
+  },
+  {
+    "file": "来源/candidate-6a844ff5f5f49401f2c57cb8.json",
+    "bytes": 13445,
+    "sha256": "2e22cb34e6f1ccf23036ec73130b90010bcf36c412c1bf10d0c1482870aec81b"
+  },
+  {
+    "file": "来源/live-candidate-6a844ff5f5f49401f2c57cb8.json",
+    "bytes": 2344,
+    "sha256": "b22c36bd10f9f002af21856a44911ed07514d5bdf96ea4206d4a8a1752e98924"
+  },
+  {
+    "file": "来源/campaign-6af7c56c07bc8b0007c7fcec-28day.json",
+    "bytes": 21990,
+    "sha256": "3706d057bef6c2f7b29e201c4839b79273c56b27c76375d061a26d5c7b4f93a4"
+  },
+  {
+    "file": "来源/candidate-6a87c6a7237ea601558dc594.json",
+    "bytes": 17774,
+    "sha256": "f013dc7ea6e9c9376d9e7f25e5e31dac4516b4acc70fdaa0bf13347784594e18"
+  },
+  {
+    "file": "来源/live-candidate-6a87c6a7237ea601558dc594.json",
+    "bytes": 2417,
+    "sha256": "6f2c7c829a09c9eac789e5797531c69533d8711408b92b399d01ef74cc2dbd10"
+  },
+  {
+    "file": "来源/campaign-6af7c37f0f93510007f57abc-7day.json",
+    "bytes": 30300,
+    "sha256": "72b654bf957c264ce74e18c8d29075763733e5b46e5ebc2d40983539849b1119"
+  },
+  {
+    "file": "来源/campaign-6afb186418ef9e0007cf39da-7day.json",
+    "bytes": 23837,
+    "sha256": "a9b3951ae2f0e0edf8fc20b565e6e8c4cd9aa18bed2da15802e4320ba5903cea"
+  },
+  {
+    "file": "来源/campaign-6af7c7da843fbe000793c40a-28day.json",
+    "bytes": 155967,
+    "sha256": "a0f820184c7897ed4d809868b3118a21248b8b0b12cd6db17bdf94dc46b3b564"
+  },
+  {
+    "file": "来源/campaign-6af7c5b407bc8b0007c7fced-28day.json",
+    "bytes": 22899,
+    "sha256": "f33b8a7b00206549718e8cb0d6a6fa48f099526a0d6b2ae77bb373f4111cfd72"
+  },
+  {
+    "file": "来源/campaign-6af7c525843fbe000793c404-28day.json",
+    "bytes": 39566,
+    "sha256": "0bd056948b7ba9cfa4c0bb6728214c748fbc5902a18c11c51ed920bfcd84a983"
+  },
+  {
+    "file": "来源/campaign-6af7c6079197610007483bd7-28day.json",
+    "bytes": 25472,
+    "sha256": "0b3d4d664f285e1a8c1e504e70caf009f67f6742890611fb8401ee81ac2c6960"
+  },
+  {
+    "file": "来源/campaign-6af7c2269a0dcc0007280b38-28day.json",
+    "bytes": 37131,
+    "sha256": "b20c0c45307631c6dc80d65029c71513e44e74b16dc812e3cded3c81269b6b7f"
+  },
+  {
+    "file": "来源/campaign-6af7c37f0f93510007f57abc-28day.json",
+    "bytes": 37724,
+    "sha256": "2a9280d786264c9fb903612bf0e530628a3d65c867387011553c0c16973c0571"
+  },
+  {
+    "file": "来源/cpm5-before-api.json",
+    "bytes": 37727,
+    "sha256": "43620b04da9249511e5c48647f8c72d1fcfef6d12b03179a25a84446709a06aa"
+  },
+  {
+    "file": "来源/campaign-6af7c5b407bc8b0007c7fced-7day.json",
+    "bytes": 15511,
+    "sha256": "dcb5e0dd2892264ef4d74ac2df0637c8a7b10687243ef8786b248c13011c8c5c"
+  }
+]

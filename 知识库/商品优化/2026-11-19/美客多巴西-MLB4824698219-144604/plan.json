@@ -1,0 +1,15 @@
+{
+  "product_id": "MLB4824698219",
+  "scope": "巴西本地描述",
+  "description": "Camiseta unissex para adultos com estampa frontal de cubo colorido em estilo neon sobre fundo preto. Modelo de manga curta e gola redonda.\n\nDETALHES DO PRODUTO\n- Material principal informado na ficha técnica: algodão.\n- Formato de venda: unidade (1 camiseta).\n\nESCOLHA DO TAMANHO\nConfira as opções de tamanho disponíveis e consulte o guia de medidas do anúncio antes de comprar. Compare as medidas com uma camiseta que já tenha bom caimento; não escolha apenas pelo nome do tamanho.\n\nCUIDADOS\nLavar em água fria, de preferência do avesso. Não usar alvejante. Secar à sombra e não passar o ferro diretamente sobre a estampa.\n\nOBSERVAÇÕES\nAs cores da estampa podem apresentar pequenas diferenças em relação às imagens devido à iluminação e à tela utilizada. Confira as fotos e a opção selecionada antes de finalizar a compra.",
+  "changed_fields": [
+    "description"
+  ],
+  "title_policy": "保留原巴西标题；发光字样待用户确认后单独处理",
+  "unconfirmed": [
+    "是否真正UV发光",
+    "80%棉20%弹性纤维的实际成分"
+  ],
+  "before_sha256": "e58d96c9646566d7bbc24fba48e3afac5e4a315fb9fe2c71fe6980d35237e36c",
+  "after_sha256": "1986a29b9b1a90cabc3641948812940b5996f9113073ae85bcced26809f91a42"
+}

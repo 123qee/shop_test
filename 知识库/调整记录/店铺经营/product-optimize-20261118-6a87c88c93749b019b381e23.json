@@ -1,0 +1,66 @@
+{
+  "suggestion_id": "product-optimize-20261118-6a87c88c93749b019b381e23",
+  "recorded_at": "2026-11-18T11:29:33.245512+08:00",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "product_id": "6a87c88c93749b019b381e23",
+  "name": "纯色圆领短袖T恤",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status_at_verification": "平台审核中，编辑版本尚未上线",
+  "all_time_orders_before": 0,
+  "period": {
+    "start": "2026-10-20",
+    "end": "2026-11-16"
+  },
+  "period_metrics": {
+    "impressions": 50,
+    "clicks": 3,
+    "cart": 0,
+    "purchases": 0
+  },
+  "changes": {
+    "title_before": "Summer Quick Drying Short Sleeved Ice Silk T-shirt Ice Silk Short Sleeved Summer Short Sleeved Round Neck Sports Short Sleeved T-shirt 50-100KG… More",
+    "title_after": "Solid Color Short Sleeve Crew Neck T-Shirt, Unisex Casual Pullover Top",
+    "description_intro": "Solid-color pullover T-shirt with short sleeves and a round neckline for casual everyday outfits. Select your preferred color and compare the garment measurements in the size chart below before ordering.",
+    "description_replacements": {
+      "Pattern: print": "Pattern: solid"
+    },
+    "search_tags_before": "",
+    "search_tags_after": [
+      "solid color T-shirt",
+      "crew neck T-shirt",
+      "short sleeve",
+      "casual T-shirt",
+      "pullover top",
+      "unisex T-shirt",
+      "round neck",
+      "everyday top"
+    ]
+  },
+  "protected_fields_verified": [
+    "变型价格",
+    "库存",
+    "SKU",
+    "尺寸颜色",
+    "物流相关输入",
+    "图片URL列表",
+    "类目"
+  ],
+  "verification": {
+    "persisted_after_reload": true,
+    "variant_count": 64,
+    "variant_detail_unchanged": true,
+    "form_variants_unchanged_before_save": true,
+    "images_unchanged_before_save": true,
+    "category_unchanged_before_save": true,
+    "search_tags_read_back": true,
+    "category_id_read_back_unchanged": true
+  },
+  "unresolved": [],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/10款优化/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/10款优化/6a87c88c93749b019b381e23-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-18/10款优化/6a87c88c93749b019b381e23-after.json",
+  "follow_up": "每天11点核对审核及在售版本；以实际生效日为起点观察3天曝光点击、7天转化、14天归因售后。样本不足继续观察，不自动再次改商品或投放。",
+  "outcome": "尚无优化后效果证据，不声称销量提升"
+}

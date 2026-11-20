@@ -1,0 +1,1079 @@
+{
+  "captured_at": "2026-11-18T06:08:08.696Z",
+  "fields": [
+    {
+      "checked": false,
+      "disabled": true,
+      "name": "name",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "cpm5"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "dailyBudget",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "10"
+    },
+    {
+      "checked": false,
+      "disabled": true,
+      "name": "startDate",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "2026年11月14日"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "endDate",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "无停止"
+    },
+    {
+      "checked": true,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "autoBidding",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c47d48f3b2901f2108df6.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.60"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c48f88f3b2901f210a32b.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c47488f3b2901f2108806.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c4744b1e18101d91fa55b.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c47e4c9ba4101fc3762f0.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b8e60f0fb4e010899959e.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c5a40c9ba4101fc395f59.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c47e7c9ba4101fc376356.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b9573ab1469014ebf1813.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c47ebb1e18101d91fabaa.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c48edb1e18101d91fc070.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c5aa3c9ba4101fc3963af.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c47568f3b2901f210891a.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b0cbaf63a5e01573ff62d.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b94c332e0d1010fabc70d.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c4818c9ba4101fc3766bb.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b9578f63a5e0157450e7c.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c54cff75f2d018525485d.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b94bd32e0d1010fabc69a.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b0caf32e0d1010fa6cb5c.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c5abeb1e18101d921ad89.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b9570d9e98d019d341643.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c48f6c9ba4101fc37771a.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c5accc9ba4101fc396581.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c47418f3b2901f21087bf.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c474ab1e18101d91fa597.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c5aa0b1e18101d921ab9d.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c59e2bf622901809aab68.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b956fab1469014ebf17dc.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c55cdb1e18101d9210af6.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b0cabd9e98d019d2edf66.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c4907b1e18101d91fc201.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b0cb5d9e98d019d2ee0d3.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c4820b1e18101d91fb0e9.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c5a008f3b2901f21276a4.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c474e8f3b2901f2108861.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c48dbc9ba4101fc3774ec.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c5ac0bf622901809ab7f7.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c4910b1e18101d91fc2d8.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b0ca732e0d1010fa6c906.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c47f9c9ba4101fc376472.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c5ad3b1e18101d921aee3.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b9577ab1469014ebf1852.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b8bf632e0d1010faba6bf.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8b94c2deced3017301862b.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c4810b1e18101d91faf36.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c48fab1e18101d91fc104.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c5aae535d350144b5e7b9.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c48f2c9ba4101fc3776c7.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "",
+      "tag": "INPUT",
+      "type": "checkbox",
+      "value": "on"
+    },
+    {
+      "checked": false,
+      "disabled": false,
+      "name": "products.6a8c47e0c9ba4101fc3762b8.cpmBid",
+      "tag": "INPUT",
+      "type": "text",
+      "value": "0.65"
+    },
+    {
+      "disabled": false,
+      "name": "",
+      "tag": "SELECT",
+      "type": "select-one",
+      "value": "500"
+    }
+  ],
+  "rows": [
+    {
+      "bid": "0.60",
+      "product_id": "6a8c47d48f3b2901f2108df6"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c48f88f3b2901f210a32b"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c47488f3b2901f2108806"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c4744b1e18101d91fa55b"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c47e4c9ba4101fc3762f0"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b8e60f0fb4e010899959e"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c5a40c9ba4101fc395f59"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c47e7c9ba4101fc376356"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b9573ab1469014ebf1813"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c47ebb1e18101d91fabaa"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c48edb1e18101d91fc070"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c5aa3c9ba4101fc3963af"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c47568f3b2901f210891a"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b0cbaf63a5e01573ff62d"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b94c332e0d1010fabc70d"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c4818c9ba4101fc3766bb"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b9578f63a5e0157450e7c"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c54cff75f2d018525485d"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b94bd32e0d1010fabc69a"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b0caf32e0d1010fa6cb5c"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c5abeb1e18101d921ad89"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b9570d9e98d019d341643"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c48f6c9ba4101fc37771a"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c5accc9ba4101fc396581"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c47418f3b2901f21087bf"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c474ab1e18101d91fa597"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c5aa0b1e18101d921ab9d"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c59e2bf622901809aab68"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b956fab1469014ebf17dc"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c55cdb1e18101d9210af6"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b0cabd9e98d019d2edf66"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c4907b1e18101d91fc201"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b0cb5d9e98d019d2ee0d3"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c4820b1e18101d91fb0e9"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c5a008f3b2901f21276a4"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c474e8f3b2901f2108861"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c48dbc9ba4101fc3774ec"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c5ac0bf622901809ab7f7"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c4910b1e18101d91fc2d8"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b0ca732e0d1010fa6c906"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c47f9c9ba4101fc376472"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c5ad3b1e18101d921aee3"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b9577ab1469014ebf1852"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b8bf632e0d1010faba6bf"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8b94c2deced3017301862b"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c4810b1e18101d91faf36"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c48fab1e18101d91fc104"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c5aae535d350144b5e7b9"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c48f2c9ba4101fc3776c7"
+    },
+    {
+      "bid": "0.65",
+      "product_id": "6a8c47e0c9ba4101fc3762b8"
+    }
+  ],
+  "switches": [
+    {
+      "checked": null
+    },
+    {
+      "checked": null
+    }
+  ],
+  "url": "https://merchant.joom.com/panel/ads/campaigns/6af7c37f0f93510007f57abc/edit"
+}

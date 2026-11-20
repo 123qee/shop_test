@@ -1,0 +1,67 @@
+{
+  "code": 0,
+  "data": {
+    "items": [
+      {
+        "orderId": "8LWJJWND",
+        "campaignId": "6a8cd24de84d9f0007cae4cb",
+        "adCost": "0.5985"
+      },
+      {
+        "orderId": "VL8J4JQV",
+        "campaignId": "6af7c37f0f93510007f57abc",
+        "adCost": "0"
+      },
+      {
+        "orderId": "9D4WEW92",
+        "campaignId": "6af7c37f0f93510007f57abc",
+        "adCost": "0"
+      },
+      {
+        "orderId": "8LWPP239",
+        "campaignId": "6a8cd24de84d9f0007cae4cb",
+        "adCost": "0.5985"
+      },
+      {
+        "orderId": "DVXM2D34",
+        "campaignId": "6a8cd24de84d9f0007cae4cb",
+        "adCost": "0.5985"
+      },
+      {
+        "orderId": "5GEELGJ5",
+        "campaignId": "6a8cd24de84d9f0007cae4cb",
+        "adCost": "0.5985"
+      },
+      {
+        "orderId": "JVEEXVG9",
+        "campaignId": "6a8cd24de84d9f0007cae4cb",
+        "adCost": "0.5985"
+      },
+      {
+        "orderId": "26MM267X",
+        "campaignId": "6a8cd24de84d9f0007cae4cb",
+        "adCost": "0.5985"
+      },
+      {
+        "orderId": "M2V2V9G4",
+        "campaignId": "6a8cd24de84d9f0007cae4cb",
+        "adCost": "0.5985"
+      },
+      {
+        "orderId": "VL6LX2J7",
+        "campaignId": "6a8cd24de84d9f0007cae4cb",
+        "adCost": "0.5985"
+      },
+      {
+        "orderId": "GJL6GXQG",
+        "campaignId": "6a8cd24de84d9f0007cae4cb",
+        "adCost": "0.5985"
+      },
+      {
+        "orderId": "GJVPX8EL",
+        "campaignId": "6a8cd24de84d9f0007cae4cb",
+        "adCost": "0.5985"
+      }
+    ]
+  }
+}

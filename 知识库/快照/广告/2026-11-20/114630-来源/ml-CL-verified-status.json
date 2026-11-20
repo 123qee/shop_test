@@ -1,0 +1,35 @@
+{
+  "site": "CL",
+  "expected_advertiser_id": "1282819",
+  "entry": {
+    "adlink": "https://global-selling.mercadolibre.com/advertising/hub/accounts?validate-user=true&from=summary_ads&utm_source=sc_summary_v2&utm_medium=card&utm_campaign=active&advertiserId=1282819",
+    "captured_at": "2026-11-20T03:35:29.116Z",
+    "country": "智利",
+    "summary": "摘要\n账户状态\n生效限制项\n\n当前部分功能已被禁用。请解决此问题以恢复正常运营。\n\n1\n前往限制中心\n0\n前往警告中心\n您的信誉度\n绿色\n买家眼中的您\n\n您的信誉福利仍处于活动状态。\n\n总销售额\nUS$\n72\n下降 20.9%\n\n20.9%\n\n最近7天\n\n主要摘要\n建议\n创建视图\n商品待处理任务\n问题\n\n0\n\n商品\n178\n项需改进\n因违反政策而失效\n\n178\n\n价格\n\n0\n\n业务指标\nUS$\n72\n下降 20.9%\n\n20.9%\n\n最近7天的总销售额\n\n转到商业指标\n您销售中的待处理任务\n今日发货\n\n0\n\n售后\n\n0\n\n广告指标\n8\n已上涨 14%\n\n14%\n\n广告销售额\n\n1.108\n已上涨 170%\n\n170%\n\n收到的点击量\n\n前往广告\n信誉\n\n生效中的权益\n\n绿色\n\n2%\n\n投诉\n\n2%\n\n由你取消\n\n0%\n\n调解案件\n\n0%\n\n不合规的货件\n\n前往声誉页面\n我的主页\n\n过去30天内\n\n0 位新关注者\n\n0 位关注者从你这里购买\n\n转到我的主页\n动态\n\n暂无最新动态。相关信息发布后，你将能在此处查看。\n\n前往更新"
+  },
+  "page": {
+    "url": "https://sellers.mercadolibre.com/advertising/product-ads/admin/campaigns?advertiser_id=1282819&navigate_to=seller_central&from=ads-manager&status=A%2CD",
+    "country": "智利",
+    "owner": "CNQISHIJIECLOTHINGCLR",
+    "captured_at": "2026-11-20T03:35:46.860Z"
+  },
+  "observed_backend_advertiser_ids": [
+    "1282820"
+  ],
+  "identity_source": "https://global-selling.mercadolibre.com/pa/api/admin-pads/ajax/campaigns/search?dateFrom=2026-10-23&dateTo=2026-11-19&limit=100&offset=0",
+  "captured_at": "2026-11-20T03:35:47.757Z",
+  "currency": null,
+  "platform_timezone": null,
+  "data_updated_at": null,
+  "metrics": null,
+  "campaigns": null,
+  "status": "account_identity_unverified",
+  "observed_campaign_ids": [
+    358579749,
+    358579791
+  ],
+  "reason": "实际站点入口/最终页/原生返回活动账户不一致，金额与成交留空",
+  "platform": "Mercado Libre",
+  "country": "CL",
+  "country_name": "智利"
+}

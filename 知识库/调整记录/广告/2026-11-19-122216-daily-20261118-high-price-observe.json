@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-11-19T12:22:16.441080+08:00",
+  "automation_id": "joom",
+  "event_type": "每日复查/设置观察",
+  "suggestion_id": "daily-20261118-high-price-observe",
+  "previous_event_recorded_at": "2026-11-18T11:57:40.880548+08:00",
+  "status": "继续观察",
+  "actual_setting_changed": false,
+  "execution_verified": false,
+  "observation": {
+    "status": "继续观察",
+    "observation": "近7天33点击、花费0.8196712美元无成交，ACOS不可计算；当前CPM0.50、日预算5维持，不凭28天低ACOS放量。",
+    "suggested": {
+      "daily_budget_usd": 5,
+      "cpm_bid_usd": 0.5
+    }
+  },
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-19/122216.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-19/122216.json"
+}

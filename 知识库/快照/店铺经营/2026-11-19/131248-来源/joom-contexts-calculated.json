@@ -1,0 +1,59 @@
+{
+  "source": "https://api-merchant.joom.com/api/v3/analytics/contexts?from=2026-10-21&to=2026-11-17&storeId=%40total&contextName=%40itemize",
+  "groups": {
+    "relatedComplement": {
+      "openCount": 0.0,
+      "previewCount": 122.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0
+    },
+    "link": {
+      "openCount": 2445.0,
+      "previewCount": 0.0,
+      "purchaseCount": 126.0,
+      "gmv": 806.2500000000001
+    },
+    "catalog": {
+      "openCount": 228.0,
+      "previewCount": 20559.0,
+      "purchaseCount": 3.0,
+      "gmv": 12.99
+    },
+    "unknown": {
+      "openCount": 983.0,
+      "previewCount": 30374.0,
+      "purchaseCount": 13.0,
+      "gmv": 73.49
+    },
+    "search": {
+      "openCount": 1883.0,
+      "previewCount": 67870.0,
+      "purchaseCount": 50.0,
+      "gmv": 258.14
+    },
+    "similar": {
+      "openCount": 1097.0,
+      "previewCount": 28053.0,
+      "purchaseCount": 31.0,
+      "gmv": 171.86999999999998
+    },
+    "best": {
+      "openCount": 466.0,
+      "previewCount": 16628.0,
+      "purchaseCount": 1.0,
+      "gmv": 4.55
+    },
+    "store": {
+      "openCount": 23.0,
+      "previewCount": 3598.0,
+      "purchaseCount": 3.0,
+      "gmv": 17.97
+    },
+    "pgOffer": {
+      "openCount": 31.0,
+      "previewCount": 3037.0,
+      "purchaseCount": 0.0,
+      "gmv": 0.0
+    }
+  }
+}

@@ -1,0 +1,959 @@
+{
+  "active": true,
+  "basic": "cpm5\n分析数据时区\n重复\n编辑\n删除\n基本信息\n活动名称\ncpm5\n每日预算\nUS$10\n开始日期\n2026年11月14日\n结束日期\n无\n产品\n50\n竞价方式\nCPM\n活动状态\n活性\n",
+  "captured_at": "2026-11-18T06:11:01.795Z",
+  "heading": "cpm5",
+  "rows": [
+    {
+      "cells": [
+        "",
+        "6a8c47d48f3b2901f2108df6\nNineteen Wear",
+        "US$0.60",
+        "1",
+        "US$0.53",
+        "53.71%",
+        "US$3.99",
+        "8,046",
+        "1.29%",
+        "1.92%",
+        "US$2.14",
+        "US$7.98",
+        "US$4.29",
+        ""
+      ],
+      "product_id": "6a8c47d48f3b2901f2108df6"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c48f88f3b2901f210a32b\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.54",
+        "",
+        "US$3.99",
+        "175",
+        "0.57%",
+        "",
+        "",
+        "US$0",
+        "US$0.09",
+        ""
+      ],
+      "product_id": "6a8c48f88f3b2901f210a32b"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c47488f3b2901f2108806\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.41",
+        "",
+        "US$3.99",
+        "84",
+        "1.19%",
+        "",
+        "",
+        "US$0",
+        "US$0.03",
+        ""
+      ],
+      "product_id": "6a8c47488f3b2901f2108806"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c4744b1e18101d91fa55b\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.63",
+        "",
+        "US$3.99",
+        "50",
+        "6%",
+        "",
+        "",
+        "US$0",
+        "US$0.03",
+        ""
+      ],
+      "product_id": "6a8c4744b1e18101d91fa55b"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c47e4c9ba4101fc3762f0\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.59",
+        "",
+        "US$3.99",
+        "29",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.02",
+        ""
+      ],
+      "product_id": "6a8c47e4c9ba4101fc3762f0"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b8e60f0fb4e010899959e\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.58",
+        "",
+        "US$3.99",
+        "23",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.01",
+        ""
+      ],
+      "product_id": "6a8b8e60f0fb4e010899959e"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c5a40c9ba4101fc395f59\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.60",
+        "",
+        "US$3.99",
+        "22",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.01",
+        ""
+      ],
+      "product_id": "6a8c5a40c9ba4101fc395f59"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c47e7c9ba4101fc376356\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.63",
+        "",
+        "US$3.99",
+        "21",
+        "23.81%",
+        "",
+        "",
+        "US$0",
+        "US$0.01",
+        ""
+      ],
+      "product_id": "6a8c47e7c9ba4101fc376356"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b9573ab1469014ebf1813\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.59",
+        "",
+        "US$3.99",
+        "18",
+        "5.56%",
+        "",
+        "",
+        "US$0",
+        "US$0.01",
+        ""
+      ],
+      "product_id": "6a8b9573ab1469014ebf1813"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c47ebb1e18101d91fabaa\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.65",
+        "",
+        "US$3.99",
+        "8",
+        "12.5%",
+        "",
+        "",
+        "US$0",
+        "US$0.01",
+        ""
+      ],
+      "product_id": "6a8c47ebb1e18101d91fabaa"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c48edb1e18101d91fc070\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.35",
+        "",
+        "US$3.99",
+        "7",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c48edb1e18101d91fc070"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c47568f3b2901f210891a\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.65",
+        "",
+        "US$3.99",
+        "6",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c47568f3b2901f210891a"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c5aa3c9ba4101fc3963af\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.60",
+        "",
+        "US$3.99",
+        "6",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c5aa3c9ba4101fc3963af"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b0cbaf63a5e01573ff62d\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.63",
+        "",
+        "US$3.99",
+        "5",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8b0cbaf63a5e01573ff62d"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b94c332e0d1010fabc70d\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.60",
+        "",
+        "US$3.99",
+        "4",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8b94c332e0d1010fabc70d"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c4818c9ba4101fc3766bb\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.65",
+        "",
+        "US$3.99",
+        "4",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c4818c9ba4101fc3766bb"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b94bd32e0d1010fabc69a\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.52",
+        "",
+        "US$3.99",
+        "3",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8b94bd32e0d1010fabc69a"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b9578f63a5e0157450e7c\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.61",
+        "",
+        "US$3.99",
+        "3",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8b9578f63a5e0157450e7c"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c54cff75f2d018525485d\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.47",
+        "",
+        "US$4",
+        "3",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c54cff75f2d018525485d"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c48f6c9ba4101fc37771a\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.65",
+        "",
+        "US$3.99",
+        "2",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c48f6c9ba4101fc37771a"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c474ab1e18101d91fa597\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.54",
+        "",
+        "US$3.99",
+        "2",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c474ab1e18101d91fa597"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c47418f3b2901f21087bf\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.35",
+        "",
+        "US$3.99",
+        "2",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c47418f3b2901f21087bf"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c55cdb1e18101d9210af6\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.41",
+        "",
+        "US$4",
+        "2",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c55cdb1e18101d9210af6"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c59e2bf622901809aab68\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.65",
+        "",
+        "US$3.99",
+        "2",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c59e2bf622901809aab68"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c5abeb1e18101d921ad89\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.65",
+        "",
+        "US$3.99",
+        "2",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c5abeb1e18101d921ad89"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b956fab1469014ebf17dc\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.65",
+        "",
+        "US$3.99",
+        "2",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8b956fab1469014ebf17dc"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c5accc9ba4101fc396581\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.58",
+        "",
+        "US$3.99",
+        "2",
+        "100%",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c5accc9ba4101fc396581"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c5aa0b1e18101d921ab9d\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.51",
+        "",
+        "US$3.99",
+        "2",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c5aa0b1e18101d921ab9d"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b0caf32e0d1010fa6cb5c\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.65",
+        "",
+        "US$3.99",
+        "2",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8b0caf32e0d1010fa6cb5c"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b9570d9e98d019d341643\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.65",
+        "",
+        "US$3.99",
+        "2",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8b9570d9e98d019d341643"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b0cabd9e98d019d2edf66\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.55",
+        "",
+        "US$3.99",
+        "1",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8b0cabd9e98d019d2edf66"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c4907b1e18101d91fc201\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.39",
+        "",
+        "US$3.99",
+        "1",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c4907b1e18101d91fc201"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c4820b1e18101d91fb0e9\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.65",
+        "",
+        "US$3.99",
+        "1",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c4820b1e18101d91fb0e9"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c474e8f3b2901f2108861\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.32",
+        "",
+        "US$3.99",
+        "1",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c474e8f3b2901f2108861"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c5a008f3b2901f21276a4\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.41",
+        "",
+        "US$3.99",
+        "1",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8c5a008f3b2901f21276a4"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b0cb5d9e98d019d2ee0d3\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0.65",
+        "",
+        "US$3.99",
+        "1",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0.00",
+        ""
+      ],
+      "product_id": "6a8b0cb5d9e98d019d2ee0d3"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c47f9c9ba4101fc376472\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8c47f9c9ba4101fc376472"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c5ad3b1e18101d921aee3\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8c5ad3b1e18101d921aee3"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c5ac0bf622901809ab7f7\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8c5ac0bf622901809ab7f7"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c48fab1e18101d91fc104\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8c48fab1e18101d91fc104"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b0ca732e0d1010fa6c906\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8b0ca732e0d1010fa6c906"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c48dbc9ba4101fc3774ec\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8c48dbc9ba4101fc3774ec"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c48f2c9ba4101fc3776c7\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8c48f2c9ba4101fc3776c7"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c4910b1e18101d91fc2d8\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8c4910b1e18101d91fc2d8"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b94c2deced3017301862b\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8b94c2deced3017301862b"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c47e0c9ba4101fc3762b8\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8c47e0c9ba4101fc3762b8"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b8bf632e0d1010faba6bf\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8b8bf632e0d1010faba6bf"
+    },
+    {
+      "cells": [
+        "",
+        "6a8b9577ab1469014ebf1852\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8b9577ab1469014ebf1852"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c4810b1e18101d91faf36\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8c4810b1e18101d91faf36"
+    },
+    {
+      "cells": [
+        "",
+        "6a8c5aae535d350144b5e7b9\nNineteen Wear",
+        "US$0.65",
+        "",
+        "US$0",
+        "",
+        "US$3.99",
+        "0",
+        "",
+        "",
+        "",
+        "US$0",
+        "US$0",
+        ""
+      ],
+      "product_id": "6a8c5aae535d350144b5e7b9"
+    }
+  ],
+  "url": "https://merchant.joom.com/panel/ads/campaigns/6af7c37f0f93510007f57abc"
+}

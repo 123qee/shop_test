@@ -1,0 +1,37 @@
+{
+  "suggestion_id": "product-optimize-20261117-abstract-hoodie",
+  "product_id": "6a9c2ac53f8ce801f4d022c1",
+  "name": "Kids' Abstract Graphic Zip-Up Hoodie, Cotton Long Sleeve Sweatshirt",
+  "period_clicks": 100,
+  "before_title": "Kids' 100% Cotton Zip-Up Hoodie, Long Sleeve",
+  "after_title": "Kids' Abstract Graphic Zip-Up Hoodie, Cotton Long Sleeve Sweatshirt",
+  "recorded_on": "2026-11-17",
+  "platform": "joom",
+  "shop": "Nineteen Wear",
+  "status": "观察中",
+  "execution_verified": true,
+  "review_status": "保存成功；编辑版本待平台审核",
+  "authorization": "用户本次要求优化低销量商品并保护高销量商品；不扩展定时任务自动修改权限",
+  "all_time_order_count_before_edit": 0,
+  "changed_fields": [
+    "标题",
+    "描述",
+    "搜索标签"
+  ],
+  "protected_fields": [
+    "价格",
+    "库存",
+    "变型",
+    "SKU",
+    "图片",
+    "类目",
+    "原有尺码数值",
+    "物流设置",
+    "地区限制"
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/优化报告.md",
+  "before_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/6a9c2ac53f8ce801f4d022c1-before.json",
+  "after_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/商品优化/2026-11-17/6a9c2ac53f8ce801f4d022c1-after.json",
+  "follow_up": "每天11点核对审核/在售版本是否更新；审核通过后观察3天流量与点击、7天转化，14天复查归因及售后。样本不足继续观察，不自动再次改商品或广告。",
+  "outcome": "尚无优化后销量证据，不宣称效果提升"
+}

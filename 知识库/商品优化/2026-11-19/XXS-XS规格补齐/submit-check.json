@@ -1,0 +1,1149 @@
+{
+  "user_authorization": "用户确认XXS XS正常供应，各库存999",
+  "description_after": "Women's cotton crew-neck T-shirt with a Michael Jackson portrait and lettering graphic. Short sleeves; sizes XXS–3XL. Check the selected color/design in the product images.\n\nFIT: Compare the listed garment bust, length, shoulder and sleeve measurements with a well-fitting T-shirt before selecting a size. The bust value is the full garment circumference, not the flat width. Check the size and color combination before ordering. Measurements are in cm; allow the stated 2–3 cm manual measurement difference.\n\nProduct Type： t shirt \nManufacture Country：China\nApplicable scene: daily \nstyle: Casual \nApplicable season: summer \nNeckline：round \nTops closure type: pullover \nClothing decoration: Print\nLeather Label：no\nSleeve length (cm): Short Sleeve \nSex: Women\nAge: Ages 18-45 Years Old \nPattern：print \nMaterial: Cotton\nLabel: Yes \nWashing Care: Machine wash at temperatures below 30°C\nDo not tumble dry \nSizes: XXS XS S M L XL 2XL 3XL \nXXS：bust 88 cm，length 60 cm,shoulder 41 cm,Sleeve Length 18 cm\nXS：bust 96 cm，length 66 cm,shoulder 45 cm,Sleeve Length 19 cm\nS: bust 100 cm, length 68 cm, shoulder 47 cm,Sleeve Length 19 cm\nM: bust 104 cm, length 70 cm, shoulder 49 cm,Sleeve Length 20 cm\nL: bust 108 cm, length 72 cm, shoulder 51 cm,Sleeve Length 20 cm\nXL: bust 112 cm, length 74 cm, shoulder 53 cm,Sleeve Length 21cm\n2XL: bust 116 cm, length 76 cm, shoulder 55 cm,Sleeve Length 21 cm\n3XL: bust 120 cm, length 78 cm, shoulder 57 cm,Sleeve Length 22 cm\nnote: \n1. Please carefully measure yourself according to the chart before purchasing, thank you! \n2. Due to manual measurement, please allow an error of 2-3 cm. \n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand. \n4.All our products are advertised in size , study the size chart before buying.",
+  "old_six_variants_unchanged": true,
+  "images_unchanged": true,
+  "title_tags_category_unchanged": true,
+  "check": {
+    "fields": [
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].isArchived",
+        "tag": "INPUT",
+        "type": "checkbox",
+        "value": "on"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "name": "variants[0].sku",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "TXYL0283-S-as the picture1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].colors",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "as the picture"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].size",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "S"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].mainImageUrl",
+        "tag": "INPUT",
+        "type": "file",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].price",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "3.98"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].msrPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "9"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].shippingPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].declaredPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].inventory",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "995"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].gtin",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].hsCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].tnvedCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].eprelId",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].shippingLength",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "30"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].shippingWidth",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "20"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].shippingHeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[0].shippingWeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "0.2"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].isArchived",
+        "tag": "INPUT",
+        "type": "checkbox",
+        "value": "on"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "name": "variants[1].sku",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "TXYL0283-M-as the picture1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].colors",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "as the picture"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].size",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "M"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].mainImageUrl",
+        "tag": "INPUT",
+        "type": "file",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].price",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "3.98"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].msrPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "9"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].shippingPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].declaredPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].inventory",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "998"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].gtin",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].hsCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].tnvedCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].eprelId",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].shippingLength",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "30"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].shippingWidth",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "20"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].shippingHeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[1].shippingWeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "0.2"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].isArchived",
+        "tag": "INPUT",
+        "type": "checkbox",
+        "value": "on"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "name": "variants[2].sku",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "TXYL0283-L-as the picture1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].colors",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "as the picture"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].size",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "L"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].mainImageUrl",
+        "tag": "INPUT",
+        "type": "file",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].price",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "3.98"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].msrPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "9"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].shippingPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].declaredPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].inventory",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "999"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].gtin",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].hsCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].tnvedCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].eprelId",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].shippingLength",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "30"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].shippingWidth",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "20"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].shippingHeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[2].shippingWeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "0.2"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].isArchived",
+        "tag": "INPUT",
+        "type": "checkbox",
+        "value": "on"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "name": "variants[3].sku",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "TXYL0283-XL-as the picture1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].colors",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "as the picture"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].size",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "XL"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].mainImageUrl",
+        "tag": "INPUT",
+        "type": "file",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].price",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "3.98"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].msrPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "9"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].shippingPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].declaredPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].inventory",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "999"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].gtin",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].hsCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].tnvedCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].eprelId",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].shippingLength",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "30"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].shippingWidth",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "20"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].shippingHeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[3].shippingWeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "0.2"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].isArchived",
+        "tag": "INPUT",
+        "type": "checkbox",
+        "value": "on"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "name": "variants[4].sku",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "TXYL0283-2XL-as the picture1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].colors",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "as the picture"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].size",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "2XL"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].mainImageUrl",
+        "tag": "INPUT",
+        "type": "file",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].price",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "3.98"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].msrPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "9"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].shippingPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].declaredPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].inventory",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "999"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].gtin",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].hsCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].tnvedCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].eprelId",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].shippingLength",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "30"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].shippingWidth",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "20"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].shippingHeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[4].shippingWeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "0.2"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].isArchived",
+        "tag": "INPUT",
+        "type": "checkbox",
+        "value": "on"
+      },
+      {
+        "checked": false,
+        "disabled": true,
+        "name": "variants[5].sku",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "TXYL0283-3XL-as the picture1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].colors",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "as the picture"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].size",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "3XL"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].mainImageUrl",
+        "tag": "INPUT",
+        "type": "file",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].price",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "3.98"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].msrPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "9"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].shippingPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].declaredPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].inventory",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "999"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].gtin",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].hsCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].tnvedCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].eprelId",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].shippingLength",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "30"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].shippingWidth",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "20"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].shippingHeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[5].shippingWeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "0.2"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].sku",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "TXYL0283-XXS-as the picture1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].colors",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "as the picture"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].size",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "XXS"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].mainImageUrl",
+        "tag": "INPUT",
+        "type": "file",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].price",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "3.98"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].msrPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "9"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].shippingPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].declaredPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].inventory",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "999"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].gtin",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].hsCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].tnvedCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].eprelId",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].shippingLength",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "30"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].shippingWidth",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "20"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].shippingHeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[6].shippingWeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "0.2"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].sku",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "TXYL0283-XS-as the picture1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].colors",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "as the picture"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].size",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "XS"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].mainImageUrl",
+        "tag": "INPUT",
+        "type": "file",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].price",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "3.98"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].msrPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "9"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].shippingPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "0"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].declaredPrice",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].inventory",
+        "tag": "INPUT",
+        "type": "text",
+        "value": "999"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].gtin",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].hsCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].tnvedCode",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].eprelId",
+        "tag": "INPUT",
+        "type": "text",
+        "value": ""
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].shippingLength",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "30"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].shippingWidth",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "20"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].shippingHeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "1"
+      },
+      {
+        "checked": false,
+        "disabled": false,
+        "name": "variants[7].shippingWeight",
+        "tag": "INPUT",
+        "type": "number",
+        "value": "0.2"
+      }
+    ],
+    "oldFieldCount": 114,
+    "oldFieldsSha256": "d5f6a2482416588c988b8f5f49f293fa1f90c007d5bcc34bba8630b43a2fb1d9"
+  }
+}
