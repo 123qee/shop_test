@@ -32,6 +32,8 @@ const querySchema = z.object({
   onlyNew: z.boolean().default(true),
   overrides: z.record(z.string().max(300), z.enum([...EXPORT_MATERIALS, 'unknown'])).default({}),
   selectedImages: z.record(z.string().max(300), z.array(z.string().url().max(4000)).min(1).max(21)).default({}),
+  excludedLineUids: z.array(z.string().min(1).max(300)).max(50000).default([]),
+  sortOrder: z.enum(['oldest', 'newest']).default('oldest'),
 });
 
 const syncSchema = z.object({

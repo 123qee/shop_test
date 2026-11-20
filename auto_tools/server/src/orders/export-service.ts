@@ -7,6 +7,7 @@ import { addDays } from '@shared/planner';
 import {
   chinaDate,
   chinaDayStartIso,
+  compareOrderLines,
   formatChinaDateTime,
   isDateString,
   isOrderStatus,
@@ -24,6 +25,7 @@ import {
   type OrderQueryInput,
   type OrderShopRef,
   type OrderStatus,
+  type OrderSortOrder,
 } from '@shared/orders';
 import { config } from '../config/index.js';
 import { orderRepository, shopKey, type StoredOrderLine } from '../repositories/order-repository.js';
@@ -36,12 +38,13 @@ import { loadExportImages } from './export-images.js';
 import { createMaterialClassifier, type MaterialDecision } from './material-classifier.js';
 import { orderProfileService } from './profile-service.js';
 import { orderSourceRegistry } from './registry.js';
-import { buildXlsx, type XlsxCell } from './writers/xlsx.js';
+import { buildXlsx, XLSX_IMAGE_COLUMN_WIDTH, XLSX_IMAGE_SIZE, type XlsxCell } from './writers/xlsx.js';
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 interface ClassifiedLine {
   line: StoredOrderLine;
+  exportSelected: boolean;
   decision: MaterialDecision;
   imageUrls: string[];
   selectedImages: string[];
@@ -76,6 +79,8 @@ interface NormalizedQuery {
   onlyNew: boolean;
   overrides: Record<string, ProductMaterial>;
   selectedImages: Record<string, string[]>;
+  excludedLineUids: Set<string>;
+  sortOrder: OrderSortOrder;
 }
 
 interface ExportPlan {
@@ -141,28 +146,10 @@ function statsOf(lines: ClassifiedLine[]): { orderCount: number; quantity: numbe
   };
 }
 
-const collator = new Intl.Collator('zh-CN', { numeric: true, sensitivity: 'base' });
-
-/** 按店铺、SKU、颜色、尺码排，方便按款备货。 */
-function compareLines(a: ClassifiedLine, b: ClassifiedLine): number {
-  const keys: Array<(item: ClassifiedLine) => string> = [
-    ({ line }) => line.shopName,
-    ({ line }) => line.productSku ?? '',
-    ({ line }) => line.color ?? '',
-    ({ line }) => line.size ?? '',
-    ({ line }) => line.orderedAt,
-    ({ line }) => line.orderId,
-  ];
-  for (const key of keys) {
-    const diff = collator.compare(key(a), key(b));
-    if (diff) return diff;
-  }
-  return 0;
-}
-
-function toPreviewLine({ line, decision, imageUrls, selectedImages }: ClassifiedLine, shopNames: Map<string, string>): OrderPreviewLine {
+function toPreviewLine({ line, exportSelected, decision, imageUrls, selectedImages }: ClassifiedLine, shopNames: Map<string, string>): OrderPreviewLine {
   return {
     uid: line.uid,
+    exportSelected,
     platform: line.platform,
     shopId: line.shopId,
     shopName: shopNames.get(shopKey(line.platform, line.shopId)) ?? line.shopName,
@@ -279,7 +266,12 @@ export class OrderExportService {
     if (input.from !== undefined && !isDateString(input.from)) throw new OrderInputError('开始日期格式不正确');
     if (input.to !== undefined && !isDateString(input.to)) throw new OrderInputError('结束日期格式不正确');
     if (input.from && input.to && input.from > input.to) throw new OrderInputError('开始日期不能晚于结束日期');
-    return { shops, statuses, from: input.from, to: input.to, onlyNew: input.onlyNew, overrides: input.overrides ?? {}, selectedImages: input.selectedImages ?? {} };
+    if (input.sortOrder !== undefined && !['oldest', 'newest'].includes(input.sortOrder)) throw new OrderInputError('排序方式不正确');
+    return {
+      shops, statuses, from: input.from, to: input.to, onlyNew: input.onlyNew,
+      overrides: input.overrides ?? {}, selectedImages: input.selectedImages ?? {},
+      excludedLineUids: new Set(input.excludedLineUids ?? []), sortOrder: input.sortOrder ?? 'oldest',
+    };
   }
 
   private shopInfo(shops: OrderShopRef[]): { shops: PlanShop[]; names: Map<string, string> } {
@@ -331,16 +323,18 @@ export class OrderExportService {
     const byMaterial = new Map(materialBuckets.map((bucket) => [bucket.key, bucket]));
     for (const line of lines) {
       const decision = classify(line, query.overrides[line.uid]);
+      const bucket = byMaterial.get(decision.material) ?? unknownBucket;
+      const exportSelected = !bucket.excluded && !query.excludedLineUids.has(line.uid);
       const imageUrls = imagesFor(line);
       const requested = query.selectedImages[line.uid];
-      if (requested && (!requested.length || requested.length > 21 || requested.some((url) => !imageUrls.includes(url)))) {
+      if (exportSelected && requested && (!requested.length || requested.length > 21 || requested.some((url) => !imageUrls.includes(url)))) {
         throw new OrderInputError(`订单 ${line.orderId} 的选图已失效，请重新预览后选择商品图片`);
       }
       const selectedImages = requested ? [...new Set(requested)] : imageUrls.slice(0, 1);
-      (byMaterial.get(decision.material) ?? unknownBucket).lines.push({ line, decision, imageUrls, selectedImages });
+      bucket.lines.push({ line, exportSelected, decision, imageUrls, selectedImages });
     }
     const buckets = unknownBucket.lines.length ? [...materialBuckets, unknownBucket] : materialBuckets;
-    for (const bucket of buckets) bucket.lines.sort(compareLines);
+    for (const bucket of buckets) bucket.lines.sort((a, b) => compareOrderLines(a.line, b.line, query.sortOrder));
 
     const seq = orderExportRepository.countSince(profile.id, chinaDayStartIso(chinaDate(now))) + 1;
     const { files, renamed } = this.planFiles(profile, buckets, shops, query, now, seq);
@@ -364,7 +358,9 @@ export class OrderExportService {
     now: Date,
     seq: number,
   ): { files: PlanFile[]; renamed: boolean } {
-    const exportable = buckets.filter((bucket) => !bucket.excluded && bucket.lines.length);
+    const exportable = buckets.filter((bucket) => !bucket.excluded)
+      .map((bucket) => ({ ...bucket, lines: bucket.lines.filter((item) => item.exportSelected) }))
+      .filter((bucket) => bucket.lines.length);
     const context = {
       platforms: [...new Set(shops.map((shop) => shop.platformLabel))],
       shops: shops.map((shop) => shop.shopName),
@@ -455,7 +451,7 @@ export class OrderExportService {
         const buffer = buildXlsx(file.buckets.map((bucket) => ({
           name: bucket.label,
           columns: columns.flatMap<{ header: string; width: number; numeric: boolean }>((column) => column.key === 'imageUrl'
-            ? Array.from({ length: imageCount }, (_, i) => ({ header: i ? `图片 ${i + 1}` : '图片', width: 22, numeric: false }))
+            ? Array.from({ length: imageCount }, (_, i) => ({ header: i ? `图片 ${i + 1}` : '图片', width: XLSX_IMAGE_COLUMN_WIDTH, numeric: false }))
             : [{ header: column.label, width: column.width, numeric: 'numeric' in column ? column.numeric : false }]),
           rows: bucket.lines.map((item) => columns.flatMap((column) => column.key === 'imageUrl'
             ? Array.from({ length: imageCount }, (_, i) => images.get(item.selectedImages[i]) ?? '')
@@ -469,6 +465,10 @@ export class OrderExportService {
           orderCount: file.orderCount,
           quantity: file.quantity,
           size: buffer.length,
+          lowResolutionImages: [...new Set(file.buckets.flatMap((bucket) => bucket.lines.flatMap((item) => item.selectedImages)))].filter((url) => {
+            const image = images.get(url)!;
+            return Math.max(image.width, image.height) < XLSX_IMAGE_SIZE;
+          }).length,
         };
       });
       record = {
@@ -482,12 +482,13 @@ export class OrderExportService {
           ...(query.from ? { from: query.from } : {}),
           ...(query.to ? { to: query.to } : {}),
           onlyNew: query.onlyNew,
+          sortOrder: query.sortOrder,
         },
         summary: plan.buckets.map((bucket) => ({
           key: bucket.key,
           label: bucket.label,
-          ...statsOf(bucket.lines),
-          exported: !bucket.excluded && bucket.lines.length > 0,
+          ...statsOf(bucket.lines.filter((item) => bucket.excluded || item.exportSelected)),
+          exported: bucket.lines.some((item) => item.exportSelected),
         })),
         files,
         zipName: `${sanitizeFileName(`${chinaDate(now).replace(/-/g, '')}_${profile.name}_${String(plan.seq).padStart(2, '0')}`)}.zip`,

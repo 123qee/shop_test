@@ -410,6 +410,26 @@ export interface OrderQueryInput {
   overrides?: Record<string, ProductMaterial>;
   /** 按订单行选图；未指定时只导出订单图片，不重复数量。 */
   selectedImages?: Record<string, string[]>;
+  /** 本次跳过的订单行；仍在预览中展示，不标记为已导出。 */
+  excludedLineUids?: string[];
+  sortOrder?: OrderSortOrder;
+}
+
+export type OrderSortOrder = 'oldest' | 'newest';
+
+/** 页面和文件采用相同的时间顺序；同一时间用稳定标识区分。 */
+export function compareOrderLines(
+  a: Pick<OrderPreviewLine, 'orderedAt' | 'platform' | 'shopId' | 'orderId' | 'uid'>,
+  b: Pick<OrderPreviewLine, 'orderedAt' | 'platform' | 'shopId' | 'orderId' | 'uid'>,
+  sortOrder: OrderSortOrder = 'oldest',
+): number {
+  const time = Date.parse(a.orderedAt) - Date.parse(b.orderedAt);
+  if (time) return sortOrder === 'newest' ? -time : time;
+  for (const key of ['platform', 'shopId', 'orderId', 'uid'] as const) {
+    const diff = a[key].localeCompare(b[key], 'zh-CN', { numeric: true });
+    if (diff) return diff;
+  }
+  return 0;
 }
 
 export type MaterialSource =
@@ -423,6 +443,7 @@ export type MaterialSource =
 
 export interface OrderPreviewLine {
   uid: string;
+  exportSelected: boolean;
   platform: string;
   shopId: string;
   shopName: string;
@@ -482,6 +503,8 @@ export interface OrderExportFileInfo {
   orderCount: number;
   quantity: number;
   size: number;
+  /** 所选源图不足 240px 的去重图片数。 */
+  lowResolutionImages?: number;
 }
 
 export interface OrderExportRecord {
@@ -495,6 +518,7 @@ export interface OrderExportRecord {
     from?: string;
     to?: string;
     onlyNew: boolean;
+    sortOrder?: OrderSortOrder;
   };
   summary: Array<{ key: string; label: string; orderCount: number; quantity: number; exported: boolean }>;
   files: OrderExportFileInfo[];

@@ -345,3 +345,32 @@ button.ghost.orders-danger:not(:disabled):hover { border-color: #fecaca; backgro
 .orders-image-dialog::backdrop { background: #000a; }
 .orders-image-dialog > button { display: block; margin: 0 0 8px auto; }
 .orders-image-dialog > img { display: block; max-width: 86vw; max-height: 78vh; object-fit: contain; }
+
+/* 订单逐行核对；材质仅筛选，跨店铺仍按下单时间排列。 */
+.orders-item-toolbar, .orders-item-toolbar-controls, .orders-selection-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.orders-item-toolbar { justify-content: space-between; margin: 16px 0 10px; }
+.orders-item-toolbar-controls .orders-select { width: auto; }
+.orders-selection-tools { margin-bottom: 12px; }
+.orders-items-scroll { overflow-x: auto; border: 1px solid #e5e5e5; border-radius: 10px; }
+.orders-items-table { width: 100%; min-width: 1080px; border-collapse: collapse; font-size: 13px; }
+.orders-items-table th { padding: 11px 12px; background: #f7f8fa; color: #525252; font-weight: 600; text-align: left; white-space: nowrap; }
+.orders-items-table td { padding: 10px 12px; border-top: 1px solid #eeeeee; vertical-align: middle; }
+.orders-items-table tr.pending { background: #fffdf5; }
+.orders-items-table tr.skipped, .orders-garment.skipped { background: #f5f5f5; }
+.orders-items-table tr.skipped .orders-item-product, .orders-items-table tr.skipped .orders-list-thumbnail { opacity: .55; }
+.orders-image-button.orders-list-thumbnail { width: 64px; height: 72px; border: 1px solid #eeeeee; border-radius: 6px; background: #fff; }
+.orders-item-product { display: grid; gap: 4px; min-width: 150px; max-width: 240px; overflow-wrap: anywhere; }
+.orders-item-title { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-weight: 500; }
+.orders-item-product small, .orders-item-order { color: #737373; font-size: 11px; }
+.orders-item-shop { margin-bottom: 5px; }
+.orders-item-order { display: block; max-width: 150px; overflow-wrap: anywhere; }
+.orders-item-date { color: #737373; white-space: nowrap; font-size: 12px; }
+.orders-item-quantity { text-align: center; font-size: 15px; font-weight: 600; }
+.orders-item-material { display: grid; gap: 5px; }
+.orders-item-material .orders-select { width: 138px; }
+.orders-pending-note, .orders-skip-note { display: block; max-width: 138px; color: #a16207; font-size: 11px; }
+.orders-skip-note { margin-top: 6px; color: #737373; white-space: nowrap; }
+.orders-row-images { width: 150px; }
+.orders-row-images > summary { color: #176b53; font-size: 12px; cursor: pointer; white-space: nowrap; }
+.orders-row-images[open] > summary { margin-bottom: 8px; }
+.orders-row-images .orders-image-choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }

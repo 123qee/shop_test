@@ -39,8 +39,8 @@ export async function loadExportImages(urls: string[]): Promise<Map<string, Xlsx
         }
         // WebP / AVIF 等统一转为 Excel 支持的 JPEG；限制像素和大小，避免文件过大。
         const { data, info } = await sharp(Buffer.concat(chunks), { limitInputPixels: 40_000_000 })
-          .rotate().resize({ width: 720, height: 720, fit: 'inside', withoutEnlargement: true })
-          .flatten({ background: '#ffffff' }).jpeg({ quality: 90 }).toBuffer({ resolveWithObject: true });
+          .rotate().resize({ width: 1200, height: 1200, fit: 'inside', withoutEnlargement: true })
+          .flatten({ background: '#ffffff' }).jpeg({ quality: 94 }).toBuffer({ resolveWithObject: true });
         totalBytes += data.length;
         if (totalBytes > MAX_EXPORT_BYTES) throw new Error('图片总量超过 100 MB，请分批导出');
         images.set(url, { kind: 'image', data, width: info.width, height: info.height });

@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
+  compareOrderLines,
   formatChinaDateTime,
   ORDER_RANGE_PRESETS,
   ORDER_STATUSES,
@@ -16,9 +17,10 @@ import {
   type OrderSourcesResponse,
   type OrderStatus,
   type OrderSyncJob,
+  type OrderSortOrder,
 } from '@shared/orders';
 import type { ProductMaterial } from '@shared/types';
-import { GarmentCards } from './GarmentCards';
+import { OrderItems } from './OrderItems';
 import { retryOrderExportFile, startOrderExport } from './export-task';
 import { materialLabel } from '@shared/product-grouping';
 import { api } from '../../api';
@@ -59,6 +61,8 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
   const [onlyNew, setOnlyNew] = useState(true);
   const [overrides, setOverrides] = useState<Record<string, ProductMaterial>>({});
   const [selectedImages, setSelectedImages] = useState<Record<string, string[]>>({});
+  const [excludedLineUids, setExcludedLineUids] = useState<Set<string>>(new Set());
+  const [sortOrder, setSortOrder] = useState<OrderSortOrder>('oldest');
   const [savingMaterial, setSavingMaterial] = useState(false);
   const [previewQueryKey, setPreviewQueryKey] = useState('');
   const [remember, setRemember] = useState(() => readStored(REMEMBER_KEY) !== '0');
@@ -118,6 +122,7 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
     if (sameProfile) return;
     setOverrides({});
     setSelectedImages({});
+    setExcludedLineUids(new Set());
     previewSeq.current++;
     hasPreview.current = false;
     setPreview(null);
@@ -142,8 +147,10 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
       onlyNew,
       overrides,
       selectedImages,
+      excludedLineUids: [...excludedLineUids],
+      sortOrder,
     };
-  }, [profile, shopKeys, statuses, range, onlyNew, overrides, selectedImages]);
+  }, [profile, shopKeys, statuses, range, onlyNew, overrides, selectedImages, excludedLineUids, sortOrder]);
   const queryKey = JSON.stringify([query, profile?.updatedAt, exportedId]);
 
   const invalidReason = !query
@@ -239,6 +246,17 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
     setSelectedImages((current) => ({ ...current, ...Object.fromEntries(lines.map((line) => [line.uid, images])) }));
   }
 
+  function changeExport(lines: OrderPreviewLine[], checked: boolean) {
+    setExcludedLineUids((current) => {
+      const next = new Set(current);
+      for (const line of lines) {
+        if (checked) next.delete(line.uid);
+        else next.add(line.uid);
+      }
+      return next;
+    });
+  }
+
   function toggleShop(key: string, on: boolean) {
     setShopKeys((current) => {
       const next = new Set(current);
@@ -262,7 +280,7 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
   return (
     <div className="orders-export" hidden={!active}>
       <section className="orders-card">
-        <div className="orders-preview-head"><div><h3>1. 选择店铺，同步订单</h3><span className="orders-hint">默认导出待发货、未导出订单。看图选择需要的图片，未确定材质的衣服会自动跳过。</span></div></div>
+        <div className="orders-preview-head"><div><h3>1. 选择店铺，同步订单</h3><span className="orders-hint">默认查看待发货、未导出订单。同步后勾选要导出的商品，未确定材质的商品会自动跳过。</span></div></div>
         <div className="orders-row">
           <span className="orders-label">店铺</span>
           <div className="orders-control orders-shop-groups">
@@ -380,12 +398,17 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
       {preview && (
         <PreviewPanel
           preview={preview}
+          active={active}
           refreshing={previewing || previewQueryKey !== queryKey || savingMaterial}
           blockedReason={invalidReason || previewError}
           exporting={exporting}
           remember={remember}
           onlyNew={onlyNew}
           selectedImages={selectedImages}
+          excludedLineUids={excludedLineUids}
+          sortOrder={sortOrder}
+          onSortChange={setSortOrder}
+          onChangeExport={changeExport}
           onRememberChange={(value) => {
             setRemember(value);
             writeStored(REMEMBER_KEY, value ? '1' : '0');
@@ -449,50 +472,80 @@ function SyncProgress({ job }: { job: OrderSyncJob }) {
   );
 }
 
-function PreviewPanel({ preview, refreshing, blockedReason, exporting, remember, onlyNew, selectedImages,
+function PreviewPanel({ preview, active, refreshing, blockedReason, exporting, remember, onlyNew, selectedImages,
+  excludedLineUids, sortOrder, onSortChange, onChangeExport,
   onRememberChange, onChangeMaterial, onChangeImages, onExport, disabled,
 }: {
   preview: OrderPreview;
+  active: boolean;
   refreshing: boolean;
   blockedReason: string;
   exporting: boolean;
   remember: boolean;
   onlyNew: boolean;
   selectedImages: Record<string, string[]>;
+  excludedLineUids: Set<string>;
+  sortOrder: OrderSortOrder;
+  onSortChange: (value: OrderSortOrder) => void;
+  onChangeExport: (lines: OrderPreviewLine[], checked: boolean) => void;
   onRememberChange: (value: boolean) => void;
   onChangeMaterial: (lines: OrderPreviewLine[], material: ProductMaterial) => void;
   onChangeImages: (lines: OrderPreviewLine[], images: string[]) => void;
   onExport: () => void;
   disabled: boolean;
 }) {
-  const [pendingOnly, setPendingOnly] = useState(false);
-  const pending = preview.buckets.filter((bucket) => bucket.excluded).reduce((sum, bucket) => sum + bucket.lines.length, 0);
-  const ready = preview.buckets.filter((bucket) => !bucket.excluded).reduce((sum, bucket) => sum + bucket.lines.length, 0);
+  const [view, setView] = useState<'list' | 'cards'>('list');
+  const [materialFilter, setMaterialFilter] = useState('all');
+  useEffect(() => { if (active) setView('list'); }, [active]);
+  const items = useMemo(() => preview.buckets.flatMap((bucket) => bucket.lines.map((line) => ({ line, bucket })))
+    .sort((a, b) => compareOrderLines(a.line, b.line, sortOrder)), [preview, sortOrder]);
+  const filtered = items.filter(({ bucket }) => materialFilter === 'all' || bucket.key === materialFilter);
+  const eligible = filtered.filter(({ bucket }) => !bucket.excluded).map(({ line }) => line);
+  const ready = items.filter(({ bucket }) => !bucket.excluded);
+  const pending = items.length - ready.length;
+  const selected = ready.filter(({ line }) => !excludedLineUids.has(line.uid));
+  const quantity = selected.reduce((sum, { line }) => sum + line.quantity, 0);
+  const orders = new Set(selected.map(({ line }) => JSON.stringify([line.platform, line.shopId, line.orderId]))).size;
+  const skipped = ready.length - selected.length;
   return (
     <section className="orders-card orders-preview">
       <div className="orders-preview-head">
         <div>
-          <h3>2. 看衣服，选图片</h3>
-          <span className="orders-hint">可导出 {ready} 行 · 待确认 {pending} 行{refreshing ? ' · 正在更新…' : ''}</span>
+          <h3>2. 勾选要导出的商品</h3>
+          <span className="orders-hint" role="status">已选 {orders} 单 · {selected.length} 行 · {quantity} 件{skipped ? ` · 本次跳过 ${skipped} 行` : ''} · 待确认 {pending} 行{refreshing ? ' · 正在更新…' : ''}</span>
         </div>
         <label className="orders-check">
           <input type="checkbox" checked={remember} disabled={disabled} onChange={(event) => onRememberChange(event.target.checked)} />记住商品材质
         </label>
       </div>
-      <p className="orders-hint">默认只选订单图；正反面、细节图按需多选，点图片可放大。所选图片直接嵌入 Excel，件数不重复。</p>
+      <p className="orders-hint">取消商品勾选可跳过本次导出，以后仍可导出。默认只导出订单图；点「选图片」或切换卡片可多选，点图放大。图片嵌入 Excel，件数不重复。</p>
       {preview.warnings.length > 0 && <ul className="orders-warnings">{preview.warnings.map((warning) => <li key={warning}>{warning}</li>)}</ul>}
-      {pending > 0 && <label className="orders-check"><input type="checkbox" checked={pendingOnly} onChange={(event) => setPendingOnly(event.target.checked)} />只看待确认</label>}
-      {(pendingOnly && pending ? preview.buckets.filter((bucket) => bucket.excluded) : preview.buckets)
-        .filter((bucket) => bucket.lines.length).map((bucket) => (
-          <div key={bucket.key} className="orders-garment-section">
-            <h4>{bucket.label} · {bucket.quantity} 件{bucket.excluded ? ' · 确认材质后才能导出' : ''}</h4>
-            <GarmentCards bucket={bucket} selectedImages={selectedImages} onChangeMaterial={onChangeMaterial} onChangeImages={onChangeImages} disabled={disabled} />
+      <div className="orders-item-toolbar">
+        <div className="orders-chips" role="group" aria-label="筛选商品材质">
+          <button type="button" className={`orders-chip${materialFilter === 'all' ? ' on' : ''}`} aria-pressed={materialFilter === 'all'} onClick={() => setMaterialFilter('all')}>全部 {items.length}</button>
+          {preview.buckets.filter((bucket) => bucket.lines.length).map((bucket) => <button type="button" key={bucket.key} className={`orders-chip${materialFilter === bucket.key ? ' on' : ''}`} aria-pressed={materialFilter === bucket.key} onClick={() => setMaterialFilter(bucket.key)}>{bucket.label} {bucket.lines.length}</button>)}
+        </div>
+        <div className="orders-item-toolbar-controls">
+          <select className="orders-select" aria-label="订单时间排序" value={sortOrder} disabled={disabled} onChange={(event) => onSortChange(event.target.value as OrderSortOrder)}>
+            <option value="oldest">最早下单在前</option><option value="newest">最新下单在前</option>
+          </select>
+          <div className="orders-segmented" role="group" aria-label="订单视图">
+            <button type="button" className={view === 'list' ? 'on' : ''} aria-pressed={view === 'list'} onClick={() => setView('list')}>列表</button>
+            <button type="button" className={view === 'cards' ? 'on' : ''} aria-pressed={view === 'cards'} onClick={() => setView('cards')}>卡片</button>
           </div>
-        ))}
+        </div>
+      </div>
+      {eligible.length > 0 && <div className="orders-selection-tools">
+        <button type="button" className="ghost orders-small" disabled={disabled} onClick={() => onChangeExport(eligible, true)}>全选当前筛选</button>
+        <button type="button" className="ghost orders-small" disabled={disabled} onClick={() => onChangeExport(eligible, false)}>取消当前筛选</button>
+        <span className="orders-hint">当前筛选 {filtered.length} 行，其中 {eligible.length} 行可勾选；导出包含所有材质中已勾选的商品。</span>
+      </div>}
+      {filtered.length > 0 && <OrderItems key={`${materialFilter}:${view}`} items={filtered} view={view} excludedLineUids={excludedLineUids} selectedImages={selectedImages} onChangeExport={onChangeExport} onChangeMaterial={onChangeMaterial} onChangeImages={onChangeImages} disabled={disabled} />}
+      {items.length > 0 && filtered.length === 0 && <div className="orders-empty">当前筛选下没有商品，可以切换到「全部」。</div>}
       {preview.totals.lines === 0 && <div className="orders-empty">没有符合条件的订单{onlyNew ? '。已导出的订单自动隐藏，可以在更多选项里取消「只导出这个方案没导过的订单」。' : '。'}</div>}
       <div className="orders-export-bar">
-        <div className="orders-export-files">{preview.files.length ? <>将生成：{preview.files.map((file) => file.name).join('、')}{pending > 0 ? `；${pending} 行待确认，本次不导出` : ''}</> : '没有可导出的订单，请先确认材质'}</div>
-        <button type="button" disabled={disabled || exporting || refreshing || Boolean(blockedReason) || !preview.files.length} onClick={onExport}>{exporting ? '正在下载图片并导出…' : `3. 导出 ${preview.files.length} 个文件`}</button>
+        <div className="orders-export-files"><strong>本次导出 {orders} 单 · {quantity} 件</strong><br />{preview.files.length && selected.length ? <>将生成：{preview.files.map((file) => file.name).join('、')}{pending > 0 ? `；${pending} 行待确认，本次不导出` : ''}</> : ready.length ? '请勾选需要导出的商品' : '没有可导出的订单，请先确认材质'}</div>
+        <button type="button" disabled={disabled || exporting || refreshing || Boolean(blockedReason) || !selected.length || !preview.files.length} onClick={onExport}>{exporting ? '正在下载图片并导出…' : `3. 导出已选商品（${quantity} 件）`}</button>
       </div>
     </section>
   );
@@ -511,11 +564,12 @@ export function ExportResult({ record, downloading, downloadFailedIds }: { recor
         </div>
 
       </div>
+      {record.files.some((file) => file.lowResolutionImages) && <p className="orders-hint">部分所选源图不足 240 像素，已保留现有清晰度。可重新同步获取高清图，或另选更清晰的图片后再次导出。</p>}
       <ul className="orders-files">
         {record.files.map((file) => (
           <li key={file.id}>
             <span className="orders-file-name">{file.name}</span>
-            <span className="orders-hint">{file.orderCount} 单 · {file.quantity} 件 · {fileSize(file.size)}</span>
+            <span className="orders-hint">{file.orderCount} 单 · {file.quantity} 件 · {fileSize(file.size)}{file.lowResolutionImages ? ` · ${file.lowResolutionImages} 张源图偏小` : ''}</span>
             {downloadFailedIds.includes(file.id)
               ? <button type="button" className="ghost orders-small" disabled={downloading} onClick={() => void retryOrderExportFile(file)}>重试下载</button>
               : <a className="orders-link-button ghost" href={api.orderExportFileUrl(record.id, file.id)} download={file.name}>下载文件</a>}

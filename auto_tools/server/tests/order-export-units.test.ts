@@ -92,8 +92,11 @@ test('Joom 商品信息：变体颜色尺码图片与材质原文', () => {
     ],
   });
   assert.equal(info.name, 'Basic Tee');
-  assert.equal(info.imageUrl, 'https://img.test/500.jpg', '取约 400px 以上最小的一张');
-  assert.deepEqual(info.imageUrls, ['https://img.test/500.jpg', 'https://img.test/back.jpg', 'https://img.test/detail.jpg']);
+  assert.equal(info.imageUrl, 'https://img.test/orig.jpg', '优先原图，保留放大观看的清晰度');
+  assert.deepEqual(info.imageUrls, ['https://img.test/orig.jpg', 'https://img.test/back.jpg', 'https://img.test/detail.jpg']);
+  assert.equal(extractJoomProductInfo({ mainImage: { processed: [
+    { url: 'https://img.test/400.jpg', width: 400 }, { url: 'https://img.test/1200.jpg', width: 1200 },
+  ] } }).imageUrl, 'https://img.test/1200.jpg', '没有原图时选择最大的处理图');
   assert.equal(info.materialHint, '100% Cotton');
   assert.deepEqual(info.variants.V1, { sku: 'TEE-BLK-M', color: 'black', size: 'M', imageUrl: 'https://img.test/v1.jpg', materialHint: undefined });
   assert.equal(info.variantsBySku['TEE-WHT-L'].materialHint, '95% polyester, 5% elastane');

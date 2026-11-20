@@ -41,6 +41,10 @@ test('Joom 订单来源：分页、limit 回退、storeId 过滤、商品缓存�
       shippingAddressHash: 'h', storeId,
     });
     const calls: string[] = [];
+    orderRepository.setCachedProduct('joom', 'default', 'P1', {
+      name: 'Old cached tee', imageUrls: ['https://img.test/400.jpg'],
+      variants: { V1: { sku: 'TEE-BLK-M' }, V2: { sku: 'TEE-WHT-L' } }, variantsBySku: {},
+    });
     const client = {
       async requestEnvelope(_method: string, path: string) {
         calls.push(path);
@@ -63,6 +67,7 @@ test('Joom 订单来源：分页、limit 回退、storeId 过滤、商品缓存�
         if (path === '/products?id=P1') {
           return {
             id: 'P1', name: 'Basic Tee', attributes: [{ key: '1001', value: '100% Cotton' }],
+            mainImage: { origUrl: 'https://img.test/original.jpg' },
             variants: [{ id: 'V1', sku: 'TEE-BLK-M', colors: 'black', size: 'M' }, { id: 'V2', sku: 'TEE-WHT-L', colors: 'white', size: 'L' }],
           };
         }
@@ -87,6 +92,7 @@ test('Joom 订单来源：分页、limit 回退、storeId 过滤、商品缓存�
     assert.equal(first.lines[0].color, 'black');
     assert.equal(first.lines[0].size, 'M');
     assert.equal(first.lines[0].materialHint, '100% Cotton');
+    assert.equal(first.lines[0].imageUrl, 'https://img.test/original.jpg', '旧低清缓存会在同步时更新为原图');
     const gone = pages[1][0];
     assert.equal(gone.lines[0].title, 'Edited Gone Tee', '商品已删除时用本地商品库补信息');
     assert.equal(gone.lines[0].color, 'red');
@@ -104,6 +110,7 @@ test('Joom 订单来源：分页、limit 回退、storeId 过滤、商品缓存�
     }, /还没有授权/);
     assert.deepEqual(offline.listShops().map((shop) => shop.shopName), ['店铺A']);
   } finally {
+    getDb().close();
     rmSync(dir, { recursive: true, force: true });
   }
 });

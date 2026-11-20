@@ -24,7 +24,8 @@ test('实际下载 WebP / PNG，转 JPEG，去重并校验坏图', async (t) => 
   const images = await loadExportImages([`${base}/webp`, `${base}/png`, `${base}/webp`]);
   assert.equal(images.size, 2);
   assert.deepEqual(hits.sort(), ['/png', '/webp']);
-  assert.deepEqual([images.get(`${base}/png`)!.width, images.get(`${base}/png`)!.height], [720, 360]);
+  assert.deepEqual([images.get(`${base}/png`)!.width, images.get(`${base}/png`)!.height], [1200, 600]);
+  assert.deepEqual([images.get(`${base}/webp`)!.width, images.get(`${base}/webp`)!.height], [50, 100], '小图保留原始像素，不插值冒充高清图');
   assert.equal((await sharp(images.get(`${base}/webp`)!.data).metadata()).format, 'jpeg');
   await assert.rejects(loadExportImages([`${base}/bad`]), /下载或处理失败/);
   await assert.rejects(loadExportImages([`${base}/missing`]), /HTTP 404/);
@@ -40,7 +41,7 @@ test('多工作表嵌图：关系、媒体、行高、宽高比和选图顺序�
     { name: '统计', columns: [{ header: '数量', numeric: true }], rows: [[4]] },
   ]));
   assert.equal([...files.keys()].filter((name) => name.startsWith('xl/media/')).length, 1);
-  assert.match(files.get('xl/worksheets/sheet1.xml')!.toString(), /<row r="2" ht="108" customHeight="1">/);
+  assert.match(files.get('xl/worksheets/sheet1.xml')!.toString(), /<row r="2" ht="189" customHeight="1">/);
   assert.match(files.get('xl/worksheets/_rels/sheet2.xml.rels')!.toString(), /drawing2.xml/);
   assert.ok(!files.has('xl/worksheets/_rels/sheet3.xml.rels'));
   assert.match(files.get('[Content_Types].xml')!.toString(), /Extension="jpeg" ContentType="image\/jpeg"/);
@@ -50,5 +51,6 @@ test('多工作表嵌图：关系、媒体、行高、宽高比和选图顺序�
   assert.match(drawing, /<xdr:row>2<\/xdr:row>/);
   const extent = drawing.match(/<xdr:ext cx="(\d+)" cy="(\d+)"/)!;
   assert.equal(Number(extent[1]) / Number(extent[2]), 0.5, '保持竖图宽高比');
+  assert.equal(Number(extent[2]), 240 * 9525, '图片显示高度增加到 240px');
   assert.ok(files.get('xl/media/image1.jpeg')!.equals(data));
 });

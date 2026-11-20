@@ -179,8 +179,8 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       assert.deepEqual(data.buckets.map((b: any) => [b.label, b.orderCount, b.quantity]), [['棉', 2, 3], ['聚酯纤维', 2, 2], ['待确认', 2, 2]]);
       assert.deepEqual(data.totals, { orders: 5, lines: 6, quantity: 7 });
       const cotton = bucket(data, 'cotton');
-      // 按店铺、SKU、颜色、尺码排序，方便按款备货
-      assert.deepEqual(cotton.lines.map((l: any) => [l.orderId, l.materialSource]), [['A-2', 'platform-attribute'], ['A-1', 'catalog-manual']]);
+      // 默认按下单时间从早到晚，SKU 不再影响顺序。
+      assert.deepEqual(cotton.lines.map((l: any) => [l.orderId, l.materialSource]), [['A-1', 'catalog-manual'], ['A-2', 'platform-attribute']]);
       assert.equal(cotton.lines[0].shopName, '店铺A', '店铺名用当前名称');
       assert.deepEqual(bucket(data, 'polyester').lines.map((l: any) => [l.orderId, l.isGift, l.materialSource]), [['A-3', false, 'title'], ['B-2', true, 'title']]);
       const unknown = bucket(data, 'unknown');
@@ -204,7 +204,7 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       const again = await request('/material-rules', 'POST', { platform: 'fake', productId: 'P-BLEND', material: 'cotton' });
       assert.equal(again.data.id, rule.data.id, '同一商品只保留一条');
       const preview = (await request('/preview', 'POST', daily)).data;
-      assert.deepEqual(bucket(preview, 'cotton').lines.map((l: any) => [l.orderId, l.materialSource]), [['A-2', 'platform-attribute'], ['A-1', 'catalog-manual'], ['B-1', 'rule']]);
+      assert.deepEqual(bucket(preview, 'cotton').lines.map((l: any) => [l.orderId, l.materialSource]), [['A-1', 'catalog-manual'], ['A-2', 'platform-attribute'], ['B-1', 'rule']]);
       assert.deepEqual(orderIds(bucket(preview, 'unknown')), ['B-2']);
       assert.equal((await request('/material-rules')).data.length, 1);
     });
@@ -264,9 +264,9 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       assert.ok(cottonSheet.includes('图片 2'));
       const headers = [...cottonSheet.match(/<row r="1">(.*?)<\/row>/)![1].matchAll(/<t[^>]*>(.*?)<\/t>/g)].map((item) => item[1]);
       assert.deepEqual(headers.slice(0, 6), ['图片', '图片 2', '数量', '尺码', '店铺', '材质'], '旧方案也固定把发厂字段放前面');
-      assert.match(cottonSheet, /<c r="C3" s="0"><v>2<\/v>/, '件数仍是衣服件数');
-      assert.match(cottonSheet, /<c r="D3"[^>]*><is><t>M<\/t>/, '尺码与衣服对应');
-      assert.match(cottonSheet, /<c r="E3"[^>]*><is><t>店铺A<\/t>/, '店铺归属与衣服对应');
+      assert.match(cottonSheet, /<c r="C2" s="0"><v>2<\/v>/, '件数仍是衣服件数');
+      assert.match(cottonSheet, /<c r="D2"[^>]*><is><t>M<\/t>/, '尺码与衣服对应');
+      assert.match(cottonSheet, /<c r="E2"[^>]*><is><t>店铺A<\/t>/, '店铺归属与衣服对应');
 
       assert.ok(!cottonSheet.includes('https://example.test/'), '图片列不再写入链接');
       assert.match(cottonSheet, /<drawing r:id="rIdDrawing"\/>/);
@@ -276,8 +276,9 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       const drawing = cotton.get('xl/drawings/drawing1.xml')!.toString();
       assert.equal((drawing.match(/<xdr:oneCellAnchor>/g) ?? []).length, 4, '3 行订单，共 4 张选图');
       const rels = cotton.get('xl/drawings/_rels/drawing1.xml.rels')!.toString();
-      assert.match(rels, /Id="rId2"[^>]*image2.jpeg/);
-      assert.match(rels, /Id="rId3"[^>]*image1.jpeg/, '同一行第二张图为选中的正面图');
+      assert.match(rels, /Id="rId1"[^>]*image1.jpeg/);
+      assert.match(rels, /Id="rId2"[^>]*image2.jpeg/, '同一行第二张图为选中的正面图');
+      assert.match(rels, /Id="rId3"[^>]*image2.jpeg/, '下一行正面图复用已有媒体');
       assert.deepEqual(imageCalls.sort(), ['/back.jpg', '/front.jpg'], '仅下载已选图片，同一图片只下载一次，不下载待确认订单图片');
       assert.equal((cottonSheet.match(/>A-1<\/t>/g) ?? []).length, 1, '多图不重复订单行');
       assert.ok(!cottonSheet.includes('Mystery item'));
@@ -421,7 +422,8 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       assert.deepEqual(marks, [{ profile_id: 'daily', n: 5 }, { profile_id: 'sheet', n: 6 }]);
     });
   } finally {
-    server.close();
+    await new Promise<void>((resolve) => server.close(() => resolve()));
+    getDb().close();
     rmSync(dir, { recursive: true, force: true });
   }
 });

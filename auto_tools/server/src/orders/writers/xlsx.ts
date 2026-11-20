@@ -35,6 +35,10 @@ const MAX_CELL_LENGTH = 32767;
 const STYLE_DEFAULT = 0;
 const STYLE_HEADER = 1;
 const STYLE_TEXT = 2;
+export const XLSX_IMAGE_SIZE = 240;
+const IMAGE_PADDING = 12;
+const IMAGE_ROW_PIXELS = XLSX_IMAGE_SIZE + IMAGE_PADDING;
+export const XLSX_IMAGE_COLUMN_WIDTH = (IMAGE_ROW_PIXELS - 5) / 7;
 
 function escapeXml(value: string): string {
   return value
@@ -99,7 +103,7 @@ function sheetXml(sheet: XlsxSheet, selected: boolean, hasDrawing: boolean): str
       }
       return textCell(ref, String(value), column.numeric ? STYLE_DEFAULT : STYLE_TEXT);
     }).join('');
-    return `<row r="${rowNumber}"${row.some(isImage) ? ' ht="108" customHeight="1"' : ''}>${cells}</row>`;
+    return `<row r="${rowNumber}"${row.some(isImage) ? ` ht="${IMAGE_ROW_PIXELS * 0.75}" customHeight="1"` : ''}>${cells}</row>`;
   }).join('');
   return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
     + '<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">'
@@ -140,11 +144,11 @@ function drawingParts(sheets: XlsxSheet[]) {
       }
       const id = anchors.length + 1;
       const colWidth = Math.max(4, Math.min(80, sheet.columns[colIndex].width ?? 12)) * 7 + 5;
-      const scale = Math.min((colWidth - 12) / cell.width, 132 / cell.height);
+      const scale = Math.min((colWidth - IMAGE_PADDING) / cell.width, XLSX_IMAGE_SIZE / cell.height);
       const width = Math.round(cell.width * scale * EMU_PER_PIXEL);
       const height = Math.round(cell.height * scale * EMU_PER_PIXEL);
       const offsetX = Math.round((colWidth * EMU_PER_PIXEL - width) / 2);
-      const offsetY = Math.round((144 * EMU_PER_PIXEL - height) / 2);
+      const offsetY = Math.round((IMAGE_ROW_PIXELS * EMU_PER_PIXEL - height) / 2);
       anchors.push('<xdr:oneCellAnchor>'
         + `<xdr:from><xdr:col>${colIndex}</xdr:col><xdr:colOff>${offsetX}</xdr:colOff><xdr:row>${rowIndex + 1}</xdr:row><xdr:rowOff>${offsetY}</xdr:rowOff></xdr:from>`
         + `<xdr:ext cx="${width}" cy="${height}"/>`

@@ -21,6 +21,7 @@ const PAGE_LIMIT = 500;
 const FALLBACK_PAGE_LIMIT = 100;
 const MAX_PAGES = 400;
 const PRODUCT_CACHE_TTL_MS = 7 * 24 * 60 * 60 * 1000;
+const PRODUCT_IMAGE_VERSION = 2;
 const MATERIAL_KEY = /material|fabric|composition|textile|материал|состав|ткань|composici|tejido|材质|面料|成分|材料/i;
 const FIBER_WORD = /cotton|polyester|algod[oó]n|poli[eé]ster|хлоп|полиэст|棉|聚酯|涤纶|nylon|spandex|elastane|viscose|wool|linen|acrylic|lycra/i;
 
@@ -33,6 +34,7 @@ export interface JoomVariantInfo {
 }
 
 export interface JoomProductInfo {
+  imageVersion?: number;
   name?: string;
   imageUrls?: string[];
   imageUrl?: string;
@@ -63,13 +65,12 @@ function isoTime(value: unknown): string | undefined {
   return Number.isNaN(date.getTime()) ? undefined : date.toISOString();
 }
 
-/** 取一张约 400px 宽的处理后图片，没有时用原图。 */
+/** 优先原图，否则取最大的处理图；导出阶段再按 1200px 限制大小。 */
 function imageOf(bundle: any): string | undefined {
   const processed = (Array.isArray(bundle?.processed) ? bundle.processed : [])
     .filter((image: any) => text(image?.url))
     .sort((a: any, b: any) => (Number(a.width) || 0) - (Number(b.width) || 0));
-  const picked = processed.find((image: any) => (Number(image.width) || 0) >= 400) ?? processed[processed.length - 1];
-  return text(picked?.url) ?? text(bundle?.origUrl);
+  return text(bundle?.origUrl) ?? text(processed[processed.length - 1]?.url);
 }
 
 /**
@@ -111,6 +112,7 @@ export function extractJoomProductInfo(raw: any): JoomProductInfo {
     if (info.sku) variantsBySku[info.sku] = info;
   }
   return {
+    imageVersion: PRODUCT_IMAGE_VERSION,
     name: text(raw?.name),
     imageUrl: imageOf(raw?.mainImage),
     imageUrls: [imageOf(raw?.mainImage), ...(Array.isArray(raw?.extraImages) ? raw.extraImages.map(imageOf) : [])].filter((url): url is string => Boolean(url)),
@@ -345,7 +347,7 @@ export class JoomOrderSource implements OrderSourceAdapter {
       const fresh = cached
         && Date.now() - Date.parse(cached.fetchedAt) < PRODUCT_CACHE_TTL_MS
         && [...variantIds].every((id) => cached.data.variants?.[id]);
-      if (cached && cached.data.imageUrls && fresh) {
+      if (cached && cached.data.imageUrls && cached.data.imageVersion === PRODUCT_IMAGE_VERSION && fresh) {
         result.set(productId, cached.data);
         continue;
       }
