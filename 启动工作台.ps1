@@ -59,7 +59,67 @@ function Show-RecentLog([string]$Path) {
   }
 }
 
+function Update-Repository {
+  $gitProcess = $null
+  try {
+    $gitCommand = Get-Command git.exe -CommandType Application -ErrorAction SilentlyContinue
+    if (-not $gitCommand) {
+      Write-Host '没有找到 Git，跳过自动更新，继续使用本地代码启动。' -ForegroundColor Yellow
+      return
+    }
+
+    Write-Host '正在尝试拉取当前分支的最新代码（最多等待 15 秒）……'
+    $startInfo = New-Object System.Diagnostics.ProcessStartInfo
+    $startInfo.FileName = $gitCommand.Source
+    $startInfo.Arguments = 'pull --ff-only --no-rebase --no-autostash --no-recurse-submodules'
+    $startInfo.WorkingDirectory = $root
+    $startInfo.UseShellExecute = $false
+    $startInfo.CreateNoWindow = $true
+    $startInfo.RedirectStandardInput = $true
+    $startInfo.RedirectStandardOutput = $true
+    $startInfo.RedirectStandardError = $true
+    # 只影响本次 Git 子进程，避免凭证弹窗或 SSH 密码询问卡住启动。
+    $startInfo.EnvironmentVariables['GIT_TERMINAL_PROMPT'] = '0'
+    $startInfo.EnvironmentVariables['GCM_INTERACTIVE'] = 'Never'
+    $startInfo.EnvironmentVariables['GIT_ASKPASS'] = 'echo'
+    $startInfo.EnvironmentVariables['SSH_ASKPASS'] = 'echo'
+    $startInfo.EnvironmentVariables['GIT_SSH_COMMAND'] = 'ssh -o BatchMode=yes -o ConnectTimeout=10'
+
+    $gitProcess = New-Object System.Diagnostics.Process
+    $gitProcess.StartInfo = $startInfo
+    if (-not $gitProcess.Start()) { throw '无法启动 Git。' }
+    $gitProcess.StandardInput.Close()
+    # 同时读取两个输出流，防止 Git 输出过多时填满缓冲区。
+    $outputTask = $gitProcess.StandardOutput.ReadToEndAsync()
+    $errorTask = $gitProcess.StandardError.ReadToEndAsync()
+
+    if (-not $gitProcess.WaitForExit(15000)) {
+      Stop-ProcessTree $gitProcess
+      Write-Host '拉取代码超时，已停止更新，继续使用本地代码启动。' -ForegroundColor Yellow
+      return
+    }
+
+    $output = $outputTask.GetAwaiter().GetResult()
+    $errorOutput = $errorTask.GetAwaiter().GetResult()
+    if ($output) { Write-Host $output.TrimEnd() }
+    if ($gitProcess.ExitCode -ne 0) {
+      if ($errorOutput) { Write-Host $errorOutput.TrimEnd() -ForegroundColor DarkGray }
+      Write-Host '拉取代码失败（网络、权限或本地改动等原因），继续使用本地代码启动。' -ForegroundColor Yellow
+      return
+    }
+    Write-Host '代码更新检查完成，继续启动工作台。'
+  }
+  catch {
+    Write-Host "自动更新未完成：$($_.Exception.Message) 继续使用本地代码启动。" -ForegroundColor Yellow
+  }
+  finally {
+    if ($null -ne $gitProcess) { $gitProcess.Dispose() }
+  }
+}
+
 try {
+  Update-Repository
+
   if (-not (Get-Command node -ErrorAction SilentlyContinue) -or -not (Get-Command npm.cmd -ErrorAction SilentlyContinue)) {
     throw '找不到 Node.js 或 npm。请先安装 Node.js 18 或更高版本，再重新双击启动。'
   }
