@@ -43,7 +43,10 @@ export NVM_DIR="${NVM_DIR:-$HOME/.nvm}"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" >/dev/null 2>&1 || true
 
 if ! command -v node >/dev/null 2>&1; then
-  echo "❌ 未找到 node,请先安装 Node.js(建议 18+)"; exit 1
+  echo "❌ 未找到 node,请先安装 Node.js 22 或更高版本"; exit 1
+fi
+if [ "$(node -p 'Number(process.versions.node.split(".")[0])')" -lt 22 ]; then
+  echo "❌ 需要 Node.js 22 或更高版本"; exit 1
 fi
 echo "▶ Node: $(node -v)"
 
