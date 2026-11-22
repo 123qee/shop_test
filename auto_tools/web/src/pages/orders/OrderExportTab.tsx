@@ -6,6 +6,7 @@ import {
   ORDER_RANGE_PRESETS,
   ORDER_STATUSES,
   ORDER_STATUS_LABELS,
+  POLYESTER_TYPE_LABELS,
   rangeForPreset,
   type OrderExportProfile,
   type OrderExportRecord,
@@ -18,6 +19,7 @@ import {
   type OrderStatus,
   type OrderSyncJob,
   type OrderSortOrder,
+  type PolyesterType,
 } from '@shared/orders';
 import type { ProductMaterial } from '@shared/types';
 import { OrderItems } from './OrderItems';
@@ -60,6 +62,7 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
   const [statuses, setStatuses] = useState<Set<OrderStatus>>(new Set(['to_ship']));
   const [onlyNew, setOnlyNew] = useState(true);
   const [overrides, setOverrides] = useState<Record<string, ProductMaterial>>({});
+  const [polyesterTypes, setPolyesterTypes] = useState<Record<string, PolyesterType | null>>({});
   const [selectedImages, setSelectedImages] = useState<Record<string, string[]>>({});
   const [excludedLineUids, setExcludedLineUids] = useState<Set<string>>(new Set());
   const [sortOrder, setSortOrder] = useState<OrderSortOrder>('oldest');
@@ -121,6 +124,7 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
     setOnlyNew(profile.defaults.onlyNew);
     if (sameProfile) return;
     setOverrides({});
+    setPolyesterTypes({});
     setSelectedImages({});
     setExcludedLineUids(new Set());
     previewSeq.current++;
@@ -146,11 +150,12 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
       ...(range.to ? { to: range.to } : {}),
       onlyNew,
       overrides,
+      polyesterTypes,
       selectedImages,
       excludedLineUids: [...excludedLineUids],
       sortOrder,
     };
-  }, [profile, shopKeys, statuses, range, onlyNew, overrides, selectedImages, excludedLineUids, sortOrder]);
+  }, [profile, shopKeys, statuses, range, onlyNew, overrides, polyesterTypes, selectedImages, excludedLineUids, sortOrder]);
   const queryKey = JSON.stringify([query, profile?.updatedAt, exportedId]);
 
   const invalidReason = !query
@@ -230,13 +235,30 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
   async function changeMaterial(lines: OrderPreviewLine[], material: ProductMaterial) {
     const line = lines[0];
     setOverrides((current) => ({ ...current, ...Object.fromEntries(lines.map((item) => [item.uid, material])) }));
+    setPolyesterTypes((current) => ({ ...current, ...Object.fromEntries(lines.map((item) => [item.uid, null])) }));
     if (!remember || material === 'unknown' || !(line.productId || line.productSku)) return;
     setSavingMaterial(true);
     try {
       await api.saveOrderMaterialRule({
-        platform: line.platform, productId: line.productId, productSku: line.productSku, title: line.title, material,
+        platform: line.platform, productId: line.productId, productSku: line.productSku, title: line.title, material, polyesterType: null,
       });
       showFeedback(`已记住：这个商品以后按「${materialLabel(material)}」导出`);
+    } catch (error) {
+      showFeedback(errorMessage(error), 'error');
+    } finally { if (mounted.current) setSavingMaterial(false); }
+  }
+
+  async function changePolyesterType(lines: OrderPreviewLine[], polyesterType: PolyesterType | null) {
+    setPolyesterTypes((current) => ({ ...current, ...Object.fromEntries(lines.map((line) => [line.uid, polyesterType])) }));
+    const line = lines[0];
+    if (!remember || !(line.productId || line.productSku)) return;
+    setSavingMaterial(true);
+    try {
+      await api.saveOrderMaterialRule({
+        platform: line.platform, productId: line.productId, productSku: line.productSku, title: line.title,
+        material: 'polyester', polyesterType,
+      });
+      if (polyesterType) showFeedback(`已记住：这个商品以后按「聚酯纤维 · ${POLYESTER_TYPE_LABELS[polyesterType]}」导出`);
     } catch (error) {
       showFeedback(errorMessage(error), 'error');
     } finally { if (mounted.current) setSavingMaterial(false); }
@@ -414,6 +436,7 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
             writeStored(REMEMBER_KEY, value ? '1' : '0');
           }}
           onChangeMaterial={(lines, material) => void changeMaterial(lines, material)}
+          onChangePolyesterType={(lines, type) => void changePolyesterType(lines, type)}
           onChangeImages={changeImages}
           disabled={busy || savingMaterial}
           onExport={() => { if (query && !invalidReason) void startOrderExport(query); }}
@@ -474,7 +497,7 @@ function SyncProgress({ job }: { job: OrderSyncJob }) {
 
 function PreviewPanel({ preview, active, refreshing, blockedReason, exporting, remember, onlyNew, selectedImages,
   excludedLineUids, sortOrder, onSortChange, onChangeExport,
-  onRememberChange, onChangeMaterial, onChangeImages, onExport, disabled,
+  onRememberChange, onChangeMaterial, onChangePolyesterType, onChangeImages, onExport, disabled,
 }: {
   preview: OrderPreview;
   active: boolean;
@@ -490,6 +513,7 @@ function PreviewPanel({ preview, active, refreshing, blockedReason, exporting, r
   onChangeExport: (lines: OrderPreviewLine[], checked: boolean) => void;
   onRememberChange: (value: boolean) => void;
   onChangeMaterial: (lines: OrderPreviewLine[], material: ProductMaterial) => void;
+  onChangePolyesterType: (lines: OrderPreviewLine[], type: PolyesterType | null) => void;
   onChangeImages: (lines: OrderPreviewLine[], images: string[]) => void;
   onExport: () => void;
   disabled: boolean;
@@ -504,6 +528,7 @@ function PreviewPanel({ preview, active, refreshing, blockedReason, exporting, r
   const ready = items.filter(({ bucket }) => !bucket.excluded);
   const pending = items.length - ready.length;
   const selected = ready.filter(({ line }) => !excludedLineUids.has(line.uid));
+  const missingTypes = selected.filter(({ line }) => line.material === 'polyester' && !line.polyesterType).length;
   const quantity = selected.reduce((sum, { line }) => sum + line.quantity, 0);
   const orders = new Set(selected.map(({ line }) => JSON.stringify([line.platform, line.shopId, line.orderId]))).size;
   const skipped = ready.length - selected.length;
@@ -518,7 +543,7 @@ function PreviewPanel({ preview, active, refreshing, blockedReason, exporting, r
           <input type="checkbox" checked={remember} disabled={disabled} onChange={(event) => onRememberChange(event.target.checked)} />记住商品材质
         </label>
       </div>
-      <p className="orders-hint">取消商品勾选可跳过本次导出，以后仍可导出。默认只导出订单图；点「选图片」或切换卡片可多选，点图放大。图片嵌入 Excel，件数不重复。</p>
+      <p className="orders-hint">取消商品勾选可跳过本次导出，以后仍可导出。聚酯纤维需选择平板或针眼；拿货尺码仅对棉质换算。默认只导出订单图；点「选图片」或切换卡片可多选，点图放大。</p>
       {preview.warnings.length > 0 && <ul className="orders-warnings">{preview.warnings.map((warning) => <li key={warning}>{warning}</li>)}</ul>}
       <div className="orders-item-toolbar">
         <div className="orders-chips" role="group" aria-label="筛选商品材质">
@@ -540,12 +565,12 @@ function PreviewPanel({ preview, active, refreshing, blockedReason, exporting, r
         <button type="button" className="ghost orders-small" disabled={disabled} onClick={() => onChangeExport(eligible, false)}>取消当前筛选</button>
         <span className="orders-hint">当前筛选 {filtered.length} 行，其中 {eligible.length} 行可勾选；导出包含所有材质中已勾选的商品。</span>
       </div>}
-      {filtered.length > 0 && <OrderItems key={`${materialFilter}:${view}`} items={filtered} view={view} excludedLineUids={excludedLineUids} selectedImages={selectedImages} onChangeExport={onChangeExport} onChangeMaterial={onChangeMaterial} onChangeImages={onChangeImages} disabled={disabled} />}
+      {filtered.length > 0 && <OrderItems key={`${materialFilter}:${view}`} items={filtered} view={view} excludedLineUids={excludedLineUids} selectedImages={selectedImages} onChangeExport={onChangeExport} onChangeMaterial={onChangeMaterial} onChangePolyesterType={onChangePolyesterType} onChangeImages={onChangeImages} disabled={disabled} />}
       {items.length > 0 && filtered.length === 0 && <div className="orders-empty">当前筛选下没有商品，可以切换到「全部」。</div>}
       {preview.totals.lines === 0 && <div className="orders-empty">没有符合条件的订单{onlyNew ? '。已导出的订单自动隐藏，可以在更多选项里取消「只导出这个方案没导过的订单」。' : '。'}</div>}
       <div className="orders-export-bar">
         <div className="orders-export-files"><strong>本次导出 {orders} 单 · {quantity} 件</strong><br />{preview.files.length && selected.length ? <>将生成：{preview.files.map((file) => file.name).join('、')}{pending > 0 ? `；${pending} 行待确认，本次不导出` : ''}</> : ready.length ? '请勾选需要导出的商品' : '没有可导出的订单，请先确认材质'}</div>
-        <button type="button" disabled={disabled || exporting || refreshing || Boolean(blockedReason) || !selected.length || !preview.files.length} onClick={onExport}>{exporting ? '正在下载图片并导出…' : `3. 导出已选商品（${quantity} 件）`}</button>
+        <button type="button" disabled={disabled || exporting || refreshing || Boolean(blockedReason) || Boolean(missingTypes) || !selected.length || !preview.files.length} onClick={onExport}>{exporting ? '正在下载图片并导出…' : missingTypes ? `请先选择 ${missingTypes} 行聚酯类型` : `3. 导出已选商品（${quantity} 件）`}</button>
       </div>
     </section>
   );

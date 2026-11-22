@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { formatChinaDateTime, type OrderPreviewBucket, type OrderPreviewLine } from '@shared/orders';
+import { formatChinaDateTime, POLYESTER_TYPES, POLYESTER_TYPE_LABELS, type OrderPreviewBucket, type OrderPreviewLine, type PolyesterType } from '@shared/orders';
 import type { ProductMaterial } from '@shared/types';
 import { MATERIAL_OPTIONS } from './order-ui';
 
@@ -15,11 +15,12 @@ interface Props {
   selectedImages: Record<string, string[]>;
   onChangeExport: (lines: OrderPreviewLine[], checked: boolean) => void;
   onChangeMaterial: (lines: OrderPreviewLine[], material: ProductMaterial) => void;
+  onChangePolyesterType: (lines: OrderPreviewLine[], type: PolyesterType | null) => void;
   onChangeImages: (lines: OrderPreviewLine[], images: string[]) => void;
   disabled: boolean;
 }
 
-export function OrderItems({ items, view, excludedLineUids, selectedImages, onChangeExport, onChangeMaterial, onChangeImages, disabled }: Props) {
+export function OrderItems({ items, view, excludedLineUids, selectedImages, onChangeExport, onChangeMaterial, onChangePolyesterType, onChangeImages, disabled }: Props) {
   const [limit, setLimit] = useState(50);
   const [zoom, setZoom] = useState('');
   const dialog = useRef<HTMLDialogElement>(null);
@@ -42,6 +43,16 @@ export function OrderItems({ items, view, excludedLineUids, selectedImages, onCh
         <option value="unknown">待确认 · 不导出</option>
         {MATERIAL_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
       </select>
+      {line.material === 'polyester' && <>
+        <label className="orders-polyester-type">
+          <span>聚酯类型</span>
+          <select className="orders-select" aria-label={`订单 ${line.orderId} ${line.variantSku || line.title || '商品'}的聚酯类型`} value={line.polyesterType ?? ''} disabled={disabled} required onChange={(event) => onChangePolyesterType([line], event.target.value as PolyesterType || null)}>
+            <option value="">请选择平板 / 针眼</option>
+            {POLYESTER_TYPES.map((type) => <option key={type} value={type}>{POLYESTER_TYPE_LABELS[type]}</option>)}
+          </select>
+        </label>
+        {!line.polyesterType && <small className="orders-pending-note">请选择类型后再导出</small>}
+      </>}
       {bucket.excluded && <small className="orders-pending-note">{known ? '请在高级设置中启用此材质' : '确认材质后才能导出'}</small>}
     </div>;
   }
@@ -76,7 +87,7 @@ export function OrderItems({ items, view, excludedLineUids, selectedImages, onCh
   return <>
     {view === 'list' ? <div className="orders-items-scroll">
       <table className="orders-items-table">
-        <thead><tr><th>导出</th><th>图片</th><th>下单时间</th><th>店铺 / 订单号</th><th>商品 / SKU</th><th>颜色 / 尺码</th><th>数量</th><th>材质</th><th>图片选择</th></tr></thead>
+        <thead><tr><th>导出</th><th>图片</th><th>下单时间</th><th>店铺 / 订单号</th><th>商品 / SKU</th><th>颜色 / 尺码</th><th>数量</th><th>材质 / 聚酯类型</th><th>图片选择</th></tr></thead>
         <tbody>{visible.map((item) => {
           const { line, bucket } = item;
           const skipped = !bucket.excluded && excludedLineUids.has(line.uid);
@@ -86,7 +97,7 @@ export function OrderItems({ items, view, excludedLineUids, selectedImages, onCh
             <td className="orders-item-date">{formatChinaDateTime(line.orderedAt)}</td>
             <td><div className="orders-item-shop">{line.shopName}</div><small className="orders-item-order">{line.orderId}</small></td>
             <td>{product(line)}</td>
-            <td><div>{line.color || '未标颜色'}</div><strong>{line.size || '未标尺码'}</strong></td>
+            <td><div>{line.color || '未标颜色'}</div><div>平台本身尺码：<strong>{line.size || '未标尺码'}</strong></div><div>拿货尺码：<strong>{line.purchaseSize || '未标尺码'}</strong></div></td>
             <td className="orders-item-quantity">{line.quantity}</td>
             <td>{material(item)}</td>
             <td>{images(line, false)}</td>
@@ -105,7 +116,7 @@ export function OrderItems({ items, view, excludedLineUids, selectedImages, onCh
             {product(line)}
             {material(item)}
             {images(line, true)}
-            <div className="orders-garment-sizes"><span className="orders-size-chip">{line.color || '未标颜色'}</span><span className="orders-size-chip">{line.size || '未标尺码'} × {line.quantity}</span></div>
+            <div className="orders-garment-sizes"><span className="orders-size-chip">{line.color || '未标颜色'}</span><span className="orders-size-chip">平台本身尺码：{line.size || '未标尺码'}</span><span className="orders-size-chip">拿货尺码：{line.purchaseSize || '未标尺码'}</span></div>
             <div className="orders-garment-footer"><span>{skipped ? '本次跳过' : `已选 ${selected.length} 张图片`}</span><strong>共 {line.quantity} 件</strong></div>
           </div>
         </article>;

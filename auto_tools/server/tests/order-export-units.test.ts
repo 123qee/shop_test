@@ -7,12 +7,30 @@ import {
   rangeForPreset,
   renderFileName,
   sanitizeFileName,
+  orderExportColumns,
+  purchaseSizeFor,
 } from '../../shared/orders';
 import { inferMaterialFromText } from '../../shared/product-grouping';
 import { crc32, createZip } from '../src/util/zip';
 import { unzip } from './helpers/zip-reader';
 import { buildXlsx, columnLetter, sheetNames } from '../src/orders/writers/xlsx';
 import { extractJoomProductInfo, mapJoomOrder, mapJoomOrderStatus } from '../src/marketplaces/joom/orders';
+
+test('拿货尺码：棉质逐档映射，其他材质与未知尺码保留原值', () => {
+  const sizes = ['2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL'];
+  assert.deepEqual(sizes.map((size) => purchaseSizeFor('cotton', size)), ['160', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '4XL', '4XL']);
+  for (const material of ['polyester', 'blend', 'other', 'unknown'] as const) {
+    assert.deepEqual(sizes.map((size) => purchaseSizeFor(material, size)), sizes);
+  }
+  for (const size of ['100', '160', '5XL', 'M / L', 'custom', '', undefined]) {
+    assert.equal(purchaseSizeFor('cotton', size), size);
+  }
+  assert.equal(purchaseSizeFor('cotton', ' xxl '), '4XL');
+  assert.equal(purchaseSizeFor('cotton', 'XXS'), '160');
+  assert.equal(purchaseSizeFor('cotton', 'XXXL'), '4XL');
+  assert.equal(purchaseSizeFor('cotton', 'XXXXL'), '4XL');
+  assert.deepEqual(orderExportColumns(['orderId', 'size', 'material']), ['imageUrl', 'quantity', 'size', 'polyesterType', 'purchaseSize', 'shop', 'material', 'orderId']);
+});
 
 test('北京时间日期与预设范围', () => {
   assert.equal(chinaDate(new Date('2026-11-15T15:59:59Z')), '2026-11-15');
@@ -192,6 +210,11 @@ test('xlsx：文本不丢开头的 0、数字列为数字、特殊字符转义�
   assert.match(workbook, /<sheet name="棉" sheetId="1" r:id="rId1"\/><sheet name="聚酯纤维" sheetId="2" r:id="rId2"\/>/);
   assert.match(entries.get('docProps/core.xml')!.toString(), /2026-11-16T01:02:03Z/);
   const sheet = entries.get('xl/worksheets/sheet1.xml')!.toString();
+  const styles = entries.get('xl/styles.xml')!.toString();
+  assert.equal((styles.match(/<sz val="16"\/>/g) ?? []).length, 2, '表头和正文均为 16 号字');
+  assert.match(sheet, /<row r="1" ht="30" customHeight="1">/);
+  assert.match(sheet, /defaultRowHeight="24"/);
+  assert.match(styles, /wrapText="1"/);
   assert.match(sheet, /<c r="B2" t="inlineStr" s="2"><is><t>0012345678<\/t><\/is><\/c>/, '电话按文本写入');
   assert.match(sheet, /<c r="C2" s="0"><v>2<\/v><\/c>/, '数量是数字');
   assert.match(sheet, /Tom &amp; Jerry &lt;b&gt; &quot;q&quot;/);

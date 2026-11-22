@@ -46,6 +46,7 @@ import type {
   OrderShopRef,
   OrderSourcesResponse,
   OrderSyncJob,
+  PolyesterType,
 } from '@shared/orders';
 
 async function req<T>(url: string, init?: RequestInit, timeoutMs?: number): Promise<T> {
@@ -277,10 +278,10 @@ export const api = {
   deleteOrderProfile: (id: string) =>
     req<OrderExportProfile[]>(`/api/orders/profiles/${encodeURIComponent(id)}`, { method: 'DELETE' }),
   orderMaterialRules: () => req<OrderMaterialRule[]>('/api/orders/material-rules'),
-  saveOrderMaterialRule: (input: { platform: string; productId?: string; productSku?: string; title?: string; material: ExportMaterial }) =>
+  saveOrderMaterialRule: (input: { platform: string; productId?: string; productSku?: string; title?: string; material: ExportMaterial; polyesterType?: PolyesterType | null }) =>
     req<OrderMaterialRule>('/api/orders/material-rules', { method: 'POST', body: JSON.stringify(input) }),
-  updateOrderMaterialRule: (id: string, material: ExportMaterial) =>
-    req<OrderMaterialRule>(`/api/orders/material-rules/${encodeURIComponent(id)}`, { method: 'PUT', body: JSON.stringify({ material }) }),
+  updateOrderMaterialRule: (id: string, material: ExportMaterial, polyesterType?: PolyesterType | null) =>
+    req<OrderMaterialRule>(`/api/orders/material-rules/${encodeURIComponent(id)}`, { method: 'PUT', body: JSON.stringify({ material, polyesterType }) }),
   deleteOrderMaterialRule: (id: string) =>
     req<void>(`/api/orders/material-rules/${encodeURIComponent(id)}`, { method: 'DELETE' }),
 };

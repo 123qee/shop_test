@@ -14,6 +14,8 @@ import {
   orderExportColumns,
   ORDER_STATUSES,
   ORDER_STATUS_LABELS,
+  POLYESTER_TYPES,
+  POLYESTER_TYPE_LABELS,
   renderFileName,
   sanitizeFileName,
   type ExportMaterial,
@@ -23,6 +25,7 @@ import {
   type OrderExportProfile,
   type OrderMaterialRule,
   type OrderStatus,
+  type PolyesterType,
 } from '@shared/orders';
 import { addDays } from '@shared/planner';
 import { materialLabel } from '@shared/product-grouping';
@@ -770,7 +773,7 @@ export function OrderProfilesTab({ profiles, onChange }: Props) {
             <p className="orders-hint">未确定材质的订单会保留在待确认区，不生成文件，也不会标记为已导出。</p>
           </Section>
 
-          <Section title="导出列" hint="图片、数量、尺码、店铺、材质固定在最前面；其他勾选字段放在后面">
+          <Section title="导出列" hint="图片、数量、平台本身尺码、聚酯类型、拿货尺码、店铺、材质固定在最前面；其他勾选字段放在后面">
             {problems.columns && <FieldError message={problems.columns} />}
             <div className="orders-columns">
               {ORDER_COLUMN_GROUPS.map((group) => {
@@ -930,13 +933,13 @@ function MaterialRules() {
     return rules.filter((rule) => [rule.title, rule.productId, rule.productSku].some((value) => value?.toLowerCase().includes(text)));
   }, [rules, keyword]);
 
-  async function changeMaterial(rule: OrderMaterialRule, material: ExportMaterial) {
+  async function changeMaterial(rule: OrderMaterialRule, material: ExportMaterial, polyesterType?: PolyesterType | null) {
     setBusyId(rule.id);
     try {
-      const updated = await api.updateOrderMaterialRule(rule.id, material);
+      const updated = await api.updateOrderMaterialRule(rule.id, material, polyesterType);
       if (!mounted.current) return;
       setRules((current) => current?.map((item) => (item.id === updated.id ? updated : item)) ?? null);
-      showFeedback(`已改为「${materialLabel(material)}」，下次预览和导出时生效`);
+      showFeedback(`已改为「${materialLabel(material)}${updated.polyesterType ? ` · ${POLYESTER_TYPE_LABELS[updated.polyesterType]}` : ''}」，下次预览和导出时生效`);
     } catch (err) {
       showFeedback(errorMessage(err), 'error');
     } finally {
@@ -961,7 +964,7 @@ function MaterialRules() {
         <div>
           <h3>记住的商品材质</h3>
           <span className="orders-hint">
-            在导出预览里改材质并勾选「改材质时记住这个商品」后，会保存在这里，以后判定材质时优先使用。只影响订单导出，不会改商品库。
+            在导出预览里勾选「记住商品材质」后，修改材质或聚酯类型会保存在这里，以后优先使用。只影响订单导出，不会改商品库。
           </span>
         </div>
         {rules && rules.length > 0 && (
@@ -1040,6 +1043,13 @@ function MaterialRules() {
                         {!known && <option value="" disabled>{materialLabel(rule.material)}</option>}
                         {MATERIAL_OPTIONS.map((option) => <option key={option.id} value={option.id}>{option.label}</option>)}
                       </select>
+                      {rule.material === 'polyester' && <label className="orders-polyester-type">
+                        <span>聚酯类型</span>
+                        <select className="orders-select" value={rule.polyesterType ?? ''} disabled={busyId === rule.id} aria-label={`${rule.title || rule.productSku || rule.productId || '商品'}的聚酯类型`} onChange={(event) => void changeMaterial(rule, 'polyester', event.target.value as PolyesterType || null)}>
+                          <option value="">请选择平板 / 针眼</option>
+                          {POLYESTER_TYPES.map((type) => <option key={type} value={type}>{POLYESTER_TYPE_LABELS[type]}</option>)}
+                        </select>
+                      </label>}
                     </td>
                     <td className="nowrap">{formatChinaDateTime(rule.updatedAt)}</td>
                     <td className="orders-cell-action">

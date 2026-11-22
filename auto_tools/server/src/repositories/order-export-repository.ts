@@ -1,6 +1,6 @@
 import { v4 as uuid } from 'uuid';
 import type { ProductMaterial } from '@shared/types';
-import type { OrderExportRecord, OrderMaterialRule } from '@shared/orders';
+import type { OrderExportRecord, OrderMaterialRule, PolyesterType } from '@shared/orders';
 import { getDb } from '../db/index.js';
 
 export interface ExportMark {
@@ -27,6 +27,7 @@ interface RuleRow {
   product_sku: string | null;
   title: string | null;
   material: string;
+  polyester_type: PolyesterType | null;
   created_at: string;
   updated_at: string;
 }
@@ -53,6 +54,7 @@ function rowToRule(row: RuleRow): OrderMaterialRule {
     productSku: row.product_sku ?? undefined,
     title: row.title ?? undefined,
     material: row.material as ProductMaterial,
+    polyesterType: row.material === 'polyester' ? row.polyester_type ?? undefined : undefined,
     updatedAt: row.updated_at,
   };
 }
@@ -148,29 +150,37 @@ export class OrderExportRepository {
     return null;
   }
 
-  upsertRule(input: { platform: string; productId?: string; productSku?: string; title?: string; material: ProductMaterial }): OrderMaterialRule {
+  upsertRule(input: { platform: string; productId?: string; productSku?: string; title?: string; material: ProductMaterial; polyesterType?: PolyesterType | null }): OrderMaterialRule {
     const db = getDb();
     const now = new Date().toISOString();
     const existing = input.productId
       ? (db.prepare('SELECT * FROM order_material_rules WHERE platform = ? AND product_id = ?').get(input.platform, input.productId) as RuleRow | undefined)
       : (db.prepare('SELECT * FROM order_material_rules WHERE platform = ? AND product_id IS NULL AND product_sku = ?').get(input.platform, input.productSku ?? '') as RuleRow | undefined);
+    const polyesterType = input.material === 'polyester'
+      ? (input.polyesterType === undefined && existing?.material === 'polyester' ? existing.polyester_type : input.polyesterType) ?? null
+      : null;
     if (existing) {
-      db.prepare('UPDATE order_material_rules SET material = ?, product_sku = COALESCE(?, product_sku), title = COALESCE(?, title), updated_at = ? WHERE id = ?')
-        .run(input.material, input.productSku ?? null, input.title ?? null, now, existing.id);
+      db.prepare('UPDATE order_material_rules SET material = ?, polyester_type = ?, product_sku = COALESCE(?, product_sku), title = COALESCE(?, title), updated_at = ? WHERE id = ?')
+        .run(input.material, polyesterType, input.productSku ?? null, input.title ?? null, now, existing.id);
       return this.getRule(existing.id)!;
     }
     const id = uuid();
     db.prepare(`
-      INSERT INTO order_material_rules (id, platform, product_id, product_sku, title, material, created_at, updated_at)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-    `).run(id, input.platform, input.productId ?? null, input.productSku ?? null, input.title ?? null, input.material, now, now);
+      INSERT INTO order_material_rules (id, platform, product_id, product_sku, title, material, polyester_type, created_at, updated_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `).run(id, input.platform, input.productId ?? null, input.productSku ?? null, input.title ?? null, input.material, polyesterType, now, now);
     return this.getRule(id)!;
   }
 
-  updateRuleMaterial(id: string, material: ProductMaterial): OrderMaterialRule | null {
+  updateRuleMaterial(id: string, material: ProductMaterial, polyesterType?: PolyesterType | null): OrderMaterialRule | null {
+    const existing = this.getRule(id);
+    if (!existing) return null;
+    const type = material === 'polyester'
+      ? (polyesterType === undefined && existing.material === 'polyester' ? existing.polyesterType : polyesterType) ?? null
+      : null;
     getDb()
-      .prepare('UPDATE order_material_rules SET material = ?, updated_at = ? WHERE id = ?')
-      .run(material, new Date().toISOString(), id);
+      .prepare('UPDATE order_material_rules SET material = ?, polyester_type = ?, updated_at = ? WHERE id = ?')
+      .run(material, type, new Date().toISOString(), id);
     return this.getRule(id);
   }
 

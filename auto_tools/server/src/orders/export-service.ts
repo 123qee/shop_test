@@ -14,6 +14,8 @@ import {
   ORDER_COLUMNS,
   ORDER_STATUS_LABELS,
   orderExportColumns,
+  POLYESTER_TYPE_LABELS,
+  purchaseSizeFor,
   renderFileName,
   sanitizeFileName,
   type OrderColumnKey,
@@ -26,6 +28,7 @@ import {
   type OrderShopRef,
   type OrderStatus,
   type OrderSortOrder,
+  type PolyesterType,
 } from '@shared/orders';
 import { config } from '../config/index.js';
 import { orderRepository, shopKey, type StoredOrderLine } from '../repositories/order-repository.js';
@@ -38,7 +41,7 @@ import { loadExportImages } from './export-images.js';
 import { createMaterialClassifier, type MaterialDecision } from './material-classifier.js';
 import { orderProfileService } from './profile-service.js';
 import { orderSourceRegistry } from './registry.js';
-import { buildXlsx, XLSX_IMAGE_COLUMN_WIDTH, XLSX_IMAGE_SIZE, type XlsxCell } from './writers/xlsx.js';
+import { buildXlsx, XLSX_FONT_SIZE, XLSX_IMAGE_COLUMN_WIDTH, XLSX_IMAGE_SIZE, type XlsxCell } from './writers/xlsx.js';
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -78,6 +81,7 @@ interface NormalizedQuery {
   to?: string;
   onlyNew: boolean;
   overrides: Record<string, ProductMaterial>;
+  polyesterTypes: Record<string, PolyesterType | null>;
   selectedImages: Record<string, string[]>;
   excludedLineUids: Set<string>;
   sortOrder: OrderSortOrder;
@@ -116,6 +120,8 @@ const CELL_VALUES: Record<OrderColumnKey, (ctx: CellContext) => XlsxCell> = {
   title: ({ item }) => item.line.title,
   color: ({ item }) => item.line.color,
   size: ({ item }) => item.line.size,
+  polyesterType: ({ item }) => item.decision.polyesterType ? POLYESTER_TYPE_LABELS[item.decision.polyesterType] : '',
+  purchaseSize: ({ item }) => purchaseSizeFor(item.decision.material, item.line.size),
   quantity: ({ item }) => item.line.quantity,
   unitPrice: ({ item }) => item.line.unitPrice,
   amount: ({ item }) => item.line.amount,
@@ -163,6 +169,8 @@ function toPreviewLine({ line, exportSelected, decision, imageUrls, selectedImag
     title: line.title,
     color: line.color,
     size: line.size,
+    purchaseSize: purchaseSizeFor(decision.material, line.size),
+    polyesterType: decision.polyesterType,
     imageUrl: line.imageUrl,
     imageUrls,
     selectedImages,
@@ -269,7 +277,7 @@ export class OrderExportService {
     if (input.sortOrder !== undefined && !['oldest', 'newest'].includes(input.sortOrder)) throw new OrderInputError('排序方式不正确');
     return {
       shops, statuses, from: input.from, to: input.to, onlyNew: input.onlyNew,
-      overrides: input.overrides ?? {}, selectedImages: input.selectedImages ?? {},
+      overrides: input.overrides ?? {}, polyesterTypes: input.polyesterTypes ?? {}, selectedImages: input.selectedImages ?? {},
       excludedLineUids: new Set(input.excludedLineUids ?? []), sortOrder: input.sortOrder ?? 'oldest',
     };
   }
@@ -323,6 +331,9 @@ export class OrderExportService {
     const byMaterial = new Map(materialBuckets.map((bucket) => [bucket.key, bucket]));
     for (const line of lines) {
       const decision = classify(line, query.overrides[line.uid]);
+      if (decision.material === 'polyester' && Object.hasOwn(query.polyesterTypes, line.uid)) {
+        decision.polyesterType = query.polyesterTypes[line.uid] ?? undefined;
+      }
       const bucket = byMaterial.get(decision.material) ?? unknownBucket;
       const exportSelected = !bucket.excluded && !query.excludedLineUids.has(line.uid);
       const imageUrls = imagesFor(line);
@@ -338,6 +349,10 @@ export class OrderExportService {
 
     const seq = orderExportRepository.countSince(profile.id, chinaDayStartIso(chinaDate(now))) + 1;
     const { files, renamed } = this.planFiles(profile, buckets, shops, query, now, seq);
+    const warnings = this.warnings(shops, unknownBucket, renamed);
+    const missingTypes = buckets.flatMap((bucket) => bucket.lines)
+      .filter((item) => item.exportSelected && item.decision.material === 'polyester' && !item.decision.polyesterType);
+    if (missingTypes.length) warnings.push(`${missingTypes.length} 行聚酯纤维商品尚未选择平板或针眼，请选择后再导出，或取消勾选本次跳过。`);
     return {
       profile,
       query,
@@ -346,7 +361,7 @@ export class OrderExportService {
       buckets,
       files,
       seq,
-      warnings: this.warnings(shops, unknownBucket, renamed),
+      warnings,
     };
   }
 
@@ -430,6 +445,9 @@ export class OrderExportService {
     const now = new Date();
     const plan = this.buildPlan(input, now);
     if (!plan.files.length) throw new OrderInputError('没有需要导出的订单');
+    const missingType = plan.files.flatMap((file) => file.buckets.flatMap((bucket) => bucket.lines))
+      .find((item) => item.decision.material === 'polyester' && !item.decision.polyesterType);
+    if (missingType) throw new OrderInputError(`订单 ${missingType.line.orderId} 的聚酯纤维商品请选择平板或针眼后再导出`);
     const { profile, query } = plan;
     const exportId = uuid();
     const dir = path.join(config.orders.exportDir, exportId);
@@ -452,7 +470,7 @@ export class OrderExportService {
           name: bucket.label,
           columns: columns.flatMap<{ header: string; width: number; numeric: boolean }>((column) => column.key === 'imageUrl'
             ? Array.from({ length: imageCount }, (_, i) => ({ header: i ? `图片 ${i + 1}` : '图片', width: XLSX_IMAGE_COLUMN_WIDTH, numeric: false }))
-            : [{ header: column.label, width: column.width, numeric: 'numeric' in column ? column.numeric : false }]),
+            : [{ header: column.label, width: column.width * XLSX_FONT_SIZE / 11, numeric: 'numeric' in column ? column.numeric : false }]),
           rows: bucket.lines.map((item) => columns.flatMap((column) => column.key === 'imageUrl'
             ? Array.from({ length: imageCount }, (_, i) => images.get(item.selectedImages[i]) ?? '')
             : [CELL_VALUES[column.key]({ item, bucket, shopNames: plan.shopNames })])),

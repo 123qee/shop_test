@@ -368,6 +368,8 @@ button.ghost.orders-danger:not(:disabled):hover { border-color: #fecaca; backgro
 .orders-item-quantity { text-align: center; font-size: 15px; font-weight: 600; }
 .orders-item-material { display: grid; gap: 5px; }
 .orders-item-material .orders-select { width: 138px; }
+.orders-polyester-type { display: grid; gap: 4px; font-size: 14px; }
+.orders-polyester-type .orders-select { width: 170px; }
 .orders-pending-note, .orders-skip-note { display: block; max-width: 138px; color: #a16207; font-size: 11px; }
 .orders-skip-note { margin-top: 6px; color: #737373; white-space: nowrap; }
 .orders-row-images { width: 150px; }

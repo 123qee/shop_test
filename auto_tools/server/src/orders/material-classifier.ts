@@ -1,5 +1,5 @@
 import type { ProductGrouping, ProductMaterial } from '@shared/types';
-import type { MaterialSource } from '@shared/orders';
+import type { MaterialSource, PolyesterType } from '@shared/orders';
 import { inferMaterialFromText, inferProductGrouping } from '@shared/product-grouping';
 import { getDb } from '../db/index.js';
 import { orderExportRepository } from '../repositories/order-export-repository.js';
@@ -11,6 +11,7 @@ export interface MaterialDecision {
   source: MaterialSource;
   /** 写进导出文件「材质判定依据」列，方便抽查 */
   evidence: string;
+  polyesterType?: PolyesterType;
 }
 
 interface CatalogMaterial {
@@ -73,9 +74,9 @@ export function createMaterialClassifier() {
   }
 
   return function classify(line: StoredOrderLine, override?: ProductMaterial): MaterialDecision {
-    if (override) return { material: override, source: 'override', evidence: '本次手动指定' };
     const rule = ruleFor(line);
-    if (rule) return { material: rule.material, source: 'rule', evidence: '已记住的商品材质' };
+    if (override) return { material: override, source: 'override', evidence: '本次手动指定', polyesterType: override === 'polyester' ? rule?.polyesterType : undefined };
+    if (rule) return { material: rule.material, source: 'rule', evidence: '已记住的商品材质', polyesterType: rule.polyesterType };
     const product = catalogFor(line);
     if (product && product.confirmed && product.material !== 'unknown') {
       return { material: product.material, source: 'catalog-manual', evidence: '商品库分组（人工确认）' };

@@ -87,6 +87,22 @@ export interface UnifiedOrder {
 export const EXPORT_MATERIALS = ['cotton', 'polyester', 'blend', 'other'] as const;
 export type ExportMaterial = typeof EXPORT_MATERIALS[number];
 
+export const POLYESTER_TYPES = ['flat', 'pinhole'] as const;
+export type PolyesterType = typeof POLYESTER_TYPES[number];
+export const POLYESTER_TYPE_LABELS: Record<PolyesterType, string> = { flat: '平板', pinhole: '针眼' };
+
+const COTTON_PURCHASE_SIZES: Readonly<Record<string, string>> = {
+  '2XS': '160', XS: 'M', S: 'L', M: 'XL', L: '2XL', XL: '3XL',
+  '2XL': '4XL', '3XL': '4XL', '4XL': '4XL',
+};
+
+/** 只换算棉质的成人尺码；童装数字尺码及未识别的尺码沿用原值。 */
+export function purchaseSizeFor(material: ProductMaterial, size: string | undefined): string | undefined {
+  if (material !== 'cotton' || !size) return size;
+  const normalized = size.trim().toUpperCase().replace(/^XXS$/, '2XS').replace(/^XXXL$/, '3XL').replace(/^XXL$/, '2XL').replace(/^XXXXL$/, '4XL');
+  return COTTON_PURCHASE_SIZES[normalized] ?? size;
+}
+
 // ---- 导出列 ----
 
 export interface OrderColumnDef {
@@ -117,7 +133,9 @@ export const ORDER_COLUMNS = [
   { key: 'variantSku', label: '变体 SKU', width: 22, group: 'product' },
   { key: 'title', label: '商品名称', width: 42, group: 'product' },
   { key: 'color', label: '颜色', width: 12, group: 'product' },
-  { key: 'size', label: '尺码', width: 8, group: 'product' },
+  { key: 'size', label: '平台本身尺码', width: 16, group: 'product' },
+  { key: 'polyesterType', label: '聚酯类型', width: 10, group: 'product' },
+  { key: 'purchaseSize', label: '拿货尺码', width: 10, group: 'product' },
   { key: 'quantity', label: '数量', width: 6, numeric: true, group: 'product' },
   { key: 'unitPrice', label: '单价', width: 8, numeric: true, group: 'product' },
   { key: 'amount', label: '订单金额', width: 10, numeric: true, group: 'product' },
@@ -142,7 +160,7 @@ export type OrderColumnKey = typeof ORDER_COLUMNS[number]['key'];
 export const ORDER_COLUMN_KEYS = ORDER_COLUMNS.map((column) => column.key) as OrderColumnKey[];
 
 /** 发厂时最关心的字段始终在前，兼容已保存的旧方案。多选图在图片位置展开。 */
-export const REQUIRED_ORDER_COLUMNS: OrderColumnKey[] = ['imageUrl', 'quantity', 'size', 'shop', 'material'];
+export const REQUIRED_ORDER_COLUMNS: OrderColumnKey[] = ['imageUrl', 'quantity', 'size', 'polyesterType', 'purchaseSize', 'shop', 'material'];
 export function orderExportColumns(columns: readonly OrderColumnKey[]): OrderColumnKey[] {
   return [...REQUIRED_ORDER_COLUMNS, ...new Set(columns.filter((key) => !REQUIRED_ORDER_COLUMNS.includes(key)))];
 }
@@ -408,6 +426,8 @@ export interface OrderQueryInput {
   onlyNew: boolean;
   /** 本次临时改的材质（key 为订单行 uid），不记住 */
   overrides?: Record<string, ProductMaterial>;
+  /** 本次选择的聚酯类型；null 表示清除已记住的类型，重新确认。 */
+  polyesterTypes?: Record<string, PolyesterType | null>;
   /** 按订单行选图；未指定时只导出订单图片，不重复数量。 */
   selectedImages?: Record<string, string[]>;
   /** 本次跳过的订单行；仍在预览中展示，不标记为已导出。 */
@@ -457,6 +477,8 @@ export interface OrderPreviewLine {
   title?: string;
   color?: string;
   size?: string;
+  purchaseSize?: string;
+  polyesterType?: PolyesterType;
   imageUrl?: string;
   imageUrls: string[];
   selectedImages: string[];
@@ -534,5 +556,6 @@ export interface OrderMaterialRule {
   productSku?: string;
   title?: string;
   material: ProductMaterial;
+  polyesterType?: PolyesterType;
   updatedAt: string;
 }

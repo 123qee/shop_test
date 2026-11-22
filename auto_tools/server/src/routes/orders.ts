@@ -4,6 +4,7 @@ import {
   EXPORT_MATERIALS,
   ORDER_COLUMN_KEYS,
   ORDER_STATUSES,
+  POLYESTER_TYPES,
   type OrderColumnKey,
   type OrderSourcesResponse,
 } from '@shared/orders';
@@ -31,6 +32,7 @@ const querySchema = z.object({
   to: date.optional(),
   onlyNew: z.boolean().default(true),
   overrides: z.record(z.string().max(300), z.enum([...EXPORT_MATERIALS, 'unknown'])).default({}),
+  polyesterTypes: z.record(z.string().max(300), z.enum(POLYESTER_TYPES).nullable()).default({}),
   selectedImages: z.record(z.string().max(300), z.array(z.string().url().max(4000)).min(1).max(21)).default({}),
   excludedLineUids: z.array(z.string().min(1).max(300)).max(50000).default([]),
   sortOrder: z.enum(['oldest', 'newest']).default('oldest'),
@@ -71,6 +73,7 @@ const ruleSchema = z.object({
   productSku: z.string().trim().max(200).optional().transform((value) => value || undefined),
   title: z.string().max(500).optional(),
   material: exportMaterial,
+  polyesterType: z.enum(POLYESTER_TYPES).nullable().optional(),
 }).refine((value) => value.productId || value.productSku, '缺少商品 id 或 SKU，无法记住');
 
 export const ordersRouter = Router();
@@ -180,8 +183,8 @@ ordersRouter.post('/orders/material-rules', (req, res) => {
 });
 
 ordersRouter.put('/orders/material-rules/:id', (req, res) => {
-  const { material } = z.object({ material: exportMaterial }).parse(req.body);
-  const rule = orderExportRepository.updateRuleMaterial(req.params.id, material);
+  const { material, polyesterType } = z.object({ material: exportMaterial, polyesterType: z.enum(POLYESTER_TYPES).nullable().optional() }).parse(req.body);
+  const rule = orderExportRepository.updateRuleMaterial(req.params.id, material, polyesterType);
   if (!rule) {
     res.status(404).json({ error: '记住的材质不存在' });
     return;

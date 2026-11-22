@@ -35,6 +35,7 @@ const MAX_CELL_LENGTH = 32767;
 const STYLE_DEFAULT = 0;
 const STYLE_HEADER = 1;
 const STYLE_TEXT = 2;
+export const XLSX_FONT_SIZE = 16;
 export const XLSX_IMAGE_SIZE = 240;
 const IMAGE_PADDING = 12;
 const IMAGE_ROW_PIXELS = XLSX_IMAGE_SIZE + IMAGE_PADDING;
@@ -112,9 +113,9 @@ function sheetXml(sheet: XlsxSheet, selected: boolean, hasDrawing: boolean): str
     + '<pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/>'
     + '<selection pane="bottomLeft" activeCell="A2" sqref="A2"/>'
     + '</sheetView></sheetViews>'
-    + '<sheetFormatPr defaultRowHeight="15"/>'
+    + '<sheetFormatPr defaultRowHeight="24"/>'
     + (cols ? `<cols>${cols}</cols>` : '')
-    + `<sheetData><row r="1">${header}</row>${body}</sheetData>`
+    + `<sheetData><row r="1" ht="30" customHeight="1">${header}</row>${body}</sheetData>`
     + (sheet.columns.length ? `<autoFilter ref="A1:${lastColumn}${lastRow}"/>` : '')
     + '<pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>'
     + (hasDrawing ? '<drawing r:id="rIdDrawing"/>' : '')
@@ -173,8 +174,8 @@ function drawingParts(sheets: XlsxSheet[]) {
 const STYLES_XML = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
   + '<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">'
   + '<fonts count="2">'
-  + '<font><sz val="11"/><name val="Calibri"/><family val="2"/></font>'
-  + '<font><b/><sz val="11"/><name val="Calibri"/><family val="2"/></font>'
+  + `<font><sz val="${XLSX_FONT_SIZE}"/><name val="Calibri"/><family val="2"/></font>`
+  + `<font><b/><sz val="${XLSX_FONT_SIZE}"/><name val="Calibri"/><family val="2"/></font>`
   + '</fonts>'
   + '<fills count="3">'
   + '<fill><patternFill patternType="none"/></fill>'
@@ -184,9 +185,9 @@ const STYLES_XML = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'
   + '<borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders>'
   + '<cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>'
   + '<cellXfs count="3">'
-  + '<xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>'
-  + '<xf numFmtId="49" fontId="1" fillId="2" borderId="0" xfId="0" applyNumberFormat="1" applyFont="1" applyFill="1"/>'
-  + '<xf numFmtId="49" fontId="0" fillId="0" borderId="0" xfId="0" applyNumberFormat="1"/>'
+  + '<xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0" applyFont="1" applyAlignment="1"><alignment vertical="center" wrapText="1"/></xf>'
+  + '<xf numFmtId="49" fontId="1" fillId="2" borderId="0" xfId="0" applyNumberFormat="1" applyFont="1" applyFill="1" applyAlignment="1"><alignment vertical="center" wrapText="1"/></xf>'
+  + '<xf numFmtId="49" fontId="0" fillId="0" borderId="0" xfId="0" applyNumberFormat="1" applyFont="1" applyAlignment="1"><alignment vertical="center" wrapText="1"/></xf>'
   + '</cellXfs>'
   + '<cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>'
   + '</styleSheet>';
