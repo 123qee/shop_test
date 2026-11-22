@@ -52,6 +52,16 @@ function Test-ServerReady {
   }
 }
 
+function Test-ServerDependencies {
+  Push-Location $serverDir
+  try {
+    # 目录可能是上次安装失败留下的；实际加载原生模块才能确认可用。
+    & node -e "try { const p = require('./package.json'); for (const name of [...Object.keys(p.dependencies), 'tsx', 'typescript']) require.resolve(name); if (require('better-sqlite3/package.json').version !== p.dependencies['better-sqlite3']) process.exit(1); const db = require('better-sqlite3')(':memory:'); db.prepare('SELECT 1').get(); db.close(); require('sharp'); } catch { process.exit(1); }" 2>$null
+    return $LASTEXITCODE -eq 0
+  }
+  finally { Pop-Location }
+}
+
 function Show-RecentLog([string]$Path) {
   if (Test-Path $Path) {
     Write-Host "--- Recent log: $Path ---" -ForegroundColor DarkGray
@@ -121,13 +131,13 @@ try {
   Update-Repository
 
   if (-not (Get-Command node -ErrorAction SilentlyContinue) -or -not (Get-Command npm.cmd -ErrorAction SilentlyContinue)) {
-    throw '找不到 Node.js 或 npm。请先安装 Node.js 18 或更高版本，再重新双击启动。'
+    throw '找不到 Node.js 或 npm。请先安装 Node.js 22 或更高版本，再重新双击启动。'
   }
 
   $nodeVersion = (& node --version).Trim()
   $nodeMajor = [int](($nodeVersion -replace '^v', '').Split('.')[0])
-  if ($nodeMajor -lt 18) {
-    throw "需要 Node.js 18 或更高版本，当前版本是：$nodeVersion"
+  if ($nodeMajor -lt 22) {
+    throw "需要 Node.js 22 或更高版本，当前版本是：$nodeVersion"
   }
   Write-Host "Node.js 版本：$nodeVersion"
 
@@ -149,9 +159,12 @@ try {
     Write-Host "服务已经在运行：http://localhost:$port"
   }
   else {
-    if (-not (Test-Path (Join-Path $serverDir 'node_modules')) -or -not (Test-Path (Join-Path $serverDir 'node_modules/sharp'))) {
-      Write-Host '正在安装后端依赖……'
-      Invoke-Npm $serverDir @('install')
+    if (-not (Test-ServerDependencies)) {
+      Write-Host '正在安装或修复后端依赖……'
+      Invoke-Npm $serverDir @('ci')
+      if (-not (Test-ServerDependencies)) {
+        throw '后端依赖安装后仍无法加载，请检查上方安装日志。'
+      }
     }
     if (-not (Test-Path (Join-Path $webDir 'node_modules'))) {
       Write-Host '正在安装网页依赖……'

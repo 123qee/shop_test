@@ -42,7 +42,8 @@ Joom API v3 官方文档：<https://merchant.joom.com/docs/api/v3>（入口页�
 
 - 停止服务：回到启动窗口按 `Control + C`，再按回车关闭窗口。
 - 如果 macOS 首次拦截脚本：在 Finder 中右键该文件，选择「打开」，并在系统提示中确认。以后可直接双击。
-- 两个平台都需要 Node.js 18 或更高版本；依赖安装需要联网。若提示找不到 Node.js，请先安装 Node.js，再重新双击启动。
+- 两个平台都需要 Node.js 22 或更高版本；依赖安装需要联网。若提示找不到 Node.js，请先安装 Node.js，再重新双击启动。
+- Windows 启动器会实际加载 SQLite 和图片模块，安装不完整或 SQLite 版本不符时按锁文件重新安装。SQLite 使用随 npm 包分发的预编译文件，Windows x64 无需另外安装 Visual Studio C++ 编译工具。
 - 这个入口沿用下方 `start.sh` 的默认行为，包括尝试启动已配置的 ngrok 隧道。ngrok 未安装或未配置时，本地工作台仍会启动。
 
 也可以继续使用原来的终端命令：
