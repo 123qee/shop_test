@@ -419,7 +419,13 @@ export function TemplateSorter(props: {
   /** Enter：按建议（或已选的模板）确认，并加入发布清单。 */
   function sendToPublish() {
     const s = stateRef.current;
-    if (!product || closing) return;
+    if (closing || !item) return;
+    if (!product) {
+      setNotice({ tone: loaded?.error ? 'error' : 'info', text: loaded?.error
+        ? '商品详情读取失败，请先重试或跳过这件'
+        : '正在读取商品详情，请稍候再按 Enter 确认' });
+      return;
+    }
     const id = product.id;
     const parked = s.parked[id];
     if (parked) {
@@ -427,7 +433,10 @@ export function TemplateSorter(props: {
       return;
     }
     const existing = s.decisions[id];
-    if (pending.current.has(id) || existing?.status === 'saving') return;
+    if (pending.current.has(id) || existing?.status === 'saving') {
+      setNotice({ tone: 'info', text: '这件正在保存，请稍候再确认' });
+      return;
+    }
     const target = s.choices[id] ?? existing?.templateId ?? suggestion?.templateId;
     if (existing?.status === 'saved' && existing.templateId === target) {
       // 已经在本轮确认过模板，直接加入发布清单。
@@ -777,7 +786,11 @@ export function TemplateSorter(props: {
                         type="button"
                         className={classes}
                         draggable
-                        onClick={() => setImageIndex(index)}
+                        onClick={() => {
+                          setImageIndex(index);
+                          // 切图后恢复分拣快捷键，避免 Enter 再次点击缩略图。
+                          dialogRef.current?.focus({ preventScroll: true });
+                        }}
                         onDragStart={(e) => {
                           e.dataTransfer.effectAllowed = 'move';
                           // Firefox 要求写入数据才会开始拖动。
@@ -797,7 +810,11 @@ export function TemplateSorter(props: {
                           setDragIndex(null);
                           setDropIndex(null);
                         }}
-                        onDragEnd={() => { setDragIndex(null); setDropIndex(null); }}
+                        onDragEnd={() => {
+                          setDragIndex(null);
+                          setDropIndex(null);
+                          dialogRef.current?.focus({ preventScroll: true });
+                        }}
                         aria-label={`第 ${index + 1} 张图${index === 0 ? '（主图）' : ''}`}
                       >
                         <img src={sizedImageSource(src, 'thumb')} alt="" loading="lazy" decoding="async" draggable={false} onError={(e) => fallbackToAllegroOriginal(e.currentTarget)} />

@@ -1,0 +1,781 @@
+{
+  "captured_at": "2026-11-21T12:12:16.462983+08:00",
+  "platform": "joom",
+  "mercadolibre": "excluded_by_user_this_run_only",
+  "source": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-21/121216-Joom恢复检查/检查快照.json",
+  "completeness": "partial_recovery",
+  "business_settings_changed": false,
+  "data": {
+    "ad_windows": [
+      {
+        "start": "2026-10-24",
+        "end": "2026-11-20",
+        "window": "28day",
+        "totals": {
+          "spent_usd": 120.88,
+          "pogs_usd": 659.65,
+          "purchase_count": 108,
+          "acos": 0.18324869248844083
+        },
+        "campaigns": [
+          {
+            "id": "6afaf5c7977c400007671131",
+            "name": "CPM_50商品_02",
+            "impressions": 0,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afaf5c7977c400007671131"
+          },
+          {
+            "id": "6afaf12b580914000721c763",
+            "name": "CPM_50商品_01",
+            "impressions": 16,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.01,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afaf12b580914000721c763"
+          },
+          {
+            "id": "6afb0ede18ef9e0007cf39d9",
+            "name": "CPM_50商品_03",
+            "impressions": 30,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.02,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb0ede18ef9e0007cf39d9"
+          },
+          {
+            "id": "6afb1850b4eaf70007a68d4f",
+            "name": "CPM_50商品_05",
+            "impressions": 261,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.16,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb1850b4eaf70007a68d4f"
+          },
+          {
+            "id": "6afb18794e94f5000716e046",
+            "name": "CPM_50商品_07",
+            "impressions": 195,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.12,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb18794e94f5000716e046"
+          },
+          {
+            "id": "6afb1891822a8100076cb0a8",
+            "name": "CPM_50商品_08",
+            "impressions": 308,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.18,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb1891822a8100076cb0a8"
+          },
+          {
+            "id": "6afb18a234ee6b000745598b",
+            "name": "CPM_50商品_09",
+            "impressions": 122,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.08,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb18a234ee6b000745598b"
+          },
+          {
+            "id": "6af7c2e09197610007483bd1",
+            "name": "cpm3",
+            "impressions": 118,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.07,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c2e09197610007483bd1"
+          },
+          {
+            "id": "6af7c31f9a0dcc0007280b39",
+            "name": "cpm4",
+            "impressions": 787,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.47,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c31f9a0dcc0007280b39"
+          },
+          {
+            "id": "6af7c3b9843fbe000793c400",
+            "name": "cpm6",
+            "impressions": 340,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.2,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c3b9843fbe000793c400"
+          },
+          {
+            "id": "6af7c47f822a8100076caff7",
+            "name": "cpm8",
+            "impressions": 316,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.18,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c47f822a8100076caff7"
+          },
+          {
+            "id": "6af7c4dc843fbe000793c402",
+            "name": "cpm9",
+            "impressions": 233,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.14,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c4dc843fbe000793c402"
+          },
+          {
+            "id": "6af7c525843fbe000793c404",
+            "name": "cpm10",
+            "impressions": 279,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.16,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c525843fbe000793c404"
+          },
+          {
+            "id": "6af7c56c07bc8b0007c7fcec",
+            "name": "成人11月cpm1",
+            "impressions": 94,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.06,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c56c07bc8b0007c7fcec"
+          },
+          {
+            "id": "6af7c5b407bc8b0007c7fced",
+            "name": "成人11月cpm2",
+            "impressions": 24,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.01,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c5b407bc8b0007c7fced"
+          },
+          {
+            "id": "6af7c6079197610007483bd7",
+            "name": "成人11月cpm3",
+            "impressions": 97,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.06,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c6079197610007483bd7"
+          },
+          {
+            "id": "6af7c706822a8100076caffa",
+            "name": "成人11月cpm4",
+            "impressions": 49,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.03,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c706822a8100076caffa"
+          },
+          {
+            "id": "6af7c7969197610007483bda",
+            "name": "10月成人儿童50cpm1",
+            "impressions": 862,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.54,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c7969197610007483bda"
+          },
+          {
+            "id": "6a9a9db5a7e89c0007872164",
+            "name": "热销产品",
+            "impressions": 554,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6a9a9db5a7e89c0007872164"
+          },
+          {
+            "id": "6a936f3b622671000778ea8e",
+            "name": "有销量产品",
+            "impressions": 228,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.09,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6a936f3b622671000778ea8e"
+          },
+          {
+            "id": "6af7c823822a8100076caffd",
+            "name": "大额度尝试2",
+            "impressions": 2217,
+            "purchase_count": 5,
+            "pogs_usd": 34.98,
+            "spent_usd": 1.35,
+            "acos": 0.03859348198970841,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c823822a8100076caffd"
+          },
+          {
+            "id": "6af7c40c07bc8b0007c7fce9",
+            "name": "cpm7",
+            "impressions": 767,
+            "purchase_count": 1,
+            "pogs_usd": 3.99,
+            "spent_usd": 0.4,
+            "acos": 0.10025062656641603,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c40c07bc8b0007c7fce9"
+          },
+          {
+            "id": "6afb186418ef9e0007cf39da",
+            "name": "CPM_50商品_06",
+            "impressions": 1708,
+            "purchase_count": 2,
+            "pogs_usd": 9,
+            "spent_usd": 0.97,
+            "acos": 0.10777777777777778,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb186418ef9e0007cf39da"
+          },
+          {
+            "id": "6aa266b1ffbca40007fc76a7",
+            "name": "高价产生",
+            "impressions": 12098,
+            "purchase_count": 9,
+            "pogs_usd": 51.48,
+            "spent_usd": 5.65,
+            "acos": 0.10975135975135976,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6aa266b1ffbca40007fc76a7"
+          },
+          {
+            "id": "6af7c7da843fbe000793c40a",
+            "name": "大额度尝试",
+            "impressions": 3911,
+            "purchase_count": 1,
+            "pogs_usd": 20,
+            "spent_usd": 2.42,
+            "acos": 0.121,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c7da843fbe000793c40a"
+          },
+          {
+            "id": "6abdada863e0d400072905cf",
+            "name": "童装卫衣竞价15%",
+            "impressions": 2316,
+            "purchase_count": 5,
+            "pogs_usd": 49.95,
+            "spent_usd": 7.49,
+            "acos": 0.14994994994994995,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6abdada863e0d400072905cf"
+          },
+          {
+            "id": "6a8cd24de84d9f0007cae4cb",
+            "name": "1",
+            "impressions": 13675,
+            "purchase_count": 13,
+            "pogs_usd": 57.89,
+            "spent_usd": 8.68,
+            "acos": 0.14993954050785974,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6a8cd24de84d9f0007cae4cb"
+          },
+          {
+            "id": "6af7c8699197610007483bdc",
+            "name": "大额度尝试3",
+            "impressions": 1325,
+            "purchase_count": 1,
+            "pogs_usd": 5,
+            "spent_usd": 0.77,
+            "acos": 0.154,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c8699197610007483bdc"
+          },
+          {
+            "id": "6afb168119acb0000753ec7d",
+            "name": "CPM_50商品_04",
+            "impressions": 1026,
+            "purchase_count": 1,
+            "pogs_usd": 3.99,
+            "spent_usd": 0.62,
+            "acos": 0.15538847117794485,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb168119acb0000753ec7d"
+          },
+          {
+            "id": "6a88653b1c9ca4000752a6cf",
+            "name": "折扣活动",
+            "impressions": 10303,
+            "purchase_count": 25,
+            "pogs_usd": 100.16,
+            "spent_usd": 17.45,
+            "acos": 0.17422124600638977,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6a88653b1c9ca4000752a6cf"
+          },
+          {
+            "id": "6aac7aa210e2ac00077587fd",
+            "name": "蒋卫华二店的广告",
+            "impressions": 13625,
+            "purchase_count": 31,
+            "pogs_usd": 258.81,
+            "spent_usd": 50.97,
+            "acos": 0.19693984003709283,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6aac7aa210e2ac00077587fd"
+          },
+          {
+            "id": "6af7c2a5822a8100076caff6",
+            "name": "cpm2",
+            "impressions": 6965,
+            "purchase_count": 4,
+            "pogs_usd": 15.96,
+            "spent_usd": 3.65,
+            "acos": 0.22869674185463656,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c2a5822a8100076caff6"
+          },
+          {
+            "id": "6a9d3599b5cfff0007d9fca1",
+            "name": "童装卫衣",
+            "impressions": 1693,
+            "purchase_count": 7,
+            "pogs_usd": 36.48,
+            "spent_usd": 9.12,
+            "acos": 0.25,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6a9d3599b5cfff0007d9fca1"
+          },
+          {
+            "id": "6af7c2269a0dcc0007280b38",
+            "name": "1",
+            "impressions": 2931,
+            "purchase_count": 1,
+            "pogs_usd": 3.98,
+            "spent_usd": 1.63,
+            "acos": 0.40954773869346733,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c2269a0dcc0007280b38"
+          },
+          {
+            "id": "6af7c37f0f93510007f57abc",
+            "name": "cpm5",
+            "impressions": 13695,
+            "purchase_count": 2,
+            "pogs_usd": 7.98,
+            "spent_usd": 7.13,
+            "acos": 0.8934837092731829,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c37f0f93510007f57abc"
+          }
+        ]
+      },
+      {
+        "start": "2026-11-14",
+        "end": "2026-11-20",
+        "window": "7day",
+        "totals": {
+          "spent_usd": 63.68,
+          "pogs_usd": 321.65,
+          "purchase_count": 46,
+          "acos": 0.19797916990517644
+        },
+        "campaigns": [
+          {
+            "id": "6afaf5c7977c400007671131",
+            "name": "CPM_50商品_02",
+            "impressions": 0,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afaf5c7977c400007671131"
+          },
+          {
+            "id": "6afaf12b580914000721c763",
+            "name": "CPM_50商品_01",
+            "impressions": 16,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.01,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afaf12b580914000721c763"
+          },
+          {
+            "id": "6afb0ede18ef9e0007cf39d9",
+            "name": "CPM_50商品_03",
+            "impressions": 30,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.02,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb0ede18ef9e0007cf39d9"
+          },
+          {
+            "id": "6afb1850b4eaf70007a68d4f",
+            "name": "CPM_50商品_05",
+            "impressions": 261,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.16,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb1850b4eaf70007a68d4f"
+          },
+          {
+            "id": "6afb18794e94f5000716e046",
+            "name": "CPM_50商品_07",
+            "impressions": 195,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.12,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb18794e94f5000716e046"
+          },
+          {
+            "id": "6afb1891822a8100076cb0a8",
+            "name": "CPM_50商品_08",
+            "impressions": 308,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.18,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb1891822a8100076cb0a8"
+          },
+          {
+            "id": "6afb18a234ee6b000745598b",
+            "name": "CPM_50商品_09",
+            "impressions": 122,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.08,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb18a234ee6b000745598b"
+          },
+          {
+            "id": "6af7c2e09197610007483bd1",
+            "name": "cpm3",
+            "impressions": 118,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.07,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c2e09197610007483bd1"
+          },
+          {
+            "id": "6af7c31f9a0dcc0007280b39",
+            "name": "cpm4",
+            "impressions": 787,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.47,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c31f9a0dcc0007280b39"
+          },
+          {
+            "id": "6af7c3b9843fbe000793c400",
+            "name": "cpm6",
+            "impressions": 340,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.2,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c3b9843fbe000793c400"
+          },
+          {
+            "id": "6af7c47f822a8100076caff7",
+            "name": "cpm8",
+            "impressions": 316,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.18,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c47f822a8100076caff7"
+          },
+          {
+            "id": "6af7c4dc843fbe000793c402",
+            "name": "cpm9",
+            "impressions": 233,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.14,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c4dc843fbe000793c402"
+          },
+          {
+            "id": "6af7c525843fbe000793c404",
+            "name": "cpm10",
+            "impressions": 279,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.16,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c525843fbe000793c404"
+          },
+          {
+            "id": "6af7c56c07bc8b0007c7fcec",
+            "name": "成人11月cpm1",
+            "impressions": 94,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.06,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c56c07bc8b0007c7fcec"
+          },
+          {
+            "id": "6af7c5b407bc8b0007c7fced",
+            "name": "成人11月cpm2",
+            "impressions": 24,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.01,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c5b407bc8b0007c7fced"
+          },
+          {
+            "id": "6af7c6079197610007483bd7",
+            "name": "成人11月cpm3",
+            "impressions": 97,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.06,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c6079197610007483bd7"
+          },
+          {
+            "id": "6af7c706822a8100076caffa",
+            "name": "成人11月cpm4",
+            "impressions": 49,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.03,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c706822a8100076caffa"
+          },
+          {
+            "id": "6af7c7969197610007483bda",
+            "name": "10月成人儿童50cpm1",
+            "impressions": 862,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.54,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c7969197610007483bda"
+          },
+          {
+            "id": "6a9a9db5a7e89c0007872164",
+            "name": "热销产品",
+            "impressions": 1,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6a9a9db5a7e89c0007872164"
+          },
+          {
+            "id": "6a936f3b622671000778ea8e",
+            "name": "有销量产品",
+            "impressions": 14,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.01,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6a936f3b622671000778ea8e"
+          },
+          {
+            "id": "6af7c823822a8100076caffd",
+            "name": "大额度尝试2",
+            "impressions": 2217,
+            "purchase_count": 5,
+            "pogs_usd": 34.98,
+            "spent_usd": 1.35,
+            "acos": 0.03859348198970841,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c823822a8100076caffd"
+          },
+          {
+            "id": "6af7c40c07bc8b0007c7fce9",
+            "name": "cpm7",
+            "impressions": 767,
+            "purchase_count": 1,
+            "pogs_usd": 3.99,
+            "spent_usd": 0.4,
+            "acos": 0.10025062656641603,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c40c07bc8b0007c7fce9"
+          },
+          {
+            "id": "6afb186418ef9e0007cf39da",
+            "name": "CPM_50商品_06",
+            "impressions": 1708,
+            "purchase_count": 2,
+            "pogs_usd": 9,
+            "spent_usd": 0.97,
+            "acos": 0.10777777777777778,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb186418ef9e0007cf39da"
+          },
+          {
+            "id": "6aa266b1ffbca40007fc76a7",
+            "name": "高价产生",
+            "impressions": 1545,
+            "purchase_count": 0,
+            "pogs_usd": 0,
+            "spent_usd": 0.73,
+            "acos": null,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6aa266b1ffbca40007fc76a7"
+          },
+          {
+            "id": "6af7c7da843fbe000793c40a",
+            "name": "大额度尝试",
+            "impressions": 3911,
+            "purchase_count": 1,
+            "pogs_usd": 20,
+            "spent_usd": 2.42,
+            "acos": 0.121,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c7da843fbe000793c40a"
+          },
+          {
+            "id": "6abdada863e0d400072905cf",
+            "name": "童装卫衣竞价15%",
+            "impressions": 822,
+            "purchase_count": 3,
+            "pogs_usd": 29.97,
+            "spent_usd": 4.5,
+            "acos": 0.15015015015015015,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6abdada863e0d400072905cf"
+          },
+          {
+            "id": "6a8cd24de84d9f0007cae4cb",
+            "name": "1",
+            "impressions": 1039,
+            "purchase_count": 2,
+            "pogs_usd": 7.98,
+            "spent_usd": 1.2,
+            "acos": 0.15037593984962405,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6a8cd24de84d9f0007cae4cb"
+          },
+          {
+            "id": "6af7c8699197610007483bdc",
+            "name": "大额度尝试3",
+            "impressions": 1325,
+            "purchase_count": 1,
+            "pogs_usd": 5,
+            "spent_usd": 0.77,
+            "acos": 0.154,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c8699197610007483bdc"
+          },
+          {
+            "id": "6afb168119acb0000753ec7d",
+            "name": "CPM_50商品_04",
+            "impressions": 1026,
+            "purchase_count": 1,
+            "pogs_usd": 3.99,
+            "spent_usd": 0.62,
+            "acos": 0.15538847117794485,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6afb168119acb0000753ec7d"
+          },
+          {
+            "id": "6a88653b1c9ca4000752a6cf",
+            "name": "折扣活动",
+            "impressions": 731,
+            "purchase_count": 3,
+            "pogs_usd": 11.95,
+            "spent_usd": 2.08,
+            "acos": 0.17405857740585776,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6a88653b1c9ca4000752a6cf"
+          },
+          {
+            "id": "6aac7aa210e2ac00077587fd",
+            "name": "蒋卫华二店的广告",
+            "impressions": 3842,
+            "purchase_count": 16,
+            "pogs_usd": 143.89,
+            "spent_usd": 27.98,
+            "acos": 0.1944540968795608,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6aac7aa210e2ac00077587fd"
+          },
+          {
+            "id": "6af7c2a5822a8100076caff6",
+            "name": "cpm2",
+            "impressions": 6965,
+            "purchase_count": 4,
+            "pogs_usd": 15.96,
+            "spent_usd": 3.65,
+            "acos": 0.22869674185463656,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c2a5822a8100076caff6"
+          },
+          {
+            "id": "6a9d3599b5cfff0007d9fca1",
+            "name": "童装卫衣",
+            "impressions": 405,
+            "purchase_count": 4,
+            "pogs_usd": 22.98,
+            "spent_usd": 5.75,
+            "acos": 0.25021758050478676,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6a9d3599b5cfff0007d9fca1"
+          },
+          {
+            "id": "6af7c2269a0dcc0007280b38",
+            "name": "1",
+            "impressions": 2931,
+            "purchase_count": 1,
+            "pogs_usd": 3.98,
+            "spent_usd": 1.63,
+            "acos": 0.40954773869346733,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c2269a0dcc0007280b38"
+          },
+          {
+            "id": "6af7c37f0f93510007f57abc",
+            "name": "cpm5",
+            "impressions": 13695,
+            "purchase_count": 2,
+            "pogs_usd": 7.98,
+            "spent_usd": 7.13,
+            "acos": 0.8934837092731829,
+            "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c37f0f93510007f57abc"
+          }
+        ]
+      }
+    ],
+    "focused_cr7": {
+      "id": "6aaa83a2fb5605019bbfb9c9",
+      "current_cpa_bid": 0.2,
+      "28day": {
+        "impressions": 2638,
+        "clicks": 148,
+        "add_to_cart": 30,
+        "purchase_count": 10,
+        "pogs_usd": 109.89,
+        "spent_usd": 21.98
+      },
+      "7day": {
+        "impressions": 537,
+        "clicks": 48,
+        "add_to_cart": 15,
+        "purchase_count": 6,
+        "pogs_usd": 69.93,
+        "spent_usd": 13.99
+      },
+      "full_set_cost_cny": 15,
+      "quantity_per_purchase_not_assumed": true
+    },
+    "cpm5": {
+      "source": "https://merchant.joom.com/panel/ads/campaigns/6af7c37f0f93510007f57abc",
+      "current_budget": 10,
+      "current_product_rows": 49,
+      "pagination_complete": true,
+      "primary_id": "6a8c47d48f3b2901f2108df6",
+      "primary_in_cpm5": false,
+      "cpa_preserved": true,
+      "cpa_bid": 0.15,
+      "cpa_campaign": "6a8cd24de84d9f0007cae4cb",
+      "cpa_campaign_rows": 440,
+      "current28day_cpa_primary": {
+        "impressions": 11062,
+        "clicks": 246,
+        "add_to_cart": 73,
+        "purchase_count": 7,
+        "pogs_usd": 27.93,
+        "spent_usd": 4.19
+      },
+      "warning": "cpm5活动历史ACOS约89%包含移出前历史，不作移出后效果；未完成归因/售后成熟评价"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-11-21T11:44:36.818602+08:00",
+  "scope": "joom_only_this_run",
+  "scheduled_scope_change": "awaiting_user_clarification",
+  "source": "https://merchant.joom.com/panel/products/all?limit=100",
+  "status": "awaiting_user_login",
+  "products_observed": 0,
+  "business_settings_changed": false,
+  "knowledge_read_restored": true
+}

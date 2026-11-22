@@ -1,0 +1,238 @@
+{
+  "captured_at": "2026-11-21T12:12:16.462983+08:00",
+  "platform": "joom",
+  "mercadolibre": "excluded_by_user_this_run_only",
+  "source": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-21/121216-Joom恢复检查/检查快照.json",
+  "completeness": "partial_recovery",
+  "business_settings_changed": false,
+  "data": {
+    "shops": [
+      {
+        "name": "jwh second",
+        "id": "6a9d4221018d89bb9e5c22ef",
+        "source": "https://merchant.joom.com/panel/analytics/orders/store/6a9d4221018d89bb9e5c22ef",
+        "28day": {
+          "impressions": 32043,
+          "clicks": 2049,
+          "purchase_count": 77,
+          "gmv_usd": 563.16,
+          "ctr": 0.06394532347158506,
+          "cr": 0.037579306979014154
+        },
+        "previous28day": {
+          "impressions": 8963,
+          "clicks": 509,
+          "purchase_count": 8,
+          "gmv_usd": 77.95,
+          "ctr": 0.05678902153296887,
+          "cr": 0.015717092337917484
+        },
+        "7day": {
+          "impressions": 12136,
+          "clicks": 815,
+          "purchase_count": 38,
+          "gmv_usd": 293.31,
+          "ctr": 0.06715557020435069,
+          "cr": 0.046625766871165646
+        },
+        "previous7day": {
+          "impressions": 9308,
+          "clicks": 582,
+          "purchase_count": 23,
+          "gmv_usd": 169.89,
+          "ctr": 0.06252685861624409,
+          "cr": 0.03951890034364261
+        }
+      },
+      {
+        "name": "Nineteen Wear",
+        "id": "6a817b93f5d3934528e70df7",
+        "source": "https://merchant.joom.com/panel/analytics/orders/store/6a817b93f5d3934528e70df7",
+        "28day": {
+          "impressions": 130214,
+          "clicks": 4410,
+          "purchase_count": 151,
+          "gmv_usd": 762.51,
+          "ctr": 0.03386732609396839,
+          "cr": 0.03424036281179138
+        },
+        "previous28day": {
+          "impressions": 103990,
+          "clicks": 5289,
+          "purchase_count": 245,
+          "gmv_usd": 1176.51,
+          "ctr": 0.05086065967881527,
+          "cr": 0.0463225562488183
+        },
+        "7day": {
+          "impressions": 43074,
+          "clicks": 1209,
+          "purchase_count": 54,
+          "gmv_usd": 286.04,
+          "ctr": 0.02806797604123137,
+          "cr": 0.04466501240694789
+        },
+        "previous7day": {
+          "impressions": 34290,
+          "clicks": 1240,
+          "purchase_count": 40,
+          "gmv_usd": 199.77,
+          "ctr": 0.03616214639836687,
+          "cr": 0.03225806451612903
+        }
+      },
+      {
+        "name": "jh",
+        "id": "6a8c4690b1e1819ed91f9baa",
+        "source": "https://merchant.joom.com/panel/analytics/orders/store/6a8c4690b1e1819ed91f9baa",
+        "28day": {
+          "impressions": 18216,
+          "clicks": 955,
+          "purchase_count": 13,
+          "gmv_usd": 153,
+          "ctr": 0.05242643829600351,
+          "cr": 0.013612565445026177
+        },
+        "previous28day": {
+          "impressions": 7204,
+          "clicks": 241,
+          "purchase_count": 5,
+          "gmv_usd": 42,
+          "ctr": 0.03345363686840644,
+          "cr": 0.02074688796680498
+        },
+        "7day": {
+          "impressions": 6528,
+          "clicks": 263,
+          "purchase_count": 3,
+          "gmv_usd": 44,
+          "ctr": 0.040287990196078434,
+          "cr": 0.011406844106463879
+        },
+        "previous7day": {
+          "impressions": 4641,
+          "clicks": 268,
+          "purchase_count": 4,
+          "gmv_usd": 40,
+          "ctr": 0.05774617539323422,
+          "cr": 0.014925373134328358
+        }
+      }
+    ],
+    "shop_windows": {
+      "28day": [
+        "2026-10-23",
+        "2026-11-19"
+      ],
+      "previous28day": [
+        "2026-09-25",
+        "2026-10-22"
+      ],
+      "7day": [
+        "2026-11-13",
+        "2026-11-19"
+      ],
+      "previous7day": [
+        "2026-11-06",
+        "2026-11-12"
+      ]
+    },
+    "product_overview": {
+      "total": 5945,
+      "active": 3320,
+      "unpublished": 3,
+      "restricted_tab": 2622,
+      "for_improvement": 2215,
+      "out_of_stock_tab": 0,
+      "sudden_price_increase": 1,
+      "price_increase_risk": 49,
+      "eu_regional_blocked": 2947,
+      "ip_region_blocked": 2956,
+      "categories_may_overlap": true,
+      "stock_is_configured_not_physical": true,
+      "source": "https://merchant.joom.com/panel/products/all?limit=100"
+    },
+    "product_issues": [
+      {
+        "id": "6aad547abaf5a401f56aeddf",
+        "name": "用户确认的童装短袖",
+        "priority": 1,
+        "live_title": "Kids Winter Thermal Printed Hoodie Jacket",
+        "live_category": "Hoodies & Sweatshirts (kids unisex)",
+        "live_description_type": "Kids’ T-Shirt / Summer / Short Sleeve",
+        "live_sleeve_sizes_100_to_160_cm": [
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51
+        ],
+        "confirmed_product_type": "短袖T恤，用户2026-11-20确认",
+        "suggested_action": "标题及类目改为短袖T恤；正确袖长待实测，不猜数值；本次只读未提交",
+        "source": "https://merchant.joom.com/panel/products/6aad547abaf5a401f56aeddf/active"
+      },
+      {
+        "id": "6a842f66e32015012461bc44",
+        "name": "Senna赛车T恤",
+        "priority": 2,
+        "live_description_material": "polyester 100%",
+        "live_attributes": [
+          "Material: cotton",
+          "Material for fur: cotton"
+        ],
+        "user_confirmed": "聚酯纤维，比例未确认",
+        "suggested_action": "按已确认材质统一为polyester，避免未经确认的100%承诺，移除不适用毛皮材质字段；本次未提交",
+        "source": "https://merchant.joom.com/panel/products/6a842f66e32015012461bc44/active"
+      },
+      {
+        "id": "6aae091df2db5501fef4ce19",
+        "name": "Kids Beast Graphic Cotton Hoodie",
+        "priority": 3,
+        "sudden_price_increase": true,
+        "configured_price_usd_range": [
+          9.99,
+          10
+        ],
+        "display_sales_price_range": [
+          4.65,
+          9.29
+        ],
+        "variant_example": {
+          "color": "multicolor",
+          "size": "130",
+          "current_price": 10,
+          "display_sales_price": 4.65,
+          "display_average_price": 5,
+          "configured_stock": 998
+        },
+        "suggested_action": "核对变型价格历史及促销/折扣；不能直接把销售价格或历史均价当建议售价，不全店降价",
+        "source": "https://merchant.joom.com/panel/products/6aae091df2db5501fef4ce19"
+      },
+      {
+        "id": "6a843689e32015012462213b",
+        "name": "Personalized Team Uniform Jersey",
+        "priority": 3,
+        "restriction_reason": "Prohibited: counterfeit product；平台指出墨西哥国家队FMF官方徽章复制品",
+        "restricted_countries": "all",
+        "active_version": false,
+        "suggested_action": "保持禁售，不通过改标题绕过；只有具备有效授权和平台认可资料时再走正规复核",
+        "source": "https://merchant.joom.com/panel/products/6a843689e32015012462213b"
+      },
+      {
+        "id": "6aaa83a2fb5605019bbfb9c9",
+        "name": "CR7两件套",
+        "priority": 4,
+        "full_set_cost_cny": 15,
+        "live_label_fields": [
+          "Label: no",
+          "Tag: Yes",
+          "attribute Label: no"
+        ],
+        "suggested_action": "核对实物是否有洗标后统一标签字段；保持CPA20%，未核净贡献不盲加价",
+        "source": "https://merchant.joom.com/panel/products/6aaa83a2fb5605019bbfb9c9/active"
+      }
+    ]
+  }
+}

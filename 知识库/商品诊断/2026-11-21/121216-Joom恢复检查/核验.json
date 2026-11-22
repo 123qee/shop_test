@@ -1,0 +1,21 @@
+{
+  "shop_7day_purchase_sum": 95,
+  "shop_7day_gmv_sum": 623.35,
+  "ads28": {
+    "spent_usd": 120.88,
+    "pogs_usd": 659.65,
+    "purchase_count": 108,
+    "acos": 0.18324869248844083
+  },
+  "ads7": {
+    "spent_usd": 63.68,
+    "pogs_usd": 321.65,
+    "purchase_count": 46,
+    "acos": 0.19797916990517644
+  },
+  "campaign_counts": [
+    35,
+    35
+  ],
+  "verified": true
+}

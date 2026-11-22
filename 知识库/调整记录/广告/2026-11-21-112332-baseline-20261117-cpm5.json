@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-11-21T11:23:32.908365+08:00",
+  "automation_id": "joom",
+  "suggestion_id": "baseline-20261117-cpm5",
+  "object": "cpm5主商品/CPA保留",
+  "status": "当前验证受登录阻塞，保留此前状态；不叠加调整",
+  "actual_setting_changed": false,
+  "new_business_action_executed": false,
+  "current_settings_verified": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-21/112332.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-21/112332.json",
+  "review_condition": "两平台登录恢复且旧记录可读后重新核实实际设置与期间数据"
+}

@@ -1,0 +1,12 @@
+{
+  "automation_id": "joom-2",
+  "recorded_at": "2026-11-21T11:12:54.957723+08:00",
+  "suggestion_id": "store-access-20261121",
+  "status": "登录及知识库访问受阻；未取得经营数据",
+  "actual_setting_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-21/111254.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-21/111254.json",
+  "unclosed_suggestions_current_state_verified": false,
+  "archive_verified": true,
+  "knowledge_issue_scope": "旧必读文件读取超时；新日报及快照写入读回成功"
+}
