@@ -22,7 +22,7 @@ test('拿货尺码：棉质逐档映射，其他材质与未知尺码保留原�
   for (const material of ['polyester', 'blend', 'other', 'unknown'] as const) {
     assert.deepEqual(sizes.map((size) => purchaseSizeFor(material, size)), sizes);
   }
-  for (const size of ['100', '160', '5XL', 'M / L', 'custom', '', undefined]) {
+  for (const size of ['160', '5XL', 'M / L', 'custom', '', undefined]) {
     assert.equal(purchaseSizeFor('cotton', size), size);
   }
   assert.equal(purchaseSizeFor('cotton', ' xxl '), '4XL');
@@ -30,6 +30,20 @@ test('拿货尺码：棉质逐档映射，其他材质与未知尺码保留原�
   assert.equal(purchaseSizeFor('cotton', 'XXXL'), '4XL');
   assert.equal(purchaseSizeFor('cotton', 'XXXXL'), '4XL');
   assert.deepEqual(orderExportColumns(['orderId', 'size', 'material']), ['imageUrl', 'quantity', 'size', 'polyesterType', 'purchaseSize', 'shop', 'material', 'orderId']);
+});
+
+test('童装拿货尺码：聚酯保留原值，其他材质增大一码，160 不变', () => {
+  const sizes = ['100', '110', '120', '130', '140', '150', '160'];
+  assert.deepEqual(sizes.map((size) => purchaseSizeFor('polyester', size)), sizes);
+  for (const material of ['cotton', 'blend', 'other', 'unknown'] as const) {
+    assert.deepEqual(sizes.map((size) => purchaseSizeFor(material, size)), ['110', '120', '130', '140', '150', '160', '160']);
+    for (const size of ['90', '105', '164', '170', '180', '40', 'M / L', '', undefined]) {
+      assert.equal(purchaseSizeFor(material, size), size);
+    }
+  }
+  assert.equal(purchaseSizeFor('cotton', ' 140 '), '150');
+  assert.equal(purchaseSizeFor('polyester', ' 140 '), ' 140 ');
+  assert.equal(purchaseSizeFor('cotton', '2XS'), '160', '成人换算得到 160 后不再叠加');
 });
 
 test('北京时间日期与预设范围', () => {

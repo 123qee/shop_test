@@ -543,7 +543,7 @@ function PreviewPanel({ preview, active, refreshing, blockedReason, exporting, r
           <input type="checkbox" checked={remember} disabled={disabled} onChange={(event) => onRememberChange(event.target.checked)} />记住商品材质
         </label>
       </div>
-      <p className="orders-hint">取消商品勾选可跳过本次导出，以后仍可导出。聚酯纤维需选择平板或针眼；拿货尺码仅对棉质换算。默认只导出订单图；点「选图片」或切换卡片可多选，点图放大。</p>
+      <p className="orders-hint">取消商品勾选可跳过本次导出，以后仍可导出。聚酯纤维需选择平板或针眼，拿货尺码保留原值；其他童装拿货尺码增大一码，160 不变；成人棉质尺码按原规则换算。默认只导出订单图；点「选图片」或切换卡片可多选，点图放大。</p>
       {preview.warnings.length > 0 && <ul className="orders-warnings">{preview.warnings.map((warning) => <li key={warning}>{warning}</li>)}</ul>}
       <div className="orders-item-toolbar">
         <div className="orders-chips" role="group" aria-label="筛选商品材质">

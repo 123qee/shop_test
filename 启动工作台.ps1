@@ -161,7 +161,11 @@ try {
   else {
     if (-not (Test-ServerDependencies)) {
       Write-Host '正在安装或修复后端依赖……'
-      Invoke-Npm $serverDir @('ci')
+      # npm 10 从锁文件安装时可能丢失 better-sqlite3 的 gypfile:false，
+      # 错误触发 node-gyp。SQLite 已随包提供预编译文件，无需本机编译。
+      Invoke-Npm $serverDir @('ci', '--ignore-scripts')
+      # 只运行仍需要安装检查的模块脚本，保留 esbuild/sharp 的安装修复能力。
+      Invoke-Npm $serverDir @('rebuild', 'esbuild', 'sharp')
       if (-not (Test-ServerDependencies)) {
         throw '后端依赖安装后仍无法加载，请检查上方安装日志。'
       }

@@ -96,10 +96,17 @@ const COTTON_PURCHASE_SIZES: Readonly<Record<string, string>> = {
   '2XL': '4XL', '3XL': '4XL', '4XL': '4XL',
 };
 
-/** 只换算棉质的成人尺码；童装数字尺码及未识别的尺码沿用原值。 */
+const KIDS_PURCHASE_SIZES: Readonly<Record<string, string>> = {
+  '100': '110', '110': '120', '120': '130', '130': '140',
+  '140': '150', '150': '160', '160': '160',
+};
+
+/** 非聚酯童装 100–160 增大一码（160 不变）；棉质成人尺码按原规则换算。 */
 export function purchaseSizeFor(material: ProductMaterial, size: string | undefined): string | undefined {
-  if (material !== 'cotton' || !size) return size;
+  if (!size || material === 'polyester') return size;
   const normalized = size.trim().toUpperCase().replace(/^XXS$/, '2XS').replace(/^XXXL$/, '3XL').replace(/^XXL$/, '2XL').replace(/^XXXXL$/, '4XL');
+  if (Object.hasOwn(KIDS_PURCHASE_SIZES, normalized)) return KIDS_PURCHASE_SIZES[normalized];
+  if (material !== 'cotton') return size;
   return COTTON_PURCHASE_SIZES[normalized] ?? size;
 }
 
