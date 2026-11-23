@@ -1,0 +1,2826 @@
+{
+  "sourceUrl": "https://erp.91miaoshou.com/mercadolibre/move_collect/template_management/product",
+  "templates": [
+    {
+      "fields": [
+        {
+          "label": "模板名称",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "kid hoddie"
+            }
+          ]
+        },
+        {
+          "label": "信息模块",
+          "required": true,
+          "selected": [],
+          "values": []
+        },
+        {
+          "label": "产品类目",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "服饰及配饰 (Clothing and Accessories)/运动服饰 (Sports Apparel)/连帽衫与卫衣 (Hoodies & Sweatshirts)"
+            }
+          ]
+        },
+        {
+          "label": "品牌:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "NUll"
+            }
+          ]
+        },
+        {
+          "label": "型号:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "NULL"
+            }
+          ]
+        },
+        {
+          "label": "性别:",
+          "required": true,
+          "selected": [
+            "中性儿童款"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "服装类型:",
+          "required": true,
+          "selected": [
+            "连帽衫"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否为运动款:",
+          "required": true,
+          "selected": [
+            "是"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "主要材质:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "Cotton"
+            }
+          ]
+        },
+        {
+          "label": "系列:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "APG标识符:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "成分:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "楔形版型:",
+          "required": false,
+          "selected": [
+            "请选择楔形版型"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "连帽衫和卫衣领型:",
+          "required": false,
+          "selected": [
+            "请选择连帽衫和卫衣领型"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否廓形:",
+          "required": false,
+          "selected": [
+            "请选择是否廓形"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "带帽:",
+          "required": false,
+          "selected": [
+            "是"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "含再生材料:",
+          "required": false,
+          "selected": [
+            "请选择含再生材料"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否适合孕期:",
+          "required": false,
+          "selected": [
+            "请选择是否适合孕期"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "推荐用途:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "进口报关单编号:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发票产品名称:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "SAT产品编码:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "计量单位密钥:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "计量单位描述:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "转售增值税:",
+          "required": false,
+          "selected": [
+            "请选择转售增值税"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "生产和服务特别税:",
+          "required": false,
+          "selected": [
+            "请选择生产和服务特别税"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "袖型:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "袖口类型:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发布季节:",
+          "required": false,
+          "selected": [
+            "请选择发布季节"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发布年份:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "带口袋:",
+          "required": false,
+          "selected": [
+            "请选择带口袋"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否带拉链:",
+          "required": false,
+          "selected": [
+            "否"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "适合哺乳期人群:",
+          "required": false,
+          "selected": [
+            "请选择适合哺乳期人群"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "商品状况:",
+          "required": false,
+          "selected": [
+            "请选择商品状况"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装宽度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装长度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装高度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包裹重量:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否成套售卖:",
+          "required": false,
+          "selected": [
+            "请选择是否成套售卖"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "产品数据源:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "产品描述：",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "Kids' Hoodie 100% Cotton - Premium Quality\nGive your little ones ultimate comfort and style with our high-quality cotton kids hoodie! Crafted with ultra-soft fabric perfect for children’s daily outdoor activities, this hoodie offers long-lasting durability, gentle warmth and a loose unrestricted fit.\nWhy choose our kids' hoodie?\n● 100% Pure Cotton Fabric: Made of natural premium cotton, ultra soft, breathable and hypoallergenic, gentle enough for kids’ sensitive skin, suitable for daily all-season wear.\n● Warm & Breathable Design: Lightweight cotton fleece keeps kids warm on cool spring and autumn days, and works great as inner layers in winter without stuffiness.\n● Durable For Active Kids: Resistant to frequent washing, the fabric won’t easily fade, shrink or deform, holding its shape after repeated wears.\n● Functional Hood & Ribbed Trim: Built-in hood blocks wind for extra warmth; stretch ribbed cuffs and hem lock in heat while staying flexible during running and playing.\n● Loose Comfort Fit: Roomy cut with enough space for layering, perfect for school, sports, trips and daily playtime.\n● Customizable Option: Support custom printed patterns and multiple solid color choices, create unique exclusive styles for your kids.\nFast Shipping Promise\nWe know you want your order as soon as possible! We guarantee your order will be shipped out within 24 hours after payment confirmation.\nSatisfaction Guarantee\n● 30-Day Manufacturer Warranty: We stand fully behind the quality of our products.\n● Buyer Protection: Get exactly what you ordered, or we’ll refund your payment.\n● Free Returns: You have 30 days after receiving the item to request exchanges or full refunds.\nSIZE GUIDE (All Measurements in CM, Full Circumference Bust)\nTo pick the perfect size, measure a well-fitting hoodie your child already owns and compare it to our size chart below:\nSize 100: Length 42 cm | Bust 60 cm | Shoulder 28 cm | Sleeve 39 cm | Recommended Height 100 cm | Weight 10–15 kg\nSize 110: Length 45 cm | Bust 66 cm | Shoulder 30 cm | Sleeve 41 cm | Recommended Height 110 cm | Weight 15–17.5 kg\nSize 120: Length 48 cm | Bust 72 cm | Shoulder 32 cm | Sleeve 43 cm | Recommended Height 120 cm | Weight 17.5–22.5 kg\nSize 130: Length 51 cm | Bust 78 cm | Shoulder 34 cm | Sleeve 45 cm | Recommended Height 130 cm | Weight 22.5–27.5 kg\nSize 140: Length 54 cm | Bust 84 cm | Shoulder 36 cm | Sleeve 47 cm | Recommended Height 140 cm | Weight 27.5–32.5 kg\nSize 150: Length 57 cm | Bust 90 cm | Shoulder 38 cm | Sleeve 49 cm | Recommended Height 150 cm | Weight 32.5–40 kg\nSize 160: Length 60 cm | Bust 96 cm | Shoulder 40 cm | Sleeve 51 cm | Recommended Height 160 cm | Weight 40–50 kg\nNote: All measurements are taken manually, a slight deviation of 1–2 cm may occur. Bust data listed is full circumference of the garment."
+            }
+          ]
+        },
+        {
+          "label": "质保类型",
+          "required": false,
+          "selected": [
+            "Factory Warranty(工厂保修)"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "质保时间",
+          "required": false,
+          "selected": [
+            "天"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": "15"
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "name": "kid hoddie"
+    },
+    {
+      "fields": [
+        {
+          "label": "模板名称",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "儿童套装+类目属性+保修信息+棉质"
+            }
+          ]
+        },
+        {
+          "label": "信息模块",
+          "required": true,
+          "selected": [],
+          "values": []
+        },
+        {
+          "label": "产品类目",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "服饰及配饰 (Clothing and Accessories)/运动服饰 (Sports Apparel)/运动套装 (Tracksuits)"
+            }
+          ]
+        },
+        {
+          "label": "品牌:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "Null"
+            }
+          ]
+        },
+        {
+          "label": "型号:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "NUll"
+            }
+          ]
+        },
+        {
+          "label": "性别:",
+          "required": true,
+          "selected": [
+            "中性儿童款"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "亚马逊标准商品识别码（Amazon Standard Product Identification）:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "件数:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "主要面料:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "cotton"
+            }
+          ]
+        },
+        {
+          "label": "含再生材料:",
+          "required": false,
+          "selected": [
+            "请选择含再生材料"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "进口报关单编号:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发票产品名称:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "SAT编码:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "计量单位编码:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "计量单位描述:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "转售增值税:",
+          "required": false,
+          "selected": [
+            "请选择转售增值税"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "IEPS（生产和服务特别税）:",
+          "required": false,
+          "selected": [
+            "请选择IEPS（生产和服务特别税）"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "成分:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "商品状况:",
+          "required": false,
+          "selected": [
+            "请选择商品状况"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包裹宽度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装长度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装高度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包裹重量:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否为套装:",
+          "required": false,
+          "selected": [
+            "是"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "产品来源:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "产品描述：",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "Kids Sports Short Set – Soft Breathable 100% Cotton\nIdeal for sports training, school PE classes, daily casual wear and all outdoor play! This two-piece kids outfit includes a short-sleeve athletic tee + matching shorts, made of premium soft cotton fabric to keep children cool, dry and comfy all day long.\nWhy Choose Our Kids Cotton Short Set?\n● Natural Sweat-Wicking Cotton Fabric\nMade of high-quality pure cotton that absorbs sweat gently and effectively. Kids stay dry and irritation-free even during running, jumping and strenuous exercise.\n● Superior Air Permeability\nThe natural woven cotton structure boosts continuous air flow, reduces heat buildup and delivers instant soft cooling comfort for all-day wear.\n● Lightweight & 4-Way Stretch\nSoft elastic cotton allows complete freedom of movement, suitable for sports, playground activities and daily casual outings.\n● Long-Lasting Daily Wear Quality\nResists deformation, pilling and color fading after frequent daily use and repeated machine washes, durable for kids’ rough play.\n● Low Maintenance Wrinkle-Resistant Material\nCotton fabric holds its shape well and dries quickly after washing, saving parents lots of tidying time.\n● Custom Printing & Color Support\nMultiple base colors available for the tee and shorts. Custom exclusive sports patterns, cartoon prints and logos can be printed as requested.\nFast Shipping Promise\nWe understand you hope to receive your kids’ sportswear quickly! All orders will be dispatched within 24 hours once payment is confirmed.\nCustomer Satisfaction Guarantee\n● 30-Day Quality Warranty: We cover all manufacturing defects for our short sets.\n● Full Buyer Protection: If the item you receive does not match your order, we offer a complete refund.\n● Free Returns & Size Exchanges: You may apply for return or size swap within 30 days upon receipt of the package.\nSIZE GUIDE (All measurements in Centimeters)\nFor the best fit, measure a well-fitting kid’s short set your child currently wears and cross-check with our size chart:\nSize 100: Top Length 41 cm | Top Bust 32 cm | Fit Height 100 cm | Fit Weight 10–15 kg\nSize 110: Top Length 44 cm | Top Bust 34 cm | Fit Height 110 cm | Fit Weight 15–17.5 kg\nSize 120: Top Length 47 cm | Top Bust 36 cm | Fit Height 120 cm | Fit Weight 17.5–22.5 kg\nSize 130: Top Length 50 cm | Top Bust 38 cm | Fit Height 130 cm | Fit Weight 22.5–27.5 kg\nSize 140: Top Length 53 cm | Top Bust 40 cm | Fit Height 140 cm | Fit Weight 27.5–32.5 kg\nSize 150: Top Length 57 cm | Top Bust 42 cm | Fit Height 150 cm | Fit Weight 32.5–40 kg\nSize 160: Top Length 60 cm | Top Bust 44 cm | Fit Height 160 cm | Fit Weight 40–50 kg\nNote: All dimensions are manually measured; a tiny deviation of 1–2 cm is acceptable."
+            }
+          ]
+        },
+        {
+          "label": "质保类型",
+          "required": false,
+          "selected": [
+            "Factory Warranty(工厂保修)"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "质保时间",
+          "required": false,
+          "selected": [
+            "天"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": "15"
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "name": "儿童套装+类目属性+保修信息+棉质"
+    },
+    {
+      "fields": [
+        {
+          "label": "模板名称",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "儿童套装+类目属性+保修信息+平板"
+            }
+          ]
+        },
+        {
+          "label": "信息模块",
+          "required": true,
+          "selected": [],
+          "values": []
+        },
+        {
+          "label": "产品类目",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "服饰及配饰 (Clothing and Accessories)/运动服饰 (Sports Apparel)/运动套装 (Tracksuits)"
+            }
+          ]
+        },
+        {
+          "label": "品牌:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "Null"
+            }
+          ]
+        },
+        {
+          "label": "型号:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "NUll"
+            }
+          ]
+        },
+        {
+          "label": "性别:",
+          "required": true,
+          "selected": [
+            "中性儿童款"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "亚马逊标准商品识别码（Amazon Standard Product Identification）:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "件数:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "主要面料:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "polyster"
+            }
+          ]
+        },
+        {
+          "label": "含再生材料:",
+          "required": false,
+          "selected": [
+            "请选择含再生材料"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "进口报关单编号:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发票产品名称:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "SAT编码:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "计量单位编码:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "计量单位描述:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "转售增值税:",
+          "required": false,
+          "selected": [
+            "请选择转售增值税"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "IEPS（生产和服务特别税）:",
+          "required": false,
+          "selected": [
+            "请选择IEPS（生产和服务特别税）"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "成分:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "商品状况:",
+          "required": false,
+          "selected": [
+            "请选择商品状况"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包裹宽度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装长度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装高度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包裹重量:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否为套装:",
+          "required": false,
+          "selected": [
+            "是"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "产品来源:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "产品描述：",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "Kids Sports Short Set – Quick Dry Ultra Breathable Polyester\nIdeal for sports training, school PE classes, daily casual wear and all outdoor play! This two-piece kids outfit includes a short-sleeve athletic tee + matching shorts, made of premium performance polyester fabric to keep children cool, dry and comfy all day long.\nWhy Choose Our Kids Quick Dry Short Set?\n● Dry-Fit Quick Dry Fabric\nMade of high-quality functional polyester that quickly absorbs and evaporates sweat. Kids stay dry and irritation-free even during running, jumping and strenuous exercise.\n● Superior Air Permeability\nThe breathable woven structure boosts continuous air flow, reduces heat buildup and delivers instant cooling comfort for all-day wear.\n● Lightweight & 4-Way Stretch\nSoft stretch polyester allows complete freedom of movement, suitable for sports, playground activities and daily casual outings.\n● Long-Lasting Sport Quality\nResists deformation, pilling and color fading after frequent daily use and repeated machine washes, durable for kids’ rough play.\n● Low Maintenance Wrinkle-Free Material\nPolyester fabric does not wrinkle easily and dries rapidly after washing, saving parents lots of tidying time.\n● Custom Printing & Color Support\nMultiple base colors available for the tee and shorts. Custom exclusive sports patterns, cartoon prints and logos can be printed as requested.\nFast Shipping Promise\nWe understand you hope to receive your kids’ sportswear quickly! All orders will be dispatched within 24 hours once payment is confirmed.\nCustomer Satisfaction Guarantee\n● 30-Day Quality Warranty: We cover all manufacturing defects for our short sets.\n● Full Buyer Protection: If the item you receive does not match your order, we offer a complete refund.\n● Free Returns & Size Exchanges: You may apply for return or size swap within 30 days upon receipt of the package.\nSIZE GUIDE (All measurements in Centimeters)\nFor the best fit, measure a well-fitting kid’s short set your child currently wears and cross-check with our size chart:\nSize 100: Top Length 41 cm | Top Bust 32 cm | Fit Height 100 cm | Fit Weight 10–15 kg\nSize 110: Top Length 44 cm | Top Bust 34 cm | Fit Height 110 cm | Fit Weight 15–17.5 kg\nSize 120: Top Length 47 cm | Top Bust 36 cm | Fit Height 120 cm | Fit Weight 17.5–22.5 kg\nSize 130: Top Length 50 cm | Top Bust 38 cm | Fit Height 130 cm | Fit Weight 22.5–27.5 kg\nSize 140: Top Length 53 cm | Top Bust 40 cm | Fit Height 140 cm | Fit Weight 27.5–32.5 kg\nSize 150: Top Length 57 cm | Top Bust 42 cm | Fit Height 150 cm | Fit Weight 32.5–40 kg\nSize 160: Top Length 60 cm | Top Bust 44 cm | Fit Height 160 cm | Fit Weight 40–50 kg\nNote: All dimensions are manually measured; a tiny deviation of 1–2 cm is acceptable."
+            }
+          ]
+        },
+        {
+          "label": "质保类型",
+          "required": false,
+          "selected": [
+            "Factory Warranty(工厂保修)"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "质保时间",
+          "required": false,
+          "selected": [
+            "天"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": "15"
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "name": "儿童套装+类目属性+保修信息+平板"
+    },
+    {
+      "fields": [
+        {
+          "label": "模板名称",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "儿童tshirt类目属性+保修信息+棉质"
+            }
+          ]
+        },
+        {
+          "label": "信息模块",
+          "required": true,
+          "selected": [],
+          "values": []
+        },
+        {
+          "label": "产品类目",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "服饰及配饰 (Clothing and Accessories)/T恤、背心与马球衫 (T-Shirts, Tanks & Polos)"
+            }
+          ]
+        },
+        {
+          "label": "品牌:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "Null"
+            }
+          ]
+        },
+        {
+          "label": "型号:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "tshirt"
+            }
+          ]
+        },
+        {
+          "label": "性别:",
+          "required": true,
+          "selected": [
+            "中性儿童"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "服装类型:",
+          "required": true,
+          "selected": [
+            "T恤"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "袖型:",
+          "required": true,
+          "selected": [
+            "短袖"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "主要材质:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "Cotton"
+            }
+          ]
+        },
+        {
+          "label": "品牌系列:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "APGID:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "销售规格:",
+          "required": false,
+          "selected": [
+            "单件"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "每件包装内衬衫数量:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "label": "是否运动款:",
+          "required": false,
+          "selected": [
+            "请选择是否运动款"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "推荐用途:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "面料类型:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "cotton"
+            }
+          ]
+        },
+        {
+          "label": "成分:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "100%cotton"
+            }
+          ]
+        },
+        {
+          "label": "T恤领型:",
+          "required": false,
+          "selected": [
+            "请选择T恤领型"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "楔形版型:",
+          "required": false,
+          "selected": [
+            "请选择楔形版型"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否适合孕妇:",
+          "required": false,
+          "selected": [
+            "请选择是否适合孕妇"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "采用回收材料:",
+          "required": false,
+          "selected": [
+            "否"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "进口报关单编号:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发票产品名称:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "SAT编码:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "计量单位密钥:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "计量单位描述:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "转售增值税:",
+          "required": false,
+          "selected": [
+            "请选择转售增值税"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "生产和服务特别税（IEPS）:",
+          "required": false,
+          "selected": [
+            "请选择生产和服务特别税（IEPS）"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "适合哺乳期人群:",
+          "required": false,
+          "selected": [
+            "请选择适合哺乳期人群"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发布季节:",
+          "required": false,
+          "selected": [
+            "请选择发布季节"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发布年份:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "带刺绣:",
+          "required": false,
+          "selected": [
+            "请选择带刺绣"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "商品状况:",
+          "required": false,
+          "selected": [
+            "请选择商品状况"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装宽度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装长度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装高度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包裹重量:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否成套装备:",
+          "required": false,
+          "selected": [
+            "请选择是否成套装备"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "产品数据源:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "产品描述：",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "Kids' T-Shirt 100% Cotton - Premium Quality\nGive your little ones ultimate comfort and style with our high-quality cotton kids tee! Created with the softness children need for their daily adventures, this garment delivers long-lasting wear, breathability and a relaxed, comfortable fit.\nWhy choose our kids’ t-shirt?\n● 100% Pure Cotton: Feel the unbeatable softness of natural cotton. Our tee features premium fabric, excellent air permeability and hypoallergenic material that is gentle on children’s skin, perfect for everyday wear.\n● Premium Grade Fabric: Pure cotton keeps kids cool in summer and cozy all year round.\n● Built to Last: Made to stand up to kids’ active lifestyles and frequent washing, the fabric stays in great condition without fading or deforming.\n● Relaxed Comfort Fit: Versatile loose cut, ideal for playing, school activities and sports.\n● Customizable Design: Support custom printing patterns and multiple clothing color options, you can create exclusive styles for your kids.\nFast Shipping Promise\nWe know you want your order as soon as possible! We guarantee your order will be shipped out within 24 hours after payment confirmation.\nSatisfaction Guarantee\n● 30-Day Manufacturer Warranty: We stand fully behind the quality of our products.\n● Buyer Protection: Get exactly what you ordered, or we’ll refund your payment.\n● Free Returns: You have 30 days after receiving the item to request exchanges or full refunds.\nSIZE GUIDE (Measurements in CM)\nTo pick the perfect size, measure a well-fitting t-shirt your child already owns and compare it to our size chart below:\nSize 100: Length 41 cm | Bust 32 cm | Height 100 cm | Weight 10–15 kg\nSize 110: Length 44 cm | Bust 34 cm | Height 110 cm | Weight 15–17.5 kg\nSize 120: Length 47 cm | Bust 36 cm | Height 120 cm | Weight 17.5–22.5 kg\nSize 130: Length 50 cm | Bust 38 cm | Height 130 cm | Weight 22.5–27.5 kg\nSize 140: Length 53 cm | Bust 40 cm | Height 140 cm | Weight 27.5–32.5 kg\nSize 150: Length 57 cm | Bust 42 cm | Height 150 cm | Weight 32.5–40 kg\nSize 160: Length 60 cm | Bust 44 cm | Height 160 cm | Weight 40–50 kg\nNote: All measurements are taken manually, a slight deviation of 1–2 cm may occur.\n"
+            }
+          ]
+        },
+        {
+          "label": "质保类型",
+          "required": false,
+          "selected": [
+            "Factory Warranty(工厂保修)"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "质保时间",
+          "required": false,
+          "selected": [
+            "天"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": "15"
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "name": "儿童tshirt类目属性+保修信息+棉质"
+    },
+    {
+      "fields": [
+        {
+          "label": "模板名称",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "儿童tshirt类目属性+保修信息+平板"
+            }
+          ]
+        },
+        {
+          "label": "信息模块",
+          "required": true,
+          "selected": [],
+          "values": []
+        },
+        {
+          "label": "产品类目",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "服饰及配饰 (Clothing and Accessories)/T恤、背心与马球衫 (T-Shirts, Tanks & Polos)"
+            }
+          ]
+        },
+        {
+          "label": "品牌:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "NUll"
+            }
+          ]
+        },
+        {
+          "label": "型号:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "tshirt"
+            }
+          ]
+        },
+        {
+          "label": "性别:",
+          "required": true,
+          "selected": [
+            "中性儿童"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "服装类型:",
+          "required": true,
+          "selected": [
+            "T恤"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "袖型:",
+          "required": true,
+          "selected": [
+            "短袖"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "主要材质:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "品牌系列:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "APGID:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "销售规格:",
+          "required": false,
+          "selected": [
+            "请选择销售规格"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "每件包装内衬衫数量:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否运动款:",
+          "required": false,
+          "selected": [
+            "是"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "推荐用途:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "运动"
+            }
+          ]
+        },
+        {
+          "label": "面料类型:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "polyster"
+            }
+          ]
+        },
+        {
+          "label": "成分:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "100%polyster"
+            }
+          ]
+        },
+        {
+          "label": "T恤领型:",
+          "required": false,
+          "selected": [
+            "请选择T恤领型"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "楔形版型:",
+          "required": false,
+          "selected": [
+            "请选择楔形版型"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否适合孕妇:",
+          "required": false,
+          "selected": [
+            "请选择是否适合孕妇"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "采用回收材料:",
+          "required": false,
+          "selected": [
+            "否"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "进口报关单编号:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发票产品名称:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "SAT编码:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "计量单位密钥:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "计量单位描述:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "转售增值税:",
+          "required": false,
+          "selected": [
+            "请选择转售增值税"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "生产和服务特别税（IEPS）:",
+          "required": false,
+          "selected": [
+            "请选择生产和服务特别税（IEPS）"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "适合哺乳期人群:",
+          "required": false,
+          "selected": [
+            "请选择适合哺乳期人群"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发布季节:",
+          "required": false,
+          "selected": [
+            "请选择发布季节"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发布年份:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "带刺绣:",
+          "required": false,
+          "selected": [
+            "请选择带刺绣"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "商品状况:",
+          "required": false,
+          "selected": [
+            "请选择商品状况"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装宽度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装长度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装高度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包裹重量:",
+          "required": false,
+          "selected": [
+            "g"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": "160"
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否成套装备:",
+          "required": false,
+          "selected": [
+            "请选择是否成套装备"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "产品数据源:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "产品描述：",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "Kids Sports T-Shirt - Quick Dry & High Breathability\nMade for young athletes! Our technical polyester sports tee is the ideal match for training, school sports, and all outdoor activities. The advanced fabric keeps kids cool and comfortable all day long.\nWhy choose our kids sports t-shirt?\n● Dry-Fit Quick Dry Technology: Crafted with high-performance polyester fibers that wick away sweat rapidly, keeping children’s skin dry and comfortable even during intense workouts.\n● Ultra Breathable: The fabric delivers constant air circulation to trap less heat and deliver instant cooling comfort.\n● Lightweight & Stretchy: The material allows full unrestricted movement, perfect for running, jumping and all kinds of sports.\n● Sport-Grade Durability: Built to stand up to heavy daily wear and frequent washes without stretching out or fading.\n● Easy Care: Wrinkle-resistant polyester dries fast after every laundry cycle, saving you time on maintenance.\n● Customizable Options: Multiple garment colors and personalized print patterns are available, you can customize exclusive sporty designs for your kids.\nFast Shipping Promise\nWe know you want your order delivered as soon as possible! All orders will be shipped out within 24 hours after your payment is confirmed.\nSatisfaction Guarantee\n● 30-Day Quality Warranty: We fully stand behind our products against manufacturing defects.\n● Buyer Protection: Get exactly what you ordered, or we will issue a full refund.\n● Free Returns & Exchanges: You have 30 days after receiving the item to request returns or size swaps.\nSIZE GUIDE (Measurements in Centimeters)\nTo pick the perfect fit, measure a well-fitting sports t-shirt your child already owns and compare it with our chart below:\nSize 100: Length 41 cm | Bust 32 cm | Height 100 cm | Weight 10–15 kg\nSize 110: Length 44 cm | Bust 34 cm | Height 110 cm | Weight 15–17.5 kg\nSize 120: Length 47 cm | Bust 36 cm | Height 120 cm | Weight 17.5–22.5 kg\nSize 130: Length 50 cm | Bust 38 cm | Height 130 cm | Weight 22.5–27.5 kg\nSize 140: Length 53 cm | Bust 40 cm | Height 140 cm | Weight 27.5–32.5 kg\nSize 150: Length 57 cm | Bust 42 cm | Height 150 cm | Weight 32.5–40 kg\nSize 160: Length 60 cm | Bust 44 cm | Height 160 cm | Weight 40–50 kg\nNote: All sizes are manually measured; a minor error of 1–2 cm may occur."
+            }
+          ]
+        },
+        {
+          "label": "质保类型",
+          "required": false,
+          "selected": [
+            "Factory Warranty(工厂保修)"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "质保时间",
+          "required": false,
+          "selected": [
+            "天"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": "15"
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "name": "儿童tshirt类目属性+保修信息+平板"
+    },
+    {
+      "fields": [
+        {
+          "label": "模板名称",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "tshirt类目属性+保修信息+棉+2XS"
+            }
+          ]
+        },
+        {
+          "label": "信息模块",
+          "required": true,
+          "selected": [],
+          "values": []
+        },
+        {
+          "label": "产品类目",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "服饰及配饰 (Clothing and Accessories)/T恤、背心与马球衫 (T-Shirts, Tanks & Polos)"
+            }
+          ]
+        },
+        {
+          "label": "品牌:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "NUll"
+            }
+          ]
+        },
+        {
+          "label": "型号:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "NUll"
+            }
+          ]
+        },
+        {
+          "label": "性别:",
+          "required": true,
+          "selected": [
+            "中性"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "服装类型:",
+          "required": true,
+          "selected": [
+            "T恤"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "袖型:",
+          "required": true,
+          "selected": [
+            "短袖"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "主要材质:",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "Cotton"
+            }
+          ]
+        },
+        {
+          "label": "品牌系列:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "APGID:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "销售规格:",
+          "required": false,
+          "selected": [
+            "单件"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "每件包装内衬衫数量:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否运动款:",
+          "required": false,
+          "selected": [
+            "请选择是否运动款"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "推荐用途:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "面料类型:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "cotton"
+            }
+          ]
+        },
+        {
+          "label": "成分:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "100%cotton"
+            }
+          ]
+        },
+        {
+          "label": "T恤领型:",
+          "required": false,
+          "selected": [
+            "圆领"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "楔形版型:",
+          "required": false,
+          "selected": [
+            "请选择楔形版型"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否适合孕妇:",
+          "required": false,
+          "selected": [
+            "请选择是否适合孕妇"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "采用回收材料:",
+          "required": false,
+          "selected": [
+            "否"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "进口报关单编号:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发票产品名称:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "SAT编码:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "计量单位密钥:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "计量单位描述:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "转售增值税:",
+          "required": false,
+          "selected": [
+            "请选择转售增值税"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "生产和服务特别税（IEPS）:",
+          "required": false,
+          "selected": [
+            "请选择生产和服务特别税（IEPS）"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "适合哺乳期人群:",
+          "required": false,
+          "selected": [
+            "请选择适合哺乳期人群"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发布季节:",
+          "required": false,
+          "selected": [
+            "请选择发布季节"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "发布年份:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "带刺绣:",
+          "required": false,
+          "selected": [
+            "请选择带刺绣"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "商品状况:",
+          "required": false,
+          "selected": [
+            "请选择商品状况"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装宽度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装长度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包装高度:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "卖家包裹重量:",
+          "required": false,
+          "selected": [
+            "请选择"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "是否成套装备:",
+          "required": false,
+          "selected": [
+            "请选择是否成套装备"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "产品数据源:",
+          "required": false,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "产品描述：",
+          "required": true,
+          "selected": [],
+          "values": [
+            {
+              "role": null,
+              "value": "Product Description\nAdd a unique touch to your style with our vintage graphic t-shirt!\nThis garment combines the comfort of high-quality cotton with a modern design, perfect for anyone looking for an urban, relaxed look full of personality.\nWhy choose our t-shirt?\n100% Pure Cotton: Feel the unmatched softness of natural cotton. Our t-shirt features premium fabric, great breathability, and is hypoallergenic and skin-friendly, ideal for all-day everyday wear.\nPremium Quality: Unlike synthetic blends, pure cotton keeps you cool in summer and comfortable all year round.\nLong Lasting: High-definition prints withstand frequent washing without fading, while fabric quality stays well maintained.\nModern Fit: Versatile urban style with a relaxed comfortable cut, suitable for both men and women.\n🚀 Fast Shipping Promise\nWe know you want your items as soon as possible! We guarantee order dispatch within 24 hours after payment confirmation. Your package will be shipped out promptly.\n🛡️ Satisfaction Guarantee\n30-Day Manufacturer Warranty: We stand firmly behind our product quality and offer a 30-day warranty covering manufacturing defects.\nProtected Purchase: Get exactly what you ordered, or we will refund your payment.\nFree Returns: You have 30 days after receiving the item to request exchange or return. Shop with complete confidence!\n📏 Size Guide (Pick your perfect size)\nTo get a proper fit, we suggest measuring one of your well-fitted t-shirts and comparing with the measurements below:\n2XS: Half Chest 46 cm, Full Chest 92 cm, Length 64 cm, Suggested Weight 35–45 kg, Suggested Height 150–155 cm\nXS: Half Chest 48 cm, Full Chest 96 cm, Length 66 cm, Suggested Weight 40–50 kg, Suggested Height 155–160 cm\nS: Half Chest 50 cm, Full Chest 100 cm, Length 68 cm, Suggested Weight 50–60 kg, Suggested Height 160–165 cm\nM: Half Chest 52 cm, Full Chest 104 cm, Length 70 cm, Suggested Weight 60–70 kg, Suggested Height 165–170 cm\nL: Half Chest 54 cm, Full Chest 108 cm, Length 72 cm, Suggested Weight 70–75 kg, Suggested Height 170–175 cm\nXL: Half Chest 56 cm, Full Chest 112 cm, Length 74 cm, Suggested Weight 75–85 kg, Suggested Height 175–180 cm\nXXL: Half Chest 58 cm, Full Chest 116 cm, Length 76 cm, Suggested Weight 85–95 kg, Suggested Height 180–185 cm\n3XL: Half Chest 60 cm, Full Chest 120 cm, Length 78 cm, Suggested Weight 95–100 kg, Suggested Height 185–195 cm\nNote: Manual measurement may lead to slight deviations. If you prefer an oversized loose fit, we recommend ordering one size up."
+            }
+          ]
+        },
+        {
+          "label": "质保类型",
+          "required": false,
+          "selected": [
+            "Factory Warranty(工厂保修)"
+          ],
+          "values": [
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "label": "质保时间",
+          "required": false,
+          "selected": [
+            "天"
+          ],
+          "values": [
+            {
+              "role": null,
+              "value": "15"
+            },
+            {
+              "role": "combobox",
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "name": "tshirt类目属性+保修信息+棉+2XS"
+    }
+  ]
+}

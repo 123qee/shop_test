@@ -1,0 +1,1062 @@
+{
+  "sourceUrl": "https://erp.91miaoshou.com/mercadolibre/move_collect/template_management/product",
+  "templateCount": 6,
+  "confirmedDefaults": {
+    "stockPerSKU": 999,
+    "warrantyDays": 15,
+    "lengthCm": 10,
+    "widthCm": 10,
+    "heightCm": 2,
+    "netProceedsUSD": 5,
+    "weightGrams": 200
+  },
+  "templates": [
+    {
+      "shopId": "14823975",
+      "sites": [
+        "CL",
+        "MX",
+        "CO",
+        "BR"
+      ],
+      "categoryId": "101417369",
+      "netProceeds": 5,
+      "sitePrices": {},
+      "siteTitles": {},
+      "description": "Kids' Hoodie 100% Cotton - Premium Quality\nGive your little ones ultimate comfort and style with our high-quality cotton kids hoodie! Crafted with ultra-soft fabric perfect for children’s daily outdoor activities, this hoodie offers long-lasting durability, gentle warmth and a loose unrestricted fit.\nWhy choose our kids' hoodie?\n● 100% Pure Cotton Fabric: Made of natural premium cotton, ultra soft, breathable and hypoallergenic, gentle enough for kids’ sensitive skin, suitable for daily all-season wear.\n● Warm & Breathable Design: Lightweight cotton fleece keeps kids warm on cool spring and autumn days, and works great as inner layers in winter without stuffiness.\n● Durable For Active Kids: Resistant to frequent washing, the fabric won’t easily fade, shrink or deform, holding its shape after repeated wears.\n● Functional Hood & Ribbed Trim: Built-in hood blocks wind for extra warmth; stretch ribbed cuffs and hem lock in heat while staying flexible during running and playing.\n● Loose Comfort Fit: Roomy cut with enough space for layering, perfect for school, sports, trips and daily playtime.\n● Customizable Option: Support custom printed patterns and multiple solid color choices, create unique exclusive styles for your kids.\nFast Shipping Promise\nWe know you want your order as soon as possible! We guarantee your order will be shipped out within 24 hours after payment confirmation.\nSatisfaction Guarantee\n● 15-Day Manufacturer Warranty: We stand fully behind the quality of our products.\n● Buyer Protection: Get exactly what you ordered, or we’ll refund your payment.\n● Free Returns: You have 30 days after receiving the item to request exchanges or full refunds.\nSIZE GUIDE (All Measurements in CM, Full Circumference Bust)\nTo pick the perfect size, measure a well-fitting hoodie your child already owns and compare it to our size chart below:\nSize 100: Length 42 cm | Bust 60 cm | Shoulder 28 cm | Sleeve 39 cm | Recommended Height 100 cm | Weight 10–15 kg\nSize 110: Length 45 cm | Bust 66 cm | Shoulder 30 cm | Sleeve 41 cm | Recommended Height 110 cm | Weight 15–17.5 kg\nSize 120: Length 48 cm | Bust 72 cm | Shoulder 32 cm | Sleeve 43 cm | Recommended Height 120 cm | Weight 17.5–22.5 kg\nSize 130: Length 51 cm | Bust 78 cm | Shoulder 34 cm | Sleeve 45 cm | Recommended Height 130 cm | Weight 22.5–27.5 kg\nSize 140: Length 54 cm | Bust 84 cm | Shoulder 36 cm | Sleeve 47 cm | Recommended Height 140 cm | Weight 27.5–32.5 kg\nSize 150: Length 57 cm | Bust 90 cm | Shoulder 38 cm | Sleeve 49 cm | Recommended Height 150 cm | Weight 32.5–40 kg\nSize 160: Length 60 cm | Bust 96 cm | Shoulder 40 cm | Sleeve 51 cm | Recommended Height 160 cm | Weight 40–50 kg\nNote: All measurements are taken manually, a slight deviation of 1–2 cm may occur. Bust data listed is full circumference of the garment.",
+      "attributes": [
+        {
+          "name": "Brand",
+          "values": [
+            {
+              "name": "NUll"
+            }
+          ]
+        },
+        {
+          "name": "Model",
+          "values": [
+            {
+              "name": "NULL"
+            }
+          ]
+        },
+        {
+          "name": "Gender",
+          "values": [
+            {
+              "name": "Gender neutral kid"
+            }
+          ]
+        },
+        {
+          "name": "Garment type",
+          "values": [
+            {
+              "name": "Hoodie"
+            }
+          ]
+        },
+        {
+          "name": "Is sportive",
+          "values": [
+            {
+              "name": "Yes"
+            }
+          ]
+        },
+        {
+          "name": "Main material",
+          "values": [
+            {
+              "name": "Cotton"
+            }
+          ]
+        },
+        {
+          "name": "With hood",
+          "values": [
+            {
+              "name": "Yes"
+            }
+          ]
+        },
+        {
+          "name": "With zipper",
+          "values": [
+            {
+              "name": "No"
+            }
+          ]
+        },
+        {
+          "name": "Size grid ID",
+          "values": [
+            {
+              "name": "6566299"
+            }
+          ]
+        },
+        {
+          "name": "Seller package width",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package length",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package height",
+          "values": [
+            {
+              "name": "2 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package weight",
+          "values": [
+            {
+              "name": "200 g"
+            }
+          ]
+        },
+        {
+          "name": "Package height",
+          "values": [
+            {
+              "name": "2 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package width",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package length",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package weight",
+          "values": [
+            {
+              "name": "200 g"
+            }
+          ]
+        }
+      ],
+      "warrantyType": "factoryWarranty",
+      "warrantyTime": 15,
+      "warrantyTimeUnit": "days",
+      "stock": 999,
+      "weightKg": 0.2,
+      "lengthCm": 10,
+      "widthCm": 10,
+      "heightCm": 2,
+      "optionMappings": {},
+      "sizeMap": {},
+      "name": "kid hoddie",
+      "groupId": "kids-sweat",
+      "material": "cotton",
+      "id": "9475090d-4800-4bef-a42d-24fc8aa8fbeb"
+    },
+    {
+      "shopId": "14823975",
+      "sites": [
+        "CL",
+        "MX",
+        "CO",
+        "BR"
+      ],
+      "categoryId": "101417374",
+      "netProceeds": 5,
+      "sitePrices": {},
+      "siteTitles": {},
+      "description": "Kids Sports Short Set – Soft Breathable 100% Cotton\nIdeal for sports training, school PE classes, daily casual wear and all outdoor play! This two-piece kids outfit includes a short-sleeve athletic tee + matching shorts, made of premium soft cotton fabric to keep children cool, dry and comfy all day long.\nWhy Choose Our Kids Cotton Short Set?\n● Natural Sweat-Wicking Cotton Fabric\nMade of high-quality pure cotton that absorbs sweat gently and effectively. Kids stay dry and irritation-free even during running, jumping and strenuous exercise.\n● Superior Air Permeability\nThe natural woven cotton structure boosts continuous air flow, reduces heat buildup and delivers instant soft cooling comfort for all-day wear.\n● Lightweight & 4-Way Stretch\nSoft elastic cotton allows complete freedom of movement, suitable for sports, playground activities and daily casual outings.\n● Long-Lasting Daily Wear Quality\nResists deformation, pilling and color fading after frequent daily use and repeated machine washes, durable for kids’ rough play.\n● Low Maintenance Wrinkle-Resistant Material\nCotton fabric holds its shape well and dries quickly after washing, saving parents lots of tidying time.\n● Custom Printing & Color Support\nMultiple base colors available for the tee and shorts. Custom exclusive sports patterns, cartoon prints and logos can be printed as requested.\nFast Shipping Promise\nWe understand you hope to receive your kids’ sportswear quickly! All orders will be dispatched within 24 hours once payment is confirmed.\nCustomer Satisfaction Guarantee\n● 15-Day Quality Warranty: We cover all manufacturing defects for our short sets.\n● Full Buyer Protection: If the item you receive does not match your order, we offer a complete refund.\n● Free Returns & Size Exchanges: You may apply for return or size swap within 30 days upon receipt of the package.\nSIZE GUIDE (All measurements in Centimeters)\nFor the best fit, measure a well-fitting kid’s short set your child currently wears and cross-check with our size chart:\nSize 100: Top Length 41 cm | Top Bust 32 cm | Fit Height 100 cm | Fit Weight 10–15 kg\nSize 110: Top Length 44 cm | Top Bust 34 cm | Fit Height 110 cm | Fit Weight 15–17.5 kg\nSize 120: Top Length 47 cm | Top Bust 36 cm | Fit Height 120 cm | Fit Weight 17.5–22.5 kg\nSize 130: Top Length 50 cm | Top Bust 38 cm | Fit Height 130 cm | Fit Weight 22.5–27.5 kg\nSize 140: Top Length 53 cm | Top Bust 40 cm | Fit Height 140 cm | Fit Weight 27.5–32.5 kg\nSize 150: Top Length 57 cm | Top Bust 42 cm | Fit Height 150 cm | Fit Weight 32.5–40 kg\nSize 160: Top Length 60 cm | Top Bust 44 cm | Fit Height 160 cm | Fit Weight 40–50 kg\nNote: All dimensions are manually measured; a tiny deviation of 1–2 cm is acceptable.",
+      "attributes": [
+        {
+          "name": "Brand",
+          "values": [
+            {
+              "name": "Null"
+            }
+          ]
+        },
+        {
+          "name": "Model",
+          "values": [
+            {
+              "name": "NUll"
+            }
+          ]
+        },
+        {
+          "name": "Gender",
+          "values": [
+            {
+              "name": "Gender neutral kid"
+            }
+          ]
+        },
+        {
+          "name": "Main material",
+          "values": [
+            {
+              "name": "cotton"
+            }
+          ]
+        },
+        {
+          "name": "Is kit",
+          "values": [
+            {
+              "name": "Yes"
+            }
+          ]
+        },
+        {
+          "name": "Seller package width",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package length",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package height",
+          "values": [
+            {
+              "name": "2 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package weight",
+          "values": [
+            {
+              "name": "200 g"
+            }
+          ]
+        },
+        {
+          "name": "Package height",
+          "values": [
+            {
+              "name": "2 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package width",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package length",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package weight",
+          "values": [
+            {
+              "name": "200 g"
+            }
+          ]
+        }
+      ],
+      "warrantyType": "factoryWarranty",
+      "warrantyTime": 15,
+      "warrantyTimeUnit": "days",
+      "stock": 999,
+      "weightKg": 0.2,
+      "lengthCm": 10,
+      "widthCm": 10,
+      "heightCm": 2,
+      "optionMappings": {},
+      "sizeMap": {},
+      "name": "儿童套装+类目属性+保修信息+棉质",
+      "groupId": "",
+      "material": "cotton",
+      "id": "b4c1f10a-c4dd-4159-9d52-5e2aa4e21eea"
+    },
+    {
+      "shopId": "14823975",
+      "sites": [
+        "CL",
+        "MX",
+        "CO",
+        "BR"
+      ],
+      "categoryId": "101417374",
+      "netProceeds": 5,
+      "sitePrices": {},
+      "siteTitles": {},
+      "description": "Kids Sports Short Set – Quick Dry Ultra Breathable Polyester\nIdeal for sports training, school PE classes, daily casual wear and all outdoor play! This two-piece kids outfit includes a short-sleeve athletic tee + matching shorts, made of premium performance polyester fabric to keep children cool, dry and comfy all day long.\nWhy Choose Our Kids Quick Dry Short Set?\n● Dry-Fit Quick Dry Fabric\nMade of high-quality functional polyester that quickly absorbs and evaporates sweat. Kids stay dry and irritation-free even during running, jumping and strenuous exercise.\n● Superior Air Permeability\nThe breathable woven structure boosts continuous air flow, reduces heat buildup and delivers instant cooling comfort for all-day wear.\n● Lightweight & 4-Way Stretch\nSoft stretch polyester allows complete freedom of movement, suitable for sports, playground activities and daily casual outings.\n● Long-Lasting Sport Quality\nResists deformation, pilling and color fading after frequent daily use and repeated machine washes, durable for kids’ rough play.\n● Low Maintenance Wrinkle-Free Material\nPolyester fabric does not wrinkle easily and dries rapidly after washing, saving parents lots of tidying time.\n● Custom Printing & Color Support\nMultiple base colors available for the tee and shorts. Custom exclusive sports patterns, cartoon prints and logos can be printed as requested.\nFast Shipping Promise\nWe understand you hope to receive your kids’ sportswear quickly! All orders will be dispatched within 24 hours once payment is confirmed.\nCustomer Satisfaction Guarantee\n● 15-Day Quality Warranty: We cover all manufacturing defects for our short sets.\n● Full Buyer Protection: If the item you receive does not match your order, we offer a complete refund.\n● Free Returns & Size Exchanges: You may apply for return or size swap within 30 days upon receipt of the package.\nSIZE GUIDE (All measurements in Centimeters)\nFor the best fit, measure a well-fitting kid’s short set your child currently wears and cross-check with our size chart:\nSize 100: Top Length 41 cm | Top Bust 32 cm | Fit Height 100 cm | Fit Weight 10–15 kg\nSize 110: Top Length 44 cm | Top Bust 34 cm | Fit Height 110 cm | Fit Weight 15–17.5 kg\nSize 120: Top Length 47 cm | Top Bust 36 cm | Fit Height 120 cm | Fit Weight 17.5–22.5 kg\nSize 130: Top Length 50 cm | Top Bust 38 cm | Fit Height 130 cm | Fit Weight 22.5–27.5 kg\nSize 140: Top Length 53 cm | Top Bust 40 cm | Fit Height 140 cm | Fit Weight 27.5–32.5 kg\nSize 150: Top Length 57 cm | Top Bust 42 cm | Fit Height 150 cm | Fit Weight 32.5–40 kg\nSize 160: Top Length 60 cm | Top Bust 44 cm | Fit Height 160 cm | Fit Weight 40–50 kg\nNote: All dimensions are manually measured; a tiny deviation of 1–2 cm is acceptable.",
+      "attributes": [
+        {
+          "name": "Brand",
+          "values": [
+            {
+              "name": "Null"
+            }
+          ]
+        },
+        {
+          "name": "Model",
+          "values": [
+            {
+              "name": "NUll"
+            }
+          ]
+        },
+        {
+          "name": "Gender",
+          "values": [
+            {
+              "name": "Gender neutral kid"
+            }
+          ]
+        },
+        {
+          "name": "Main material",
+          "values": [
+            {
+              "name": "polyster"
+            }
+          ]
+        },
+        {
+          "name": "Is kit",
+          "values": [
+            {
+              "name": "Yes"
+            }
+          ]
+        },
+        {
+          "name": "Seller package width",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package length",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package height",
+          "values": [
+            {
+              "name": "2 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package weight",
+          "values": [
+            {
+              "name": "200 g"
+            }
+          ]
+        },
+        {
+          "name": "Package height",
+          "values": [
+            {
+              "name": "2 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package width",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package length",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package weight",
+          "values": [
+            {
+              "name": "200 g"
+            }
+          ]
+        }
+      ],
+      "warrantyType": "factoryWarranty",
+      "warrantyTime": 15,
+      "warrantyTimeUnit": "days",
+      "stock": 999,
+      "weightKg": 0.2,
+      "lengthCm": 10,
+      "widthCm": 10,
+      "heightCm": 2,
+      "optionMappings": {},
+      "sizeMap": {},
+      "name": "儿童套装+类目属性+保修信息+平板",
+      "groupId": "",
+      "material": "polyester",
+      "id": "0b669737-2a06-4f00-9e9e-ba223d4a126e"
+    },
+    {
+      "shopId": "14823975",
+      "sites": [
+        "CL",
+        "MX",
+        "CO",
+        "BR"
+      ],
+      "categoryId": "101109042",
+      "netProceeds": 5,
+      "sitePrices": {},
+      "siteTitles": {},
+      "description": "Kids' T-Shirt 100% Cotton - Premium Quality\nGive your little ones ultimate comfort and style with our high-quality cotton kids tee! Created with the softness children need for their daily adventures, this garment delivers long-lasting wear, breathability and a relaxed, comfortable fit.\nWhy choose our kids’ t-shirt?\n● 100% Pure Cotton: Feel the unbeatable softness of natural cotton. Our tee features premium fabric, excellent air permeability and hypoallergenic material that is gentle on children’s skin, perfect for everyday wear.\n● Premium Grade Fabric: Pure cotton keeps kids cool in summer and cozy all year round.\n● Built to Last: Made to stand up to kids’ active lifestyles and frequent washing, the fabric stays in great condition without fading or deforming.\n● Relaxed Comfort Fit: Versatile loose cut, ideal for playing, school activities and sports.\n● Customizable Design: Support custom printing patterns and multiple clothing color options, you can create exclusive styles for your kids.\nFast Shipping Promise\nWe know you want your order as soon as possible! We guarantee your order will be shipped out within 24 hours after payment confirmation.\nSatisfaction Guarantee\n● 15-Day Manufacturer Warranty: We stand fully behind the quality of our products.\n● Buyer Protection: Get exactly what you ordered, or we’ll refund your payment.\n● Free Returns: You have 30 days after receiving the item to request exchanges or full refunds.\nSIZE GUIDE (Measurements in CM)\nTo pick the perfect size, measure a well-fitting t-shirt your child already owns and compare it to our size chart below:\nSize 100: Length 41 cm | Bust 32 cm | Height 100 cm | Weight 10–15 kg\nSize 110: Length 44 cm | Bust 34 cm | Height 110 cm | Weight 15–17.5 kg\nSize 120: Length 47 cm | Bust 36 cm | Height 120 cm | Weight 17.5–22.5 kg\nSize 130: Length 50 cm | Bust 38 cm | Height 130 cm | Weight 22.5–27.5 kg\nSize 140: Length 53 cm | Bust 40 cm | Height 140 cm | Weight 27.5–32.5 kg\nSize 150: Length 57 cm | Bust 42 cm | Height 150 cm | Weight 32.5–40 kg\nSize 160: Length 60 cm | Bust 44 cm | Height 160 cm | Weight 40–50 kg\nNote: All measurements are taken manually, a slight deviation of 1–2 cm may occur.\n",
+      "attributes": [
+        {
+          "name": "Brand",
+          "values": [
+            {
+              "name": "Null"
+            }
+          ]
+        },
+        {
+          "name": "Model",
+          "values": [
+            {
+              "name": "tshirt"
+            }
+          ]
+        },
+        {
+          "name": "Gender",
+          "values": [
+            {
+              "name": "Gender neutral kid"
+            }
+          ]
+        },
+        {
+          "name": "Garment type",
+          "values": [
+            {
+              "name": "T-shirt"
+            }
+          ]
+        },
+        {
+          "name": "Sleeve type",
+          "values": [
+            {
+              "name": "Short"
+            }
+          ]
+        },
+        {
+          "name": "Main material",
+          "values": [
+            {
+              "name": "Cotton"
+            }
+          ]
+        },
+        {
+          "name": "Sale format",
+          "values": [
+            {
+              "name": "Unit"
+            }
+          ]
+        },
+        {
+          "name": "Shirts number",
+          "values": [
+            {
+              "name": "1"
+            }
+          ]
+        },
+        {
+          "name": "Fabric type",
+          "values": [
+            {
+              "name": "cotton"
+            }
+          ]
+        },
+        {
+          "name": "Composition",
+          "values": [
+            {
+              "name": "100%cotton"
+            }
+          ]
+        },
+        {
+          "name": "With recycled materials",
+          "values": [
+            {
+              "name": "No"
+            }
+          ]
+        },
+        {
+          "name": "Seller package width",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package length",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package height",
+          "values": [
+            {
+              "name": "2 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package weight",
+          "values": [
+            {
+              "name": "200 g"
+            }
+          ]
+        },
+        {
+          "name": "Package height",
+          "values": [
+            {
+              "name": "2 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package width",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package length",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package weight",
+          "values": [
+            {
+              "name": "200 g"
+            }
+          ]
+        }
+      ],
+      "warrantyType": "factoryWarranty",
+      "warrantyTime": 15,
+      "warrantyTimeUnit": "days",
+      "stock": 999,
+      "weightKg": 0.2,
+      "lengthCm": 10,
+      "widthCm": 10,
+      "heightCm": 2,
+      "optionMappings": {},
+      "sizeMap": {},
+      "name": "儿童tshirt类目属性+保修信息+棉质",
+      "groupId": "kids-short",
+      "material": "cotton",
+      "id": "3a693eda-031a-4e0d-90ed-3a6a466a6e1d"
+    },
+    {
+      "shopId": "14823975",
+      "sites": [
+        "CL",
+        "MX",
+        "CO",
+        "BR"
+      ],
+      "categoryId": "101109042",
+      "netProceeds": 5,
+      "sitePrices": {},
+      "siteTitles": {},
+      "description": "Kids Sports T-Shirt - Quick Dry & High Breathability\nMade for young athletes! Our technical polyester sports tee is the ideal match for training, school sports, and all outdoor activities. The advanced fabric keeps kids cool and comfortable all day long.\nWhy choose our kids sports t-shirt?\n● Dry-Fit Quick Dry Technology: Crafted with high-performance polyester fibers that wick away sweat rapidly, keeping children’s skin dry and comfortable even during intense workouts.\n● Ultra Breathable: The fabric delivers constant air circulation to trap less heat and deliver instant cooling comfort.\n● Lightweight & Stretchy: The material allows full unrestricted movement, perfect for running, jumping and all kinds of sports.\n● Sport-Grade Durability: Built to stand up to heavy daily wear and frequent washes without stretching out or fading.\n● Easy Care: Wrinkle-resistant polyester dries fast after every laundry cycle, saving you time on maintenance.\n● Customizable Options: Multiple garment colors and personalized print patterns are available, you can customize exclusive sporty designs for your kids.\nFast Shipping Promise\nWe know you want your order delivered as soon as possible! All orders will be shipped out within 24 hours after your payment is confirmed.\nSatisfaction Guarantee\n● 15-Day Quality Warranty: We fully stand behind our products against manufacturing defects.\n● Buyer Protection: Get exactly what you ordered, or we will issue a full refund.\n● Free Returns & Exchanges: You have 30 days after receiving the item to request returns or size swaps.\nSIZE GUIDE (Measurements in Centimeters)\nTo pick the perfect fit, measure a well-fitting sports t-shirt your child already owns and compare it with our chart below:\nSize 100: Length 41 cm | Bust 32 cm | Height 100 cm | Weight 10–15 kg\nSize 110: Length 44 cm | Bust 34 cm | Height 110 cm | Weight 15–17.5 kg\nSize 120: Length 47 cm | Bust 36 cm | Height 120 cm | Weight 17.5–22.5 kg\nSize 130: Length 50 cm | Bust 38 cm | Height 130 cm | Weight 22.5–27.5 kg\nSize 140: Length 53 cm | Bust 40 cm | Height 140 cm | Weight 27.5–32.5 kg\nSize 150: Length 57 cm | Bust 42 cm | Height 150 cm | Weight 32.5–40 kg\nSize 160: Length 60 cm | Bust 44 cm | Height 160 cm | Weight 40–50 kg\nNote: All sizes are manually measured; a minor error of 1–2 cm may occur.",
+      "attributes": [
+        {
+          "name": "Brand",
+          "values": [
+            {
+              "name": "NUll"
+            }
+          ]
+        },
+        {
+          "name": "Model",
+          "values": [
+            {
+              "name": "tshirt"
+            }
+          ]
+        },
+        {
+          "name": "Gender",
+          "values": [
+            {
+              "name": "Gender neutral kid"
+            }
+          ]
+        },
+        {
+          "name": "Garment type",
+          "values": [
+            {
+              "name": "T-shirt"
+            }
+          ]
+        },
+        {
+          "name": "Sleeve type",
+          "values": [
+            {
+              "name": "Short"
+            }
+          ]
+        },
+        {
+          "name": "Main material",
+          "values": [
+            {
+              "name": "Polyester"
+            }
+          ]
+        },
+        {
+          "name": "Is sportive",
+          "values": [
+            {
+              "name": "Yes"
+            }
+          ]
+        },
+        {
+          "name": "Recommended uses",
+          "values": [
+            {
+              "name": "运动"
+            }
+          ]
+        },
+        {
+          "name": "Fabric type",
+          "values": [
+            {
+              "name": "polyster"
+            }
+          ]
+        },
+        {
+          "name": "Composition",
+          "values": [
+            {
+              "name": "100%polyster"
+            }
+          ]
+        },
+        {
+          "name": "With recycled materials",
+          "values": [
+            {
+              "name": "No"
+            }
+          ]
+        },
+        {
+          "name": "Seller package width",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package length",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package height",
+          "values": [
+            {
+              "name": "2 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package weight",
+          "values": [
+            {
+              "name": "200 g"
+            }
+          ]
+        },
+        {
+          "name": "Package height",
+          "values": [
+            {
+              "name": "2 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package width",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package length",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package weight",
+          "values": [
+            {
+              "name": "200 g"
+            }
+          ]
+        }
+      ],
+      "warrantyType": "factoryWarranty",
+      "warrantyTime": 15,
+      "warrantyTimeUnit": "days",
+      "stock": 999,
+      "weightKg": 0.2,
+      "lengthCm": 10,
+      "widthCm": 10,
+      "heightCm": 2,
+      "optionMappings": {},
+      "sizeMap": {},
+      "name": "儿童tshirt类目属性+保修信息+平板",
+      "groupId": "kids-short",
+      "material": "polyester",
+      "id": "ae9b5bab-0f94-4333-81fd-b87519f6d39e"
+    },
+    {
+      "shopId": "14823975",
+      "sites": [
+        "CL",
+        "MX",
+        "CO",
+        "BR"
+      ],
+      "categoryId": "101109042",
+      "netProceeds": 5,
+      "sitePrices": {},
+      "siteTitles": {},
+      "description": "Product Description\nAdd a unique touch to your style with our vintage graphic t-shirt!\nThis garment combines the comfort of high-quality cotton with a modern design, perfect for anyone looking for an urban, relaxed look full of personality.\nWhy choose our t-shirt?\n100% Pure Cotton: Feel the unmatched softness of natural cotton. Our t-shirt features premium fabric, great breathability, and is hypoallergenic and skin-friendly, ideal for all-day everyday wear.\nPremium Quality: Unlike synthetic blends, pure cotton keeps you cool in summer and comfortable all year round.\nLong Lasting: High-definition prints withstand frequent washing without fading, while fabric quality stays well maintained.\nModern Fit: Versatile urban style with a relaxed comfortable cut, suitable for both men and women.\n🚀 Fast Shipping Promise\nWe know you want your items as soon as possible! We guarantee order dispatch within 24 hours after payment confirmation. Your package will be shipped out promptly.\n🛡️ Satisfaction Guarantee\n15-Day Manufacturer Warranty: We stand firmly behind our product quality and offer a 15-day warranty covering manufacturing defects.\nProtected Purchase: Get exactly what you ordered, or we will refund your payment.\nFree Returns: You have 30 days after receiving the item to request exchange or return. Shop with complete confidence!\n📏 Size Guide (Pick your perfect size)\nTo get a proper fit, we suggest measuring one of your well-fitted t-shirts and comparing with the measurements below:\n2XS: Half Chest 46 cm, Full Chest 92 cm, Length 64 cm, Suggested Weight 35–45 kg, Suggested Height 150–155 cm\nXS: Half Chest 48 cm, Full Chest 96 cm, Length 66 cm, Suggested Weight 40–50 kg, Suggested Height 155–160 cm\nS: Half Chest 50 cm, Full Chest 100 cm, Length 68 cm, Suggested Weight 50–60 kg, Suggested Height 160–165 cm\nM: Half Chest 52 cm, Full Chest 104 cm, Length 70 cm, Suggested Weight 60–70 kg, Suggested Height 165–170 cm\nL: Half Chest 54 cm, Full Chest 108 cm, Length 72 cm, Suggested Weight 70–75 kg, Suggested Height 170–175 cm\nXL: Half Chest 56 cm, Full Chest 112 cm, Length 74 cm, Suggested Weight 75–85 kg, Suggested Height 175–180 cm\nXXL: Half Chest 58 cm, Full Chest 116 cm, Length 76 cm, Suggested Weight 85–95 kg, Suggested Height 180–185 cm\n3XL: Half Chest 60 cm, Full Chest 120 cm, Length 78 cm, Suggested Weight 95–100 kg, Suggested Height 185–195 cm\nNote: Manual measurement may lead to slight deviations. If you prefer an oversized loose fit, we recommend ordering one size up.",
+      "attributes": [
+        {
+          "name": "Brand",
+          "values": [
+            {
+              "name": "NUll"
+            }
+          ]
+        },
+        {
+          "name": "Model",
+          "values": [
+            {
+              "name": "NUll"
+            }
+          ]
+        },
+        {
+          "name": "Gender",
+          "values": [
+            {
+              "name": "Gender neutral"
+            }
+          ]
+        },
+        {
+          "name": "Garment type",
+          "values": [
+            {
+              "name": "T-shirt"
+            }
+          ]
+        },
+        {
+          "name": "Sleeve type",
+          "values": [
+            {
+              "name": "Short"
+            }
+          ]
+        },
+        {
+          "name": "Main material",
+          "values": [
+            {
+              "name": "Cotton"
+            }
+          ]
+        },
+        {
+          "name": "Sale format",
+          "values": [
+            {
+              "name": "Unit"
+            }
+          ]
+        },
+        {
+          "name": "Fabric type",
+          "values": [
+            {
+              "name": "cotton"
+            }
+          ]
+        },
+        {
+          "name": "Composition",
+          "values": [
+            {
+              "name": "100%cotton"
+            }
+          ]
+        },
+        {
+          "name": "With recycled materials",
+          "values": [
+            {
+              "name": "No"
+            }
+          ]
+        },
+        {
+          "name": "T-shirt collar type",
+          "values": [
+            {
+              "name": "Round neck"
+            }
+          ]
+        },
+        {
+          "name": "Size grid ID",
+          "values": [
+            {
+              "name": "6264063"
+            }
+          ]
+        },
+        {
+          "name": "Seller package width",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package length",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package height",
+          "values": [
+            {
+              "name": "2 cm"
+            }
+          ]
+        },
+        {
+          "name": "Seller package weight",
+          "values": [
+            {
+              "name": "200 g"
+            }
+          ]
+        },
+        {
+          "name": "Package height",
+          "values": [
+            {
+              "name": "2 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package width",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package length",
+          "values": [
+            {
+              "name": "10 cm"
+            }
+          ]
+        },
+        {
+          "name": "Package weight",
+          "values": [
+            {
+              "name": "200 g"
+            }
+          ]
+        }
+      ],
+      "warrantyType": "factoryWarranty",
+      "warrantyTime": 15,
+      "warrantyTimeUnit": "days",
+      "stock": 999,
+      "weightKg": 0.2,
+      "lengthCm": 10,
+      "widthCm": 10,
+      "heightCm": 2,
+      "optionMappings": {},
+      "sizeMap": {
+        "XXL": "2XL",
+        "XXXL": "3XL"
+      },
+      "name": "tshirt类目属性+保修信息+棉+2XS",
+      "groupId": "",
+      "material": "cotton",
+      "id": "2a041990-b13d-4910-bb4a-39ed7aece6d7"
+    }
+  ],
+  "checks": [
+    {
+      "name": "kid hoddie",
+      "confirmedDefaultsMatch": true,
+      "packagingAttributesMatch": true,
+      "descriptionOnlyWarrantyChanged": true,
+      "descriptionContains15DayWarranty": true,
+      "sizeGridId": "6566299"
+    },
+    {
+      "name": "儿童套装+类目属性+保修信息+棉质",
+      "confirmedDefaultsMatch": true,
+      "packagingAttributesMatch": true,
+      "descriptionOnlyWarrantyChanged": true,
+      "descriptionContains15DayWarranty": true,
+      "sizeGridId": null
+    },
+    {
+      "name": "儿童套装+类目属性+保修信息+平板",
+      "confirmedDefaultsMatch": true,
+      "packagingAttributesMatch": true,
+      "descriptionOnlyWarrantyChanged": true,
+      "descriptionContains15DayWarranty": true,
+      "sizeGridId": null
+    },
+    {
+      "name": "儿童tshirt类目属性+保修信息+棉质",
+      "confirmedDefaultsMatch": true,
+      "packagingAttributesMatch": true,
+      "descriptionOnlyWarrantyChanged": true,
+      "descriptionContains15DayWarranty": true,
+      "sizeGridId": null
+    },
+    {
+      "name": "儿童tshirt类目属性+保修信息+平板",
+      "confirmedDefaultsMatch": true,
+      "packagingAttributesMatch": true,
+      "descriptionOnlyWarrantyChanged": true,
+      "descriptionContains15DayWarranty": true,
+      "sizeGridId": null
+    },
+    {
+      "name": "tshirt类目属性+保修信息+棉+2XS",
+      "confirmedDefaultsMatch": true,
+      "packagingAttributesMatch": true,
+      "descriptionOnlyWarrantyChanged": true,
+      "descriptionContains15DayWarranty": true,
+      "sizeGridId": "6264063"
+    }
+  ],
+  "pendingUserData": [],
+  "sizeChartReviewNotes": [
+    "童装短袖尺码表6338589暂未关联：110码衣长43cm，原产品描述为44cm，其他测量值也需复核"
+  ],
+  "sourceTemplatesModified": false,
+  "productsSubmitted": 0
+}

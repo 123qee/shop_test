@@ -1,0 +1,17 @@
+{
+  "suggestion_id": "joom-large-campaign-split-20261123",
+  "event_type": "executed_and_verified",
+  "recorded_at": "2026-11-23T16:09:09.071433+08:00",
+  "status": "29组已建，3启用26暂停，原3组暂停；观察中",
+  "actual_setting_changed": true,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-23/160444-大额度广告拆分/拆分与商品筛选报告.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-23/160444-大额度广告拆分/完整执行快照.json",
+  "active_daily_cap_before": 135,
+  "active_daily_cap_after": 15,
+  "review": {
+    "first_complete_flow_window": "11/24—26，待更新完整后评估",
+    "first_complete_conversion_window": "11/24—30，待更新完整后评估；近期归因可能继续回补",
+    "automatic_activation_authorized": false,
+    "note": "26组待测；本次没有配置自动轮换或自动改预算。新组不会继承原组历史归因，复查需关联旧原组ID。"
+  }
+}

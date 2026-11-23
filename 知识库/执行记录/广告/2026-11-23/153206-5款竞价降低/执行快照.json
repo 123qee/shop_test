@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "event_type": "user_authorized_one_time_ad_bid_optimization",
+  "authorization": {
+    "source": "本聊天用户直接要求",
+    "text": "能不能想办法把我这个降得更低一些，你不是检查了一下广告的支出情况吗？帮我优化一下",
+    "scope": "本次降低Joom部分商品广告竞价；不扩展为定时任务自动改投放授权"
+  },
+  "recorded_at": "2026-11-23T15:34:41.013475+08:00",
+  "verified_at": "2026-11-23T15:32:06.931+08:00",
+  "executed_at_exact": null,
+  "execution_date": "2026-11-23",
+  "status": "executed_and_verified_observation_pending",
+  "sources": [
+    "https://merchant.joom.com/panel/ads/campaigns/6af7c2a5822a8100076caff6",
+    "https://merchant.joom.com/panel/ads/campaigns/6a9d3599b5cfff0007d9fca1"
+  ],
+  "window_start": "2026-11-16",
+  "window_end": "2026-11-22",
+  "platform_timezone": null,
+  "data_updated_at": "2026-11-23 04:27:28（页面显示，时区未展开核验）",
+  "currency": "USD",
+  "baseline_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-23/145956.json",
+  "changes": [
+    {
+      "product_id": "6a868a318809ae01f99f4373",
+      "campaign_id": "6af7c2a5822a8100076caff6",
+      "campaign_name": "cpm2",
+      "type": "CPM",
+      "currency": "USD",
+      "before": 0.65,
+      "after": 0.6,
+      "unit": "USD_per_1000_impressions_bid",
+      "relative_reduction": 0.07692307692307698,
+      "baseline": {
+        "impressions": 2184,
+        "displayed_ctr": 0.0018,
+        "pogs": 0,
+        "spent": 0.95,
+        "acos": null
+      },
+      "reason": "2184曝光但CTR0.18%，7天尚无归因销售；先小幅压低流量成本。",
+      "suggestion_id": "joom-cpm2-lowctr-20261123"
+    },
+    {
+      "product_id": "6a87c6a7237ea601558dc594",
+      "campaign_id": "6af7c2a5822a8100076caff6",
+      "campaign_name": "cpm2",
+      "type": "CPM",
+      "currency": "USD",
+      "before": 0.65,
+      "after": 0.6,
+      "unit": "USD_per_1000_impressions_bid",
+      "relative_reduction": 0.07692307692307698,
+      "baseline": {
+        "impressions": 2028,
+        "displayed_ctr": 0.0064,
+        "pogs": 0,
+        "spent": 0.93,
+        "acos": null
+      },
+      "reason": "2028曝光但CTR0.64%，7天尚无归因销售；先小幅压低流量成本。",
+      "suggestion_id": "joom-cpm2-lowctr-20261123"
+    },
+    {
+      "product_id": "6a8e79fe17a6590152d2b385",
+      "campaign_id": "6a9d3599b5cfff0007d9fca1",
+      "campaign_name": "童装卫衣",
+      "type": "CPA",
+      "currency": "USD",
+      "before": 0.25,
+      "after": 0.22,
+      "unit": "CPA_bid_fraction",
+      "relative_reduction": 0.12,
+      "percentage_point_reduction": 3,
+      "baseline": {
+        "price": 4.5,
+        "impressions": 95,
+        "clicks": 3,
+        "adds_to_cart": 1,
+        "attributed_purchases": 2,
+        "pogs": 9,
+        "spent": 2.25,
+        "acos": 0.25
+      },
+      "reason": "售价4.50，当前CPA25%；按用户控费意图做22%小步竞价测试，保留活动成员。样本仅2次购买，不认定为低转化或亏损。",
+      "suggestion_id": "joom-cpa25-to22-20261123"
+    },
+    {
+      "product_id": "6a8e93bd17a6590152d59f47",
+      "campaign_id": "6a9d3599b5cfff0007d9fca1",
+      "campaign_name": "童装卫衣",
+      "type": "CPA",
+      "currency": "USD",
+      "before": 0.25,
+      "after": 0.22,
+      "unit": "CPA_bid_fraction",
+      "relative_reduction": 0.12,
+      "percentage_point_reduction": 3,
+      "baseline": {
+        "price": 4.5,
+        "impressions": 28,
+        "clicks": 3,
+        "adds_to_cart": 1,
+        "attributed_purchases": 1,
+        "pogs": 4.5,
+        "spent": 1.13,
+        "acos": 0.25111111111111106
+      },
+      "reason": "售价4.50，CPA25%；22%小步控费测试。样本仅1次购买，保留成交渠道并观察流量损失。",
+      "suggestion_id": "joom-cpa25-to22-20261123"
+    },
+    {
+      "product_id": "6a8b0c88f63a5e01573ff199",
+      "campaign_id": "6a9d3599b5cfff0007d9fca1",
+      "campaign_name": "童装卫衣",
+      "type": "CPA",
+      "currency": "USD",
+      "before": 0.25,
+      "after": 0.22,
+      "unit": "CPA_bid_fraction",
+      "relative_reduction": 0.12,
+      "percentage_point_reduction": 3,
+      "baseline": {
+        "price": 3.99,
+        "impressions": 15,
+        "clicks": 6,
+        "adds_to_cart": 1,
+        "attributed_purchases": 1,
+        "pogs": 3.99,
+        "spent": 1,
+        "acos": 0.2506265664160401
+      },
+      "reason": "售价3.99，CPA25%；22%小步控费测试。样本仅1次购买，未据此断言亏损。",
+      "suggestion_id": "joom-cpa25-to22-20261123"
+    }
+  ],
+  "verification": [
+    {
+      "campaign_id": "6af7c2a5822a8100076caff6",
+      "before_members": 50,
+      "after_members": 50,
+      "membership_unchanged": true,
+      "changed_bids": 2,
+      "unchanged_bids": 48,
+      "before_bid_values": [
+        0.65
+      ],
+      "daily_budget_before": 10,
+      "daily_budget_after": 10,
+      "verification": "保存后等待目标行0.60出现，再刷新，读取全50行按ID比对竞价；仅列出的2款变化。"
+    },
+    {
+      "campaign_id": "6a9d3599b5cfff0007d9fca1",
+      "before_members": 192,
+      "after_members": 192,
+      "membership_unchanged": true,
+      "changed_bids": 3,
+      "unchanged_bids": 189,
+      "before_bid_values": [
+        0.25
+      ],
+      "daily_budget_before": 5,
+      "daily_budget_after": 5,
+      "verification": "保存22后刷新，恢复表格临时指标列后再次刷新；全192行按ID比对，仅3款25%→22%，成员集合一致。"
+    }
+  ],
+  "settings_changed": true,
+  "total_budget_increased": false,
+  "product_listing_fields_changed": false,
+  "product_prices_changed": false,
+  "stock_changed": false,
+  "automation_permissions_changed": false,
+  "protected_objects": [
+    "CR7套装20%CPA未修改",
+    "已有15%CPA未修改",
+    "cpm5主商品已移出状态未修改",
+    "AMI等近期有成交的CPM商品竞价未修改"
+  ],
+  "profit_break_even_acos": null,
+  "profit_note": "未逐单取得净实收/件数/售后责任，不发布新的保本ACOS；此处调整出价上限，不保证实际ACOS或花费按相同比例下降。",
+  "completeness": "两活动全部成员竞价和成员数比对；其他活动本次未重抓；经营快照继续引用145956",
+  "review": {
+    "first_flow_review": "2026-11-27：首批完整3天11/24—26，核实际报表更新时间后评估",
+    "first_conversion_review": "2026-12-01：首批完整7天11/24—30，核报表完整性后评估",
+    "attribution_followup": "近期成交可能回补，14天再次评估归因与售后；以平台当前规则为准",
+    "windows_note": "11/23为改价日，不作为完整优化后日；前期11/16—22保留，促销、流量结构、库存和归因回补均可能混杂。",
+    "metrics": [
+      "整体广告花费/POGS/加权ACOS",
+      "被调SKU曝光、点击、加购、购买次数、实收贡献",
+      "成交量与花费同时评估，不以降低ACOS为唯一成功指标"
+    ],
+    "rollback_review": "完整3天内，若某CPA款点击较改前日均下降超过30%且加购/成交也恶化，先排查报表延迟、缺货、促销和投放资格，再评审22%恢复25%；基线仅1—2次购买，不能单凭一日0单回调。CPM同理评估点击质量，不连续机械下调。",
+    "automatic_business_changes_authorized": false
+  },
+  "screenshot": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-23/153206-5款竞价降低/CPA22-后台核验.jpg",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-23/153206-5款竞价降低/执行记录.md",
+  "warnings": [
+    "改价后历史窗口ACOS仍是原始实际值，不会立刻从25%变22%。",
+    "降价可能降低曝光与销量，必须观察；无证据承诺整体ACOS马上降到指定数值。",
+    "这5款原7天合计显示花费6.26美元，约占原整体62.37美元的10%，第一轮整体改善幅度可能有限。"
+  ],
+  "additional_product_observation": {
+    "product_id": "6a8e79fe17a6590152d2b385",
+    "source": "https://merchant.joom.com/panel/products/6a8e79fe17a6590152d2b385/active",
+    "live_title": "Kids' Haaland #9 Graphic Cotton T-Shirt, Unisex Short Sleeve",
+    "issue": "短袖标题/描述对应尺码表袖长39—51cm，需要真实实物袖长；本次未改商品字段。"
+  }
+}

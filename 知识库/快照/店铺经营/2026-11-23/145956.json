@@ -1,0 +1,807 @@
+{
+  "run_type": "user_requested_once",
+  "recorded_at": "2026-11-23T14:59:56.530628+08:00",
+  "permission": "read_only_analysis",
+  "settings_changed": false,
+  "joom": {
+    "stores": {
+      "d28": {
+        "source": "https://merchant.joom.com/panel/analytics/orders",
+        "window_start": "2026-10-26",
+        "window_end": "2026-11-22",
+        "platform_timezone": null,
+        "platform_timezone_note": "页面显示分析数据时区，但本次未展开核验；保留页面自然日，不把筛选参数UTC编码当平台时区。",
+        "captured_at": "2026-11-23T14:54:52+08:00",
+        "data_updated_at": "2026-11-23 13:07:40（页面原样）",
+        "currency": "USD",
+        "completeness": "complete_visible_rows",
+        "comparison_start": "2026-09-28",
+        "comparison_end": "2026-10-25",
+        "rows": [
+          {
+            "store": "Nineteen Wear",
+            "purchases": 173,
+            "previous_purchases": 225,
+            "gmv": 883.91,
+            "previous_gmv": 1077.64,
+            "impressions": 134615,
+            "previous_impressions": 107765,
+            "clicks": 4475,
+            "previous_clicks": 5231,
+            "ctr": 0.0332,
+            "previous_ctr": 0.0485,
+            "cr": 0.0387,
+            "previous_cr": 0.043
+          },
+          {
+            "store": "jh",
+            "purchases": 16,
+            "previous_purchases": 6,
+            "gmv": 181,
+            "previous_gmv": 47,
+            "impressions": 20376,
+            "previous_impressions": 7999,
+            "clicks": 1012,
+            "previous_clicks": 284,
+            "ctr": 0.0497,
+            "previous_ctr": 0.0355,
+            "cr": 0.0158,
+            "previous_cr": 0.0211
+          },
+          {
+            "store": "jwh second",
+            "purchases": 98,
+            "previous_purchases": 11,
+            "gmv": 702.6,
+            "previous_gmv": 102.93,
+            "impressions": 36250,
+            "previous_impressions": 10654,
+            "clicks": 2354,
+            "previous_clicks": 634,
+            "ctr": 0.0649,
+            "previous_ctr": 0.0595,
+            "cr": 0.0416,
+            "previous_cr": 0.0174
+          }
+        ],
+        "totals": {
+          "purchases": 287,
+          "gmv": 1767.51,
+          "impressions": 191241,
+          "clicks": 7841
+        },
+        "previous_totals": {
+          "purchases": 242,
+          "gmv": 1227.57,
+          "impressions": 126418,
+          "clicks": 6149
+        }
+      },
+      "d7": {
+        "source": "https://merchant.joom.com/panel/analytics/orders",
+        "window_start": "2026-11-16",
+        "window_end": "2026-11-22",
+        "platform_timezone": null,
+        "platform_timezone_note": "页面显示分析数据时区，但本次未展开核验；保留页面自然日，不把筛选参数UTC编码当平台时区。",
+        "captured_at": "2026-11-23T14:54:52+08:00",
+        "data_updated_at": "2026-11-23 13:07:40（页面原样）",
+        "currency": "USD",
+        "completeness": "complete_visible_rows",
+        "comparison_start": "2026-11-09",
+        "comparison_end": "2026-11-15",
+        "rows": [
+          {
+            "store": "jwh second",
+            "purchases": 48,
+            "previous_purchases": 28,
+            "gmv": 358.79,
+            "previous_gmv": 218.84,
+            "impressions": 13950,
+            "previous_impressions": 10355,
+            "clicks": 993,
+            "previous_clicks": 643,
+            "ctr": 0.0712,
+            "previous_ctr": 0.0621,
+            "cr": 0.0483,
+            "previous_cr": 0.0435
+          },
+          {
+            "store": "jh",
+            "purchases": 6,
+            "previous_purchases": 2,
+            "gmv": 73,
+            "previous_gmv": 14,
+            "impressions": 7545,
+            "previous_impressions": 4886,
+            "clicks": 266,
+            "previous_clicks": 245,
+            "ctr": 0.0353,
+            "previous_ctr": 0.0501,
+            "cr": 0.0226,
+            "previous_cr": 0.0082
+          },
+          {
+            "store": "Nineteen Wear",
+            "purchases": 58,
+            "previous_purchases": 49,
+            "gmv": 315.1,
+            "previous_gmv": 239.12,
+            "impressions": 45484,
+            "previous_impressions": 35134,
+            "clicks": 1287,
+            "previous_clicks": 1177,
+            "ctr": 0.0283,
+            "previous_ctr": 0.0335,
+            "cr": 0.0451,
+            "previous_cr": 0.0416
+          }
+        ],
+        "totals": {
+          "purchases": 112,
+          "gmv": 746.89,
+          "impressions": 66979,
+          "clicks": 2546
+        },
+        "previous_totals": {
+          "purchases": 79,
+          "gmv": 471.96,
+          "impressions": 50375,
+          "clicks": 2065
+        }
+      }
+    },
+    "countries7": {
+      "source": "https://merchant.joom.com/panel/analytics/orders/countries",
+      "window_start": "2026-11-16",
+      "window_end": "2026-11-22",
+      "platform_timezone": null,
+      "platform_timezone_note": "页面显示分析数据时区，但本次未展开核验；保留页面自然日，不把筛选参数UTC编码当平台时区。",
+      "captured_at": "2026-11-23T14:54:52+08:00",
+      "data_updated_at": "2026-11-23 13:18:22（页面原样）",
+      "currency": "USD",
+      "completeness": "visible_country_sample_14_per_store",
+      "rows": [
+        {
+          "store": "jwh second",
+          "country": "德国",
+          "purchases": 12,
+          "impressions": 1673,
+          "clicks": 182,
+          "gmv": 89.94,
+          "cr": 0.06593406593406594
+        },
+        {
+          "store": "jwh second",
+          "country": "英国",
+          "purchases": 17,
+          "impressions": 868,
+          "clicks": 117,
+          "gmv": 89.0,
+          "cr": 0.1452991452991453
+        },
+        {
+          "store": "jwh second",
+          "country": "荷兰",
+          "purchases": 0,
+          "impressions": 419,
+          "clicks": 15,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "jwh second",
+          "country": "意大利",
+          "purchases": 2,
+          "impressions": 159,
+          "clicks": 28,
+          "gmv": 19.98,
+          "cr": 0.07142857142857142
+        },
+        {
+          "store": "jwh second",
+          "country": "西班牙",
+          "purchases": 1,
+          "impressions": 644,
+          "clicks": 32,
+          "gmv": 5.0,
+          "cr": 0.03125
+        },
+        {
+          "store": "jwh second",
+          "country": "瑞典",
+          "purchases": 0,
+          "impressions": 536,
+          "clicks": 54,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "jwh second",
+          "country": "捷克",
+          "purchases": 0,
+          "impressions": 650,
+          "clicks": 37,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "jwh second",
+          "country": "波兰",
+          "purchases": 4,
+          "impressions": 781,
+          "clicks": 53,
+          "gmv": 49.96,
+          "cr": 0.07547169811320754
+        },
+        {
+          "store": "jwh second",
+          "country": "俄罗斯",
+          "purchases": 0,
+          "impressions": 1752,
+          "clicks": 45,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "jwh second",
+          "country": "乌兹别克斯坦",
+          "purchases": 1,
+          "impressions": 1451,
+          "clicks": 79,
+          "gmv": 9.99,
+          "cr": 0.012658227848101266
+        },
+        {
+          "store": "jwh second",
+          "country": "比利时",
+          "purchases": 1,
+          "impressions": 407,
+          "clicks": 30,
+          "gmv": 5.0,
+          "cr": 0.03333333333333333
+        },
+        {
+          "store": "jwh second",
+          "country": "乌克兰",
+          "purchases": 1,
+          "impressions": 276,
+          "clicks": 15,
+          "gmv": 9.99,
+          "cr": 0.06666666666666667
+        },
+        {
+          "store": "jwh second",
+          "country": "匈牙利",
+          "purchases": 1,
+          "impressions": 440,
+          "clicks": 59,
+          "gmv": 9.99,
+          "cr": 0.01694915254237288
+        },
+        {
+          "store": "jwh second",
+          "country": "法国",
+          "purchases": 4,
+          "impressions": 1241,
+          "clicks": 89,
+          "gmv": 34.97,
+          "cr": 0.0449438202247191
+        },
+        {
+          "store": "jh",
+          "country": "波兰",
+          "purchases": 0,
+          "impressions": 352,
+          "clicks": 12,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "jh",
+          "country": "乌克兰",
+          "purchases": 0,
+          "impressions": 173,
+          "clicks": 11,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "jh",
+          "country": "比利时",
+          "purchases": 1,
+          "impressions": 229,
+          "clicks": 11,
+          "gmv": 20.0,
+          "cr": 0.09090909090909091
+        },
+        {
+          "store": "jh",
+          "country": "俄罗斯",
+          "purchases": 0,
+          "impressions": 1111,
+          "clicks": 32,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "jh",
+          "country": "匈牙利",
+          "purchases": 1,
+          "impressions": 183,
+          "clicks": 6,
+          "gmv": 20.0,
+          "cr": 0.16666666666666666
+        },
+        {
+          "store": "jh",
+          "country": "西班牙",
+          "purchases": 0,
+          "impressions": 615,
+          "clicks": 24,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "jh",
+          "country": "法国",
+          "purchases": 0,
+          "impressions": 602,
+          "clicks": 10,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "jh",
+          "country": "乌兹别克斯坦",
+          "purchases": 0,
+          "impressions": 488,
+          "clicks": 9,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "jh",
+          "country": "德国",
+          "purchases": 0,
+          "impressions": 797,
+          "clicks": 37,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "jh",
+          "country": "意大利",
+          "purchases": 1,
+          "impressions": 197,
+          "clicks": 32,
+          "gmv": 20.0,
+          "cr": 0.03125
+        },
+        {
+          "store": "jh",
+          "country": "英国",
+          "purchases": 1,
+          "impressions": 506,
+          "clicks": 16,
+          "gmv": 5.0,
+          "cr": 0.0625
+        },
+        {
+          "store": "jh",
+          "country": "瑞典",
+          "purchases": 1,
+          "impressions": 297,
+          "clicks": 8,
+          "gmv": 4.0,
+          "cr": 0.125
+        },
+        {
+          "store": "jh",
+          "country": "荷兰",
+          "purchases": 1,
+          "impressions": 268,
+          "clicks": 9,
+          "gmv": 4.0,
+          "cr": 0.1111111111111111
+        },
+        {
+          "store": "jh",
+          "country": "捷克",
+          "purchases": 0,
+          "impressions": 427,
+          "clicks": 11,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "英国",
+          "purchases": 9,
+          "impressions": 3798,
+          "clicks": 122,
+          "gmv": 38.94,
+          "cr": 0.07377049180327869
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "意大利",
+          "purchases": 3,
+          "impressions": 1336,
+          "clicks": 47,
+          "gmv": 23.97,
+          "cr": 0.06382978723404255
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "瑞典",
+          "purchases": 5,
+          "impressions": 2460,
+          "clicks": 68,
+          "gmv": 27.48,
+          "cr": 0.07352941176470588
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "德国",
+          "purchases": 6,
+          "impressions": 5070,
+          "clicks": 112,
+          "gmv": 35.97,
+          "cr": 0.05357142857142857
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "乌兹别克斯坦",
+          "purchases": 0,
+          "impressions": 2233,
+          "clicks": 67,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "荷兰",
+          "purchases": 7,
+          "impressions": 1600,
+          "clicks": 96,
+          "gmv": 34.45,
+          "cr": 0.07291666666666667
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "捷克",
+          "purchases": 7,
+          "impressions": 2651,
+          "clicks": 79,
+          "gmv": 33.93,
+          "cr": 0.08860759493670886
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "匈牙利",
+          "purchases": 2,
+          "impressions": 1148,
+          "clicks": 35,
+          "gmv": 14.49,
+          "cr": 0.05714285714285714
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "乌克兰",
+          "purchases": 0,
+          "impressions": 1975,
+          "clicks": 39,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "比利时",
+          "purchases": 0,
+          "impressions": 932,
+          "clicks": 33,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "俄罗斯",
+          "purchases": 0,
+          "impressions": 4674,
+          "clicks": 108,
+          "gmv": 0.0,
+          "cr": 0.0
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "波兰",
+          "purchases": 2,
+          "impressions": 2642,
+          "clicks": 79,
+          "gmv": 13.98,
+          "cr": 0.02531645569620253
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "法国",
+          "purchases": 1,
+          "impressions": 2897,
+          "clicks": 69,
+          "gmv": 3.99,
+          "cr": 0.014492753623188406
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "西班牙",
+          "purchases": 3,
+          "impressions": 2012,
+          "clicks": 49,
+          "gmv": 18.52,
+          "cr": 0.061224489795918366
+        }
+      ],
+      "coverage_note": "三店各14个可见国家，不是全国家；国家行之和可能低于店铺总计。重新加载并逐店展开，避免切换日期后子表保留28天旧值。",
+      "unlisted_residuals": [
+        {
+          "store": "jwh second",
+          "purchases": 4,
+          "impressions": 2653,
+          "clicks": 158,
+          "gmv": 34.97
+        },
+        {
+          "store": "jh",
+          "purchases": 0,
+          "impressions": 1300,
+          "clicks": 38,
+          "gmv": 0.0
+        },
+        {
+          "store": "Nineteen Wear",
+          "purchases": 13,
+          "impressions": 10056,
+          "clicks": 284,
+          "gmv": 69.38
+        }
+      ]
+    },
+    "refunds": {
+      "source": "https://merchant.joom.com/panel/analytics/refunds",
+      "window_start": "2026-09-28",
+      "window_end": "2026-11-22",
+      "platform_timezone": null,
+      "platform_timezone_note": "页面显示分析数据时区，但本次未展开核验；保留页面自然日，不把筛选参数UTC编码当平台时区。",
+      "captured_at": "2026-11-23T14:54:52+08:00",
+      "data_updated_at": "2026-11-23 13:28:01（页面原样）",
+      "currency": "USD",
+      "completeness": "complete_visible_rows",
+      "rows": [
+        {
+          "store": "Nineteen Wear",
+          "approved": 398,
+          "approved_gmv": 1961.55,
+          "refunded": 15,
+          "refunded_gmv": 71.37,
+          "order_refund_rate": 0.0377,
+          "gmv_refund_rate": 0.0364
+        },
+        {
+          "store": "jh",
+          "approved": 22,
+          "approved_gmv": 228,
+          "refunded": 1,
+          "refunded_gmv": 10,
+          "order_refund_rate": 0.0455,
+          "gmv_refund_rate": 0.0439
+        },
+        {
+          "store": "jwh second",
+          "approved": 109,
+          "approved_gmv": 805.53,
+          "refunded": 1,
+          "refunded_gmv": 9.99,
+          "order_refund_rate": 0.0092,
+          "gmv_refund_rate": 0.0124
+        }
+      ],
+      "warning": "56天店铺级报表，不是本周广告订单匹配退款。不能从7天POGS直接扣退款总额；尚未取得逐单责任与成本。"
+    },
+    "catalog_health": {
+      "source": "https://merchant.joom.com/panel/products/all?limit=100",
+      "window_start": null,
+      "window_end": null,
+      "platform_timezone": null,
+      "platform_timezone_note": "页面显示分析数据时区，但本次未展开核验；保留页面自然日，不把筛选参数UTC编码当平台时区。",
+      "captured_at": "2026-11-23T14:54:52+08:00",
+      "data_updated_at": null,
+      "currency": "USD",
+      "completeness": "catalog_summary_only",
+      "total": 6096,
+      "active": 3401,
+      "unpublished": 3,
+      "restricted": 2673,
+      "needs_improvement": 2273,
+      "out_of_stock": 0,
+      "price_jump": 2,
+      "price_jump_risk": 51,
+      "eu_blocked": 3009,
+      "ip_region_blocked": 3018,
+      "note": "待优化与其他状态可能重叠；地区限制不可相加为全局禁售。后台可配库存不代表实物库存。"
+    },
+    "product_followups": [
+      {
+        "product_id": "6aad547abaf5a401f56aeddf",
+        "source": "https://merchant.joom.com/panel/products/6aad547abaf5a401f56aeddf/active",
+        "user_confirmed": "短袖T恤",
+        "live_title": "Kids Winter Thermal Printed Hoodie Jacket",
+        "live_category": "Hoodies & Sweatshirts (kids unisex)",
+        "description": "Kids T-Shirt / Short Sleeve",
+        "sleeve_chart_cm": [
+          39,
+          41,
+          43,
+          45,
+          47,
+          49,
+          51
+        ],
+        "status": "冲突仍在；标题与类目可按已确认短袖事实拟修正，真实袖长必须另提供",
+        "modified": false
+      },
+      {
+        "product_id": "6a842f66e32015012461bc44",
+        "source": "https://merchant.joom.com/panel/products/6a842f66e32015012461bc44/active",
+        "user_confirmed": "聚酯纤维；比例未确认",
+        "description_material": "polyester 100%",
+        "attribute_material": "cotton",
+        "fur_material": "cotton",
+        "status": "冲突仍在；拟统一聚酯纤维，不能保留未经确认100%断言",
+        "modified": false
+      },
+      {
+        "product_id": "6aaa83a2fb5605019bbfb9c9",
+        "source": "https://merchant.joom.com/panel/products/6aaa83a2fb5605019bbfb9c9/active",
+        "full_cost_cny": 15,
+        "description_conflict": [
+          "Label: no",
+          "Tag: Yes"
+        ],
+        "status": "标签冲突仍在，需核实实物；本次保留高成交商品",
+        "modified": false
+      }
+    ]
+  },
+  "mercadolibre": {
+    "status": "partial_login_required",
+    "excluded_countries": [
+      "UY"
+    ],
+    "expected_countries": [
+      "MX",
+      "BR",
+      "AR",
+      "CL",
+      "CO"
+    ],
+    "source": "https://sellers.mercadolibre.com/sales-summary",
+    "captured_at": "2026-11-23T14:54:52+08:00",
+    "rows": [
+      {
+        "source": "https://sellers.mercadolibre.com/metrics#summary",
+        "window_start": "2026-11-16",
+        "window_end": "2026-11-23",
+        "platform_timezone": "GMT-06:00",
+        "platform_timezone_note": "页面明确显示墨西哥标准时间",
+        "captured_at": "2026-11-23T14:54:52+08:00",
+        "data_updated_at": null,
+        "currency": "USD",
+        "completeness": "partial_day_default_recent7_includes_today",
+        "country": "MX",
+        "display_period": "最近7天；日期菜单16至11月23日；上一期8至11月15日（界面边界按原样记录，不强行称7个完整自然日）",
+        "gmv": 17,
+        "previous_gmv": 73,
+        "units": 2,
+        "previous_units": 8,
+        "orders": 2,
+        "previous_orders": 8,
+        "visits": 114,
+        "previous_visits": 280,
+        "displayed_cr": 0.018,
+        "previous_displayed_cr": 0.029,
+        "cancellations": 0,
+        "returns": 0,
+        "reputation": "orange",
+        "complaint_rate": 0.0555,
+        "out_of_stock_listings": 5,
+        "technical_specification_tasks": 73,
+        "quality_tasks": 161,
+        "overpriced_tasks": 5,
+        "summary_ad_sales": 0,
+        "summary_ad_clicks": 0,
+        "ad_spend": null,
+        "ads_account_verified": false
+      },
+      {
+        "source": "https://sellers.mercadolibre.com/metrics?start_period=custom&from_current=2026-11-15T16%3A00%3A00.000Z&to_current=2026-11-21T16%3A00%3A00.000Z",
+        "window_start": "2026-11-15",
+        "window_end": "2026-11-21",
+        "platform_timezone": "GMT-03:00",
+        "platform_timezone_note": "页面明确显示巴西标准时间",
+        "captured_at": "2026-11-23T14:54:52+08:00",
+        "data_updated_at": null,
+        "currency": "USD",
+        "completeness": "provisional_custom_date_ui_shift_and_metric_discrepancy",
+        "country": "BR",
+        "gmv": 56,
+        "previous_gmv": 32,
+        "units": 7,
+        "previous_units": 4,
+        "orders": 7,
+        "previous_orders": 3,
+        "visits": 480,
+        "previous_visits": 635,
+        "displayed_cr": 0.015,
+        "previous_displayed_cr": 0.005,
+        "cancellations": 0,
+        "returns": 0,
+        "funnel_sales_amount": 55,
+        "ads_account_verified": false,
+        "ad_spend": null,
+        "warning": "日历点选16–22后，加载完成显示15–21；以最终页面15–21记录。卡片GMV56、漏斗55；默认最近7天另显示74访问/0订单，与该窗口不同，不混用。不能与MX或Joom同窗比较。"
+      },
+      {
+        "country": "AR",
+        "source": "https://sellers.mercadolibre.com/sales-summary",
+        "captured_at": "2026-11-23T14:54:52+08:00",
+        "window_start": null,
+        "window_end": null,
+        "platform_timezone": null,
+        "data_updated_at": null,
+        "currency": null,
+        "completeness": "not_collected_login_required",
+        "gmv": null,
+        "orders": null,
+        "visits": null,
+        "ad_spend": null,
+        "acos": null,
+        "reason": "切换阿根廷后显示登录页；已保留登录页面并请求用户自行登录。未读取账号凭据，未绕过登录。"
+      },
+      {
+        "country": "CL",
+        "source": "https://sellers.mercadolibre.com/sales-summary",
+        "captured_at": "2026-11-23T14:54:52+08:00",
+        "window_start": null,
+        "window_end": null,
+        "platform_timezone": null,
+        "data_updated_at": null,
+        "currency": null,
+        "completeness": "not_collected_login_required",
+        "gmv": null,
+        "orders": null,
+        "visits": null,
+        "ad_spend": null,
+        "acos": null,
+        "reason": "切换阿根廷后显示登录页；已保留登录页面并请求用户自行登录。未读取账号凭据，未绕过登录。"
+      },
+      {
+        "country": "CO",
+        "source": "https://sellers.mercadolibre.com/sales-summary",
+        "captured_at": "2026-11-23T14:54:52+08:00",
+        "window_start": null,
+        "window_end": null,
+        "platform_timezone": null,
+        "data_updated_at": null,
+        "currency": null,
+        "completeness": "not_collected_login_required",
+        "gmv": null,
+        "orders": null,
+        "visits": null,
+        "ad_spend": null,
+        "acos": null,
+        "reason": "切换阿根廷后显示登录页；已保留登录页面并请求用户自行登录。未读取账号凭据，未绕过登录。"
+      }
+    ],
+    "ads_coverage": "五国广告后台账户/成本/归因销售均未完成核验；墨西哥摘要卡片不等于全量广告报告。"
+  },
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-23/145956.md"
+}

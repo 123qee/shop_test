@@ -1,0 +1,12 @@
+{
+  "suggestion_id": "ml-access-20261123-once",
+  "recorded_at": "2026-11-23T14:59:56.530628+08:00",
+  "event_type": "manual_once_observation",
+  "status": "切换AR触发登录，MX/BR部分完成，其余待登录",
+  "actual_setting_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-23/145956.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-23/145956.json",
+  "before": null,
+  "after": null,
+  "review": "用户登录后继续AR/CL/CO和五国广告；不把空值写0"
+}

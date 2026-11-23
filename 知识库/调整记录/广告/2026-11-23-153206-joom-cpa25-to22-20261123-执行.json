@@ -1,0 +1,98 @@
+{
+  "suggestion_id": "joom-cpa25-to22-20261123",
+  "recorded_at": "2026-11-23T15:34:41.013475+08:00",
+  "verified_at": "2026-11-23T15:32:06.931+08:00",
+  "event_type": "executed_and_verified",
+  "status": "3款25%→22%已执行并刷新核验，进入观察",
+  "actual_setting_changed": true,
+  "authorization": "能不能想办法把我这个降得更低一些，你不是检查了一下广告的支出情况吗？帮我优化一下",
+  "changes": [
+    {
+      "product_id": "6a8e79fe17a6590152d2b385",
+      "campaign_id": "6a9d3599b5cfff0007d9fca1",
+      "campaign_name": "童装卫衣",
+      "type": "CPA",
+      "currency": "USD",
+      "before": 0.25,
+      "after": 0.22,
+      "unit": "CPA_bid_fraction",
+      "relative_reduction": 0.12,
+      "percentage_point_reduction": 3,
+      "baseline": {
+        "price": 4.5,
+        "impressions": 95,
+        "clicks": 3,
+        "adds_to_cart": 1,
+        "attributed_purchases": 2,
+        "pogs": 9,
+        "spent": 2.25,
+        "acos": 0.25
+      },
+      "reason": "售价4.50，当前CPA25%；按用户控费意图做22%小步竞价测试，保留活动成员。样本仅2次购买，不认定为低转化或亏损。",
+      "suggestion_id": "joom-cpa25-to22-20261123"
+    },
+    {
+      "product_id": "6a8e93bd17a6590152d59f47",
+      "campaign_id": "6a9d3599b5cfff0007d9fca1",
+      "campaign_name": "童装卫衣",
+      "type": "CPA",
+      "currency": "USD",
+      "before": 0.25,
+      "after": 0.22,
+      "unit": "CPA_bid_fraction",
+      "relative_reduction": 0.12,
+      "percentage_point_reduction": 3,
+      "baseline": {
+        "price": 4.5,
+        "impressions": 28,
+        "clicks": 3,
+        "adds_to_cart": 1,
+        "attributed_purchases": 1,
+        "pogs": 4.5,
+        "spent": 1.13,
+        "acos": 0.25111111111111106
+      },
+      "reason": "售价4.50，CPA25%；22%小步控费测试。样本仅1次购买，保留成交渠道并观察流量损失。",
+      "suggestion_id": "joom-cpa25-to22-20261123"
+    },
+    {
+      "product_id": "6a8b0c88f63a5e01573ff199",
+      "campaign_id": "6a9d3599b5cfff0007d9fca1",
+      "campaign_name": "童装卫衣",
+      "type": "CPA",
+      "currency": "USD",
+      "before": 0.25,
+      "after": 0.22,
+      "unit": "CPA_bid_fraction",
+      "relative_reduction": 0.12,
+      "percentage_point_reduction": 3,
+      "baseline": {
+        "price": 3.99,
+        "impressions": 15,
+        "clicks": 6,
+        "adds_to_cart": 1,
+        "attributed_purchases": 1,
+        "pogs": 3.99,
+        "spent": 1,
+        "acos": 0.2506265664160401
+      },
+      "reason": "售价3.99，CPA25%；22%小步控费测试。样本仅1次购买，未据此断言亏损。",
+      "suggestion_id": "joom-cpa25-to22-20261123"
+    }
+  ],
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-23/153206-5款竞价降低/执行记录.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-23/153206-5款竞价降低/执行快照.json",
+  "review": {
+    "first_flow_review": "2026-11-27：首批完整3天11/24—26，核实际报表更新时间后评估",
+    "first_conversion_review": "2026-12-01：首批完整7天11/24—30，核报表完整性后评估",
+    "attribution_followup": "近期成交可能回补，14天再次评估归因与售后；以平台当前规则为准",
+    "windows_note": "11/23为改价日，不作为完整优化后日；前期11/16—22保留，促销、流量结构、库存和归因回补均可能混杂。",
+    "metrics": [
+      "整体广告花费/POGS/加权ACOS",
+      "被调SKU曝光、点击、加购、购买次数、实收贡献",
+      "成交量与花费同时评估，不以降低ACOS为唯一成功指标"
+    ],
+    "rollback_review": "完整3天内，若某CPA款点击较改前日均下降超过30%且加购/成交也恶化，先排查报表延迟、缺货、促销和投放资格，再评审22%恢复25%；基线仅1—2次购买，不能单凭一日0单回调。CPM同理评估点击质量，不连续机械下调。",
+    "automatic_business_changes_authorized": false
+  }
+}

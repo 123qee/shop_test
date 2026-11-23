@@ -1,0 +1,16 @@
+{
+  "suggestion_id": "joom-cpm2-lowctr-20261123",
+  "recorded_at": "2026-11-23T14:59:56.530628+08:00",
+  "event_type": "manual_once_observation",
+  "status": "待确认：两款CPM0.65→0.60；本次未执行",
+  "actual_setting_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-23/145956.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-23/145956.json",
+  "products": [
+    "6a868a318809ae01f99f4373",
+    "6a87c6a7237ea601558dc594"
+  ],
+  "before": 0.65,
+  "proposed": 0.6,
+  "review": "3天点击/7天转化/14天归因售后；AMI旧统一降价提议暂缓"
+}

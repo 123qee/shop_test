@@ -26,6 +26,17 @@ export function getDb(): Database.Database {
  */
 function migrate(d: Database.Database) {
   d.exec(`
+    CREATE TABLE IF NOT EXISTS miaoshou_drafts (
+      id TEXT PRIMARY KEY, product_id TEXT NOT NULL UNIQUE,
+      status TEXT NOT NULL, version INTEGER NOT NULL, data TEXT NOT NULL, updated_at TEXT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS idx_miaoshou_drafts_status ON miaoshou_drafts(status);
+    CREATE TABLE IF NOT EXISTS miaoshou_actions (
+      id TEXT PRIMARY KEY, draft_id TEXT NOT NULL, before_data TEXT NOT NULL,
+      after_version INTEGER NOT NULL, created_at TEXT NOT NULL, undone INTEGER NOT NULL DEFAULT 0
+    );
+    CREATE TABLE IF NOT EXISTS miaoshou_config (id INTEGER PRIMARY KEY CHECK(id = 1), data TEXT NOT NULL);
+    CREATE TABLE IF NOT EXISTS miaoshou_templates (id TEXT PRIMARY KEY, data TEXT NOT NULL);
     CREATE TABLE IF NOT EXISTS collect_batches (
       id TEXT PRIMARY KEY, source TEXT NOT NULL, template_id TEXT, created_at TEXT NOT NULL
     );

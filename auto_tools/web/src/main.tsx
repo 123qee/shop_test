@@ -15,6 +15,11 @@ import { NativePromptProvider } from './components/NativePromptProvider';
 import { PlannerPage } from './pages/planner/PlannerPage';
 import { AliExpressAutoFillPage } from './pages/AliExpressAutoFillPage';
 import { OrdersPage } from './pages/orders/OrdersPage';
+const MiaoshouSorterPage = React.lazy(() => import('./pages/miaoshou/MiaoshouSorterPage').then(m => ({ default: m.MiaoshouSorterPage })));
+const MiaoshouQueuePage = React.lazy(() => import('./pages/miaoshou/MiaoshouQueuePage').then(m => ({ default: m.MiaoshouQueuePage })));
+const MiaoshouSettingsPage = React.lazy(() => import('./pages/miaoshou/MiaoshouSettingsPage').then(m => ({ default: m.MiaoshouSettingsPage })));
+const MiaoshouDraftPage = React.lazy(() => import('./pages/miaoshou/MiaoshouDraftPage').then(m => ({ default: m.MiaoshouDraftPage })));
+const miaoshouPage = (element: React.ReactNode) => <React.Suspense fallback={<div className="empty-state">正在加载美客多工作区…</div>}>{element}</React.Suspense>;
 
 const router = createBrowserRouter([
   {
@@ -34,6 +39,10 @@ const router = createBrowserRouter([
       { path: 'products/:id', element: <ProductEditor /> },
       { path: 'settings', element: <SettingsPage /> },
       { path: 'orders', element: <OrdersPage /> },
+      { path: 'miaoshou/sort', element: miaoshouPage(<MiaoshouSorterPage />) },
+      { path: 'miaoshou/queue', element: miaoshouPage(<MiaoshouQueuePage />) },
+      { path: 'miaoshou/settings', element: miaoshouPage(<MiaoshouSettingsPage />) },
+      { path: 'miaoshou/drafts/:id', element: miaoshouPage(<MiaoshouDraftPage />) },
       { path: 'mercadolibre', element: <MercadoLibreWorkspacePage /> },
       { path: 'mercadolibre/settings', element: <MercadoLibreSettingsPage /> },
       { path: 'mercadolibre/products/:productId', element: <MercadoLibreProductEditor /> },

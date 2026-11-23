@@ -22,6 +22,10 @@ function readSidebarCollapsed() {
 }
 
 function pageMeta(pathname: string) {
+  if (pathname === '/miaoshou/sort') return ['美客多分拣', '传统店铺 · 独立分拣后提交妙手采集箱'];
+  if (pathname === '/miaoshou/queue') return ['妙手提交清单', '复核商品、查看采集箱提交进度和结果'];
+  if (pathname === '/miaoshou/settings') return ['美客多模板与连接', '妙手应用、传统店铺和净收益模板'];
+  if (pathname.startsWith('/miaoshou/drafts/')) return ['编辑美客多草稿', '完善独立草稿，准备提交妙手采集箱'];
   if (pathname.startsWith('/projects')) return ['项目', '为工作与生活，留出各自的空间'];
   if (pathname === '/tasks') return ['任务', '把想法变成行动，按自己的节奏推进'];
   if (pathname === '/' || pathname === '/dashboard') return ['工作台', '查看店铺状态和今天需要处理的任务'];
@@ -47,7 +51,7 @@ export function App() {
   const menuToggle = useRef<HTMLButtonElement>(null);
   const location = useLocation();
   useEffect(() => { setMenuOpen(false); }, [location.key]);
-  const inMercadoLibre = location.pathname.startsWith('/mercadolibre');
+  const inMercadoLibre = location.pathname.startsWith('/mercadolibre') || location.pathname.startsWith('/miaoshou');
   // 订单导出按页面里勾选的店铺工作，与「当前店铺」无关，不显示店铺切换器以免误会
   const inOrders = location.pathname.startsWith('/orders');
   const inPersonal = location.pathname.startsWith('/projects') || location.pathname === '/tasks';
@@ -176,6 +180,16 @@ export function App() {
           <span className="sidebar-group-label">速卖通工具</span>
           <NavLink to="/aliexpress/auto-fill" title="自动填充字段" className={({ isActive }) => `sidebar-link${isActive ? ' on' : ''}`}>
             <span className="sidebar-link-icon"><PlannerIcon name="settings" size={17}/></span><span className="sidebar-link-label">自动填充字段</span>
+          </NavLink>
+          <span className="sidebar-group-label">美客多 · 妙手</span>
+          <NavLink to="/miaoshou/sort" title="美客多分拣" className={({ isActive }) => `sidebar-link${isActive ? ' on' : ''}`}>
+            <span className="sidebar-link-icon"><PlannerIcon name="collection" size={17}/></span><span className="sidebar-link-label">美客多分拣</span>
+          </NavLink>
+          <NavLink to="/miaoshou/queue" title="妙手提交清单" className={({ isActive }) => `sidebar-link${isActive ? ' on' : ''}`}>
+            <span className="sidebar-link-icon"><PlannerIcon name="upload" size={17}/></span><span className="sidebar-link-label">妙手提交清单</span>
+          </NavLink>
+          <NavLink to="/miaoshou/settings" title="美客多模板与连接" className={({ isActive }) => `sidebar-link${isActive ? ' on' : ''}`}>
+            <span className="sidebar-link-icon"><PlannerIcon name="settings" size={17}/></span><span className="sidebar-link-label">模板与连接</span>
           </NavLink>
           <span className="sidebar-group-label">其他平台</span>
           <NavLink to="/mercadolibre" end title="美客多刊登" className={({ isActive }) => `sidebar-link${isActive ? ' on' : ''}`}>

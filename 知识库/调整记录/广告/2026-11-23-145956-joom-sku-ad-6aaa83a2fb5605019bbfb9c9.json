@@ -1,0 +1,18 @@
+{
+  "suggestion_id": "joom-sku-ad-6aaa83a2fb5605019bbfb9c9",
+  "recorded_at": "2026-11-23T14:59:56.530628+08:00",
+  "event_type": "manual_once_observation",
+  "status": "20%CPA原组保留；独立组未执行，新增预算证据不足",
+  "actual_setting_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-23/145956.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-23/145956.json",
+  "before": {
+    "cpa_bid": 0.2,
+    "campaign_daily_budget": 5
+  },
+  "proposed": {
+    "cpa_bid": 0.2,
+    "campaign_daily_budget": 5
+  },
+  "review": "连续完整日触顶+逐单净贡献为正+履约可支持再评审调配"
+}

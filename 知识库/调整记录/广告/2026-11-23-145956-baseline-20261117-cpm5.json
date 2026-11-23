@@ -1,0 +1,16 @@
+{
+  "suggestion_id": "baseline-20261117-cpm5",
+  "recorded_at": "2026-11-23T14:59:56.530628+08:00",
+  "event_type": "manual_once_observation",
+  "status": "已执行移除仍有效；CPA15%保留；本次未改",
+  "actual_setting_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-23/145956.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-23/145956.json",
+  "before": null,
+  "after": {
+    "cpm5_members": 49,
+    "main_present": false,
+    "cpa_bid": 0.15
+  },
+  "review": "执行后满7天及归因回补复查，不以旧92%暂停剩余全组"
+}

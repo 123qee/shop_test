@@ -14,6 +14,7 @@ import { imagesRouter } from './routes/images.js';
 import { mercadoLibreRouter } from './routes/mercadolibre.js';
 import { plannerRouter } from './routes/planner.js';
 import { ordersRouter } from './routes/orders.js';
+import { miaoshouRouter } from './routes/miaoshou.js';
 import { logger } from './util/logger.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -50,6 +51,7 @@ export function createApp() {
   app.use('/api', mercadoLibreRouter);
   app.use('/api', plannerRouter);
   app.use('/api', ordersRouter);
+  app.use('/api', miaoshouRouter);
 
   // 生产环境托管 web 后台(web/dist)
   const webDist = path.resolve(__dirname, '../../web/dist');

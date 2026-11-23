@@ -1,0 +1,12 @@
+{
+  "suggestion_id": "joom-product-6a842f66e32015012461bc44",
+  "recorded_at": "2026-11-23T14:59:56.530628+08:00",
+  "event_type": "manual_once_observation",
+  "status": "在售聚酯纤维描述与cotton属性仍冲突",
+  "actual_setting_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-23/145956.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-23/145956.json",
+  "before": null,
+  "after": null,
+  "review": "据确认聚酯纤维拟修，不臆造100%比例；本次未提交"
+}

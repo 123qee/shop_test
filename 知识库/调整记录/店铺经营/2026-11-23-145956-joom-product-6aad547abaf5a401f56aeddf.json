@@ -1,0 +1,12 @@
+{
+  "suggestion_id": "joom-product-6aad547abaf5a401f56aeddf",
+  "recorded_at": "2026-11-23T14:59:56.530628+08:00",
+  "event_type": "manual_once_observation",
+  "status": "事实冲突仍在；需要真实短袖袖长",
+  "actual_setting_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-23/145956.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-23/145956.json",
+  "before": null,
+  "after": null,
+  "review": "按用户短袖事实拟标题/类目，袖长待确认；本次未提交"
+}

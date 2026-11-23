@@ -1,0 +1,50 @@
+{
+  "suggestion_id": "joom-large-campaign-split-20261123",
+  "event_type": "user_authorized_all_groups_enabled",
+  "status": "29组均启用，1—2天观察；此前26组暂停方案已被用户本次指示替代",
+  "actual_setting_changed": true,
+  "verified_at": "2026-11-23T08:22:22.765Z",
+  "enabled_ids": [
+    "6b03f0dc1d040a0007d78d89",
+    "6b03f0f2ffde1c0007097867",
+    "6b03f10643b3470007f8fe66",
+    "6b03f1189a0dcc0007280da6",
+    "6b03f1289a6f27000701c40b",
+    "6b03f138802e1c0007a0f72f",
+    "6b03f147350cf700071bb2d1",
+    "6b03f154802e1c0007a0f730",
+    "6b03f165802e1c0007a0f731",
+    "6b03f18943b3470007f8fe67",
+    "6b03f19ddeaaaf0007e18f8e",
+    "6b03f1ac43b3470007f8fe68",
+    "6b03f1b89a0dcc0007280da8",
+    "6b03f1c61d040a0007d78d8a",
+    "6b03f1d57e92ec00074ee63f",
+    "6b03f1e81d040a0007d78d8b",
+    "6b03f1f71d040a0007d78d8c",
+    "6b03f206deaaaf0007e18f8f",
+    "6b03f2349a6f27000701c40d",
+    "6b03f248ffde1c0007097869",
+    "6b03f257802e1c0007a0f734",
+    "6b03f265822a8100076cb295",
+    "6b03f27aedb2bb0007a8dbb9",
+    "6b03f2899a0dcc0007280da9",
+    "6b03f29a43b3470007f8fe6c",
+    "6b03f2abedb2bb0007a8dbbb"
+  ],
+  "active_split_daily_cap": 145,
+  "originals_paused": true,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-23/162222-26组全部开启/执行记录.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-23/162222-26组全部开启/执行快照.json",
+  "review": {
+    "observation": "1—2天初步观察：曝光、点击、花费、加购、购买与ACOS；新组无历史样本，需标明报表更新与归因延迟",
+    "first_followup_dates": [
+      "2026-11-24",
+      "2026-11-25"
+    ],
+    "timing_note": "11/23为启用日；11/24早上可能不足24小时，不与完整日直接比较",
+    "automatic_pause_after_two_days": false,
+    "automatic_bid_or_budget_changes": false,
+    "notes": "不再沿用上一版只开3组/26组暂停的方案；本次未设置到期自动暂停，也未变更定时任务。"
+  }
+}

@@ -8,6 +8,7 @@ import { publishJobService } from './services/publish-job-service.js';
 import { joomVideoService } from './services/joom-video-service.js';
 import { orderSyncService } from './orders/sync-service.js';
 import { orderExportService } from './orders/export-service.js';
+import { miaoshouService } from './services/miaoshou-service.js';
 
 function main() {
   const db = getDb(); // 初始化数据库 + 迁移
@@ -15,6 +16,7 @@ function main() {
   if (restored.length) logger.info('已从仓库恢复模板配置', { settings: restored });
   bootstrap(); // 注册扩展点
   publishJobService.start();
+  miaoshouService.start();
   joomVideoService.start();
   orderSyncService.start();
   orderExportService.cleanupExpired();
