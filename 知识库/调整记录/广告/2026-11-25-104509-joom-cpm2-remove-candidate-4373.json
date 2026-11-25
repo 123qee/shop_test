@@ -1,0 +1,12 @@
+{
+  "suggestion_id": "joom-cpm2-remove-candidate-4373",
+  "recorded_at": "2026-11-25T10:45:09.223000+08:00",
+  "type": "recommendation",
+  "executed": false,
+  "product_id": "6a868a318809ae01f99f4373",
+  "current_cpm_usd": 0.6,
+  "proposed_action": "从cpm2暂时移出，保留商品及其他渠道",
+  "evidence": "28天3344曝光8点击无加购购买；11/24 400曝光0点击花费0.18",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-25/104509.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-25/104509.json"
+}

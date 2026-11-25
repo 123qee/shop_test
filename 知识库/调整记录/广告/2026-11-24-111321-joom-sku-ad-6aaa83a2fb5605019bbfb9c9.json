@@ -1,0 +1,12 @@
+{
+  "suggestion_id": "joom-sku-ad-6aaa83a2fb5605019bbfb9c9",
+  "recorded_at": "2026-11-24T11:13:21.622000+08:00",
+  "event_type": "scheduled_readonly_followup",
+  "status": "CR7仍20%CPA，维持预算；保本线未新核算",
+  "previous_event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/广告/2026-11-23-145956-joom-sku-ad-6aaa83a2fb5605019bbfb9c9.json",
+  "previous_status": "20%CPA原组保留；独立组未执行，新增预算证据不足",
+  "settings_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-24/111321.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-24/111321.json",
+  "review": "未成熟结果继续观察；本轮未授权修改"
+}

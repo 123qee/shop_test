@@ -64,8 +64,8 @@ test('童装短袖、卫衣、裤装：预览与 Excel 的拿货尺码一致，�
       const row = sheets.flatMap((sheet) => [...sheet.matchAll(/<row\b[^>]*>(.*?)<\/row>/g)].map((match) => match[1]))
         .find((row) => row.includes(`>order-${i}</t>`))!;
       assert.ok(row, `缺少订单 order-${i}`);
-      assert.match(row, new RegExp(`<c r="C\\d+"[^>]*><is><t>${item.size}</t></is></c>`));
-      assert.match(row, new RegExp(`<c r="E\\d+"[^>]*><is><t>${item.expected}</t></is></c>`));
+      assert.match(row, new RegExp(`<c r="C\\d+"[^>]*><is><t>${item.expected}</t></is></c>`));
+      assert.match(row, new RegExp(`<c r="D\\d+"[^>]*><is><t>${item.size}</t></is></c>`));
     }
   } finally {
     getDb().close();

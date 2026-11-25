@@ -56,10 +56,13 @@ test('逐行选择导出：时间顺序、跳过图片、部分订单标记与�
     const res = await fetch(`http://127.0.0.1:${port}/api/orders/${endpoint}`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(input) });
     return { status: res.status, data: await res.json() as any };
   }
-  const query: OrderQueryInput = { profileId: 'daily', shops: [{ platform: 'selection', shopId: 'A' }, { platform: 'selection', shopId: 'Z' }], statuses: ['to_ship'], onlyNew: true };
   const uid = (shop: string, order: string, line = 'main') => `selection:${shop}:${order}#${line}`;
   const giftUid = uid('Z', 'oldest', 'gift');
   const middleUid = uid('A', 'middle');
+  const query: OrderQueryInput = {
+    profileId: 'daily', shops: [{ platform: 'selection', shopId: 'A' }, { platform: 'selection', shopId: 'Z' }], statuses: ['to_ship'], onlyNew: true,
+    polyesterTypes: { [giftUid]: 'flat', [uid('A', 'newest')]: 'pinhole' },
+  };
   const allLines = (preview: any) => preview.buckets.flatMap((bucket: any) => bucket.lines);
   try {
     const preview = (await request('preview', query)).data;

@@ -301,16 +301,16 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       const cottonSheet = cotton.get('xl/worksheets/sheet1.xml')!.toString();
       assert.ok(cottonSheet.includes('图片 2'));
       const headers = [...cottonSheet.match(/<row r="1"[^>]*>(.*?)<\/row>/)![1].matchAll(/<t[^>]*>(.*?)<\/t>/g)].map((item) => item[1]);
-      assert.deepEqual(headers.slice(0, 8), ['图片', '图片 2', '数量', '平台本身尺码', '聚酯类型', '拿货尺码', '店铺', '材质'], '旧方案也固定把发厂字段放前面');
+      assert.deepEqual(headers.slice(0, 8), ['图片', '图片 2', '数量', '拿货尺码', '平台本身尺码', '聚酯类型', '店铺', '材质'], '旧方案也固定把发厂字段放前面，拿货尺码紧邻平台尺码之前');
       assert.match(cottonSheet, /<c r="C2" s="0"><v>2<\/v>/, '件数仍是衣服件数');
-      assert.match(cottonSheet, /<c r="D2"[^>]*><is><t>M<\/t>/, '尺码与衣服对应');
-      assert.doesNotMatch(cottonSheet, /<c r="E2"/, '非聚酯的类型列留空');
-      assert.match(cottonSheet, /<c r="F2"[^>]*><is><t>XL<\/t>/, '棉质 M 的拿货尺码为 XL');
+      assert.match(cottonSheet, /<c r="D2"[^>]*><is><t>XL<\/t>/, '棉质 M 的拿货尺码为 XL');
+      assert.match(cottonSheet, /<c r="E2"[^>]*><is><t>M<\/t>/, '平台尺码与衣服对应');
+      assert.doesNotMatch(cottonSheet, /<c r="F2"/, '非聚酯的类型列留空');
       assert.match(cottonSheet, /<c r="G2"[^>]*><is><t>店铺A<\/t>/, '店铺归属与衣服对应');
       const polyester = unzip(Buffer.from(await (await fetch(`${base}/exports/${exportId}/files/2`)).arrayBuffer()));
       const polyesterSheet = polyester.get('xl/worksheets/sheet1.xml')!.toString();
-      assert.match(polyesterSheet, /<c r="D2"[^>]*><is><t>平板<\/t>/);
-      assert.match(polyesterSheet, /<c r="D3"[^>]*><is><t>针眼<\/t>/);
+      assert.match(polyesterSheet, /<c r="E2"[^>]*><is><t>平板<\/t>/);
+      assert.match(polyesterSheet, /<c r="E3"[^>]*><is><t>针眼<\/t>/);
 
       assert.ok(!cottonSheet.includes('https://example.test/'), '图片列不再写入链接');
       assert.match(cottonSheet, /<drawing r:id="rIdDrawing"\/>/);
@@ -427,7 +427,7 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       assert.match(workbook.get('xl/workbook.xml')!.toString(), /<sheet name="全棉".*<sheet name="涤纶"/);
       assert.ok(workbook.get('xl/worksheets/sheet1.xml')!.toString().includes('单价'));
       const customHeaders = [...workbook.get('xl/worksheets/sheet1.xml')!.toString().match(/<row r="1"[^>]*>(.*?)<\/row>/)![1].matchAll(/<t[^>]*>(.*?)<\/t>/g)].map((item) => item[1]);
-      assert.deepEqual(customHeaders, ['图片', '数量', '平台本身尺码', '聚酯类型', '拿货尺码', '店铺', '材质', '订单号', '单价'], '自定义方案缺少必需字段时自动补齐并放在前面');
+      assert.deepEqual(customHeaders, ['图片', '数量', '拿货尺码', '平台本身尺码', '聚酯类型', '店铺', '材质', '订单号', '单价'], '自定义方案缺少必需字段时自动补齐并放在前面');
 
       const remaining = (await request('/preview', 'POST', query)).data;
       assert.deepEqual(remaining.buckets.flatMap((b: any) => b.lines.map((l: any) => l.orderId)), ['B-2'], '跳过的未识别订单下次仍会出现');

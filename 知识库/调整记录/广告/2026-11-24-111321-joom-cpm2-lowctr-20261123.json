@@ -1,0 +1,12 @@
+{
+  "suggestion_id": "joom-cpm2-lowctr-20261123",
+  "recorded_at": "2026-11-24T11:13:21.622000+08:00",
+  "event_type": "scheduled_readonly_followup",
+  "status": "两款仍0.60，设置本轮已核实，等待完整后窗",
+  "previous_event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/广告/2026-11-24-102227-joom-cpm2-lowctr-20261123.json",
+  "previous_status": "两款仍0.60，未再次降价；历史窗口不是完整改价后结果",
+  "settings_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-24/111321.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-24/111321.json",
+  "review": "未成熟结果继续观察；本轮未授权修改"
+}

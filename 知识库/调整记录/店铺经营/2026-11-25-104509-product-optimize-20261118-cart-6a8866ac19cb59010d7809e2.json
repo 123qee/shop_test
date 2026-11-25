@@ -1,0 +1,12 @@
+{
+  "suggestion_id": "product-optimize-20261118-cart-6a8866ac19cb59010d7809e2",
+  "recorded_at": "2026-11-25T10:45:09.223000+08:00",
+  "event_type": "manual_once_readonly_followup",
+  "status": "保留已有状态；本轮未重新验证该项具体执行、生效或效果，不推进为已执行或关闭",
+  "previous_event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/product-optimize-20261118-cart-6a8866ac19cb59010d7809e2.json",
+  "previous_status": "已保存并刷新核验",
+  "settings_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-25/104509.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-25/104509.json",
+  "review": "新组完整7天及归因回补；商品需资料和真实在售生效证据；未自动执行"
+}

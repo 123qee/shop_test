@@ -29,7 +29,7 @@ test('拿货尺码：棉质逐档映射，其他材质与未知尺码保留原�
   assert.equal(purchaseSizeFor('cotton', 'XXS'), '160');
   assert.equal(purchaseSizeFor('cotton', 'XXXL'), '4XL');
   assert.equal(purchaseSizeFor('cotton', 'XXXXL'), '4XL');
-  assert.deepEqual(orderExportColumns(['orderId', 'size', 'material']), ['imageUrl', 'quantity', 'size', 'polyesterType', 'purchaseSize', 'shop', 'material', 'orderId']);
+  assert.deepEqual(orderExportColumns(['orderId', 'size', 'material']), ['imageUrl', 'quantity', 'purchaseSize', 'size', 'polyesterType', 'shop', 'material', 'orderId']);
 });
 
 test('童装拿货尺码：聚酯保留原值，其他材质增大一码，160 不变', () => {

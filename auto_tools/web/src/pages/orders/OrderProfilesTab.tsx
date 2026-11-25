@@ -773,7 +773,7 @@ export function OrderProfilesTab({ profiles, onChange }: Props) {
             <p className="orders-hint">未确定材质的订单会保留在待确认区，不生成文件，也不会标记为已导出。</p>
           </Section>
 
-          <Section title="导出列" hint="图片、数量、平台本身尺码、聚酯类型、拿货尺码、店铺、材质固定在最前面；其他勾选字段放在后面">
+          <Section title="导出列" hint="图片、数量、拿货尺码、平台本身尺码、聚酯类型、店铺、材质固定在最前面；其他勾选字段放在后面">
             {problems.columns && <FieldError message={problems.columns} />}
             <div className="orders-columns">
               {ORDER_COLUMN_GROUPS.map((group) => {

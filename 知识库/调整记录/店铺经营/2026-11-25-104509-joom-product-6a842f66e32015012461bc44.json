@@ -1,0 +1,12 @@
+{
+  "suggestion_id": "joom-product-6a842f66e32015012461bc44",
+  "recorded_at": "2026-11-25T10:45:09.223000+08:00",
+  "event_type": "manual_once_readonly_followup",
+  "status": "本次在售复查聚酯纤维/棉矛盾仍在，未改",
+  "previous_event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-24-114012-joom-product-6a842f66e32015012461bc44.json",
+  "previous_status": "在售聚酯纤维/棉属性冲突仍存在，比例未确认，本轮未改",
+  "settings_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-25/104509.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-25/104509.json",
+  "review": "新组完整7天及归因回补；商品需资料和真实在售生效证据；未自动执行"
+}

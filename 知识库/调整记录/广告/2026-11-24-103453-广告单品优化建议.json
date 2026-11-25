@@ -1,0 +1,29 @@
+{
+  "platform": "joom",
+  "type": "suggestion",
+  "executed": false,
+  "captured_at": "2026-11-24T02:34:53.237Z",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-24/103453-广告单品优化建议.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-24/103453-广告单品优化建议.json",
+  "recommendations": [
+    {
+      "id": "joom-cpm06-preserve-winners-20261124",
+      "products": [
+        "6a8e93db439ebe0137e1f261",
+        "6a980514f3bf72019f23b034"
+      ],
+      "action": "保留当前0.65；不加预算，先核贡献利润及积累样本"
+    },
+    {
+      "id": "joom-cpm06-no-cart-review-20261124",
+      "product": "6a8ea4c5f788ec01b9bdd504",
+      "action": "观察至约25—30点击；仍无加购/成交再评审0.65→0.60或停此单品",
+      "automatic": false
+    },
+    {
+      "id": "joom-cpm04-cart-review-20261124",
+      "product": "6a8e23aef788ec01b9b32142",
+      "action": "有加购未成交，核运费/规格/尺码后评估；不整组暂停"
+    }
+  ]
+}
