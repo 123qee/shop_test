@@ -1,6 +1,7 @@
 import type {
   MercadoLibreAccountPublic,
   MercadoLibreListingDraft,
+  MercadoLibreListingIndexItem,
   MercadoLibreSellerModel,
   MercadoLibreSitePublic,
 } from '@shared/types';
@@ -110,6 +111,28 @@ export class MercadoLibreRepository {
       ? getDb().prepare(`SELECT * FROM mercadolibre_listings WHERE product_id = ? ORDER BY site_id`).all(productId)
       : getDb().prepare(`SELECT * FROM mercadolibre_listings ORDER BY updated_at DESC`).all();
     return (rows as ListingRow[]).map((row) => this.listingPublic(row));
+  }
+
+  listListingIndex(): MercadoLibreListingIndexItem[] {
+    // Extract only management fields in SQLite; do not materialize complete drafts in Node.
+    return getDb().prepare(`
+      WITH listings AS (
+        SELECT id, product_id, site_id, status, updated_at, last_error,
+          CASE WHEN json_valid(draft) THEN draft ELSE '{}' END AS data
+        FROM mercadolibre_listings
+      )
+      SELECT id, product_id AS productId, site_id AS siteId, status,
+        COALESCE(json_extract(data, '$.title'), '') AS title,
+        json_extract(data, '$.categoryId') AS categoryId,
+        updated_at AS updatedAt, last_error AS lastError,
+        COALESCE((SELECT group_concat(json_extract(value, '$.sku'), ' ')
+          FROM json_each(data, '$.variants') WHERE json_type(value, '$.sku') = 'text'), '') AS skuSearchText
+      FROM listings ORDER BY updated_at DESC, id
+    `).all().map((row) => {
+      const item = row as MercadoLibreListingIndexItem;
+      return { ...item, categoryId: item.categoryId ?? undefined, lastError: item.lastError ?? undefined,
+        skuSearchText: item.skuSearchText?.toLowerCase() };
+    });
   }
 
   findListing(productId: string, accountId: string | undefined, siteId: string): MercadoLibreListingDraft | null {

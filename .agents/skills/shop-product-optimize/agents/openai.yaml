@@ -1,0 +1,6 @@
+interface:
+  display_name: "产品优化（知识库优先）"
+  short_description: "优化电商商品前先查项目规则、真实商品事实和历史记录，再形成有来源的方案"
+  default_prompt: "使用 $shop-product-optimize 优化产品，先查项目知识库，再结合最新数据制定并按授权执行优化。"
+policy:
+  allow_implicit_invocation: true

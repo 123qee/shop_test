@@ -7,21 +7,26 @@ import { PRODUCT_GROUPS, PRODUCT_MATERIALS } from '@shared/product-grouping';
 import { api } from '../../api';
 import { miaoshouApi } from './api';
 import { useMiaoshouWorkspace } from './use-workspace';
+import { useProductCards } from '../../product-cards';
+import { sizedImageSource, fallbackToSourceImage } from '../../image-utils';
+import { SorterImage } from '../../components/SorterImage';
+import { useSorterImages } from '../../use-sorter-images';
 import './miaoshou.css';
 
 export function MiaoshouSorterPage() {
   const { workspace, refresh, error, setError, loading } = useMiaoshouWorkspace();
   const [products, setProducts] = useState<ProductIndexItem[]>([]);
   const [catalogLoading, setCatalogLoading] = useState(true);
-  const [draft, setDraft] = useState<MiaoshouDraft | null>(null);
+  const [loadedDraft, setDraft] = useState<MiaoshouDraft | null>(null);
   const [choice, setChoice] = useState('');
   const [image, setImage] = useState(0);
-  const [failedImage, setFailedImage] = useState('');
+  const [readyImage, setReadyImage] = useState('');
   const [revisited, setRevisited] = useState<Set<string>>(new Set());
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState('');
   const [params, setParams] = useSearchParams();
   const requestId = useRef(0);
+  const openedProduct = useRef<{ id: string; updatedAt: string; version: number }>();
   const source = params.get('source') || '', group = params.get('group') || '', material = params.get('material') || '', scope = params.get('scope') || '';
   const [catalogRetry, setCatalogRetry] = useState(0);
   useEffect(() => { let cancelled = false; setCatalogLoading(true); api.productIndex().then(data => { if (!cancelled) setProducts(data); }).catch(e => { if (!cancelled) setError(e.message); }).finally(() => { if (!cancelled) setCatalogLoading(false); }); return () => { cancelled = true; }; }, [catalogRetry, setError]);
@@ -33,15 +38,32 @@ export function MiaoshouSorterPage() {
   }), [products, byProduct, source, group, material, scope, revisited]);
   useEffect(() => { setRevisited(new Set()); }, [scope, source, group, material]);
   const current = candidates[0];
+  const draft = loadedDraft?.productId === current?.id ? loadedDraft : null;
   const templates = workspace?.templates ?? [];
+  const templateIds = templates.map(template => template.id).join(',');
   const recommendation = templates.find(t => t.groupId && t.groupId === current?.grouping.groupId && (!t.material || t.material === current?.grouping.material));
+  const currentSummary = current ? byProduct.get(current.id) : undefined;
+  const { cards } = useProductCards(candidates.slice(0, 3));
+  const previewSource = draft?.images[image] ?? currentSummary?.image ?? cards.find(card => card.id === current?.id)?.sourceImage;
+  useSorterImages(Boolean(previewSource && readyImage === previewSource), [
+    draft?.images[image + 1],
+    ...candidates.slice(1, 3).map(product => byProduct.get(product.id)?.image ?? cards.find(card => card.id === product.id)?.sourceImage),
+    draft?.images[image + 2],
+  ]);
   useEffect(() => {
+    // 新建的草稿随后进入轮询摘要时，无需重置刚选好的模板或图片。
+    if (current && openedProduct.current?.id === current.id && openedProduct.current.updatedAt === current.updatedAt
+      && loadedDraft?.productId === current.id && loadedDraft.version === currentSummary?.version) return;
     const request = ++requestId.current;
-    setDraft(null); setChoice(''); setImage(0); setFailedImage('');
+    openedProduct.current = undefined;
+    setDraft(null); setChoice(''); setImage(0); setReadyImage('');
     if (!current || !workspace) return;
-    miaoshouApi.open(current.id).then(d => { if (request === requestId.current) { setDraft(d); setChoice(templates.some(t => t.id === d.templateId) ? d.templateId : recommendation?.id ?? ''); } }).catch(e => { if (request === requestId.current) setError(e.message); });
+    const opened = currentSummary ? miaoshouApi.get(currentSummary.id) : miaoshouApi.open(current.id);
+    opened.then(d => { if (request === requestId.current) { openedProduct.current = { id: current.id, updatedAt: current.updatedAt, version: d.version }; setDraft(d); setChoice(templates.some(t => t.id === d.templateId) ? d.templateId : recommendation?.id ?? ''); } }).catch(e => { if (request === requestId.current) setError(e.message); });
     return () => { requestId.current++; };
-  }, [current?.id, current?.updatedAt, recommendation?.id, templates, Boolean(workspace), setError]);
+  // 后台轮询会返回新 templates 数组，内容没变时不能清空并重新加载当前商品。
+  }, [current?.id, current?.updatedAt, currentSummary?.version, Boolean(workspace), catalogRetry, setError]);
+  useEffect(() => { setChoice(value => value && !templates.some(template => template.id === value) ? '' : value); }, [templateIds]);
   function filter(key: string, value: string) { const next = new URLSearchParams(params); if (value) next.set(key, value); else next.delete(key); setParams(next, { replace: true }); }
   async function decide(action: 'ready' | 'skipped') {
     if (!draft || busy) return;
@@ -76,9 +98,10 @@ export function MiaoshouSorterPage() {
       <button className="ghost" disabled={busy} onClick={() => filter('scope', scope === 'skipped' ? '' : 'skipped')}>{scope === 'skipped' ? '返回待分拣' : `回看跳过项（${workspace?.drafts.filter(d => d.status === 'skipped').length ?? 0}）`}</button><span className="ms-muted">当前筛选 {candidates.length} 件</span>
     </div>
     {(loading || catalogLoading || current && !draft) && <div className="empty-state"><strong>正在加载分拣商品…</strong></div>}
+    {current && !draft && previewSource && <div className="ms-sort-grid"><div className="ms-hero"><SorterImage key={current.id} source={previewSource} alt={current.collected.title} onReady={() => setReadyImage(previewSource)} /></div></div>}
     {!loading && !catalogLoading && !current && <div className="empty-state"><strong>当前筛选没有待分拣商品</strong><p>调整来源、分组或材质，或查看暂时跳过的商品。</p><Link to="/miaoshou/queue">打开妙手提交清单</Link></div>}
     {draft && current && <div className="ms-sort-grid">
-      <div><div className="ms-hero">{draft.images[image] && failedImage !== draft.images[image] ? <img key={draft.images[image]} src={draft.images[image]} alt={draft.title} onError={() => setFailedImage(draft.images[image])} /> : <span>{draft.images[image] ? '图片加载失败，可切换图片或查看来源' : '暂无图片'}</span>}</div><div className="ms-thumbnails">{draft.images.map((img, i) => <button key={`${img}-${i}`} aria-label={`查看第 ${i + 1} 张图片`} aria-pressed={image === i} onClick={() => setImage(i)}><img src={img} alt="" loading="lazy" /></button>)}</div><h2 className="ms-product-title">{draft.title}</h2><p className="ms-muted">{draft.source} · {draft.sourceProductId} · {draft.variants.length} 个原始 SKU</p><a href={draft.sourceUrl} target="_blank" rel="noreferrer">查看来源商品 ↗</a></div>
+      <div><div className="ms-hero">{draft.images[image] ? <SorterImage key={`${draft.id}:${draft.images[image]}`} source={draft.images[image]} alt={draft.title} onReady={() => setReadyImage(draft.images[image])} /> : <span>暂无图片</span>}</div><div className="ms-thumbnails">{draft.images.map((img, i) => <button key={`${img}-${i}`} aria-label={`查看第 ${i + 1} 张图片`} aria-pressed={image === i} onClick={() => setImage(i)}><img src={sizedImageSource(img, 'thumb')} alt="" loading="lazy" decoding="async" fetchPriority="low" onError={event => fallbackToSourceImage(event.currentTarget, img)} /></button>)}</div><h2 className="ms-product-title">{draft.title}</h2><p className="ms-muted">{draft.source} · {draft.sourceProductId} · {draft.variants.length} 个原始 SKU</p><a href={draft.sourceUrl} target="_blank" rel="noreferrer">查看来源商品 ↗</a></div>
       <div className="ms-sort-options"><div className="ms-section-head"><h3>选择独立商品模板</h3><Link to="/miaoshou/settings">管理模板</Link></div>
         {!templates.length && <p className="ms-note">模板可以稍后创建。先加入提交清单，再完善净收益、类目和尺码等信息。</p>}
         <div className="ms-template-list"><button className={`ms-template${!choice ? ' selected' : ''}`} aria-pressed={!choice} disabled={busy} onClick={() => setChoice('')}><strong>暂不套用模板</strong><small>保留采集内容，稍后填写</small></button>{templates.map((t, i) => <button key={t.id} className={`ms-template${choice === t.id ? ' selected' : ''}`} aria-pressed={choice === t.id} disabled={busy} onClick={() => setChoice(t.id)}><strong>{i < 9 && <kbd>{i + 1}</kbd>} {t.name}{recommendation?.id === t.id && <span className="ms-good"> · 推荐</span>}</strong><small>净收益 {t.netProceeds == null ? '待填写' : `${t.netProceeds} USD`} · {t.sites.map(s => MIAOSHOU_SITE_NAMES[s]).join(' / ')}</small></button>)}</div>

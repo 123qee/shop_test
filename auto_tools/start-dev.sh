@@ -21,22 +21,18 @@ trap cleanup EXIT INT TERM
 export NVM_DIR="${NVM_DIR:-$HOME/.nvm}"
 # shellcheck disable=SC1091
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" >/dev/null 2>&1 || true
+if command -v nvm >/dev/null 2>&1 && [ -f "$ROOT/../.nvmrc" ]; then
+  nvm use --silent "$(cat "$ROOT/../.nvmrc")" >/dev/null 2>&1 || true
+fi
 
 if ! command -v node >/dev/null 2>&1; then
   echo "❌ 未找到 node，请先安装 Node.js 22 或更高版本"; exit 1
 fi
-if [ "$(node -p 'Number(process.versions.node.split(".")[0])')" -lt 22 ]; then
-  echo "❌ 需要 Node.js 22 或更高版本"; exit 1
-fi
-echo "▶ Node: $(node -v)"
+node "$ROOT/scripts/startup.mjs" check-node
 
 # 依赖
-if [ ! -d "$ROOT/server/node_modules" ]; then
-  echo "📦 安装后端依赖…"; (cd "$ROOT/server" && npm install)
-fi
-if [ ! -d "$ROOT/web/node_modules" ]; then
-  echo "📦 安装网页依赖…"; (cd "$ROOT/web" && npm install)
-fi
+node "$ROOT/scripts/startup.mjs" prepare-server
+node "$ROOT/scripts/startup.mjs" prepare-web-deps
 
 if [ ! -f "$ROOT/server/.env" ]; then
   echo "⚠️  未找到 server/.env，可先执行: cp server/env.sample server/.env"

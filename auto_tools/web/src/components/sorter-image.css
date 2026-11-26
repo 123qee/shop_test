@@ -1,0 +1,5 @@
+.sorter-image { position: relative; width: 100%; height: 100%; min-height: 0; display: grid; place-items: center; overflow: hidden; }
+.sorter-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.sorter-image .sorter-image-full { opacity: 0; }
+.sorter-image .sorter-image-full.is-ready { opacity: 1; }
+.sorter-image-status { position: absolute; left: 10px; bottom: 10px; padding: 4px 8px; border-radius: 8px; background: rgba(17,24,39,.65); color: #fff; font-size: 12px; pointer-events: none; }

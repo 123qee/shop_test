@@ -1,5 +1,7 @@
 ﻿param(
-  [switch]$BuildWeb
+  [switch]$BuildWeb,
+  [switch]$Doctor,
+  [switch]$Prepare
 )
 
 $ErrorActionPreference = 'Stop'
@@ -7,6 +9,7 @@ $root = $PSScriptRoot
 $autoTools = Join-Path $root 'auto_tools'
 $serverDir = Join-Path $autoTools 'server'
 $webDir = Join-Path $autoTools 'web'
+$startup = Join-Path $autoTools 'scripts/startup.mjs'
 $port = if ($env:PORT) { [int]$env:PORT } else { 8787 }
 $ngrokPort = if ($env:NGROK_PORT) { [int]$env:NGROK_PORT } else { $port }
 $ngrokUrl = if ($env:NGROK_URL) { $env:NGROK_URL } else { 'https://java-suburb-kettle.ngrok-free.dev' }
@@ -29,16 +32,10 @@ function Stop-ProcessTree([System.Diagnostics.Process]$Process) {
   }
 }
 
-function Invoke-Npm([string]$Directory, [string[]]$NpmArgs) {
-  Push-Location $Directory
-  try {
-    & npm.cmd @NpmArgs
-    if ($LASTEXITCODE -ne 0) {
-      throw "npm $($NpmArgs -join ' ') 执行失败，退出码：$LASTEXITCODE。"
-    }
-  }
-  finally {
-    Pop-Location
+function Invoke-Startup([string[]]$StartupArgs) {
+  & node $startup @StartupArgs
+  if ($LASTEXITCODE -ne 0) {
+    throw "启动准备失败：$($StartupArgs -join ' ')，退出码：$LASTEXITCODE。"
   }
 }
 
@@ -50,16 +47,6 @@ function Test-ServerReady {
   catch {
     return $false
   }
-}
-
-function Test-ServerDependencies {
-  Push-Location $serverDir
-  try {
-    # 目录可能是上次安装失败留下的；实际加载原生模块才能确认可用。
-    & node -e "try { const p = require('./package.json'); for (const name of [...Object.keys(p.dependencies), 'tsx', 'typescript']) require.resolve(name); if (require('better-sqlite3/package.json').version !== p.dependencies['better-sqlite3']) process.exit(1); const db = require('better-sqlite3')(':memory:'); db.prepare('SELECT 1').get(); db.close(); require('sharp'); } catch { process.exit(1); }" 2>$null
-    return $LASTEXITCODE -eq 0
-  }
-  finally { Pop-Location }
 }
 
 function Show-RecentLog([string]$Path) {
@@ -128,27 +115,26 @@ function Update-Repository {
 }
 
 try {
-  Update-Repository
+  if (-not $Doctor -and -not $Prepare) { Update-Repository }
 
   if (-not (Get-Command node -ErrorAction SilentlyContinue) -or -not (Get-Command npm.cmd -ErrorAction SilentlyContinue)) {
     throw '找不到 Node.js 或 npm。请先安装 Node.js 22 或更高版本，再重新双击启动。'
   }
 
-  $nodeVersion = (& node --version).Trim()
-  $nodeMajor = [int](($nodeVersion -replace '^v', '').Split('.')[0])
-  if ($nodeMajor -lt 22) {
-    throw "需要 Node.js 22 或更高版本，当前版本是：$nodeVersion"
+  if ($Doctor) {
+    & node $startup doctor
+    $scriptExitCode = $LASTEXITCODE
+    exit $scriptExitCode
   }
-  Write-Host "Node.js 版本：$nodeVersion"
+  Invoke-Startup @('check-node')
 
   $webBuild = Join-Path $webDir 'dist/index.html'
-  if ($BuildWeb -or -not (Test-Path $webBuild)) {
-    if (-not (Test-Path (Join-Path $webDir 'node_modules'))) {
-      Write-Host '正在安装网页依赖……'
-      Invoke-Npm $webDir @('install')
-    }
-    Write-Host '正在构建网页……'
-    Invoke-Npm $webDir @('run', 'build')
+  if ($BuildWeb) { Invoke-Startup @('prepare-web', '--force') }
+  else { Invoke-Startup @('prepare-web') }
+  if ($Prepare) {
+    Invoke-Startup @('prepare-server')
+    Write-Host '依赖与网页准备完成，未启动服务。'
+    exit 0
   }
 
   if (Test-ServerReady) {
@@ -159,21 +145,7 @@ try {
     Write-Host "服务已经在运行：http://localhost:$port"
   }
   else {
-    if (-not (Test-ServerDependencies)) {
-      Write-Host '正在安装或修复后端依赖……'
-      # npm 10 从锁文件安装时可能丢失 better-sqlite3 的 gypfile:false，
-      # 错误触发 node-gyp。SQLite 已随包提供预编译文件，无需本机编译。
-      Invoke-Npm $serverDir @('ci', '--ignore-scripts')
-      # 只运行仍需要安装检查的模块脚本，保留 esbuild/sharp 的安装修复能力。
-      Invoke-Npm $serverDir @('rebuild', 'esbuild', 'sharp')
-      if (-not (Test-ServerDependencies)) {
-        throw '后端依赖安装后仍无法加载，请检查上方安装日志。'
-      }
-    }
-    if (-not (Test-Path (Join-Path $webDir 'node_modules'))) {
-      Write-Host '正在安装网页依赖……'
-      Invoke-Npm $webDir @('install')
-    }
+    Invoke-Startup @('prepare-server')
 
     if (-not (Test-Path (Join-Path $serverDir '.env'))) {
       Write-Host '提示：没有找到 server/.env。部分平台功能需要在该文件中配置凭证。' -ForegroundColor Yellow

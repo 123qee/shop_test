@@ -2,7 +2,9 @@
 # 一键启动 auto_tools:装依赖 -> 构建网页(首次/按需)-> 启动后端 -> 启动固定 ngrok 隧道
 # 用法:
 #   ./start.sh              普通启动
-#   ./start.sh --build-web  强制重新构建网页后台(改了 web 代码后用)
+#   ./start.sh --build-web  强制重新构建网页后台（源码变化时默认自动构建）
+#   ./start.sh --doctor     只读检查，不安装、不启动服务
+#   ./start.sh --prepare    只安装依赖与构建网页，不启动服务
 # 可选:
 #   NGROK_URL=https://你的域名.ngrok-free.dev ./start.sh
 #   NGROK_ENABLED=0 ./start.sh       不启动 ngrok
@@ -14,7 +16,16 @@ NGROK_PORT="${NGROK_PORT:-$PORT}"
 NGROK_URL="${NGROK_URL:-https://java-suburb-kettle.ngrok-free.dev}"
 NGROK_ENABLED="${NGROK_ENABLED:-1}"
 FORCE_BUILD_WEB=0
-[ "${1:-}" = "--build-web" ] && FORCE_BUILD_WEB=1
+MODE=start
+for argument in "$@"; do
+  case "$argument" in
+    --build-web) FORCE_BUILD_WEB=1 ;;
+    --doctor) MODE=doctor ;;
+    --prepare) MODE=prepare ;;
+    *) echo "未知参数：$argument"; exit 1 ;;
+  esac
+done
+STARTUP="$ROOT/scripts/startup.mjs"
 
 SERVER_PID=""
 NGROK_PID=""
@@ -35,40 +46,41 @@ cleanup() {
   echo "✅ 已停止"
   exit "$exit_code"
 }
-trap cleanup EXIT INT TERM
-
-# 加载 nvm(若存在),沿用你默认的 Node 版本
+# 加载 nvm（若存在），优先使用项目 .nvmrc 中已安装的版本。
 export NVM_DIR="${NVM_DIR:-$HOME/.nvm}"
 # shellcheck disable=SC1091
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" >/dev/null 2>&1 || true
+if command -v nvm >/dev/null 2>&1 && [ -f "$ROOT/../.nvmrc" ]; then
+  nvm use --silent "$(cat "$ROOT/../.nvmrc")" >/dev/null 2>&1 || true
+fi
 
 if ! command -v node >/dev/null 2>&1; then
   echo "❌ 未找到 node,请先安装 Node.js 22 或更高版本"; exit 1
 fi
-if [ "$(node -p 'Number(process.versions.node.split(".")[0])')" -lt 22 ]; then
-  echo "❌ 需要 Node.js 22 或更高版本"; exit 1
+if [ "$MODE" = doctor ]; then
+  node "$STARTUP" doctor
+  exit $?
 fi
-echo "▶ Node: $(node -v)"
+node "$STARTUP" check-node
 
-# 即使后端已经运行，也要执行显式请求的网页构建。
-if [ "$FORCE_BUILD_WEB" = "1" ] || [ ! -f "$ROOT/web/dist/index.html" ]; then
-  if [ ! -d "$ROOT/web/node_modules" ]; then
-    echo "📦 安装网页依赖…"; (cd "$ROOT/web" && npm install)
-  fi
-  echo "🏗  构建网页后台…"; (cd "$ROOT/web" && npm run build)
+if [ "$FORCE_BUILD_WEB" = "1" ]; then
+  node "$STARTUP" prepare-web --force
+else
+  node "$STARTUP" prepare-web
 fi
+if [ "$MODE" = prepare ]; then
+  node "$STARTUP" prepare-server
+  echo "✅ 依赖与网页准备完成，未启动服务。"
+  exit 0
+fi
+
+trap cleanup EXIT INT TERM
 
 # 检查服务是否已经在运行；如果已运行，只接管 ngrok，不重复启动后端。
-if curl -s -m 2 "http://localhost:$PORT/api/health" >/dev/null 2>&1; then
+if curl -fsS -m 2 "http://localhost:$PORT/api/health" >/dev/null 2>&1; then
   echo "✅ 服务已在运行:http://localhost:$PORT"
 else
-  # 依赖
-  if [ ! -d "$ROOT/server/node_modules" ] || [ ! -d "$ROOT/server/node_modules/sharp" ]; then
-    echo "📦 安装后端依赖…"; (cd "$ROOT/server" && npm install)
-  fi
-  if [ ! -d "$ROOT/web/node_modules" ]; then
-    echo "📦 安装网页依赖…"; (cd "$ROOT/web" && npm install)
-  fi
+  node "$STARTUP" prepare-server
 
   # .env 提醒
   if [ ! -f "$ROOT/server/.env" ]; then
@@ -83,7 +95,7 @@ else
   echo "⏳ 等待后端就绪…"
   READY=0
   for _ in $(seq 1 40); do
-    if curl -s -m 1 "http://localhost:$PORT/api/health" >/dev/null 2>&1; then
+    if curl -fsS -m 1 "http://localhost:$PORT/api/health" >/dev/null 2>&1; then
       READY=1
       break
     fi

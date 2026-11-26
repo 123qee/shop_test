@@ -30,6 +30,7 @@ import type {
   PicuiConfigPublic,
   MercadoLibreConfigPublic,
   MercadoLibreListingDraft,
+  MercadoLibreListingIndexItem,
   MercadoLibreTemplate,
   MercadoLibreValidationResponse,
   TemplateDecisionResult,
@@ -236,6 +237,7 @@ export const api = {
     req<MercadoLibreTemplate[]>(`/api/mercadolibre/templates/${encodeURIComponent(id)}`, { method: 'DELETE' }),
   mercadoLibreListings: (productId?: string) =>
     req<MercadoLibreListingDraft[]>(`/api/mercadolibre/listings${productId ? `?productId=${encodeURIComponent(productId)}` : ''}`),
+  mercadoLibreListingIndex: () => req<MercadoLibreListingIndexItem[]>('/api/mercadolibre/listing-index'),
   createMercadoLibreListings: (productId: string, accountId: string, siteIds: string[], templateIds?: Record<string, string>) =>
     req<MercadoLibreListingDraft[]>('/api/mercadolibre/listings', { method: 'POST', body: JSON.stringify({ productId, accountId, siteIds, templateIds }) }),
   getMercadoLibreListing: (id: string) =>

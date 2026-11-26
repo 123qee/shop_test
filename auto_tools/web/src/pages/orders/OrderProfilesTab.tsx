@@ -51,7 +51,7 @@ const TEMPLATE_MAX = 200;
 
 const LAYOUTS: Array<{ id: OrderExportLayout; label: string; hint: string }> = [
   { id: 'file-per-material', label: '每种材质一个文件', hint: '每种材质各生成一个 Excel，方便分别发给不同的工厂' },
-  { id: 'sheet-per-material', label: '一个文件，每种材质一个工作表', hint: '只生成一个 Excel，每种材质放在单独的工作表里' },
+  { id: 'sheet-per-material', label: '每个平台一个文件，按材质分工作表', hint: '每个平台各生成一个 Excel，每种材质放在单独的工作表里' },
 ];
 
 /** 文件名预览用的示例数量，依次对应各材质 */

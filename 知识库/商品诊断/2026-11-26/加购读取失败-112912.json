@@ -1,0 +1,18 @@
+{
+  "attempted_at": "2026-11-26T11:29:12.153846+08:00",
+  "source": "https://merchant.joom.com/panel/products/all",
+  "request": "读取商品加购，重点核对法国俄罗斯乌克兰",
+  "fresh_data": null,
+  "country_cart_counts": {
+    "FR": null,
+    "RU": null,
+    "UA": null
+  },
+  "attempts": [
+    "建立Chrome任务会话时超时，未读取页面",
+    "改用ChatGPT浏览器工具直接新开用户提供链接，仍超时，未读取页面"
+  ],
+  "reason": "浏览器控制连接未恢复；不能判断是否登录失效，也不能判断页面是否有国家加购交叉字段。",
+  "settings_changed": false,
+  "next_required": "检查本机Chrome及ChatGPT浏览器工具连接状态，恢复后重新读取。"
+}

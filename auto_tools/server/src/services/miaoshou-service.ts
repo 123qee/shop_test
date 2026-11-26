@@ -1,4 +1,4 @@
-import { randomUUID } from 'node:crypto';
+import { createHash, randomUUID } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { getDb } from '../db/index.js';
@@ -95,6 +95,14 @@ export class MiaoshouService {
     return this.publicConfig();
   }
   private client() { const c = this.storedConfig(); if (!c.appKey || !c.appSecret) throw new MiaoshouError('请先在模板与连接中配置妙手应用'); return this.clientFactory(c.appKey, c.appSecret); }
+  /** 订单店铺缓存跟随应用凭证，切换应用后不沿用原账号的店铺。 */
+  orderConnectionId(): string {
+    const c = this.storedConfig();
+    return createHash('sha256').update(JSON.stringify([c.appKey, c.appSecret])).digest('hex');
+  }
+  async orderPackages(query: { page: number; pageSize: number; platform: 'mercadolibre'; shopIds: number[]; gmtModifiedFrom: string; gmtModifiedTo: string }) {
+    return this.client().call(MIAOSHOU_PATHS.orderPackages, query);
+  }
   templates(): MiaoshouTemplate[] { return getDb().prepare('SELECT data FROM miaoshou_templates ORDER BY rowid').all().map(row => parseRow<MiaoshouTemplate>(row)!); }
   saveTemplate(template: MiaoshouTemplate) { getDb().prepare('INSERT INTO miaoshou_templates(id,data) VALUES(?,?) ON CONFLICT(id) DO UPDATE SET data=excluded.data').run(template.id, JSON.stringify(template)); return template; }
   deleteTemplate(id: string) { getDb().prepare('DELETE FROM miaoshou_templates WHERE id=?').run(id); }

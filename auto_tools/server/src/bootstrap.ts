@@ -5,6 +5,7 @@
 import { marketplaceRegistry } from './marketplaces/registry.js';
 import { JoomAdapter } from './marketplaces/joom/adapter.js';
 import { JoomOrderSource } from './marketplaces/joom/orders.js';
+import { MiaoshouOrderSource } from './marketplaces/miaoshou/orders.js';
 import { orderSourceRegistry } from './orders/registry.js';
 import { transformPipeline } from './transforms/pipeline.js';
 import { trimTitleStep } from './transforms/steps/trim-title.js';
@@ -16,6 +17,7 @@ export function bootstrap(): void {
 
   // 订单来源(订单导出);接其他平台时再 register 一个 OrderSourceAdapter
   orderSourceRegistry.register(new JoomOrderSource(joom));
+  orderSourceRegistry.register(new MiaoshouOrderSource());
 
   // 发布前处理管线(顺序执行)
   transformPipeline.use(trimTitleStep);

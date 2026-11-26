@@ -1,0 +1,12 @@
+{
+  "suggestion_id": "joom-cpm2-lowctr-20261123",
+  "recorded_at": "2026-11-26T10:32:07.961000+08:00",
+  "event_type": "manual_once_readonly_followup",
+  "status": "4373已移出；c594仍0.60，昨日3点击1加购0购买，维持",
+  "previous_status": "4373已移出不再降价；c594继续原观察",
+  "previous_event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/广告/2026-11-25-110554-joom-cpm2-lowctr-20261123.json",
+  "settings_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-26/103207.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-26/103207.json",
+  "review": "首次成交低样本，完整7天及归因后复查；商品按真实在售生效看7天转化、14天售后"
+}

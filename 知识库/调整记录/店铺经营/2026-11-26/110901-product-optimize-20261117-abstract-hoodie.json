@@ -1,0 +1,16 @@
+{
+  "recommendation_id": "product-optimize-20261117-abstract-hoodie",
+  "recorded_at": "2026-11-26T11:09:01.072728+08:00",
+  "event_type": "scheduled_followup_unavailable",
+  "status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+  "status_note": "沿用上一条有证据状态，本轮浏览器不可用，未推进执行、发布、生效、复盘或关闭",
+  "previous_event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26-103207-product-optimize-20261117-abstract-hoodie.json",
+  "previous_recorded_at": "2026-11-26T10:32:07.961000+08:00",
+  "product_id": null,
+  "current_observation": null,
+  "missing_reason": "本次ChatGPT自带浏览器连接连续超时；重置连接后读取浏览器状态仍超时，未取得任何新页面或后台数据。非登录失败证据，非销量为零。未使用Kimi或其他浏览器通道绕过。",
+  "settings_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-26/110901.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-26/110901.json",
+  "review": "连接恢复后重新读取当前报表与在售版本；商品按真实生效日起3/7/14天观察，样本不足继续。"
+}

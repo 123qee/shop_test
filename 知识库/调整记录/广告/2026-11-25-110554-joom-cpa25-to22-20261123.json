@@ -1,0 +1,12 @@
+{
+  "suggestion_id": "joom-cpa25-to22-20261123",
+  "recorded_at": "2026-11-25T11:05:54.424000+08:00",
+  "event_type": "scheduled_ad_recheck",
+  "status": "保留同日单品诊断或既有执行状态；本轮活动四窗口无重大变化，未重新核实该项明细",
+  "previous_status": "三款仍22%，累计25%为含历史窗口；等待完整后窗",
+  "previous_event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/广告/2026-11-25-104509-joom-cpa25-to22-20261123.json",
+  "settings_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-25/110554.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-25/110554.json",
+  "review": "完整后窗及归因回补后复评，不重复执行"
+}

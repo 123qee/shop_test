@@ -302,7 +302,7 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
   return (
     <div className="orders-export" hidden={!active}>
       <section className="orders-card">
-        <div className="orders-preview-head"><div><h3>1. 选择店铺，同步订单</h3><span className="orders-hint">默认查看待发货、未导出订单。同步后勾选要导出的商品，未确定材质的商品会自动跳过。</span></div></div>
+        <div className="orders-preview-head"><div><h3>1. 选择店铺，同步订单</h3><span className="orders-hint">默认查看待发货、未导出订单。美客多订单从妙手读取，与 Joom 分别生成 Excel，图片、数量、平台尺码和拿货尺码使用相同格式。</span></div></div>
         <div className="orders-row">
           <span className="orders-label">店铺</span>
           <div className="orders-control orders-shop-groups">
@@ -311,7 +311,9 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
             {sources?.platforms.map((platform) => (
               <div key={platform.platform} className="orders-shop-group">
                 <span className="orders-platform">{platform.label}</span>
+                {platform.error && <span className="orders-error-text">读取店铺失败：{platform.error}</span>}
                 {platform.shops.length === 0 && <span className="orders-hint">还没有店铺</span>}
+                {platform.platform === 'mercadolibre' && <Link className="orders-shop-link" to="/miaoshou/settings">妙手连接设置</Link>}
                 {platform.shops.map((shop) => (
                   <ShopOption
                     key={shopRefKey(shop)}
@@ -468,7 +470,7 @@ function ShopOption({ shop, checked, disabled, onToggle }: {
       <input type="checkbox" checked={checked} disabled={disabled || !shop.connected} onChange={(event) => onToggle(event.target.checked)} />
       <span className="orders-shop-name">{shop.shopName}</span>
       <small>{status}</small>
-      {!shop.connected && <Link className="orders-shop-link" to="/settings">去授权</Link>}
+      {!shop.connected && <Link className="orders-shop-link" to={shop.platform === 'mercadolibre' ? '/miaoshou/settings' : '/settings'}>去授权</Link>}
     </label>
   );
 }

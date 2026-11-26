@@ -70,7 +70,7 @@ export function rangeText(from?: string, to?: string): string {
 
 /** 方案一句话说明，显示在导出页的方案选择旁。 */
 export function describeProfile(profile: OrderExportProfile): string {
-  const layout = profile.layout === 'sheet-per-material' ? '一个文件，每种材质一个工作表' : '每种材质一个文件';
+  const layout = profile.layout === 'sheet-per-material' ? '每个平台一个文件，按材质分工作表' : '每个平台按材质分文件';
   const materials = profile.buckets.map((bucket) => bucket.label).join(' / ');
   const unknown = '未确定材质不导出';
   return `${layout} · ${materials} · ${unknown}`;

@@ -17,19 +17,21 @@ test('商品索引跨页筛选，卡片省略大字段，商品、刊登和预�
     const ids = Array.from({ length: count }, (_, i) => productRepository.create({
       source: i % 2 ? 'allegro' : 'asos', title: `T-Shirt ${i}`, sourceUrl: 'https://example.test/', sourceProductId: String(i),
       description: 'original description', images: ['https://example.test/main'], variants: [
-        { image: 'https://example.test/main', options: { Size: 'M' } }, { image: 'https://example.test/back', options: { Size: 'L' } },
+        { sourceSkuId: `Source-SKU-${i}-M`, image: 'https://example.test/main', options: { Size: 'M' } }, { image: 'https://example.test/back', options: { Size: 'L' } },
       ], attributes: { Material: 'Cotton' }, raw: { unused: 'large source payload' },
     }, 'default', { templateConfirmed: true }).id);
     const first = productCatalogIndex();
     assert.equal(first.items?.length, count);
     assert.equal(first.items?.filter((item) => item.collected.source === 'asos').length, 18);
     assert.equal(first.items?.every((item) => item.templateConfirmed), true);
+    assert.equal(first.items?.find((item) => item.id === ids[30])?.sourceSkuSearchText, 'source-sku-30-m');
     assert.deepEqual(productCatalogIndex(first.version), { version: first.version });
     assert.equal(db.prepare('SELECT count(*) FROM product_catalog_index').pluck().get(), count);
     const secondPage = productCatalogCards(ids.slice(30));
     assert.deepEqual(secondPage.map((item) => item.id), ids.slice(30));
     assert.equal(secondPage[0].imageCount, 2);
     assert.equal(secondPage[0].variantCount, 2);
+    assert.equal(secondPage[0].sourceUrl, 'https://example.test/');
     for (const items of [first.items, secondPage]) {
       const payload = JSON.stringify(items);
       assert(!payload.includes('original description') && !payload.includes('large source payload'));

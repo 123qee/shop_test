@@ -1,0 +1,17 @@
+{
+  "recommendation_id": "daily-20261118-discount-maintain",
+  "recorded_at": "2026-11-26T11:13:40.341183+08:00",
+  "event_type": "scheduled_followup_unavailable",
+  "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+  "status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+  "status_note": "本轮无新页面；不推进执行、效果验证、复盘或关闭，不重复叠加调整幅度。",
+  "previous_event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/广告/2026-11-26-103207-daily-20261118-discount-maintain.json",
+  "previous_recorded_at": "2026-11-26T10:32:07.961000+08:00",
+  "last_proposed_action": null,
+  "current_observation": null,
+  "missing_reason": "本轮ChatGPT自带浏览器工具初始化取得文档后，建立广告会话/读取标签时再次超时，未取得任何后台页面或新指标；与刚才经营巡检已通知的连接阻塞相同。不是账号失效、无投放或销量为零的证据。",
+  "settings_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-26/111340.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-26/111340.json",
+  "review": "连接恢复后先核实际设置及日期；新组完整7天及Joom归因回补后再评估，CPA/CPM和利润口径分开。"
+}

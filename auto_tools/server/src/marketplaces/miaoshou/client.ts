@@ -10,6 +10,7 @@ export const MIAOSHOU_PATHS = {
   detail: prefix + 'get_site_collect_item_info',
   search: prefix + 'search_collect_box_detailList',
   create: prefix + 'create_collect_box_item',
+  orderPackages: '/open/v1/order/package/fetch/search_package_list',
 } as const;
 export class MiaoshouError extends Error {
   constructor(message: string, public status = 400, public uncertain = false) { super(message); }

@@ -1,0 +1,12 @@
+{
+  "suggestion_id": "joom-large-campaign-split-20261123",
+  "recorded_at": "2026-11-25T11:05:54.424000+08:00",
+  "event_type": "scheduled_ad_recheck",
+  "status": "29组1403款全部启用；48点击6加购无购买，继续观察",
+  "previous_status": "29组全开，1403款；累计48点击6加购无购买，继续观察",
+  "previous_event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/广告/2026-11-25-104509-joom-large-campaign-split-20261123.json",
+  "settings_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-25/110554.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-25/110554.json",
+  "review": "完整后窗及归因回补后复评，不重复执行"
+}

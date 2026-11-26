@@ -67,6 +67,8 @@ export interface UnifiedOrder {
   shopId: string;
   shopName: string;
   orderId: string;
+  /** 同一平台订单拆包时的稳定来源标识；仅用于存储，orderId 仍展示平台订单号。 */
+  sourceId?: string;
   status: OrderStatus;
   /** 平台原始状态，如 Joom 的 approved / fulfilledOnline。 */
   rawStatus: string;
@@ -398,7 +400,7 @@ export interface OrderSourceShopInfo {
 }
 
 export interface OrderSourcesResponse {
-  platforms: Array<{ platform: string; label: string; shops: OrderSourceShopInfo[] }>;
+  platforms: Array<{ platform: string; label: string; shops: OrderSourceShopInfo[]; error?: string }>;
   /** 首次同步回溯天数 */
   lookbackDays: number;
 }

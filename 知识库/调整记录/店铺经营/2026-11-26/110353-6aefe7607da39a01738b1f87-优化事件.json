@@ -1,0 +1,27 @@
+{
+  "recommendation_id": "JOOM-PRODUCT-6aefe7607da39a01738b1f87-20261126",
+  "event_type": "saved_pending_review",
+  "product_id": "6aefe7607da39a01738b1f87",
+  "store": "jwh second",
+  "recorded_at": "2026-11-26T11:03:53.198073+08:00",
+  "scope_authorization": "用户要求检查国家类目并优化商品；高销量先不改",
+  "before_title": "AllSaints Backstage graphic logo t-shirt with back print in dark grey",
+  "after_title": "AllSaints Backstage Graphic T-Shirt, Short Sleeve with Back Print, Dark Grey",
+  "changes": "标题明确短袖、背部印花与深灰色；补搜索标签，分行整理描述，清除不适用的皮革标签及无装饰模板文字；保留原棉材质类型及全部尺码数值。后台仍提示产品内容不一致，具体高亮冲突未定位清楚。",
+  "status": "已保存，审核中，未确认在售版本生效",
+  "published_at": null,
+  "variant_verification": {
+    "unchanged": true,
+    "count": 8
+  },
+  "metrics_before": {
+    "purchases": 0.0,
+    "clicks": 18.0,
+    "carts": 8.0,
+    "window_start": "2026-10-29",
+    "window_end": "2026-11-25"
+  },
+  "evidence_screenshot": "b1f87-保存核验.jpg",
+  "remaining_issue": "后台仍提示产品内容不一致，具体高亮冲突未能明确定位；不声称已消除全部属性问题。",
+  "review": "先核验在售版本发布；实际生效后3天看曝光点击、7天看转化、14天看归因售后，样本不足继续观察；不自动改商品或加预算。"
+}

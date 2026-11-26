@@ -147,7 +147,7 @@ const CELL_VALUES: Record<OrderColumnKey, (ctx: CellContext) => XlsxCell> = {
 
 function statsOf(lines: ClassifiedLine[]): { orderCount: number; quantity: number } {
   return {
-    orderCount: new Set(lines.map(({ line }) => line.orderUid)).size,
+    orderCount: new Set(lines.map(({ line }) => JSON.stringify([line.platform, line.shopId, line.orderId]))).size,
     quantity: lines.reduce((sum, { line }) => sum + line.quantity, 0),
   };
 }
@@ -373,42 +373,34 @@ export class OrderExportService {
     now: Date,
     seq: number,
   ): { files: PlanFile[]; renamed: boolean } {
-    const exportable = buckets.filter((bucket) => !bucket.excluded)
-      .map((bucket) => ({ ...bucket, lines: bucket.lines.filter((item) => item.exportSelected) }))
-      .filter((bucket) => bucket.lines.length);
-    const context = {
-      platforms: [...new Set(shops.map((shop) => shop.platformLabel))],
-      shops: shops.map((shop) => shop.shopName),
-      profile: profile.name,
-      now,
-      from: query.from,
-      to: query.to,
-      seq,
-    };
-    let files: PlanFile[];
-    if (profile.layout === 'sheet-per-material') {
-      const stats = statsOf(exportable.flatMap((bucket) => bucket.lines));
-      files = exportable.length
-        ? [{
-          name: renderFileName(profile.fileName, {
-            ...context,
-            material: exportable.map((bucket) => bucket.label).join('+'),
-            count: stats.orderCount,
-            qty: stats.quantity,
-          }),
-          buckets: exportable,
-          ...stats,
-        }]
-        : [];
-    } else {
-      files = exportable.map((bucket) => {
-        const stats = statsOf(bucket.lines);
-        return {
-          name: renderFileName(bucket.fileTemplate, { ...context, material: bucket.label, count: stats.orderCount, qty: stats.quantity }),
-          buckets: [bucket],
-          ...stats,
-        };
-      });
+    // 文件先按平台拆分，再套用原有材质布局。跨平台永远不会进入同一个 Excel。
+    const files: PlanFile[] = [];
+    const platforms = [...new Set(shops.map(shop => shop.platform))];
+    for (const platform of platforms) {
+      const platformShops = shops.filter(shop => shop.platform === platform);
+      const exportable = buckets.filter(bucket => !bucket.excluded)
+        .map(bucket => ({ ...bucket, lines: bucket.lines.filter(item => item.exportSelected && item.line.platform === platform) }))
+        .filter(bucket => bucket.lines.length);
+      const context = {
+        platforms: [orderSourceRegistry.label(platform)], shops: platformShops.map(shop => shop.shopName),
+        profile: profile.name, now, from: query.from, to: query.to, seq,
+      };
+      const nameFor = (template: string, material: string, stats: ReturnType<typeof statsOf>) => {
+        const name = renderFileName(template, { ...context, material, count: stats.orderCount, qty: stats.quantity });
+        // 旧自定义模板可能没有平台变量；美客多文件始终可辨认，单独导 Joom 的文件名不变。
+        return !/\{platform\}/.test(template) && (platforms.length > 1 || platform === 'mercadolibre')
+          ? `${name}_${context.platforms[0]}` : name;
+      };
+      if (profile.layout === 'sheet-per-material') {
+        if (!exportable.length) continue;
+        const stats = statsOf(exportable.flatMap(bucket => bucket.lines));
+        files.push({ name: nameFor(profile.fileName, exportable.map(bucket => bucket.label).join('+'), stats), buckets: exportable, ...stats });
+      } else {
+        for (const bucket of exportable) {
+          const stats = statsOf(bucket.lines);
+          files.push({ name: nameFor(bucket.fileTemplate, bucket.label, stats), buckets: [bucket], ...stats });
+        }
+      }
     }
     // 重名时加 (2)(3) 区分，避免后一个文件覆盖前一个
     const taken = new Set<string>();

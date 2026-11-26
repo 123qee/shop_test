@@ -501,6 +501,12 @@ export interface MercadoLibreListingDraft {
   updatedAt: string;
 }
 
+/** Management lists omit full descriptions, media, attributes and variant payloads. */
+export interface MercadoLibreListingIndexItem extends Pick<MercadoLibreListingDraft,
+  'id' | 'productId' | 'siteId' | 'title' | 'status' | 'categoryId' | 'updatedAt' | 'lastError'> {
+  skuSearchText?: string;
+}
+
 export interface MercadoLibreTemplate {
   id: string;
   name: string;

@@ -26,6 +26,7 @@ function indexItem(record: ProductRecord): ProductIndexItem {
     listingBuckets: [...new Set(buckets.filter((bucket) => bucket !== undefined))],
     hasShopListings: joomListings.length > 0,
     reviewReasons: summarizeJoomIssues(record.joomIssueDetails, record.joomIssues).map((group) => group.key),
+    sourceSkuSearchText: [...new Set(collected.variants.map((variant) => variant.sourceSkuId?.toLowerCase()).filter(Boolean))].join(' '),
   };
 }
 
@@ -64,6 +65,7 @@ export function productCatalogCards(ids: string[]): ProductListCard[] {
       listings: (record.joomListings ?? []).map((listing) => ({ shopId: listing.shopId, bucket: listingBucket(listing) })),
       score: record.qualityScore?.score, image: (edited ?? collected).images[0], price: edited ? edited.variants[0]?.price ?? 0 : collected.price?.value ?? 0,
       currency: edited ? edited.currency : collected.price?.currency ?? '', sourceImage: sourceImages.values().next().value,
+      sourceUrl: collected.sourceUrl,
       imageCount: sourceImages.size, variantCount: collected.variants.length,
     };
   });

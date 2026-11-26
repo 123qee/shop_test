@@ -1,0 +1,1536 @@
+{
+  "automation_id": "joom-2",
+  "run_at": "2026-11-26T11:09:01.072728+08:00",
+  "report_timezone": "Asia/Shanghai",
+  "status": "partial_failure_no_fresh_browser_data",
+  "fresh_metrics": null,
+  "access_failure": {
+    "attempts": 3,
+    "reason": "本次ChatGPT自带浏览器连接连续超时；重置连接后读取浏览器状态仍超时，未取得任何新页面或后台数据。非登录失败证据，非销量为零。未使用Kimi或其他浏览器通道绕过。",
+    "manual_action": "确认本机Chrome已打开且ChatGPT浏览器连接正常；本轮未看到登录或验证码页面，无需提供密码。"
+  },
+  "coverage": [
+    {
+      "platform": "Joom",
+      "store": "jh",
+      "status": "current_read_failed",
+      "reason": "本次ChatGPT自带浏览器连接连续超时；重置连接后读取浏览器状态仍超时，未取得任何新页面或后台数据。非登录失败证据，非销量为零。未使用Kimi或其他浏览器通道绕过。",
+      "current_metrics": null,
+      "prior_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-26/103207.json",
+      "prior_captured_at": "2026-11-26T02:32:07.961Z",
+      "prior_latest_complete_day": "2026-11-24",
+      "platform_timezone": null
+    },
+    {
+      "platform": "Joom",
+      "store": "jwh second",
+      "status": "current_read_failed",
+      "reason": "本次ChatGPT自带浏览器连接连续超时；重置连接后读取浏览器状态仍超时，未取得任何新页面或后台数据。非登录失败证据，非销量为零。未使用Kimi或其他浏览器通道绕过。",
+      "current_metrics": null,
+      "prior_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-26/103207.json",
+      "prior_captured_at": "2026-11-26T02:32:07.961Z",
+      "prior_latest_complete_day": "2026-11-24",
+      "platform_timezone": null
+    },
+    {
+      "platform": "Joom",
+      "store": "Nineteen Wear",
+      "status": "current_read_failed",
+      "reason": "本次ChatGPT自带浏览器连接连续超时；重置连接后读取浏览器状态仍超时，未取得任何新页面或后台数据。非登录失败证据，非销量为零。未使用Kimi或其他浏览器通道绕过。",
+      "current_metrics": null,
+      "prior_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-26/103207.json",
+      "prior_captured_at": "2026-11-26T02:32:07.961Z",
+      "prior_latest_complete_day": "2026-11-24",
+      "platform_timezone": null
+    },
+    {
+      "platform": "MercadoLibre",
+      "site": "MX",
+      "status": "browser_unavailable",
+      "reason": "本次ChatGPT自带浏览器连接连续超时；重置连接后读取浏览器状态仍超时，未取得任何新页面或后台数据。非登录失败证据，非销量为零。未使用Kimi或其他浏览器通道绕过。",
+      "metrics": null,
+      "account_verified": false,
+      "window_start": null,
+      "window_end": null,
+      "currency": null,
+      "platform_timezone": null
+    },
+    {
+      "platform": "MercadoLibre",
+      "site": "BR",
+      "status": "browser_unavailable",
+      "reason": "本次ChatGPT自带浏览器连接连续超时；重置连接后读取浏览器状态仍超时，未取得任何新页面或后台数据。非登录失败证据，非销量为零。未使用Kimi或其他浏览器通道绕过。",
+      "metrics": null,
+      "account_verified": false,
+      "window_start": null,
+      "window_end": null,
+      "currency": null,
+      "platform_timezone": null
+    },
+    {
+      "platform": "MercadoLibre",
+      "site": "AR",
+      "status": "browser_unavailable",
+      "reason": "本次ChatGPT自带浏览器连接连续超时；重置连接后读取浏览器状态仍超时，未取得任何新页面或后台数据。非登录失败证据，非销量为零。未使用Kimi或其他浏览器通道绕过。",
+      "metrics": null,
+      "account_verified": false,
+      "window_start": null,
+      "window_end": null,
+      "currency": null,
+      "platform_timezone": null
+    },
+    {
+      "platform": "MercadoLibre",
+      "site": "CL",
+      "status": "browser_unavailable",
+      "reason": "本次ChatGPT自带浏览器连接连续超时；重置连接后读取浏览器状态仍超时，未取得任何新页面或后台数据。非登录失败证据，非销量为零。未使用Kimi或其他浏览器通道绕过。",
+      "metrics": null,
+      "account_verified": false,
+      "window_start": null,
+      "window_end": null,
+      "currency": null,
+      "platform_timezone": null
+    },
+    {
+      "platform": "MercadoLibre",
+      "site": "CO",
+      "status": "browser_unavailable",
+      "reason": "本次ChatGPT自带浏览器连接连续超时；重置连接后读取浏览器状态仍超时，未取得任何新页面或后台数据。非登录失败证据，非销量为零。未使用Kimi或其他浏览器通道绕过。",
+      "metrics": null,
+      "account_verified": false,
+      "window_start": null,
+      "window_end": null,
+      "currency": null,
+      "platform_timezone": null
+    }
+  ],
+  "excluded_sites": [
+    "UY"
+  ],
+  "prior_joom_data": {
+    "is_fresh_this_run": false,
+    "source_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-26/103207.json",
+    "original_captured_at": "2026-11-26T02:32:07.961Z",
+    "windows": {
+      "d28": {
+        "source": "https://merchant.joom.com/panel/analytics/orders",
+        "captured_at": "2026-11-26T02:30:01.752Z",
+        "window_start": "2026-10-28",
+        "window_end": "2026-11-24",
+        "previous_start": "2026-09-30",
+        "previous_end": "2026-10-27",
+        "platform_timezone": null,
+        "currency": "USD",
+        "data_updated_at": "2026-11-25 12:59:01（页面时区未核）",
+        "completeness": "全部3家可访问店铺，终页",
+        "rows": [
+          {
+            "store": "jwh second",
+            "purchases": [
+              105.0,
+              13.0
+            ],
+            "gmv": [
+              757.56,
+              112.93
+            ],
+            "impressions": [
+              39928.0,
+              11724.0
+            ],
+            "clicks": [
+              2572.0,
+              693.0
+            ],
+            "ctr": [
+              0.0644,
+              0.0591
+            ],
+            "cr": [
+              0.0408,
+              0.018799999999999997
+            ]
+          },
+          {
+            "store": "jh",
+            "purchases": [
+              19.0,
+              6.0
+            ],
+            "gmv": [
+              241.0,
+              47.0
+            ],
+            "impressions": [
+              21544.0,
+              8696.0
+            ],
+            "clicks": [
+              1051.0,
+              330.0
+            ],
+            "ctr": [
+              0.048799999999999996,
+              0.0379
+            ],
+            "cr": [
+              0.0181,
+              0.0182
+            ]
+          },
+          {
+            "store": "Nineteen Wear",
+            "purchases": [
+              194.0,
+              221.0
+            ],
+            "gmv": [
+              988.21,
+              1057.18
+            ],
+            "impressions": [
+              137617.0,
+              109566.0
+            ],
+            "clicks": [
+              4583.0,
+              5134.0
+            ],
+            "ctr": [
+              0.0333,
+              0.046900000000000004
+            ],
+            "cr": [
+              0.042300000000000004,
+              0.043
+            ]
+          }
+        ],
+        "totals": {
+          "purchases": [
+            318.0,
+            240.0
+          ],
+          "gmv": [
+            1986.77,
+            1217.11
+          ],
+          "impressions": [
+            199089.0,
+            129986.0
+          ],
+          "clicks": [
+            8206.0,
+            6157.0
+          ]
+        }
+      },
+      "d7": {
+        "source": "https://merchant.joom.com/panel/analytics/orders?dateRange=%5B%222026-11-17T16%3A00%3A00.000Z%22%2C%222026-11-24T15%3A59%3A59.999Z%22%5D",
+        "captured_at": "2026-11-26T02:30:16.751Z",
+        "window_start": "2026-11-18",
+        "window_end": "2026-11-24",
+        "previous_start": "2026-11-11",
+        "previous_end": "2026-11-17",
+        "platform_timezone": null,
+        "currency": "USD",
+        "data_updated_at": "2026-11-25 12:59:01（页面时区未核）",
+        "completeness": "全部3家可访问店铺，终页",
+        "rows": [
+          {
+            "store": "jh",
+            "purchases": [
+              8.0,
+              3.0
+            ],
+            "gmv": [
+              113.0,
+              34.0
+            ],
+            "impressions": [
+              7647.0,
+              5707.0
+            ],
+            "clicks": [
+              273.0,
+              269.0
+            ],
+            "ctr": [
+              0.035699999999999996,
+              0.0471
+            ],
+            "cr": [
+              0.029300000000000003,
+              0.011200000000000002
+            ]
+          },
+          {
+            "store": "jwh second",
+            "purchases": [
+              45.0,
+              33.0
+            ],
+            "gmv": [
+              334.3,
+              248.34
+            ],
+            "impressions": [
+              15631.0,
+              11048.0
+            ],
+            "clicks": [
+              1043.0,
+              677.0
+            ],
+            "ctr": [
+              0.0667,
+              0.0613
+            ],
+            "cr": [
+              0.0431,
+              0.0487
+            ]
+          },
+          {
+            "store": "Nineteen Wear",
+            "purchases": [
+              76.0,
+              45.0
+            ],
+            "gmv": [
+              412.42,
+              209.6
+            ],
+            "impressions": [
+              42465.0,
+              39128.0
+            ],
+            "clicks": [
+              1332.0,
+              1183.0
+            ],
+            "ctr": [
+              0.031400000000000004,
+              0.0302
+            ],
+            "cr": [
+              0.0571,
+              0.038
+            ]
+          }
+        ],
+        "totals": {
+          "purchases": [
+            129.0,
+            81.0
+          ],
+          "gmv": [
+            859.72,
+            491.94
+          ],
+          "impressions": [
+            65743.0,
+            55883.0
+          ],
+          "clicks": [
+            2648.0,
+            2129.0
+          ]
+        }
+      },
+      "latest_day": {
+        "source": "https://merchant.joom.com/panel/analytics/orders?dateRange=%5B%222026-11-23T16%3A00%3A00.000Z%22%2C%222026-11-24T15%3A59%3A59.999Z%22%5D",
+        "captured_at": "2026-11-26T02:30:33.617Z",
+        "window_start": "2026-11-24",
+        "window_end": "2026-11-24",
+        "previous_start": "2026-11-23",
+        "previous_end": "2026-11-23",
+        "platform_timezone": null,
+        "currency": "USD",
+        "data_updated_at": "2026-11-25 12:59:01（页面时区未核）",
+        "completeness": "全部3家可访问店铺，终页",
+        "rows": [
+          {
+            "store": "Nineteen Wear",
+            "purchases": [
+              9.0,
+              17.0
+            ],
+            "gmv": [
+              54.94,
+              76.33
+            ],
+            "impressions": [
+              5129.0,
+              4962.0
+            ],
+            "clicks": [
+              155.0,
+              235.0
+            ],
+            "ctr": [
+              0.0302,
+              0.047400000000000005
+            ],
+            "cr": [
+              0.0581,
+              0.0723
+            ]
+          },
+          {
+            "store": "jh",
+            "purchases": [
+              2.0,
+              1.0
+            ],
+            "gmv": [
+              40.0,
+              20.0
+            ],
+            "impressions": [
+              1085.0,
+              1015.0
+            ],
+            "clicks": [
+              61.0,
+              29.0
+            ],
+            "ctr": [
+              0.0562,
+              0.0286
+            ],
+            "cr": [
+              0.032799999999999996,
+              0.0345
+            ]
+          },
+          {
+            "store": "jwh second",
+            "purchases": [
+              6.0,
+              3.0
+            ],
+            "gmv": [
+              39.98,
+              24.98
+            ],
+            "impressions": [
+              2621.0,
+              2380.0
+            ],
+            "clicks": [
+              153.0,
+              139.0
+            ],
+            "ctr": [
+              0.0584,
+              0.0584
+            ],
+            "cr": [
+              0.0392,
+              0.0216
+            ]
+          }
+        ],
+        "totals": {
+          "purchases": [
+            17.0,
+            21.0
+          ],
+          "gmv": [
+            134.92,
+            121.31
+          ],
+          "impressions": [
+            8835.0,
+            8357.0
+          ],
+          "clicks": [
+            369.0,
+            403.0
+          ]
+        }
+      }
+    },
+    "countries": {
+      "source": "https://merchant.joom.com/panel/analytics/orders/countries?dateRange=%5B%222026-11-17T16%3A00%3A00.000Z%22%2C%222026-11-24T15%3A59%3A59.999Z%22%5D",
+      "captured_at": "2026-11-26T02:30:52.062Z",
+      "window_start": "2026-11-18",
+      "window_end": "2026-11-24",
+      "platform_timezone": null,
+      "currency": "USD",
+      "data_updated_at": "2026-11-25 12:38:28",
+      "completeness": "各店13个可见国家，非全部目的国",
+      "rows": [
+        {
+          "store": "jwh second",
+          "country": "斯洛伐克",
+          "purchases": 1.0,
+          "impressions": 325.0,
+          "clicks": 15.0,
+          "gmv": 9.99
+        },
+        {
+          "store": "jwh second",
+          "country": "波兰",
+          "purchases": 4.0,
+          "impressions": 762.0,
+          "clicks": 56.0,
+          "gmv": 39.97
+        },
+        {
+          "store": "jwh second",
+          "country": "匈牙利",
+          "purchases": 1.0,
+          "impressions": 562.0,
+          "clicks": 73.0,
+          "gmv": 9.99
+        },
+        {
+          "store": "jwh second",
+          "country": "意大利",
+          "purchases": 2.0,
+          "impressions": 204.0,
+          "clicks": 25.0,
+          "gmv": 19.98
+        },
+        {
+          "store": "jwh second",
+          "country": "西班牙",
+          "purchases": 2.0,
+          "impressions": 781.0,
+          "clicks": 41.0,
+          "gmv": 10.0
+        },
+        {
+          "store": "jwh second",
+          "country": "德国",
+          "purchases": 12.0,
+          "impressions": 1804.0,
+          "clicks": 188.0,
+          "gmv": 94.93
+        },
+        {
+          "store": "jwh second",
+          "country": "法国",
+          "purchases": 4.0,
+          "impressions": 1365.0,
+          "clicks": 98.0,
+          "gmv": 34.97
+        },
+        {
+          "store": "jwh second",
+          "country": "瑞典",
+          "purchases": 0.0,
+          "impressions": 620.0,
+          "clicks": 45.0,
+          "gmv": 0.0
+        },
+        {
+          "store": "jwh second",
+          "country": "荷兰",
+          "purchases": 0.0,
+          "impressions": 441.0,
+          "clicks": 20.0,
+          "gmv": 0.0
+        },
+        {
+          "store": "jwh second",
+          "country": "俄罗斯",
+          "purchases": 0.0,
+          "impressions": 1947.0,
+          "clicks": 54.0,
+          "gmv": 0.0
+        },
+        {
+          "store": "jwh second",
+          "country": "英国",
+          "purchases": 15.0,
+          "impressions": 1046.0,
+          "clicks": 132.0,
+          "gmv": 79.5
+        },
+        {
+          "store": "jwh second",
+          "country": "捷克",
+          "purchases": 0.0,
+          "impressions": 784.0,
+          "clicks": 48.0,
+          "gmv": 0.0
+        },
+        {
+          "store": "jwh second",
+          "country": "乌兹别克斯坦",
+          "purchases": 1.0,
+          "impressions": 1551.0,
+          "clicks": 70.0,
+          "gmv": 9.99
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "德国",
+          "purchases": 8.0,
+          "impressions": 4464.0,
+          "clicks": 109.0,
+          "gmv": 44.44
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "乌兹别克斯坦",
+          "purchases": 0.0,
+          "impressions": 1885.0,
+          "clicks": 52.0,
+          "gmv": 0.0
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "意大利",
+          "purchases": 4.0,
+          "impressions": 1202.0,
+          "clicks": 61.0,
+          "gmv": 32.97
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "英国",
+          "purchases": 12.0,
+          "impressions": 3213.0,
+          "clicks": 124.0,
+          "gmv": 51.91
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "瑞典",
+          "purchases": 7.0,
+          "impressions": 2489.0,
+          "clicks": 90.0,
+          "gmv": 35.97
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "波兰",
+          "purchases": 4.0,
+          "impressions": 2430.0,
+          "clicks": 79.0,
+          "gmv": 27.94
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "俄罗斯",
+          "purchases": 0.0,
+          "impressions": 4312.0,
+          "clicks": 86.0,
+          "gmv": 0.0
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "西班牙",
+          "purchases": 3.0,
+          "impressions": 1762.0,
+          "clicks": 61.0,
+          "gmv": 18.52
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "法国",
+          "purchases": 4.0,
+          "impressions": 2949.0,
+          "clicks": 73.0,
+          "gmv": 21.96
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "斯洛伐克",
+          "purchases": 3.0,
+          "impressions": 711.0,
+          "clicks": 45.0,
+          "gmv": 17.97
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "匈牙利",
+          "purchases": 2.0,
+          "impressions": 1244.0,
+          "clicks": 42.0,
+          "gmv": 14.49
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "荷兰",
+          "purchases": 8.0,
+          "impressions": 1600.0,
+          "clicks": 78.0,
+          "gmv": 38.44
+        },
+        {
+          "store": "Nineteen Wear",
+          "country": "捷克",
+          "purchases": 6.0,
+          "impressions": 2408.0,
+          "clicks": 75.0,
+          "gmv": 29.94
+        },
+        {
+          "store": "jh",
+          "country": "德国",
+          "purchases": 0.0,
+          "impressions": 770.0,
+          "clicks": 39.0,
+          "gmv": 0.0
+        },
+        {
+          "store": "jh",
+          "country": "英国",
+          "purchases": 2.0,
+          "impressions": 564.0,
+          "clicks": 16.0,
+          "gmv": 25.0
+        },
+        {
+          "store": "jh",
+          "country": "西班牙",
+          "purchases": 0.0,
+          "impressions": 625.0,
+          "clicks": 21.0,
+          "gmv": 0.0
+        },
+        {
+          "store": "jh",
+          "country": "法国",
+          "purchases": 1.0,
+          "impressions": 624.0,
+          "clicks": 19.0,
+          "gmv": 20.0
+        },
+        {
+          "store": "jh",
+          "country": "捷克",
+          "purchases": 1.0,
+          "impressions": 392.0,
+          "clicks": 14.0,
+          "gmv": 20.0
+        },
+        {
+          "store": "jh",
+          "country": "俄罗斯",
+          "purchases": 0.0,
+          "impressions": 1095.0,
+          "clicks": 28.0,
+          "gmv": 0.0
+        },
+        {
+          "store": "jh",
+          "country": "荷兰",
+          "purchases": 1.0,
+          "impressions": 277.0,
+          "clicks": 8.0,
+          "gmv": 4.0
+        },
+        {
+          "store": "jh",
+          "country": "瑞典",
+          "purchases": 1.0,
+          "impressions": 297.0,
+          "clicks": 10.0,
+          "gmv": 4.0
+        },
+        {
+          "store": "jh",
+          "country": "乌兹别克斯坦",
+          "purchases": 0.0,
+          "impressions": 487.0,
+          "clicks": 8.0,
+          "gmv": 0.0
+        },
+        {
+          "store": "jh",
+          "country": "斯洛伐克",
+          "purchases": 0.0,
+          "impressions": 143.0,
+          "clicks": 2.0,
+          "gmv": 0.0
+        },
+        {
+          "store": "jh",
+          "country": "匈牙利",
+          "purchases": 1.0,
+          "impressions": 231.0,
+          "clicks": 7.0,
+          "gmv": 20.0
+        },
+        {
+          "store": "jh",
+          "country": "波兰",
+          "purchases": 0.0,
+          "impressions": 375.0,
+          "clicks": 17.0,
+          "gmv": 0.0
+        },
+        {
+          "store": "jh",
+          "country": "意大利",
+          "purchases": 0.0,
+          "impressions": 214.0,
+          "clicks": 21.0,
+          "gmv": 0.0
+        }
+      ]
+    },
+    "product_health": {
+      "captured_at": "2026-11-26T02:31:03.799Z",
+      "links": [
+        {
+          "href": "/panel/products/errors",
+          "text": "限售\n2,698"
+        }
+      ],
+      "source": "https://merchant.joom.com/panel/products/all?limit=100",
+      "text": "产品\n添加产品\n全部\n6,131\n在售\n3,401\n未发布\n3\n限售\n2,698\n待优化\n2,274\n缺货\n0\n已经有一个准备好的列表了吗？尝试使用AI导入\n快速将CSV或Excel文件转换为Joom格式。AI检测字段，检查数据，并帮助准确上传产品。\n尝试使用AI导入\n了解更多\n待评级产品限制：9,000\n已发布\n可用\n3401\n5,599\n等级\n待评\n优选\n5\n54\n价格突涨\n已发布\n已发布总数\n2\n3,401\n价格突涨风险\n已发布\n已发布总数\n59\n3,401\n欧盟地区产品\n显示详情\n已阻止\n可用\n3,034\n3,050\nIP地区产品\n显示详情\n已阻止\n可用\n3,043\n3,041\n筛选：\n店铺：所有\n产品ID\nSKU\n类目\n有在售版本\n状态\n诊断\n限售地区\n库存\n等级\n定价偏高问题\n添加筛选器\n产品\n6,131\n导出\n批量操作\n图片\n产品名称\n等级\n内容质量\nID\n相似组ID\n店铺\n状态\n在售版本\nSKU\n价格\n已启用\n根类目\n叶子类目\n可用于促销\nJoom广告活动\n订单\n\t\n\t\nSummer New Tennis T-shirt Daily Loose Quick-drying Breathable Short-sleeved Men's And Women's Outdoor Running Sports Tops\n\t\n基础\n8/100\n\t\n部分内容\n\t\n6a841ce30fa41b01326419ef\n\t\n6ae22c2c27ab98099cbeb41b\n1个产品\n\t\nNineteen Wear\n\t\n待优化\n1\n\t\n是\n\t\nTXYL0087\n\t\nUS$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n\t\nUnisex Clothing & Accessorie"
+    },
+    "refunds": {
+      "source": "https://merchant.joom.com/panel/analytics/refunds",
+      "captured_at": "2026-11-26T02:31:52.139Z",
+      "window_start": "2026-09-30",
+      "window_end": "2026-11-24",
+      "platform_timezone": null,
+      "currency": "USD",
+      "data_updated_at": "2026-11-25 12:58:50",
+      "rows": [
+        {
+          "cells": [
+            "jh",
+            "2026/9/30 — 2026/11/24",
+            "25",
+            "US$288",
+            "1",
+            "US$10",
+            "4%",
+            "3.47%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "Nineteen Wear",
+            "2026/9/30 — 2026/11/24",
+            "415",
+            "US$2,045.39",
+            "17",
+            "US$79.35",
+            "4.1%",
+            "3.88%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "jwh second",
+            "2026/9/30 — 2026/11/24",
+            "118",
+            "US$870.49",
+            "2",
+            "US$14.99",
+            "1.69%",
+            "1.72%",
+            ""
+          ]
+        }
+      ]
+    }
+  },
+  "recent_authorized_manual_product_edits": {
+    "source": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-26/国家类目与商品优化-110353/分析与优化报告.md",
+    "recorded_at": "2026-11-26T11:03:53.198073+08:00",
+    "edits": [
+      {
+        "recommendation_id": "JOOM-PRODUCT-6af2725f91f35a019a244aea-20261126",
+        "event_type": "saved_pending_review",
+        "product_id": "6af2725f91f35a019a244aea",
+        "store": "jwh second",
+        "recorded_at": "2026-11-26T11:03:53.198073+08:00",
+        "scope_authorization": "用户要求检查国家类目并优化商品；高销量先不改",
+        "before_title": "Fashion Girls Clothes Girl Group KATSEYE Zipper Hoodie Boys Fashion Hooded Sweatshirt 2026 New Kids KATSEYE Zip UP Casual Tops",
+        "after_title": "Kids' KATSEYE Graphic Zip-Up Hoodie, Long Sleeve Hooded Sweatshirt",
+        "changes": "精简标题、补搜索标签，描述圆领改连帽、儿童毛衣改拉链卫衣；仅此款按用户确认100%棉，将结构化材质规范为cotton 100%，删除重复材质行以消除保存校验冲突。",
+        "status": "已保存，审核中，未确认在售版本生效",
+        "published_at": null,
+        "variant_verification": {
+          "unchanged": true,
+          "before_count": 595,
+          "after_count": 595
+        },
+        "metrics_before": {
+          "purchases": 0.0,
+          "clicks": 15.0,
+          "carts": 5.0,
+          "window_start": "2026-10-29",
+          "window_end": "2026-11-25"
+        },
+        "evidence_screenshot": "44aea-保存核验.jpg",
+        "remaining_issue": null,
+        "review": "先核验在售版本发布；实际生效后3天看曝光点击、7天看转化、14天看归因售后，样本不足继续观察；不自动改商品或加预算。"
+      },
+      {
+        "recommendation_id": "JOOM-PRODUCT-6af26eae91f35a019a24246a-20261126",
+        "event_type": "saved_pending_review",
+        "product_id": "6af26eae91f35a019a24246a",
+        "store": "jwh second",
+        "recorded_at": "2026-11-26T11:03:53.198073+08:00",
+        "scope_authorization": "用户要求检查国家类目并优化商品；高销量先不改",
+        "before_title": "Hunters Huntrix KPop Demon Hoodie Kids Hooded Sweatshirt Baby Girls Pullover Hoodies Boys Fashion Outerwear Children's Clothing",
+        "after_title": "Kids' Huntrix Graphic Pullover Hoodie, Long Sleeve Hooded Sweatshirt",
+        "changes": "精简标题、补搜索标签，描述圆领改连帽、儿童毛衣改套头卫衣；保留原结构化cotton，删除未经用户确认且与旧字段冲突的100%描述，未新增材质比例。",
+        "status": "已保存，审核中，未确认在售版本生效",
+        "published_at": null,
+        "variant_verification": {
+          "unchanged": true,
+          "method": "保存前后详情页完整变型区域文本比较"
+        },
+        "metrics_before": {
+          "purchases": 0.0,
+          "clicks": 23.0,
+          "carts": 9.0,
+          "window_start": "2026-10-29",
+          "window_end": "2026-11-25"
+        },
+        "evidence_screenshot": "4246a-保存核验.jpg",
+        "remaining_issue": null,
+        "review": "先核验在售版本发布；实际生效后3天看曝光点击、7天看转化、14天看归因售后，样本不足继续观察；不自动改商品或加预算。"
+      },
+      {
+        "recommendation_id": "JOOM-PRODUCT-6aefe7607da39a01738b1f87-20261126",
+        "event_type": "saved_pending_review",
+        "product_id": "6aefe7607da39a01738b1f87",
+        "store": "jwh second",
+        "recorded_at": "2026-11-26T11:03:53.198073+08:00",
+        "scope_authorization": "用户要求检查国家类目并优化商品；高销量先不改",
+        "before_title": "AllSaints Backstage graphic logo t-shirt with back print in dark grey",
+        "after_title": "AllSaints Backstage Graphic T-Shirt, Short Sleeve with Back Print, Dark Grey",
+        "changes": "标题明确短袖、背部印花与深灰色；补搜索标签，分行整理描述，清除不适用的皮革标签及无装饰模板文字；保留原棉材质类型及全部尺码数值。后台仍提示产品内容不一致，具体高亮冲突未定位清楚。",
+        "status": "已保存，审核中，未确认在售版本生效",
+        "published_at": null,
+        "variant_verification": {
+          "unchanged": true,
+          "count": 8
+        },
+        "metrics_before": {
+          "purchases": 0.0,
+          "clicks": 18.0,
+          "carts": 8.0,
+          "window_start": "2026-10-29",
+          "window_end": "2026-11-25"
+        },
+        "evidence_screenshot": "b1f87-保存核验.jpg",
+        "remaining_issue": "后台仍提示产品内容不一致，具体高亮冲突未能明确定位；不声称已消除全部属性问题。",
+        "review": "先核验在售版本发布；实际生效后3天看曝光点击、7天看转化、14天看归因售后，样本不足继续观察；不自动改商品或加预算。"
+      }
+    ],
+    "is_automation_action": false,
+    "review_rechecked_this_run": false
+  },
+  "followups": [
+    {
+      "recommendation_id": "product-optimize-20261117-abstract-hoodie",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261117-abstract-hoodie.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261117-circuit-tee",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261117-circuit-tee.json"
+    },
+    {
+      "recommendation_id": "product-optimize-r2-20261117-dolphin",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-r2-20261117-dolphin.json"
+    },
+    {
+      "recommendation_id": "product-optimize-r2-20261117-bikini",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-r2-20261117-bikini.json"
+    },
+    {
+      "recommendation_id": "product-optimize-r2-20261117-hooded",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-r2-20261117-hooded.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-6aa1163e365a0701ec26bdd4",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-6aa1163e365a0701ec26bdd4.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-6aba48d42611ba0106b21b88",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-6aba48d42611ba0106b21b88.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-6aba4901772f9801e29c5a45",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-6aba4901772f9801e29c5a45.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-6aba59cdf8dad801a1e28955",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-6aba59cdf8dad801a1e28955.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-6ac7a3665c2438011cc81578",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-6ac7a3665c2438011cc81578.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-6aa27a6433883401e8442178",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-6aa27a6433883401e8442178.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-6a9d36e83f8ce801f4d97508",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-6a9d36e83f8ce801f4d97508.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-6aa1265e2da70501751a27e9",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-6aa1265e2da70501751a27e9.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-6a87c88c93749b019b381e23",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-6a87c88c93749b019b381e23.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-6ac7a4095c2438011cc838fc",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-6ac7a4095c2438011cc838fc.json"
+    },
+    {
+      "recommendation_id": "product-optimize-next10-20261118-6ad0b7d1303ef201d3a3f24b",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-next10-20261118-6ad0b7d1303ef201d3a3f24b.json"
+    },
+    {
+      "recommendation_id": "product-optimize-next10-20261118-6abdb3ae1bfb960155e400ad",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-next10-20261118-6abdb3ae1bfb960155e400ad.json"
+    },
+    {
+      "recommendation_id": "product-optimize-next10-20261118-6aba58305ef7d90176396d41",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-next10-20261118-6aba58305ef7d90176396d41.json"
+    },
+    {
+      "recommendation_id": "product-optimize-next10-20261118-6a9d36ac3f8ce801f4d96f4d",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-next10-20261118-6a9d36ac3f8ce801f4d96f4d.json"
+    },
+    {
+      "recommendation_id": "product-optimize-next10-20261118-6a980c1bd39fbe01c00051c8",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-next10-20261118-6a980c1bd39fbe01c00051c8.json"
+    },
+    {
+      "recommendation_id": "product-optimize-next10-20261118-6aa1168d2da705017517684d",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-next10-20261118-6aa1168d2da705017517684d.json"
+    },
+    {
+      "recommendation_id": "product-optimize-next10-20261118-6a9d41b7ad688a01ff60ef65",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-next10-20261118-6a9d41b7ad688a01ff60ef65.json"
+    },
+    {
+      "recommendation_id": "product-optimize-next10-20261118-6aba5a6e45408d0115f00d34",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-next10-20261118-6aba5a6e45408d0115f00d34.json"
+    },
+    {
+      "recommendation_id": "product-optimize-next10-20261118-6a9c2a3a3f8ce801f4d01f8e",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-next10-20261118-6a9c2a3a3f8ce801f4d01f8e.json"
+    },
+    {
+      "recommendation_id": "product-optimize-next10-20261118-6a8cd88e8f3b2901f216fe60",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-next10-20261118-6a8cd88e8f3b2901f216fe60.json"
+    },
+    {
+      "recommendation_id": "baseline-20261117-ml-policy",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-baseline-20261117-ml-policy.json"
+    },
+    {
+      "recommendation_id": "baseline-20261117-nineteen",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-baseline-20261117-nineteen.json"
+    },
+    {
+      "recommendation_id": "ml-br-conversion",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-ml-br-conversion.json"
+    },
+    {
+      "recommendation_id": "ml-mx-ad-reputation",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-ml-mx-ad-reputation.json"
+    },
+    {
+      "recommendation_id": "store-conversion-20261118",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-store-conversion-20261118.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b3-6a9d3655ad688a01ff5ff270",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b3-6a9d3655ad688a01ff5ff270.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b3-6a87c6a5fa1f4801e8bb36ec",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b3-6a87c6a5fa1f4801e8bb36ec.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b3-6aba59bc5ef7d90176399158",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b3-6aba59bc5ef7d90176399158.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b3-6a8dad6ef788ec01b9ae4b61",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b3-6a8dad6ef788ec01b9ae4b61.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b3-6a9c2bba3f8ce801f4d0241f",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b3-6a9c2bba3f8ce801f4d0241f.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b3-6aa279e81ec12401beb5028f",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b3-6aa279e81ec12401beb5028f.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b3-6a844ac2188e7701741500a5",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b3-6a844ac2188e7701741500a5.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b3-6ad0bbb3303ef201d3a460b2",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b3-6ad0bbb3303ef201d3a460b2.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b3-6a86a092f99c740147b3204d",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b3-6a86a092f99c740147b3204d.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b3-6a87c830237ea601558de2eb",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b3-6a87c830237ea601558de2eb.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b4-6a9c2a3043fae501818bc9d8",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b4-6a9c2a3043fae501818bc9d8.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b4-6aa27a29c430af01a1af7d67",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b4-6aa27a29c430af01a1af7d67.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b4-6aa27aa333883401e8442c95",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b4-6aa27aa333883401e8442c95.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b4-6aba5a595ef7d9017639a1c6",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b4-6aba5a595ef7d9017639a1c6.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b4-6aba5b035ef7d9017639ae42",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b4-6aba5b035ef7d9017639ae42.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b4-6a864b821fe9fe0103c252eb",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b4-6a864b821fe9fe0103c252eb.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b4-6ac859735c2438011cd4d229",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b4-6ac859735c2438011cd4d229.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b4-6ac885fa450f1c01f9b9b59b",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b4-6ac885fa450f1c01f9b9b59b.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b4-6a8c47e4c9ba4101fc3762f0",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b4-6a8c47e4c9ba4101fc3762f0.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-b4-6a8c47e7c9ba4101fc376356",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-b4-6a8c47e7c9ba4101fc376356.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-cart-6a8866ac19cb59010d7809e2",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-cart-6a8866ac19cb59010d7809e2.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-cart-6a869941e92f3801c6c78d20",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-cart-6a869941e92f3801c6c78d20.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-cart-6a8e23a397c06c01c9e13f08",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-cart-6a8e23a397c06c01c9e13f08.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-cart-6a8ea4c5f788ec01b9bdd504",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-cart-6a8ea4c5f788ec01b9bdd504.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-cart-6a87c67efa1f4801e8bb33b3",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-cart-6a87c67efa1f4801e8bb33b3.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-cart-6a980514f3bf72019f23b034",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-cart-6a980514f3bf72019f23b034.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-cart-6aa1166ced97a90165b916c2",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-cart-6aa1166ced97a90165b916c2.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-cart-6a85180213cc3a011ed38089",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-cart-6a85180213cc3a011ed38089.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-cart-6a87c65a35e86a010857bb2f",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-cart-6a87c65a35e86a010857bb2f.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261118-cart-6a8e2395f381b601c5ac9427",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261118-cart-6a8e2395f381b601c5ac9427.json"
+    },
+    {
+      "recommendation_id": "cart-20261118-chem-4xl",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-cart-20261118-chem-4xl.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-6aad3bbe0693f601e0325e8e",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-6aad3bbe0693f601e0325e8e.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-6aca4f1773f58001bf6ce79c",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-6aca4f1773f58001bf6ce79c.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-6a9aade3f5f51101463a1bf2",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-6a9aade3f5f51101463a1bf2.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-6aae091df2db5501fef4ce19",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-6aae091df2db5501fef4ce19.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-6abf0e24c84a3d01b95959a5",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-6abf0e24c84a3d01b95959a5.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-6aba48a845408d0115eecde3",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-6aba48a845408d0115eecde3.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-6aae0920d978cd01274473fa",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-6aae0920d978cd01274473fa.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-6acb8592c936e8010a0b7433",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-6acb8592c936e8010a0b7433.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-6a869ee0e84e05012d269a52",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-6a869ee0e84e05012d269a52.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-6ac7aa5e5c2438011cc961fa",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-6ac7aa5e5c2438011cc961fa.json"
+    },
+    {
+      "recommendation_id": "product-variant-add-20261119-6a869ee0e84e05012d269a52",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-variant-add-20261119-6a869ee0e84e05012d269a52.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-b2-6a8c4744b1e18101d91fa55b",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-b2-6a8c4744b1e18101d91fa55b.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-b2-6aca1d74545d2a013047913c",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-b2-6aca1d74545d2a013047913c.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-b2-6ad07974212bfd01ab429537",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-b2-6ad07974212bfd01ab429537.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-b2-6ad07a17212bfd01ab42b072",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-b2-6ad07a17212bfd01ab42b072.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-b2-6ad07ab3303ef201d397e7ce",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-b2-6ad07ab3303ef201d397e7ce.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-b2-6a8c48f88f3b2901f210a32b",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-b2-6a8c48f88f3b2901f210a32b.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-b2-6aefdeef1b779d01d3d01325",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-b2-6aefdeef1b779d01d3d01325.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-b2-6a87c67afa1f4801e8bb3334",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-b2-6a87c67afa1f4801e8bb3334.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-b2-6ac0698f6079a001ca690d45",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-b2-6ac0698f6079a001ca690d45.json"
+    },
+    {
+      "recommendation_id": "product-optimize-20261119-cart-b2-6aba573ef8dad801a1e24fee",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-product-optimize-20261119-cart-b2-6aba573ef8dad801a1e24fee.json"
+    },
+    {
+      "recommendation_id": "store-joom-fulfillment-refund",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-store-joom-fulfillment-refund.json"
+    },
+    {
+      "recommendation_id": "joom-policy-6aaa9d193f35da0146b4137e",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-joom-policy-6aaa9d193f35da0146b4137e.json"
+    },
+    {
+      "recommendation_id": "joom-size-6acacbe8c936e8010a00028b",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-joom-size-6acacbe8c936e8010a00028b.json"
+    },
+    {
+      "recommendation_id": "joom-kit-6aaa83d0fb5605019bbfbdb9",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-joom-kit-6aaa83d0fb5605019bbfbdb9.json"
+    },
+    {
+      "recommendation_id": "joom-material-6a84510122176501953bc165",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-joom-material-6a84510122176501953bc165.json"
+    },
+    {
+      "recommendation_id": "joom-sizephoto-6a847121c0b112015bfa29b5",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-joom-sizephoto-6a847121c0b112015bfa29b5.json"
+    },
+    {
+      "recommendation_id": "ml-20261120-cl-account-suspension",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-ml-20261120-cl-account-suspension.json"
+    },
+    {
+      "recommendation_id": "joom-login-20261120",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-joom-login-20261120.json"
+    },
+    {
+      "recommendation_id": "store-access-20261121",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-store-access-20261121.json"
+    },
+    {
+      "recommendation_id": "joom-product-6aad547abaf5a401f56aeddf",
+      "previous_status": "本轮在售短袖/卫衣及尺码冲突仍存在，待实测，未改",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-joom-product-6aad547abaf5a401f56aeddf.json"
+    },
+    {
+      "recommendation_id": "joom-product-6a842f66e32015012461bc44",
+      "previous_status": "本轮聚酯纤维/棉属性矛盾仍存在，比例未确认，未改",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-joom-product-6a842f66e32015012461bc44.json"
+    },
+    {
+      "recommendation_id": "joom-price-6aae091df2db5501fef4ce19",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-joom-price-6aae091df2db5501fef4ce19.json"
+    },
+    {
+      "recommendation_id": "ml-access-20261123-once",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-ml-access-20261123-once.json"
+    },
+    {
+      "recommendation_id": "joom-product-6acb83a7545d2a01305e106a",
+      "previous_status": "保留此前执行或待处理状态；本轮未重新核验该项具体生效及效果，不推进执行或关闭",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-joom-product-6acb83a7545d2a01305e106a.json"
+    },
+    {
+      "recommendation_id": "JOOM-PRODUCT-6af2725f91f35a019a244aea-20261126",
+      "previous_status": "已保存，审核中，未确认在售版本生效",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-JOOM-PRODUCT-6af2725f91f35a019a244aea-20261126.json"
+    },
+    {
+      "recommendation_id": "JOOM-PRODUCT-6af26eae91f35a019a24246a-20261126",
+      "previous_status": "已保存，审核中，未确认在售版本生效",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-JOOM-PRODUCT-6af26eae91f35a019a24246a-20261126.json"
+    },
+    {
+      "recommendation_id": "JOOM-PRODUCT-6aefe7607da39a01738b1f87-20261126",
+      "previous_status": "已保存，审核中，未确认在售版本生效",
+      "new_observation": null,
+      "event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/2026-11-26/110901-JOOM-PRODUCT-6aefe7607da39a01738b1f87-20261126.json"
+    }
+  ],
+  "ad_report": {
+    "path": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-26/103207.md",
+    "original_captured_at": "2026-11-26T02:32:07.961Z",
+    "fresh_this_run": false
+  },
+  "new_business_changes": false,
+  "profit_break_even_acos": null,
+  "profit_reason": "缺少本轮逐单费用、净到账和成本匹配；引用数据不能支持新的保本线",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-26/110901.md"
+}

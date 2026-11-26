@@ -1,0 +1,28 @@
+{
+  "recommendation_id": "JOOM-PRODUCT-6af2725f91f35a019a244aea-20261126",
+  "event_type": "saved_pending_review",
+  "product_id": "6af2725f91f35a019a244aea",
+  "store": "jwh second",
+  "recorded_at": "2026-11-26T11:03:53.198073+08:00",
+  "scope_authorization": "用户要求检查国家类目并优化商品；高销量先不改",
+  "before_title": "Fashion Girls Clothes Girl Group KATSEYE Zipper Hoodie Boys Fashion Hooded Sweatshirt 2026 New Kids KATSEYE Zip UP Casual Tops",
+  "after_title": "Kids' KATSEYE Graphic Zip-Up Hoodie, Long Sleeve Hooded Sweatshirt",
+  "changes": "精简标题、补搜索标签，描述圆领改连帽、儿童毛衣改拉链卫衣；仅此款按用户确认100%棉，将结构化材质规范为cotton 100%，删除重复材质行以消除保存校验冲突。",
+  "status": "已保存，审核中，未确认在售版本生效",
+  "published_at": null,
+  "variant_verification": {
+    "unchanged": true,
+    "before_count": 595,
+    "after_count": 595
+  },
+  "metrics_before": {
+    "purchases": 0.0,
+    "clicks": 15.0,
+    "carts": 5.0,
+    "window_start": "2026-10-29",
+    "window_end": "2026-11-25"
+  },
+  "evidence_screenshot": "44aea-保存核验.jpg",
+  "remaining_issue": null,
+  "review": "先核验在售版本发布；实际生效后3天看曝光点击、7天看转化、14天看归因售后，样本不足继续观察；不自动改商品或加预算。"
+}

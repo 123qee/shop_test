@@ -1,0 +1,1834 @@
+{
+  "captured_at": "2026-11-25T03:01:48.382Z",
+  "report_timezone": "Asia/Shanghai",
+  "scope": "本次沿用用户仅Joom指示；后续五国范围未更改",
+  "settings_changed": false,
+  "profit_break_even_acos": null,
+  "profit_note": "本轮未匹配最新订单结算、实际数量与卖家额外扣款，不给新的保本线或全店净利润",
+  "windows": {
+    "d28": {
+      "source": "https://merchant.joom.com/panel/analytics/orders",
+      "captured_at": "2026-11-25T03:01:34.680Z",
+      "window_start": "2026-10-27",
+      "window_end": "2026-11-23",
+      "previous_start": "2026-09-29",
+      "previous_end": "2026-10-26",
+      "platform_timezone": null,
+      "currency": "USD",
+      "data_updated_at": "2026-11-24 15:15:25（页面时区未核）",
+      "completeness": "全部3店，终页",
+      "rows": [
+        {
+          "store": "jh",
+          "purchases": [
+            17.0,
+            6.0
+          ],
+          "gmv": [
+            201.0,
+            47.0
+          ],
+          "impressions": [
+            20895.0,
+            8372.0
+          ],
+          "clicks": [
+            1025.0,
+            298.0
+          ],
+          "ctr": [
+            0.049100000000000005,
+            0.0356
+          ],
+          "cr": [
+            0.0166,
+            0.020099999999999996
+          ]
+        },
+        {
+          "store": "Nineteen Wear",
+          "purchases": [
+            188.0,
+            221.0
+          ],
+          "gmv": [
+            945.75,
+            1057.18
+          ],
+          "impressions": [
+            135986.0,
+            108721.0
+          ],
+          "clicks": [
+            4556.0,
+            5209.0
+          ],
+          "ctr": [
+            0.0335,
+            0.0479
+          ],
+          "cr": [
+            0.041299999999999996,
+            0.0424
+          ]
+        },
+        {
+          "store": "jwh second",
+          "purchases": [
+            101.0,
+            11.0
+          ],
+          "gmv": [
+            727.58,
+            102.93
+          ],
+          "impressions": [
+            37979.0,
+            11182.0
+          ],
+          "clicks": [
+            2456.0,
+            660.0
+          ],
+          "ctr": [
+            0.0647,
+            0.059000000000000004
+          ],
+          "cr": [
+            0.041100000000000005,
+            0.0167
+          ]
+        }
+      ],
+      "totals": {
+        "purchases": [
+          306.0,
+          238.0
+        ],
+        "gmv": [
+          1874.33,
+          1207.11
+        ],
+        "impressions": [
+          194860.0,
+          128275.0
+        ],
+        "clicks": [
+          8037.0,
+          6167.0
+        ]
+      }
+    },
+    "d7": {
+      "source": "https://merchant.joom.com/panel/analytics/orders?dateRange=%5B%222026-11-16T16%3A00%3A00.000Z%22%2C%222026-11-23T15%3A59%3A59.999Z%22%5D",
+      "captured_at": "2026-11-25T03:01:42.479Z",
+      "window_start": "2026-11-17",
+      "window_end": "2026-11-23",
+      "previous_start": "2026-11-10",
+      "previous_end": "2026-11-16",
+      "platform_timezone": null,
+      "currency": "USD",
+      "data_updated_at": "2026-11-24 15:15:25（页面时区未核）",
+      "completeness": "全部3店，终页",
+      "rows": [
+        {
+          "store": "Nineteen Wear",
+          "purchases": [
+            70.0,
+            49.0
+          ],
+          "gmv": [
+            370.46,
+            233.58
+          ],
+          "impressions": [
+            43942.0,
+            36985.0
+          ],
+          "clicks": [
+            1328.0,
+            1220.0
+          ],
+          "ctr": [
+            0.0302,
+            0.033
+          ],
+          "cr": [
+            0.0527,
+            0.04019999999999999
+          ]
+        },
+        {
+          "store": "jh",
+          "purchases": [
+            6.0,
+            3.0
+          ],
+          "gmv": [
+            73.0,
+            34.0
+          ],
+          "impressions": [
+            7554.0,
+            5335.0
+          ],
+          "clicks": [
+            255.0,
+            258.0
+          ],
+          "ctr": [
+            0.0338,
+            0.0484
+          ],
+          "cr": [
+            0.0235,
+            0.0116
+          ]
+        },
+        {
+          "store": "jwh second",
+          "purchases": [
+            47.0,
+            29.0
+          ],
+          "gmv": [
+            348.79,
+            228.84
+          ],
+          "impressions": [
+            14759.0,
+            10531.0
+          ],
+          "clicks": [
+            1016.0,
+            636.0
+          ],
+          "ctr": [
+            0.0688,
+            0.0604
+          ],
+          "cr": [
+            0.0463,
+            0.045599999999999995
+          ]
+        }
+      ],
+      "totals": {
+        "purchases": [
+          123.0,
+          81.0
+        ],
+        "gmv": [
+          792.25,
+          496.42
+        ],
+        "impressions": [
+          66255.0,
+          52851.0
+        ],
+        "clicks": [
+          2599.0,
+          2114.0
+        ]
+      }
+    },
+    "latest_day": {
+      "source": "https://merchant.joom.com/panel/analytics/orders?dateRange=%5B%222026-11-22T16%3A00%3A00.000Z%22%2C%222026-11-23T15%3A59%3A59.999Z%22%5D",
+      "captured_at": "2026-11-25T02:43:31.189Z",
+      "window_start": "2026-11-23",
+      "window_end": "2026-11-23",
+      "previous_start": "2026-11-22",
+      "previous_end": "2026-11-22",
+      "platform_timezone": null,
+      "currency": "USD",
+      "data_updated_at": "2026-11-24 15:15:25（页面时区未核）",
+      "completeness": "全部3店，终页",
+      "rows": [
+        {
+          "store": "jwh second",
+          "purchases": [
+            3.0,
+            9.0
+          ],
+          "gmv": [
+            24.98,
+            54.98
+          ],
+          "impressions": [
+            2380.0,
+            2265.0
+          ],
+          "clicks": [
+            139.0,
+            165.0
+          ],
+          "ctr": [
+            0.0584,
+            0.0728
+          ],
+          "cr": [
+            0.0216,
+            0.0545
+          ]
+        },
+        {
+          "store": "jh",
+          "purchases": [
+            1.0,
+            1.0
+          ],
+          "gmv": [
+            20.0,
+            4.0
+          ],
+          "impressions": [
+            1015.0,
+            1218.0
+          ],
+          "clicks": [
+            29.0,
+            31.0
+          ],
+          "ctr": [
+            0.0286,
+            0.0255
+          ],
+          "cr": [
+            0.0345,
+            0.0323
+          ]
+        },
+        {
+          "store": "Nineteen Wear",
+          "purchases": [
+            17.0,
+            9.0
+          ],
+          "gmv": [
+            76.33,
+            48.97
+          ],
+          "impressions": [
+            4962.0,
+            6484.0
+          ],
+          "clicks": [
+            235.0,
+            183.0
+          ],
+          "ctr": [
+            0.047400000000000005,
+            0.0282
+          ],
+          "cr": [
+            0.0723,
+            0.0492
+          ]
+        }
+      ],
+      "totals": {
+        "purchases": [
+          21.0,
+          19.0
+        ],
+        "gmv": [
+          121.31,
+          107.95
+        ],
+        "impressions": [
+          8357.0,
+          9967.0
+        ],
+        "clicks": [
+          403.0,
+          379.0
+        ]
+      }
+    }
+  },
+  "countries": {
+    "source": "https://merchant.joom.com/panel/analytics/orders/countries?dateRange=%5B%222026-11-16T16%3A00%3A00.000Z%22%2C%222026-11-23T15%3A59%3A59.999Z%22%5D",
+    "captured_at": "2026-11-25T02:43:46.914Z",
+    "window_start": "2026-11-17",
+    "window_end": "2026-11-23",
+    "platform_timezone": null,
+    "currency": "USD",
+    "data_updated_at": "2026-11-24 15:19:25",
+    "completeness": "各店14个可见国家，非全部国家",
+    "rows": [
+      {
+        "store": "Nineteen Wear",
+        "country": "法国",
+        "purchases": 3.0,
+        "impressions": 2954.0,
+        "clicks": 75.0,
+        "gmv": 11.97
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "西班牙",
+        "purchases": 3.0,
+        "impressions": 1822.0,
+        "clicks": 52.0,
+        "gmv": 18.52
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "波兰",
+        "purchases": 3.0,
+        "impressions": 2558.0,
+        "clicks": 80.0,
+        "gmv": 17.95
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "乌克兰",
+        "purchases": 0.0,
+        "impressions": 1855.0,
+        "clicks": 42.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "俄罗斯",
+        "purchases": 0.0,
+        "impressions": 4510.0,
+        "clicks": 98.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "斯洛伐克",
+        "purchases": 3.0,
+        "impressions": 691.0,
+        "clicks": 45.0,
+        "gmv": 17.97
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "匈牙利",
+        "purchases": 2.0,
+        "impressions": 1150.0,
+        "clicks": 41.0,
+        "gmv": 14.49
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "荷兰",
+        "purchases": 7.0,
+        "impressions": 1600.0,
+        "clicks": 79.0,
+        "gmv": 34.45
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "捷克",
+        "purchases": 7.0,
+        "impressions": 2501.0,
+        "clicks": 79.0,
+        "gmv": 33.93
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "乌兹别克斯坦",
+        "purchases": 0.0,
+        "impressions": 2006.0,
+        "clicks": 62.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "德国",
+        "purchases": 7.0,
+        "impressions": 4710.0,
+        "clicks": 106.0,
+        "gmv": 39.44
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "瑞典",
+        "purchases": 7.0,
+        "impressions": 2488.0,
+        "clicks": 84.0,
+        "gmv": 35.97
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "意大利",
+        "purchases": 3.0,
+        "impressions": 1267.0,
+        "clicks": 58.0,
+        "gmv": 23.97
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "英国",
+        "purchases": 12.0,
+        "impressions": 3538.0,
+        "clicks": 120.0,
+        "gmv": 51.91
+      },
+      {
+        "store": "jh",
+        "country": "匈牙利",
+        "purchases": 1.0,
+        "impressions": 200.0,
+        "clicks": 5.0,
+        "gmv": 20.0
+      },
+      {
+        "store": "jh",
+        "country": "斯洛伐克",
+        "purchases": 0.0,
+        "impressions": 134.0,
+        "clicks": 2.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jh",
+        "country": "西班牙",
+        "purchases": 0.0,
+        "impressions": 589.0,
+        "clicks": 22.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jh",
+        "country": "法国",
+        "purchases": 0.0,
+        "impressions": 601.0,
+        "clicks": 9.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jh",
+        "country": "意大利",
+        "purchases": 0.0,
+        "impressions": 212.0,
+        "clicks": 26.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jh",
+        "country": "俄罗斯",
+        "purchases": 0.0,
+        "impressions": 1080.0,
+        "clicks": 26.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jh",
+        "country": "乌兹别克斯坦",
+        "purchases": 0.0,
+        "impressions": 499.0,
+        "clicks": 9.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jh",
+        "country": "英国",
+        "purchases": 2.0,
+        "impressions": 550.0,
+        "clicks": 16.0,
+        "gmv": 25.0
+      },
+      {
+        "store": "jh",
+        "country": "瑞典",
+        "purchases": 1.0,
+        "impressions": 293.0,
+        "clicks": 8.0,
+        "gmv": 4.0
+      },
+      {
+        "store": "jh",
+        "country": "波兰",
+        "purchases": 0.0,
+        "impressions": 363.0,
+        "clicks": 14.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jh",
+        "country": "荷兰",
+        "purchases": 1.0,
+        "impressions": 267.0,
+        "clicks": 8.0,
+        "gmv": 4.0
+      },
+      {
+        "store": "jh",
+        "country": "捷克",
+        "purchases": 0.0,
+        "impressions": 420.0,
+        "clicks": 11.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jh",
+        "country": "德国",
+        "purchases": 0.0,
+        "impressions": 765.0,
+        "clicks": 39.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jh",
+        "country": "乌克兰",
+        "purchases": 0.0,
+        "impressions": 179.0,
+        "clicks": 11.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jwh second",
+        "country": "英国",
+        "purchases": 15.0,
+        "impressions": 979.0,
+        "clicks": 121.0,
+        "gmv": 79.0
+      },
+      {
+        "store": "jwh second",
+        "country": "捷克",
+        "purchases": 0.0,
+        "impressions": 737.0,
+        "clicks": 44.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jwh second",
+        "country": "意大利",
+        "purchases": 2.0,
+        "impressions": 180.0,
+        "clicks": 23.0,
+        "gmv": 19.98
+      },
+      {
+        "store": "jwh second",
+        "country": "德国",
+        "purchases": 12.0,
+        "impressions": 1725.0,
+        "clicks": 171.0,
+        "gmv": 89.94
+      },
+      {
+        "store": "jwh second",
+        "country": "荷兰",
+        "purchases": 0.0,
+        "impressions": 462.0,
+        "clicks": 22.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jwh second",
+        "country": "乌克兰",
+        "purchases": 1.0,
+        "impressions": 297.0,
+        "clicks": 17.0,
+        "gmv": 9.99
+      },
+      {
+        "store": "jwh second",
+        "country": "波兰",
+        "purchases": 4.0,
+        "impressions": 812.0,
+        "clicks": 54.0,
+        "gmv": 39.97
+      },
+      {
+        "store": "jwh second",
+        "country": "俄罗斯",
+        "purchases": 0.0,
+        "impressions": 1811.0,
+        "clicks": 52.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jwh second",
+        "country": "匈牙利",
+        "purchases": 1.0,
+        "impressions": 501.0,
+        "clicks": 70.0,
+        "gmv": 9.99
+      },
+      {
+        "store": "jwh second",
+        "country": "瑞典",
+        "purchases": 0.0,
+        "impressions": 593.0,
+        "clicks": 46.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jwh second",
+        "country": "西班牙",
+        "purchases": 1.0,
+        "impressions": 714.0,
+        "clicks": 42.0,
+        "gmv": 5.0
+      },
+      {
+        "store": "jwh second",
+        "country": "斯洛伐克",
+        "purchases": 1.0,
+        "impressions": 285.0,
+        "clicks": 14.0,
+        "gmv": 9.99
+      },
+      {
+        "store": "jwh second",
+        "country": "法国",
+        "purchases": 4.0,
+        "impressions": 1269.0,
+        "clicks": 87.0,
+        "gmv": 34.97
+      },
+      {
+        "store": "jwh second",
+        "country": "乌兹别克斯坦",
+        "purchases": 1.0,
+        "impressions": 1413.0,
+        "clicks": 76.0,
+        "gmv": 9.99
+      }
+    ]
+  },
+  "product_health": {
+    "captured_at": "2026-11-25T03:01:48.376Z",
+    "source": "https://merchant.joom.com/panel/products/all?limit=100",
+    "text": "产品\n添加产品\n全部\n6,098\n在售\n3,400\n未发布\n3\n限售\n2,693\n待优化\n2,273\n缺货\n0\n已经有一个准备好的列表了吗？尝试使用AI导入\n快速将CSV或Excel文件转换为Joom格式。AI检测字段，检查数据，并帮助准确上传产品。\n尝试使用AI导入\n了解更多\n待评级产品限制：9,000\n已发布\n可用\n3400\n5,600\n等级\n待评\n优选\n5\n52\n价格突涨\n已发布\n已发布总数\n2\n3,400\n价格突涨风险\n已发布\n已发布总数\n58\n3,400\n欧盟地区产品\n显示详情\n已阻止\n可用\n3,029\n3,049\nIP地区产品\n显示详情\n已阻止\n可用\n3,038\n3,040\n筛选：\n店铺：所有\n产品ID\nSKU\n类目\n有在售版本\n状态\n诊断\n限售地区\n库存\n等级\n定价偏高问题\n添加筛选器\n产品\n6,098\n导出\n批量操作\n图片\n产品名称\n等级\n内容质量\nID\n相似组ID\n店铺\n状态\n在售版本\nSKU\n价格\n已启用\n根类目\n叶子类目\n可用于促销\nJoom广告活动\n订单\n\t\n\t\nSummer New Tennis T-shirt Daily Loose Quick-drying Breathable Short-sleeved Men's And Women's Outdoor Running Sports Tops\n\t\n基础\n8/100\n\t\n部分内容\n\t\n6a841ce30fa41b01326419ef\n\t\n6ae22c2c27ab98099cbeb41b\n1个产品\n\t\nNineteen Wear\n\t\n待优化\n1\n\t\n是\n\t\nTXYL0087\n\t\nUS$3.98\n竞争性\n销售价格：US$3.56\n平均价格："
+  },
+  "refunds": {
+    "source": "https://merchant.joom.com/panel/analytics/refunds",
+    "captured_at": "2026-11-25T02:44:39.217Z",
+    "window_start": "2026-09-29",
+    "window_end": "2026-11-23",
+    "platform_timezone": null,
+    "currency": "USD",
+    "data_updated_at": "2026-11-24 15:32:24",
+    "rows": [
+      {
+        "cells": [
+          "Nineteen Wear",
+          "2026/9/29 — 2026/11/23",
+          "409",
+          "US$2,002.93",
+          "17",
+          "US$79.35",
+          "4.16%",
+          "3.96%",
+          ""
+        ]
+      },
+      {
+        "cells": [
+          "jh",
+          "2026/9/29 — 2026/11/23",
+          "23",
+          "US$248",
+          "1",
+          "US$10",
+          "4.35%",
+          "4.03%",
+          ""
+        ]
+      },
+      {
+        "cells": [
+          "jwh second",
+          "2026/9/29 — 2026/11/23",
+          "112",
+          "US$830.51",
+          "2",
+          "US$14.99",
+          "1.79%",
+          "1.8%",
+          ""
+        ]
+      }
+    ]
+  },
+  "product_followups": {
+    "short_sleeve": {
+      "source": "https://merchant.joom.com/panel/products/6aad547abaf5a401f56aeddf/active",
+      "captured_at": "2026-11-25T02:44:17.940Z",
+      "text": "4265069200\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n产品信息\n在售版本（此版本正在出售中）。 已发布： 2026/11/14\n统计\n佣金\n15%\n绑定的文件\n欧代协议\nManufacturer Information: Qianshan County Nineteen Trade Co., Ltd\nKids Winter Thermal Printed Hoodie Jacket\n产品页URL订单评价数量数据\n产品ID\n6aad547abaf5a401f56aeddf\n产品SKU\n4265069200\n类目ID\n1605614754933037318-196-2-62735-1604558435\n类目\nBaby & Kids\nKids Clothing\nUnisex Clothing\nUnisex (over 4 y.o.)\nTop\nHoodies & Sweatshirts (kids unisex)\n店铺名称\njwh second\n敏感货\n普通货\n描述\nProduct Type: Kids’ T-Shirt\nManufacture Country: China\nApplicable Scene: Daily Wear\nStyle: Casual\nApplicable Season: Summer\nNeckline: Round Neck\nClosure Type: Pullover\nClothing Decoration: No Decoration\nLeather Label: No\nSleeve Length: Short Sleeve\nGender: Unisex\nAge Group: Kids\nPattern: Printed\nMaterial: Cotton\nLabel: Yes\nWashing Care: Do Not Tumble Dry\nSize Chart:\nSize 100: Length 42 cm, Bust 60 cm, Shoulder 28 cm, Sleeve 39 cm.\nSize 110: Length 45 cm, Bust 66 cm, Shoulder 30 cm, Sleeve 41 cm.\nSize 120: Length 48 cm, Bust 72 cm, Shoulder 32 cm, Sleeve 43 cm.\nSize 130: Length 51 cm, Bust 78 cm, Shoulder 34 cm, Sleeve 45 cm.\nSize 140: Length 54 cm, Bust 84 cm, Shoulder 36 cm, Sleeve 47 cm.\nSize 150: Length 57 cm, Bust 90 cm, Shoulder 38 cm, Sleeve 49 cm.\nSize 160: Length 60 cm, Bust 96 cm, Shoulder 40 cm, Sleeve 51 cm.\nPlease carefully measure your child and compare the measurements with the size chart before purchasing.\nDue to manual measurement, please allow a 2–3 cm deviation.\nThe actual color may vary slightly due to lighting and different screen settings.\nPlease choose the size according to your child’s actual measurements.\n产品属性\nMaterial: cotton\nCountry of Manufacture: China\nStyle: casual\nSleeve Length: short sleeve\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\n100\n\t\n60 cm\n\t\n42 cm\n\t\n28 cm\n\t\n39 cm\n\n\n110\n\t\n66 cm\n\t\n45 cm\n\t\n30 cm\n\t\n41 cm\n\n\n120\n\t\n72 cm\n\t\n48 cm\n\t\n32 cm\n\t\n43 cm\n\n\n130\n\t\n78 cm\n\t\n51 cm\n\t\n34 cm\n\t\n45 cm\n\n\n140\n\t\n84 cm\n\t\n54 cm\n\t\n36 cm\n\t\n47 cm\n\n\n150\n\t\n90 cm\n\t\n57 cm\n\t\n38 cm\n\t\n49 cm\n\n\n160\n\t\n96 cm\n\t\n60 cm\n\t\n40 cm\n\t\n51 cm\n产品变型\n启用\n图片\n尺寸 & 颜色\nSKU\n生效的TN VED编码\nID\n运输信息\n属性\n价格\n承诺处理时效\n库存\n默认运费， US$\n操作\n\t\n\t\n颜色：black\n尺寸：100\n\t\n4265069200-BLACK-100\n\t\n\t\n6aad547abaf5a49bf56aede1\n\t\n长度：10 cm\n宽度： 10 cm\n高度： 2 cm\n重量： 280 g\n\t\n\t\nUS$9.99\n销售价格：US$8.99\n平均价格：US$9.45\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：black\n尺寸：110\n\t\n4265069200-BLACK-110\n\t\n\t\n6aad547abaf5a49bf56aede2\n\t\n长度：10 cm\n宽度： 10 cm\n高度： 2 cm\n重量： 280 g\n\t\n\t\nUS$9.99\n销售价格：US$8.99\n平均价格：US$9.45\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：black\n尺寸：120\n\t\n4265069200-BLACK-120\n\t\n\t\n6aad547abaf5a49bf56aede3\n\t\n长度：10 cm\n宽度： 10 cm\n高度： 2 cm\n重量： 280 g\n\t\n\t\nUS$9.99\n销售价格：US$8.99\n平均价格：US$9.45\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：black\n尺寸：130\n\t\n4265069200-BLACK-130\n\t\n\t\n6aad547abaf5a49bf56aede4\n\t\n长度：10 cm\n宽度： 10 cm\n高度： 2 cm\n重量： 280 g\n\t\n\t\nUS$9.99\n销售价格：US$8.99\n平均价格：US$8.99\n\t\n2天\n\t\n998\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：black\n尺寸：140\n\t\n4265069200-BLACK-140\n\t\n\t\n6aad547abaf5a49bf56aede5\n\t\n长度：10 cm\n宽度： 10 cm\n高度： 2 cm\n重量： 280 g\n\t\n\t\nUS$9.99\n销售价格：US$8.99\n平均价格：US$8.99\n\t\n2天\n\t\n998\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：black\n尺寸：150\n\t\n4265069200-BLACK-150\n\t\n\t\n6aad547abaf5a49bf56aede6\n\t\n长度：10 cm\n宽度： 10 cm\n高度： 2 cm\n重量： 280 g\n\t\n\t\nUS$9.99\n销售价格：US$8.99\n平均价格：US$9.32\n\t\n2天\n\t\n996\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：black\n尺寸：160\n\t\n4265069200-BLACK-160\n\t\n\t\n6aad547abaf5a49bf56aede7\n\t\n长度：10 cm\n宽度： 10 cm\n高度： 2 cm\n重量： 280 g\n\t\n\t\nUS$9.99\n销售价格：US$8.99\n平均价格：US$9.45\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：multicolor\n尺寸：100\n\t\n37422456306\n\t\n\t\n6ad0b9f2303ef249d3a41f3a\n\t\n长度：20 cm\n宽度： 20 cm\n高度： 2 cm\n重量： 280 g\n\t\n\t\nUS$10\n销售价格：US$4.50\n平均价格：US$4.50\n\t\n2天\n\t\n998\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：multicolor\n尺寸：110\n\t\n98932041196\n\t\n\t\n6ad0b9f2303ef249d3a41f3b\n\t\n长度：20 cm\n宽度： 20 cm\n高度： 2 cm\n重量： 280 g\n\t\n\t\nUS$10\n销售价格：US$4.50\n平均价格：US$4.50\n\t\n2天\n\t\n998\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：multicolor\n尺寸：120\n\t\n82802281887\n\t\n\t\n6ad0b9f2303ef249d3a41f3c\n\t\n长度：20 cm\n宽度： 20 cm\n高度： 2 cm\n重量： 220 g\n\t\n\t\nUS$10\n销售价格：US$4.50\n平均价格：US$4.50\n\t\n2天\n\t\n998\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：multicolor\n尺寸：130\n\t\n38568898996\n\t\n\t\n6ad0b9f2303ef249d3a41f3d\n\t\n长度：20 cm\n宽度： 20 cm\n高度： 2 cm\n重量： 280 g\n\t\n\t\nUS$10\n销售价格：US$4.50\n平均价格：US$4.69\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：multicolor\n尺寸：140\n\t\n88766162923\n\t\n\t\n6ad0b9f2303ef249d3a41f3e\n\t\n长度：20 cm\n宽度： 20 cm\n高度： 2 cm\n重量： 280 g\n\t\n\t\nUS$10\n销售价格：US$4.50\n平均价格：US$4.69\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：multicolor\n尺寸：150\n\t\n21233806780\n\t\n\t\n6ad0b9f2303ef249d3a41f3f\n\t\n长度：20 cm\n宽度： 20 cm\n高度： 2 cm\n重量： 280 g\n\t\n\t\nUS$10\n销售价格：US$4.50\n平均价格：US$4.69\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：multicolor\n尺寸：160\n\t\n75778904464\n\t\n\t\n6ad0b9f2303ef249d3a41f40\n\t\n长度：20 cm\n宽度： 20 cm\n高度： 2 cm\n重量： 280 g\n\t\n\t\nUS$10\n销售价格：US$4.50\n平均价格：US$4.69\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n"
+    },
+    "senna": {
+      "source": "https://merchant.joom.com/panel/products/6a842f66e32015012461bc44/active",
+      "captured_at": "2026-11-25T02:44:25.408Z",
+      "text": "TXYL0071\n下载欧盟产品标签\n编辑产品\n编辑版本\n在售版本\n已发布\n产品信息\n在售版本（此版本正在出售中）。 已发布： 2026/10/27\n统计\n佣金\n15%\n绑定的文件\n欧代协议\nManufacturer Information: Qianshan County Nineteen Trade Co., Ltd\n2025 new Ayrton Senna No.12 racing car 3D printed summer sports casual breathable men's and women's short sleeved T-shirt\n产品页URL订单评价数量数据\n产品ID\n6a842f66e32015012461bc44\n产品SKU\nTXYL0071\n类目ID\n1473502947697243574-128-2-118-2775194205\n类目\nUnisex Clothing & Accessories\nTops (unisex)\nT-Shirts (unisex)\n店铺名称\nNineteen Wear\n敏感货\n普通货\n描述\nProduct Type： t shirt\nManufacture Country：China\nApplicable scene: daily\nstyle: Casual\nApplicable season: summer\nNeckline：round\nTops closure type: pullover\nClothing decoration: no decoration\nLeather Label：no\nSleeve length (cm): Short Sleeve\nSex: Men\nAge: Ages 18-45 Years Old\nPattern：print\nMaterial : polyester 100%\nLabel: Yes\nWashing care: Machine wash at 30C, do not tumble drying\nsizes: XXS XS S M L XL 2XL 3XL 4XL 5XL 6XL\nXXS: bust 88 cm, length 62 cm, shoulder 40 cm,Sleeve Length 18 cm\nXS: bust 92 cm, length 64 cm, shoulder 42 cm,Sleeve Length 18 cm\nS: bust 96 cm, length 66 cm, shoulder 44 cm,Sleeve Length 19 cm\nM: bust 100 cm, length 68 cm, shoulder 46 cm,Sleeve Length 19 cm\nL: bust 104 cm, length 70 cm, shoulder 50 cm,Sleeve Length 20 cm\nXL: bust 108 cm, length 72 cm, shoulder 52 cm,Sleeve Length 20 cm\n2XL: bust 114 cm, length 74 cm, shoulder 54 cm,Sleeve Length 21 cm\n3XL: bust 120 cm, length 76 cm, shoulder 57 cm,Sleeve Length 22 cm\n4XL: bust 126 cm, length 78 cm, shoulder 60 cm,Sleeve Length 23 cm\n5XL: bust 132 cm, length 80 cm, shoulder 62 cm,Sleeve Length 24 cm\n6XL: bust 138 cm, length 82 cm, shoulder 64 cm,Sleeve Length 25 cm\nnote:\n1. Please carefully measure yourself according to the chart before purchasing, thank you!\n2. Due to manual measurement, please allow an error of 2-3 cm.\n3. Due to the difference of light and screen, the real color of the picture may be slightly different, please understand.\n4.All our products are advertised in size , study the size chart before buying.\n产品属性\nMaterial for fur: cotton\nMaterial: cotton\nLabel: yes\nWashing Care: Do not tumble dry\nCountry of Manufacture: China\nSeason: summer\nNeckline: round\nDecoration: no decoration\nLeather Label: no\nPattern: print\nLabel: yes\n尺码表\n尺码\tBust\tLength\tShoulders\tSleeve\n\nXXS\n\t\n88 cm\n\t\n62 cm\n\t\n40 cm\n\t\n18 cm\n\n\nXS\n\t\n92 cm\n\t\n64 cm\n\t\n42 cm\n\t\n18 cm\n\n\nS\n\t\n96 cm\n\t\n66 cm\n\t\n44 cm\n\t\n19 cm\n\n\nM\n\t\n100 cm\n\t\n68 cm\n\t\n46 cm\n\t\n19 cm\n\n\nL\n\t\n104 cm\n\t\n70 cm\n\t\n50 cm\n\t\n20 cm\n\n\nXL\n\t\n108 cm\n\t\n72 cm\n\t\n52 cm\n\t\n20 cm\n\n\n2XL\n\t\n114 cm\n\t\n74 cm\n\t\n54 cm\n\t\n21 cm\n\n\n3XL\n\t\n120 cm\n\t\n76 cm\n\t\n57 cm\n\t\n22 cm\n\n\n4XL\n\t\n126 cm\n\t\n78 cm\n\t\n60 cm\n\t\n23 cm\n\n\n5XL\n\t\n132 cm\n\t\n80 cm\n\t\n62 cm\n\t\n24 cm\n\n\n6XL\n\t\n138 cm\n\t\n82 cm\n\t\n64 cm\n\t\n25 cm\n搜索标签\nnew\nNo\n12\nracing\nsports\nwomens\nsleeved\nSenna\nsummer\nmens\nAyrton\nprinted\ncar\n2025\nand\ncasual\nbreathable\nshort\nTshirt\n产品变型\n启用\n图片\n尺寸 & 颜色\nSKU\n生效的TN VED编码\nID\n运输信息\n属性\n价格\n承诺处理时效\n库存\n默认运费， US$\n操作\n\t\n\t\n颜色：as the picture\n尺寸：XXS\n\t\nTXYL0071-XXS-as the picture1\n\t\n\t\n6a842f66e32015822461bc46\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XS\n\t\nTXYL0071-XS-as the picture1\n\t\n\t\n6a842f66e32015822461bc47\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：S\n\t\nTXYL0071-S-as the picture1\n\t\n\t\n6a842f66e32015822461bc48\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：M\n\t\nTXYL0071-M-as the picture1\n\t\n\t\n6a842f66e32015822461bc49\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.56\n\t\n2天\n\t\n998\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：L\n\t\nTXYL0071-L-as the picture1\n\t\n\t\n6a842f66e32015822461bc4a\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XL\n\t\nTXYL0071-XL-as the picture1\n\t\n\t\n6a842f66e32015822461bc4b\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：2XL\n\t\nTXYL0071-2XL-as the picture1\n\t\n\t\n6a842f66e32015822461bc4c\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：3XL\n\t\nTXYL0071-3XL-as the picture1\n\t\n\t\n6a842f66e32015822461bc4d\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：4XL\n\t\nTXYL0071-4XL-as the picture1\n\t\n\t\n6a842f66e32015822461bc4e\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：5XL\n\t\nTXYL0071-5XL-as the picture1\n\t\n\t\n6a842f66e32015822461bc4f\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：6XL\n\t\nTXYL0071-6XL-as the picture1\n\t\n\t\n6a842f66e32015822461bc50\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XXS\n\t\nTXYL0071-XXS-as the picture2\n\t\n\t\n6a842f66e32015822461bc51\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XS\n\t\nTXYL0071-XS-as the picture2\n\t\n\t\n6a842f66e32015822461bc52\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：S\n\t\nTXYL0071-S-as the picture2\n\t\n\t\n6a842f66e32015822461bc53\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：M\n\t\nTXYL0071-M-as the picture2\n\t\n\t\n6a842f66e32015822461bc54\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：L\n\t\nTXYL0071-L-as the picture2\n\t\n\t\n6a842f66e32015822461bc55\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XL\n\t\nTXYL0071-XL-as the picture2\n\t\n\t\n6a842f66e32015822461bc56\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：2XL\n\t\nTXYL0071-2XL-as the picture2\n\t\n\t\n6a842f66e32015822461bc57\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：3XL\n\t\nTXYL0071-3XL-as the picture2\n\t\n\t\n6a842f66e32015822461bc58\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.98\n\t\n2天\n\t\n998\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：4XL\n\t\nTXYL0071-4XL-as the picture2\n\t\n\t\n6a842f66e32015822461bc59\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：5XL\n\t\nTXYL0071-5XL-as the picture2\n\t\n\t\n6a842f66e32015822461bc5a\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：6XL\n\t\nTXYL0071-6XL-as the picture2\n\t\n\t\n6a842f66e32015822461bc5b\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XXS\n\t\nTXYL0071-XXS-as the picture3\n\t\n\t\n6a842f66e32015822461bc5c\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XS\n\t\nTXYL0071-XS-as the picture3\n\t\n\t\n6a842f66e32015822461bc5d\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：S\n\t\nTXYL0071-S-as the picture3\n\t\n\t\n6a842f66e32015822461bc5e\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.56\n\t\n2天\n\t\n998\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：M\n\t\nTXYL0071-M-as the picture3\n\t\n\t\n6a842f66e32015822461bc5f\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：L\n\t\nTXYL0071-L-as the picture3\n\t\n\t\n6a842f66e32015822461bc60\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.40\n平均价格：US$3.60\n\t\n2天\n\t\n995\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XL\n\t\nTXYL0071-XL-as the picture3\n\t\n\t\n6a842f66e32015822461bc61\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.58\n平均价格：US$3.98\n\t\n2天\n\t\n998\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：2XL\n\t\nTXYL0071-2XL-as the picture3\n\t\n\t\n6a842f66e32015822461bc62\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.40\n平均价格：US$3.59\n\t\n2天\n\t\n997\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：3XL\n\t\nTXYL0071-3XL-as the picture3\n\t\n\t\n6a842f66e32015822461bc63\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：4XL\n\t\nTXYL0071-4XL-as the picture3\n\t\n\t\n6a842f66e32015822461bc64\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：5XL\n\t\nTXYL0071-5XL-as the picture3\n\t\n\t\n6a842f66e32015822461bc65\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：6XL\n\t\nTXYL0071-6XL-as the picture3\n\t\n\t\n6a842f66e32015822461bc66\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XXS\n\t\nTXYL0071-XXS-as the picture4\n\t\n\t\n6a842f66e32015822461bc67\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.78\n\t\n2天\n\t\n998\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XS\n\t\nTXYL0071-XS-as the picture4\n\t\n\t\n6a842f66e32015822461bc68\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.78\n\t\n2天\n\t\n998\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：S\n\t\nTXYL0071-S-as the picture4\n\t\n\t\n6a842f66e32015822461bc69\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：M\n\t\nTXYL0071-M-as the picture4\n\t\n\t\n6a842f66e32015822461bc6a\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：L\n\t\nTXYL0071-L-as the picture4\n\t\n\t\n6a842f66e32015822461bc6b\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XL\n\t\nTXYL0071-XL-as the picture4\n\t\n\t\n6a842f66e32015822461bc6c\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：2XL\n\t\nTXYL0071-2XL-as the picture4\n\t\n\t\n6a842f66e32015822461bc6d\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：3XL\n\t\nTXYL0071-3XL-as the picture4\n\t\n\t\n6a842f66e32015822461bc6e\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：4XL\n\t\nTXYL0071-4XL-as the picture4\n\t\n\t\n6a842f66e32015822461bc6f\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：5XL\n\t\nTXYL0071-5XL-as the picture4\n\t\n\t\n6a842f66e32015822461bc70\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：6XL\n\t\nTXYL0071-6XL-as the picture4\n\t\n\t\n6a842f66e32015822461bc71\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XXS\n\t\nTXYL0071-XXS-as the picture5\n\t\n\t\n6a842f66e32015822461bc72\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XS\n\t\nTXYL0071-XS-as the picture5\n\t\n\t\n6a842f66e32015822461bc73\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：S\n\t\nTXYL0071-S-as the picture5\n\t\n\t\n6a842f66e32015822461bc74\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：M\n\t\nTXYL0071-M-as the picture5\n\t\n\t\n6a842f66e32015822461bc75\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：L\n\t\nTXYL0071-L-as the picture5\n\t\n\t\n6a842f66e32015822461bc76\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XL\n\t\nTXYL0071-XL-as the picture5\n\t\n\t\n6a842f66e32015822461bc77\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：2XL\n\t\nTXYL0071-2XL-as the picture5\n\t\n\t\n6a842f66e32015822461bc78\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：3XL\n\t\nTXYL0071-3XL-as the picture5\n\t\n\t\n6a842f66e32015822461bc79\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：4XL\n\t\nTXYL0071-4XL-as the picture5\n\t\n\t\n6a842f66e32015822461bc7a\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：5XL\n\t\nTXYL0071-5XL-as the picture5\n\t\n\t\n6a842f66e32015822461bc7b\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：6XL\n\t\nTXYL0071-6XL-as the picture5\n\t\n\t\n6a842f66e32015822461bc7c\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XXS\n\t\nTXYL0071-XXS-as the picture6\n\t\n\t\n6a842f66e32015822461bc7d\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XS\n\t\nTXYL0071-XS-as the picture6\n\t\n\t\n6a842f66e32015822461bc7e\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：S\n\t\nTXYL0071-S-as the picture6\n\t\n\t\n6a842f66e32015822461bc7f\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：M\n\t\nTXYL0071-M-as the picture6\n\t\n\t\n6a842f66e32015822461bc80\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：L\n\t\nTXYL0071-L-as the picture6\n\t\n\t\n6a842f66e32015822461bc81\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XL\n\t\nTXYL0071-XL-as the picture6\n\t\n\t\n6a842f66e32015822461bc82\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：2XL\n\t\nTXYL0071-2XL-as the picture6\n\t\n\t\n6a842f66e32015822461bc83\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：3XL\n\t\nTXYL0071-3XL-as the picture6\n\t\n\t\n6a842f66e32015822461bc84\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：4XL\n\t\nTXYL0071-4XL-as the picture6\n\t\n\t\n6a842f66e32015822461bc85\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：5XL\n\t\nTXYL0071-5XL-as the picture6\n\t\n\t\n6a842f66e32015822461bc86\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：6XL\n\t\nTXYL0071-6XL-as the picture6\n\t\n\t\n6a842f66e32015822461bc87\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XXS\n\t\nTXYL0071-XXS-as the picture7\n\t\n\t\n6a842f66e32015822461bc88\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XS\n\t\nTXYL0071-XS-as the picture7\n\t\n\t\n6a842f66e32015822461bc89\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：S\n\t\nTXYL0071-S-as the picture7\n\t\n\t\n6a842f66e32015822461bc8a\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：M\n\t\nTXYL0071-M-as the picture7\n\t\n\t\n6a842f66e32015822461bc8b\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：L\n\t\nTXYL0071-L-as the picture7\n\t\n\t\n6a842f66e32015822461bc8c\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XL\n\t\nTXYL0071-XL-as the picture7\n\t\n\t\n6a842f66e32015822461bc8d\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：2XL\n\t\nTXYL0071-2XL-as the picture7\n\t\n\t\n6a842f66e32015822461bc8e\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：3XL\n\t\nTXYL0071-3XL-as the picture7\n\t\n\t\n6a842f66e32015822461bc8f\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：4XL\n\t\nTXYL0071-4XL-as the picture7\n\t\n\t\n6a842f66e32015822461bc90\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：5XL\n\t\nTXYL0071-5XL-as the picture7\n\t\n\t\n6a842f66e32015822461bc91\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：6XL\n\t\nTXYL0071-6XL-as the picture7\n\t\n\t\n6a842f66e32015822461bc92\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XXS\n\t\nTXYL0071-XXS-as the picture8\n\t\n\t\n6a842f66e32015822461bc93\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XS\n\t\nTXYL0071-XS-as the picture8\n\t\n\t\n6a842f66e32015822461bc94\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：S\n\t\nTXYL0071-S-as the picture8\n\t\n\t\n6a842f66e32015822461bc95\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：M\n\t\nTXYL0071-M-as the picture8\n\t\n\t\n6a842f66e32015822461bc96\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：L\n\t\nTXYL0071-L-as the picture8\n\t\n\t\n6a842f66e32015822461bc97\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XL\n\t\nTXYL0071-XL-as the picture8\n\t\n\t\n6a842f66e32015822461bc98\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：2XL\n\t\nTXYL0071-2XL-as the picture8\n\t\n\t\n6a842f66e32015822461bc99\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：3XL\n\t\nTXYL0071-3XL-as the picture8\n\t\n\t\n6a842f66e32015822461bc9a\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：4XL\n\t\nTXYL0071-4XL-as the picture8\n\t\n\t\n6a842f66e32015822461bc9b\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：5XL\n\t\nTXYL0071-5XL-as the picture8\n\t\n\t\n6a842f66e32015822461bc9c\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：6XL\n\t\nTXYL0071-6XL-as the picture8\n\t\n\t\n6a842f66e32015822461bc9d\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XXS\n\t\nTXYL0071-XXS-as the picture9\n\t\n\t\n6a842f66e32015822461bc9e\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XS\n\t\nTXYL0071-XS-as the picture9\n\t\n\t\n6a842f66e32015822461bc9f\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：S\n\t\nTXYL0071-S-as the picture9\n\t\n\t\n6a842f66e32015822461bca0\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：M\n\t\nTXYL0071-M-as the picture9\n\t\n\t\n6a842f66e32015822461bca1\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：L\n\t\nTXYL0071-L-as the picture9\n\t\n\t\n6a842f66e32015822461bca2\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XL\n\t\nTXYL0071-XL-as the picture9\n\t\n\t\n6a842f66e32015822461bca3\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：2XL\n\t\nTXYL0071-2XL-as the picture9\n\t\n\t\n6a842f66e32015822461bca4\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：3XL\n\t\nTXYL0071-3XL-as the picture9\n\t\n\t\n6a842f66e32015822461bca5\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：4XL\n\t\nTXYL0071-4XL-as the picture9\n\t\n\t\n6a842f66e32015822461bca6\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：5XL\n\t\nTXYL0071-5XL-as the picture9\n\t\n\t\n6a842f66e32015822461bca7\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：6XL\n\t\nTXYL0071-6XL-as the picture9\n\t\n\t\n6a842f66e32015822461bca8\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XXS\n\t\nTXYL0071-XXS-as the picture10\n\t\n\t\n6a842f66e32015822461bca9\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XS\n\t\nTXYL0071-XS-as the picture10\n\t\n\t\n6a842f66e32015822461bcaa\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：S\n\t\nTXYL0071-S-as the picture10\n\t\n\t\n6a842f66e32015822461bcab\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：M\n\t\nTXYL0071-M-as the picture10\n\t\n\t\n6a842f66e32015822461bcac\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：L\n\t\nTXYL0071-L-as the picture10\n\t\n\t\n6a842f66e32015822461bcad\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XL\n\t\nTXYL0071-XL-as the picture10\n\t\n\t\n6a842f66e32015822461bcae\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：2XL\n\t\nTXYL0071-2XL-as the picture10\n\t\n\t\n6a842f66e32015822461bcaf\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：3XL\n\t\nTXYL0071-3XL-as the picture10\n\t\n\t\n6a842f66e32015822461bcb0\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：4XL\n\t\nTXYL0071-4XL-as the picture10\n\t\n\t\n6a842f66e32015822461bcb1\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：5XL\n\t\nTXYL0071-5XL-as the picture10\n\t\n\t\n6a842f66e32015822461bcb2\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：6XL\n\t\nTXYL0071-6XL-as the picture10\n\t\n\t\n6a842f66e32015822461bcb3\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XXS\n\t\nTXYL0071-XXS-as the picture11\n\t\n\t\n6a842f66e32015822461bcb4\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XS\n\t\nTXYL0071-XS-as the picture11\n\t\n\t\n6a842f66e32015822461bcb5\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：S\n\t\nTXYL0071-S-as the picture11\n\t\n\t\n6a842f66e32015822461bcb6\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：M\n\t\nTXYL0071-M-as the picture11\n\t\n\t\n6a842f66e32015822461bcb7\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：L\n\t\nTXYL0071-L-as the picture11\n\t\n\t\n6a842f66e32015822461bcb8\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：XL\n\t\nTXYL0071-XL-as the picture11\n\t\n\t\n6a842f66e32015822461bcb9\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：2XL\n\t\nTXYL0071-2XL-as the picture11\n\t\n\t\n6a842f66e32015822461bcba\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：3XL\n\t\nTXYL0071-3XL-as the picture11\n\t\n\t\n6a842f66e32015822461bcbb\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：4XL\n\t\nTXYL0071-4XL-as the picture11\n\t\n\t\n6a842f66e32015822461bcbc\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：5XL\n\t\nTXYL0071-5XL-as the picture11\n\t\n\t\n6a842f66e32015822461bcbd\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n\n\t\n\t\n颜色：as the picture\n尺寸：6XL\n\t\nTXYL0071-6XL-as the picture11\n\t\n\t\n6a842f66e32015822461bcbe\n\t\n长度：30 cm\n宽度： 20 cm\n高度： 1 cm\n重量： 200 g\n\t\n\t\nUS$3.98\n销售价格：US$3.56\n平均价格：US$3.75\n\t\n2天\n\t\n999\n显示所有仓库（1）\n\t\nUS$0\n\t\n欧盟产品标签\n\n"
+    }
+  },
+  "advertising_report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-25/104509.md",
+  "raw_stores": {
+    "d28": {
+      "captured_at": "2026-11-25T02:43:07.861Z",
+      "footer": "\n\t\n818.18%\n\t\nUS$727.58\nUS$102.93\n\t\n606.87%\n\t\n37,979\n11,182\n\t\n239.64%\n\t\n2,456\n660\n\t\n6.47%\n5.9%\n\t\n9.56%\n\t\n4.11%\n1.67%\n\t\n146.74%\n\t\n\n\n每页显示项： \n10\n25\n50\n100\n←1→\n更新日期 2026年11月24日 15:15:25",
+      "header": "销售和流量\n分析数据时区\n销售和流量\n情景\n国家\n购买次数\n42\n最近7天\n前7 天\n123\n81\n曝光量\n13,404\n最近7天\n前7 天\n66,255\n52,851\n交易总额（GMV）\nUS$295.83\n最近7天\n前7 天\nUS$792.25\nUS$496.42\n点击率\n0.08%\n最近7天\n前7 天\n3.92%\n4%\n转化率\n0.9%\n最近7天\n前7 天\n4.73%\n3.83%\n筛选：\n店铺：所有\n类目\n最近28 天 (2026/10/27 – 2026/11/23)\n销量\n流量\n请参考\n2026/10/27\n2026/10/30\n2026/11/2\n2026/11/5\n2026/11/8\n2026/11/11\n2026/11/14\n2026/11/17\n2026/11/20\n2026/11/23\n4\n6\n8\n10\n12\n14\n16\n18\n20\n22\n24\nUS$20\nUS$40\nUS$60\nUS$80\nUS$100\nUS$120\nUS$140\nUS$160\n购买次数\n销售\n交易总额（GMV）\n利润\n店铺\n细分\n导出XLSX\n店铺\n日期范围\n购买次数\n购买次数动态\n交易总额（GMV）\nGMV动态\n曝光量\n曝光动态\n点开次数\n点击率\nCTR动态\n转化率\nCR动态\n总数\n3 个店铺\n\t\n\t\n306\n总和\n\t\n28.57%\n总计\n\t\nUS$1,874.33\n总和\n\t\n55.27%\n总计\n\t\n194,860\n总和\n\t\n51.91%\n总计\n\t\n8,037\n总和\n\t\n4.12%\n总计\n\t\n14.21%\n总计\n\t\n3.81%\n总计\n\t\n1.34%\n总计\n\t\n\n\njh\n环比\n\t\n202",
+      "nextDisabled": [
+        true
+      ],
+      "rows": [
+        {
+          "cells": [
+            "总数\n3 个店铺",
+            "",
+            "306\n总和",
+            "28.57%\n总计",
+            "US$1,874.33\n总和",
+            "55.27%\n总计",
+            "194,860\n总和",
+            "51.91%\n总计",
+            "8,037\n总和",
+            "4.12%\n总计",
+            "14.21%\n总计",
+            "3.81%\n总计",
+            "1.34%\n总计",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "jh\n环比",
+            "2026/10/27 — 2026/11/23\n2026/9/29 — 2026/10/26",
+            "17\n6",
+            "183.33%",
+            "US$201\nUS$47",
+            "327.66%",
+            "20,895\n8,372",
+            "149.58%",
+            "1,025\n298",
+            "4.91%\n3.56%",
+            "37.81%",
+            "1.66%\n2.01%",
+            "17.63%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "Nineteen Wear\n环比",
+            "2026/10/27 — 2026/11/23\n2026/9/29 — 2026/10/26",
+            "188\n221",
+            "14.93%",
+            "US$945.75\nUS$1,057.18",
+            "10.54%",
+            "135,986\n108,721",
+            "25.08%",
+            "4,556\n5,209",
+            "3.35%\n4.79%",
+            "30.07%",
+            "4.13%\n4.24%",
+            "2.74%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "jwh second\n环比",
+            "2026/10/27 — 2026/11/23\n2026/9/29 — 2026/10/26",
+            "101\n11",
+            "818.18%",
+            "US$727.58\nUS$102.93",
+            "606.87%",
+            "37,979\n11,182",
+            "239.64%",
+            "2,456\n660",
+            "6.47%\n5.9%",
+            "9.56%",
+            "4.11%\n1.67%",
+            "146.74%",
+            ""
+          ]
+        }
+      ],
+      "source": "https://merchant.joom.com/panel/analytics/orders"
+    },
+    "d7": {
+      "captured_at": "2026-11-25T02:43:23.535Z",
+      "footer": "\n29\n\t\n62.07%\n\t\nUS$348.79\nUS$228.84\n\t\n52.42%\n\t\n14,759\n10,531\n\t\n40.15%\n\t\n1,016\n636\n\t\n6.88%\n6.04%\n\t\n13.99%\n\t\n4.63%\n4.56%\n\t\n1.45%\n\t\n\n\n每页显示项： \n10\n25\n50\n100\n←1→\n更新日期 2026年11月24日 15:15:25",
+      "header": "销售和流量\n分析数据时区\n销售和流量\n情景\n国家\n购买次数\n42\n最近7天\n前7 天\n123\n81\n曝光量\n13,404\n最近7天\n前7 天\n66,255\n52,851\n交易总额（GMV）\nUS$295.83\n最近7天\n前7 天\nUS$792.25\nUS$496.42\n点击率\n0.08%\n最近7天\n前7 天\n3.92%\n4%\n转化率\n0.9%\n最近7天\n前7 天\n4.73%\n3.83%\n筛选：\n店铺：所有\n类目\n最近7 天 (2026/11/17 – 2026/11/23)\n销量\n流量\n请参考\n2026/11/17\n2026/11/18\n2026/11/19\n2026/11/20\n2026/11/21\n2026/11/22\n2026/11/23\n10\n12\n14\n16\n18\n20\n22\n24\nUS$70\nUS$80\nUS$90\nUS$100\nUS$110\nUS$120\nUS$130\nUS$140\nUS$150\nUS$160\n购买次数\n销售\n交易总额（GMV）\n利润\n店铺\n细分\n导出XLSX\n店铺\n日期范围\n购买次数\n购买次数动态\n交易总额（GMV）\nGMV动态\n曝光量\n曝光动态\n点开次数\n点击率\nCTR动态\n转化率\nCR动态\n总数\n3 个店铺\n\t\n\t\n123\n总和\n\t\n51.85%\n总计\n\t\nUS$792.25\n总和\n\t\n59.59%\n总计\n\t\n66,255\n总和\n\t\n25.36%\n总计\n\t\n2,599\n总和\n\t\n3.92%\n总计\n\t\n1.93%\n总计\n\t\n4.73%\n总计\n\t\n23.51%\n总计\n\t\n\n\nNineteen Wear\n环比\n\t\n2026/11/17 — 2026",
+      "nextDisabled": [
+        true
+      ],
+      "rows": [
+        {
+          "cells": [
+            "总数\n3 个店铺",
+            "",
+            "123\n总和",
+            "51.85%\n总计",
+            "US$792.25\n总和",
+            "59.59%\n总计",
+            "66,255\n总和",
+            "25.36%\n总计",
+            "2,599\n总和",
+            "3.92%\n总计",
+            "1.93%\n总计",
+            "4.73%\n总计",
+            "23.51%\n总计",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "Nineteen Wear\n环比",
+            "2026/11/17 — 2026/11/23\n2026/11/10 — 2026/11/16",
+            "70\n49",
+            "42.86%",
+            "US$370.46\nUS$233.58",
+            "58.6%",
+            "43,942\n36,985",
+            "18.81%",
+            "1,328\n1,220",
+            "3.02%\n3.3%",
+            "8.38%",
+            "5.27%\n4.02%",
+            "31.24%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "jh\n环比",
+            "2026/11/17 — 2026/11/23\n2026/11/10 — 2026/11/16",
+            "6\n3",
+            "100%",
+            "US$73\nUS$34",
+            "114.71%",
+            "7,554\n5,335",
+            "41.59%",
+            "255\n258",
+            "3.38%\n4.84%",
+            "30.2%",
+            "2.35%\n1.16%",
+            "102.35%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "jwh second\n环比",
+            "2026/11/17 — 2026/11/23\n2026/11/10 — 2026/11/16",
+            "47\n29",
+            "62.07%",
+            "US$348.79\nUS$228.84",
+            "52.42%",
+            "14,759\n10,531",
+            "40.15%",
+            "1,016\n636",
+            "6.88%\n6.04%",
+            "13.99%",
+            "4.63%\n4.56%",
+            "1.45%",
+            ""
+          ]
+        }
+      ],
+      "source": "https://merchant.joom.com/panel/analytics/orders?dateRange=%5B%222026-11-16T16%3A00%3A00.000Z%22%2C%222026-11-23T15%3A59%3A59.999Z%22%5D"
+    },
+    "latest_day": {
+      "captured_at": "2026-11-25T02:43:31.189Z",
+      "footer": "22\n\t\n17\n9\n\t\n88.89%\n\t\nUS$76.33\nUS$48.97\n\t\n55.87%\n\t\n4,962\n6,484\n\t\n23.47%\n\t\n235\n183\n\t\n4.74%\n2.82%\n\t\n67.8%\n\t\n7.23%\n4.92%\n\t\n47.09%\n\t\n\n\n每页显示项： \n10\n25\n50\n100\n←1→\n更新日期 2026年11月24日 15:15:25",
+      "header": "销售和流量\n分析数据时区\n销售和流量\n情景\n国家\n购买次数\n42\n最近7天\n前7 天\n123\n81\n曝光量\n13,404\n最近7天\n前7 天\n66,255\n52,851\n交易总额（GMV）\nUS$295.83\n最近7天\n前7 天\nUS$792.25\nUS$496.42\n点击率\n0.08%\n最近7天\n前7 天\n3.92%\n4%\n转化率\n0.9%\n最近7天\n前7 天\n4.73%\n3.83%\n筛选：\n店铺：所有\n类目\n2026/11/23 – 2026/11/23\n销量\n流量\n请参考\n2026/11/23\n0\n2\n4\n6\n8\n10\n12\n14\n16\n18\n20\nUS$100\nUS$110\nUS$120\nUS$0\nUS$10\nUS$20\nUS$30\nUS$40\nUS$50\nUS$60\nUS$70\nUS$80\nUS$90\n购买次数\n销售\n交易总额（GMV）\n利润\n店铺\n细分\n导出XLSX\n店铺\n日期范围\n购买次数\n购买次数动态\n交易总额（GMV）\nGMV动态\n曝光量\n曝光动态\n点开次数\n点击率\nCTR动态\n转化率\nCR动态\n总数\n3 个店铺\n\t\n\t\n21\n总和\n\t\n10.53%\n总计\n\t\nUS$121.31\n总和\n\t\n12.38%\n总计\n\t\n8,357\n总和\n\t\n16.15%\n总计\n\t\n403\n总和\n\t\n4.82%\n总计\n\t\n26.82%\n总计\n\t\n5.21%\n总计\n\t\n3.94%\n总计\n\t\n\n\njwh second\n环比\n\t\n2026/11/23 — 2026/11/23\n2026/11/22 — 2026/11/22\n\t\n3\n9\n\t\n66.67%\n\t\nUS$24.98\nUS$54.9",
+      "nextDisabled": [
+        true
+      ],
+      "rows": [
+        {
+          "cells": [
+            "总数\n3 个店铺",
+            "",
+            "21\n总和",
+            "10.53%\n总计",
+            "US$121.31\n总和",
+            "12.38%\n总计",
+            "8,357\n总和",
+            "16.15%\n总计",
+            "403\n总和",
+            "4.82%\n总计",
+            "26.82%\n总计",
+            "5.21%\n总计",
+            "3.94%\n总计",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "jwh second\n环比",
+            "2026/11/23 — 2026/11/23\n2026/11/22 — 2026/11/22",
+            "3\n9",
+            "66.67%",
+            "US$24.98\nUS$54.98",
+            "54.57%",
+            "2,380\n2,265",
+            "5.08%",
+            "139\n165",
+            "5.84%\n7.28%",
+            "19.83%",
+            "2.16%\n5.45%",
+            "60.43%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "jh\n环比",
+            "2026/11/23 — 2026/11/23\n2026/11/22 — 2026/11/22",
+            "1\n1",
+            "",
+            "US$20\nUS$4",
+            "400%",
+            "1,015\n1,218",
+            "16.67%",
+            "29\n31",
+            "2.86%\n2.55%",
+            "12.26%",
+            "3.45%\n3.23%",
+            "6.9%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "Nineteen Wear\n环比",
+            "2026/11/23 — 2026/11/23\n2026/11/22 — 2026/11/22",
+            "17\n9",
+            "88.89%",
+            "US$76.33\nUS$48.97",
+            "55.87%",
+            "4,962\n6,484",
+            "23.47%",
+            "235\n183",
+            "4.74%\n2.82%",
+            "67.8%",
+            "7.23%\n4.92%",
+            "47.09%",
+            ""
+          ]
+        }
+      ],
+      "source": "https://merchant.joom.com/panel/analytics/orders?dateRange=%5B%222026-11-22T16%3A00%3A00.000Z%22%2C%222026-11-23T15%3A59%3A59.999Z%22%5D"
+    },
+    "countries": {
+      "captured_at": "2026-11-25T02:43:46.914Z",
+      "footer": "9\n\t\n\t\n法国\n\t\n2026/11/17 — 2026/11/23\n\t\n4\n\t\n1,269\n\t\n87\n\t\nUS$34.97\n\t\n\t\n乌兹别克斯坦\n\t\n2026/11/17 — 2026/11/23\n\t\n1\n\t\n1,413\n\t\n76\n\t\nUS$9.99\n\t\n\n每页显示项： \n10\n25\n50\n100\n←1→\n更新日期 2026年11月24日 15:19:25",
+      "header": "销售和流量\n分析数据时区\n销售和流量\n情景\n国家\n筛选：\n店铺：所有\n类目\n最近7 天 (2026/11/17 – 2026/11/23)\n按国家展示销量和流量\n购买次数\n曝光量\n点开次数\nGMV\n2026/11/17\n2026/11/18\n2026/11/19\n2026/11/20\n2026/11/21\n2026/11/22\n2026/11/23\n0\n2\n4\n6\n8\n10\n12\n14\n16\n18\n英国\n德国\n瑞典\n荷兰\n捷克\n波兰\n法国\n意大利\n斯洛伐克\n匈牙利\n店铺\n按国家细分\n导出XLSX\n店铺\n日期范围\n购买次数\n曝光量\n点开次数\nGMV\n\t\nNineteen Wear\n\t\n2026/11/17 — 2026/11/23\n\t\n70\n\t\n43,942\n\t\n1,328\n\t\nUS$370.46\n\t\n\n\t\n法国\n\t\n2026/11/17 — 2026/11/23\n\t\n3\n\t\n2,954\n\t\n75\n\t\nUS$11.97\n\t\n\t\n西班牙\n\t\n2026/11/17 — 2026/11/23\n\t\n3\n\t\n1,822\n\t\n52\n\t\nUS$18.52\n\t\n\t\n波兰\n\t\n2026/11/17 — 2026/11/23\n\t\n3\n\t\n2,558\n\t\n80\n\t\nUS$17.95\n\t\n\t\n乌克兰\n\t\n2026/11/17 — 2026/11/23\n\t\n0\n\t\n1,855\n\t\n42\n\t\nUS$0\n\t\n\t\n俄罗斯\n\t\n2026/11/17 — 2026/11/23\n\t\n0\n\t\n4,510\n\t\n98\n\t\nUS$0\n\t\n\t\n斯洛伐克\n\t\n2026/11/17 — 2026/11/23\n\t\n3\n\t\n691\n\t",
+      "nextDisabled": [
+        true
+      ],
+      "rows": [
+        {
+          "cells": [
+            "",
+            "Nineteen Wear",
+            "2026/11/17 — 2026/11/23",
+            "70",
+            "43,942",
+            "1,328",
+            "US$370.46",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "法国",
+            "2026/11/17 — 2026/11/23",
+            "3",
+            "2,954",
+            "75",
+            "US$11.97",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "西班牙",
+            "2026/11/17 — 2026/11/23",
+            "3",
+            "1,822",
+            "52",
+            "US$18.52",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "波兰",
+            "2026/11/17 — 2026/11/23",
+            "3",
+            "2,558",
+            "80",
+            "US$17.95",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "乌克兰",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "1,855",
+            "42",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "俄罗斯",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "4,510",
+            "98",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "斯洛伐克",
+            "2026/11/17 — 2026/11/23",
+            "3",
+            "691",
+            "45",
+            "US$17.97",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "匈牙利",
+            "2026/11/17 — 2026/11/23",
+            "2",
+            "1,150",
+            "41",
+            "US$14.49",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "荷兰",
+            "2026/11/17 — 2026/11/23",
+            "7",
+            "1,600",
+            "79",
+            "US$34.45",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "捷克",
+            "2026/11/17 — 2026/11/23",
+            "7",
+            "2,501",
+            "79",
+            "US$33.93",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "乌兹别克斯坦",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "2,006",
+            "62",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "德国",
+            "2026/11/17 — 2026/11/23",
+            "7",
+            "4,710",
+            "106",
+            "US$39.44",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "瑞典",
+            "2026/11/17 — 2026/11/23",
+            "7",
+            "2,488",
+            "84",
+            "US$35.97",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "意大利",
+            "2026/11/17 — 2026/11/23",
+            "3",
+            "1,267",
+            "58",
+            "US$23.97",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "英国",
+            "2026/11/17 — 2026/11/23",
+            "12",
+            "3,538",
+            "120",
+            "US$51.91",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "jh",
+            "2026/11/17 — 2026/11/23",
+            "6",
+            "7,554",
+            "255",
+            "US$73",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "匈牙利",
+            "2026/11/17 — 2026/11/23",
+            "1",
+            "200",
+            "5",
+            "US$20",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "斯洛伐克",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "134",
+            "2",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "西班牙",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "589",
+            "22",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "法国",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "601",
+            "9",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "意大利",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "212",
+            "26",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "俄罗斯",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "1,080",
+            "26",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "乌兹别克斯坦",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "499",
+            "9",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "英国",
+            "2026/11/17 — 2026/11/23",
+            "2",
+            "550",
+            "16",
+            "US$25",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "瑞典",
+            "2026/11/17 — 2026/11/23",
+            "1",
+            "293",
+            "8",
+            "US$4",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "波兰",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "363",
+            "14",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "荷兰",
+            "2026/11/17 — 2026/11/23",
+            "1",
+            "267",
+            "8",
+            "US$4",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "捷克",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "420",
+            "11",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "德国",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "765",
+            "39",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "乌克兰",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "179",
+            "11",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "jwh second",
+            "2026/11/17 — 2026/11/23",
+            "47",
+            "14,759",
+            "1,016",
+            "US$348.79",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "英国",
+            "2026/11/17 — 2026/11/23",
+            "15",
+            "979",
+            "121",
+            "US$79",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "捷克",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "737",
+            "44",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "意大利",
+            "2026/11/17 — 2026/11/23",
+            "2",
+            "180",
+            "23",
+            "US$19.98",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "德国",
+            "2026/11/17 — 2026/11/23",
+            "12",
+            "1,725",
+            "171",
+            "US$89.94",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "荷兰",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "462",
+            "22",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "乌克兰",
+            "2026/11/17 — 2026/11/23",
+            "1",
+            "297",
+            "17",
+            "US$9.99",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "波兰",
+            "2026/11/17 — 2026/11/23",
+            "4",
+            "812",
+            "54",
+            "US$39.97",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "俄罗斯",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "1,811",
+            "52",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "匈牙利",
+            "2026/11/17 — 2026/11/23",
+            "1",
+            "501",
+            "70",
+            "US$9.99",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "瑞典",
+            "2026/11/17 — 2026/11/23",
+            "0",
+            "593",
+            "46",
+            "US$0",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "西班牙",
+            "2026/11/17 — 2026/11/23",
+            "1",
+            "714",
+            "42",
+            "US$5",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "斯洛伐克",
+            "2026/11/17 — 2026/11/23",
+            "1",
+            "285",
+            "14",
+            "US$9.99",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "法国",
+            "2026/11/17 — 2026/11/23",
+            "4",
+            "1,269",
+            "87",
+            "US$34.97",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "",
+            "乌兹别克斯坦",
+            "2026/11/17 — 2026/11/23",
+            "1",
+            "1,413",
+            "76",
+            "US$9.99",
+            ""
+          ]
+        }
+      ],
+      "source": "https://merchant.joom.com/panel/analytics/orders/countries?dateRange=%5B%222026-11-16T16%3A00%3A00.000Z%22%2C%222026-11-23T15%3A59%3A59.999Z%22%5D"
+    },
+    "product_health": {
+      "captured_at": "2026-11-25T02:43:54.579Z",
+      "source": "https://merchant.joom.com/panel/products/all?limit=100",
+      "text": "产品\n添加产品\n全部\n6,098\n在售\n3,400\n未发布\n3\n限售\n2,693\n待优化\n2,273\n缺货\n0\n已经有一个准备好的列表了吗？尝试使用AI导入\n快速将CSV或Excel文件转换为Joom格式。AI检测字段，检查数据，并帮助准确上传产品。\n尝试使用AI导入\n了解更多\n待评级产品限制：9,000\n已发布\n可用\n3400\n5,600\n等级\n待评\n优选\n4\n53\n价格突涨\n已发布\n已发布总数\n2\n3,400\n价格突涨风险\n已发布\n已发布总数\n58\n3,400\n欧盟地区产品\n显示详情\n已阻止\n可用\n3,029\n3,049\nIP地区产品\n显示详情\n已阻止\n可用\n3,038\n3,040\n筛选：\n店铺：所有\n产品ID\nSKU\n类目\n有在售版本\n状态\n诊断\n限售地区\n库存\n等级\n定价偏高问题\n添加筛选器\n产品\n6,098\n导出\n批量操作\n图片\n产品名称\n等级\n内容质量\nID\n相似组ID\n店铺\n状态\n在售版本\nSKU\n价格\n已启用\n根类目\n叶子类目\n可用于促销\nJoom广告活动\n订单\n\t\n\t\nSummer New Tennis T-shirt Daily Loose Quick-drying Breathable Short-sleeved Men's And Women's Outdoor Running Sports Tops\n\t\n基础\n8/100\n\t\n部分内容\n\t\n6a841ce30fa41b01326419ef\n\t\n6ae22c2c27ab98099cbeb41b\n1个产品\n\t\nNineteen Wear\n\t\n待优化\n1\n\t\n是\n\t\nTXYL0087\n\t\nUS$3.98\n竞争性\n销售价格：US$3.56\n平均价格：US$3.76\n\t\n\t\nUnisex Clothing & Accessories\n\t\nT-Shirts (unisex)\n\t\n\t\n6a88653b1c9ca4000752a6cf、6a8cd24de84d9f0007cae4cb、6af7c2269a0dcc"
+    },
+    "refunds": {
+      "captured_at": "2026-11-25T02:44:39.217Z",
+      "footer": "\n\t\nUS$248\n\t\n1\n\t\nUS$10\n\t\n4.35%\n\t\n4.03%\n\t\n\n\njwh second\n\t\n2026/9/29 — 2026/11/23\n\t\n112\n\t\nUS$830.51\n\t\n2\n\t\nUS$14.99\n\t\n1.79%\n\t\n1.8%\n\t\n\n\n每页显示项： \n10\n25\n50\n100\n←1→\n更新日期 2026年11月24日 15:32:24",
+      "header": "退款率\n分析数据时区\n退款概览\n质量问题退款\n筛选：\n店铺：所有\n价格范围\n类目\n退款原因\n最近56 天 (2026/9/29 – 2026/11/23)\n按原因退款率\n请参考\n按GMV\n按订单\n2026/9/29\n2026/10/5\n2026/10/11\n2026/10/17\n2026/10/23\n2026/10/29\n2026/11/4\n2026/11/10\n2026/11/16\n2026/11/22\n0%\n5%\n10%\n15%\n20%\n25%\n30%\n35%\n未到货（线下发货）\n未到货（线上发货）\n质量\n其他原因\n按价格退款率\n请参考\n按GMV\n按订单\n2026/9/29\n2026/10/5\n2026/10/11\n2026/10/17\n2026/10/23\n2026/10/29\n2026/11/4\n2026/11/10\n2026/11/16\n2026/11/22\n0%\n5%\n10%\n15%\n20%\n25%\n30%\n35%\nUS$0 – US$2\nUS$2 – US$5\nUS$5 – US$20\nUS$20 – US$50\nUS$50+\n店铺\n细分\n导出XLSX\n店铺\n日期范围\n已批准\n已批准的GMV\n已退款\n退款交易总额\n退款率\nGMV退款率\nNineteen Wear\n\t\n2026/9/29 — 2026/11/23\n\t\n409\n\t\nUS$2,002.93\n\t\n17\n\t\nUS$79.35\n\t\n4.16%\n\t\n3.96%\n\t\n\n\njh\n\t\n2026/9/29 — 2026/11/23\n\t\n23\n\t\nUS$248\n\t\n1\n\t\nUS$10\n\t\n4.35%\n\t\n4.03%\n\t\n",
+      "nextDisabled": [
+        true
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Nineteen Wear",
+            "2026/9/29 — 2026/11/23",
+            "409",
+            "US$2,002.93",
+            "17",
+            "US$79.35",
+            "4.16%",
+            "3.96%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "jh",
+            "2026/9/29 — 2026/11/23",
+            "23",
+            "US$248",
+            "1",
+            "US$10",
+            "4.35%",
+            "4.03%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "jwh second",
+            "2026/9/29 — 2026/11/23",
+            "112",
+            "US$830.51",
+            "2",
+            "US$14.99",
+            "1.79%",
+            "1.8%",
+            ""
+          ]
+        }
+      ],
+      "source": "https://merchant.joom.com/panel/analytics/refunds"
+    }
+  },
+  "missing": [
+    "当前实时经营数据及逐国到手总价、实际国际运费",
+    "逐品限售及价格风险原因",
+    "全部历史优化商品在售生效与效果未逐一复验",
+    "取消、履约及时率、流量来源和逐单售后实际责任"
+  ],
+  "automation_id": "joom-2",
+  "observation_basis": {
+    "newly_checked": [
+      "三店7天及28天报表",
+      "商品健康汇总"
+    ],
+    "referenced_recent_observations": [
+      "同日10:45采集的11/23单日、分国、退款与两款在售详情；未冒充本轮重新采集"
+    ],
+    "previous_snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-25/104509.json"
+  },
+  "raw_recheck": {
+    "automation_id": "joom-2",
+    "started_at": "2026-11-25T03:01:34.633Z",
+    "scope": "按当前用户指示仅Joom，使用ChatGPT浏览器工具",
+    "settings_changed": false,
+    "d28": {
+      "captured_at": "2026-11-25T03:01:34.680Z",
+      "footer": "\n\t\n818.18%\n\t\nUS$727.58\nUS$102.93\n\t\n606.87%\n\t\n37,979\n11,182\n\t\n239.64%\n\t\n2,456\n660\n\t\n6.47%\n5.9%\n\t\n9.56%\n\t\n4.11%\n1.67%\n\t\n146.74%\n\t\n\n\n每页显示项： \n10\n25\n50\n100\n←1→\n更新日期 2026年11月24日 15:15:25",
+      "header": "销售和流量\n分析数据时区\n销售和流量\n情景\n国家\n购买次数\n42\n最近7天\n前7 天\n123\n81\n曝光量\n13,404\n最近7天\n前7 天\n66,255\n52,851\n交易总额（GMV）\nUS$295.83\n最近7天\n前7 天\nUS$792.25\nUS$496.42\n点击率\n0.08%\n最近7天\n前7 天\n3.92%\n4%\n转化率\n0.9%\n最近7天\n前7 天\n4.73%\n3.83%\n筛选：\n店铺：所有\n类目\n最近28 天 (2026/10/27 – 2026/11/23)\n销量\n流量\n请参考\n2026/10/27\n2026/10/30\n2026/11/2\n2026/11/5\n2026/11/8\n2026/11/11\n2026/11/14\n2026/11/17\n2026/11/20\n2026/11/23\n4\n6\n8\n10\n12\n14\n16\n18\n20\n22\n24\nUS$20\nUS$40\nUS$60\nUS$80\nUS$100\nUS$120\nUS$140\nUS$160\n购买次数\n销售\n交易总额（GMV）\n利润\n店铺\n细分\n导出XLSX\n店铺\n日期范围\n购买次数\n购买次数动态\n交易总额（GMV）\nGMV动态\n曝光量\n曝光动态\n点开次数\n点击率\nCTR动态\n转化率\nCR动态\n总数\n3 个店铺\n\t\n\t\n306\n总和\n\t\n28.57%\n总计\n\t\nUS$1,874.33\n总和\n\t\n55.27%\n总计\n\t\n194,860\n总和\n\t\n51.91%\n总计\n\t\n8,037\n总和\n\t\n4.12%\n总计\n\t\n14.21%\n总计\n\t\n3.81%\n总计\n\t\n1.34%\n总计\n\t\n\n\njh\n环比\n\t\n202",
+      "nextDisabled": [
+        true
+      ],
+      "rows": [
+        {
+          "cells": [
+            "总数\n3 个店铺",
+            "",
+            "306\n总和",
+            "28.57%\n总计",
+            "US$1,874.33\n总和",
+            "55.27%\n总计",
+            "194,860\n总和",
+            "51.91%\n总计",
+            "8,037\n总和",
+            "4.12%\n总计",
+            "14.21%\n总计",
+            "3.81%\n总计",
+            "1.34%\n总计",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "jh\n环比",
+            "2026/10/27 — 2026/11/23\n2026/9/29 — 2026/10/26",
+            "17\n6",
+            "183.33%",
+            "US$201\nUS$47",
+            "327.66%",
+            "20,895\n8,372",
+            "149.58%",
+            "1,025\n298",
+            "4.91%\n3.56%",
+            "37.81%",
+            "1.66%\n2.01%",
+            "17.63%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "Nineteen Wear\n环比",
+            "2026/10/27 — 2026/11/23\n2026/9/29 — 2026/10/26",
+            "188\n221",
+            "14.93%",
+            "US$945.75\nUS$1,057.18",
+            "10.54%",
+            "135,986\n108,721",
+            "25.08%",
+            "4,556\n5,209",
+            "3.35%\n4.79%",
+            "30.07%",
+            "4.13%\n4.24%",
+            "2.74%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "jwh second\n环比",
+            "2026/10/27 — 2026/11/23\n2026/9/29 — 2026/10/26",
+            "101\n11",
+            "818.18%",
+            "US$727.58\nUS$102.93",
+            "606.87%",
+            "37,979\n11,182",
+            "239.64%",
+            "2,456\n660",
+            "6.47%\n5.9%",
+            "9.56%",
+            "4.11%\n1.67%",
+            "146.74%",
+            ""
+          ]
+        }
+      ],
+      "source": "https://merchant.joom.com/panel/analytics/orders"
+    },
+    "d7": {
+      "captured_at": "2026-11-25T03:01:42.479Z",
+      "footer": "\n29\n\t\n62.07%\n\t\nUS$348.79\nUS$228.84\n\t\n52.42%\n\t\n14,759\n10,531\n\t\n40.15%\n\t\n1,016\n636\n\t\n6.88%\n6.04%\n\t\n13.99%\n\t\n4.63%\n4.56%\n\t\n1.45%\n\t\n\n\n每页显示项： \n10\n25\n50\n100\n←1→\n更新日期 2026年11月24日 15:15:25",
+      "header": "销售和流量\n分析数据时区\n销售和流量\n情景\n国家\n购买次数\n42\n最近7天\n前7 天\n123\n81\n曝光量\n13,404\n最近7天\n前7 天\n66,255\n52,851\n交易总额（GMV）\nUS$295.83\n最近7天\n前7 天\nUS$792.25\nUS$496.42\n点击率\n0.08%\n最近7天\n前7 天\n3.92%\n4%\n转化率\n0.9%\n最近7天\n前7 天\n4.73%\n3.83%\n筛选：\n店铺：所有\n类目\n最近7 天 (2026/11/17 – 2026/11/23)\n销量\n流量\n请参考\n2026/11/17\n2026/11/18\n2026/11/19\n2026/11/20\n2026/11/21\n2026/11/22\n2026/11/23\n10\n12\n14\n16\n18\n20\n22\n24\nUS$70\nUS$80\nUS$90\nUS$100\nUS$110\nUS$120\nUS$130\nUS$140\nUS$150\nUS$160\n购买次数\n销售\n交易总额（GMV）\n利润\n店铺\n细分\n导出XLSX\n店铺\n日期范围\n购买次数\n购买次数动态\n交易总额（GMV）\nGMV动态\n曝光量\n曝光动态\n点开次数\n点击率\nCTR动态\n转化率\nCR动态\n总数\n3 个店铺\n\t\n\t\n123\n总和\n\t\n51.85%\n总计\n\t\nUS$792.25\n总和\n\t\n59.59%\n总计\n\t\n66,255\n总和\n\t\n25.36%\n总计\n\t\n2,599\n总和\n\t\n3.92%\n总计\n\t\n1.93%\n总计\n\t\n4.73%\n总计\n\t\n23.51%\n总计\n\t\n\n\nNineteen Wear\n环比\n\t\n2026/11/17 — 2026",
+      "nextDisabled": [
+        true
+      ],
+      "rows": [
+        {
+          "cells": [
+            "总数\n3 个店铺",
+            "",
+            "123\n总和",
+            "51.85%\n总计",
+            "US$792.25\n总和",
+            "59.59%\n总计",
+            "66,255\n总和",
+            "25.36%\n总计",
+            "2,599\n总和",
+            "3.92%\n总计",
+            "1.93%\n总计",
+            "4.73%\n总计",
+            "23.51%\n总计",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "Nineteen Wear\n环比",
+            "2026/11/17 — 2026/11/23\n2026/11/10 — 2026/11/16",
+            "70\n49",
+            "42.86%",
+            "US$370.46\nUS$233.58",
+            "58.6%",
+            "43,942\n36,985",
+            "18.81%",
+            "1,328\n1,220",
+            "3.02%\n3.3%",
+            "8.38%",
+            "5.27%\n4.02%",
+            "31.24%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "jh\n环比",
+            "2026/11/17 — 2026/11/23\n2026/11/10 — 2026/11/16",
+            "6\n3",
+            "100%",
+            "US$73\nUS$34",
+            "114.71%",
+            "7,554\n5,335",
+            "41.59%",
+            "255\n258",
+            "3.38%\n4.84%",
+            "30.2%",
+            "2.35%\n1.16%",
+            "102.35%",
+            ""
+          ]
+        },
+        {
+          "cells": [
+            "jwh second\n环比",
+            "2026/11/17 — 2026/11/23\n2026/11/10 — 2026/11/16",
+            "47\n29",
+            "62.07%",
+            "US$348.79\nUS$228.84",
+            "52.42%",
+            "14,759\n10,531",
+            "40.15%",
+            "1,016\n636",
+            "6.88%\n6.04%",
+            "13.99%",
+            "4.63%\n4.56%",
+            "1.45%",
+            ""
+          ]
+        }
+      ],
+      "source": "https://merchant.joom.com/panel/analytics/orders?dateRange=%5B%222026-11-16T16%3A00%3A00.000Z%22%2C%222026-11-23T15%3A59%3A59.999Z%22%5D"
+    },
+    "health": {
+      "captured_at": "2026-11-25T03:01:48.376Z",
+      "source": "https://merchant.joom.com/panel/products/all?limit=100",
+      "text": "产品\n添加产品\n全部\n6,098\n在售\n3,400\n未发布\n3\n限售\n2,693\n待优化\n2,273\n缺货\n0\n已经有一个准备好的列表了吗？尝试使用AI导入\n快速将CSV或Excel文件转换为Joom格式。AI检测字段，检查数据，并帮助准确上传产品。\n尝试使用AI导入\n了解更多\n待评级产品限制：9,000\n已发布\n可用\n3400\n5,600\n等级\n待评\n优选\n5\n52\n价格突涨\n已发布\n已发布总数\n2\n3,400\n价格突涨风险\n已发布\n已发布总数\n58\n3,400\n欧盟地区产品\n显示详情\n已阻止\n可用\n3,029\n3,049\nIP地区产品\n显示详情\n已阻止\n可用\n3,038\n3,040\n筛选：\n店铺：所有\n产品ID\nSKU\n类目\n有在售版本\n状态\n诊断\n限售地区\n库存\n等级\n定价偏高问题\n添加筛选器\n产品\n6,098\n导出\n批量操作\n图片\n产品名称\n等级\n内容质量\nID\n相似组ID\n店铺\n状态\n在售版本\nSKU\n价格\n已启用\n根类目\n叶子类目\n可用于促销\nJoom广告活动\n订单\n\t\n\t\nSummer New Tennis T-shirt Daily Loose Quick-drying Breathable Short-sleeved Men's And Women's Outdoor Running Sports Tops\n\t\n基础\n8/100\n\t\n部分内容\n\t\n6a841ce30fa41b01326419ef\n\t\n6ae22c2c27ab98099cbeb41b\n1个产品\n\t\nNineteen Wear\n\t\n待优化\n1\n\t\n是\n\t\nTXYL0087\n\t\nUS$3.98\n竞争性\n销售价格：US$3.56\n平均价格："
+    },
+    "finished_at": "2026-11-25T03:01:48.382Z"
+  },
+  "advertising_execution_followup": {
+    "source": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-25/105839-cpm2单款移出/执行快照.json",
+    "executed_at": "2026-11-25T02:58:39.893Z",
+    "product": "6a868a318809ae01f99f4373",
+    "state": "已从cpm2移出",
+    "after_count": 49,
+    "daily_budget_usd": 10,
+    "active": true,
+    "new_execution_this_run": false
+  },
+  "automation_update": {
+    "id": "joom-2",
+    "status": "ACTIVE",
+    "change": "浏览器访问改为ChatGPT自带工具，不使用Kimi；补入最新cpm5及cpm2执行事实",
+    "schedule_unchanged": true,
+    "future_platform_scope_unchanged": true
+  }
+}

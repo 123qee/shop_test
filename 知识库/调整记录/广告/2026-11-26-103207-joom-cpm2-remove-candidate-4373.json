@@ -1,0 +1,12 @@
+{
+  "suggestion_id": "joom-cpm2-remove-candidate-4373",
+  "recorded_at": "2026-11-26T10:32:07.961000+08:00",
+  "event_type": "manual_once_readonly_followup",
+  "status": "当前cpm2仍49款，4373不在成员内，未重加，继续观察",
+  "previous_status": "已移出，cpm2当前49款10美元且开启；本轮无新动作",
+  "previous_event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/广告/2026-11-25-110554-joom-cpm2-remove-candidate-4373.json",
+  "settings_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-26/103207.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-26/103207.json",
+  "review": "首次成交低样本，完整7天及归因后复查；商品按真实在售生效看7天转化、14天售后"
+}

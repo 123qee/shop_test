@@ -1,0 +1,12 @@
+{
+  "suggestion_id": "product-optimize-20261119-cart-b2-6aba573ef8dad801a1e24fee",
+  "recorded_at": "2026-11-25T11:01:48.382000+08:00",
+  "event_type": "scheduled_store_recheck",
+  "status": "保留同日10:45复查状态；三店经营及健康计数复核无重大变化；该项未单独再次验证",
+  "previous_status": "已保存、刷新且重开编辑器核验",
+  "previous_event": "/Users/didi/Desktop/s_test/shop_test/知识库/调整记录/店铺经营/product-optimize-20261119-cart-b2-6aba573ef8dad801a1e24fee.json",
+  "settings_changed": false,
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/店铺经营/2026-11-25/110148.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-25/110148.json",
+  "review": "待具体资料或在售生效证据，7天转化及14天售后"
+}

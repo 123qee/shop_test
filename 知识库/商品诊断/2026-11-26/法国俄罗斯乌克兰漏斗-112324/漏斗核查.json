@@ -1,0 +1,183 @@
+{
+  "analyzed_at": "2026-11-26T11:23:24.404063+08:00",
+  "scope": "仅Joom；法国流量加购及俄罗斯/乌克兰点击到成交核查",
+  "fresh_capture_success": false,
+  "access_failure": "ChatGPT Chrome浏览器在会话命名阶段超时，未取得新页面；沿用原抓取时间，不冒充实时数据。",
+  "france7": {
+    "country": "法国",
+    "source": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-26/103207.json",
+    "captured_at": "2026-11-26T02:30:52.062Z",
+    "window_start": "2026-11-18",
+    "window_end": "2026-11-24",
+    "currency": "USD",
+    "platform_timezone": null,
+    "data_updated_at": "2026-11-25 12:38:28",
+    "is_live_this_run": false,
+    "rows": [
+      {
+        "store": "jwh second",
+        "country": "法国",
+        "purchases": 4.0,
+        "impressions": 1365.0,
+        "clicks": 98.0,
+        "gmv": 34.97
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "法国",
+        "purchases": 4.0,
+        "impressions": 2949.0,
+        "clicks": 73.0,
+        "gmv": 21.96
+      },
+      {
+        "store": "jh",
+        "country": "法国",
+        "purchases": 1.0,
+        "impressions": 624.0,
+        "clicks": 19.0,
+        "gmv": 20.0
+      }
+    ],
+    "aggregate": {
+      "impressions": 4938.0,
+      "clicks": 190.0,
+      "purchases": 9.0,
+      "gmv": 76.93,
+      "ctr": 0.03847711624139328,
+      "cr": 0.04736842105263158,
+      "carts": null,
+      "carts_missing_reason": "所保存国家报表未含加购列，不能当0；本次浏览器连接超时，未能重新核实国家×加购数据。"
+    }
+  },
+  "russia7": {
+    "country": "俄罗斯",
+    "source": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-26/103207.json",
+    "captured_at": "2026-11-26T02:30:52.062Z",
+    "window_start": "2026-11-18",
+    "window_end": "2026-11-24",
+    "currency": "USD",
+    "platform_timezone": null,
+    "data_updated_at": "2026-11-25 12:38:28",
+    "is_live_this_run": false,
+    "rows": [
+      {
+        "store": "jwh second",
+        "country": "俄罗斯",
+        "purchases": 0.0,
+        "impressions": 1947.0,
+        "clicks": 54.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "Nineteen Wear",
+        "country": "俄罗斯",
+        "purchases": 0.0,
+        "impressions": 4312.0,
+        "clicks": 86.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jh",
+        "country": "俄罗斯",
+        "purchases": 0.0,
+        "impressions": 1095.0,
+        "clicks": 28.0,
+        "gmv": 0.0
+      }
+    ],
+    "aggregate": {
+      "impressions": 7354.0,
+      "clicks": 168.0,
+      "purchases": 0.0,
+      "gmv": 0.0,
+      "ctr": 0.022844710361707914,
+      "cr": 0.0,
+      "carts": null,
+      "carts_missing_reason": "所保存国家报表未含加购列，不能当0；本次浏览器连接超时，未能重新核实国家×加购数据。"
+    }
+  },
+  "ukraine_last_visible7": {
+    "country": "乌克兰",
+    "source": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/店铺经营/2026-11-25/104509.json",
+    "captured_at": "2026-11-25T02:43:46.914Z",
+    "window_start": "2026-11-17",
+    "window_end": "2026-11-23",
+    "currency": "USD",
+    "platform_timezone": null,
+    "data_updated_at": "2026-11-24 15:19:25",
+    "is_live_this_run": false,
+    "rows": [
+      {
+        "store": "Nineteen Wear",
+        "country": "乌克兰",
+        "purchases": 0.0,
+        "impressions": 1855.0,
+        "clicks": 42.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jh",
+        "country": "乌克兰",
+        "purchases": 0.0,
+        "impressions": 179.0,
+        "clicks": 11.0,
+        "gmv": 0.0
+      },
+      {
+        "store": "jwh second",
+        "country": "乌克兰",
+        "purchases": 1.0,
+        "impressions": 297.0,
+        "clicks": 17.0,
+        "gmv": 9.99
+      }
+    ],
+    "aggregate": {
+      "impressions": 2331.0,
+      "clicks": 70.0,
+      "purchases": 1.0,
+      "gmv": 9.99,
+      "ctr": 0.03003003003003003,
+      "cr": 0.014285714285714285,
+      "carts": null,
+      "carts_missing_reason": "所保存国家报表未含加购列，不能当0；本次浏览器连接超时，未能重新核实国家×加购数据。"
+    }
+  },
+  "france28": {
+    "clicks": 605.0,
+    "purchases": 19.0,
+    "gmv": 143.5,
+    "impressions": 13891.0,
+    "cr": 0.03140495867768595
+  },
+  "russia28": {
+    "clicks": 665.0,
+    "purchases": 3.0,
+    "gmv": 23.97,
+    "impressions": 22774.0,
+    "cr": 0.004511278195488722
+  },
+  "window28": {
+    "source": "/Users/didi/Desktop/s_test/shop_test/知识库/商品诊断/2026-11-26/国家类目与商品优化-110353/采集与执行快照.json",
+    "window_start": "2026-10-28",
+    "window_end": "2026-11-24",
+    "captured_at": "2026-11-26T02:43:12.406Z",
+    "data_updated_at": "2026-11-25 12:38:28",
+    "is_live_this_run": false
+  },
+  "ukraine_latest_window": {
+    "window_start": "2026-11-18",
+    "window_end": "2026-11-24",
+    "metrics": null,
+    "reason": "该国未出现在最新各店13个可见国家列表，不是0流量/0成交证据。"
+  },
+  "correction": {
+    "claim": "此前Nineteen Wear乌克兰42点击0购买不能外推全账号",
+    "verified_same_window": "11/17—23，NW42点击0购买、jh11点击0购买、jwh second17点击1购买；三店合计70点击1购买。",
+    "carts_known": false
+  },
+  "causes_confirmed": null,
+  "diagnosis_note": "点击后成交弱已证实，是否无加购、加购后流失及其原因未证实。不能仅凭汇总点击断言运费过高、配送慢、支付不可用、流量质量差或算法降权。",
+  "settings_changed": false
+}

@@ -22,7 +22,11 @@ test('ASOS 母商品库保留原始高清图', async () => {
 test('ASOS 发布图使用 1200 正方形白底留白而不裁切', () => {
   const output = new URL(toPublishableImageUrl(asosImage));
   assert.equal(output.hostname, 'wsrv.nl');
-  assert.equal(output.searchParams.get('url'), asosImage);
+  // 代理应取 CDN 的高清版本，避免把裸地址默认返回的小图放大到 1200px。
+  const source = new URL(output.searchParams.get('url')!);
+  assert.equal(source.origin + source.pathname, asosImage);
+  assert.equal(source.searchParams.get('wid'), '1000');
+  assert.equal(source.searchParams.get('fit'), 'constrain');
   assert.equal(output.searchParams.get('w'), String(PUBLISH_IMAGE_SIZE));
   assert.equal(output.searchParams.get('h'), String(PUBLISH_IMAGE_SIZE));
   assert.equal(output.searchParams.get('fit'), 'contain');

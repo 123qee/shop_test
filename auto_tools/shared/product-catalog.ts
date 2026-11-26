@@ -11,6 +11,8 @@ export interface ProductIndexItem extends Pick<ProductRecord, 'id' | 'status' | 
   listingBuckets: JoomListingBucket[];
   hasShopListings: boolean;
   reviewReasons: JoomReviewReasonKey[];
+  /** Search source variant SKUs without transferring every variant. */
+  sourceSkuSearchText?: string;
 }
 
 export interface ProductListCard extends ProductIndexItem, Pick<ProductRecord,
@@ -21,6 +23,7 @@ export interface ProductListCard extends ProductIndexItem, Pick<ProductRecord,
   price: number;
   currency: string;
   sourceImage?: string;
+  sourceUrl?: string;
   imageCount: number;
   variantCount: number;
 }

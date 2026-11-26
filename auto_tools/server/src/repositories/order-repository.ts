@@ -192,18 +192,20 @@ function rowToJob(row: SyncJobRow): OrderSyncJob {
 
 export class OrderRepository {
   /**
-   * 按 (平台, 店铺, 订单号) 覆盖写入。平台返回的更新时间比本地旧时跳过，
+   * 按 (平台, 店铺, 来源标识或订单号) 覆盖写入，支持独立更新同一订单的不同包裹。
+   * 平台返回的更新时间比本地旧时跳过，
    * 补全字段（标题、颜色等）这次没拿到时保留上次的值。返回写入的订单数。
    */
   upsertOrders(orders: UnifiedOrder[], syncedAt = new Date().toISOString()): number {
     const db = getDb();
     const existing = db.prepare('SELECT updated_at FROM orders WHERE uid = ?');
     const upsertOrder = db.prepare(`
-      INSERT INTO orders (uid, platform, shop_id, order_id, shop_name, status, raw_status, ordered_at, updated_at,
+      INSERT INTO orders (uid, platform, shop_id, order_id, display_order_id, shop_name, status, raw_status, ordered_at, updated_at,
                           currency, address, tracking, raw, synced_at)
-      VALUES (@uid, @platform, @shopId, @orderId, @shopName, @status, @rawStatus, @orderedAt, @updatedAt,
+      VALUES (@uid, @platform, @shopId, @orderId, @displayOrderId, @shopName, @status, @rawStatus, @orderedAt, @updatedAt,
               @currency, @address, @tracking, @raw, @syncedAt)
       ON CONFLICT(uid) DO UPDATE SET
+        display_order_id = excluded.display_order_id,
         shop_name = excluded.shop_name,
         status = excluded.status,
         raw_status = excluded.raw_status,
@@ -244,7 +246,7 @@ export class OrderRepository {
     db.transaction(() => {
       for (const order of orders) {
         if (!order.orderId) continue;
-        const uid = orderUid(order.platform, order.shopId, order.orderId);
+        const uid = orderUid(order.platform, order.shopId, order.sourceId ?? order.orderId);
         const orderedAt = toIso(order.orderedAt) ?? toIso(order.updatedAt) ?? syncedAt;
         const updatedAt = toIso(order.updatedAt) ?? orderedAt;
         const previous = existing.get(uid) as { updated_at: string } | undefined;
@@ -253,7 +255,8 @@ export class OrderRepository {
           uid,
           platform: order.platform,
           shopId: order.shopId,
-          orderId: order.orderId,
+          orderId: order.sourceId ?? order.orderId,
+          displayOrderId: order.orderId,
           shopName: order.shopName,
           status: order.status,
           rawStatus: order.rawStatus,
@@ -300,7 +303,7 @@ export class OrderRepository {
   queryLines(query: OrderLineQuery): StoredOrderLine[] {
     if (!query.shops.length || !query.statuses.length) return [];
     const rows = getDb().prepare(`
-      SELECT l.*, o.platform, o.shop_id, o.shop_name, o.order_id, o.status, o.raw_status, o.ordered_at, o.updated_at,
+      SELECT l.*, o.platform, o.shop_id, o.shop_name, COALESCE(o.display_order_id, o.order_id) AS order_id, o.status, o.raw_status, o.ordered_at, o.updated_at,
              o.currency, o.address, o.tracking, m.exported_at AS exported_at
       FROM order_lines l
       JOIN orders o ON o.uid = l.order_uid

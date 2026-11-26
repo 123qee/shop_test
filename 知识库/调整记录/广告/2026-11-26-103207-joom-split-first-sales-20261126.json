@@ -1,0 +1,15 @@
+{
+  "suggestion_id": "joom-split-first-sales-20261126",
+  "recorded_at": "2026-11-26T10:32:07.961000+08:00",
+  "type": "recommendation",
+  "executed": false,
+  "products": [
+    "6acb1556209fdc01301e852b",
+    "6acb829a1a5751013167fe4f",
+    "6abf8b6c92cdcd01766b5611",
+    "6ac071e9180812015741a0b0"
+  ],
+  "action": "保留竞价0.65及每组5美元日预算；小样本不加投，等归因同步",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/日报/广告/2026-11-26/103207.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/快照/广告/2026-11-26/103207.json"
+}

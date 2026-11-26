@@ -84,7 +84,12 @@ ordersRouter.use(
 );
 
 /** 可导出的平台、店铺、授权与同步状态 */
-ordersRouter.get('/orders/sources', (_req, res) => {
+ordersRouter.get('/orders/sources', asyncHandler(async (_req, res) => {
+  const errors = new Map<string, string>();
+  await Promise.all(orderSourceRegistry.list().map(async (source) => {
+    try { await source.refreshShops?.(); }
+    catch (error) { errors.set(source.platform, error instanceof Error ? error.message : '读取店铺失败'); }
+  }));
   const counts = orderRepository.countByShop();
   const states = new Map(orderRepository.listSyncStates().map((state) => [shopKey(state.platform, state.shopId), state]));
   const body: OrderSourcesResponse = {
@@ -92,6 +97,7 @@ ordersRouter.get('/orders/sources', (_req, res) => {
     platforms: orderSourceRegistry.list().map((source) => ({
       platform: source.platform,
       label: source.label,
+      ...(errors.has(source.platform) ? { error: errors.get(source.platform) } : {}),
       shops: source.listShops().map((shop) => {
         const key = shopKey(source.platform, shop.shopId);
         const state = states.get(key);
@@ -112,11 +118,12 @@ ordersRouter.get('/orders/sources', (_req, res) => {
     })),
   };
   res.json(body);
-});
+}));
 
 /** 增量同步所选店铺，返回任务（202），前端轮询进度 */
 ordersRouter.post('/orders/sync', (req, res) => {
   const body = syncSchema.parse(req.body);
+  // 远程刷新由各来源在任务内执行；某个平台授权失效不会阻止其他已选店铺同步。
   res.status(202).json(orderSyncService.enqueue(body.shops, body.from));
 });
 

@@ -101,6 +101,10 @@ mercadoLibreRouter.get('/mercadolibre/categories/predict', asyncHandler(async (r
   res.json(await mercadoLibreService.predictCategory(accountId, siteId, title));
 }));
 
+mercadoLibreRouter.get('/mercadolibre/listing-index', (_req, res) => {
+  res.json(mercadoLibreService.listListingIndex());
+});
+
 mercadoLibreRouter.get('/mercadolibre/listings', (req, res) => {
   res.json(mercadoLibreService.listListings(req.query.productId ? String(req.query.productId) : undefined));
 });

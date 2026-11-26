@@ -1,0 +1,19 @@
+{
+  "suggestion_id": "joom-cpm2-remove-candidate-4373",
+  "recorded_at": "2026-11-25T10:58:39.893000+08:00",
+  "event_type": "user_authorized_execution",
+  "status": "已按用户授权移出cpm2，保存并刷新核验完成，观察中",
+  "campaign_id": "6af7c2a5822a8100076caff6",
+  "product_id": "6a868a318809ae01f99f4373",
+  "action": "从cpm2移出单款",
+  "before_count": 50,
+  "after_count": 49,
+  "budget_usd": 10,
+  "active": true,
+  "executed": true,
+  "scope": "本次单次授权，不扩展为自动修改权限",
+  "report": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-25/105839-cpm2单款移出/执行记录.md",
+  "snapshot": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-25/105839-cpm2单款移出/执行快照.json",
+  "screenshot": "/Users/didi/Desktop/s_test/shop_test/知识库/执行记录/广告/2026-11-25/105839-cpm2单款移出/后台核验.jpg",
+  "review": "移出后按真实时点单独看后续花费与成交；历史归因可能回补，避免重复移出或自动关其他商品"
+}

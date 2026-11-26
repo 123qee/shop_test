@@ -15,6 +15,9 @@ export interface OrderSourceAdapter {
   /** 可导出订单的店铺及授权状态 */
   listShops(): OrderSourceShop[];
 
+  /** 需要远程发现店铺的来源在进入页面或开始同步前刷新；listShops 读取本地缓存。 */
+  refreshShops?(): Promise<void>;
+
   /**
    * 增量拉取：返回 since 之后有更新的订单，每次产出一页。
    * 订单行需要尽量补全标题、颜色、尺码和材质原文。

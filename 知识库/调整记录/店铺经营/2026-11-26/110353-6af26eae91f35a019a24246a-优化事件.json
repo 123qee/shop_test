@@ -1,0 +1,27 @@
+{
+  "recommendation_id": "JOOM-PRODUCT-6af26eae91f35a019a24246a-20261126",
+  "event_type": "saved_pending_review",
+  "product_id": "6af26eae91f35a019a24246a",
+  "store": "jwh second",
+  "recorded_at": "2026-11-26T11:03:53.198073+08:00",
+  "scope_authorization": "用户要求检查国家类目并优化商品；高销量先不改",
+  "before_title": "Hunters Huntrix KPop Demon Hoodie Kids Hooded Sweatshirt Baby Girls Pullover Hoodies Boys Fashion Outerwear Children's Clothing",
+  "after_title": "Kids' Huntrix Graphic Pullover Hoodie, Long Sleeve Hooded Sweatshirt",
+  "changes": "精简标题、补搜索标签，描述圆领改连帽、儿童毛衣改套头卫衣；保留原结构化cotton，删除未经用户确认且与旧字段冲突的100%描述，未新增材质比例。",
+  "status": "已保存，审核中，未确认在售版本生效",
+  "published_at": null,
+  "variant_verification": {
+    "unchanged": true,
+    "method": "保存前后详情页完整变型区域文本比较"
+  },
+  "metrics_before": {
+    "purchases": 0.0,
+    "clicks": 23.0,
+    "carts": 9.0,
+    "window_start": "2026-10-29",
+    "window_end": "2026-11-25"
+  },
+  "evidence_screenshot": "4246a-保存核验.jpg",
+  "remaining_issue": null,
+  "review": "先核验在售版本发布；实际生效后3天看曝光点击、7天看转化、14天看归因售后，样本不足继续观察；不自动改商品或加预算。"
+}

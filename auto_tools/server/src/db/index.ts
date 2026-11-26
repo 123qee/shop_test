@@ -299,6 +299,7 @@ function migrate(d: Database.Database) {
 
   // 增量列(SQLite 无 ADD COLUMN IF NOT EXISTS,先探测)
   addColumnIfMissing(d, 'order_lines', 'image_urls', 'TEXT');
+  addColumnIfMissing(d, 'orders', 'display_order_id', 'TEXT');
   addColumnIfMissing(d, 'order_material_rules', 'polyester_type', 'TEXT');
   addColumnIfMissing(d, 'products', 'template_id', 'TEXT');
   addColumnIfMissing(d, 'products', 'grouping', 'TEXT');
@@ -381,8 +382,17 @@ function migrate(d: Database.Database) {
       product_id TEXT PRIMARY KEY REFERENCES products(id) ON DELETE CASCADE, summary TEXT NOT NULL
     );
     CREATE TABLE IF NOT EXISTS product_catalog_version (id INTEGER PRIMARY KEY CHECK(id = 1), version TEXT NOT NULL);
-    INSERT OR IGNORE INTO product_catalog_version VALUES (1, lower(hex(randomblob(16))));
+    INSERT OR IGNORE INTO product_catalog_version (id, version) VALUES (1, lower(hex(randomblob(16))));
   `);
+  addColumnIfMissing(d, 'product_catalog_version', 'schema_version', 'INTEGER NOT NULL DEFAULT 1');
+  // Old summaries lack source SKU search text. Invalidate once, including the client version.
+  d.transaction(() => {
+    const version = d.prepare('SELECT schema_version FROM product_catalog_version WHERE id = 1').pluck().get() as number;
+    if (version < 2) {
+      d.exec(`DELETE FROM product_catalog_index;
+        UPDATE product_catalog_version SET schema_version = 2, version = lower(hex(randomblob(16))) WHERE id = 1;`);
+    }
+  })();
   const bump = 'UPDATE product_catalog_version SET version = lower(hex(randomblob(16))) WHERE id = 1;';
   for (const operation of ['INSERT', 'UPDATE', 'DELETE']) {
     const row = operation === 'DELETE' ? 'OLD' : 'NEW';

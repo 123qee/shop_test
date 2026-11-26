@@ -5,7 +5,10 @@ import { groupLabel, materialLabel } from '@shared/product-grouping';
 import type { ProductSortCandidate } from '@shared/product-catalog';
 import { productSizeEntries, reviewTemplates, templateTraits, type TemplateTraits } from '@shared/template-fit';
 import { api } from '../api';
-import { fallbackToAllegroOriginal, sizedImageSource } from '../image-utils';
+import { fallbackToSourceImage, sizedImageSource } from '../image-utils';
+import { SorterImage } from '../components/SorterImage';
+import { createDetailCache } from '../sorter-prefetch';
+import { useSorterImages } from '../use-sorter-images';
 import { addProductsToActionList, readProductActionLists, removeProductsFromActionList, type ProductActionListKind } from '../product-action-lists';
 import { groupingOf } from './ProductGroupingPanel';
 import { readSorterProgress, saveSorterProgress, sorterSourceName, type SorterProgress } from '../sorter-progress';
@@ -305,21 +308,31 @@ export function TemplateSorter(props: {
     }
   }, [scope, batchId, id, state.source, state.skipped, state.choices, completed]);
   const latest = id ? state.latest[id] : undefined;
+  const [detailCache] = useState(() => createDetailCache(async (productId: string) => (await api.getProduct(productId)).record));
   const [detail, setDetail] = useState<{ id: string; record?: ProductRecord; error?: string }>();
   const [attempt, setAttempt] = useState(0);
   useEffect(() => {
     if (!id || latest) return;
     let cancelled = false;
     setDetail(undefined);
-    api.getProduct(id).then(({ record }) => {
-      if (!cancelled) setDetail({ id, record });
+    detailCache.get(id).then((record) => {
+      if (!cancelled) {
+        setDetail({ id, record });
+        // 预取只供首次进入使用；回看时重新读取，兼容在另一标签页编辑商品。
+        detailCache.forget(id);
+      }
     }).catch((error: Error) => {
       if (!cancelled) setDetail({ id, error: error.message });
     });
     return () => { cancelled = true; };
-  }, [id, latest, attempt]);
+  }, [id, latest, attempt, detailCache]);
+  useEffect(() => {
+    const refresh = () => { detailCache.clear(); setAttempt(value => value + 1); };
+    window.addEventListener('focus', refresh);
+    return () => window.removeEventListener('focus', refresh);
+  }, [detailCache]);
   const loaded = detail?.id === id ? detail : undefined;
-  const product = latest ?? loaded?.record;
+  const product = latest ?? loaded?.record ?? (id ? detailCache.peek(id) : undefined);
   const review = useMemo(() => product && reviewTemplates(product.collected, templates, {
     grouping: groupingOf(product), bindings: props.bindings, preferredId: product.templateId,
   }), [product, templates, props.bindings]);
@@ -329,6 +342,21 @@ export function TemplateSorter(props: {
   const images = product ? imagesOf(product) : [];
   const shownImage = images[Math.min(imageIndex, Math.max(0, images.length - 1))];
   const shownSrc = shownImage ? sizedImageSource(shownImage, 'preview') : undefined;
+  const nextItems = useMemo(() => queue.slice(state.index + 1)
+    .filter(next => !state.parked[next.id] && !state.skipped[next.id]).slice(0, 2), [queue, state.index, state.parked, state.skipped]);
+  // 本机详情与当前远程主图并行读取；只预取即将处理的两件，不加载整个商品库。
+  useEffect(() => {
+    if (!product || state.finished) return;
+    const timer = window.setTimeout(() => {
+      for (const next of nextItems) if (!state.latest[next.id]) void detailCache.get(next.id).catch(() => {});
+    }, 150);
+    return () => window.clearTimeout(timer);
+  }, [product?.id, nextItems, state.latest, state.finished, detailCache]);
+  useSorterImages(Boolean(shownSrc && loadedSrc === shownSrc), [
+    images[imageIndex + 1],
+    ...nextItems.map(next => state.latest[next.id] ? imagesOf(state.latest[next.id])[0] : next.image),
+    images[imageIndex + 2],
+  ]);
 
   const decisionIds = Object.keys(state.decisions).filter((id) => visibleIds.has(id));
   const parkedIds = Object.keys(state.parked).filter((id) => visibleIds.has(id));
@@ -365,21 +393,6 @@ export function TemplateSorter(props: {
     const timer = window.setTimeout(() => setNotice(null), notice.tone === 'error' ? 9000 : 4000);
     return () => window.clearTimeout(timer);
   }, [notice]);
-
-  // 预加载后面几件的主图，切换时不用等图片。Image 对象要留住引用，否则可能在加载完成前被回收。
-  const preloaded = useRef(new Map<string, HTMLImageElement>());
-  useEffect(() => {
-    const keep = new Map<string, HTMLImageElement>();
-    for (const next of queue.slice(state.index + 1, state.index + 4)) {
-      const src = next.image;
-      if (!src) continue;
-      const url = sizedImageSource(src, 'preview');
-      const img = preloaded.current.get(url) ?? new Image();
-      if (!img.src) img.src = url;
-      keep.set(url, img);
-    }
-    preloaded.current = keep;
-  }, [queue, state.index]);
 
   /** 写入本地清单（与列表页共用同一份数据，互斥：进发布清单会移出删除清单，反之亦然）。 */
   function putInList(kind: ProductActionListKind, id: string) {
@@ -735,31 +748,27 @@ export function TemplateSorter(props: {
             </div>
           </div>
         ) : !product || !review ? (
+          <div className="template-sorter-body">
+            <section className="template-sorter-media" aria-label="商品图片">
+              <div className="template-sorter-main-image">{item.image ? <SorterImage key={id} source={item.image} /> : <span className="muted">无图</span>}</div>
+            </section>
           <div className="template-sorter-done" role="status">
             {loaded?.error ? <>
               <p>商品详情读取失败：{loaded.error}</p>
               <div>
-                <button type="button" onClick={() => setAttempt((value) => value + 1)}>重试</button>
+                <button type="button" onClick={() => { if (id) detailCache.forget(id); setAttempt((value) => value + 1); }}>重试</button>
                 <button type="button" className="ghost" onClick={skipCurrent}>跳过这件</button>
               </div>
             </> : '正在读取商品详情…'}
+          </div>
           </div>
         ) : (
           <div className="template-sorter-body">
             <section className="template-sorter-media" aria-label="商品图片">
               <div className="template-sorter-main-image">
-                {shownSrc
-                  // 换商品时重建 img，避免短暂显示上一件的图；同一件切图时保留旧图，直到新图加载完。
-                  ? <img
-                      key={product.id}
-                      src={shownSrc}
-                      alt=""
-                      decoding="async"
-                      onLoad={() => setLoadedSrc(shownSrc)}
-                      onError={(e) => { setLoadedSrc(shownSrc); fallbackToAllegroOriginal(e.currentTarget); }}
-                    />
+                {shownImage
+                  ? <SorterImage key={`${product.id}:${shownImage}`} source={shownImage} onReady={() => setLoadedSrc(shownSrc!)} />
                   : <span className="muted">无图</span>}
-                {shownSrc && loadedSrc !== shownSrc && <em className="template-sorter-loading">加载图片…</em>}
                 {shownImage && (
                   <button
                     type="button"
@@ -817,7 +826,7 @@ export function TemplateSorter(props: {
                         }}
                         aria-label={`第 ${index + 1} 张图${index === 0 ? '（主图）' : ''}`}
                       >
-                        <img src={sizedImageSource(src, 'thumb')} alt="" loading="lazy" decoding="async" draggable={false} onError={(e) => fallbackToAllegroOriginal(e.currentTarget)} />
+                        <img key={src} src={sizedImageSource(src, 'thumb')} alt="" loading="lazy" decoding="async" fetchPriority="low" draggable={false} onError={(e) => fallbackToSourceImage(e.currentTarget, src)} />
                       </button>
                     );
                   })}

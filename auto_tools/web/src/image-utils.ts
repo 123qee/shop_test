@@ -22,15 +22,16 @@ export function fallbackToAllegroOriginal(image: HTMLImageElement) {
 }
 
 /** ASOS 裸图默认只有 313px 左右；查询 CDN 的 1000px 版本，兼容旧记录和历史代理链。 */
-function asosHighResolutionImage(url: string): string | undefined {
+function asosHighResolutionImage(url: string, pixels = 1000, depth = 0): string | undefined {
+  if (depth > 4) return;
   try {
     const current = new URL(url);
     if (current.hostname === 'wsrv.nl') {
       const source = current.searchParams.get('url');
-      return source ? asosHighResolutionImage(source) : undefined;
+      return source ? asosHighResolutionImage(source, pixels, depth + 1) : undefined;
     }
     if (!/(^|\.)images\.asos-media\.com$/i.test(current.hostname)) return;
-    current.searchParams.set('wid', '1000');
+    current.searchParams.set('wid', String(pixels));
     current.searchParams.set('fit', 'constrain');
     return current.href;
   } catch {
@@ -67,6 +68,8 @@ function allegroSizedImage(href: string, variant: string): string {
 
 export function sizedImageSource(url: string, size: ImageSize): string {
   const preset = SIZE_PRESETS[size];
+  const asos = asosHighResolutionImage(url, preset.px);
+  if (asos) return asos;
   try {
     const current = new URL(url);
     if (current.hostname === 'wsrv.nl') {
@@ -75,8 +78,6 @@ export function sizedImageSource(url: string, size: ImageSize): string {
       const inner = new URL(source);
       // wsrv 对部分 Allegro 原图会 404，Allegro 直接用 CDN 的缩小版本。
       if (/(^|\.)allegroimg\.com$/i.test(inner.hostname)) return allegroSizedImage(inner.href, preset.allegroVariant);
-      // ASOS 历史代理图：保持原有 ASOS 处理（imagePreviewSource），缩略图用原图即可。
-      if (/(^|\.)images\.asos-media\.com$/i.test(inner.hostname)) return size === 'preview' ? imagePreviewSource(url) : url;
       current.searchParams.set('w', String(preset.px));
       current.searchParams.set('h', String(preset.px));
       current.searchParams.set('q', String(preset.quality));
@@ -88,4 +89,13 @@ export function sizedImageSource(url: string, size: ImageSize): string {
   } catch {
     return url;
   }
+}
+
+/** 缩小版本不可用时仅回退一次；原始地址始终只用于显示，不写回商品。 */
+export function fallbackToSourceImage(image: HTMLImageElement, source: string): boolean {
+  const fallback = imagePreviewSource(source);
+  if (image.dataset.sourceFallback === source || (image.currentSrc || image.src) === fallback) return false;
+  image.dataset.sourceFallback = source;
+  image.src = fallback;
+  return true;
 }

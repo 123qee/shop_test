@@ -5,6 +5,7 @@ import type {
   MercadoLibreAttribute,
   MercadoLibreConfigPublic,
   MercadoLibreListingDraft,
+  MercadoLibreListingIndexItem,
   MercadoLibreSellerModel,
   MercadoLibreSiteId,
   MercadoLibreTemplate,
@@ -169,6 +170,10 @@ export class MercadoLibreService {
 
   listListings(productId?: string): MercadoLibreListingDraft[] {
     return mercadoLibreRepository.listListings(productId);
+  }
+
+  listListingIndex(): MercadoLibreListingIndexItem[] {
+    return mercadoLibreRepository.listListingIndex();
   }
 
   getListing(id: string): MercadoLibreListingDraft {
