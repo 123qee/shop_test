@@ -9,6 +9,9 @@ const PLATFORM = 'mercadolibre';
 const SHOPS_KEY = 'miaoshou.orderShops';
 const CACHE_MS = 5 * 60 * 1000;
 const MAX_PAGES = 1000;
+// 妙手按服务端当前时间校验结束时间，本机快几秒也会失败。
+// 余量小于同步服务的十分钟回拉重叠，最近一分钟的变更会在下次同步补齐。
+const END_TIME_LAG_MS = 60 * 1000;
 type Connection = Pick<MiaoshouService, 'publicConfig' | 'orderConnectionId' | 'shops' | 'orderPackages'>;
 interface ShopCache { connectionId: string; fetchedAt: number; shops: OrderSourceShop[] }
 
@@ -146,7 +149,7 @@ export class MiaoshouOrderSource implements OrderSourceAdapter {
     if (!shop?.connected) throw new MiaoshouError('妙手店铺不存在或授权已失效，请在妙手连接中检查');
     if (!/^[1-9]\d*$/.test(shopId) || !Number.isSafeInteger(Number(shopId))) throw new MiaoshouError('妙手店铺 ID 无效');
     const connectionId = this.connection.orderConnectionId();
-    const until = new Date();
+    const until = new Date(Date.now() - END_TIME_LAG_MS);
     const seen = new Set<string>();
     // 实际接口限制修改时间范围最多 15 天。每段取 14 天，相邻段边界重叠并去重，不漏边界秒。
     for (let from = since; from <= until;) {
@@ -161,7 +164,7 @@ export class MiaoshouOrderSource implements OrderSourceAdapter {
         for (let attempt = 0; ; attempt++) {
           try { data = await this.connection.orderPackages(query); break; }
           catch (error) {
-            if (attempt >= 2 || !(error instanceof MiaoshouError) || !/RateLimit|频繁|限流|繁忙/i.test(error.message)) throw error;
+            if (attempt >= 2 || !(error instanceof MiaoshouError) || !/RateLimit|频繁|限流|频率超限|繁忙/i.test(error.message)) throw error;
             await new Promise(resolve => setTimeout(resolve, 1500 * (attempt + 1)));
           }
         }

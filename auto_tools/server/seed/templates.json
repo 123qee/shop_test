@@ -946,7 +946,9 @@
         "columns": [
           "imageUrl",
           "quantity",
+          "purchaseSize",
           "size",
+          "polyesterType",
           "shop",
           "material",
           "productSku",
@@ -955,20 +957,20 @@
         "defaults": {
           "shops": [
             {
+              "platform": "mercadolibre",
+              "shopId": "14823975"
+            },
+            {
               "platform": "joom",
               "shopId": "default"
             },
             {
               "platform": "joom",
-              "shopId": "jiang-weihua-2"
-            },
-            {
-              "platform": "joom",
-              "shopId": "shop_6a8c4690b1e1819ed91f9baa"
+              "shopId": "shop_1795133747070_0"
             }
           ],
           "statuses": [
-            "to_ship"
+            "shipped"
           ],
           "onlyNew": true
         },

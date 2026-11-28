@@ -302,7 +302,7 @@ export function OrderExportTab({ profiles, active, exporting, exportedId, onMana
   return (
     <div className="orders-export" hidden={!active}>
       <section className="orders-card">
-        <div className="orders-preview-head"><div><h3>1. 选择店铺，同步订单</h3><span className="orders-hint">默认查看待发货、未导出订单。美客多订单从妙手读取，与 Joom 分别生成 Excel，图片、数量、平台尺码和拿货尺码使用相同格式。</span></div></div>
+        <div className="orders-preview-head"><div><h3>1. 选择店铺，同步订单</h3><span className="orders-hint">默认查看待发货、未导出订单。美客多订单从妙手读取；自用 Excel 按平台生成，供应商 Excel 跨平台合并为成人棉、童装棉两份，只保留拿货尺码。</span></div></div>
         <div className="orders-row">
           <span className="orders-label">店铺</span>
           <div className="orders-control orders-shop-groups">

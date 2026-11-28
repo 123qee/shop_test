@@ -9,6 +9,7 @@ import {
   sanitizeFileName,
   orderExportColumns,
   purchaseSizeFor,
+  purchaseSizeGroup,
 } from '../../shared/orders';
 import { inferMaterialFromText } from '../../shared/product-grouping';
 import { crc32, createZip } from '../src/util/zip';
@@ -44,6 +45,13 @@ test('童装拿货尺码：聚酯保留原值，其他材质增大一码，160 �
   assert.equal(purchaseSizeFor('cotton', ' 140 '), '150');
   assert.equal(purchaseSizeFor('polyester', ' 140 '), ' 140 ');
   assert.equal(purchaseSizeFor('cotton', '2XS'), '160', '成人换算得到 160 后不再叠加');
+});
+
+test('供应商分类只看最终拿货尺码，160 为童装；缺失和不明确尺码不猜测', () => {
+  for (const size of ['100', '110', '120', '130', '140', '150', '160', ' 160 ']) assert.equal(purchaseSizeGroup(size), 'kids');
+  for (const size of ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '4XL', '5XL', 'XXL', ' xl ']) assert.equal(purchaseSizeGroup(size), 'adult');
+  assert.equal(purchaseSizeGroup(purchaseSizeFor('cotton', '2XS')), 'kids');
+  for (const size of [undefined, '', 'custom', 'M / L', '170']) assert.equal(purchaseSizeGroup(size), undefined);
 });
 
 test('北京时间日期与预设范围', () => {

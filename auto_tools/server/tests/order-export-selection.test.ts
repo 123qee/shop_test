@@ -24,11 +24,11 @@ test('逐行选择导出：时间顺序、跳过图片、部分订单标记与�
   });
   const orders: UnifiedOrder[] = [
     { platform: 'selection', shopId: 'Z', shopName: 'Z', orderId: 'oldest', status: 'to_ship', rawStatus: 'approved', orderedAt: '2026-11-01T00:00:00Z', updatedAt: '2026-11-01T00:00:00Z', lines: [
-      { lineId: 'main', productId: 'same', productSku: 'ZZZ', materialHint: 'cotton', quantity: 2, imageUrl: 'https://selection.test/large' },
+      { lineId: 'main', productId: 'same', productSku: 'ZZZ', materialHint: 'cotton', size: 'M', quantity: 2, imageUrl: 'https://selection.test/large' },
       { lineId: 'gift', productId: 'gift', materialHint: 'polyester', quantity: 1, isGift: true, imageUrl: 'https://selection.test/unavailable' },
     ] },
     { platform: 'selection', shopId: 'A', shopName: 'A', orderId: 'middle', status: 'to_ship', rawStatus: 'approved', orderedAt: '2026-11-02T00:00:00Z', updatedAt: '2026-11-02T00:00:00Z', lines: [
-      { lineId: 'main', productId: 'same', productSku: 'AAA', materialHint: 'cotton', quantity: 1, imageUrl: 'https://selection.test/small' },
+      { lineId: 'main', productId: 'same', productSku: 'AAA', materialHint: 'cotton', size: 'M', quantity: 1, imageUrl: 'https://selection.test/small' },
     ] },
     { platform: 'selection', shopId: 'A', shopName: 'A', orderId: 'newest', status: 'to_ship', rawStatus: 'approved', orderedAt: '2026-11-03T00:00:00Z', updatedAt: '2026-11-03T00:00:00Z', lines: [
       { lineId: 'main', productId: 'new', materialHint: 'polyester', quantity: 4, imageUrl: 'https://selection.test/large' },
@@ -82,11 +82,11 @@ test('逐行选择导出：时间顺序、跳过图片、部分订单标记与�
     assert.equal(allLines(selected).length, 5, '跳过行仍在预览中，可以重新勾选');
     assert.equal(allLines(selected).find((line: any) => line.uid === giftUid).exportSelected, false);
     assert.equal(allLines(selected).find((line: any) => line.uid === uid('Z', 'oldest')).exportSelected, true, '同一订单可以只导出其中一件商品');
-    assert.deepEqual(selected.files.map((file: any) => file.quantity), [2, 4]);
+    assert.deepEqual(selected.files.map((file: any) => file.quantity), [2, 4, 2]);
     const exported = await request('exports', selectedQuery);
     assert.equal(exported.status, 201, JSON.stringify(exported.data));
     assert.deepEqual(downloads, ['/large'], '不下载被跳过的坏图、未选图和待确认商品图片');
-    assert.deepEqual(exported.data.files.map((file: any) => [file.orderCount, file.quantity, file.lowResolutionImages]), [[1, 2, 0], [1, 4, 0]]);
+    assert.deepEqual(exported.data.files.map((file: any) => [file.orderCount, file.quantity, file.lowResolutionImages]), [[1, 2, 0], [1, 4, 0], [1, 2, 0]]);
     assert.deepEqual(exported.data.summary.filter((item: any) => item.exported).map((item: any) => item.quantity), [2, 4]);
     assert.equal(getDb().prepare('SELECT COUNT(*) AS n FROM order_export_marks').get()!.n, 2);
     const cotton = unzip(readFileSync(orderExportService.filePath(exported.data.id, '1').path));
@@ -103,7 +103,7 @@ test('逐行选择导出：时间顺序、跳过图片、部分订单标记与�
     assert.ok(allLines(afterSync).filter((line: any) => line.uid !== uid('A', 'pending')).every((line: any) => !line.exportSelected), '重新同步仍遵循本次跳过名单');
     const retry = await request('exports', query);
     assert.equal(retry.status, 201, JSON.stringify(retry.data));
-    assert.deepEqual(retry.data.files.map((file: any) => [file.quantity, file.lowResolutionImages]), [[1, 1], [1, 1]], '低清源图不伪造像素，并给出提示');
+    assert.deepEqual(retry.data.files.map((file: any) => [file.quantity, file.lowResolutionImages]), [[1, 1], [1, 1], [1, 1]], '低清源图不伪造像素，供应商副本同样给出提示');
     assert.equal(allLines((await request('preview', query)).data).length, 1, '仅待确认商品保留');
 
     const descending = await request('exports', { ...query, onlyNew: false, sortOrder: 'newest', excludedLineUids: [giftUid, uid('A', 'newest')] });

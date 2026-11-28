@@ -39,6 +39,7 @@ function order(input: OrderInput): UnifiedOrder {
     lines: input.lines.map((line, index) => ({
       lineId: index ? `l${index}` : 'main',
       quantity: 1,
+      size: 'M',
       imageUrl: 'https://example.test/front.jpg',
       productSku: `${line.productId}-SKU`,
       variantSku: `${line.productId}-V`,
@@ -188,7 +189,7 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       const unknown = bucket(data, 'unknown');
       assert.deepEqual(unknown.lines.map((l: any) => [l.orderId, l.material]), [['B-1', 'blend'], ['B-2', 'unknown']]);
       assert.match(unknown.lines[0].materialEvidence, /65% polyester/);
-      assert.deepEqual(data.files.map((f: any) => f.name), [`${today}_棉_测试平台订单.xlsx`, `${today}_聚酯纤维_测试平台订单.xlsx`]);
+      assert.deepEqual(data.files.map((f: any) => f.name), [`${today}_棉_测试平台订单.xlsx`, `${today}_聚酯纤维_测试平台订单.xlsx`, `${today}_棉_订单_供应商拿货_成人.xlsx`]);
       assert.equal(bucket(data, 'unknown').excluded, true);
       assert.match(data.warnings[0], /本次不导出/);
     });
@@ -244,7 +245,7 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       assert.deepEqual(bucket(selected, 'polyester').lines.map((line: any) => line.polyesterType), ['flat', 'pinhole']);
       const skipped = (await request('/preview', 'POST', { ...noTypes, excludedLineUids: [lineUid('A', 'A-3'), lineUid('B', 'B-2', 'l1')] })).data;
       assert.ok(!skipped.warnings.some((warning: string) => warning.includes('尚未选择')));
-      assert.equal(skipped.files.length, 1, '跳过缺类型商品后仍能导出棉质文件');
+      assert.equal(skipped.files.length, 2, '跳过缺类型商品后仍能导出棉质原文件及供应商副本');
 
       const rule = await request('/material-rules', 'POST', { platform: 'fake', productId: 'P-POLY', material: 'polyester', polyesterType: 'pinhole' });
       assert.equal(rule.status, 201);
@@ -291,11 +292,12 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       assert.deepEqual(data.files.map((f: any) => [f.name, f.orderCount, f.quantity]), [
         [`${today}_棉_测试平台订单.xlsx`, 3, 4],
         [`${today}_聚酯纤维_测试平台订单.xlsx`, 2, 2],
+        [`${today}_棉_订单_供应商拿货_成人.xlsx`, 3, 4],
       ]);
       assert.equal(data.zipName, `${today}_每日发厂_01.zip`);
       assert.deepEqual(data.query.shops.map((s: any) => s.shopName), ['店铺A', '店铺B']);
 
-      assert.equal((await fetch(`${base}/exports/${exportId}/files/3`)).status, 404, '不会生成待确认文件');
+      assert.equal((await fetch(`${base}/exports/${exportId}/files/4`)).status, 404, '只生成两个原文件及棉供应商副本');
       assert.equal(data.summary.find((item: any) => item.key === 'unknown').exported, false);
       const cotton = unzip(Buffer.from(await (await fetch(`${base}/exports/${exportId}/files/1`)).arrayBuffer()));
       const cottonSheet = cotton.get('xl/worksheets/sheet1.xml')!.toString();
@@ -328,6 +330,24 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       assert.ok(!cottonSheet.includes('Mystery item'));
       assert.ok(cottonSheet.includes('已记住的商品材质') && cottonSheet.includes('商品库分组（人工确认）'));
       assert.match(cotton.get('xl/workbook.xml')!.toString(), /<sheet name="棉"/);
+
+      const supplier = unzip(Buffer.from(await (await fetch(`${base}/exports/${exportId}/files/3`)).arrayBuffer()));
+      const supplierSheet = supplier.get('xl/worksheets/sheet1.xml')!.toString();
+      // 比较所有单元格内容（含空格位），确保副本只删除平台尺码，行顺序、数量、选图等保持一致。
+      const cells = (xml: string, width: number) => [...xml.matchAll(/<row\b[^>]*>(.*?)<\/row>/g)].map(row => {
+        const values = Array<string>(width).fill('');
+        for (const cell of row[1].matchAll(/<c r="([A-Z]+)\d+"[^>]*>(.*?)<\/c>/g)) {
+          const index = [...cell[1]].reduce((n, letter) => n * 26 + letter.charCodeAt(0) - 64, 0) - 1;
+          values[index] = cell[2];
+        }
+        return values;
+      });
+      const sizeIndex = headers.indexOf('平台本身尺码');
+      assert.doesNotMatch(supplierSheet, /平台本身尺码/);
+      assert.deepEqual(cells(supplierSheet, headers.length - 1), cells(cottonSheet, headers.length).map(row => row.filter((_, i) => i !== sizeIndex)));
+      for (const name of [...media, 'xl/drawings/drawing1.xml', 'xl/drawings/_rels/drawing1.xml.rels']) {
+        assert.ok(supplier.get(name)!.equals(cotton.get(name)!), `供应商副本图片及位置保持一致：${name}`);
+      }
 
       const zip = await fetch(`${base}/exports/${exportId}/zip`);
       assert.equal(zip.status, 200);
@@ -418,16 +438,21 @@ test('订单导出：多店铺同步、材质判定、按材质分文件、只�
       assert.equal(bucket(preview, 'unknown').excluded, true);
       assert.ok(preview.warnings.some((w: string) => w.includes('本次不导出')));
       // 新方案没有导出过：棉 A-1、A-2、A-OLD，涤纶 A-3、A-4、B-2 赠品，共 6 单
-      assert.deepEqual(preview.files.map((f: any) => [f.name, f.sheets]), [[`对账_${today}_6单.xlsx`, ['全棉', '涤纶']]]);
+      assert.deepEqual(preview.files.map((f: any) => [f.name, f.sheets]), [[`对账_${today}_6单.xlsx`, ['全棉', '涤纶']], [`对账_${today}_3单_供应商拿货_成人.xlsx`, ['全棉']]]);
 
       const exported = (await request('/exports', 'POST', query)).data;
-      assert.equal(exported.files.length, 1);
+      assert.equal(exported.files.length, 2);
       assert.deepEqual(exported.summary.map((s: any) => [s.label, s.exported]), [['全棉', true], ['涤纶', true], ['待确认', false]]);
       const workbook = unzip(Buffer.from(await (await fetch(`${base}/exports/${exported.id}/files/1`)).arrayBuffer()));
       assert.match(workbook.get('xl/workbook.xml')!.toString(), /<sheet name="全棉".*<sheet name="涤纶"/);
       assert.ok(workbook.get('xl/worksheets/sheet1.xml')!.toString().includes('单价'));
       const customHeaders = [...workbook.get('xl/worksheets/sheet1.xml')!.toString().match(/<row r="1"[^>]*>(.*?)<\/row>/)![1].matchAll(/<t[^>]*>(.*?)<\/t>/g)].map((item) => item[1]);
       assert.deepEqual(customHeaders, ['图片', '数量', '拿货尺码', '平台本身尺码', '聚酯类型', '店铺', '材质', '订单号', '单价'], '自定义方案缺少必需字段时自动补齐并放在前面');
+      const supplier = unzip(Buffer.from(await (await fetch(`${base}/exports/${exported.id}/files/2`)).arrayBuffer()));
+      assert.match(supplier.get('xl/workbook.xml')!.toString(), /<sheet name="全棉"/);
+      assert.doesNotMatch(supplier.get('xl/workbook.xml')!.toString(), /涤纶/);
+      assert.ok(!supplier.has('xl/worksheets/sheet2.xml'));
+      assert.doesNotMatch(supplier.get('xl/worksheets/sheet1.xml')!.toString(), /平台本身尺码/);
 
       const remaining = (await request('/preview', 'POST', query)).data;
       assert.deepEqual(remaining.buckets.flatMap((b: any) => b.lines.map((l: any) => l.orderId)), ['B-2'], '跳过的未识别订单下次仍会出现');

@@ -112,6 +112,15 @@ export function purchaseSizeFor(material: ProductMaterial, size: string | undefi
   return COTTON_PURCHASE_SIZES[normalized] ?? size;
 }
 
+/** 供应商按最终拿货尺码分流；例如成人 2XS 换算为 160 后也交童装供应商。 */
+export function purchaseSizeGroup(size: string | undefined): 'adult' | 'kids' | undefined {
+  const normalized = size?.trim().toUpperCase();
+  if (!normalized) return undefined;
+  if (Object.hasOwn(KIDS_PURCHASE_SIZES, normalized)) return 'kids';
+  if (/^(?:XS|S|M|L|XL|[2-9]X[SL]|X{2,4}[SL])$/.test(normalized)) return 'adult';
+  return undefined;
+}
+
 // ---- 导出列 ----
 
 export interface OrderColumnDef {

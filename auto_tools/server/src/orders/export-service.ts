@@ -16,6 +16,7 @@ import {
   orderExportColumns,
   POLYESTER_TYPE_LABELS,
   purchaseSizeFor,
+  purchaseSizeGroup,
   renderFileName,
   sanitizeFileName,
   type OrderColumnKey,
@@ -65,6 +66,8 @@ interface PlanBucket {
 interface PlanFile {
   name: string;
   buckets: PlanBucket[];
+  supplierCopy?: boolean;
+  imageColumnCount?: number;
   orderCount: number;
   quantity: number;
 }
@@ -150,6 +153,10 @@ function statsOf(lines: ClassifiedLine[]): { orderCount: number; quantity: numbe
     orderCount: new Set(lines.map(({ line }) => JSON.stringify([line.platform, line.shopId, line.orderId]))).size,
     quantity: lines.reduce((sum, { line }) => sum + line.quantity, 0),
   };
+}
+
+function imageColumnCount(buckets: PlanBucket[]): number {
+  return buckets.reduce((max, bucket) => bucket.lines.reduce((n, item) => Math.max(n, item.selectedImages.length), max), 1);
 }
 
 function toPreviewLine({ line, exportSelected, decision, imageUrls, selectedImages }: ClassifiedLine, shopNames: Map<string, string>): OrderPreviewLine {
@@ -350,6 +357,9 @@ export class OrderExportService {
     const seq = orderExportRepository.countSince(profile.id, chinaDayStartIso(chinaDate(now))) + 1;
     const { files, renamed } = this.planFiles(profile, buckets, shops, query, now, seq);
     const warnings = this.warnings(shops, unknownBucket, renamed);
+    const unclassifiedSizes = buckets.flatMap(bucket => bucket.lines).filter(item => item.exportSelected
+      && item.decision.material === 'cotton' && !purchaseSizeGroup(purchaseSizeFor('cotton', item.line.size)));
+    if (unclassifiedSizes.length) warnings.push(`${unclassifiedSizes.length} 行棉订单的拿货尺码缺失或无法区分成人/童装，仅包含在自用 Excel 中，请核对尺码后再发给供应商。`);
     const missingTypes = buckets.flatMap((bucket) => bucket.lines)
       .filter((item) => item.exportSelected && item.decision.material === 'polyester' && !item.decision.polyesterType);
     if (missingTypes.length) warnings.push(`${missingTypes.length} 行聚酯纤维商品尚未选择平板或针眼，请选择后再导出，或取消勾选本次跳过。`);
@@ -373,7 +383,7 @@ export class OrderExportService {
     now: Date,
     seq: number,
   ): { files: PlanFile[]; renamed: boolean } {
-    // 文件先按平台拆分，再套用原有材质布局。跨平台永远不会进入同一个 Excel。
+    // 自用文件按平台和材质布局拆分；供应商文件在下方跨平台汇总。
     const files: PlanFile[] = [];
     const platforms = [...new Set(shops.map(shop => shop.platform))];
     for (const platform of platforms) {
@@ -400,6 +410,23 @@ export class OrderExportService {
           const stats = statsOf(bucket.lines);
           files.push({ name: nameFor(bucket.fileTemplate, bucket.label, stats), buckets: [bucket], ...stats });
         }
+      }
+    }
+    const cotton = buckets.find(bucket => bucket.key === 'cotton' && !bucket.excluded);
+    if (cotton) {
+      const originals = files.filter(file => file.buckets.some(bucket => bucket.key === 'cotton'));
+      const imageCount = Math.max(1, ...originals.map(file => imageColumnCount(file.buckets)));
+      for (const [group, label] of [['adult', '成人'], ['kids', '童装']] as const) {
+        const lines = cotton.lines.filter(item => item.exportSelected && purchaseSizeGroup(purchaseSizeFor('cotton', item.line.size)) === group);
+        if (!lines.length) continue;
+        const stats = statsOf(lines);
+        const name = renderFileName(cotton.fileTemplate, {
+          platforms: [], shops: shops.filter(shop => lines.some(({ line }) => line.platform === shop.platform && line.shopId === shop.shopId)).map(shop => shop.shopName),
+          profile: profile.name, material: cotton.label, now, from: query.from, to: query.to, seq,
+          count: stats.orderCount, qty: stats.quantity,
+        });
+        files.push({ name: `${name}_供应商拿货_${label}`, buckets: [{ ...cotton, lines }],
+          supplierCopy: true, imageColumnCount: imageCount, ...stats });
       }
     }
     // 重名时加 (2)(3) 区分，避免后一个文件覆盖前一个
@@ -445,7 +472,8 @@ export class OrderExportService {
     const dir = path.join(config.orders.exportDir, exportId);
     const columnKeys = orderExportColumns(profile.columns);
     const columns = columnKeys.map((key) => COLUMN_BY_KEY.get(key)!).filter(Boolean);
-    const exported = plan.files.flatMap((file) => file.buckets.flatMap((bucket) => bucket.lines));
+    // 供应商副本复用相同订单，下载图片和已导出标记均只处理一次。
+    const exported = plan.buckets.flatMap(bucket => bucket.lines.filter(item => item.exportSelected));
     const missing = exported.find((item) => !item.selectedImages.length);
     if (missing) throw new OrderInputError(`订单 ${missing.line.orderId} 没有可导出的图片，请重新同步订单后再导出`);
     const images = await loadExportImages(exported.flatMap((item) => item.selectedImages));
@@ -456,14 +484,15 @@ export class OrderExportService {
       // 先写文件，全部成功后再在一个事务里记录并标记「已导出」
       const files: OrderExportFileInfo[] = plan.files.map((file, index) => {
         const id = String(index + 1);
+        const fileColumns = file.supplierCopy ? columns.filter(column => column.key !== 'size') : columns;
         // 一件衣服始终一行，多选图扩展为图片 2、图片 3…，不重复数量和金额。
-        const imageCount = file.buckets.reduce((max, bucket) => bucket.lines.reduce((n, item) => Math.max(n, item.selectedImages.length), max), 1);
+        const imageCount = file.imageColumnCount ?? imageColumnCount(file.buckets);
         const buffer = buildXlsx(file.buckets.map((bucket) => ({
           name: bucket.label,
-          columns: columns.flatMap<{ header: string; width: number; numeric: boolean }>((column) => column.key === 'imageUrl'
+          columns: fileColumns.flatMap<{ header: string; width: number; numeric: boolean }>((column) => column.key === 'imageUrl'
             ? Array.from({ length: imageCount }, (_, i) => ({ header: i ? `图片 ${i + 1}` : '图片', width: XLSX_IMAGE_COLUMN_WIDTH, numeric: false }))
             : [{ header: column.label, width: column.width * XLSX_FONT_SIZE / 11, numeric: 'numeric' in column ? column.numeric : false }]),
-          rows: bucket.lines.map((item) => columns.flatMap((column) => column.key === 'imageUrl'
+          rows: bucket.lines.map((item) => fileColumns.flatMap((column) => column.key === 'imageUrl'
             ? Array.from({ length: imageCount }, (_, i) => images.get(item.selectedImages[i]) ?? '')
             : [CELL_VALUES[column.key]({ item, bucket, shopNames: plan.shopNames })])),
         })), now);
